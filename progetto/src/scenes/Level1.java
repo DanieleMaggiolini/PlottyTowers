@@ -30,7 +30,7 @@ public class Level1 extends GameScene implements SceneMethods{
     private Tile selectedTile;
     private int mouseX,mouseY;
     
-    private int aniTick,aniIndex, aniSpeed = 30;
+    private int aniTick,aniIndex, aniSpeed = 5; //30
     private int assex=100;
     
     
@@ -78,9 +78,10 @@ public class Level1 extends GameScene implements SceneMethods{
     }
     
      private void loadAnimations() {
-        naruto=new BufferedImage[6];
+         //75==64
+        naruto=new BufferedImage[8];
         for (int i = 0; i < naruto.length; i++) {
-            naruto[i] = narutoall.getSubimage(64*i, 0, 64, 64);        
+            naruto[i] = narutoall.getSubimage(75*i, 0, 75, 75);        
         }
     }
     private void updateAnimationTick() {
@@ -104,7 +105,7 @@ public class Level1 extends GameScene implements SceneMethods{
         drawButton(g);
         
         
-        g.drawImage(naruto[aniIndex], assex, 100, 164, 164, null);
+        g.drawImage(naruto[aniIndex], assex, 100, 134, 134, null); //widht = 164 height =164
         
         if(paused){
             pauseoverlay.draw(g);
@@ -112,7 +113,7 @@ public class Level1 extends GameScene implements SceneMethods{
         } else{
             
             updateAnimationTick();
-            assex++;
+            assex+=3;
         }   
         bottombar.draw(g);
         drawSelectedTile(g);
