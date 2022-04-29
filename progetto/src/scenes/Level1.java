@@ -22,6 +22,13 @@ import ui.PauseOverlay;
 public class Level1 extends GameScene implements SceneMethods{
     private BufferedImage[] naruto;
     private BufferedImage narutoall;
+    private BufferedImage[] luffy;
+    private BufferedImage luffyall;
+    private int[] susanoIndex;
+    private int susanoRow=0;
+    private BufferedImage[][] susano;
+    private BufferedImage susanoall;
+    
     private BufferedImage ingranaggio;
     
     private int[][] lvl;
@@ -30,7 +37,7 @@ public class Level1 extends GameScene implements SceneMethods{
     private Tile selectedTile;
     private int mouseX,mouseY;
     
-    private int aniTick,aniIndex, aniSpeed = 5; //30
+    private int aniTick,aniIndex, aniSpeed = 30;
     private int assex=100;
     
     
@@ -60,10 +67,13 @@ public class Level1 extends GameScene implements SceneMethods{
         int tempHeight=(int)(Game.currentScreenHeight*0.17);
         bottombar=new BottomBar(0, Game.currentScreenHeight-tempHeight, Game.currentScreenWidth, tempHeight, this);  
         pauseoverlay=new PauseOverlay(this, super.getGame());
+        susanoIndex= new int[8];
     }
     private void impImage() {
         ingranaggio= LoadSave.getImage(LoadSave.INGRANAGGIO);
         narutoall= LoadSave.getImage(LoadSave.NARUTO);
+        luffyall= LoadSave.getImage(LoadSave.LUFFY);
+        susanoall= LoadSave.getImage(LoadSave.SUSANO);
         
     }
     private void initButtons() {
@@ -78,10 +88,43 @@ public class Level1 extends GameScene implements SceneMethods{
     }
     
      private void loadAnimations() {
-         //75==64
-        naruto=new BufferedImage[8];
+        naruto=new BufferedImage[6];
         for (int i = 0; i < naruto.length; i++) {
-            naruto[i] = narutoall.getSubimage(75*i, 0, 75, 75);        
+            naruto[i] = narutoall.getSubimage(64*i, 0, 64, 64);        
+        }
+        luffy=new BufferedImage[8];
+        for (int i = 0; i < naruto.length; i++) {
+            luffy[i] = luffyall.getSubimage(75*i, 0, 75, 75);        
+        }
+        loadSusano();
+    }
+     private void loadSusano() {
+        susano=new BufferedImage[8][7];
+        for (int i = 0; i < 7; i++) {
+            susano[0][i] = susanoall.getSubimage(114*i, 0, 114, 171);        
+        }
+        for (int i = 0; i < 6; i++) {
+            if(i!=5){
+                susano[1][i] = susanoall.getSubimage(97*i, 171, 97, 137);      
+            }else{
+                susano[1][5] = susanoall.getSubimage(97*i, 171, 97*4, 137);      
+            }       
+        }
+        for (int i = 0; i < 2; i++) {
+              susano[2][i] = susanoall.getSubimage(417*i, 308, 417, 440);         
+        }  
+        susano[3][0] = susanoall.getSubimage(0, 748, 608, 548);       
+        for (int i = 0; i < 2; i++) {
+              susano[4][i] = susanoall.getSubimage(467*i, 1296, 467, 574);         
+        }
+        for (int i = 0; i < 3; i++) {
+              susano[5][i] = susanoall.getSubimage(311*i, 1870, 311, 253);         
+        }
+        for (int i = 0; i < 3; i++) {
+              susano[6][i] = susanoall.getSubimage(311*i, 2123, 311, 253);         
+        }
+        for (int i = 0; i < 3; i++) {
+              susano[7][i] = susanoall.getSubimage(311*i, 2376, 311, 253);         
         }
     }
     private void updateAnimationTick() {
@@ -89,9 +132,44 @@ public class Level1 extends GameScene implements SceneMethods{
         if(aniTick>= aniSpeed){
             aniTick=0;
             aniIndex++;
+            susanoIndex[susanoRow]++;
+            
             if(aniIndex>= naruto.length)
                 aniIndex=0;
-        }
+            
+            if(susanoIndex[0]>= 7){
+                susanoIndex[0]=0;
+                susanoRow++;
+            }
+            else if(susanoIndex[1]>= 6){
+                susanoIndex[1]=0;
+                susanoRow++;
+            }
+            else if(susanoIndex[2]>= 2){
+                susanoIndex[2]=0;
+                susanoRow++;
+            }
+            else if(susanoIndex[3]>= 1){
+                susanoIndex[3]=0;
+                susanoRow++;
+            }
+            else if(susanoIndex[4]>= 2){
+                susanoIndex[4]=0;
+                susanoRow++;
+            }
+            else if(susanoIndex[5]>= 3){
+                susanoIndex[5]=0;
+                susanoRow++;
+            }
+            else if(susanoIndex[6]>= 3){
+                susanoIndex[6]=0;
+                susanoRow++;
+            }
+            else if(susanoIndex[7]>= 1){
+                susanoIndex[7]=0;
+                susanoRow=0;
+            }
+        }   
     }
     
     public void updates(){
@@ -105,15 +183,54 @@ public class Level1 extends GameScene implements SceneMethods{
         drawButton(g);
         
         
-        g.drawImage(naruto[aniIndex], assex, 100, 134, 134, null); //widht = 164 height =164
+        g.drawImage(naruto[aniIndex], assex, 100, 134, 134, null);
         
+        
+        
+        //////////////
+        int susanoX=600;
+        int susanoY=600;
+        switch(susanoRow){
+            case 0:
+                    g.drawImage(susano[0][susanoIndex[0]], susanoX-114/2, susanoY-171, 114, 171, null);
+                break;
+            case 1:
+                    if(aniIndex!=5){
+                    g.drawImage(susano[1][susanoIndex[1]], susanoX-97/2, susanoY-137, 97, 137, null);    
+                     }else{
+                    g.drawImage(susano[1][5], susanoX-110, susanoY-137, 97*4, 137, null);    
+                    } 
+                break;
+            case 2:
+                g.drawImage(susano[2][susanoIndex[2]], susanoX-417/2, susanoY-440, 417, 440, null);
+                break;
+            case 3:
+                g.drawImage(susano[3][susanoIndex[3]], susanoX-608/2, susanoY-548, 608, 548, null);
+                break;
+            case 4:
+                g.drawImage(susano[4][susanoIndex[4]], susanoX-467/2, susanoY-574, 467, 574, null);
+                break;
+            case 5:
+                g.drawImage(susano[5][susanoIndex[5]], susanoX-311/2, susanoY-253, 311, 253, null);
+                break;
+            case 6:
+                g.drawImage(susano[6][susanoIndex[6]], susanoX-311/2, susanoY-253, 311, 253, null);
+                break;
+            case 7:
+                g.drawImage(susano[7][susanoIndex[7]], susanoX-311/2, susanoY-253, 311, 253, null);
+                break;
+            default:
+                 g.drawImage(naruto[aniIndex], susanoX, susanoY, 134, 134, null);
+                break;
+        }
+        //////////////
         if(paused){
             pauseoverlay.draw(g);
             pauseoverlay.update();
         } else{
             
             updateAnimationTick();
-            assex+=3;
+            assex++;
         }   
         bottombar.draw(g);
         drawSelectedTile(g);

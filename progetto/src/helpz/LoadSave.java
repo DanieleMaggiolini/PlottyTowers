@@ -14,7 +14,10 @@ public class LoadSave {
     public static final String MENU_BUTTONS = "image/other/menuButton.png";
     public static final String LEVEL_MENU = "image/other/LevelMenu.png";
     public static final String INGRANAGGIO = "image/other/ingranaggio.png";
-    public static final String NARUTO = "image/enemy/luffy.png";
+    public static final String NARUTO = "image/enemy/naruto.png";
+    public static final String LUFFY = "image/enemy/luffy.png";
+    public static final String SUSANO = "image/enemy/susano.png";
+    
                
     public static BufferedImage getImage(String name){
         BufferedImage img = null;
