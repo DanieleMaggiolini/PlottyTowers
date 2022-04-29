@@ -1,3 +1,13 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file Game.java 
+* 
+* @brief il file main che gestisce tutto il progetto,
+* contiene i vari thread e tutte le classi del progetto
+*
+*/
 package progetto;
 
 import inputs.KeyboardListener;
@@ -13,27 +23,62 @@ import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import scenes.*;
 
+
+/** 
+* @class Game
+* 
+* @brief JFrame main gestisce la schermata di gioco 
+* 
+* questa classe gestira l'inizializzazione di classi e Thread del progetto
+* 
+*/ 
+
 public class Game extends JFrame implements Runnable {
+    
     //contiene risoluzione monitor
     private GraphicsDevice gDevice;
-    public static int currentScreenWidth, currentScreenHeight;
-            
+    
+    //larghezza dello scermo
+    public static int currentScreenWidth;
+    
+    //altezza dello schermo
+    public static int currentScreenHeight;
+          
+    //classe JPanel 
     static GameScreen gamescreen;
+    
     //Thread del gioco
     private Thread gameThread;
+    
     //velocita aggiornamento FPS
     private final double FPS_SET = 120.0;
 
     //velocita aggiornamento Updates
     private final double UPS_SET = 60.0;
 
-    //Classes
+    //classe del render
     private Render render;
+    
+    //schermata menu
     private Menu menu;
+    
+    //schermata del menu livelli
     private Playing playing;
+    
+    //schermata impostazioni
     private Setting setting;
+    
+    //schermata primo livello
     private Level1 level1;
     
+    /**
+     @brief costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata.
+
+     richiama il metodo per inizializzare le classi,
+     imposta il full screen,
+     definisce l'impostazione predefinita in chiusura dell'applicazione,
+     imposta la schermata visibile.
+     */
     public Game() {
         //prendere la risoluzione del monitor
         GraphicsEnvironment gEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -51,11 +96,19 @@ public class Game extends JFrame implements Runnable {
         setLocationRelativeTo(null);     
     }
     
+    /**
+     @brief imposta la schermata di gioco in full screen.
+
+     imposta il full screen richiamando la funzione setFullScreen(this)
+     aggiorna le variabili di grandezza dello schermo (currentScreenWidth e currentScreenHeight)
+     */
     public void setFullScreen(){
         gDevice.setFullScreenWindow(this);
         currentScreenWidth = this.getWidth();
         currentScreenHeight = this.getHeight();
     }
+    
+    
     public int getCurrentScreenWidth(){
         return currentScreenWidth;
     }
