@@ -17,6 +17,7 @@ import ui.BottomBar;
 import ui.LevelMenu;
 import ui.MyButton;
 import ui.PauseOverlay;
+import objects.Tile;
 
 
 public class Level1 extends GameScene implements SceneMethods{
@@ -35,6 +36,7 @@ public class Level1 extends GameScene implements SceneMethods{
     private TileManager tilemanager;
     private BottomBar bottombar;
     private Tile selectedTile;
+    private boolean drawSelect=false;
     private int mouseX,mouseY;
     
     private int aniTick,aniIndex, aniSpeed = 18;
@@ -246,12 +248,13 @@ public class Level1 extends GameScene implements SceneMethods{
         Bmenu.draw(g);
     }
     public void drawSelectedTile(Graphics g){
-        if(selectedTile!=null){
+        if(selectedTile!=null && drawSelect){
             g.drawImage(selectedTile.getSprite(), mouseX, mouseY, selectedTile.getSpriteWidth(), selectedTile.getSpriteHeight() , null);
         }
     }
     public void setSelectedTile(Tile tile){
         selectedTile=tile;
+        drawSelect=true;
     }
     public TileManager getTileManager(){
         return tilemanager;
@@ -268,9 +271,29 @@ public class Level1 extends GameScene implements SceneMethods{
         if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
             setPaused(!getPaused());
         }
-        bottombar.mouseClicked(e);
+        if(e.getY()>(int)(Game.currentScreenHeight*0.829)){
+            bottombar.mouseClicked(e);
+        }else{
+            changeTile(mouseX,mouseY);
+        }    
     }
-
+    private int lastTileX=-1;
+    private int lastTileY=-1;
+    private int lastTileId=-1;
+    private void changeTile(int x, int y) {
+        if(selectedTile!=null){
+            int tileX=x/selectedTile.getSpriteWidth();
+            int tileY=y/selectedTile.getSpriteHeight();
+            
+            if(lastTileX== tileX && lastTileY==tileY && lastTileId==selectedTile.getId())
+                return;
+               
+            lvl[tileY][tileX]= selectedTile.getId();
+            lastTileX=tileX;
+            lastTileY=tileY;
+            lastTileId=selectedTile.getId();
+        }
+    }
     @Override
     public void mouseMoved(MouseEvent e) {
         Bmenu.setMouseOver(false);
@@ -279,9 +302,15 @@ public class Level1 extends GameScene implements SceneMethods{
         }
         if(e.getY()>(int)(Game.currentScreenHeight*0.829)){
             bottombar.mouseMoved(e);
+            drawSelect=false;
+        }else{
+            drawSelect=true;
+            if(selectedTile!=null){
+                mouseX=(e.getX()/selectedTile.getSpriteWidth())*selectedTile.getSpriteWidth(); //tile viene spostato in una grlia e non pixel per pixel
+                mouseY=(e.getY()/selectedTile.getSpriteHeight())*selectedTile.getSpriteHeight();  
+            } 
         }
-        mouseX=e.getX();
-        mouseY=e.getY();            
+                    
     }
 
     @Override
@@ -289,22 +318,29 @@ public class Level1 extends GameScene implements SceneMethods{
         if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
             Bmenu.setMousePressed(true);
         }
-        bottombar.mousePressed(e);
+        if(e.getY()>(int)(Game.currentScreenHeight*0.829)){
+            bottombar.mousePressed(e);
+        }
         pauseoverlay.mousePressed(e);
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
         resetButtons();
-        bottombar.mouseReleased(e);
+        if(e.getY()>(int)(Game.currentScreenHeight*0.829)){
+            bottombar.mouseReleased(e);
+        }    
         pauseoverlay.mouseReleased(e);
     }
     
     @Override
     public void mouseDragged(MouseEvent e) {
+        if(e.getY()>(int)(Game.currentScreenHeight*0.829)){
+        }else{
+            changeTile(e.getX(),e.getY());
+        }
     }
     private void resetButtons() {
         Bmenu.resetBooleans();
-    }
-    
+    }  
 }

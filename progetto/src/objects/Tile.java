@@ -28,8 +28,8 @@ public class Tile {
     }
     private int[][] lvl = LevelBuild.getLevelData();  
     private int tempHeight=(int)(Game.currentScreenHeight*0.17);
-    private int spriteWidth = Game.currentScreenWidth/lvl[0].length;
-    private int spriteHeight= (Game.currentScreenHeight-tempHeight)/lvl.length;
+    int spriteWidth = Game.currentScreenWidth/lvl[0].length;
+    int spriteHeight= (Game.currentScreenHeight-tempHeight)/lvl.length;
     
     public int getSpriteWidth(){
         return spriteWidth;

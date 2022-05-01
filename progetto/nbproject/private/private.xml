@@ -4,7 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/scenes/Level1.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/managers/TileManager.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/objects/Tile.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/inputs/MyMouseListener.java</file>
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/helpz/LevelBuild.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/scenes/GameScene.java</file>
         </group>
     </open-files>
 </project-private>
