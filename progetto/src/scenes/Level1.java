@@ -37,7 +37,7 @@ public class Level1 extends GameScene implements SceneMethods{
     private Tile selectedTile;
     private int mouseX,mouseY;
     
-    private int aniTick,aniIndex, aniSpeed = 30;
+    private int aniTick,aniIndex, aniSpeed = 18;
     private int assex=100;
     
     
@@ -101,30 +101,29 @@ public class Level1 extends GameScene implements SceneMethods{
      private void loadSusano() {
         susano=new BufferedImage[8][7];
         for (int i = 0; i < 7; i++) {
-            susano[0][i] = susanoall.getSubimage(114*i, 0, 114, 171);        
+            susano[0][i] = susanoall.getSubimage(128*i, 0, 128, 128);        
         }
         for (int i = 0; i < 6; i++) {
             if(i!=5){
-                susano[1][i] = susanoall.getSubimage(97*i, 171, 97, 137);      
+                susano[1][i] = susanoall.getSubimage(128*i, 128, 128, 128);      
             }else{
-                susano[1][5] = susanoall.getSubimage(97*i, 171, 97*4, 137);      
+                susano[1][5] = susanoall.getSubimage(128*i, 128, 128*2, 128);      
             }       
         }
+        susano[2][0] = susanoall.getSubimage(0, 256, 128*3, 128*2);         
+        susano[2][1] = susanoall.getSubimage(128*3, 256, 128*4, 128*3);
+        susano[3][0] = susanoall.getSubimage(0, 128*5, 128*5, 128*4);       
         for (int i = 0; i < 2; i++) {
-              susano[2][i] = susanoall.getSubimage(417*i, 308, 417, 440);         
-        }  
-        susano[3][0] = susanoall.getSubimage(0, 748, 608, 548);       
-        for (int i = 0; i < 2; i++) {
-              susano[4][i] = susanoall.getSubimage(467*i, 1296, 467, 574);         
+              susano[4][i] = susanoall.getSubimage(448*i, 128*9+3, 448, 128*4);         
         }
         for (int i = 0; i < 3; i++) {
-              susano[5][i] = susanoall.getSubimage(311*i, 1870, 311, 253);         
+              susano[5][i] = susanoall.getSubimage(298*i, 128*13, 298, 128*2);         
         }
         for (int i = 0; i < 3; i++) {
-              susano[6][i] = susanoall.getSubimage(311*i, 2123, 311, 253);         
+              susano[6][i] = susanoall.getSubimage(298*i, 128*15, 298, 128*2);         
         }
         for (int i = 0; i < 3; i++) {
-              susano[7][i] = susanoall.getSubimage(311*i, 2376, 311, 253);         
+              susano[7][i] = susanoall.getSubimage(298*i, 128*17, 298, 128*2);         
         }
     }
     private void updateAnimationTick() {
@@ -190,37 +189,33 @@ public class Level1 extends GameScene implements SceneMethods{
         //////////////
         int susanoX=600;
         int susanoY=600;
+        int dim=128;
         switch(susanoRow){
             case 0:
-                    g.drawImage(susano[0][susanoIndex[0]], susanoX-114/2, susanoY-171, 114, 171, null);
+                    g.drawImage(susano[0][susanoIndex[0]], susanoX-dim/2, susanoY-dim, dim, dim, null);
                 break;
             case 1:
-                    if(aniIndex!=5){
-                    g.drawImage(susano[1][susanoIndex[1]], susanoX-97/2, susanoY-137, 97, 137, null);    
+                    if(susanoIndex[1]!=5){
+                    g.drawImage(susano[1][susanoIndex[1]], susanoX-dim/2, susanoY-dim, dim, dim, null);    
                      }else{
-                    g.drawImage(susano[1][5], susanoX-110, susanoY-137, 97*4, 137, null);    
+                    g.drawImage(susano[1][5], susanoX-dim, susanoY-dim, dim*2, dim, null);    
                     } 
                 break;
             case 2:
-                g.drawImage(susano[2][susanoIndex[2]], susanoX-417/2, susanoY-440, 417, 440, null);
+                if(susanoIndex[2]==0){
+                    g.drawImage(susano[2][susanoIndex[2]], susanoX-dim*3/2, susanoY-dim*2, dim*3, dim*2, null);
+                }else{
+                    g.drawImage(susano[2][susanoIndex[2]], susanoX-dim*2, susanoY-dim*3, dim*4, dim*3, null);
+                }  
                 break;
             case 3:
-                g.drawImage(susano[3][susanoIndex[3]], susanoX-608/2, susanoY-548, 608, 548, null);
+                g.drawImage(susano[3][susanoIndex[3]], susanoX-dim*5/2, susanoY-dim*4, dim*5, dim*4, null);
                 break;
             case 4:
-                g.drawImage(susano[4][susanoIndex[4]], susanoX-467/2, susanoY-574, 467, 574, null);
-                break;
-            case 5:
-                g.drawImage(susano[5][susanoIndex[5]], susanoX-311/2, susanoY-253, 311, 253, null);
-                break;
-            case 6:
-                g.drawImage(susano[6][susanoIndex[6]], susanoX-311/2, susanoY-253, 311, 253, null);
-                break;
-            case 7:
-                g.drawImage(susano[7][susanoIndex[7]], susanoX-311/2, susanoY-253, 311, 253, null);
+                g.drawImage(susano[4][susanoIndex[4]], susanoX-((int)(dim*3.5))/2, susanoY-dim*4,(int)(dim*3.5), dim*4, null);
                 break;
             default:
-                 g.drawImage(naruto[aniIndex], susanoX, susanoY, 134, 134, null);
+                g.drawImage(susano[susanoRow][susanoIndex[susanoRow]], susanoX-((int)(dim*2.32))/2, susanoY-dim*2, (int)(dim*2.32), dim*2, null);
                 break;
         }
         //////////////
