@@ -18,9 +18,15 @@ public class TileManager {
     
     private void createTiles() {
         int id=0;
-        tiles.add(ERBA = new Tile(getSprite(0, 0), id++, "erba"));
-        tiles.add(ACQUA = new Tile(getSprite(1, 0), id++, "acqua"));
-        tiles.add(STRADA = new Tile(getSprite(2, 0), id++, "strada"));
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 9; j++) {
+                tiles.add(STRADA = new Tile(getSprite(j, i), id++, "strada"));
+            }
+        }
+        tiles.add(STRADA = new Tile(getSprite(0, 6), id++, "strada"));
+        tiles.add(STRADA = new Tile(getSprite(1, 6), id++, "strada"));
+        tiles.add(STRADA = new Tile(getSprite(2, 6), id++, "strada"));
+        tiles.add(STRADA = new Tile(getSprite(3, 6), id++, "strada"));
     }
     
     private void loadAtlas() {
@@ -34,6 +40,6 @@ public class TileManager {
     }
     
     private BufferedImage getSprite(int x, int y){
-        return atlas.getSubimage(x*32, y*32, 32, 32);
+        return atlas.getSubimage(x*64, y*64, 64, 64);
     } 
 }

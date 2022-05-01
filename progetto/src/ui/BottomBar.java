@@ -42,18 +42,20 @@ public class BottomBar {
     private void initButton() {
         int[][] lvl = LevelBuild.getLevelData();  
         int tempHeight=(int)(Game.currentScreenHeight*0.17);
-        int w = Game.currentScreenWidth/lvl[0].length;
-        int h= (Game.currentScreenHeight-tempHeight)/lvl.length;
-        int x = 40;
-        int y = 960/3+65;
+        int w = Game.currentScreenWidth/lvl[0].length-10;
+        int h= (Game.currentScreenHeight-tempHeight)/lvl.length-10;
+        int x = 20;
         int yOffset = 70;
-        int XOffset= 200;
+        int XOffset= 60;
         f=new Font("Arial",Font.BOLD,40);
         c=new Color(0,0,0);  
         
         int i=0;
         for (Tile tile : level1.getTileManager().tiles) {
-            tileButtons.add(new MyButton(tile.getName(), x + XOffset*i, (int)(Game.currentScreenHeight*0.885), w, h, f, c, i));
+            if(i<29)
+                tileButtons.add(new MyButton(tile.getName(), x + XOffset*i, (int)(Game.currentScreenHeight*0.855), w, h, f, c, i));
+            else
+                tileButtons.add(new MyButton(tile.getName(), x + XOffset*(i-29), (int)(Game.currentScreenHeight*0.855)+yOffset, w, h, f, c, i));     
             i++;
         }
     }
