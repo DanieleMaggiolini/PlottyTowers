@@ -10,7 +10,7 @@ import progetto.Game;
 import static progetto.GameStates.SETTINGS;
 import static progetto.GameStates.PLAYING;
 import static progetto.GameStates.setGameState;
-import scenes.Level1;
+import scenes.*;
 
 
 public class PauseOverlay {
@@ -98,7 +98,6 @@ public class PauseOverlay {
         else if(isIn(e,unplay)){
             if(unplay.isMousePressed()){
                  level1.setPaused(false);
-                
             }   
         }       
         else if(isIn(e,setting)){

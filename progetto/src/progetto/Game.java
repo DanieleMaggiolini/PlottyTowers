@@ -10,6 +10,7 @@
 */
 package progetto;
 
+import helpz.LoadSave;
 import inputs.KeyboardListener;
 import inputs.MyMouseListener;
 import java.awt.GraphicsDevice;
@@ -21,6 +22,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
+import managers.TileManager;
 import scenes.*;
 
 
@@ -68,9 +70,13 @@ public class Game extends JFrame implements Runnable {
     //schermata impostazioni
     private Setting setting;
     
+    //schermata per l'editing della mappa
+    private Editing editing;
+    
     //schermata primo livello
     private Level1 level1;
     
+    private TileManager tilemanager;
     /**
      @brief costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata.
 
@@ -89,13 +95,13 @@ public class Game extends JFrame implements Runnable {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         InitClasses();
+        createLevel();
         setResizable(false); 
         add(gamescreen);
         pack();
         setVisible(true);
         setLocationRelativeTo(null);     
-    }
-    
+    }   
     /**
      @brief imposta la schermata di gioco in full screen.
 
@@ -106,9 +112,7 @@ public class Game extends JFrame implements Runnable {
         gDevice.setFullScreenWindow(this);
         currentScreenWidth = this.getWidth();
         currentScreenHeight = this.getHeight();
-    }
-    
-    
+    }   
     public int getCurrentScreenWidth(){
         return currentScreenWidth;
     }
@@ -116,14 +120,23 @@ public class Game extends JFrame implements Runnable {
         return currentScreenHeight;
     }
     private void InitClasses() {
+        tilemanager = new TileManager();
+        
         render = new Render(this);
         gamescreen = new GameScreen(this);
         menu = new Menu(this);
         playing = new Playing(this);
         setting = new Setting(this);
-        level1= new Level1(this);
+        editing = new Editing(this);
+        level1= new Level1(this);     
     }
-
+    public void createLevel(){
+        int[] arr = new int[420];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]= 0;
+        }
+        LoadSave.createLevel("level1", arr);
+    }
     //metodo per far partire il Thread del gioco
     private void start() {
         gameThread = new Thread(this) {
@@ -210,10 +223,17 @@ public class Game extends JFrame implements Runnable {
     public Setting getSetting() {
         return setting;
     }
+    public Editing getEditing(){
+        return editing;
+    }
     public Level1 getLevel1() {
         return level1;
     }   
     public  void restartLevel1(){
         level1= new Level1(this);   
+    }
+    
+    public TileManager getTileManager(){
+        return tilemanager;
     }
 }

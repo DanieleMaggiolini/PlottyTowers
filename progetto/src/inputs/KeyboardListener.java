@@ -24,18 +24,17 @@ public class KeyboardListener implements KeyListener{
     }
     @Override
     public void keyPressed(KeyEvent e) {
-        if(e.getKeyCode() == KeyEvent.VK_A)
-            System.out.println("A");
-        else if(e.getKeyCode() == KeyEvent.VK_B)
-            System.out.println("B");
-         else if(e.getKeyCode() == KeyEvent.VK_S)
+        
+        
+        if(e.getKeyCode() == KeyEvent.VK_S)
            GameStates.gamestates = PLAYING;
         else if(e.getKeyCode() == KeyEvent.VK_W)
            GameStates.gamestates = MENU;
         else if(e.getKeyCode() == KeyEvent.VK_D)
            GameStates.gamestates = SETTINGS;
-        
-        if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
+        else if(e.getKeyCode() == KeyEvent.VK_M)
+            GameStates.gamestates = EDIT;
+        else if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
            switch(GameStates.gamestates){
                case MENU:
                         

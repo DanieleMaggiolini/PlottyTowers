@@ -18,7 +18,7 @@ import progetto.Game;
 import static progetto.GameStates.PLAYING;
 import static progetto.GameStates.MENU;
 import static progetto.GameStates.setGameState;
-import ui.BottomBar;
+import ui.ActionBar;
 import ui.LevelMenu;
 import ui.MyButton;
 import ui.PauseOverlay;

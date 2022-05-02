@@ -9,10 +9,23 @@ public class Tile {
     private BufferedImage sprite;
     private int id;
     private String name;
+    
+    
+    public static int spriteWidth;
+    public static int spriteHeight;
+    private int[][] lvl;
+    private int tempHeight;
+    
     public Tile(BufferedImage sprite, int id, String name){
         this.sprite = sprite;
         this.id=id;
         this.name=name;
+        
+        
+        lvl = LevelBuild.getLevelData();  
+        tempHeight =(int)(Game.currentScreenHeight*0.17);
+        spriteWidth = Game.currentScreenWidth/lvl[0].length;
+        spriteHeight = (Game.currentScreenHeight-tempHeight)/lvl.length;
     }
 
     public BufferedImage getSprite() {
@@ -26,10 +39,6 @@ public class Tile {
     public String getName() {
         return name;
     }
-    private int[][] lvl = LevelBuild.getLevelData();  
-    private int tempHeight=(int)(Game.currentScreenHeight*0.17);
-    int spriteWidth = Game.currentScreenWidth/lvl[0].length;
-    int spriteHeight= (Game.currentScreenHeight-tempHeight)/lvl.length;
     
     public int getSpriteWidth(){
         return spriteWidth;

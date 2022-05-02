@@ -1,7 +1,7 @@
 package progetto;
 
 public enum GameStates {
-    PLAYING, MENU, SETTINGS, LVL1;
+    PLAYING, MENU, SETTINGS, EDIT, LVL1;
     
     public static GameStates gamestates = MENU;
     

@@ -26,9 +26,11 @@ public class Render {
             case SETTINGS:
                 game.getSetting().render(g);
                 break;
+            case EDIT:
+                game.getEditing().render(g);
+                break;
             case LVL1:
                 game.getLevel1().render(g);
-                break;
         }
     }
 }
