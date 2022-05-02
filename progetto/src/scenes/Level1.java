@@ -60,7 +60,10 @@ public class Level1 extends GameScene implements SceneMethods{
         
         initButtons();
         
-        loadAnimations();          
+        loadAnimations();
+        
+        createLevel();
+        loadLevel();
     }  
     public void initClasses(){
         lvl = LevelBuild.getLevelData();   
@@ -128,6 +131,19 @@ public class Level1 extends GameScene implements SceneMethods{
               susano[7][i] = susanoall.getSubimage(298*i, 128*17, 298, 128*2);         
         }
     }
+    public void createLevel(){
+        int[] arr = new int[420];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]= 0;
+        }
+        LoadSave.createLevel("level1", arr);
+    }
+    public void loadLevel(){
+        lvl=LoadSave.loadLevel("level1");
+    }
+    public void saveLevel(){
+        LoadSave.saveLevel("level1", lvl);
+    }
     private void updateAnimationTick() {
         aniTick++;
         if(aniTick>= aniSpeed){
@@ -185,7 +201,6 @@ public class Level1 extends GameScene implements SceneMethods{
         
         
         g.drawImage(naruto[aniIndex], assex, 100, 134, 134, null);
-        
         
         
         //////////////

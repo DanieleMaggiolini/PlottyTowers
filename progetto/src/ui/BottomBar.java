@@ -23,6 +23,7 @@ public class BottomBar {
     private int x,y,width,height;
     
     private ArrayList<MyButton> tileButtons = new ArrayList<>();
+    private MyButton save;
     private Font f;
     private Color c;
     private Level1 level1;
@@ -40,6 +41,12 @@ public class BottomBar {
        
     }
     private void initButton() {
+        f=new Font("Arial",Font.BOLD,19);
+        c=new Color(255,0,0);
+        //PULSANTE SALVA
+        save = new MyButton("SAVE",1800, 1000, 80, 30, f ,c);
+        
+        //pulsanti con tutte le tile della mappa
         int[][] lvl = LevelBuild.getLevelData();  
         int tempHeight=(int)(Game.currentScreenHeight*0.17);
         int w = Game.currentScreenWidth/lvl[0].length-10;
@@ -47,8 +54,6 @@ public class BottomBar {
         int x = 20;
         int yOffset = 70;
         int XOffset= 60;
-        f=new Font("Arial",Font.BOLD,40);
-        c=new Color(0,0,0);  
         
         int i=0;
         for (Tile tile : level1.getTileManager().tiles) {
@@ -69,6 +74,7 @@ public class BottomBar {
     public void drawButton(Graphics g) {
         drawTileButtons(g);
         drawSelectedTile(g);
+        save.drawAC(g);
     }
     public void drawTileButtons(Graphics g){
         for (MyButton b : tileButtons) {
@@ -95,9 +101,9 @@ public class BottomBar {
     }
     public void drawSelectedTile(Graphics g){
             if(selectedTile!=null){
-                g.drawImage(selectedTile.getSprite(), (int)(Game.currentScreenWidth*0.94), (int)(Game.currentScreenHeight*0.885), selectedTile.getSpriteWidth(), selectedTile.getSpriteHeight(), null);
+                g.drawImage(selectedTile.getSprite(), (int)(Game.currentScreenWidth*0.94), (int)(Game.currentScreenHeight*0.855), selectedTile.getSpriteWidth(), selectedTile.getSpriteHeight(), null);
                 g.setColor(Color.RED);
-                g.drawRect((int)(Game.currentScreenWidth*0.94), (int)(Game.currentScreenHeight*0.885), selectedTile.getSpriteWidth(), selectedTile.getSpriteHeight());
+                g.drawRect((int)(Game.currentScreenWidth*0.94), (int)(Game.currentScreenHeight*0.855), selectedTile.getSpriteWidth(), selectedTile.getSpriteHeight());
             }
     }
     
@@ -106,36 +112,57 @@ public class BottomBar {
     }
       
     public void mouseClicked(MouseEvent e) {
-        for (MyButton b: tileButtons) {
-            if(b.getBounds().contains(e.getX(),e.getY())){
-               selectedTile = level1.getTileManager().getTile(b.getId());
-               level1.setSelectedTile(selectedTile);
-                
-               return;
-            }
+        if(save.getBounds().contains(e.getX(), e.getY())){
+            saveLevel();
+        }
+        else{
+            for (MyButton b: tileButtons) {
+                if(b.getBounds().contains(e.getX(),e.getY())){
+                   selectedTile = level1.getTileManager().getTile(b.getId());
+                   level1.setSelectedTile(selectedTile);
+
+                   return;
+                }       
+            }   
         }
     }
+    private void saveLevel(){
+        level1.saveLevel();
+    }
     public void mouseMoved(MouseEvent e) {
+        //tolgo
         for (MyButton b: tileButtons) {
-            b.setMouseOver(false);
+                b.setMouseOver(false);
         }
-        for (MyButton b: tileButtons) {
-            if(b.getBounds().contains(e.getX(),e.getY())){
-               b.setMouseOver(true);
-               return;
+        save.setMouseOver(false);
+        //metto
+        if(save.getBounds().contains(e.getX(), e.getY())){
+            save.setMouseOver(true);
+        }
+        else{
+            for (MyButton b: tileButtons) {
+                if(b.getBounds().contains(e.getX(),e.getY())){
+                   b.setMouseOver(true);
+                   return;
+                }
             }
         }
     }   
     public void mousePressed(MouseEvent e) {
-        for (MyButton b: tileButtons) {
-            if(b.getBounds().contains(e.getX(),e.getY())){
-               b.setMousePressed(true);
-               return;
+        if(save.getBounds().contains(e.getX(), e.getY())){
+            save.setMousePressed(true);
+        }
+        else{          
+            for (MyButton b: tileButtons) {
+                if(b.getBounds().contains(e.getX(),e.getY())){
+                   b.setMousePressed(true);
+                   return;
+                }
             }
         }
     }
-
     public void mouseReleased(MouseEvent e) {
+        save.resetBooleans();
         for (MyButton b: tileButtons) {          
                b.resetBooleans();       
         }

@@ -19,6 +19,17 @@ public class MyButton {
     private Color c;
     
     //pulsanti NORMALI
+    public MyButton(String text, int x, int y, int width, int height){
+       this.text=text;
+       this.x=x;
+       this.y=y;
+       this.width=width;
+       this.height=height;
+       this.id=-1;
+       
+       initBounds();
+    }
+    //pulsanti con font e colore
     public MyButton(String text, int x, int y, int width, int height,Font f, Color c){
        this.text=text;
        this.x=x;
@@ -90,6 +101,17 @@ public class MyButton {
         //TESTO NEL BOTTONE 
         drawText(g);      
     } 
+    public void drawAC(Graphics g){
+        //SFONDO DEL BOTTONE
+        drawBody(g);
+        
+        //BORDI DEL BOTTONE
+        drawBorder(g);
+        
+        
+        //TESTO NEL BOTTONE 
+        drawCentralText2(g);      
+    } 
     public void drawC(Graphics g){
         //SFONDO DEL BOTTONE
         //drawBody(g);
@@ -115,6 +137,13 @@ public class MyButton {
         int h=g.getFontMetrics().getHeight();
         g.setColor(c);       
         g.drawString(text,x + width/2 - w/2 , y + height - h/2);
+    }
+    private void drawCentralText2(Graphics g){
+        g.setFont(f);
+        int w=g.getFontMetrics().stringWidth(text);
+        int h=g.getFontMetrics().getHeight();
+        g.setColor(c);       
+        g.drawString(text,x + width/2 - w/2 , y + height - h/3);
     }
     
     private void drawBody(Graphics g) {
