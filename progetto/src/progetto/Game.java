@@ -76,7 +76,9 @@ public class Game extends JFrame implements Runnable {
     //schermata primo livello
     private Level1 level1;
     
+    //oggetto per gestire le Tiles
     private TileManager tilemanager;
+    
     /**
      @brief costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata.
 
@@ -113,12 +115,28 @@ public class Game extends JFrame implements Runnable {
         currentScreenWidth = this.getWidth();
         currentScreenHeight = this.getHeight();
     }   
+    
+    /**
+     * @brief get della larghezza dello scermo.
+     *
+     * @return variabile della larghezza dello schermo
+     */
     public int getCurrentScreenWidth(){
         return currentScreenWidth;
     }
+    
+    /**
+     * @brief get dell'altezza dello scermo.
+     *
+     * @return variabile dell'altezza dello schermo
+     */
     public int getCurrentScreenHeight(){
         return currentScreenHeight;
     }
+    
+    /**
+     * @brief inizializza gli oggetti presenti nel progetto.
+     */
     private void InitClasses() {
         tilemanager = new TileManager();
         
@@ -130,6 +148,11 @@ public class Game extends JFrame implements Runnable {
         editing = new Editing(this);
         level1= new Level1(this);     
     }
+    
+    /**
+     * @brief verificare che la mappa del primo livello esita in caso contrario 
+     * crea il file contenente una mappa vuota.
+     */
     public void createLevel(){
         int[] arr = new int[420];
         for (int i = 0; i < arr.length; i++) {
@@ -137,13 +160,24 @@ public class Game extends JFrame implements Runnable {
         }
         LoadSave.createLevel("level1", arr);
     }
-    //metodo per far partire il Thread del gioco
+    
+    
+    /**
+     * @brief metodo per inizializzare e far partire il Thread del gioco.
+     */
     private void start() {
         gameThread = new Thread(this) {
         };
         gameThread.start();
     }
-
+    
+    /**
+     * @brief metodo che richiama l'update della schermata nella quale ci
+     * troviamo nel gioco.
+     *
+     * grazie ad uno switch controlla l'attuale gamestates(schermata es:menu,
+     * settings, level) e ne richiama l'update
+     */
     private void updateGame(){
         switch(GameStates.gamestates){    
                 case MENU:
@@ -159,14 +193,22 @@ public class Game extends JFrame implements Runnable {
                     level1.updates();
         }
     }
-    
+        
+    /**
+     * @brief inizializza la classe, il game screen e starta il gioco.
+     */
     public static void main(String[] args) {
         Game game = new Game();
         game.gamescreen.initImputs();
         game.start();
     }
 
-    //metodo del loop del gioco
+    /**
+     * @brief loop del gioco che gestisce FPS e UPS.
+     *
+     * grazie agli attributi ogni volta che cicla aggiorna le variabili di FPS e
+     * UPS e solo quando dall ultimo check supera il secondo le stampa.
+     */
     @Override
     public void run() {
         //settings per i frame e gli update
@@ -207,32 +249,75 @@ public class Game extends JFrame implements Runnable {
             }
         }
     }
-    //Getters and Setters
+    
+    /**
+     * @brief getter dell'oggetto render.
+     * 
+     * @return oggetto render
+     */
     public Render getRender() {
         return render;
     }
-
+    
+    /**
+     * @brief getter dell'oggetto menu.
+     * 
+     * @return oggetto menu
+     */
     public Menu getMenu() {
         return menu;
     }
-
+    
+    /**
+     * @brief getter dell'oggetto playing.
+     * 
+     * @return oggetto playing
+     */
     public Playing getPlaying() {
         return playing;
     }
-
+    
+    /**
+     * @brief getter dell'oggetto setting.
+     * 
+     * @return oggetto setting
+     */
     public Setting getSetting() {
         return setting;
     }
+    
+    /**
+     * @brief getter dell'oggetto editing.
+     * 
+     * @return oggetto editing
+     */
     public Editing getEditing(){
         return editing;
     }
+    
+    /**
+     * @brief getter dell'oggetto level1.
+     * 
+     * @return oggetto level1
+     */
     public Level1 getLevel1() {
         return level1;
     }   
+    
+    /**
+     * @brief metodo che restarta il primo livello.
+     * 
+     * viene modificata l'oggetto del primo livvello re inizializzandolo
+     */
     public  void restartLevel1(){
         level1= new Level1(this);   
     }
     
+    /**
+     * @brief getter dell'oggetto tilemanager.
+     * 
+     * @return oggetto tilemanager
+     */
     public TileManager getTileManager(){
         return tilemanager;
     }
