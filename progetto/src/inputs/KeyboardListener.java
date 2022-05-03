@@ -33,9 +33,26 @@ public class KeyboardListener implements KeyListener{
         else if(e.getKeyCode() == KeyEvent.VK_D)
            GameStates.gamestates = SETTINGS;
         else if(e.getKeyCode() == KeyEvent.VK_M)
-            GameStates.gamestates = EDIT;
+             switch(GameStates.gamestates){
+               case MENU:
+                        
+                   break;
+               case PLAYING:
+                        
+                   break;
+                   
+               case SETTINGS: 
+                   
+                   break;   
+               case EDIT:
+                        GameStates.gamestates = LVL1;
+                   break;
+               case LVL1:
+                        GameStates.gamestates = EDIT;
+                   break;
+            }
         else if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
-           switch(GameStates.gamestates){
+            switch(GameStates.gamestates){
                case MENU:
                         
                    break;
@@ -49,7 +66,7 @@ public class KeyboardListener implements KeyListener{
                case LVL1:
                         game.getLevel1().setPaused(!(game.getLevel1().getPaused()));
                    break;
-           }
+            }
         }
     }
 

@@ -109,7 +109,7 @@ public class Level1 extends GameScene implements SceneMethods{
         susano[2][1] = susanoall.getSubimage(128*3, 256, 128*4, 128*3);
         susano[3][0] = susanoall.getSubimage(0, 128*5, 128*5, 128*4);       
         for (int i = 0; i < 2; i++) {
-              susano[4][i] = susanoall.getSubimage(448*i, 128*9+3, 448, 128*4);         
+              susano[4][i] = susanoall.getSubimage(448*i, 128*9, 448, 128*4);         
         }
         for (int i = 0; i < 3; i++) {
               susano[5][i] = susanoall.getSubimage(298*i, 128*13, 298, 128*2);         

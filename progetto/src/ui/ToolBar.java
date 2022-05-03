@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import objects.Tile;
 import progetto.Game;
+import progetto.GameStates;
+import static progetto.GameStates.*;
 import scenes.Editing;
 
 
@@ -32,7 +34,7 @@ public class ToolBar extends Bar{
         Font f=new Font("Arial",Font.BOLD,19);
         Color c=new Color(255,0,0);
         //PULSANTE SALVA
-        save = new MyButton("SAVE",1800, 1000, 80, 30, f ,c);
+        save = new MyButton("SAVE",(int)(Game.currentScreenWidth*0.9375), (int)(Game.currentScreenHeight*0.9259), 80, 30, f ,c);
       
         //pulsanti con tutte le tile della mappa
         int[][] lvl = LevelBuild.getLevelData();  
@@ -105,6 +107,7 @@ public class ToolBar extends Bar{
     public void mouseClicked(MouseEvent e) {
         if(save.getBounds().contains(e.getX(), e.getY())){
             saveLevel();
+            GameStates.gamestates = LVL1;
         }
         else{
             for (MyButton b: tileButtons) {
