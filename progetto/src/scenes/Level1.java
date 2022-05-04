@@ -1,4 +1,3 @@
-
 package scenes;
 
 import helpz.LoadSave;
@@ -7,6 +6,7 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
+import managers.EnemyManager;
 import progetto.Game;
 import ui.ActionBar;
 import ui.MyButton;
@@ -17,12 +17,20 @@ import objects.Tile;
 public class Level1 extends GameScene implements SceneMethods{
     private BufferedImage[] naruto;
     private BufferedImage narutoall;
+    
+    private EnemyManager enemymanager;
+    ////////////////////
     private BufferedImage[] luffy;
     private BufferedImage luffyall;
+    
     private int[] susanoIndex;
     private int susanoRow=0;
     private BufferedImage[][] susano;
     private BufferedImage susanoall;
+    
+    private BufferedImage sasukeAttackall;
+    private BufferedImage[][] sasukeAttack;
+    /////////////////////
     
     private BufferedImage ingranaggio;
     
@@ -31,7 +39,7 @@ public class Level1 extends GameScene implements SceneMethods{
     
     private int mouseX,mouseY;
     
-    private int aniTick,aniIndex, aniSpeed = 18;
+    private int aniTick,aniIndex,Index7, aniSpeed = 18;
     private int assex=100;
     
     
@@ -53,12 +61,12 @@ public class Level1 extends GameScene implements SceneMethods{
         initButtons();
         
         loadAnimations();
+              
         
-        
-        loadLevel();
     }  
     public void initClasses(){
         loadLevel();
+        enemymanager = new EnemyManager(this);
         int tempHeight=(int)(Game.currentScreenHeight*0.17);
         bottombar=new ActionBar(0, Game.currentScreenHeight-tempHeight, Game.currentScreenWidth, tempHeight, this);  
         pauseoverlay=new PauseOverlay(this, super.getGame());
@@ -69,6 +77,7 @@ public class Level1 extends GameScene implements SceneMethods{
         narutoall= LoadSave.getImage(LoadSave.NARUTO);
         luffyall= LoadSave.getImage(LoadSave.LUFFY);
         susanoall= LoadSave.getImage(LoadSave.SUSANO);
+        sasukeAttackall= LoadSave.getImage(LoadSave.SASUKE_ATTACK);
         
     }
     private void initButtons() {
@@ -90,6 +99,13 @@ public class Level1 extends GameScene implements SceneMethods{
         luffy=new BufferedImage[8];
         for (int i = 0; i < naruto.length; i++) {
             luffy[i] = luffyall.getSubimage(75*i, 0, 75, 75);        
+        }
+        sasukeAttack=new BufferedImage[2][7];
+        for (int i = 0; i < sasukeAttack[0].length; i++) {
+            sasukeAttack[0][i] = sasukeAttackall.getSubimage(64*i, 0, 64, 128);        
+        }
+        for (int i = 0; i < 3; i++) {
+            sasukeAttack[1][i] = sasukeAttackall.getSubimage(64*i, 128, 64, 64);        
         }
         loadSusano();
     }
@@ -132,10 +148,15 @@ public class Level1 extends GameScene implements SceneMethods{
         if(aniTick>= aniSpeed){
             aniTick=0;
             aniIndex++;
+            if(Index7 < 6)
+                Index7++;
+            
             susanoIndex[susanoRow]++;
             
             if(aniIndex>= naruto.length)
                 aniIndex=0;
+                
+            
             
             if(susanoIndex[0]>= 7){
                 susanoIndex[0]=0;
@@ -173,17 +194,31 @@ public class Level1 extends GameScene implements SceneMethods{
     }
     
     public void updates(){
-        
+        enemymanager.update();
     }
-    
+    int fire=890;
+    int fireIndex=0;
     @Override
     public void render(Graphics g) {
         drawBackground(g);
         g.drawImage(ingranaggio, 10, 10, 80, 80, null);
         drawButton(g);
+        enemymanager.draw(g);
               
         g.drawImage(naruto[aniIndex], assex, 100, 134, 134, null);
-           
+        g.drawImage(sasukeAttack[0][Index7], 900, 400, 64, 128, null);
+        if(Index7>=5){
+            g.drawImage(sasukeAttack[1][fireIndex/40], fire, 435, 64, 64, null);
+            fire--;
+            if(fireIndex<119)
+                fireIndex++;
+            if(fire<=-64){
+                fire=890;
+                Index7=0;
+                fireIndex=0;
+            }
+        }
+        
         //////////////
         int susanoX=600;
         int susanoY=600;
@@ -232,7 +267,7 @@ public class Level1 extends GameScene implements SceneMethods{
         for (int y = 0; y < lvl.length; y++) {
             for (int x = 0; x < lvl[0].length; x++) {
                 int id= lvl[y][x];
-                g.drawImage(game.getTileManager().getSprite(id), x*Tile.spriteWidth, y*Tile.spriteHeight, null);
+                g.drawImage(game.getTileManager().getSprite(id), x*Tile.spriteWidth, y*Tile.spriteHeight,Tile.spriteWidth,Tile.spriteHeight, null);
             }
         }
     }
@@ -248,12 +283,14 @@ public class Level1 extends GameScene implements SceneMethods{
     }
     @Override
     public void mouseClicked(MouseEvent e) {
-        if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
-            setPaused(!getPaused());
-        }
         if(e.getY()>(int)(Game.currentScreenHeight*0.829)){
             bottombar.mouseClicked(e);
-        }   
+        }else{
+            if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
+            setPaused(!getPaused());
+            }
+            enemymanager.addEnemy(e.getX(), e.getY());     
+        }  
     }
     @Override
     public void mouseMoved(MouseEvent e) {

@@ -1,6 +1,7 @@
 package objects;
 
-import helpz.LevelBuild;
+import helpz.ImgFix;
+import helpz.LoadSave;
 import java.awt.image.BufferedImage;
 import progetto.Game;
 
@@ -22,7 +23,7 @@ public class Tile {
         this.name=name;
         
         
-        lvl = LevelBuild.getLevelData();  
+        lvl = LoadSave.loadLevel("level1");;  
         tempHeight =(int)(Game.currentScreenHeight*0.17);
         spriteWidth = Game.currentScreenWidth/lvl[0].length;
         spriteHeight = (Game.currentScreenHeight-tempHeight)/lvl.length;

@@ -1,6 +1,6 @@
 package scenes;
 
-import helpz.LevelBuild;
+import helpz.ImgFix;
 import helpz.LoadSave;
 import java.awt.Color;
 import java.awt.Font;

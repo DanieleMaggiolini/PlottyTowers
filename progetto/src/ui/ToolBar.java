@@ -1,7 +1,8 @@
 
 package ui;
 
-import helpz.LevelBuild;
+import helpz.ImgFix;
+import helpz.LoadSave;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -37,13 +38,13 @@ public class ToolBar extends Bar{
         save = new MyButton("SAVE",(int)(Game.currentScreenWidth*0.9375), (int)(Game.currentScreenHeight*0.9259), 80, 30, f ,c);
       
         //pulsanti con tutte le tile della mappa
-        int[][] lvl = LevelBuild.getLevelData();  
+        int[][] lvl = LoadSave.loadLevel("level1");
         int tempHeight=(int)(Game.currentScreenHeight*0.17);
         int w = Game.currentScreenWidth/lvl[0].length-10;
         int h= (Game.currentScreenHeight-tempHeight)/lvl.length-10;
         int x = 20;
         int yOffset = 70;
-        int XOffset= 60;
+        int XOffset= (int)(Game.currentScreenWidth*0.031);
         
         int i=0;
         for (Tile tile : editing.getGame().getTileManager().tiles) {

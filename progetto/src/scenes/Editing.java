@@ -1,7 +1,7 @@
 
 package scenes;
 
-import helpz.LevelBuild;
+import helpz.ImgFix;
 import helpz.LoadSave;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
@@ -48,7 +48,7 @@ public class Editing extends GameScene implements SceneMethods{
         for (int y = 0; y < lvl.length; y++) {
             for (int x = 0; x < lvl[0].length; x++) {
                 int id= lvl[y][x];
-                g.drawImage(game.getTileManager().getSprite(id), x*Tile.spriteWidth, y*Tile.spriteHeight, null);
+                g.drawImage(game.getTileManager().getSprite(id), x*Tile.spriteWidth, y*Tile.spriteHeight, Tile.spriteWidth,Tile.spriteHeight, null);
             }
         }
         

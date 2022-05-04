@@ -1,6 +1,6 @@
 package managers;
 
-import helpz.LevelBuild;
+import helpz.ImgFix;
 import helpz.LoadSave;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;

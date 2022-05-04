@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/scenes/Level1.java</file>
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/ui/PauseOverlay.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/managers/EnemyManager.java</file>
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/ui/ToolBar.java</file>
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/helpz/LoadSave.java</file>
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/progetto/Game.java</file>
@@ -14,8 +15,10 @@
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/objects/Tile.java</file>
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/ui/ActionBar.java</file>
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/scenes/Editing.java</file>
-            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/helpz/LevelBuild.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/helpz/ImgFix.java</file>
             <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/scenes/GameScene.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/scenes/Menu.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/enemies/Enemy.java</file>
         </group>
     </open-files>
 </project-private>
