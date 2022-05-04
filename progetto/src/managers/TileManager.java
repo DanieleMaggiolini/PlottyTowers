@@ -1,5 +1,6 @@
 package managers;
 
+import static helpz.Constants.Tiles.*;
 import helpz.ImgFix;
 import helpz.LoadSave;
 import java.awt.image.BufferedImage;
@@ -18,15 +19,25 @@ public class TileManager {
     
     private void createTiles() {
         int id=0;
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 9; j++) {
-                tiles.add(STRADA = new Tile(getSprite(j, i), id++, "strada"));
+                tiles.add(STRADA = new Tile(getSprite(j, i), id++, ROAD_TILE));
             }
         }
-        tiles.add(STRADA = new Tile(getSprite(0, 6), id++, "strada"));
-        tiles.add(STRADA = new Tile(getSprite(1, 6), id++, "strada"));
-        tiles.add(STRADA = new Tile(getSprite(2, 6), id++, "strada"));
-        tiles.add(STRADA = new Tile(getSprite(3, 6), id++, "strada"));
+        tiles.add(STRADA = new Tile(getSprite(0, 5), id++, ROAD_TILE));
+        tiles.add(STRADA = new Tile(getSprite(1, 5), id++, ROAD_TILE));
+        tiles.add(STRADA = new Tile(getSprite(2, 5), id++, ROAD_TILE));
+        tiles.add(STRADA = new Tile(getSprite(3, 5), id++, ROAD_TILE));
+        tiles.add(STRADA = new Tile(getSprite(4, 5), id++, GRASS_TILE));
+        tiles.add(STRADA = new Tile(getSprite(5, 5), id++, GRASS_TILE));
+        tiles.add(STRADA = new Tile(getSprite(6, 5), id++, ROAD_TILE));
+        tiles.add(STRADA = new Tile(getSprite(7, 5), id++, ROAD_TILE));
+        tiles.add(STRADA = new Tile(getSprite(8, 5), id++, ROAD_TILE));
+        ///////////////
+        tiles.add(STRADA = new Tile(getSprite(0, 6), id++, ROAD_TILE));
+        tiles.add(STRADA = new Tile(getSprite(1, 6), id++, ROAD_TILE));
+        tiles.add(STRADA = new Tile(getSprite(2, 6), id++, ROAD_TILE));
+        tiles.add(STRADA = new Tile(getSprite(3, 6), id++, WATER_TILE));
     }
     
     private void loadAtlas() {

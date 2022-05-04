@@ -281,6 +281,15 @@ public class Level1 extends GameScene implements SceneMethods{
     public boolean getPaused(){
         return paused;
     }
+    public int getTileType(int x, int y){
+        if(x>= Game.currentScreenWidth || x<0)
+            return 0;
+        if(y>=Tile.spriteHeight*14 || y<0)
+            return 0;   
+        int id= lvl[y/Tile.spriteHeight][x/Tile.spriteWidth];
+        return game.getTileManager().getTile(id).getTileType();
+    }
+    
     @Override
     public void mouseClicked(MouseEvent e) {
         if(e.getY()>(int)(Game.currentScreenHeight*0.829)){
@@ -289,7 +298,7 @@ public class Level1 extends GameScene implements SceneMethods{
             if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
             setPaused(!getPaused());
             }
-            enemymanager.addEnemy(e.getX(), e.getY());     
+            enemymanager.addEnemy(e.getX()/Tile.spriteWidth*Tile.spriteWidth, e.getY()/Tile.spriteHeight*Tile.spriteHeight);     
         }  
     }
     @Override

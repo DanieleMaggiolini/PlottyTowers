@@ -8,21 +8,16 @@ import progetto.Game;
 public class Tile {
     
     private BufferedImage sprite;
-    private int id;
-    private String name;
-    
-    
+    private int id, tiletype;
     public static int spriteWidth;
     public static int spriteHeight;
     private int[][] lvl;
     private int tempHeight;
     
-    public Tile(BufferedImage sprite, int id, String name){
+    public Tile(BufferedImage sprite, int id, int tiletype){
         this.sprite = sprite;
-        this.id=id;
-        this.name=name;
-        
-        
+        this.id=id;    
+        this.tiletype=tiletype;
         lvl = LoadSave.loadLevel("level1");;  
         tempHeight =(int)(Game.currentScreenHeight*0.17);
         spriteWidth = Game.currentScreenWidth/lvl[0].length;
@@ -36,15 +31,14 @@ public class Tile {
     public int getId() {
         return id;
     }
-
-    public String getName() {
-        return name;
-    }
     
     public int getSpriteWidth(){
         return spriteWidth;
     }
     public int getSpriteHeight(){
         return spriteHeight;
+    }
+    public int getTileType(){
+        return tiletype;
     }
 }
