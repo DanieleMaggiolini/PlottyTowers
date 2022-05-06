@@ -297,8 +297,7 @@ public class Level1 extends GameScene implements SceneMethods{
         }else{
             if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
             setPaused(!getPaused());
-            }
-            enemymanager.addEnemy(e.getX()/Tile.spriteWidth*Tile.spriteWidth, e.getY()/Tile.spriteHeight*Tile.spriteHeight);     
+            }  
         }  
     }
     @Override
