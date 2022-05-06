@@ -25,7 +25,6 @@ public class LoadSave {
     public static final String SASUKE_ATTACK = "image/tower/sasukeAttack.png";
     public static final String OROCHIMARU = "image/enemy/orochimaru.png";
     
-    
     //LOAD IMAGE     
     public static BufferedImage getImage(String name){
         BufferedImage img = null;

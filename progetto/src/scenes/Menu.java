@@ -71,10 +71,12 @@ public class Menu extends GameScene implements SceneMethods {
     
     @Override
     public void mouseClicked(MouseEvent e) {
+        System.out.println(e.getX() +" - "+ e.getY());
         if (Bplaying.getBounds().contains(e.getX(), e.getY())) {
             setGameState(PLAYING);
         }else if (Bsettings.getBounds().contains(e.getX(), e.getY())) {
             setGameState(SETTINGS);
+            game.getSetting().setPrevious("menu");
         }else if (Bquit.getBounds().contains(e.getX(), e.getY())) {
             System.exit(0);
         }
