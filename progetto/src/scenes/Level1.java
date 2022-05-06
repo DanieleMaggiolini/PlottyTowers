@@ -69,7 +69,7 @@ public class Level1 extends GameScene implements SceneMethods{
         enemymanager = new EnemyManager(this);
         int tempHeight=(int)(Game.currentScreenHeight*0.17);
         bottombar=new ActionBar(0, Game.currentScreenHeight-tempHeight, Game.currentScreenWidth, tempHeight, this);  
-        pauseoverlay=new PauseOverlay(this, super.getGame());
+        pauseoverlay=new PauseOverlay(this, super.getGame(), "level1");
         susanoIndex= new int[8];
     }
     private void impImage() {
