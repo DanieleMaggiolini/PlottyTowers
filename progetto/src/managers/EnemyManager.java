@@ -2,7 +2,9 @@
 package managers;
 
 import enemies.Enemy;
+import enemies.*;
 import static helpz.Constants.Direction.*;
+import static helpz.Constants.Enemy.*;
 import static helpz.Constants.Tiles.*;
 import helpz.LoadSave;
 import java.awt.Graphics;
@@ -15,14 +17,14 @@ public class EnemyManager {
     Level1 level1;
     private BufferedImage[][] enemyImgs;
     private ArrayList<Enemy> enemies = new ArrayList<>();
-    private float speed=0.5f;
+    private float speed=1f;
     private int aniTick,aniIndex, aniSpeed = 5;
     
     public EnemyManager(Level1 level1) {
         this.level1= level1;
         enemyImgs = new BufferedImage[3][6];
         loadEnemyImgs();
-        addEnemy(0*Tile.spriteWidth, 3*Tile.spriteHeight);
+        addEnemy(0*Tile.spriteWidth, 3*Tile.spriteHeight,OROCHIMARU);
     }
     private void loadEnemyImgs(){
         BufferedImage enemy1 = LoadSave.getImage(LoadSave.OROCHIMARU);
@@ -36,6 +38,8 @@ public class EnemyManager {
         } 
     }
     public void updateEnemyMove(Enemy e){
+        if(e.getLastDir()==-1)
+            setDirection(e);
         int newX= (int)(e.getX() + getSpeedWidth(e.getLastDir()));
         int newY = (int)(e.getY() + getSpeedHeight(e.getLastDir()));
         if(getTileType(newX,newY)== ROAD_TILE){
@@ -106,8 +110,19 @@ public class EnemyManager {
         return 0;
     }
     
-    public void addEnemy(int x, int y){
-        enemies.add(new Enemy(x, y, 0, 0));//Tile.spriteWidth*x, Tile.spriteHeight*y
+    public void addEnemy(int x, int y, int enemytype){
+        switch(enemytype){
+            case OROCHIMARU:
+                enemies.add(new Orochimaru(x, y, 0));
+                break;
+            case TOBI:
+                enemies.add(new Tobi(x, y, 0));
+                break;
+            case MADARA:
+                enemies.add(new Madara(x, y, 0));
+                break;
+        }
+        
     }
     public void draw(Graphics g){
         for (Enemy e : enemies) {
@@ -115,7 +130,7 @@ public class EnemyManager {
         }   
     }
     private void drawEnemy(Enemy e, Graphics g){
-        g.drawImage(enemyImgs[0][aniIndex], (int)e.getX(), (int)e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+        g.drawImage(enemyImgs[e.getEnemyType()][aniIndex], (int)e.getX(), (int)e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
         updateAnimationTick();
     }
     private void updateAnimationTick() {

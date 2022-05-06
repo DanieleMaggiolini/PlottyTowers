@@ -13,4 +13,9 @@ public class Constants {
         public static final int GRASS_TILE=1;
         public static final int ROAD_TILE=2;
     }
+    public static class Enemy{
+        public static final int OROCHIMARU=0;
+        public static final int TOBI=1;
+        public static final int MADARA=2;
+    }
 }

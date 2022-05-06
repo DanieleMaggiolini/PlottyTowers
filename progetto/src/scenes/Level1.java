@@ -39,7 +39,7 @@ public class Level1 extends GameScene implements SceneMethods{
     
     private int mouseX,mouseY;
     
-    private int aniTick,aniIndex,Index7, aniSpeed = 18;
+    private int aniTick,aniIndex,Index7, aniSpeed = 5;
     private int assex=100;
     
     

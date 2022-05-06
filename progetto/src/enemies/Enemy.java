@@ -5,7 +5,7 @@ import java.awt.Rectangle;
 import objects.Tile;
 import static helpz.Constants.Direction.*;
 
-public class Enemy {
+public abstract class Enemy {
     private float x, y;
     private Rectangle bounds;
     private int hp;
@@ -19,7 +19,7 @@ public class Enemy {
         this.id = id;
         this.enemyType = enemyType;
         bounds = new Rectangle((int)x , (int) y, Tile.spriteWidth, Tile.spriteHeight);
-        lastDir=RIGHT;
+        lastDir=-1;
     }
     
     public void move(float s, int dir){
