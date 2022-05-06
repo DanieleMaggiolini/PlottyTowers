@@ -3,13 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/minotti/PlottyTowers/PlottyTowers/progetto/src/enemies/Madara.java</file>
-            <file>file:/D:/minotti/PlottyTowers/PlottyTowers/progetto/src/enemies/Enemy.java</file>
-            <file>file:/D:/minotti/PlottyTowers/PlottyTowers/progetto/src/helpz/LoadSave.java</file>
-            <file>file:/D:/minotti/PlottyTowers/PlottyTowers/progetto/src/enemies/Tobi.java</file>
-            <file>file:/D:/minotti/PlottyTowers/PlottyTowers/progetto/src/enemies/Orochimaru.java</file>
-            <file>file:/D:/minotti/PlottyTowers/PlottyTowers/progetto/src/helpz/Constants.java</file>
-            <file>file:/D:/minotti/PlottyTowers/PlottyTowers/progetto/src/managers/EnemyManager.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/scenes/Level1.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/managers/TileManager.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/managers/EnemyManager.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/ui/PauseOverlay.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/helpz/Utilz.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/ui/ToolBar.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/enemies/Madara.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/helpz/LoadSave.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/scenes/Setting.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/objects/Tile.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/ui/PauseButton.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/helpz/ImgFix.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/helpz/Constants.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/scenes/Menu.java</file>
+            <file>file:/C:/Users/Utente/Desktop/PlottyTowers/PlottyTowers/progetto/src/enemies/Enemy.java</file>
         </group>
     </open-files>
 </project-private>

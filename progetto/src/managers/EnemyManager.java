@@ -17,20 +17,29 @@ public class EnemyManager {
     Level1 level1;
     private BufferedImage[][] enemyImgs;
     private ArrayList<Enemy> enemies = new ArrayList<>();
-    private float speed=1f;
-    private int aniTick,aniIndex, aniSpeed = 5;
+    private float speed=1.5f;
+    private int aniTick,index6=0,index8=0, aniSpeed = 30;
     
     public EnemyManager(Level1 level1) {
         this.level1= level1;
-        enemyImgs = new BufferedImage[3][6];
+        enemyImgs = new BufferedImage[3][8];
         loadEnemyImgs();
         addEnemy(0*Tile.spriteWidth, 3*Tile.spriteHeight,OROCHIMARU);
+        addEnemy(1*Tile.spriteWidth, 3*Tile.spriteHeight,TOBI);
+        addEnemy(2*Tile.spriteWidth, 3*Tile.spriteHeight,MADARA);
     }
     private void loadEnemyImgs(){
-        BufferedImage enemy1 = LoadSave.getImage(LoadSave.OROCHIMARU);
-        for (int i = 0; i < 6; i++) {
-            enemyImgs[0][i] = enemy1.getSubimage(i*64, 0, 64, 64);
+        BufferedImage enemy1 = LoadSave.getImage(LoadSave.NARUTO_ENEMY);
+        for (int i = 0; i < enemyImgs.length; i++) {    
+            for(int j=0; j < enemyImgs[i].length; j++){
+                if(i!=1 && j>5){
+                    
+                }else{
+                    enemyImgs[i][j] = enemy1.getSubimage(j*64, i*64, 64, 64);
+                }           
+            }
         }
+        
     }
     public void update(){
         for (Enemy e : enemies){
@@ -45,6 +54,7 @@ public class EnemyManager {
         if(getTileType(newX,newY)== ROAD_TILE){
             e.move(speed, e.getLastDir());
         }else if(isEnd(e)){
+            
         }else{
             setDirection(e);
         }
@@ -130,17 +140,29 @@ public class EnemyManager {
         }   
     }
     private void drawEnemy(Enemy e, Graphics g){
-        g.drawImage(enemyImgs[e.getEnemyType()][aniIndex], (int)e.getX(), (int)e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+        switch(e.getEnemyType()){
+            case 0:
+                g.drawImage(enemyImgs[0][index6], (int)e.getX(), (int)e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                break;
+            case 1:
+                g.drawImage(enemyImgs[1][index8], (int)e.getX(), (int)e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                break;
+            case 2:
+                g.drawImage(enemyImgs[2][index6], (int)e.getX(), (int)e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                break;
+        }
         updateAnimationTick();
     }
     private void updateAnimationTick() {
         aniTick++;
         if(aniTick>= aniSpeed){
             aniTick=0;
-            aniIndex++; 
-            
-            if(aniIndex>= enemyImgs[0].length)
-                aniIndex=0;
+            index6++; 
+            index8++; 
+            if(index6>= 6)
+                index6=0;
+            if(index8>=8)
+                index8=0;
         }
     }
 }
