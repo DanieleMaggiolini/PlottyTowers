@@ -17,5 +17,22 @@ public class Constants {
         public static final int OROCHIMARU=0;
         public static final int TOBI=1;
         public static final int MADARA=2;
+        
+        public static float getSpeed(int enemytype){
+            switch(enemytype){
+                case OROCHIMARU:
+                    return 1.3f;
+                case TOBI:
+                    return 1.4f;
+                case MADARA:
+                    return 1.5f;
+            }
+            return 0;
+        }
+    }
+    public static class Towers{
+        public static final int NARUTO=0;
+        public static final int SASUKE=1;
+        public static final int SAKURA=2;
     }
 }

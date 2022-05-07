@@ -7,6 +7,7 @@ import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import managers.EnemyManager;
+import managers.TowerManager;
 import progetto.Game;
 import ui.ActionBar;
 import ui.MyButton;
@@ -19,6 +20,7 @@ public class Level1 extends GameScene implements SceneMethods{
     private BufferedImage narutoall;
     
     private EnemyManager enemymanager;
+    private TowerManager towermanager;
     ////////////////////
     private BufferedImage[] luffy;
     private BufferedImage luffyall;
@@ -67,6 +69,7 @@ public class Level1 extends GameScene implements SceneMethods{
     public void initClasses(){
         loadLevel();
         enemymanager = new EnemyManager(this);
+        towermanager = new TowerManager(this);
         int tempHeight=(int)(Game.currentScreenHeight*0.17);
         bottombar=new ActionBar(0, Game.currentScreenHeight-tempHeight, Game.currentScreenWidth, tempHeight, this);  
         pauseoverlay=new PauseOverlay(this, super.getGame(), "level1");
@@ -77,7 +80,7 @@ public class Level1 extends GameScene implements SceneMethods{
         narutoall= LoadSave.getImage(LoadSave.NARUTO);
         luffyall= LoadSave.getImage(LoadSave.LUFFY);
         susanoall= LoadSave.getImage(LoadSave.SUSANO);
-        sasukeAttackall= LoadSave.getImage(LoadSave.SASUKE_ATTACK);
+        sasukeAttackall= LoadSave.getImage(LoadSave.SASUKE_BASE);
         
     }
     private void initButtons() {
@@ -195,6 +198,7 @@ public class Level1 extends GameScene implements SceneMethods{
     
     public void updates(){
         enemymanager.update();
+        towermanager.update();
     }
     int fire=890;
     int fireIndex=0;
@@ -204,7 +208,8 @@ public class Level1 extends GameScene implements SceneMethods{
         g.drawImage(ingranaggio, 10, 10, 80, 80, null);
         drawButton(g);
         enemymanager.draw(g);
-              
+        towermanager.draw(g);
+        
         g.drawImage(naruto[aniIndex], assex, 100, 134, 134, null);
         g.drawImage(sasukeAttack[0][Index7], 900, 400, 64, 128, null);
         if(Index7>=5){

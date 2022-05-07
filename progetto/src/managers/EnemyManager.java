@@ -17,16 +17,26 @@ public class EnemyManager {
     Level1 level1;
     private BufferedImage[][] enemyImgs;
     private ArrayList<Enemy> enemies = new ArrayList<>();
-    private float speed=1.5f;
     private int aniTick,index6=0,index8=0, aniSpeed = 30;
+    private int startX, startY, endX, endY;
     
     public EnemyManager(Level1 level1) {
         this.level1= level1;
         enemyImgs = new BufferedImage[3][8];
+        startX=0*Tile.spriteWidth;
+        startY=3*Tile.spriteHeight;
+        endX= 29*Tile.spriteWidth;
+        endY= 12*Tile.spriteHeight;
         loadEnemyImgs();
-        addEnemy(0*Tile.spriteWidth, 3*Tile.spriteHeight,OROCHIMARU);
-        addEnemy(1*Tile.spriteWidth, 3*Tile.spriteHeight,TOBI);
-        addEnemy(2*Tile.spriteWidth, 3*Tile.spriteHeight,MADARA);
+        addEnemy(OROCHIMARU);
+        addEnemy(TOBI);
+        addEnemy(MADARA);
+    }
+    public void setStartEnd(int sx, int sy, int ex, int ey){
+        this.startX=sx;
+        this.startY=sy;
+        this.endX=ex;
+        this.endY=ey;
     }
     private void loadEnemyImgs(){
         BufferedImage enemy1 = LoadSave.getImage(LoadSave.NARUTO_ENEMY);
@@ -49,12 +59,12 @@ public class EnemyManager {
     public void updateEnemyMove(Enemy e){
         if(e.getLastDir()==-1)
             setDirection(e);
-        int newX= (int)(e.getX() + getSpeedWidth(e.getLastDir()));
-        int newY = (int)(e.getY() + getSpeedHeight(e.getLastDir()));
+        int newX= (int)(e.getX() + getSpeedWidth(e.getLastDir(), e.getEnemyType()));
+        int newY = (int)(e.getY() + getSpeedHeight(e.getLastDir(), e.getEnemyType()));
         if(getTileType(newX,newY)== ROAD_TILE){
-            e.move(speed, e.getLastDir());
+            e.move(getSpeed(e.getEnemyType()), e.getLastDir());
         }else if(isEnd(e)){
-            
+            System.out.println("live lost");
         }else{
             setDirection(e);
         }
@@ -63,33 +73,40 @@ public class EnemyManager {
        return level1.getTileType(x, y);
     }
     private boolean isEnd(Enemy e){
-        return false;
+        if(e.getX()==endX)
+            if(e.getY()==endY)
+                return true;         
+        return false;      
     }        
     private void setDirection(Enemy e){
         int dir=e.getLastDir();
         
         int cordX = (int)(e.getX()/Tile.spriteWidth); 
         int cordY = (int)(e.getY()/Tile.spriteHeight);
+        
         fixTile(e, dir, cordX, cordY);
         
+        if(isEnd(e))
+            return;
+        
         if(dir == LEFT || dir == RIGHT){
-            int newY = (int)(e.getY() + getSpeedHeight(UP)); 
+            int newY = (int)(e.getY() + getSpeedHeight(UP, e.getEnemyType())); 
             if(getTileType((int)(e.getX()),newY)== ROAD_TILE){
-                e.move(speed,UP);
+                e.move(getSpeed(e.getEnemyType()),UP);
                 return;
             }
-            newY = (int)(e.getY() + getSpeedHeight(DOWN));
+            newY = (int)(e.getY() + getSpeedHeight(DOWN, e.getEnemyType()));
             if(getTileType((int)(e.getX()),newY)== ROAD_TILE)
-                e.move(speed,DOWN);    
+                e.move(getSpeed(e.getEnemyType()),DOWN);    
         }else{
-            int newX= (int)(e.getX() + getSpeedWidth(RIGHT));
+            int newX= (int)(e.getX() + getSpeedWidth(RIGHT, e.getEnemyType()));
             if(getTileType(newX,(int)(e.getY()))== ROAD_TILE){
-                e.move(speed,RIGHT);
+                e.move(getSpeed(e.getEnemyType()),RIGHT);
                 return;
             }
-            newX= (int)(e.getX() + getSpeedWidth(LEFT));
+            newX= (int)(e.getX() + getSpeedWidth(LEFT, e.getEnemyType()));
             if(getTileType(newX,(int)(e.getY()))== ROAD_TILE)
-                e.move(speed,LEFT);    
+                e.move(getSpeed(e.getEnemyType()),LEFT);    
         }  
     }     
     public void fixTile(Enemy e, int dir, int x, int y){
@@ -105,31 +122,31 @@ public class EnemyManager {
         }
         e.setPosition(x*Tile.spriteWidth,y*Tile.spriteHeight);
     }
-    public float getSpeedWidth(int dir){
+    public float getSpeedWidth(int dir, int enemytype){
         if(dir==LEFT)
-            return -speed;
+            return -getSpeed(enemytype);
         if(dir==RIGHT)
-            return speed+Tile.spriteWidth;
+            return getSpeed(enemytype)+Tile.spriteWidth;
         return 0;
     }
-    public float getSpeedHeight(int dir){
+    public float getSpeedHeight(int dir, int enemytype){
         if(dir==UP)
-            return -speed;
+            return -getSpeed(enemytype);
         if(dir==DOWN)
-            return speed+Tile.spriteHeight;
+            return getSpeed(enemytype)+Tile.spriteHeight;
         return 0;
     }
     
-    public void addEnemy(int x, int y, int enemytype){
+    public void addEnemy(int enemytype){
         switch(enemytype){
             case OROCHIMARU:
-                enemies.add(new Orochimaru(x, y, 0));
+                enemies.add(new Orochimaru(startX, startY, 0));
                 break;
             case TOBI:
-                enemies.add(new Tobi(x, y, 0));
+                enemies.add(new Tobi(startX, startY, 0));
                 break;
             case MADARA:
-                enemies.add(new Madara(x, y, 0));
+                enemies.add(new Madara(startX, startY, 0));
                 break;
         }
         
