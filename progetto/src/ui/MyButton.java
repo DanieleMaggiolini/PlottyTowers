@@ -29,6 +29,19 @@ public class MyButton {
        
        initBounds();
     }
+    
+    //pulsanti NORMALI
+    public MyButton(String text, int x, int y, int width, int height, int id){
+       this.text=text;
+       this.x=x;
+       this.y=y;
+       this.width=width;
+       this.height=height;
+       this.id=id;
+       
+       initBounds();
+    }
+    
     //pulsanti con font e colore
     public MyButton(String text, int x, int y, int width, int height,Font f, Color c){
        this.text=text;

@@ -29,7 +29,7 @@ public class TileManager {
         tiles.add(STRADA = new Tile(getSprite(2, 5), id++, ROAD_TILE));
         tiles.add(STRADA = new Tile(getSprite(3, 5), id++, ROAD_TILE));
         tiles.add(STRADA = new Tile(getSprite(4, 5), id++, GRASS_TILE));
-        tiles.add(STRADA = new Tile(getSprite(5, 5), id++, GRASS_TILE));
+        tiles.add(STRADA = new Tile(getSprite(5, 5), id++, WATER_TILE));
         tiles.add(STRADA = new Tile(getSprite(6, 5), id++, ROAD_TILE));
         tiles.add(STRADA = new Tile(getSprite(7, 5), id++, ROAD_TILE));
         tiles.add(STRADA = new Tile(getSprite(8, 5), id++, ROAD_TILE));

@@ -1,5 +1,6 @@
 package scenes;
 
+import static helpz.Constants.Tiles.*;
 import helpz.LoadSave;
 import java.awt.Color;
 import java.awt.Font;
@@ -8,11 +9,13 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import managers.EnemyManager;
 import managers.TowerManager;
-import progetto.Game;
+import progetto.*;
 import ui.ActionBar;
 import ui.MyButton;
 import ui.PauseOverlay;
 import objects.Tile;
+import towers.*;
+import managers.*;
 
 
 public class Level1 extends GameScene implements SceneMethods{
@@ -51,6 +54,8 @@ public class Level1 extends GameScene implements SceneMethods{
     
     private PauseOverlay pauseoverlay;
     private boolean paused=false;
+    
+    private Tower selectedTower;
             
     public Level1(Game game) {
         super(game);
@@ -267,6 +272,7 @@ public class Level1 extends GameScene implements SceneMethods{
         }   
         bottombar.draw(g);
         
+        drawSelectedTower(g);
     }
     private void drawBackground(Graphics g){
         for (int y = 0; y < lvl.length; y++) {
@@ -303,8 +309,22 @@ public class Level1 extends GameScene implements SceneMethods{
             if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
             setPaused(!getPaused());
             }  
+            if(selectedTower != null){
+                if(isTileAvailable(mouseX, mouseY)){
+                    towermanager.addTower(selectedTower, mouseX, mouseY);
+                    selectedTower = null;
+                }
+                
+            }
         }  
     }
+    
+    private boolean isTileAvailable(int x, int y) {
+        int id = lvl[y/Tile.spriteHeight][x/Tile.spriteWidth];
+        int tiletype = game.getTileManager().getTile(id).getTileType();
+        return tiletype == GRASS_TILE;
+    }
+    
     @Override
     public void mouseMoved(MouseEvent e) {
         Bmenu.setMouseOver(false);
@@ -347,4 +367,19 @@ public class Level1 extends GameScene implements SceneMethods{
     private void resetButtons() {
         Bmenu.resetBooleans();
     }  
+    
+    public TowerManager getTowerManager(){
+        return towermanager;
+    }
+    
+    public void setSelectedTower(Tower selectedTower){
+        this.selectedTower = selectedTower;
+    }
+
+    private void drawSelectedTower(Graphics g) {
+        if(selectedTower != null)
+            g.drawImage(towermanager.getTowerImgs()[selectedTower.getTypetower()][0], mouseX, mouseY, null);
+    }
+
+    
 }
