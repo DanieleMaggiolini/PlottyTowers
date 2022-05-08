@@ -19,22 +19,16 @@ import managers.*;
 
 
 public class Level1 extends GameScene implements SceneMethods{
-    private BufferedImage[] naruto;
-    private BufferedImage narutoall;
+    private int aniTick, aniSpeed = 40;
     
     private EnemyManager enemymanager;
     private TowerManager towermanager;
     ////////////////////
-    private BufferedImage[] luffy;
-    private BufferedImage luffyall;
     
     private int[] susanoIndex;
     private int susanoRow=0;
     private BufferedImage[][] susano;
     private BufferedImage susanoall;
-    
-    private BufferedImage sasukeAttackall;
-    private BufferedImage[][] sasukeAttack;
     /////////////////////
     
     private BufferedImage ingranaggio;
@@ -43,10 +37,6 @@ public class Level1 extends GameScene implements SceneMethods{
     private ActionBar bottombar;
     
     private int mouseX,mouseY;
-    
-    private int aniTick,aniIndex,Index7, aniSpeed = 18;
-    private int assex=100;
-    
     
     private MyButton Bmenu;
     private Font f;
@@ -82,11 +72,7 @@ public class Level1 extends GameScene implements SceneMethods{
     }
     private void impImage() {
         ingranaggio= LoadSave.getImage(LoadSave.INGRANAGGIO);
-        narutoall= LoadSave.getImage(LoadSave.NARUTO);
-        luffyall= LoadSave.getImage(LoadSave.LUFFY);
-        susanoall= LoadSave.getImage(LoadSave.SUSANO);
-        sasukeAttackall= LoadSave.getImage(LoadSave.SASUKE_BASE);
-        
+        susanoall= LoadSave.getImage(LoadSave.SUSANO);     
     }
     private void initButtons() {
         int w = 80;
@@ -100,21 +86,6 @@ public class Level1 extends GameScene implements SceneMethods{
     }
     
      private void loadAnimations() {
-        naruto=new BufferedImage[6];
-        for (int i = 0; i < naruto.length; i++) {
-            naruto[i] = narutoall.getSubimage(64*i, 0, 64, 64);        
-        }
-        luffy=new BufferedImage[8];
-        for (int i = 0; i < naruto.length; i++) {
-            luffy[i] = luffyall.getSubimage(75*i, 0, 75, 75);        
-        }
-        sasukeAttack=new BufferedImage[2][7];
-        for (int i = 0; i < sasukeAttack[0].length; i++) {
-            sasukeAttack[0][i] = sasukeAttackall.getSubimage(64*i, 0, 64, 128);        
-        }
-        for (int i = 0; i < 3; i++) {
-            sasukeAttack[1][i] = sasukeAttackall.getSubimage(64*i, 128, 64, 64);        
-        }
         loadSusano();
     }
      private void loadSusano() {
@@ -152,18 +123,10 @@ public class Level1 extends GameScene implements SceneMethods{
         this.lvl=lvl;
     }
     private void updateAnimationTick() {
-        aniTick++;
-        if(aniTick>= aniSpeed){
+         aniTick++;
+            if(aniTick>= aniSpeed){
             aniTick=0;
-            aniIndex++;
-            if(Index7 < 6)
-                Index7++;
-            
             susanoIndex[susanoRow]++;
-            
-            if(aniIndex>= naruto.length)
-                aniIndex=0;
-                
             
             
             if(susanoIndex[0]>= 7){
@@ -198,15 +161,14 @@ public class Level1 extends GameScene implements SceneMethods{
                 susanoIndex[7]=0;
                 susanoRow=0;
             }
-        }   
+        }
     }
     
     public void updates(){
         enemymanager.update();
         towermanager.update();
     }
-    int fire=890;
-    int fireIndex=0;
+
     @Override
     public void render(Graphics g) {
         drawBackground(g);
@@ -214,25 +176,11 @@ public class Level1 extends GameScene implements SceneMethods{
         drawButton(g);
         enemymanager.draw(g);
         towermanager.draw(g);
-        
-        g.drawImage(naruto[aniIndex], assex, 100, 134, 134, null);
-        g.drawImage(sasukeAttack[0][Index7], 900, 400, 64, 128, null);
-        if(Index7>=5){
-            g.drawImage(sasukeAttack[1][fireIndex/40], fire, 435, 64, 64, null);
-            fire--;
-            if(fireIndex<119)
-                fireIndex++;
-            if(fire<=-64){
-                fire=890;
-                Index7=0;
-                fireIndex=0;
-            }
-        }
-        
+
         //////////////
-        int susanoX=600;
-        int susanoY=600;
-        int dim=128;
+        int susanoX=Tile.spriteWidth*12-32;
+        int susanoY=Tile.spriteHeight*7-5;
+        int dim=110;
         switch(susanoRow){
             case 0:
                     g.drawImage(susano[0][susanoIndex[0]], susanoX-dim/2, susanoY-dim, dim, dim, null);
@@ -268,7 +216,6 @@ public class Level1 extends GameScene implements SceneMethods{
         } else{
             
             updateAnimationTick();
-            assex++;
         }   
         bottombar.draw(g);
         
@@ -378,8 +325,6 @@ public class Level1 extends GameScene implements SceneMethods{
 
     private void drawSelectedTower(Graphics g) {
         if(selectedTower != null)
-            g.drawImage(towermanager.getTowerImgs()[selectedTower.getTypetower()][0], mouseX, mouseY, null);
-    }
-
-    
+            g.drawImage(towermanager.getTowerImgs()[selectedTower.getTypetower()][0], mouseX, mouseY,Tile.spriteWidth,Tile.spriteHeight, null);
+    } 
 }

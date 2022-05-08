@@ -25,24 +25,14 @@ import ui.PauseOverlay;
 
 
 public class Playing extends GameScene implements SceneMethods{
-    private BufferedImage[] naruto;
-    private BufferedImage narutoall;
     private BufferedImage ingranaggio;
     private LevelMenu levelmenu;
     
     private TileManager tilemanager;
     
-    private int aniTick,aniIndex, aniSpeed = 30;
-    private int assex=100;
-    
-    
     private MyButton Bmenu;
     private Font f;
-    private Color c;
-    
-    private PauseOverlay pauseoverlay;
-    private boolean paused=true;
-            
+    private Color c;        
     
     public Playing(Game game) {
         super(game);
@@ -52,23 +42,17 @@ public class Playing extends GameScene implements SceneMethods{
            
         impImage();   
         
-        initButtons();
-        
-        loadAnimations();          
+        initButtons();        
     }  
     public void initClasses(){
         //TileManager
         tilemanager = new TileManager();
-        int tempHeight=(int)(Game.currentScreenHeight*0.17);
         levelmenu = new LevelMenu();
     }
     private void impImage() {
-        ingranaggio= LoadSave.getImage(LoadSave.INGRANAGGIO);
-        narutoall= LoadSave.getImage(LoadSave.NARUTO);
-        
+        ingranaggio= LoadSave.getImage(LoadSave.INGRANAGGIO);    
     }
     private void initButtons() {
-
         int w = 80;
         int h = 80;
         int x = 10;
@@ -77,36 +61,13 @@ public class Playing extends GameScene implements SceneMethods{
         f=new Font("Arial",Font.BOLD,40);
         c=new Color(255,0,0);
         Bmenu = new MyButton("", x, y, w, h, f, c);
-    }
-    
-     private void loadAnimations() {
-        naruto=new BufferedImage[6];
-        for (int i = 0; i < naruto.length; i++) {
-            naruto[i] = narutoall.getSubimage(64*i, 0, 64, 64);        
-        }
-    }
-    private void updateAnimationTick() {
-        aniTick++;
-        if(aniTick>= aniSpeed){
-            aniTick=0;
-            aniIndex++;
-            if(aniIndex>= naruto.length)
-                aniIndex=0;
-        }
-    }
-    
+    } 
     public void updates(){
         
     }
     
     @Override
     public void render(Graphics g) {
-        //updateAnimationTick();
-        //g.drawImage(naruto[aniIndex], assex, 100, 164, 164, null);
-        //assex++;
-        //pauseoverlay.update();
-        //pauseoverlay.draw(g);
-        
         levelmenu.draw(g);
         
         g.drawImage(ingranaggio, 10, 10, 80, 80, null);
