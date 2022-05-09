@@ -34,5 +34,17 @@ public class Constants {
         public static final int NARUTO=0;
         public static final int SASUKE=1;
         public static final int SAKURA=2;
+        
+        public static String getName(int towerType){
+            switch(towerType){
+                case NARUTO:
+                    return"Naruto";
+                case SASUKE:
+                    return"Sasuke";
+                case SAKURA:
+                    return"Sakura";
+            }
+            return"";
+        }
     }
 }

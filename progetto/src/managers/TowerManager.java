@@ -6,18 +6,21 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import objects.Tile;
+import progetto.Game;
 import scenes.Level1;
 import towers.Tower;
 
 public class TowerManager {
-    private Level1 level1;
+    private Game game;
+    private String state;
     private BufferedImage[][] towerImgs;
     private ArrayList<Tower> towers = new ArrayList<>();
     private int towerAmmount = 0;
     private int aniTick,index6=0,index7=0,index10=0, aniSpeed = 22;
     
-    public TowerManager(Level1 level1){
-        this.level1= level1;
+    public TowerManager(Game game, String state){
+        this.game = game;
+        this.state = state;
         loadTower(); 
     }
     private void loadTower(){
@@ -74,5 +77,13 @@ public class TowerManager {
     }
     public BufferedImage[][] getTowerImgs(){
         return towerImgs;
+    }
+
+    public Tower getTowerAt(int x, int y) {
+        for (Tower t : towers) {
+            if((t.getX()==x)&&(t.getY()==y))
+                return t;
+        }
+        return null;
     }
 }

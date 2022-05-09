@@ -1,4 +1,3 @@
-
 package scenes;
 
 import helpz.ImgFix;
@@ -17,11 +16,16 @@ public class Editing extends GameScene implements SceneMethods{
     private int lastTileX, lastTileY, lastTileId;
     private ToolBar toolbar;
     
+    private String state="level1";
     
     public Editing(Game game){
         super(game);
-        
         initClasses();
+    }
+    public void setState(String state){
+        this.state=state;
+        createLevel();
+        loadLevel();
     }
     public void initClasses(){
         createLevel();
@@ -30,18 +34,18 @@ public class Editing extends GameScene implements SceneMethods{
         toolbar= new ToolBar(0, Game.currentScreenHeight-tempHeight, Game.currentScreenWidth, tempHeight, this);
     }  
     public void saveLevel(){
-        LoadSave.saveLevel("level1", lvl);
+        LoadSave.saveLevel(state, lvl);
         game.getLevel1().setLevel(lvl);
     }
     public void loadLevel(){
-        lvl=LoadSave.loadLevel("level1");
+        lvl=LoadSave.loadLevel(state);
     }
     public void createLevel(){
         int[] newLevel= new int[420];
         for (int i = 0; i < newLevel.length; i++) {
             newLevel[0]=0;
         }
-        LoadSave.createLevel("level1", newLevel);
+        LoadSave.createLevel(state, newLevel);
     }
     @Override
     public void render(Graphics g) {

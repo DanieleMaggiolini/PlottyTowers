@@ -1,4 +1,3 @@
-
 package managers;
 
 import enemies.Enemy;
@@ -11,17 +10,20 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import objects.Tile;
+import progetto.Game;
 import scenes.Level1;
 
 public class EnemyManager {
-    Level1 level1;
+    private Game game;
+    private String state;
     private BufferedImage[][] enemyImgs;
     private ArrayList<Enemy> enemies = new ArrayList<>();
     private int aniTick,index6=0,index8=0, aniSpeed = 30;
     private int startX, startY, endX, endY;
     
-    public EnemyManager(Level1 level1) {
-        this.level1= level1;
+    public EnemyManager(Game game, String state) {
+        this.game=game;
+        this.state=state;
         enemyImgs = new BufferedImage[3][8];
         startX=0*Tile.spriteWidth;
         startY=3*Tile.spriteHeight;
@@ -70,7 +72,12 @@ public class EnemyManager {
         }
     }
     private int getTileType(int x,int y){
-       return level1.getTileType(x, y);
+        switch(state){
+            case "level1":
+                return game.getLevel1().getTileType(x, y);
+           
+        }
+        return -1;
     }
     private boolean isEnd(Enemy e){
         if(e.getX()==endX)

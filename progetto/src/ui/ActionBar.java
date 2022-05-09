@@ -1,6 +1,7 @@
 package ui;
 
 
+import helpz.Constants.Towers;
 import helpz.LoadSave;
 import java.awt.Color;
 import java.awt.Font;
@@ -14,14 +15,19 @@ import towers.*;
 public class ActionBar extends Bar{
     private Font f;
     private Color c;
-    private Level1 level1;
+    private Game game;
+    private String state;
+    
     
     private MyButton[] towerButtons;
     private Tower selectedTower;
     
-    public ActionBar(int x, int y, int width, int height, Level1 level1) {
+    private Tower displayedTower;
+    
+    public ActionBar(int x, int y, int width, int height, Game game, String state) {
         super(x,y,width,height);
-        this.level1=level1;
+        this.game = game;
+        this.state = state;
         
         initButton(); 
     }
@@ -45,19 +51,69 @@ public class ActionBar extends Bar{
         g.fillRect(x, y, width, height);
         
         drawButton(g);
+        
+        drawDiaplayedTower(g);
     }
     public void drawButton(Graphics g) {
         
         for (MyButton b : towerButtons) {
             b.drawA(g);
-            g.drawImage(level1.getTowerManager().getTowerImgs()[b.getId()][0], b.x, b.y, b.width, b.height, null);
+            switch(state){
+                case "level1":
+                    g.drawImage(game.getLevel1().getTowerManager().getTowerImgs()[b.getId()][0], b.x, b.y, b.width, b.height, null);
+                    break;
+            }
         }
     }
+    
+    private void drawDiaplayedTower(Graphics g) {
+        int[][] lvl = LoadSave.loadLevel("level1");
+        int tempHeight=(int)(Game.currentScreenHeight*0.17);
+        int w = Game.currentScreenWidth/lvl[0].length-10;
+        int h= (Game.currentScreenHeight-tempHeight)/lvl.length-10;
+        int x = (int) (Game.currentScreenWidth*0.8);
+        int y = (int)(Game.currentScreenHeight*0.89);
+        int xOffset= (int)(Game.currentScreenWidth*0.05);
+        if(displayedTower != null){
+            /*
+            g.drawImage(level1.getTowerManager().getTowerImgs()[displayedTower.getTypetower()][0], x, y, w, h, null);
+            g.setColor(Color.black);
+            g.drawString("" + Towers.getName(displayedTower.getTypetower()), x+60, y);
+            g.drawString("ID: " + displayedTower.getId(), x+60, y+40);
+            */
+            
+            g.setColor(Color.gray);
+            g.fillRect (x-10, y-15, 220, 85);
+            g.setColor(Color.black);
+            g.drawRect (x-10, y-15, 220, 85);
+            g.drawRect (x, y, w, h);
+            switch(state){
+                case "level1":
+                    g.drawImage(game.getLevel1().getTowerManager().getTowerImgs()[displayedTower.getTypetower()][0], x, y, w, h, null);
+                    break;
+            }
+            
+            g.setFont (new Font("LucidaSans", Font.BOLD, 15));
+            g.drawString("" + Towers.getName(displayedTower.getTypetower()), x+60, y);
+            g.drawString("ID: " + displayedTower.getId(), x+60, y+40);
+            
+        }
+    }
+    
+    public void displayTower(Tower t) {
+        displayedTower = t;
+    }
+    
     public void mouseClicked(MouseEvent e) {
         for(MyButton b : towerButtons){
             if(b.getBounds().contains(e.getX(), e.getY())){
                 selectedTower = new Tower(0, 0, -1, b.getId());
-                level1.setSelectedTower(selectedTower);
+                switch(state){
+                case "level1":
+                    game.getLevel1().setSelectedTower(selectedTower);
+                    break;
+                }
+                
                 return;
             }
         }
@@ -71,4 +127,8 @@ public class ActionBar extends Bar{
     public void mouseReleased(MouseEvent e) {
         
     }
+
+    
+
+    
 }

@@ -64,7 +64,7 @@ public class KeyboardListener implements KeyListener{
                    
                    break;   
                case LVL1:
-                        game.getLevel1().setPaused(!(game.getLevel1().getPaused()));
+                        game.getLevel1().keyPressed(e);
                    break;
             }
         }

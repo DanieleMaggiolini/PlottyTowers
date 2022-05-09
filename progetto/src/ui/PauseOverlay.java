@@ -21,21 +21,20 @@ public class PauseOverlay {
     private int buttonW;
     private int buttonH;
 
-    private Level1 level1;
     private Game game;
+    private String state;
+    
 
-    private String previous;
 
-    public PauseOverlay(Level1 level1, Game game, String s) {
+    public PauseOverlay(Game game, String state) {
         buttonW = (int) (Game.currentScreenWidth * 0.052);
         buttonH = (int) (Game.currentScreenHeight * 0.092);
 
-        this.level1 = level1;
-
+        this.game = game;
+        this.state=state;
+        
         loadBackground();
         initSoundButtons();
-        this.game = game;
-        previous = s;
     }
 
     private void loadBackground() {
@@ -106,12 +105,16 @@ public class PauseOverlay {
             }
         } else if (isIn(e, unplay)) {
             if (unplay.isMousePressed()) {
-                level1.setPaused(false);
+                switch(state){
+                    case "level1":
+                        game.getLevel1().setPaused(false);
+                        break;
+                }
             }
         } else if (isIn(e, setting)) {
             if (setting.isMousePressed()) {
                 setGameState(SETTINGS);
-                game.getSetting().setPrevious(previous);
+                game.getSetting().setPrevious(state);
             }
         } else if (isIn(e, home)) {
             if (home.isMousePressed()) {
