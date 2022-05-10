@@ -257,7 +257,9 @@ public class Level1 extends GameScene implements SceneMethods {
         int id = lvl[y / Tile.spriteHeight][x / Tile.spriteWidth];
         return game.getTileManager().getTile(id).getTileType();
     }
-
+    public EnemyManager getEnemyManager(){
+        return enemymanager;
+    }
     @Override
     public void mouseClicked(MouseEvent e) {
         if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {

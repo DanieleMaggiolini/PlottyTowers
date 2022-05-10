@@ -29,6 +29,17 @@ public class Constants {
             }
             return 0;
         }
+        public static int getStartHp(int enemytype){
+            switch(enemytype){
+                case OROCHIMARU:
+                    return 100;
+                case TOBI:
+                    return 150;
+                case MADARA:
+                    return 200;
+            }
+            return 0;
+        } 
     }
     public static class Towers{
         public static final int NARUTO=0;
@@ -38,13 +49,61 @@ public class Constants {
         public static String getName(int towerType){
             switch(towerType){
                 case NARUTO:
-                    return"Naruto";
+                    return "Naruto";
                 case SASUKE:
-                    return"Sasuke";
+                    return "Sasuke";
                 case SAKURA:
-                    return"Sakura";
+                    return "Sakura";
             }
             return"";
         }
+        public static float getDamage(int towerType){
+            switch(towerType){
+                case NARUTO:
+                    return 20;
+                case SASUKE:
+                    return 30;
+                case SAKURA:
+                    return 50;
+            }
+            return 0;
+        }
+        public static float getRange(int towerType){
+            switch(towerType){
+                case NARUTO:
+                    return 600;
+                case SASUKE:
+                    return 320;
+                case SAKURA:
+                    return 140;
+            }
+            return 0;
+        }public static float getCooldown(int towerType){
+            switch(towerType){
+                case NARUTO:
+                    return 10;
+                case SASUKE:
+                    return 25;
+                case SAKURA:
+                    return 60;
+            }
+            return 0;
+        }
     }
-}
+    public static class Projectiles{
+        public static final int SHURIKEN=0;
+        public static final int FIREBALL=1;
+        public static final int PUNCH=2;
+        public static float getSpeed(int projectiletype){
+            switch(projectiletype){
+                case SHURIKEN:
+                    return 4f;
+                case FIREBALL:
+                    return 3f;
+                case PUNCH:
+                    return 2f;
+            }
+            return 0f;
+        }
+    }
+ }

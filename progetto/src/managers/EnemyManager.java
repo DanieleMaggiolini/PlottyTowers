@@ -6,6 +6,7 @@ import static helpz.Constants.Direction.*;
 import static helpz.Constants.Enemy.*;
 import static helpz.Constants.Tiles.*;
 import helpz.LoadSave;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
@@ -18,8 +19,9 @@ public class EnemyManager {
     private String state;
     private BufferedImage[][] enemyImgs;
     private ArrayList<Enemy> enemies = new ArrayList<>();
-    private int aniTick,index6=0,index8=0, aniSpeed = 30;
+    private int aniTick,index6=0,index8=0, aniSpeed = 15;
     private int startX, startY, endX, endY;
+    private int hpBarWidth=Tile.spriteWidth/2;
     
     public EnemyManager(Game game, String state) {
         this.game=game;
@@ -55,7 +57,8 @@ public class EnemyManager {
     }
     public void update(){
         for (Enemy e : enemies){
-           updateEnemyMove(e);  
+            if(e.isAlive())
+                updateEnemyMove(e);  
         } 
     }
     public void updateEnemyMove(Enemy e){
@@ -158,10 +161,17 @@ public class EnemyManager {
         }
         
     }
+    public ArrayList<Enemy> getEnemies(){
+        return enemies;
+    }
     public void draw(Graphics g){
         for (Enemy e : enemies) {
-            drawEnemy(e, g);
+            if(e.isAlive()){
+                drawEnemy(e, g);
+                drawHpBar(e, g);
+            } 
         }   
+        updateAnimationTick();
     }
     private void drawEnemy(Enemy e, Graphics g){
         switch(e.getEnemyType()){
@@ -175,7 +185,15 @@ public class EnemyManager {
                 g.drawImage(enemyImgs[2][index6], (int)e.getX(), (int)e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                 break;
         }
-        updateAnimationTick();
+        
+    }
+    private void drawHpBar(Enemy e, Graphics g){
+        g.setColor(Color.red);
+        g.fillRect((int)e.getX()+(Tile.spriteWidth/2)-(getNewBartWidth(e)/2), (int)e.getY()+Tile.spriteHeight, getNewBartWidth(e), 5);
+       
+    }
+    private int getNewBartWidth(Enemy e){
+        return (int)(hpBarWidth * e.getHpbar());
     }
     private void updateAnimationTick() {
         aniTick++;

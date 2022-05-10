@@ -1,5 +1,6 @@
 package managers;
 
+import enemies.Enemy;
 import static helpz.Constants.Towers.*;
 import helpz.LoadSave;
 import java.awt.Graphics;
@@ -34,7 +35,24 @@ public class TowerManager {
         }
     }
     public void update(){
-        
+        attack();
+    }
+    public void attack(){
+        for(Tower t: towers){
+            switch(state){
+                case "level1":
+                    for(Enemy e: game.getLevel1().getEnemyManager().getEnemies()){
+                        if(e.isAlive())
+                            if(isInRange(t, e))
+                                e.damage(1);                    
+                    }
+                    break;
+            }
+        }
+    }
+    public boolean isInRange(Tower t, Enemy e){
+        int distance = helpz.Utilz.getDistance(t.getX(), t.getY(), e.getX(), e.getY());
+        return distance<t.getRange();
     }
     public void addTower(Tower selectedTower, int xPos, int yPos) {
         towers.add(new Tower(xPos, yPos, towerAmmount++, selectedTower.getTypetower()));

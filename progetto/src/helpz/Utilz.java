@@ -30,4 +30,9 @@ public class Utilz {
         }
         return array;
     }
+    public static int getDistance(float x1, float y1, float x2, float y2){
+        float xdiff= Math.abs(x1-x2);
+        float ydiff= Math.abs(y1-y2);
+        return (int)(Math.hypot(xdiff, ydiff));
+    }
 }

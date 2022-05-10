@@ -6,20 +6,22 @@ import objects.Tile;
 import static helpz.Constants.Direction.*;
 
 public abstract class Enemy {
-    private float x, y;
-    private Rectangle bounds;
-    private int hp;
-    private int id;
-    private int enemyType;
-    private int lastDir;
-    
-    public Enemy(float x, float y, int id, int enemyType) {
+    protected float x, y;
+    protected Rectangle bounds;
+    protected int hp;
+    protected int maxhp;
+    protected int id;
+    protected int enemytype;
+    protected int lastDir;
+    protected boolean alive=true;
+    public Enemy(float x, float y, int id, int enemytype) {
         this.x = x;
         this.y = y;
         this.id = id;
-        this.enemyType = enemyType;
+        this.enemytype = enemytype;
         bounds = new Rectangle((int)x , (int) y, Tile.spriteWidth, Tile.spriteHeight);
         lastDir=-1;
+        setStartHp();
     }
     
     public void move(float s, int dir){
@@ -39,10 +41,19 @@ public abstract class Enemy {
                 break;
         }  
     }
-    
+    protected void setStartHp(){
+        hp=helpz.Constants.Enemy.getStartHp(enemytype);
+        maxhp=hp;
+    }
     public void setPosition(int x, int y){
         this.x=x;
         this.y=y;
+    }
+    public void damage(int dmg){
+        hp -= dmg;
+        if(hp <= 0){
+            alive=false;
+        }
     }
     public float getX() {
         return x;
@@ -60,9 +71,15 @@ public abstract class Enemy {
         return id;
     }
     public int getEnemyType() {
-        return enemyType;
+        return enemytype;
     }  
     public int getLastDir(){
         return lastDir;
+    }
+    public float getHpbar(){
+        return hp/(float)maxhp;
+    }
+    public boolean isAlive(){
+        return alive;
     }
 }
