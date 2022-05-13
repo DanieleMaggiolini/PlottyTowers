@@ -1,3 +1,13 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file Game.java 
+* 
+* @brief il file main che gestisce tutto il progetto,
+* contiene i vari thread e tutte le classi del progetto
+*
+*/
 package scenes;
 
 import helpz.ImgFix;

@@ -63,10 +63,15 @@ public class ProjectileManager {
         if(t.getY()>e.getY())
             speedy*=-1;
         
-        float arc= (float)Math.atan(disty/(float)distx);
-        float rotate = (float)Math.toDegrees(arc);
-        if(distx<0)
-            rotate+=180;
+        float rotate = 0;
+        
+        if(t.getTypetower() != SAKURA){
+            float arc= (float)Math.atan(disty/(float)distx);
+            rotate = (float)Math.toDegrees(arc);
+            if(distx<0)
+                rotate+=180;
+        }
+    
         projectiles.add(new Projectile(t.getX()+Tile.spriteWidth/2, t.getY()+Tile.spriteHeight/2, speedx, speedy, t.getDamage(), rotate, projId++, type));
     }
     public void update(){

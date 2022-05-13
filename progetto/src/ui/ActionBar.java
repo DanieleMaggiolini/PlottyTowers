@@ -1,4 +1,15 @@
-    package ui;
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file ActionBar.java 
+* 
+* @brief barra visualizzata nei livelli contenente le varie difese,
+* con le loro info, e informazioni vita ondata ecc.
+*
+*/
+
+package ui;
 
 
 import helpz.Constants.Towers;
@@ -13,16 +24,34 @@ import managers.*;
 import objects.Tile;
 import towers.*;
 
+/** 
+* @class ActionBar
+* 
+* @brief classe figlia della classe "Bar" per gestire la barra presente nei livelli
+* 
+*/ 
+
 public class ActionBar extends Bar{
+    
+    //oggetto per la gestione del font delle scritte
     private Font f;
+    
+    //oggetto per la gestione del colore degli elemeni da draware
     private Color c;
+    
+    //oggeto del game
     private Game game;
+    
+    //stringa contenente lo stato(quindi il livello) dal quale la classe è stata invocata
     private String state;
     
-    
+    //array di bottoni 1*torre
     private MyButton[] towerButtons;
+    
+    //oggetto della torre  selezionata (ovvero clickata) per essere piazzata
     private Tower selectedTower;
     
+    //oggetto della torre che abbiamo selezionato (ovvero clickato) per essere visualizzata
     private Tower displayedTower;
     
     public ActionBar(int x, int y, int width, int height, Game game, String state) {
