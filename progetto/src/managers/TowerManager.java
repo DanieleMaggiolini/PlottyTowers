@@ -53,15 +53,15 @@ public class TowerManager {
                             if (t.isCooldownOver()) {
                                 switch(t.getTypetower()){
                                     case NARUTO:
-                                        if(index6>=3)
+                                        if(index6==2)
                                             game.getLevel1().shoot(t, e);
                                         break;
                                     case SASUKE:
-                                        if(index7>=5)
+                                        if(index7==5)
                                             game.getLevel1().shoot(t, e);
                                         break;
                                     case SAKURA:
-                                        if(index10>=6)
+                                        if(index10==6)
                                             game.getLevel1().shoot(t, e);
                                         break;
                                 }
@@ -87,7 +87,7 @@ public class TowerManager {
 
     public void draw(Graphics g) {
         for (Tower t : towers) {
-            drawTower(t, g);
+            drawTower(t, g);        
         }
         updateAnimationTick();
     }
@@ -127,6 +127,7 @@ public class TowerManager {
             index6++;
             index7++;
             index10++;
+
             if (index6 >= 6) {
                 index6 = 0;
             }

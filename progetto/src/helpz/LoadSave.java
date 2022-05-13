@@ -14,10 +14,10 @@ import javax.imageio.ImageIO;
 
 public class LoadSave {
     public static final String BACKGROUND_MENU = "image/background/backgroundMenu.png";
-    public static final String PAUSE_BACKGROUND = "image/other/PAUSE_MENU.png";
+    public static final String PAUSE_BACKGROUND = "image/other/pauseMenu.png";
     public static final String SPRITE_ATLAS= "image/background/atlas.png";
     public static final String MENU_BUTTONS = "image/other/menuButton.png";
-    public static final String LEVEL_MENU = "image/other/LevelMenu.png";
+    public static final String LEVEL_MENU = "image/background/levelmenu.png";
     public static final String INGRANAGGIO = "image/other/ingranaggio.png";
     public static final String SUSANO = "image/tower/susano.png";
     public static final String NARUTO_TOWER = "image/tower/naruto_tower.png";

@@ -26,6 +26,8 @@ public class Level1 extends GameScene implements SceneMethods {
     private EnemyManager enemymanager;
     private TowerManager towermanager;
     private ProjectileManager projmanager;
+    private WaveManager wavemanager;
+    
     ////////////////////
 
     private int[] susanoIndex;
@@ -71,6 +73,7 @@ public class Level1 extends GameScene implements SceneMethods {
         enemymanager = new EnemyManager(game, "level1");
         towermanager = new TowerManager(game, "level1");
         projmanager = new ProjectileManager(game, "level1");
+        wavemanager = new WaveManager(game, "level1");
         int tempHeight = (int) (Game.currentScreenHeight * 0.17);
         actionbar = new ActionBar(0, Game.currentScreenHeight - tempHeight, Game.currentScreenWidth, tempHeight, game, "level1");
         pauseoverlay = new PauseOverlay(game, "level1");
@@ -169,11 +172,50 @@ public class Level1 extends GameScene implements SceneMethods {
     }
 
     public void updates() {
+        wavemanager.update();
+        
+        if(isAllDead())
+            if(isMoreWaves()){
+                wavemanager.startTimer();
+                if(isTimerOver()){
+                    wavemanager.increaseWaveIndex();
+                    enemymanager.getEnemies().clear();
+                    wavemanager.resetIndex();
+                }
+            }       
+
+        if(isEnemySpawn())
+            spawnEnemy();
+        
         enemymanager.update();
         towermanager.update();
-        projmanager.update();
+        projmanager.update();  
+        
+    }
+     private boolean isEnemySpawn() {
+        if(getWaveManager().isEnemySpawn())
+            if(!getWaveManager().isWaveEnd())
+                return true;   
+        return false;
     }
 
+    private void spawnEnemy() {
+        enemymanager.spawnEnemy(getWaveManager().getNextEnemy());
+    }
+    private boolean isAllDead(){
+        if(!wavemanager.isWaveEnd())
+            return false;
+        for(Enemy e: enemymanager.getEnemies())
+            if(e.isAlive())
+                return false;
+        return true;
+    }
+    private boolean isMoreWaves(){
+        return wavemanager.isMoreWaves();
+    }
+    private boolean isTimerOver(){
+        return wavemanager.isTimerOver();
+    }
     @Override
     public void render(Graphics g) {
         drawBackground(g);
@@ -184,37 +226,37 @@ public class Level1 extends GameScene implements SceneMethods {
         projmanager.draw(g);
         drawTileOver(g);
         //////////////
-        int susanoX = Tile.spriteWidth * 12 - 32;
-        int susanoY = Tile.spriteHeight * 7 - 5;
-        int dim = 110;
-        switch (susanoRow) {
-            case 0:
-                g.drawImage(susano[0][susanoIndex[0]], susanoX - dim / 2, susanoY - dim, dim, dim, null);
-                break;
-            case 1:
-                if (susanoIndex[1] != 5) {
-                    g.drawImage(susano[1][susanoIndex[1]], susanoX - dim / 2, susanoY - dim, dim, dim, null);
-                } else {
-                    g.drawImage(susano[1][5], susanoX - dim, susanoY - dim, dim * 2, dim, null);
-                }
-                break;
-            case 2:
-                if (susanoIndex[2] == 0) {
-                    g.drawImage(susano[2][susanoIndex[2]], susanoX - dim * 3 / 2, susanoY - dim * 2, dim * 3, dim * 2, null);
-                } else {
-                    g.drawImage(susano[2][susanoIndex[2]], susanoX - dim * 2, susanoY - dim * 3, dim * 4, dim * 3, null);
-                }
-                break;
-            case 3:
-                g.drawImage(susano[3][susanoIndex[3]], susanoX - dim * 5 / 2, susanoY - dim * 4, dim * 5, dim * 4, null);
-                break;
-            case 4:
-                g.drawImage(susano[4][susanoIndex[4]], susanoX - ((int) (dim * 3.5)) / 2, susanoY - dim * 4, (int) (dim * 3.5), dim * 4, null);
-                break;
-            default:
-                g.drawImage(susano[susanoRow][susanoIndex[susanoRow]], susanoX - ((int) (dim * 2.32)) / 2, susanoY - dim * 2, (int) (dim * 2.32), dim * 2, null);
-                break;
-        }
+//        int susanoX = Tile.spriteWidth * 12 - 32;
+//        int susanoY = Tile.spriteHeight * 7 - 5;
+//        int dim = 110;
+//        switch (susanoRow) {
+//            case 0:
+//                g.drawImage(susano[0][susanoIndex[0]], susanoX - dim / 2, susanoY - dim, dim, dim, null);
+//                break;
+//            case 1:
+//                if (susanoIndex[1] != 5) {
+//                    g.drawImage(susano[1][susanoIndex[1]], susanoX - dim / 2, susanoY - dim, dim, dim, null);
+//                } else {
+//                    g.drawImage(susano[1][5], susanoX - dim, susanoY - dim, dim * 2, dim, null);
+//                }
+//                break;
+//            case 2:
+//                if (susanoIndex[2] == 0) {
+//                    g.drawImage(susano[2][susanoIndex[2]], susanoX - dim * 3 / 2, susanoY - dim * 2, dim * 3, dim * 2, null);
+//                } else {
+//                    g.drawImage(susano[2][susanoIndex[2]], susanoX - dim * 2, susanoY - dim * 3, dim * 4, dim * 3, null);
+//                }
+//                break;
+//            case 3:
+//                g.drawImage(susano[3][susanoIndex[3]], susanoX - dim * 5 / 2, susanoY - dim * 4, dim * 5, dim * 4, null);
+//                break;
+//            case 4:
+//                g.drawImage(susano[4][susanoIndex[4]], susanoX - ((int) (dim * 3.5)) / 2, susanoY - dim * 4, (int) (dim * 3.5), dim * 4, null);
+//                break;
+//            default:
+//                g.drawImage(susano[susanoRow][susanoIndex[susanoRow]], susanoX - ((int) (dim * 2.32)) / 2, susanoY - dim * 2, (int) (dim * 2.32), dim * 2, null);
+//                break;
+//        }
         //////////////
         if (paused) {
             pauseoverlay.draw(g);
@@ -245,7 +287,7 @@ public class Level1 extends GameScene implements SceneMethods {
     private void drawButton(Graphics g) {
         Bmenu.draw(g);
     }
-
+    
     public void setPaused(boolean paused) {
         this.paused = paused;
     }
@@ -264,9 +306,7 @@ public class Level1 extends GameScene implements SceneMethods {
         int id = lvl[y / Tile.spriteHeight][x / Tile.spriteWidth];
         return game.getTileManager().getTile(id).getTileType();
     }
-    public EnemyManager getEnemyManager(){
-        return enemymanager;
-    }
+    
     @Override
     public void mouseClicked(MouseEvent e) {
         if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {
@@ -295,6 +335,10 @@ public class Level1 extends GameScene implements SceneMethods {
 
     private Tower getTowerAt(int x, int y) {
         return towermanager.getTowerAt(x, y);
+    }
+    
+    public void shoot(Tower t, Enemy e){
+        projmanager.newProjectile(t, e);
     }
 
     private boolean isTileAvailable(int x, int y) {
@@ -353,7 +397,12 @@ public class Level1 extends GameScene implements SceneMethods {
     public TowerManager getTowerManager() {
         return towermanager;
     }
-
+    public EnemyManager getEnemyManager(){
+        return enemymanager;
+    }
+    public WaveManager getWaveManager(){
+        return wavemanager;
+    }
     public void setSelectedTower(Tower selectedTower) {
         this.selectedTower = selectedTower;
     }
@@ -370,9 +419,5 @@ public class Level1 extends GameScene implements SceneMethods {
             else
                 setPaused(!(game.getLevel1().getPaused()));
         }
-    }
-    public void shoot(Tower t, Enemy e){
-        projmanager.newProjectile(t, e);
-    }
+    } 
 }
-

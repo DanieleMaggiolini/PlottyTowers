@@ -32,11 +32,11 @@ public class Constants {
         public static int getStartHp(int enemytype){
             switch(enemytype){
                 case OROCHIMARU:
-                    return 100;
+                    return 300;
                 case TOBI:
-                    return 150;
+                    return 450;
                 case MADARA:
-                    return 200;
+                    return 600;
             }
             return 0;
         } 
@@ -71,9 +71,9 @@ public class Constants {
         public static float getRange(int towerType){
             switch(towerType){
                 case NARUTO:
-                    return 500;
+                    return 300;
                 case SASUKE:
-                    return 320;
+                    return 230;
                 case SAKURA:
                     return 140;
             }
@@ -81,11 +81,11 @@ public class Constants {
         }public static float getCooldown(int towerType){
             switch(towerType){
                 case NARUTO:
-                    return 35;
+                    return 10;
                 case SASUKE:
-                    return 30;
+                    return 10;
                 case SAKURA:
-                    return 35;
+                    return 10;
             }
             return 0;
         }
@@ -97,11 +97,11 @@ public class Constants {
         public static float getSpeed(int projectiletype){
             switch(projectiletype){
                 case SHURIKEN:
-                    return 4f;
+                    return 15f;
                 case FIREBALL:
-                    return 3f;
+                    return 7f;
                 case PUNCH:
-                    return 2f;
+                    return 4f;
             }
             return 0f;
         }

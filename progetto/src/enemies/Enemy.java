@@ -60,6 +60,10 @@ public abstract class Enemy {
             alive=false;
         }
     }
+    public void kill(){
+        alive=false;
+        hp=0;
+    }
     public float getX() {
         return x;
     }

@@ -18,6 +18,9 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
+import java.text.DecimalFormat;
+import java.util.HashSet;
+import java.util.Set;
 import progetto.Game;
 import scenes.*;
 import managers.*;
@@ -83,6 +86,9 @@ public class ActionBar extends Bar{
         drawButton(g);
         
         drawDiaplayedTower(g);
+        
+        //wave info 
+        drawWaveInfo(g);
     }
     public void drawButton(Graphics g) {
         
@@ -101,7 +107,7 @@ public class ActionBar extends Bar{
         
         int w = Tile.spriteWidth-10;
         int h=  Tile.spriteHeight-10;
-        int x = (int) (Game.currentScreenWidth*0.8);
+        int x = (int) (Game.currentScreenWidth*0.7);
         int y = (int)(Game.currentScreenHeight*0.89);
         int xOffset= (int)(Game.currentScreenWidth*0.05);
         if(displayedTower != null){
@@ -130,6 +136,57 @@ public class ActionBar extends Bar{
     public void drawDisplayedTowerRange(Graphics g){
         g.setColor(Color.WHITE);
         g.drawOval(displayedTower.getX()- (int)(displayedTower.getRange()/2)*2 + Tile.spriteWidth/2, displayedTower.getY()-(int)(displayedTower.getRange()/2)*2 + Tile.spriteHeight/2, (int)displayedTower.getRange()*2, (int)displayedTower.getRange()*2);
+    }
+    
+    public void drawWaveInfo(Graphics g){
+          drawWaveTimer(g);
+          drawEnemyLeft(g);
+          drawWaveLeft(g);
+    }
+      
+    private DecimalFormat decimal= new DecimalFormat("0.0");
+    private void drawWaveTimer(Graphics g){
+        switch(state){
+            case "level1":
+                if(game.getLevel1().getWaveManager().isTimerStart()){
+                    int timeleftx= (int)(Game.currentScreenWidth*0.850);
+                    int timelefty= (int)(Game.currentScreenHeight*0.870);
+                    g.setColor(Color.BLACK);
+                    g.setFont (new Font("LucidaSans", Font.BOLD, 22));
+                    g.drawString("prossima ondata tra: " + decimal.format(game.getLevel1().getWaveManager().getTimeLeft()), timeleftx, timelefty);
+                }  
+                break;
+        } 
+    }
+    
+    private void drawEnemyLeft(Graphics g){
+        int current=0;
+        int size=0;
+        int waveleftx= (int)(Game.currentScreenWidth*0.850);
+        int wavelefty= (int)(Game.currentScreenHeight*0.925);
+        g.setColor(Color.BLACK);
+        g.setFont (new Font("LucidaSans", Font.BOLD, 30));
+        switch(state){
+            case "level1":
+                    current= game.getLevel1().getWaveManager().getWaveIndex();
+                    size= game.getLevel1().getWaveManager().getWaves().size(); 
+                break;
+        } 
+        g.drawString("ondata: " + (current+1) + "/" + size, waveleftx, wavelefty);
+    }
+    
+    private void drawWaveLeft(Graphics g){
+        int enemyleft=0;
+        int enemyleftx= (int)(Game.currentScreenWidth*0.850);
+        int enemylefty= (int)(Game.currentScreenHeight*0.980);
+        g.setColor(Color.BLACK);
+        g.setFont (new Font("LucidaSans", Font.BOLD, 22));
+        switch(state){
+            case "level1":
+                    enemyleft= game.getLevel1().getEnemyManager().getEnemyRemaning();
+                break;
+        } 
+        g.drawString("nemici rimasti: " + enemyleft, enemyleftx, enemylefty);
     }
     
     public void displayTower(Tower t) {

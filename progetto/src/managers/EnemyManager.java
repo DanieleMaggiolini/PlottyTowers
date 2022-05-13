@@ -32,9 +32,9 @@ public class EnemyManager {
         endX= 29*Tile.spriteWidth;
         endY= 12*Tile.spriteHeight;
         loadEnemyImgs();
-        addEnemy(OROCHIMARU);
-        addEnemy(TOBI);
-        addEnemy(MADARA);
+//        addEnemy(OROCHIMARU);
+//        addEnemy(TOBI);
+//        addEnemy(MADARA);
     }
     public void setStartEnd(int sx, int sy, int ex, int ey){
         this.startX=sx;
@@ -61,6 +61,7 @@ public class EnemyManager {
                 updateEnemyMove(e);  
         } 
     }
+   
     public void updateEnemyMove(Enemy e){
         if(e.getLastDir()==-1)
             setDirection(e);
@@ -69,6 +70,7 @@ public class EnemyManager {
         if(getTileType(newX,newY)== ROAD_TILE){
             e.move(getSpeed(e.getEnemyType()), e.getLastDir());
         }else if(isEnd(e)){
+            e.kill();
             System.out.println("live lost");
         }else{
             setDirection(e);
@@ -158,8 +160,10 @@ public class EnemyManager {
             case MADARA:
                 enemies.add(new Madara(startX, startY, 0));
                 break;
-        }
-        
+        }     
+    }
+    public void spawnEnemy(int next){
+        addEnemy(next);
     }
     public ArrayList<Enemy> getEnemies(){
         return enemies;
@@ -207,4 +211,12 @@ public class EnemyManager {
                 index8=0;
         }
     }
+    public int getEnemyRemaning() {
+        int enemyremaning=0;
+        for (Enemy e : enemies)
+            if(e.isAlive())
+                enemyremaning++;     
+        return enemyremaning;
+    }
+
 }
