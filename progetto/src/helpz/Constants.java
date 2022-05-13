@@ -57,7 +57,7 @@ public class Constants {
             }
             return"";
         }
-        public static float getDamage(int towerType){
+        public static int getDamage(int towerType){
             switch(towerType){
                 case NARUTO:
                     return 20;
@@ -71,7 +71,7 @@ public class Constants {
         public static float getRange(int towerType){
             switch(towerType){
                 case NARUTO:
-                    return 600;
+                    return 500;
                 case SASUKE:
                     return 320;
                 case SAKURA:
@@ -81,11 +81,11 @@ public class Constants {
         }public static float getCooldown(int towerType){
             switch(towerType){
                 case NARUTO:
-                    return 10;
+                    return 35;
                 case SASUKE:
-                    return 25;
+                    return 30;
                 case SAKURA:
-                    return 60;
+                    return 35;
             }
             return 0;
         }

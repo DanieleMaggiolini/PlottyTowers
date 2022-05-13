@@ -39,7 +39,12 @@ public abstract class Enemy {
             case DOWN:
                 this.y+=s;
                 break;
-        }  
+        } 
+        updateBound();
+    }
+    public void updateBound(){
+        bounds.x=(int)x;
+        bounds.y=(int)y;
     }
     protected void setStartHp(){
         hp=helpz.Constants.Enemy.getStartHp(enemytype);

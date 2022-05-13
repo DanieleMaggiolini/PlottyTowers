@@ -1,5 +1,6 @@
 package scenes;
 
+import enemies.Enemy;
 import static helpz.Constants.Tiles.*;
 import helpz.LoadSave;
 import java.awt.Color;
@@ -24,6 +25,7 @@ public class Level1 extends GameScene implements SceneMethods {
 
     private EnemyManager enemymanager;
     private TowerManager towermanager;
+    private ProjectileManager projmanager;
     ////////////////////
 
     private int[] susanoIndex;
@@ -47,6 +49,8 @@ public class Level1 extends GameScene implements SceneMethods {
     private boolean paused = false;
 
     private Tower selectedTower;
+    
+    
 
     public Level1(Game game) {
         super(game);
@@ -59,13 +63,14 @@ public class Level1 extends GameScene implements SceneMethods {
         initButtons();
 
         loadAnimations();
-
+        
     }
 
     public void initClasses() {
         loadLevel();
         enemymanager = new EnemyManager(game, "level1");
         towermanager = new TowerManager(game, "level1");
+        projmanager = new ProjectileManager(game, "level1");
         int tempHeight = (int) (Game.currentScreenHeight * 0.17);
         actionbar = new ActionBar(0, Game.currentScreenHeight - tempHeight, Game.currentScreenWidth, tempHeight, game, "level1");
         pauseoverlay = new PauseOverlay(game, "level1");
@@ -166,6 +171,7 @@ public class Level1 extends GameScene implements SceneMethods {
     public void updates() {
         enemymanager.update();
         towermanager.update();
+        projmanager.update();
     }
 
     @Override
@@ -175,6 +181,7 @@ public class Level1 extends GameScene implements SceneMethods {
         drawButton(g);
         enemymanager.draw(g);
         towermanager.draw(g);
+        projmanager.draw(g);
         drawTileOver(g);
         //////////////
         int susanoX = Tile.spriteWidth * 12 - 32;
@@ -363,7 +370,9 @@ public class Level1 extends GameScene implements SceneMethods {
             else
                 setPaused(!(game.getLevel1().getPaused()));
         }
-
+    }
+    public void shoot(Tower t, Enemy e){
+        projmanager.newProjectile(t, e);
     }
 }
 

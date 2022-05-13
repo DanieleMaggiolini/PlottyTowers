@@ -70,7 +70,6 @@ public class Setting extends GameScene implements SceneMethods{
     
     @Override
     public void mouseClicked(MouseEvent e) {
-        System.out.println(e.getX() +" - "+ e.getY());
         if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
             if("menu".equals(previous)){
                 setGameState(MENU);

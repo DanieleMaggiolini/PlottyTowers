@@ -1,8 +1,9 @@
 package towers;
 
 public class Tower {
-    private int x, y, id, typetower;
-    private float damage, range, cooldown;
+    private int x, y, id, typetower, damage;
+    private float range, cooldown;
+    private int cooldownTick=0;
     public Tower(int x, int y, int id, int typetower) {
         this.x = x;
         this.y = y;
@@ -12,7 +13,9 @@ public class Tower {
         setRange();
         setCooldown();
     }
-
+    public void update(){
+        cooldownTick++;
+    }
     public int getX() {
         return x;
     }
@@ -39,7 +42,7 @@ public class Tower {
         cooldown=helpz.Constants.Towers.getCooldown(typetower);
     }
 
-    public float getDamage() {
+    public int getDamage() {
         return damage;
     }
 
@@ -50,5 +53,10 @@ public class Tower {
     public float getCooldown() {
         return cooldown;
     }
-    
+    public boolean isCooldownOver(){
+        return cooldownTick > cooldown;
+    }
+    public void resetCooldown(){
+        cooldownTick=0;
+    }
 }

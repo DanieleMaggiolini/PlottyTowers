@@ -22,6 +22,7 @@ public class LoadSave {
     public static final String SUSANO = "image/tower/susano.png";
     public static final String NARUTO_TOWER = "image/tower/naruto_tower.png";
     public static final String NARUTO_ENEMY = "image/enemy/naruto_enemy.png";
+    public static final String NARUTO_ATTACK = "image/tower/naruto_attack.png";
     
     //LOAD IMAGE     
     public static BufferedImage getImage(String name){

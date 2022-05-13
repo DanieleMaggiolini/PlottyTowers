@@ -89,7 +89,7 @@ public class ActionBar extends Bar{
             g.setFont (new Font("LucidaSans", Font.BOLD, 15));
             g.drawString("" + Towers.getName(displayedTower.getTypetower()), x+60, y);
             g.drawString("ID: " + displayedTower.getId(), x+60, y+40);   
-            drawDisplayedTowerBorder(g);
+            //drawDisplayedTowerBorder(g);
             drawDisplayedTowerRange(g);
         }
     }
