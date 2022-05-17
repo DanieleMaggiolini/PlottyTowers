@@ -38,6 +38,20 @@ public class TowerManager {
                     }
                 }
                 break;
+            case "level2":
+                towers = LoadSave.getImage(LoadSave.COC_TOWER);
+                towerImgs = new BufferedImage[3][1];
+                for (int i = 0; i < 3; i++) {
+                        towerImgs[i][0] = towers.getSubimage(i * 128, 0, 128, 128);
+                    }
+                break;
+            case "level3":
+                towers = LoadSave.getImage(LoadSave.RICKEMORTY_TOWER);
+                towerImgs = new BufferedImage[3][1];
+                for (int i = 0; i < 3; i++) {
+                        towerImgs[i][0] = towers.getSubimage(i * 256, 0, 256, 256);
+                    }
+                break;
             case "level4":
                 towers = LoadSave.getImage(LoadSave.ONEPIECE_TOWER);
                 towerImgs = new BufferedImage[3][10];
