@@ -32,11 +32,22 @@ public class Constants {
         public static int getStartHp(int enemytype){
             switch(enemytype){
                 case OROCHIMARU:
-                    return 300;
+                    return 200;
                 case TOBI:
-                    return 450;
+                    return 350;
                 case MADARA:
-                    return 600;
+                    return 450;
+            }
+            return 0;
+        } 
+        public static int getCoin(int enemytype){
+            switch(enemytype){
+                case OROCHIMARU:
+                    return 40;
+                case TOBI:
+                    return 70;
+                case MADARA:
+                    return 110;
             }
             return 0;
         } 
@@ -60,11 +71,11 @@ public class Constants {
         public static int getDamage(int towerType){
             switch(towerType){
                 case NARUTO:
-                    return 20;
-                case SASUKE:
                     return 30;
+                case SASUKE:
+                    return 40;
                 case SAKURA:
-                    return 50;
+                    return 80;
             }
             return 0;
         }
@@ -78,7 +89,8 @@ public class Constants {
                     return 140;
             }
             return 0;
-        }public static float getCooldown(int towerType){
+        }
+        public static float getCooldown(int towerType){
             switch(towerType){
                 case NARUTO:
                     return 10;
@@ -86,6 +98,17 @@ public class Constants {
                     return 10;
                 case SAKURA:
                     return 10;
+            }
+            return 0;
+        }
+        public static float getCost(int towerType){
+            switch(towerType){
+                case NARUTO:
+                    return 30;
+                case SASUKE:
+                    return 40;
+                case SAKURA:
+                    return 50;
             }
             return 0;
         }

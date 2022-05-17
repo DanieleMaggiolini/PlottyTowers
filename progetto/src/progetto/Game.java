@@ -309,8 +309,12 @@ public class Game extends JFrame implements Runnable {
      * 
      * viene modificata l'oggetto del primo livvello re inizializzandolo
      */
-    public  void restartLevel1(){
-        level1= new Level1(this);   
+    public  void restartLevel(String state){
+        switch(state){
+            case "level1":
+                level1= new Level1(this); 
+                break;
+        } 
     }
     
     /**

@@ -1,11 +1,12 @@
-
 package enemies;
 
 import java.awt.Rectangle;
 import objects.Tile;
 import static helpz.Constants.Direction.*;
+import managers.EnemyManager;
 
 public abstract class Enemy {
+
     protected float x, y;
     protected Rectangle bounds;
     protected int hp;
@@ -13,82 +14,103 @@ public abstract class Enemy {
     protected int id;
     protected int enemytype;
     protected int lastDir;
-    protected boolean alive=true;
-    public Enemy(float x, float y, int id, int enemytype) {
+    protected boolean alive = true;
+    protected EnemyManager em;
+
+    public Enemy(float x, float y, int id, int enemytype, EnemyManager em) {
         this.x = x;
         this.y = y;
         this.id = id;
         this.enemytype = enemytype;
-        bounds = new Rectangle((int)x , (int) y, Tile.spriteWidth, Tile.spriteHeight);
-        lastDir=-1;
+        this.em = em;
+        bounds = new Rectangle((int) x, (int) y, Tile.spriteWidth, Tile.spriteHeight);
+        lastDir = -1;
         setStartHp();
     }
-    
-    public void move(float s, int dir){
-        lastDir=dir;
-        switch(dir){
+
+    public void move(float s, int dir) {
+        lastDir = dir;
+        switch (dir) {
             case LEFT:
-                this.x-=s;
+                this.x -= s;
                 break;
             case RIGHT:
-                this.x+=s;
+                this.x += s;
                 break;
             case UP:
-                this.y-=s;
+                this.y -= s;
                 break;
             case DOWN:
-                this.y+=s;
+                this.y += s;
                 break;
-        } 
+        }
         updateBound();
     }
-    public void updateBound(){
-        bounds.x=(int)x;
-        bounds.y=(int)y;
+
+    public void updateBound() {
+        bounds.x = (int) x;
+        bounds.y = (int) y;
     }
-    protected void setStartHp(){
-        hp=helpz.Constants.Enemy.getStartHp(enemytype);
-        maxhp=hp;
+
+    protected void setStartHp() {
+        hp = helpz.Constants.Enemy.getStartHp(enemytype);
+        maxhp = hp;
     }
-    public void setPosition(int x, int y){
-        this.x=x;
-        this.y=y;
+
+    public void setPosition(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
-    public void damage(int dmg){
-        hp -= dmg;
-        if(hp <= 0){
-            alive=false;
+
+    public void damage(int dmg) {
+        if (alive) {
+            hp -= dmg;
+            if (hp <= 0) {
+                alive = false;
+                em.addCoin(enemytype);
+            }
         }
+
     }
-    public void kill(){
-        alive=false;
-        hp=0;
+
+    public void kill() {
+        alive = false;
+        hp = 0;
     }
+
     public float getX() {
         return x;
     }
+
     public float getY() {
         return y;
     }
+
     public Rectangle getBounds() {
         return bounds;
     }
+
     public int getHp() {
         return hp;
     }
+
     public int getId() {
         return id;
     }
+
     public int getEnemyType() {
         return enemytype;
-    }  
-    public int getLastDir(){
+    }
+
+    public int getLastDir() {
         return lastDir;
     }
-    public float getHpbar(){
-        return hp/(float)maxhp;
+
+    public float getHpbar() {
+        return hp / (float) maxhp;
     }
-    public boolean isAlive(){
+
+    public boolean isAlive() {
         return alive;
     }
 }

@@ -167,6 +167,10 @@ public class MyButton {
         g.fillRect(x, y, width, height);
     }
     
+    public void setColor(Color c){
+        this.c=c;
+    }
+    
     public void setMouseOver(boolean mouseover){
         this.mouseover = mouseover;
     }

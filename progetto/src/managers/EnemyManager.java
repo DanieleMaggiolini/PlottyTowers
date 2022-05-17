@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import objects.Tile;
 import progetto.Game;
 import scenes.Level1;
+import ui.ActionBar;
 
 public class EnemyManager {
     private Game game;
@@ -152,13 +153,13 @@ public class EnemyManager {
     public void addEnemy(int enemytype){
         switch(enemytype){
             case OROCHIMARU:
-                enemies.add(new Orochimaru(startX, startY, 0));
+                enemies.add(new Orochimaru(startX, startY, 0, this));
                 break;
             case TOBI:
-                enemies.add(new Tobi(startX, startY, 0));
+                enemies.add(new Tobi(startX, startY, 0, this));
                 break;
             case MADARA:
-                enemies.add(new Madara(startX, startY, 0));
+                enemies.add(new Madara(startX, startY, 0, this));
                 break;
         }     
     }
@@ -167,6 +168,13 @@ public class EnemyManager {
     }
     public ArrayList<Enemy> getEnemies(){
         return enemies;
+    }
+    public void addCoin(int type){
+        switch(state){
+            case "level1":
+                game.getLevel1().addCoin(type);
+                break;
+        }
     }
     public void draw(Graphics g){
         for (Enemy e : enemies) {
@@ -218,5 +226,4 @@ public class EnemyManager {
                 enemyremaning++;     
         return enemyremaning;
     }
-
 }

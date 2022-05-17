@@ -1,16 +1,14 @@
 /**
-* @author  Daniele Maggiolini
-* @author  Mattia Minotti
-* @version 0.0
-* @file ActionBar.java 
-* 
-* @brief barra visualizzata nei livelli contenente le varie difese,
-* con le loro info, e informazioni vita ondata ecc.
-*
-*/
-
+ * @author  Daniele Maggiolini
+ * @author Mattia Minotti
+ * @version 0.0
+ * @file ActionBar.java
+ *
+ * @brief barra visualizzata nei livelli contenente le varie difese, con le loro
+ * info, e informazioni vita ondata ecc.
+ *
+ */
 package ui;
-
 
 import helpz.Constants.Towers;
 import helpz.LoadSave;
@@ -27,193 +25,339 @@ import managers.*;
 import objects.Tile;
 import towers.*;
 
-/** 
-* @class ActionBar
-* 
-* @brief classe figlia della classe "Bar" per gestire la barra presente nei livelli
-* 
-*/ 
+/**
+ * @class ActionBar
+ *
+ * @brief classe figlia della classe "Bar" per gestire la barra presente nei
+ * livelli
+ *
+ */
+public class ActionBar extends Bar {
 
-public class ActionBar extends Bar{
-    
     //oggetto per la gestione del font delle scritte
     private Font f;
-    
+
     //oggetto per la gestione del colore degli elemeni da draware
     private Color c;
-    
+
     //oggeto del game
     private Game game;
-    
+
     //stringa contenente lo stato(quindi il livello) dal quale la classe è stata invocata
     private String state;
-    
+
     //array di bottoni 1*torre
     private MyButton[] towerButtons;
-    
+
     //oggetto della torre  selezionata (ovvero clickata) per essere piazzata
     private Tower selectedTower;
-    
+
     //oggetto della torre che abbiamo selezionato (ovvero clickato) per essere visualizzata
     private Tower displayedTower;
-    
+
+    //valuta nel gioco per acquistare torri e potenziarle
+    private int coin = 100;
+
+    private boolean showtowercost;
+
+    private int towercostType;
+
+    private MyButton upgrade, vendi;
+
     public ActionBar(int x, int y, int width, int height, Game game, String state) {
-        super(x,y,width,height);
+        super(x, y, width, height);
         this.game = game;
         this.state = state;
-        
-        initButton(); 
+
+        initButton();
     }
+
     private void initButton() {
         towerButtons = new MyButton[3];
-        
+
         int[][] lvl = LoadSave.loadLevel("level1");
-        int tempHeight=(int)(Game.currentScreenHeight*0.17);
-        int w = Game.currentScreenWidth/lvl[0].length-10;
-        int h= (Game.currentScreenHeight-tempHeight)/lvl.length-10;
+        int tempHeight = (int) (Game.currentScreenHeight * 0.17);
+        int w = Game.currentScreenWidth / lvl[0].length - 10;
+        int h = (Game.currentScreenHeight - tempHeight) / lvl.length - 10;
         int x = 50;
-        int y = (int)(Game.currentScreenHeight*0.89);
-        int xOffset= (int)(Game.currentScreenWidth*0.05);
-        
+        int y = (int) (Game.currentScreenHeight * 0.88);
+        int xOffset = (int) (Game.currentScreenWidth * 0.05);
+
         for (int i = 0; i < towerButtons.length; i++) {
-            towerButtons[i] = new MyButton("", x+xOffset*i, y, w, h, i);
+            towerButtons[i] = new MyButton("", x + xOffset * i, y, w, h, i);
         }
-    }  
-    public void draw(Graphics g){
-        g.setColor(new Color(220,123,15));
+        f = new Font("LucidaSans", Font.BOLD, 25);
+        x = (int) (Game.currentScreenWidth * 0.372);
+        y = (int) (Game.currentScreenHeight * 0.934);
+        w = (int) (Game.currentScreenWidth * 0.12);
+        h = (int) (Game.currentScreenHeight * 0.03);
+        upgrade = new MyButton("UPGRADE", x, y, w, h, f, Color.black);
+        vendi = new MyButton("VENDI", x + 260, y, w, h, f, Color.black);
+    }
+
+    public void draw(Graphics g) {
+        g.setColor(new Color(220, 123, 15));
         g.fillRect(x, y, width, height);
-        
+
         drawButton(g);
-        
+
         drawDiaplayedTower(g);
-        
+
         //wave info 
         drawWaveInfo(g);
+
+        //money
+        drawCoin(g);
+
+        //prezzo delle torri
+        if (showtowercost) {
+            drawTowerCost(g);
+        }
     }
+
     public void drawButton(Graphics g) {
-        
+
         for (MyButton b : towerButtons) {
             b.drawA(g);
-            switch(state){
+            switch (state) {
                 case "level1":
                     g.drawImage(game.getLevel1().getTowerManager().getTowerImgs()[b.getId()][0], b.x, b.y, b.width, b.height, null);
                     break;
             }
         }
     }
-    
+
     private void drawDiaplayedTower(Graphics g) {
-        int[][] lvl = LoadSave.loadLevel("level1");
-        
-        int w = Tile.spriteWidth-10;
-        int h=  Tile.spriteHeight-10;
-        int x = (int) (Game.currentScreenWidth*0.7);
-        int y = (int)(Game.currentScreenHeight*0.89);
-        int xOffset= (int)(Game.currentScreenWidth*0.05);
-        if(displayedTower != null){
-            g.setColor(Color.gray);
-            g.fillRect (x-10, y-15, 220, 85);
+        int w = (int) (Game.currentScreenWidth * 0.28);
+        int h = (int) (Game.currentScreenHeight * 0.120);
+        int x = (int) (Game.currentScreenWidth * 0.36);
+        int y = (int) (Game.currentScreenHeight * 0.85);
+        int xOffset = (int) (Game.currentScreenWidth * 0.05);
+        if (displayedTower != null) {
+            g.setColor(Color.white);
+            g.fillRect(x, y, w, h);
             g.setColor(Color.black);
-            g.drawRect (x-10, y-15, 220, 85);
-            g.drawRect (x, y, w, h);
-            switch(state){
+            g.drawRect(x, y, w, h);
+            g.drawRect(x + 10, y + 10, Tile.spriteWidth, Tile.spriteHeight);
+            switch (state) {
                 case "level1":
-                    g.drawImage(game.getLevel1().getTowerManager().getTowerImgs()[displayedTower.getTypetower()][0], x, y, w, h, null);
+                    g.drawImage(game.getLevel1().getTowerManager().getTowerImgs()[displayedTower.getTypetower()][0], x + 8, y + 10, Tile.spriteWidth, Tile.spriteHeight, null);
                     break;
-            }       
-            g.setFont (new Font("LucidaSans", Font.BOLD, 15));
-            g.drawString("" + Towers.getName(displayedTower.getTypetower()), x+60, y);
-            g.drawString("ID: " + displayedTower.getId(), x+60, y+40);   
+            }
+            g.setFont(new Font("LucidaSans", Font.BOLD, 20));
+            g.drawString("" + Towers.getName(displayedTower.getTypetower()), x + Tile.spriteWidth + 30, y + 25);
+            g.drawString("ID: " + displayedTower.getId(), x + Tile.spriteWidth + 30, y + 50);
+            g.drawString("Level: " + displayedTower.getLvl(), x + Tile.spriteWidth + 30, y + 75);
             //drawDisplayedTowerBorder(g);
             drawDisplayedTowerRange(g);
+            
+            f = new Font("LucidaSans", Font.BOLD, 16);
+            if(displayedTower.getLvl()<3){
+                if(coin < getLevelUpCost(displayedTower))
+                    upgrade.setColor(Color.red);
+                else
+                    upgrade.setColor(Color.black);  
+                upgrade.drawAC(g);
+                if(upgrade.isMouseOver())           
+                    g.drawString("costo: " + getLevelUpCost(displayedTower), upgrade.getX() + Tile.spriteWidth, upgrade.getY()+upgrade.getBounds().height+28);           
+            }
+            vendi.drawAC(g);
+            
+            if(vendi.isMouseOver()){
+                g.drawString("vendi per :" + getVendiCost(displayedTower), vendi.getX() + Tile.spriteWidth/2, vendi.getY()+vendi.getBounds().height+28);
+            }
+            
         }
     }
-    public void drawDisplayedTowerBorder(Graphics g){
+    public int getLevelUpCost(Tower displayedTower){
+        return (int)(helpz.Constants.Towers.getCost(displayedTower.getTypetower()) * 0.8f);  
+    }
+    public int getVendiCost(Tower displayedTower){
+        float addcost = ((displayedTower.getLvl()-1) * getLevelUpCost(displayedTower))*0.5f;
+        return (int)(helpz.Constants.Towers.getCost(displayedTower.getTypetower())/2 + addcost);  
+    }
+    public void drawDisplayedTowerBorder(Graphics g) {
         g.setColor(Color.WHITE);
         g.drawRect(displayedTower.getX(), displayedTower.getY(), Tile.spriteWidth, Tile.spriteHeight);
     }
-    
-    public void drawDisplayedTowerRange(Graphics g){
+
+    public void drawDisplayedTowerRange(Graphics g) {
         g.setColor(Color.WHITE);
-        g.drawOval(displayedTower.getX()- (int)(displayedTower.getRange()/2)*2 + Tile.spriteWidth/2, displayedTower.getY()-(int)(displayedTower.getRange()/2)*2 + Tile.spriteHeight/2, (int)displayedTower.getRange()*2, (int)displayedTower.getRange()*2);
+        g.drawOval(displayedTower.getX() - (int) (displayedTower.getRange() / 2) * 2 + Tile.spriteWidth / 2, displayedTower.getY() - (int) (displayedTower.getRange() / 2) * 2 + Tile.spriteHeight / 2, (int) displayedTower.getRange() * 2, (int) displayedTower.getRange() * 2);
     }
-    
-    public void drawWaveInfo(Graphics g){
-          drawWaveTimer(g);
-          drawEnemyLeft(g);
-          drawWaveLeft(g);
+
+    public void drawWaveInfo(Graphics g) {
+        drawWaveTimer(g);
+        drawEnemyLeft(g);
+        drawWaveLeft(g);
     }
-      
-    private DecimalFormat decimal= new DecimalFormat("0.0");
-    private void drawWaveTimer(Graphics g){
-        switch(state){
+
+    private DecimalFormat decimal = new DecimalFormat("0.0");
+
+    private void drawWaveTimer(Graphics g) {
+        switch (state) {
             case "level1":
-                if(game.getLevel1().getWaveManager().isTimerStart()){
-                    int timeleftx= (int)(Game.currentScreenWidth*0.850);
-                    int timelefty= (int)(Game.currentScreenHeight*0.870);
+                if (game.getLevel1().getWaveManager().isTimerStart()) {
+                    int timeleftx = (int) (Game.currentScreenWidth * 0.850);
+                    int timelefty = (int) (Game.currentScreenHeight * 0.870);
                     g.setColor(Color.BLACK);
-                    g.setFont (new Font("LucidaSans", Font.BOLD, 22));
+                    g.setFont(new Font("LucidaSans", Font.BOLD, 22));
                     g.drawString("prossima ondata tra: " + decimal.format(game.getLevel1().getWaveManager().getTimeLeft()), timeleftx, timelefty);
-                }  
+                }
                 break;
-        } 
+        }
     }
-    
-    private void drawEnemyLeft(Graphics g){
-        int current=0;
-        int size=0;
-        int waveleftx= (int)(Game.currentScreenWidth*0.850);
-        int wavelefty= (int)(Game.currentScreenHeight*0.925);
+
+    private void drawEnemyLeft(Graphics g) {
+        int current = 0;
+        int size = 0;
+        int waveleftx = (int) (Game.currentScreenWidth * 0.850);
+        int wavelefty = (int) (Game.currentScreenHeight * 0.925);
         g.setColor(Color.BLACK);
-        g.setFont (new Font("LucidaSans", Font.BOLD, 30));
-        switch(state){
+        g.setFont(new Font("LucidaSans", Font.BOLD, 30));
+        switch (state) {
             case "level1":
-                    current= game.getLevel1().getWaveManager().getWaveIndex();
-                    size= game.getLevel1().getWaveManager().getWaves().size(); 
+                current = game.getLevel1().getWaveManager().getWaveIndex();
+                size = game.getLevel1().getWaveManager().getWaves().size();
                 break;
-        } 
-        g.drawString("ondata: " + (current+1) + "/" + size, waveleftx, wavelefty);
+        }
+        g.drawString("ondata: " + (current + 1) + "/" + size, waveleftx, wavelefty);
     }
-    
-    private void drawWaveLeft(Graphics g){
-        int enemyleft=0;
-        int enemyleftx= (int)(Game.currentScreenWidth*0.850);
-        int enemylefty= (int)(Game.currentScreenHeight*0.980);
+
+    private void drawWaveLeft(Graphics g) {
+        int enemyleft = 0;
+        int enemyleftx = (int) (Game.currentScreenWidth * 0.850);
+        int enemylefty = (int) (Game.currentScreenHeight * 0.980);
         g.setColor(Color.BLACK);
-        g.setFont (new Font("LucidaSans", Font.BOLD, 22));
-        switch(state){
+        g.setFont(new Font("LucidaSans", Font.BOLD, 22));
+        switch (state) {
             case "level1":
-                    enemyleft= game.getLevel1().getEnemyManager().getEnemyRemaning();
+                enemyleft = game.getLevel1().getEnemyManager().getEnemyRemaning();
                 break;
-        } 
+        }
         g.drawString("nemici rimasti: " + enemyleft, enemyleftx, enemylefty);
     }
-    
+
+    public void drawCoin(Graphics g) {
+        g.setColor(Color.BLACK);
+        g.setFont(new Font("LucidaSans", Font.BOLD, 30));
+        g.drawString("monete: " + coin, 40, (int) (Game.currentScreenHeight * 0.981));
+    }
+
+    public void removeCoin(int type) {
+        this.coin -= helpz.Constants.Towers.getCost(type);
+    }
+
+    public void addCoin(int coin) {
+        this.coin += coin;
+    }
+
+    public void drawTowerCost(Graphics g) {
+        int w = (int) (Game.currentScreenWidth * 0.114);
+        int h = (int) (Game.currentScreenHeight * 0.078);
+        int x = (int) (Game.currentScreenWidth * 0.20);
+        int y = (int) (Game.currentScreenHeight * 0.874);
+        int xOffset = (int) (Game.currentScreenWidth * 0.05);
+        g.setFont(new Font("LucidaSans", Font.BOLD, 20));
+
+        g.setColor(Color.white);
+        g.fillRect(x, y, w, h);
+        g.setColor(Color.black);
+        g.drawRect(x, y, w, h);
+        g.drawString("" + helpz.Constants.Towers.getName(towercostType), x + 15, y + h / 3);
+        if (coin < helpz.Constants.Towers.getCost(towercostType)) {
+            g.setColor(Color.red);
+        }
+        g.drawString("prezzo: " + helpz.Constants.Towers.getCost(towercostType), x + 15, y + (int) (h / 1.3));
+    }
+
     public void displayTower(Tower t) {
         displayedTower = t;
     }
-    
+
     public void mouseClicked(MouseEvent e) {
-        for(MyButton b : towerButtons){
-            if(b.getBounds().contains(e.getX(), e.getY())){
-                selectedTower = new Tower(0, 0, -1, b.getId());
+        if (displayedTower != null) {
+            if (upgrade.getBounds().contains(e.getX(), e.getY()) && displayedTower.getLvl()<3 && coin>=getLevelUpCost(displayedTower)) {   
                 switch(state){
-                case "level1":
-                    game.getLevel1().setSelectedTower(selectedTower);
-                    break;
+                    case "level1":
+                        game.getLevel1().towerLevelUp(displayedTower);
+                        coin -= getLevelUpCost(displayedTower);
+                        break;
                 }
-                
+                return;
+            } else if (vendi.getBounds().contains(e.getX(), e.getY())) {
+                switch(state){
+                    case "level1":
+                        game.getLevel1().removeTower(displayedTower);
+                        coin+=getVendiCost(displayedTower);
+                        displayedTower=null;
+                        break;
+                }
                 return;
             }
         }
     }
+
     public void mouseMoved(MouseEvent e) {
-        
-    }   
-    public void mousePressed(MouseEvent e) {
-        
+        showtowercost = false;
+        upgrade.setMouseOver(false);
+        vendi.setMouseOver(false);
+        for (MyButton b : towerButtons) {
+            b.setMouseOver(false);
+        }
+        if (displayedTower != null) {
+            if (upgrade.getBounds().contains(e.getX(), e.getY())) {
+                upgrade.setMouseOver(true);
+                return;
+            } else if (vendi.getBounds().contains(e.getX(), e.getY())) {
+                vendi.setMouseOver(true);
+                return;
+            }
+        }
+        for (MyButton b : towerButtons) {
+            if (b.getBounds().contains(e.getX(), e.getY())) {
+                b.setMouseOver(true);
+                showtowercost = true;
+                towercostType = b.getId();
+                return;
+            }
+        }
+
     }
+
+    public void mousePressed(MouseEvent e) {
+        if (displayedTower != null) {
+            if (upgrade.getBounds().contains(e.getX(), e.getY()) && displayedTower.getLvl()<3) {
+                upgrade.setMousePressed(true);
+                return;
+            } else if (vendi.getBounds().contains(e.getX(), e.getY())) {
+                vendi.setMousePressed(true);
+                return;
+            }
+        }
+        for (MyButton b : towerButtons) {
+            if (b.getBounds().contains(e.getX(), e.getY())) {
+                if (coin < helpz.Constants.Towers.getCost(b.getId())) {
+                    return;
+                }
+                selectedTower = new Tower(0, 0, -1, b.getId());
+                switch (state) {
+                    case "level1":
+                        game.getLevel1().setSelectedTower(selectedTower);
+                        break;
+                }
+
+                return;
+            }
+        }
+
+    }
+
     public void mouseReleased(MouseEvent e) {
-        
-    }  
+        for (MyButton b : towerButtons) {
+            b.resetBooleans();
+        }
+        upgrade.resetBooleans();
+        vendi.resetBooleans();
+    }
 }

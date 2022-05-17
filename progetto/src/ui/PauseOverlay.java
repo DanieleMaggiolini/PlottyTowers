@@ -16,7 +16,7 @@ public class PauseOverlay {
     private BufferedImage background;
     private int bgX, bgY, bgW, bgH;
     private SoundButton music, mute;
-    private UshButton unplay, setting, home;
+    private UshButton unplay, restart, home;
 
     private int buttonW;
     private int buttonH;
@@ -54,7 +54,7 @@ public class PauseOverlay {
         buttonX = (int) (Game.currentScreenWidth * 0.470);
         buttonY = (int) (Game.currentScreenHeight * 0.425);
 
-        setting = new UshButton(buttonX, buttonY, buttonW, buttonH, 0);
+        restart = new UshButton(buttonX, buttonY, buttonW, buttonH, 0);
 
         buttonX = (int) (Game.currentScreenWidth * 0.555);
         buttonY = (int) (Game.currentScreenHeight * 0.425);
@@ -77,7 +77,7 @@ public class PauseOverlay {
 
         music.draw(g);
         unplay.draw(g);
-        setting.draw(g);
+        restart.draw(g);
         home.draw(g);
     }
 
@@ -91,8 +91,8 @@ public class PauseOverlay {
             music.setMousePressed(true);
         } else if (isIn(e, unplay)) {
             unplay.setMousePressed(true);
-        } else if (isIn(e, setting)) {
-            setting.setMousePressed(true);
+        } else if (isIn(e, restart)) {
+            restart.setMousePressed(true);
         } else if (isIn(e, home)) {
             home.setMousePressed(true);
         }
@@ -111,10 +111,9 @@ public class PauseOverlay {
                         break;
                 }
             }
-        } else if (isIn(e, setting)) {
-            if (setting.isMousePressed()) {
-                setGameState(SETTINGS);
-                game.getSetting().setPrevious(state);
+        } else if (isIn(e, restart)) {
+            if (restart.isMousePressed()) {
+                game.restartLevel(state);
             }
         } else if (isIn(e, home)) {
             if (home.isMousePressed()) {
@@ -134,7 +133,7 @@ public class PauseOverlay {
     public void resetBools() {
         music.setMousePressed(false);
         unplay.setMousePressed(false);
-        setting.setMousePressed(false);
+        restart.setMousePressed(false);
         home.setMousePressed(false);
     }
 }
