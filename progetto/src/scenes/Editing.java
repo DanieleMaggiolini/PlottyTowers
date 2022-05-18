@@ -135,5 +135,7 @@ public class Editing extends GameScene implements SceneMethods{
             changeTile(e.getX(),e.getY());
         }
     }
-    
+    public String getState(){
+        return state;
+    }
 }

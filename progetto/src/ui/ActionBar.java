@@ -64,22 +64,22 @@ public class ActionBar extends Bar {
     private int towercostType;
 
     private MyButton upgrade, vendi;
-    
-    private int vite=3;
+
+    private int vite = 3;
 
     private BufferedImage[] cuori;
-    
+
     public ActionBar(int x, int y, int width, int height, Game game, String state) {
         super(x, y, width, height);
         this.game = game;
         this.state = state;
 
         initButton();
-        
+
         cuori = new BufferedImage[2];
-        BufferedImage temp= LoadSave.getImage(LoadSave.CUORI);
-        cuori[0]= temp.getSubimage(0, 0, 32, 32);
-        cuori[1]= temp.getSubimage(32, 0, 32, 32);
+        BufferedImage temp = LoadSave.getImage(LoadSave.CUORI);
+        cuori[0] = temp.getSubimage(0, 0, 32, 32);
+        cuori[1] = temp.getSubimage(32, 0, 32, 32);
     }
 
     private void initButton() {
@@ -123,7 +123,7 @@ public class ActionBar extends Bar {
         if (showtowercost) {
             drawTowerCost(g);
         }
-        
+
         //disegna vite con i cuori
         drawVite(g);
     }
@@ -160,7 +160,7 @@ public class ActionBar extends Bar {
                     g.drawImage(game.getLevel1().getTowerManager().getTowerImgs()[displayedTower.getTypetower()][0], x + 8, y + 10, Tile.spriteWidth, Tile.spriteHeight, null);
                     break;
                 case "level2":
-                    g.drawImage(game.getLevel2().getTowerManager().getTowerImgs()[displayedTower.getTypetower()][0], x + 8, y + 10, Tile.spriteWidth, Tile.spriteHeight, null);
+                    g.drawImage(game.getLevel2().getTowerManager().getTowerImgs()[displayedTower.getTypetower()-3][0], x + 8, y + 10, Tile.spriteWidth, Tile.spriteHeight, null);
                     break;
             }
             g.setFont(new Font("LucidaSans", Font.BOLD, 20));
@@ -169,32 +169,37 @@ public class ActionBar extends Bar {
             g.drawString("Level: " + displayedTower.getLvl(), x + Tile.spriteWidth + 30, y + 75);
             //drawDisplayedTowerBorder(g);
             drawDisplayedTowerRange(g);
-            
+
             f = new Font("LucidaSans", Font.BOLD, 16);
-            if(displayedTower.getLvl()<3){
-                if(coin < getLevelUpCost(displayedTower))
+            if (displayedTower.getLvl() < 3) {
+                if (coin < getLevelUpCost(displayedTower)) {
                     upgrade.setColor(Color.red);
-                else
-                    upgrade.setColor(Color.black);  
+                } else {
+                    upgrade.setColor(Color.black);
+                }
                 upgrade.drawAC(g);
-                if(upgrade.isMouseOver())           
-                    g.drawString("costo: " + getLevelUpCost(displayedTower), upgrade.getX() + Tile.spriteWidth, upgrade.getY()+upgrade.getBounds().height+28);           
+                if (upgrade.isMouseOver()) {
+                    g.drawString("costo: " + getLevelUpCost(displayedTower), upgrade.getX() + Tile.spriteWidth, upgrade.getY() + upgrade.getBounds().height + 28);
+                }
             }
             vendi.drawAC(g);
-            
-            if(vendi.isMouseOver()){
-                g.drawString("vendi per :" + getVendiCost(displayedTower), vendi.getX() + Tile.spriteWidth/2, vendi.getY()+vendi.getBounds().height+28);
+
+            if (vendi.isMouseOver()) {
+                g.drawString("vendi per :" + getVendiCost(displayedTower), vendi.getX() + Tile.spriteWidth / 2, vendi.getY() + vendi.getBounds().height + 28);
             }
-            
+
         }
     }
-    public int getLevelUpCost(Tower displayedTower){
-        return (int)(helpz.Constants.Towers.getCost(displayedTower.getTypetower()) * 0.8f);  
+
+    public int getLevelUpCost(Tower displayedTower) {
+        return (int) (helpz.Constants.Towers.getCost(displayedTower.getTypetower()) * 0.8f);
     }
-    public int getVendiCost(Tower displayedTower){
-        float addcost = ((displayedTower.getLvl()-1) * getLevelUpCost(displayedTower))*0.5f;
-        return (int)(helpz.Constants.Towers.getCost(displayedTower.getTypetower())/2 + addcost);  
+
+    public int getVendiCost(Tower displayedTower) {
+        float addcost = ((displayedTower.getLvl() - 1) * getLevelUpCost(displayedTower)) * 0.5f;
+        return (int) (helpz.Constants.Towers.getCost(displayedTower.getTypetower()) / 2 + addcost);
     }
+
     public void drawDisplayedTowerBorder(Graphics g) {
         g.setColor(Color.WHITE);
         g.drawRect(displayedTower.getX(), displayedTower.getY(), Tile.spriteWidth, Tile.spriteHeight);
@@ -279,33 +284,34 @@ public class ActionBar extends Bar {
         g.drawString("monete: " + coin, 40, (int) (Game.currentScreenHeight * 0.981));
     }
 
-     public void drawVite(Graphics g) {
-        if(vite<0)
-            vite=0;
-        switch(vite){
+    public void drawVite(Graphics g) {
+        if (vite < 0) {
+            vite = 0;
+        }
+        switch (vite) {
             case 0:
-                g.drawImage(cuori[1], Tile.spriteWidth*27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
-                g.drawImage(cuori[1], Tile.spriteWidth*28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
-                g.drawImage(cuori[1], Tile.spriteWidth*29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth * 27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth * 28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth * 29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
                 break;
-            case 1: 
-                g.drawImage(cuori[0], Tile.spriteWidth*27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
-                g.drawImage(cuori[1], Tile.spriteWidth*28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
-                g.drawImage(cuori[1], Tile.spriteWidth*29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+            case 1:
+                g.drawImage(cuori[0], Tile.spriteWidth * 27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth * 28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth * 29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
                 break;
             case 2:
-                g.drawImage(cuori[0], Tile.spriteWidth*27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
-                g.drawImage(cuori[0], Tile.spriteWidth*28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
-                g.drawImage(cuori[1], Tile.spriteWidth*29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[0], Tile.spriteWidth * 27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[0], Tile.spriteWidth * 28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth * 29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
                 break;
             case 3:
-                g.drawImage(cuori[0], Tile.spriteWidth*27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
-                g.drawImage(cuori[0], Tile.spriteWidth*28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
-                g.drawImage(cuori[0], Tile.spriteWidth*29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[0], Tile.spriteWidth * 27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[0], Tile.spriteWidth * 28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[0], Tile.spriteWidth * 29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
                 break;
         }
     }
-    
+
     public void removeCoin(int type) {
         this.coin -= helpz.Constants.Towers.getCost(type);
     }
@@ -337,26 +343,29 @@ public class ActionBar extends Bar {
         displayedTower = t;
     }
 
-    public int getVite(){
+    public int getVite() {
         return vite;
     }
-    public void rimuoviVita(){
+
+    public void rimuoviVita() {
         vite--;
-        if(vite<=0)
-            switch(state){
+        if (vite <= 0) {
+            switch (state) {
                 case "level1":
-                    game.getLevel1().setGameOver();     
+                    game.getLevel1().setGameOver();
                     break;
                 case "level2":
-                    game.getLevel2().setGameOver();     
+                    game.getLevel2().setGameOver();
                     break;
             }
-         
+        }
+
     }
+
     public void mouseClicked(MouseEvent e) {
         if (displayedTower != null) {
-            if (upgrade.getBounds().contains(e.getX(), e.getY()) && displayedTower.getLvl()<3 && coin>=getLevelUpCost(displayedTower)) {   
-                switch(state){
+            if (upgrade.getBounds().contains(e.getX(), e.getY()) && displayedTower.getLvl() < 3 && coin >= getLevelUpCost(displayedTower)) {
+                switch (state) {
                     case "level1":
                         game.getLevel1().towerLevelUp(displayedTower);
                         coin -= getLevelUpCost(displayedTower);
@@ -368,16 +377,16 @@ public class ActionBar extends Bar {
                 }
                 return;
             } else if (vendi.getBounds().contains(e.getX(), e.getY())) {
-                switch(state){
+                switch (state) {
                     case "level1":
                         game.getLevel1().removeTower(displayedTower);
-                        coin+=getVendiCost(displayedTower);
-                        displayedTower=null;
+                        coin += getVendiCost(displayedTower);
+                        displayedTower = null;
                         break;
                     case "level2":
                         game.getLevel2().removeTower(displayedTower);
-                        coin+=getVendiCost(displayedTower);
-                        displayedTower=null;
+                        coin += getVendiCost(displayedTower);
+                        displayedTower = null;
                         break;
                 }
                 return;
@@ -414,7 +423,7 @@ public class ActionBar extends Bar {
 
     public void mousePressed(MouseEvent e) {
         if (displayedTower != null) {
-            if (upgrade.getBounds().contains(e.getX(), e.getY()) && displayedTower.getLvl()<3) {
+            if (upgrade.getBounds().contains(e.getX(), e.getY()) && displayedTower.getLvl() < 3) {
                 upgrade.setMousePressed(true);
                 return;
             } else if (vendi.getBounds().contains(e.getX(), e.getY())) {
@@ -427,7 +436,15 @@ public class ActionBar extends Bar {
                 if (coin < helpz.Constants.Towers.getCost(b.getId())) {
                     return;
                 }
-                selectedTower = new Tower(0, 0, -1, b.getId());
+                switch (state) {
+                    case "level1":
+                        selectedTower = new Tower(0, 0, -1, b.getId());
+                        break;
+                    case "level2":
+                        selectedTower = new Tower(0, 0, -1, b.getId()+3);
+                        break;
+                }
+                
                 switch (state) {
                     case "level1":
                         game.getLevel1().setSelectedTower(selectedTower);
@@ -441,6 +458,7 @@ public class ActionBar extends Bar {
             }
         }
     }
+
     public void mouseReleased(MouseEvent e) {
         for (MyButton b : towerButtons) {
             b.resetBooleans();

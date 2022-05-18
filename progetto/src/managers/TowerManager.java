@@ -181,7 +181,26 @@ public class TowerManager {
                 break;
         }
         if (fermo || state=="level2" || state=="level3") {
-            g.drawImage(towerImgs[t.getTypetower()][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+            switch(t.getTypetower()){
+                case NARUTO:
+                    g.drawImage(towerImgs[0][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case SASUKE:
+                    g.drawImage(towerImgs[1][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case SAKURA:
+                    g.drawImage(towerImgs[2][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case CANNONE:
+                    g.drawImage(towerImgs[0][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case TESLA:
+                    g.drawImage(towerImgs[1][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case ARCOX:
+                    g.drawImage(towerImgs[2][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;    
+            }
         } else {
             switch (t.getTypetower()) {
                 case 0:

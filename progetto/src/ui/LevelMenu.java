@@ -31,9 +31,9 @@ public class LevelMenu {
     private int lvl4X=(int)(Game.currentScreenWidth*1.693);
     private int lvl4Y=(int)(Game.currentScreenHeight*0.424);
     
-    private boolean unlocklvl2=false;
-    private boolean unlocklvl3=false;
-    private boolean unlocklvl4=false;
+    public boolean unlocklvl2=false;
+    public boolean unlocklvl3=false;
+    public boolean unlocklvl4=false;
     
     public LevelMenu() {
         width=62;
@@ -100,6 +100,7 @@ public class LevelMenu {
                 unlocklvl4=true;
                 break;
         }
+        LoadSave.saveLevel(this);
     }
     public void mousePressed(MouseEvent e) {
         prevPt= e.getPoint();

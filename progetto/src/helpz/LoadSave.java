@@ -11,6 +11,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
+import ui.LevelMenu;
 
 public class LoadSave {
     public static final String BACKGROUND_MENU = "image/background/backgroundMenu.png";
@@ -114,4 +115,34 @@ public class LoadSave {
         }
         return;
     } 
+    public static int[] unlockLevel(){
+        int[] lvlUnlock = new int[4];
+        File levelFile = new File("src/image/background/levelUnlock.txt");
+        if(levelFile.exists()){
+            ArrayList<Integer> list= readFile(levelFile);
+            lvlUnlock = Utilz.twoDToOneDInt(Utilz.ArrayListTo2dInt(list, 4, 1));
+        } 
+        return lvlUnlock;
+    }
+    public static void saveLevel(LevelMenu levelmenu){
+        int[] lvlUnlock = new int[4];
+        lvlUnlock[0]=0;
+        if(levelmenu.unlocklvl2)
+            lvlUnlock[1]=0;
+        else
+            lvlUnlock[1]=1;
+        if(levelmenu.unlocklvl3)
+            lvlUnlock[2]=0;
+        else
+            lvlUnlock[2]=1;
+        if(levelmenu.unlocklvl4)
+            lvlUnlock[3]=0;
+        else
+            lvlUnlock[3]=1;
+        File levelFile = new File("src/image/background/levelUnlock.txt");
+        if(levelFile.exists()){
+            writeToFile(levelFile,lvlUnlock);
+        }
+        return;
+    }
 }

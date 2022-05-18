@@ -43,13 +43,22 @@ public class KeyboardListener implements KeyListener {
 
                     break;
                 case EDIT:
-                    GameStates.gamestates = LVL1;
+                    switch(game.getEditing().getState()){
+                        case "level1":
+                            GameStates.gamestates = LVL1;
+                            break;
+                        case "level2":
+                            GameStates.gamestates = LVL2;
+                            break;
+                    }
                     break;
                 case LVL1:
                     GameStates.gamestates = EDIT;
+                    game.getEditing().setState("level1");
                     break;
                 case LVL2:
                     GameStates.gamestates = EDIT;
+                    game.getEditing().setState("level2");
                     break;
             }
         } else if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {

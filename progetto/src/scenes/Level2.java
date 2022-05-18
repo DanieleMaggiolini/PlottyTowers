@@ -2,6 +2,7 @@ package scenes;
 
 import enemies.Enemy;
 import static helpz.Constants.Tiles.GRASS_TILE;
+import static helpz.Constants.Towers.*;
 import helpz.LoadSave;
 import java.awt.Color;
 import java.awt.Font;
@@ -383,8 +384,8 @@ public class Level2 extends GameScene implements SceneMethods {
     }
 
     private void drawSelectedTower(Graphics g) {
-        if (selectedTower != null) {
-            g.drawImage(towermanager.getTowerImgs()[selectedTower.getTypetower()][0], mouseX, mouseY, Tile.spriteWidth, Tile.spriteHeight, null);
+        if (selectedTower != null) { 
+            g.drawImage(towermanager.getTowerImgs()[selectedTower.getTypetower()-3][0], mouseX, mouseY, Tile.spriteWidth, Tile.spriteHeight, null);
         }
     }
 

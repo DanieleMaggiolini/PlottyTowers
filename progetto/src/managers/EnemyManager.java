@@ -194,14 +194,23 @@ public class EnemyManager {
     public void addEnemy(int enemytype) {
         switch (enemytype) {
             case OROCHIMARU:
-                enemies.add(new Enemy(startX, startY, 0, this));
+                enemies.add(new Enemy(startX, startY, OROCHIMARU, this));
                 break;
             case TOBI:
-                enemies.add(new Enemy(startX, startY, 1, this));
+                enemies.add(new Enemy(startX, startY, TOBI, this));
                 break;
             case MADARA:
-                enemies.add(new Enemy(startX, startY, 2, this));
+                enemies.add(new Enemy(startX, startY, MADARA, this));
                 break;
+            case POLLO:
+                enemies.add(new Enemy(startX, startY, POLLO, this));
+                break;
+            case MAIALE:
+                enemies.add(new Enemy(startX, startY, MAIALE, this));
+                break;
+            case GREG:
+                enemies.add(new Enemy(startX, startY, GREG, this));
+                break;    
         }
     }
 
@@ -238,27 +247,27 @@ public class EnemyManager {
         switch (state) {
             case "level1":
                 switch (e.getEnemyType()) {
-                    case 0:
+                    case OROCHIMARU:
                         g.drawImage(enemyImgs[0][index6], (int) e.getX(), (int) e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                         break;
-                    case 1:
+                    case TOBI:
                         g.drawImage(enemyImgs[1][index8], (int) e.getX(), (int) e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                         break;
-                    case 2:
+                    case MADARA:
                         g.drawImage(enemyImgs[2][index6], (int) e.getX(), (int) e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                         break;
                 }
                 break;
             case "level2":
                 switch (e.getEnemyType()) {
-                    case 0:
+                    case POLLO:
                         g.drawImage(enemyImgs[0][index2], (int) e.getX(), (int) e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                         break;
-                    case 1:
+                    case MAIALE:
                         g.drawImage(enemyImgs[1][0], (int) e.getX(), (int) e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                         break;
-                    case 2:
-                        g.drawImage(enemyImgs[2][index4], (int) e.getX(), (int) e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    case GREG:
+                        g.drawImage(enemyImgs[2][index4], (int) e.getX()-Tile.spriteWidth/2, (int) e.getY()-Tile.spriteHeight, Tile.spriteWidth*2, Tile.spriteHeight*2, null);
                         break;
                 }
                 break;    

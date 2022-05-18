@@ -145,6 +145,13 @@ public class Game extends JFrame implements Runnable {
         gamescreen = new GameScreen(this);
         menu = new Menu(this);
         playing = new Playing(this);
+        int[] unlock =LoadSave.unlockLevel();
+        if(unlock[1]==0)
+            playing.getLevelMenu().unlockLevel("level1");
+        if(unlock[2]==0)
+            playing.getLevelMenu().unlockLevel("level2");
+        if(unlock[3]==0)
+            playing.getLevelMenu().unlockLevel("level3");
         setting = new Setting(this);
         editing = new Editing(this);
         level1= new Level1(this); 
