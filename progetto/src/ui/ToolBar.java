@@ -108,7 +108,7 @@ public class ToolBar extends Bar{
     public void mouseClicked(MouseEvent e) {
         if(save.getBounds().contains(e.getX(), e.getY())){
             saveLevel();
-            GameStates.gamestates = LVL1;
+            //GameStates.gamestates = LVL1;
         }
         else{
             for (MyButton b: tileButtons) {

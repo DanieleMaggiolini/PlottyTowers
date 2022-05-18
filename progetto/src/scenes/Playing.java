@@ -112,5 +112,7 @@ public class Playing extends GameScene implements SceneMethods{
     private void resetButtons() {
         Bmenu.resetBooleans();
     }
-    
+    public LevelMenu getLevelMenu(){
+        return levelmenu;
+    }
 }

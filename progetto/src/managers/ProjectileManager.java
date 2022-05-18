@@ -81,10 +81,19 @@ public class ProjectileManager {
                    p.move(); 
                    if(isProjHit(p)){
                         p.setExist(false);     
-                   }         
+                   }else if(isOutBounds(p))
+                       p.setExist(false);   
                 }         
             }
         }
+    }
+    public boolean isOutBounds(Projectile p){
+        if(p.getPosition().x>=0)
+            if(p.getPosition().x<=Game.currentScreenWidth)
+                if(p.getPosition().y>=0)
+                    if(p.getPosition().y<=Game.currentScreenHeight)
+                        return false;
+        return true;          
     }
     public void draw(Graphics g){
         Graphics2D g2d = (Graphics2D)g;
@@ -117,6 +126,14 @@ public class ProjectileManager {
                     }
                 }
                 break;
+            case "level2":
+                for(Enemy e: game.getLevel2().getEnemyManager().getEnemies()){
+                    if(e.getBounds().contains(p.getPosition())){
+                        e.damage(p.getDmg()); 
+                        return true;
+                    }
+                }
+                break;    
         }  
         return false;
     }

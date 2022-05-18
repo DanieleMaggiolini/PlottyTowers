@@ -76,6 +76,7 @@ public class Game extends JFrame implements Runnable {
     //schermata primo livello
     private Level1 level1;
     
+    private Level2 level2;
     //oggetto per gestire le Tiles
     private TileManager tilemanager;
     
@@ -146,7 +147,8 @@ public class Game extends JFrame implements Runnable {
         playing = new Playing(this);
         setting = new Setting(this);
         editing = new Editing(this);
-        level1= new Level1(this);     
+        level1= new Level1(this); 
+        level2 = new Level2(this);
     }
     
     /**
@@ -191,6 +193,10 @@ public class Game extends JFrame implements Runnable {
                     break;
                 case LVL1:
                     level1.updates();
+                    break;
+                case LVL2:
+                    level2.updates();
+                    break;
         }
     }
         
@@ -304,6 +310,9 @@ public class Game extends JFrame implements Runnable {
         return level1;
     }   
     
+    public Level2 getLevel2() {
+        return level2;
+    }  
     /**
      * @brief metodo che restarta il primo livello.
      * 
@@ -313,6 +322,9 @@ public class Game extends JFrame implements Runnable {
         switch(state){
             case "level1":
                 level1= new Level1(this); 
+                break;
+            case "level2":
+                level2= new Level2(this); 
                 break;
         } 
     }

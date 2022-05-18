@@ -114,6 +114,18 @@ public class TowerManager {
                     }
                 }
                 break;
+            case "level2":
+                for (Enemy e : game.getLevel2().getEnemyManager().getEnemies()) {
+                    if (e.isAlive()) {
+                        if (isInRange(t, e)) {
+                            if (t.isCooldownOver()) {
+                                game.getLevel2().shoot(t, e);
+                                t.resetCooldown();
+                            }
+                        }
+                    }
+                }
+                break;    
         }
 
     }
@@ -145,7 +157,14 @@ public class TowerManager {
         for (Tower t : towers) {
             drawTower(t, g);
         }
-        updateAnimationTick();
+        switch(state){
+            case "level1":
+                updateAnimationTick();
+                    break;
+            case "level4":
+                updateAnimationTick();
+                break;
+        }   
     }
 
     private void drawTower(Tower t, Graphics g) {
@@ -161,7 +180,7 @@ public class TowerManager {
                 }
                 break;
         }
-        if (fermo) {
+        if (fermo || state=="level2" || state=="level3") {
             g.drawImage(towerImgs[t.getTypetower()][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
         } else {
             switch (t.getTypetower()) {

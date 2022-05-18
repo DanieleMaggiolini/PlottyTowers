@@ -90,13 +90,13 @@ public class LevelMenu {
     
     public void unlockLevel(String state){
         switch(state){
-            case "level2":
+            case "level1":
                 unlocklvl2=true;
                 break;
-            case "level3":
+            case "level2":
                 unlocklvl3=true;
                 break;
-            case "level4":
+            case "level3":
                 unlocklvl4=true;
                 break;
         }
@@ -137,7 +137,7 @@ public class LevelMenu {
         if (lvl1.getBounds().contains(e.getX(), e.getY())) {
             setGameState(LVL1);
         }else if (lvl2.getBounds().contains(e.getX(), e.getY()) && unlocklvl2) {
-            setGameState(SETTINGS);
+            setGameState(LVL2);
         }else if (lvl3.getBounds().contains(e.getX(), e.getY()) && unlocklvl3) {
             System.exit(0);
         }else if (lvl4.getBounds().contains(e.getX(), e.getY()) && unlocklvl4) {

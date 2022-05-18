@@ -71,11 +71,11 @@ public class Constants {
         public static int getDamage(int towerType){
             switch(towerType){
                 case NARUTO:
-                    return 30;
+                    return 300;
                 case SASUKE:
-                    return 40;
+                    return 400;
                 case SAKURA:
-                    return 80;
+                    return 800;
             }
             return 0;
         }

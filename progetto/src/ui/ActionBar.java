@@ -16,6 +16,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
 import java.text.DecimalFormat;
 import java.util.HashSet;
 import java.util.Set;
@@ -63,13 +64,22 @@ public class ActionBar extends Bar {
     private int towercostType;
 
     private MyButton upgrade, vendi;
+    
+    private int vite=3;
 
+    private BufferedImage[] cuori;
+    
     public ActionBar(int x, int y, int width, int height, Game game, String state) {
         super(x, y, width, height);
         this.game = game;
         this.state = state;
 
         initButton();
+        
+        cuori = new BufferedImage[2];
+        BufferedImage temp= LoadSave.getImage(LoadSave.CUORI);
+        cuori[0]= temp.getSubimage(0, 0, 32, 32);
+        cuori[1]= temp.getSubimage(32, 0, 32, 32);
     }
 
     private void initButton() {
@@ -113,6 +123,9 @@ public class ActionBar extends Bar {
         if (showtowercost) {
             drawTowerCost(g);
         }
+        
+        //disegna vite con i cuori
+        drawVite(g);
     }
 
     public void drawButton(Graphics g) {
@@ -122,6 +135,9 @@ public class ActionBar extends Bar {
             switch (state) {
                 case "level1":
                     g.drawImage(game.getLevel1().getTowerManager().getTowerImgs()[b.getId()][0], b.x, b.y, b.width, b.height, null);
+                    break;
+                case "level2":
+                    g.drawImage(game.getLevel2().getTowerManager().getTowerImgs()[b.getId()][0], b.x, b.y, b.width, b.height, null);
                     break;
             }
         }
@@ -142,6 +158,9 @@ public class ActionBar extends Bar {
             switch (state) {
                 case "level1":
                     g.drawImage(game.getLevel1().getTowerManager().getTowerImgs()[displayedTower.getTypetower()][0], x + 8, y + 10, Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case "level2":
+                    g.drawImage(game.getLevel2().getTowerManager().getTowerImgs()[displayedTower.getTypetower()][0], x + 8, y + 10, Tile.spriteWidth, Tile.spriteHeight, null);
                     break;
             }
             g.setFont(new Font("LucidaSans", Font.BOLD, 20));
@@ -205,6 +224,15 @@ public class ActionBar extends Bar {
                     g.drawString("prossima ondata tra: " + decimal.format(game.getLevel1().getWaveManager().getTimeLeft()), timeleftx, timelefty);
                 }
                 break;
+            case "level2":
+                if (game.getLevel2().getWaveManager().isTimerStart()) {
+                    int timeleftx = (int) (Game.currentScreenWidth * 0.850);
+                    int timelefty = (int) (Game.currentScreenHeight * 0.870);
+                    g.setColor(Color.BLACK);
+                    g.setFont(new Font("LucidaSans", Font.BOLD, 22));
+                    g.drawString("prossima ondata tra: " + decimal.format(game.getLevel1().getWaveManager().getTimeLeft()), timeleftx, timelefty);
+                }
+                break;
         }
     }
 
@@ -220,6 +248,10 @@ public class ActionBar extends Bar {
                 current = game.getLevel1().getWaveManager().getWaveIndex();
                 size = game.getLevel1().getWaveManager().getWaves().size();
                 break;
+            case "level2":
+                current = game.getLevel2().getWaveManager().getWaveIndex();
+                size = game.getLevel2().getWaveManager().getWaves().size();
+                break;
         }
         g.drawString("ondata: " + (current + 1) + "/" + size, waveleftx, wavelefty);
     }
@@ -234,6 +266,9 @@ public class ActionBar extends Bar {
             case "level1":
                 enemyleft = game.getLevel1().getEnemyManager().getEnemyRemaning();
                 break;
+            case "level2":
+                enemyleft = game.getLevel2().getEnemyManager().getEnemyRemaning();
+                break;
         }
         g.drawString("nemici rimasti: " + enemyleft, enemyleftx, enemylefty);
     }
@@ -244,6 +279,33 @@ public class ActionBar extends Bar {
         g.drawString("monete: " + coin, 40, (int) (Game.currentScreenHeight * 0.981));
     }
 
+     public void drawVite(Graphics g) {
+        if(vite<0)
+            vite=0;
+        switch(vite){
+            case 0:
+                g.drawImage(cuori[1], Tile.spriteWidth*27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth*28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth*29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                break;
+            case 1: 
+                g.drawImage(cuori[0], Tile.spriteWidth*27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth*28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth*29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                break;
+            case 2:
+                g.drawImage(cuori[0], Tile.spriteWidth*27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[0], Tile.spriteWidth*28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[1], Tile.spriteWidth*29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                break;
+            case 3:
+                g.drawImage(cuori[0], Tile.spriteWidth*27, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[0], Tile.spriteWidth*28, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                g.drawImage(cuori[0], Tile.spriteWidth*29, 0, Tile.spriteWidth, Tile.spriteHeight, null);
+                break;
+        }
+    }
+    
     public void removeCoin(int type) {
         this.coin -= helpz.Constants.Towers.getCost(type);
     }
@@ -275,6 +337,22 @@ public class ActionBar extends Bar {
         displayedTower = t;
     }
 
+    public int getVite(){
+        return vite;
+    }
+    public void rimuoviVita(){
+        vite--;
+        if(vite<=0)
+            switch(state){
+                case "level1":
+                    game.getLevel1().setGameOver();     
+                    break;
+                case "level2":
+                    game.getLevel2().setGameOver();     
+                    break;
+            }
+         
+    }
     public void mouseClicked(MouseEvent e) {
         if (displayedTower != null) {
             if (upgrade.getBounds().contains(e.getX(), e.getY()) && displayedTower.getLvl()<3 && coin>=getLevelUpCost(displayedTower)) {   
@@ -283,12 +361,21 @@ public class ActionBar extends Bar {
                         game.getLevel1().towerLevelUp(displayedTower);
                         coin -= getLevelUpCost(displayedTower);
                         break;
+                    case "level2":
+                        game.getLevel2().towerLevelUp(displayedTower);
+                        coin -= getLevelUpCost(displayedTower);
+                        break;
                 }
                 return;
             } else if (vendi.getBounds().contains(e.getX(), e.getY())) {
                 switch(state){
                     case "level1":
                         game.getLevel1().removeTower(displayedTower);
+                        coin+=getVendiCost(displayedTower);
+                        displayedTower=null;
+                        break;
+                    case "level2":
+                        game.getLevel2().removeTower(displayedTower);
                         coin+=getVendiCost(displayedTower);
                         displayedTower=null;
                         break;
@@ -345,14 +432,15 @@ public class ActionBar extends Bar {
                     case "level1":
                         game.getLevel1().setSelectedTower(selectedTower);
                         break;
+                    case "level2":
+                        game.getLevel2().setSelectedTower(selectedTower);
+                        break;
                 }
 
                 return;
             }
         }
-
     }
-
     public void mouseReleased(MouseEvent e) {
         for (MyButton b : towerButtons) {
             b.resetBooleans();

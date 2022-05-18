@@ -1,7 +1,7 @@
 package scenes;
 
 import enemies.Enemy;
-import static helpz.Constants.Tiles.*;
+import static helpz.Constants.Tiles.GRASS_TILE;
 import helpz.LoadSave;
 import java.awt.Color;
 import java.awt.Font;
@@ -9,24 +9,22 @@ import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
-import java.util.HashSet;
-import java.util.Set;
 import managers.EnemyManager;
+import managers.ProjectileManager;
 import managers.TowerManager;
-import progetto.*;
+import managers.WaveManager;
+import objects.Tile;
+import progetto.Game;
+import static progetto.GameStates.PLAYING;
+import static progetto.GameStates.setGameState;
+import towers.Tower;
 import ui.ActionBar;
 import ui.MyButton;
 import ui.PauseOverlay;
-import objects.Tile;
-import towers.*;
-import managers.*;
-import static progetto.GameStates.PLAYING;
-import static progetto.GameStates.setGameState;
 import ui.UshButton;
 
-public class Level1 extends GameScene implements SceneMethods {
-
-    private String LEVELNAME = "level1";
+public class Level2 extends GameScene implements SceneMethods {
+    private String LEVELNAME = "level2";
 
     private EnemyManager enemymanager;
     private TowerManager towermanager;
@@ -62,7 +60,7 @@ public class Level1 extends GameScene implements SceneMethods {
     private boolean win=false;
     private UshButton restart, exit;
 
-    public Level1(Game game) {
+    public Level2(Game game) {
         super(game);
 
         //il livello

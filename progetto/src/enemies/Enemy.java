@@ -5,22 +5,20 @@ import objects.Tile;
 import static helpz.Constants.Direction.*;
 import managers.EnemyManager;
 
-public abstract class Enemy {
+public class Enemy {
 
-    protected float x, y;
-    protected Rectangle bounds;
-    protected int hp;
-    protected int maxhp;
-    protected int id;
-    protected int enemytype;
-    protected int lastDir;
-    protected boolean alive = true;
-    protected EnemyManager em;
+    private float x, y;
+    private Rectangle bounds;
+    private int hp;
+    private int maxhp;
+    private int enemytype;
+    private int lastDir;
+    private boolean alive = true;
+    private EnemyManager em;
 
-    public Enemy(float x, float y, int id, int enemytype, EnemyManager em) {
+    public Enemy(float x, float y, int enemytype, EnemyManager em) {
         this.x = x;
         this.y = y;
-        this.id = id;
         this.enemytype = enemytype;
         this.em = em;
         bounds = new Rectangle((int) x, (int) y, Tile.spriteWidth, Tile.spriteHeight);
@@ -93,11 +91,7 @@ public abstract class Enemy {
     public int getHp() {
         return hp;
     }
-
-    public int getId() {
-        return id;
-    }
-
+    
     public int getEnemyType() {
         return enemytype;
     }

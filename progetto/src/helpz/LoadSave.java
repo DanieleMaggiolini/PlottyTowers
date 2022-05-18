@@ -19,17 +19,24 @@ public class LoadSave {
     public static final String MENU_BUTTONS = "image/other/menuButton.png";
     public static final String LEVEL_MENU = "image/background/levelmenu.png";
     public static final String LEVEL_BUTTON = "image/background/lvlbutton.png";
-    public static final String INGRANAGGIO = "image/other/ingranaggio.png";
+    
     public static final String SUSANO = "image/tower/susano.png";
+    //tower
     public static final String NARUTO_TOWER = "image/tower/naruto_tower.png";
     public static final String COC_TOWER = "image/tower/coc_tower.png";
     public static final String RICKEMORTY_TOWER = "image/tower/rickemorty_tower.png";
     public static final String ONEPIECE_TOWER = "image/tower/onepiece_tower.png";
+    //enemy
     public static final String NARUTO_ENEMY = "image/enemy/naruto_enemy.png";
+    public static final String COC_ENEMY = "image/enemy/coc_enemy.png";
     public static final String RICKEMORTY_ENEMY = "image/enemy/rickemorty_enemy.png";
     public static final String ONEPIECE_ENEMY = "image/enemy/onepiece_enemy.png";
+    //attack
     public static final String NARUTO_ATTACK = "image/tower/naruto_attack.png";
     public static final String ONEPIECE_ATTACK = "image/tower/onepiece_attack.png";
+    //altro
+    public static final String CUORI = "image/other/cuori.png";
+    public static final String INGRANAGGIO = "image/other/ingranaggio.png";
     
     //LOAD IMAGE     
     public static BufferedImage getImage(String name){
