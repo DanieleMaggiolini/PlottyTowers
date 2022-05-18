@@ -20,17 +20,17 @@ import towers.*;
 import managers.*;
 
 public class Level1 extends GameScene implements SceneMethods {
-    private String LEVELNAME="level1";
-    
+
+    private String LEVELNAME = "level1";
+
     private int aniTick, aniSpeed = 20;
 
     private EnemyManager enemymanager;
     private TowerManager towermanager;
     private ProjectileManager projmanager;
     private WaveManager wavemanager;
-    
-    ////////////////////
 
+    ////////////////////
     private int[] susanoIndex;
     private int susanoRow = 0;
     private BufferedImage[][] susano;
@@ -52,7 +52,7 @@ public class Level1 extends GameScene implements SceneMethods {
     private boolean paused = false;
 
     private Tower selectedTower;
-    
+
     private int goldTick;
 
     public Level1(Game game) {
@@ -66,7 +66,7 @@ public class Level1 extends GameScene implements SceneMethods {
         initButtons();
 
         loadAnimations();
-        
+
     }
 
     public void initClasses() {
@@ -172,96 +172,82 @@ public class Level1 extends GameScene implements SceneMethods {
     }
 
     public void updates() {
-        wavemanager.update();
-        
-        goldTick++;
-            if(goldTick % (40) == 0)
-                actionbar.addCoin(1);
-        
-        if(isAllDead())
-            if(isMoreWaves()){
-                wavemanager.startTimer();
-                if(isTimerOver()){
-                    wavemanager.increaseWaveIndex();
-                    enemymanager.getEnemies().clear();
-                    wavemanager.resetIndex();
-                }
-            }       
+        if (!paused) {
+            wavemanager.update();
 
-        if(isEnemySpawn())
-            spawnEnemy();
-        
-        enemymanager.update();
-        towermanager.update();
-        projmanager.update();  
-        
+            goldTick++;
+            if (goldTick % (40) == 0) {
+                actionbar.addCoin(1);
+            }
+
+            if (isAllDead()) {
+                if (isMoreWaves()) {
+                    wavemanager.startTimer();
+                    if (isTimerOver()) {
+                        wavemanager.increaseWaveIndex();
+                        enemymanager.getEnemies().clear();
+                        wavemanager.resetIndex();
+                    }
+                }
+            }
+
+            if (isEnemySpawn()) {
+                spawnEnemy();
+            }
+
+            enemymanager.update();
+            towermanager.update();
+            projmanager.update();
+        }
+
     }
-     private boolean isEnemySpawn() {
-        if(getWaveManager().isEnemySpawn())
-            if(!getWaveManager().isWaveEnd())
-                return true;   
+
+    private boolean isEnemySpawn() {
+        if (getWaveManager().isEnemySpawn()) {
+            if (!getWaveManager().isWaveEnd()) {
+                return true;
+            }
+        }
         return false;
     }
 
     private void spawnEnemy() {
         enemymanager.spawnEnemy(getWaveManager().getNextEnemy());
     }
-    private boolean isAllDead(){
-        if(!wavemanager.isWaveEnd())
+
+    private boolean isAllDead() {
+        if (!wavemanager.isWaveEnd()) {
             return false;
-        for(Enemy e: enemymanager.getEnemies())
-            if(e.isAlive())
+        }
+        for (Enemy e : enemymanager.getEnemies()) {
+            if (e.isAlive()) {
                 return false;
+            }
+        }
         return true;
     }
-    private boolean isMoreWaves(){
+
+    private boolean isMoreWaves() {
         return wavemanager.isMoreWaves();
     }
-    private boolean isTimerOver(){
+
+    private boolean isTimerOver() {
         return wavemanager.isTimerOver();
     }
+
     @Override
     public void render(Graphics g) {
+
         drawBackground(g);
         g.drawImage(ingranaggio, 10, 10, 80, 80, null);
         drawButton(g);
-        enemymanager.draw(g);
-        towermanager.draw(g);
-        projmanager.draw(g);
+        if(!paused){
+            enemymanager.draw(g);
+            towermanager.draw(g);
+            projmanager.draw(g);
+        }
         drawTileOver(g);
-        //////////////
-//        int susanoX = Tile.spriteWidth * 12 - 32;
-//        int susanoY = Tile.spriteHeight * 7 - 5;
-//        int dim = 110;
-//        switch (susanoRow) {
-//            case 0:
-//                g.drawImage(susano[0][susanoIndex[0]], susanoX - dim / 2, susanoY - dim, dim, dim, null);
-//                break;
-//            case 1:
-//                if (susanoIndex[1] != 5) {
-//                    g.drawImage(susano[1][susanoIndex[1]], susanoX - dim / 2, susanoY - dim, dim, dim, null);
-//                } else {
-//                    g.drawImage(susano[1][5], susanoX - dim, susanoY - dim, dim * 2, dim, null);
-//                }
-//                break;
-//            case 2:
-//                if (susanoIndex[2] == 0) {
-//                    g.drawImage(susano[2][susanoIndex[2]], susanoX - dim * 3 / 2, susanoY - dim * 2, dim * 3, dim * 2, null);
-//                } else {
-//                    g.drawImage(susano[2][susanoIndex[2]], susanoX - dim * 2, susanoY - dim * 3, dim * 4, dim * 3, null);
-//                }
-//                break;
-//            case 3:
-//                g.drawImage(susano[3][susanoIndex[3]], susanoX - dim * 5 / 2, susanoY - dim * 4, dim * 5, dim * 4, null);
-//                break;
-//            case 4:
-//                g.drawImage(susano[4][susanoIndex[4]], susanoX - ((int) (dim * 3.5)) / 2, susanoY - dim * 4, (int) (dim * 3.5), dim * 4, null);
-//                break;
-//            default:
-//                g.drawImage(susano[susanoRow][susanoIndex[susanoRow]], susanoX - ((int) (dim * 2.32)) / 2, susanoY - dim * 2, (int) (dim * 2.32), dim * 2, null);
-//                break;
-//        }
-        //////////////
+        //guarda su ds per susano
         if (paused) {
             pauseoverlay.draw(g);
             pauseoverlay.update();
@@ -272,8 +258,9 @@ public class Level1 extends GameScene implements SceneMethods {
         actionbar.draw(g);
 
         drawSelectedTower(g);
+
     }
-    
+
     private void drawBackground(Graphics g) {
         for (int y = 0; y < lvl.length; y++) {
             for (int x = 0; x < lvl[0].length; x++) {
@@ -282,18 +269,19 @@ public class Level1 extends GameScene implements SceneMethods {
             }
         }
     }
-    
-    private void drawTileOver(Graphics g){
+
+    private void drawTileOver(Graphics g) {
         g.setColor(Color.WHITE);
         g.drawRect(mouseX, mouseY, Tile.spriteWidth, Tile.spriteHeight);
     }
-    
+
     private void drawButton(Graphics g) {
         Bmenu.draw(g);
     }
-    
+
     public void setPaused(boolean paused) {
         this.paused = paused;
+
     }
 
     public boolean getPaused() {
@@ -314,19 +302,21 @@ public class Level1 extends GameScene implements SceneMethods {
     private Tower getTowerAt(int x, int y) {
         return towermanager.getTowerAt(x, y);
     }
-    
-    public void shoot(Tower t, Enemy e){
+
+    public void shoot(Tower t, Enemy e) {
         projmanager.newProjectile(t, e);
     }
-    public void addCoin(int type){
+
+    public void addCoin(int type) {
         actionbar.addCoin(helpz.Constants.Enemy.getCoin(type));
     }
+
     private boolean isTileAvailable(int x, int y) {
         int id = lvl[y / Tile.spriteHeight][x / Tile.spriteWidth];
         int tiletype = game.getTileManager().getTile(id).getTileType();
         return tiletype == GRASS_TILE;
     }
-    
+
     @Override
     public void mouseClicked(MouseEvent e) {
         if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {
@@ -345,36 +335,36 @@ public class Level1 extends GameScene implements SceneMethods {
 
                 }
 
-            }else{
+            } else {
                 //prendere la torre se esiste nella posizione del click
                 Tower t = getTowerAt(mouseX, mouseY);
                 actionbar.displayTower(t);
-                            
+
             }
         }
     }
-    
+
     @Override
     public void mouseMoved(MouseEvent e) {
         Bmenu.setMouseOver(false);
-        if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
-            Bmenu.setMouseOver(true);
+        if (!paused) {
+            if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
+                Bmenu.setMouseOver(true);
+            }
+            if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {
+                actionbar.mouseMoved(e);
+            } else {
+                mouseX = (e.getX() / Tile.spriteWidth) * Tile.spriteWidth; //tile viene spostato in una grlia e non pixel per pixel
+                mouseY = (e.getY() / Tile.spriteHeight) * Tile.spriteHeight;
+            }
         }
-        if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {
-            actionbar.mouseMoved(e);
-        } else {
-            mouseX = (e.getX() / Tile.spriteWidth) * Tile.spriteWidth; //tile viene spostato in una grlia e non pixel per pixel
-            mouseY = (e.getY() / Tile.spriteHeight) * Tile.spriteHeight;
-        }
-
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
         if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
             Bmenu.setMousePressed(true);
-        }
-        else if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {
+        } else if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {
             actionbar.mousePressed(e);
         }
         if (paused) {
@@ -404,12 +394,15 @@ public class Level1 extends GameScene implements SceneMethods {
     public TowerManager getTowerManager() {
         return towermanager;
     }
-    public EnemyManager getEnemyManager(){
+
+    public EnemyManager getEnemyManager() {
         return enemymanager;
     }
-    public WaveManager getWaveManager(){
+
+    public WaveManager getWaveManager() {
         return wavemanager;
     }
+
     public void setSelectedTower(Tower selectedTower) {
         this.selectedTower = selectedTower;
     }
@@ -419,18 +412,22 @@ public class Level1 extends GameScene implements SceneMethods {
             g.drawImage(towermanager.getTowerImgs()[selectedTower.getTypetower()][0], mouseX, mouseY, Tile.spriteWidth, Tile.spriteHeight, null);
         }
     }
+
     public void towerLevelUp(Tower displayedTower) {
         towermanager.towerLevelUp(displayedTower);
     }
+
     public void removeTower(Tower displayedTower) {
         towermanager.removeTower(displayedTower);
     }
-    public void keyPressed(KeyEvent e){
-        if(e.getKeyCode() == KeyEvent.VK_ESCAPE){
-            if(selectedTower!=null)
-                selectedTower=null;
-            else
+
+    public void keyPressed(KeyEvent e) {
+        if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+            if (selectedTower != null) {
+                selectedTower = null;
+            } else {
                 setPaused(!(game.getLevel1().getPaused()));
+            }
         }
-    } 
+    }
 }
