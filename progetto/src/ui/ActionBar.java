@@ -96,7 +96,7 @@ public class ActionBar extends Bar {
     }
 
     public void draw(Graphics g) {
-        g.setColor(new Color(220, 123, 15));
+        g.setColor(new Color(247, 178, 82));
         g.fillRect(x, y, width, height);
 
         drawButton(g);

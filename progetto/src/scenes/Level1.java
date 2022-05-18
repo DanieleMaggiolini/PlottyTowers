@@ -241,10 +241,11 @@ public class Level1 extends GameScene implements SceneMethods {
         drawBackground(g);
         g.drawImage(ingranaggio, 10, 10, 80, 80, null);
         drawButton(g);
-        if(!paused){
+        if (!paused) {
             enemymanager.draw(g);
             towermanager.draw(g);
             projmanager.draw(g);
+            drawSelectedTower(g);
         }
         drawTileOver(g);
         //guarda su ds per susano
@@ -257,7 +258,9 @@ public class Level1 extends GameScene implements SceneMethods {
         }
         actionbar.draw(g);
 
-        drawSelectedTower(g);
+        
+
+        
 
     }
 
@@ -319,27 +322,26 @@ public class Level1 extends GameScene implements SceneMethods {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {
-            actionbar.mouseClicked(e);
-        } else {
-            if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
-                setPaused(!getPaused());
-            }
-            if (selectedTower != null) {
-                if (isTileAvailable(mouseX, mouseY)) {
-                    if (getTowerAt(mouseX, mouseY) == null) {
-                        towermanager.addTower(selectedTower, mouseX, mouseY);
-                        actionbar.removeCoin(selectedTower.getTypetower());
-                        selectedTower = null;
-                    }
-
-                }
-
+        if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
+            setPaused(!getPaused());
+        }
+        if (!paused) {
+            if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {
+                actionbar.mouseClicked(e);
             } else {
-                //prendere la torre se esiste nella posizione del click
-                Tower t = getTowerAt(mouseX, mouseY);
-                actionbar.displayTower(t);
-
+                if (selectedTower != null) {
+                    if (isTileAvailable(mouseX, mouseY)) {
+                        if (getTowerAt(mouseX, mouseY) == null) {
+                            towermanager.addTower(selectedTower, mouseX, mouseY);
+                            actionbar.removeCoin(selectedTower.getTypetower());
+                            selectedTower = null;
+                        }
+                    }
+                } else {
+                    //prendere la torre se esiste nella posizione del click
+                    Tower t = getTowerAt(mouseX, mouseY);
+                    actionbar.displayTower(t);
+                }
             }
         }
     }
@@ -364,11 +366,13 @@ public class Level1 extends GameScene implements SceneMethods {
     public void mousePressed(MouseEvent e) {
         if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
             Bmenu.setMousePressed(true);
-        } else if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {
-            actionbar.mousePressed(e);
         }
         if (paused) {
             pauseoverlay.mousePressed(e);
+        }else{
+            if (e.getY() > (int) (Game.currentScreenHeight * 0.829)) {
+                actionbar.mousePressed(e);
+            }
         }
     }
 
