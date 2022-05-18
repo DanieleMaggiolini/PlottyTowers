@@ -1,4 +1,12 @@
-
+/**
+ * @author  Daniele Maggiolini
+ * @author Mattia Minotti
+ * @version 0.0
+ * @file MyButton.java
+ *
+ * @brief file per la gestione completa di ogni tipo di bottone
+ *
+ */
 package ui;
 
 import java.awt.Color;
@@ -8,14 +16,46 @@ import java.awt.Rectangle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
+/**
+ * @class MyButton
+ *
+ * @brief gestisce i diversi tipi di bottone con i diversi costruttori
+ * ed i diversi modi di stamparli
+ *
+ */
 public class MyButton {
+    
+    //testo contenuto dal bottone
     private String text;
-    public int x, y, width, height, id;
-    private Rectangle bounds;
+    
+    //coordinata x della posizione
+    protected int x;
+    
+    //coordinata y della posizione
+    protected int y;
+    
+    //larghezza
+    protected int width;
+    
+    //altezza
+    protected int height; 
+    
+    //identificatore del bottone        
+    public int id;
+    
+    //rettangolo per la definizione dei bordi ove è possibile cliccare
+    public Rectangle bounds;
+    
+    //booleana che sara true quando il cursore si trovera sopra il bottone
     private boolean mouseover;
+    
+    //booleana che sara true quando avremo effettuato il click del bottone
     private boolean mousepressed;
+    
+    //font del testo
     private Font f;
+    
+    //colore
     private Color c;
     
     //pulsanti NORMALI
