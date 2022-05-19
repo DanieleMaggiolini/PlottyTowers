@@ -66,6 +66,28 @@ public class EnemyManager {
                     }
                 }
                 break;
+            case "level3":
+                enemyImgs = new BufferedImage[4][4];
+                temp = LoadSave.getImage(LoadSave.RICKEMORTY_ENEMY);
+                for (int i = 0; i < enemyImgs.length; i++) {
+                    for (int j = 0; j < enemyImgs[i].length; j++) {
+                        enemyImgs[i][j] = temp.getSubimage(j * 128, i * 192, 128, 192);
+                    }
+                }
+                break;
+            case "level4":
+                enemyImgs = new BufferedImage[3][8];
+                temp = LoadSave.getImage(LoadSave.ONEPIECE_ENEMY);
+                for (int i = 0; i < 8; i++) {
+                    enemyImgs[0][i] = temp.getSubimage(i * 64, 0, 64, 64);
+                }
+                for (int i = 0; i < 6; i++) {
+                    enemyImgs[1][i] = temp.getSubimage(i * 256, 64, 256, 256);
+                }
+                for (int i = 0; i < 8; i++) {
+                    enemyImgs[2][i] = temp.getSubimage(i * 128, 320, 128, 128);
+                }
+                break;     
         }
     }
 
@@ -77,7 +99,7 @@ public class EnemyManager {
         }
     }
 
-    public synchronized void updateEnemyMove(Enemy e) {
+    public void updateEnemyMove(Enemy e) {
         if (e.getLastDir() == -1) {
             setDirection(e);
         }
@@ -94,6 +116,12 @@ public class EnemyManager {
                 case "level2":
                     game.getLevel2().rimuoviVita();
                     break;
+                case "level3":
+                    game.getLevel3().rimuoviVita();
+                    break;
+                case "level4":
+                    game.getLevel4().rimuoviVita();
+                    break;     
             }
         } else {
             setDirection(e);
@@ -106,7 +134,10 @@ public class EnemyManager {
                 return game.getLevel1().getTileType(x, y);
             case "level2":
                 return game.getLevel2().getTileType(x, y);
-
+            case "level3":
+                return game.getLevel3().getTileType(x, y); 
+            case "level4":
+                return game.getLevel4().getTileType(x, y);       
         }
         return -1;
     }
@@ -128,10 +159,9 @@ public class EnemyManager {
 
         fixTile(e, dir, cordX, cordY);
 
-        if (isEnd(e)) {
+        if (isEnd(e)) 
             return;
-        }
-
+        
         if (dir == LEFT || dir == RIGHT) {
             int newY = (int) (e.getY() + getSpeedHeight(UP, e.getEnemyType()));
             if (getTileType((int) (e.getX()), newY) == ROAD_TILE) {
@@ -158,14 +188,12 @@ public class EnemyManager {
     public void fixTile(Enemy e, int dir, int x, int y) {
         switch (dir) {
             case RIGHT:
-                if (x < 29) {
+                if (x < 29) 
                     x++;
-                }
                 break;
             case DOWN:
-                if (y < 13) {
-                    y++;
-                }
+                if (y < 13) 
+                    y++;     
                 break;
         }
         e.setPosition(x * Tile.spriteWidth, y * Tile.spriteHeight);
@@ -182,36 +210,15 @@ public class EnemyManager {
     }
 
     public float getSpeedHeight(int dir, int enemytype) {
-        if (dir == UP) {
+        if (dir == UP) 
             return -getSpeed(enemytype);
-        }
-        if (dir == DOWN) {
-            return getSpeed(enemytype) + Tile.spriteHeight;
-        }
+        if (dir == DOWN) 
+            return getSpeed(enemytype) + Tile.spriteHeight;   
         return 0;
     }
 
     public void addEnemy(int enemytype) {
-        switch (enemytype) {
-            case OROCHIMARU:
-                enemies.add(new Enemy(startX, startY, OROCHIMARU, this));
-                break;
-            case TOBI:
-                enemies.add(new Enemy(startX, startY, TOBI, this));
-                break;
-            case MADARA:
-                enemies.add(new Enemy(startX, startY, MADARA, this));
-                break;
-            case POLLO:
-                enemies.add(new Enemy(startX, startY, POLLO, this));
-                break;
-            case MAIALE:
-                enemies.add(new Enemy(startX, startY, MAIALE, this));
-                break;
-            case GREG:
-                enemies.add(new Enemy(startX, startY, GREG, this));
-                break;    
-        }
+        enemies.add(new Enemy(startX, startY, enemytype, this));    
     }
 
     public void spawnEnemy(int next) {
@@ -230,6 +237,12 @@ public class EnemyManager {
             case "level2":
                 game.getLevel2().addCoin(type);
                 break;
+            case "level3":
+                game.getLevel3().addCoin(type);
+                break;
+            case "level4":
+                game.getLevel4().addCoin(type);
+                break;     
         }
     }
 
@@ -270,7 +283,36 @@ public class EnemyManager {
                         g.drawImage(enemyImgs[2][index4], (int) e.getX()-Tile.spriteWidth/2, (int) e.getY()-Tile.spriteHeight, Tile.spriteWidth*2, Tile.spriteHeight*2, null);
                         break;
                 }
-                break;    
+                break;   
+            case "level3":
+                switch (e.getEnemyType()) {
+                    case JERRY:
+                        g.drawImage(enemyImgs[0][index4], (int) e.getX(), (int)(e.getY()-Tile.spriteHeight/2), Tile.spriteWidth, (int)(Tile.spriteHeight*1.5), null);
+                        break;
+                    case SUMMER:
+                        g.drawImage(enemyImgs[1][index4], (int) e.getX(), (int)(e.getY()-Tile.spriteHeight/2), Tile.spriteWidth, (int)(Tile.spriteHeight*1.5), null);
+                        break;
+                    case MORTY:
+                        g.drawImage(enemyImgs[2][index4], (int) e.getX(), (int)(e.getY()-Tile.spriteHeight/2), Tile.spriteWidth, (int)(Tile.spriteHeight*1.5), null);
+                        break;
+                    case RICK:
+                        g.drawImage(enemyImgs[3][index4], (int) e.getX(), (int)(e.getY()-Tile.spriteHeight/2), Tile.spriteWidth, (int)(Tile.spriteHeight*1.5), null);
+                        break;    
+                }
+                break;
+            case "level4":
+                switch (e.getEnemyType()) {
+                    case LUFFY:
+                        g.drawImage(enemyImgs[0][index8], (int) e.getX(), (int)e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                        break;
+                    case JINBE:
+                        g.drawImage(enemyImgs[1][index6], (int) (e.getX()-Tile.spriteWidth/2), (int)(e.getY()-Tile.spriteHeight), (int)(Tile.spriteWidth*2), (int)(Tile.spriteHeight*2), null);
+                        break;
+                    case BARBABIANCA:
+                        g.drawImage(enemyImgs[2][index8], (int) (e.getX()-Tile.spriteWidth/2), (int) e.getY()-Tile.spriteHeight, (int)(Tile.spriteWidth*2), (int)(Tile.spriteHeight*2), null);
+                        break;
+                }
+                break;      
         }
 
     }

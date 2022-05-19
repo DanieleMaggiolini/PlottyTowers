@@ -64,7 +64,10 @@ public class Render {
                 break;
             case LVL3:
                 game.getLevel3().render(g);
-                break;    
+                break; 
+            case LVL4:
+                game.getLevel4().render(g);
+                break;     
         }
     }
 }

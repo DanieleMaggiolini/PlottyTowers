@@ -6,7 +6,7 @@ public class ThreadUpdate extends Thread {
     private Thread gameUpdate;
     private Game game;
 
-    private final double UPS_SET = 30.0;
+    private final double UPS_SET = 60.0;
 
     public ThreadUpdate(Game game) {
         this.game = game;
@@ -15,7 +15,13 @@ public class ThreadUpdate extends Thread {
         };
         gameUpdate.start();
     }
-
+    
+    /**
+     * @brief loop del gioco che gestisce UPS.
+     *
+     * grazie agli attributi ogni volta che cicla aggiorna la variabile degli UPS 
+     * e solo quando dall ultimo check supera il secondo li stampa.
+     */
     @Override
     public void run() {
         double timePerUpdate = 1000000000.0 / UPS_SET;
@@ -39,7 +45,13 @@ public class ThreadUpdate extends Thread {
 
         }
     }
-
+    /**
+     * @brief metodo che richiama l'update della schermata nella quale ci
+     * troviamo nel gioco.
+     *
+     * grazie ad uno switch controlla l'attuale gamestates(schermata es:menu,
+     * settings, level) e ne richiama l'update
+     */
     private void updateGame() {
         switch (GameStates.gamestates) {
             case MENU:
@@ -57,6 +69,12 @@ public class ThreadUpdate extends Thread {
             case LVL2:
                 game.getLevel2().updates();
                 break;
+            case LVL3:
+                game.getLevel3().updates();
+                break;  
+            case LVL4:
+                game.getLevel4().updates();
+                break;      
         }
     }
 

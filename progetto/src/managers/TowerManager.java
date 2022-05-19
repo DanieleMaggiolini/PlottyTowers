@@ -18,7 +18,7 @@ public class TowerManager {
     private BufferedImage[][] towerImgs;
     private ArrayList<Tower> towers = new ArrayList<>();
     private int towerAmmount = 0;
-    private int aniTick, index6 = 0, index7 = 0, index10 = 0, aniSpeed = 11;
+    private int aniTick, index6 = 0, index7 = 0, index10 = 0, aniSpeed = 22;
 
     public TowerManager(Game game, String state) {
         this.game = game;
@@ -125,9 +125,48 @@ public class TowerManager {
                         }
                     }
                 }
+                break;  
+            case "level3":
+                for (Enemy e : game.getLevel3().getEnemyManager().getEnemies()) {
+                    if (e.isAlive()) {
+                        if (isInRange(t, e)) {
+                            if (t.isCooldownOver()) {
+                                game.getLevel3().shoot(t, e);
+                                t.resetCooldown();
+                            }
+                        }
+                    }
+                }
+                break;
+            case "level4":
+                for (Enemy e : game.getLevel4().getEnemyManager().getEnemies()) {
+                    if (e.isAlive()) {
+                        if (isInRange(t, e)) {
+                            if (t.isCooldownOver()) {
+                                switch (t.getTypetower()) {
+                                    case KIZARU:
+                                        if (index6 == 4) {
+                                            game.getLevel4().shoot(t, e);
+                                        }
+                                        break;
+                                    case AOKIJI:
+                                        if (index7 == 3) {
+                                            game.getLevel4().shoot(t, e);
+                                        }
+                                        break;
+                                    case AKAINU:
+                                        if (index10 == 6) {
+                                            game.getLevel4().shoot(t, e);
+                                        }
+                                        break;
+                                }
+                                t.resetCooldown();
+                            }
+                        }
+                    }
+                }
                 break;    
         }
-
     }
 
     public boolean isInRange(Tower t, Enemy e) {
@@ -157,14 +196,8 @@ public class TowerManager {
         for (Tower t : towers) {
             drawTower(t, g);
         }
-        switch(state){
-            case "level1":
-                updateAnimationTick();
-                    break;
-            case "level4":
-                updateAnimationTick();
-                break;
-        }   
+        if(state=="level1" || state=="level4")
+            updateAnimationTick();
     }
 
     private void drawTower(Tower t, Graphics g) {
@@ -179,6 +212,15 @@ public class TowerManager {
                     }
                 }
                 break;
+            case "level4":
+                for (Enemy e : game.getLevel4().getEnemyManager().getEnemies()) {
+                    if (e.isAlive()) {
+                        if (isInRange(t, e)) {
+                            fermo = false;
+                        }
+                    }
+                }
+                break;    
         }
         if (fermo || state=="level2" || state=="level3") {
             switch(t.getTypetower()){
@@ -199,19 +241,46 @@ public class TowerManager {
                     break;
                 case ARCOX:
                     g.drawImage(towerImgs[2][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case MOSQUITOS:
+                    g.drawImage(towerImgs[0][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case DOG:
+                    g.drawImage(towerImgs[1][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case HEAD:
+                    g.drawImage(towerImgs[2][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case KIZARU:
+                    g.drawImage(towerImgs[0][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case AOKIJI:
+                    g.drawImage(towerImgs[1][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case AKAINU:
+                    g.drawImage(towerImgs[2][0], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                     break;    
             }
         } else {
             switch (t.getTypetower()) {
-                case 0:
-                    g.drawImage(towerImgs[t.getTypetower()][index6], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                case NARUTO:
+                    g.drawImage(towerImgs[0][index6], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                     break;
-                case 1:
-                    g.drawImage(towerImgs[t.getTypetower()][index7], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                case SASUKE:
+                    g.drawImage(towerImgs[1][index7], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                     break;
-                case 2:
-                    g.drawImage(towerImgs[t.getTypetower()][index10], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                case SAKURA:
+                    g.drawImage(towerImgs[2][index10], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                     break;
+                case KIZARU:
+                    g.drawImage(towerImgs[0][index7], (int) t.getX(), (int) t.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;
+                case AOKIJI:
+                    g.drawImage(towerImgs[1][index7], (int) t.getX(), (int)(t.getY()-Tile.spriteHeight/4), Tile.spriteWidth, (int)(Tile.spriteHeight*1.25), null);
+                    break;
+                case AKAINU:
+                    g.drawImage(towerImgs[2][index10], (int) t.getX(), (int)(t.getY()-Tile.spriteHeight/4), Tile.spriteWidth, (int)(Tile.spriteHeight*1.25), null);
+                    break;    
             }
         }
     }

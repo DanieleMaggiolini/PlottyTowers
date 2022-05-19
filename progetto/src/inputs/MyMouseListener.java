@@ -36,6 +36,12 @@ public class MyMouseListener implements MouseListener, MouseMotionListener {
                 case LVL2:
                     game.getLevel2().mouseClicked(e);
                     break;
+                case LVL3:
+                    game.getLevel3().mouseClicked(e);
+                    break;
+                case LVL4:
+                    game.getLevel4().mouseClicked(e);
+                    break;    
             }
         }
     }
@@ -62,6 +68,12 @@ public class MyMouseListener implements MouseListener, MouseMotionListener {
             case LVL2:
                 game.getLevel2().mousePressed(e);
                 break;
+            case LVL3:
+                game.getLevel3().mousePressed(e);
+                break;
+            case LVL4:
+                game.getLevel4().mousePressed(e);
+                break;    
         }
     }
 
@@ -74,7 +86,6 @@ public class MyMouseListener implements MouseListener, MouseMotionListener {
             case PLAYING:
                 game.getPlaying().mouseReleased(e);
                 break;
-
             case SETTINGS:
                 game.getSetting().mouseReleased(e);
                 break;
@@ -87,6 +98,12 @@ public class MyMouseListener implements MouseListener, MouseMotionListener {
             case LVL2:
                 game.getLevel2().mouseReleased(e);
                 break;
+            case LVL3:
+                game.getLevel3().mouseReleased(e);
+                break;
+            case LVL4:
+                game.getLevel4().mouseReleased(e);
+                break;     
         }
     }
 
@@ -109,7 +126,6 @@ public class MyMouseListener implements MouseListener, MouseMotionListener {
             case PLAYING:
                 game.getPlaying().mouseDragged(e);
                 break;
-
             case SETTINGS:
                 game.getSetting().mouseDragged(e);
                 break;
@@ -122,6 +138,12 @@ public class MyMouseListener implements MouseListener, MouseMotionListener {
             case LVL2:
                 game.getLevel2().mouseDragged(e);
                 break;
+            case LVL3:
+                game.getLevel3().mouseDragged(e);
+                break;
+            case LVL4:
+                game.getLevel4().mouseDragged(e);
+                break;    
         }
     }
 
@@ -134,7 +156,6 @@ public class MyMouseListener implements MouseListener, MouseMotionListener {
             case PLAYING:
                 game.getPlaying().mouseMoved(e);
                 break;
-
             case SETTINGS:
                 game.getSetting().mouseMoved(e);
                 break;
@@ -147,7 +168,12 @@ public class MyMouseListener implements MouseListener, MouseMotionListener {
             case LVL2:
                 game.getLevel2().mouseMoved(e);
                 break;
+            case LVL3:
+                game.getLevel3().mouseMoved(e);
+                break;
+            case LVL4:
+                game.getLevel4().mouseMoved(e);
+                break;  
         }
     }
-
 }

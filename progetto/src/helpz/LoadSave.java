@@ -34,6 +34,8 @@ public class LoadSave {
     public static final String ONEPIECE_ENEMY = "image/enemy/onepiece_enemy.png";
     //attack
     public static final String NARUTO_ATTACK = "image/tower/naruto_attack.png";
+    public static final String COC_ATTACK = "image/tower/coc_attack.png";
+    public static final String RICKEMORTY_ATTACK = "image/tower/rickemorty_attack.png";
     public static final String ONEPIECE_ATTACK = "image/tower/onepiece_attack.png";
     //altro
     public static final String CUORI = "image/other/cuori.png";

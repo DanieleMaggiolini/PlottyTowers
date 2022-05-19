@@ -20,6 +20,8 @@ public class AttackAnimation {
                 return updateSasukeIndex();
             case PUNCH:
                 return updateSakuraIndex();
+            case CRATERE:
+                return updateSakuraIndex();
         }
         return 0;
     }

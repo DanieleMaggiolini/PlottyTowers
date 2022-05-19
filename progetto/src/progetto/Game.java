@@ -82,6 +82,9 @@ public class Game extends JFrame implements Runnable {
     private Level2 level2;
     
     private Level3 level3;
+    
+    private Level4 level4;
+    
     //oggetto per gestire le Tiles
     private TileManager tilemanager;
     
@@ -163,6 +166,7 @@ public class Game extends JFrame implements Runnable {
         level1= new Level1(this); 
         level2 = new Level2(this);
         level3 = new Level3(this);
+        level4 = new Level4(this);
     }
     
     /**
@@ -187,35 +191,7 @@ public class Game extends JFrame implements Runnable {
         
         gameThread.start();
         threadupdate= new ThreadUpdate(this);
-        threadupdate.start();
     }
-    
-    /**
-     * @brief metodo che richiama l'update della schermata nella quale ci
-     * troviamo nel gioco.
-     *
-     * grazie ad uno switch controlla l'attuale gamestates(schermata es:menu,
-     * settings, level) e ne richiama l'update
-     */
-//    private void updateGame(){
-//        switch(GameStates.gamestates){    
-//                case MENU:
-//                    menu.updates();
-//                    break;
-//                case PLAYING:
-//                    playing.updates();
-//                    break;
-//                case SETTINGS:
-//                    setting.updates();
-//                    break;
-//                case LVL1:
-//                    level1.updates();
-//                    break;
-//                case LVL2:
-//                    level2.updates();
-//                    break;
-//        }
-//    }
         
     /**
      * @brief inizializza la classe, il game screen e starta il gioco.
@@ -227,18 +203,16 @@ public class Game extends JFrame implements Runnable {
     }
 
     /**
-     * @brief loop del gioco che gestisce FPS e UPS.
+     * @brief loop del gioco che gestisce FPS.
      *
-     * grazie agli attributi ogni volta che cicla aggiorna le variabili di FPS e
-     * UPS e solo quando dall ultimo check supera il secondo le stampa.
+     * grazie agli attributi ogni volta che cicla aggiorna la variabile degli FPS
+     * e solo quando dall ultimo check supera il secondo li stampa.
      */
     @Override
     public void run() {
-        //settings per i frame e gli update
+        //settings per i frame
         double timePerFrame = 1000000000.0 / FPS_SET;
-        //double timePerUpdate = 1000000000.0 / UPS_SET;
         long lastFrame = System.nanoTime();
-        //long lastUpdate = System.nanoTime();
         long lastTimeCheck = System.currentTimeMillis();
         int frames = 0;
         //int updates = 0;
@@ -246,24 +220,15 @@ public class Game extends JFrame implements Runnable {
 
         //loop del gioco
         while (true) {
-
             now = System.nanoTime();
-
             //aggiornamento FPS
             if (now - lastFrame >= timePerFrame) {
                 repaint();
                 lastFrame = now;
                 frames++;
             }
-
-//            //aggiornamento UPS
-//            if (now - lastUpdate >= timePerUpdate) {
-//                updateGame();
-//                lastUpdate = now;
-//                updates++;
-//            }
-
-            //stampa FPS e UPS
+            
+            //stampa FPS
             if (System.currentTimeMillis() - lastTimeCheck >= 1000) {
                 System.out.println("FPS: " + frames);
                 frames = 0;
@@ -334,6 +299,10 @@ public class Game extends JFrame implements Runnable {
     public Level3 getLevel3() {
         return level3;
     }  
+    
+    public Level4 getLevel4() {
+        return level4;
+    }  
     /**
      * @brief metodo che restarta il primo livello.
      * 
@@ -349,7 +318,10 @@ public class Game extends JFrame implements Runnable {
                 break;
             case "level3":
                 level3= new Level3(this); 
-                break;    
+                break; 
+            case "level4":
+                level4= new Level4(this); 
+                break;      
         } 
     }
     

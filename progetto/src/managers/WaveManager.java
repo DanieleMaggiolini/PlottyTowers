@@ -12,7 +12,7 @@ public class WaveManager {
     private String state;
     private ArrayList<Wave> waves = new ArrayList<>();
     //
-    private int enemySpawnTickMax = 60 * 1;
+    private int enemySpawnTickMax = (int)(60 * 2.5);
     private int enemySpawnTick = enemySpawnTickMax;
     private int indexEnemy, indexWave;
     private int tick = 0;
@@ -68,8 +68,17 @@ public class WaveManager {
                 waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(MAIALE, MAIALE, MAIALE, POLLO, POLLO, GREG, MAIALE, MAIALE, MAIALE, POLLO, GREG, GREG))));
                 waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(MAIALE, MAIALE, GREG, GREG, GREG, GREG, GREG, MAIALE, GREG, GREG, GREG, GREG, MAIALE))));
                 break;
+            case "level3":
+                waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(JERRY, JERRY, JERRY, JERRY, SUMMER, JERRY, JERRY, SUMMER, SUMMER, SUMMER, JERRY, JERRY, SUMMER))));
+                waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(SUMMER, SUMMER, SUMMER, MORTY, MORTY, MORTY, SUMMER, SUMMER, JERRY, MORTY, SUMMER, MORTY))));
+                waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(MORTY, MORTY, MORTY, RICK, MORTY, SUMMER, RICK, RICK, RICK, MORTY, MORTY, RICK, RICK))));
+                break;
+            case "level4":
+                waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(LUFFY, LUFFY, LUFFY, LUFFY, LUFFY, LUFFY, LUFFY, JINBE, LUFFY, LUFFY, LUFFY, JINBE, JINBE))));
+                waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(LUFFY, JINBE, JINBE, JINBE, LUFFY, JINBE, JINBE, JINBE, JINBE, LUFFY, LUFFY, JINBE))));
+                waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(JINBE, JINBE, JINBE, JINBE, BARBABIANCA, LUFFY, BARBABIANCA, JINBE, BARBABIANCA, JINBE, BARBABIANCA, JINBE, BARBABIANCA))));
+                break;     
         }
-
     }
 
     public ArrayList<Wave> getWaves() {

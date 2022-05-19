@@ -25,6 +25,13 @@ public class Constants {
         public static final int POLLO = 3;
         public static final int MAIALE = 4;
         public static final int GREG = 5;
+        public static final int JERRY = 6;
+        public static final int SUMMER = 7;
+        public static final int MORTY = 8;
+        public static final int RICK = 9;
+        public static final int LUFFY = 10;
+        public static final int JINBE = 11;
+        public static final int BARBABIANCA = 12;
 
         public static float getSpeed(int enemytype) {
             switch (enemytype) {
@@ -40,6 +47,20 @@ public class Constants {
                     return 1.5f;
                 case GREG:
                     return 1.5f;
+                case JERRY:
+                    return 1.5f;
+                case SUMMER:
+                    return 1.5f;
+                case MORTY:
+                    return 1.5f;
+                case RICK:
+                    return 1.5f;
+                case LUFFY:
+                    return 1.5f;
+                case JINBE:
+                    return 1.5f;
+                case BARBABIANCA:
+                    return 1.5f;      
             }
             return 0;
         }
@@ -58,6 +79,20 @@ public class Constants {
                     return 450;
                 case GREG:
                     return 450;
+                case JERRY:
+                    return 200;
+                case SUMMER:
+                    return 200;
+                case MORTY:
+                    return 200;
+                case RICK:
+                    return 200;
+                case LUFFY:
+                    return 200;
+                case JINBE:
+                    return 350;
+                case BARBABIANCA:
+                    return 800;               
             }
             return 0;
         }
@@ -76,6 +111,20 @@ public class Constants {
                     return 60;
                 case GREG:
                     return 200;
+                case JERRY:
+                    return 40;
+                case SUMMER:
+                    return 50;
+                case MORTY:
+                    return 60;
+                case RICK:
+                    return 100;
+                case LUFFY:
+                    return 40;
+                case JINBE:
+                    return 55;
+                case BARBABIANCA:
+                    return 150;     
             }
             return 0;
         }
@@ -89,6 +138,12 @@ public class Constants {
         public static final int CANNONE = 3;
         public static final int TESLA = 4;
         public static final int ARCOX = 5;
+        public static final int MOSQUITOS = 6;
+        public static final int DOG = 7;
+        public static final int HEAD = 8;
+        public static final int KIZARU = 9;
+        public static final int AOKIJI = 10;
+        public static final int AKAINU = 11;
 
         public static String getName(int towerType) {
             switch (towerType) {
@@ -104,6 +159,18 @@ public class Constants {
                     return "Tesla";
                 case ARCOX:
                     return "Arcox";
+                case MOSQUITOS:
+                    return "Guardia Spaziale";
+                case DOG:
+                    return "Dog";
+                case HEAD:
+                    return "Big Head";
+                case KIZARU:
+                    return "Kizaru";
+                case AOKIJI:
+                    return "Aokiji";
+                case AKAINU:
+                    return "Akainu";     
             }
             return "";
         }
@@ -122,6 +189,18 @@ public class Constants {
                     return 400;
                 case ARCOX:
                     return 100;
+                case MOSQUITOS:
+                    return 150;
+                case DOG:
+                    return 200;
+                case HEAD:
+                    return 400;
+                case KIZARU:
+                    return 150;
+                case AOKIJI:
+                    return 200;
+                case AKAINU:
+                    return 250;      
             }
             return 0;
         }
@@ -140,6 +219,18 @@ public class Constants {
                     return 140;
                 case ARCOX:
                     return 540;
+                case MOSQUITOS:
+                    return 300;
+                case DOG:
+                    return 230;
+                case HEAD:
+                    return 140;
+                case KIZARU:
+                    return 350;
+                case AOKIJI:
+                    return 200;
+                case AKAINU:
+                    return 150;     
             }
             return 0;
         }
@@ -157,7 +248,19 @@ public class Constants {
                 case TESLA:
                     return 70;
                 case ARCOX:
-                    return 8;   
+                    return 8; 
+                case MOSQUITOS:
+                    return 50;
+                case DOG:
+                    return 70;
+                case HEAD:
+                    return 140;
+                case KIZARU:
+                    return 10;
+                case AOKIJI:
+                    return 10;
+                case AKAINU:
+                    return 7; 
             }
             return 0;
         }
@@ -176,6 +279,18 @@ public class Constants {
                     return 40;
                 case ARCOX:
                     return 70; 
+                case MOSQUITOS:
+                    return 35;
+                case DOG:
+                    return 45;
+                case HEAD:
+                    return 75;
+                case KIZARU:
+                    return 45;
+                case AOKIJI:
+                    return 50;
+                case AKAINU:
+                    return 55;    
             }
             return 0;
         }
@@ -186,6 +301,15 @@ public class Constants {
         public static final int SHURIKEN = 0;
         public static final int FIREBALL = 1;
         public static final int PUNCH = 2;
+        public static final int CANNONATA = 3;
+        public static final int SCOSSA = 4;
+        public static final int FRECCIA = 5;
+        public static final int LASER = 6;
+        public static final int RAGGIO = 7;
+        public static final int CRATERE = 8;
+        public static final int LIGHT = 9;
+        public static final int ICE = 10;
+        public static final int MAGMA = 11;
 
         public static float getSpeed(int projectiletype) {
             switch (projectiletype) {
@@ -194,7 +318,25 @@ public class Constants {
                 case FIREBALL:
                     return 7f;
                 case PUNCH:
-                    return 4f;
+                    return 5.5f;
+                case CANNONATA:
+                    return 10f;
+                case SCOSSA:
+                    return 12f;
+                case FRECCIA:
+                    return 10f;    
+                case LASER:
+                    return 18f;
+                case RAGGIO:
+                    return 7f;
+                case CRATERE:
+                    return 4f;     
+                case LIGHT:
+                    return 20f;
+                case ICE:
+                    return 7f;
+                case MAGMA:
+                    return 5.5f;    
             }
             return 0f;
         }

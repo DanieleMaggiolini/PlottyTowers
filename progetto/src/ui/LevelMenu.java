@@ -199,6 +199,18 @@ public class LevelMenu {
         relativeposition.translate((int)(currentPt.getX()-prevPt.getX()), 0);
         if(relativeposition.x<-(background.getWidth()-Game.currentScreenWidth)){
             relativeposition.x=-(background.getWidth()-Game.currentScreenWidth);
+            
+            lvl1.x=-1920+lvl1X;
+            lvl1.bounds.x=-1920+lvl1X;
+            
+            lvl2.x=-1920+lvl2X;
+            lvl2.bounds.x=-1920+lvl2X;
+            
+            lvl3.x=-1920+lvl3X;
+            lvl3.bounds.x=-1920+lvl3X;
+            
+            lvl4.x=-1920+lvl4X;
+            lvl4.bounds.x=-1920+lvl4X;
         }else if(relativeposition.x>0){
             relativeposition.x=0;
             

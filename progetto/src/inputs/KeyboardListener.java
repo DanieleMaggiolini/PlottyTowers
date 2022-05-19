@@ -50,6 +50,12 @@ public class KeyboardListener implements KeyListener {
                         case "level2":
                             GameStates.gamestates = LVL2;
                             break;
+                        case "level3":
+                            GameStates.gamestates = LVL3;
+                            break; 
+                        case "level4":
+                            GameStates.gamestates = LVL4;
+                            break;    
                     }
                     break;
                 case LVL1:
@@ -60,6 +66,14 @@ public class KeyboardListener implements KeyListener {
                     GameStates.gamestates = EDIT;
                     game.getEditing().setState("level2");
                     break;
+                case LVL3:
+                    GameStates.gamestates = EDIT;
+                    game.getEditing().setState("level3");
+                    break;
+                case LVL4:
+                    GameStates.gamestates = EDIT;
+                    game.getEditing().setState("level4");
+                    break;    
             }
         } else if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
             switch (GameStates.gamestates) {
@@ -79,6 +93,12 @@ public class KeyboardListener implements KeyListener {
                 case LVL2:
                     game.getLevel2().keyPressed(e);
                     break;
+                case LVL3:
+                    game.getLevel3().keyPressed(e);
+                    break;
+                case LVL4:
+                    game.getLevel4().keyPressed(e);
+                    break;    
             }
         }
     }

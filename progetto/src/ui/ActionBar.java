@@ -18,11 +18,7 @@ import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.text.DecimalFormat;
-import java.util.HashSet;
-import java.util.Set;
 import progetto.Game;
-import scenes.*;
-import managers.*;
 import objects.Tile;
 import towers.*;
 
@@ -142,6 +138,9 @@ public class ActionBar extends Bar {
                     break;
                 case "level3":
                     g.drawImage(game.getLevel3().getTowerManager().getTowerImgs()[b.getId()][0], b.x, b.y, b.width, b.height, null);
+                    break;  
+                case "level4":
+                    g.drawImage(game.getLevel4().getTowerManager().getTowerImgs()[b.getId()][0], b.x, b.y, b.width, b.height, null);
                     break;    
             }
         }
@@ -168,7 +167,10 @@ public class ActionBar extends Bar {
                     break;
                 case "level3":
                     g.drawImage(game.getLevel3().getTowerManager().getTowerImgs()[displayedTower.getTypetower()-6][0], x + 8, y + 10, Tile.spriteWidth, Tile.spriteHeight, null);
-                    break;    
+                    break; 
+                case "level4":
+                    g.drawImage(game.getLevel4().getTowerManager().getTowerImgs()[displayedTower.getTypetower()-9][0], x + 8, y + 10, Tile.spriteWidth, Tile.spriteHeight, null);
+                    break;      
             }
             g.setFont(new Font("LucidaSans", Font.BOLD, 20));
             g.drawString("" + Towers.getName(displayedTower.getTypetower()), x + Tile.spriteWidth + 30, y + 25);
@@ -226,34 +228,31 @@ public class ActionBar extends Bar {
     private DecimalFormat decimal = new DecimalFormat("0.0");
 
     private void drawWaveTimer(Graphics g) {
+        int timeleftx = (int) (Game.currentScreenWidth * 0.850);
+        int timelefty = (int) (Game.currentScreenHeight * 0.870);
+        g.setColor(Color.BLACK);
+        g.setFont(new Font("LucidaSans", Font.BOLD, 22));
         switch (state) {
             case "level1":
                 if (game.getLevel1().getWaveManager().isTimerStart()) {
-                    int timeleftx = (int) (Game.currentScreenWidth * 0.850);
-                    int timelefty = (int) (Game.currentScreenHeight * 0.870);
-                    g.setColor(Color.BLACK);
-                    g.setFont(new Font("LucidaSans", Font.BOLD, 22));
                     g.drawString("prossima ondata tra: " + decimal.format(game.getLevel1().getWaveManager().getTimeLeft()), timeleftx, timelefty);
                 }
                 break;
             case "level2":
                 if (game.getLevel2().getWaveManager().isTimerStart()) {
-                    int timeleftx = (int) (Game.currentScreenWidth * 0.850);
-                    int timelefty = (int) (Game.currentScreenHeight * 0.870);
-                    g.setColor(Color.BLACK);
-                    g.setFont(new Font("LucidaSans", Font.BOLD, 22));
-                    g.drawString("prossima ondata tra: " + decimal.format(game.getLevel1().getWaveManager().getTimeLeft()), timeleftx, timelefty);
+                    g.drawString("prossima ondata tra: " + decimal.format(game.getLevel2().getWaveManager().getTimeLeft()), timeleftx, timelefty);
                 }
                 break;
             case "level3":
                 if (game.getLevel3().getWaveManager().isTimerStart()) {
-                    int timeleftx = (int) (Game.currentScreenWidth * 0.850);
-                    int timelefty = (int) (Game.currentScreenHeight * 0.870);
-                    g.setColor(Color.BLACK);
-                    g.setFont(new Font("LucidaSans", Font.BOLD, 22));
-                    g.drawString("prossima ondata tra: " + decimal.format(game.getLevel1().getWaveManager().getTimeLeft()), timeleftx, timelefty);
+                    g.drawString("prossima ondata tra: " + decimal.format(game.getLevel3().getWaveManager().getTimeLeft()), timeleftx, timelefty);
                 }
-                break;    
+                break; 
+            case "level4":
+                if (game.getLevel4().getWaveManager().isTimerStart()) {
+                    g.drawString("prossima ondata tra: " + decimal.format(game.getLevel4().getWaveManager().getTimeLeft()), timeleftx, timelefty);
+                }
+                break;     
         }
     }
 
@@ -276,6 +275,10 @@ public class ActionBar extends Bar {
             case "level3":
                 current = game.getLevel3().getWaveManager().getWaveIndex();
                 size = game.getLevel3().getWaveManager().getWaves().size();
+                break;   
+            case "level4":
+                current = game.getLevel4().getWaveManager().getWaveIndex();
+                size = game.getLevel4().getWaveManager().getWaves().size();
                 break;    
         }
         g.drawString("ondata: " + (current + 1) + "/" + size, waveleftx, wavelefty);
@@ -296,7 +299,10 @@ public class ActionBar extends Bar {
                 break;
             case "level3":
                 enemyleft = game.getLevel3().getEnemyManager().getEnemyRemaning();
-                break;    
+                break;  
+            case "level4":
+                enemyleft = game.getLevel4().getEnemyManager().getEnemyRemaning();
+                break;     
         }
         g.drawString("nemici rimasti: " + enemyleft, enemyleftx, enemylefty);
     }
@@ -382,7 +388,10 @@ public class ActionBar extends Bar {
                     break;
                 case "level3":
                     game.getLevel3().setGameOver();
-                    break;    
+                    break;
+                case "level4":
+                    game.getLevel4().setGameOver();
+                    break;     
             }
         }
 
@@ -403,7 +412,11 @@ public class ActionBar extends Bar {
                     case "level3":
                         game.getLevel3().towerLevelUp(displayedTower);
                         coin -= getLevelUpCost(displayedTower);
-                        break;    
+                        break; 
+                    case "level4":
+                        game.getLevel4().towerLevelUp(displayedTower);
+                        coin -= getLevelUpCost(displayedTower);
+                        break;     
                 }
                 return;
             } else if (vendi.getBounds().contains(e.getX(), e.getY())) {
@@ -422,7 +435,12 @@ public class ActionBar extends Bar {
                         game.getLevel3().removeTower(displayedTower);
                         coin += getVendiCost(displayedTower);
                         displayedTower = null;
-                        break;    
+                        break; 
+                    case "level4":
+                        game.getLevel4().removeTower(displayedTower);
+                        coin += getVendiCost(displayedTower);
+                        displayedTower = null;
+                        break;     
                 }
                 return;
             }
@@ -458,7 +476,10 @@ public class ActionBar extends Bar {
                         break;
                     case "level3":
                         towercostType = b.getId()+6;
-                        break;    
+                        break;
+                    case "level4":
+                        towercostType = b.getId()+9;
+                        break;     
                 }   
                 return;
             }
@@ -490,7 +511,10 @@ public class ActionBar extends Bar {
                         break;
                     case "level3":
                         selectedTower = new Tower(0, 0, -1, b.getId()+6);
-                        break;    
+                        break;
+                    case "level4":
+                        selectedTower = new Tower(0, 0, -1, b.getId()+9);
+                        break;     
                 }
                 
                 switch (state) {
@@ -503,8 +527,10 @@ public class ActionBar extends Bar {
                     case "level3":
                         game.getLevel3().setSelectedTower(selectedTower);
                         break;
+                    case "level4":
+                        game.getLevel4().setSelectedTower(selectedTower);
+                        break;    
                 }
-
                 return;
             }
         }
