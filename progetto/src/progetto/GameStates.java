@@ -27,6 +27,8 @@ public enum GameStates {
      */
     public static void setGameState(GameStates state){
         gamestates=state;
+        if(s.clip!=null)
+            s.stop();
         switch(state){
             case LVL1:
                 s.playMusic(0);

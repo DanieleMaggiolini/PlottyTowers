@@ -37,6 +37,7 @@ public class Sound {
         switch(n){
             case -1://themes
                 soundURL[0] = getClass().getResource("/audio/lvl1theme.wav");
+                soundURL[1] = getClass().getResource("/audio/lvl2theme.wav");
                 break;
             case 1://suoni per il lvl 1
                 soundURL[0] = getClass().getResource("/audio/pop.wav");

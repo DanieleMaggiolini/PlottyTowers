@@ -77,7 +77,7 @@ public class EnemyManager {
         }
     }
 
-    public void updateEnemyMove(Enemy e) {
+    public synchronized void updateEnemyMove(Enemy e) {
         if (e.getLastDir() == -1) {
             setDirection(e);
         }
