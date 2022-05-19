@@ -27,7 +27,9 @@ import ui.UshButton;
 public class Level1 extends GameScene implements SceneMethods {
 
     private String LEVELNAME = "level1";
-
+    
+    private Sound s = new Sound(1);
+    
     private EnemyManager enemymanager;
     private TowerManager towermanager;
     private ProjectileManager projmanager;
@@ -132,6 +134,7 @@ public class Level1 extends GameScene implements SceneMethods {
                     }else{
                         win=true;
                         gameover=true;
+                        s.stop();
                         game.getPlaying().getLevelMenu().unlockLevel(LEVELNAME);
                     }
                 }
@@ -156,7 +159,7 @@ public class Level1 extends GameScene implements SceneMethods {
         return false;
     }
 
-    private void spawnEnemy() {
+    private void spawnEnemy() {        
         enemymanager.spawnEnemy(getWaveManager().getNextEnemy());
     }
 
@@ -259,6 +262,7 @@ public class Level1 extends GameScene implements SceneMethods {
 
     public void addCoin(int type) {
         actionbar.addCoin(helpz.Constants.Enemy.getCoin(type));
+        s.playSE(0);
     }
 
     public void rimuoviVita() {
