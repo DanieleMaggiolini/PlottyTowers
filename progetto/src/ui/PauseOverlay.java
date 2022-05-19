@@ -5,10 +5,11 @@ import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.util.Set;
-import progetto.Game;
+import progetto.*;
 import static progetto.GameStates.SETTINGS;
 import static progetto.GameStates.PLAYING;
 import static progetto.GameStates.setGameState;
+import progetto.Sound;
 import scenes.*;
 
 public class PauseOverlay {
@@ -24,7 +25,7 @@ public class PauseOverlay {
     private Game game;
     private String state;
     
-
+    private Sound s;
 
     public PauseOverlay(Game game, String state) {
         buttonW = (int) (Game.currentScreenWidth * 0.052);
@@ -32,6 +33,7 @@ public class PauseOverlay {
 
         this.game = game;
         this.state=state;
+        this.s = progetto.GameStates.s;
         
         loadBackground();
         initSoundButtons();
@@ -89,6 +91,7 @@ public class PauseOverlay {
         resetBools();
         if (isIn(e, music)) {
             music.setMousePressed(true);
+            s.mute();
         } else if (isIn(e, unplay)) {
             unplay.setMousePressed(true);
         } else if (isIn(e, restart)) {
