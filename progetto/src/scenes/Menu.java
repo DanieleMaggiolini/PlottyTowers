@@ -20,7 +20,7 @@ import static progetto.GameStates.*;
 public class Menu extends GameScene implements SceneMethods {
     //buffer contenente immagini
     private BufferedImage background;
-    private MyButton Bplaying, Bsettings, Bquit;
+    private MyButton Bplaying, Bquit;
     private Font f;
     private Color c;
     
@@ -39,8 +39,7 @@ public class Menu extends GameScene implements SceneMethods {
         f=new Font("Arial",Font.BOLD,h);
         c=new Color(255,255,255);
         Bplaying = new MyButton("GIOCA", x, y, w, h, f, c);
-        Bsettings = new MyButton("IMPOSTAZIONI", x, y + yOffset, w, h, f, c);
-        Bquit = new MyButton("ESCI", x, y + yOffset * 2, w, h, f, c);
+        Bquit = new MyButton("ESCI", x, y + yOffset, w, h, f, c);
         
         
     }
@@ -59,7 +58,6 @@ public class Menu extends GameScene implements SceneMethods {
 
     private void drawButton(Graphics g) {
         Bplaying.draw(g);
-        Bsettings.draw(g);
         Bquit.draw(g);
     }
 
@@ -73,9 +71,6 @@ public class Menu extends GameScene implements SceneMethods {
     public void mouseClicked(MouseEvent e) {
         if (Bplaying.getBounds().contains(e.getX(), e.getY())) {
             setGameState(PLAYING);
-        }else if (Bsettings.getBounds().contains(e.getX(), e.getY())) {
-            setGameState(SETTINGS);
-            game.getSetting().setPrevious("menu");
         }else if (Bquit.getBounds().contains(e.getX(), e.getY())) {
             System.exit(0);
         }
@@ -87,10 +82,6 @@ public class Menu extends GameScene implements SceneMethods {
             Bplaying.setMouseOver(true);
             Bplaying.allunga(true);
             return;
-        } else if (Bsettings.getBounds().contains(e.getX(), e.getY())) {
-            Bsettings.setMouseOver(true);
-            Bsettings.allunga(true);
-            return;
         } else if (Bquit.getBounds().contains(e.getX(), e.getY())) {
             Bquit.setMouseOver(true);
             Bquit.allunga(true);
@@ -101,9 +92,7 @@ public class Menu extends GameScene implements SceneMethods {
     @Override
     public void mousePressed(MouseEvent e) {
         if (Bplaying.getBounds().contains(e.getX(), e.getY())) {
-            Bplaying.setMousePressed(true);       
-        }else if(Bsettings.getBounds().contains(e.getX(), e.getY())){
-            Bsettings.setMousePressed(true);
+            Bplaying.setMousePressed(true);
         }else if(Bquit.getBounds().contains(e.getX(), e.getY())){
             Bquit.setMousePressed(true);
         }
@@ -115,7 +104,6 @@ public class Menu extends GameScene implements SceneMethods {
 
     public void resetButtons() {
         Bplaying.resetBooleans();
-        Bsettings.resetBooleans();
         Bquit.resetBooleans();
     }
 

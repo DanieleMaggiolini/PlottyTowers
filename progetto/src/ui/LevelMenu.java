@@ -1,3 +1,13 @@
+/**
+ * @author  Daniele Maggiolini
+ * @author Mattia Minotti
+ * @version 0.0
+ * @file LevelMenu.java
+ *
+ * @brief file per la gestione delle componenti grafiche presenti nella schermata
+ * del menu dei livelli
+ *
+ */
 package ui;
 
 import helpz.LoadSave;
@@ -12,36 +22,83 @@ import static progetto.GameStates.*;
 import static progetto.GameStates.SETTINGS;
 import static progetto.GameStates.setGameState;
 
-
+/**
+ * @class LevelMenu
+ *
+ * @brief classe per la gestione degli eventi del mouse e dei bottoni presenti nel 
+ * menu dei livelli
+ *
+ */
 public class LevelMenu {
-    private BufferedImage background;
-    private BufferedImage[] buttons;
-    private MyButton lvl1,lvl2,lvl3,lvl4;
-    private int width,height;
     
+    //immagine dello sfondo
+    private BufferedImage background;
+    
+    //array delle immagini dei bottoni dei livelli
+    private BufferedImage[] buttons;
+    
+    //bottone livello 1
+    private MyButton lvl1;
+    
+    //bottone livello 2
+    private MyButton lvl2;
+    
+    //bottone livello 3
+    private MyButton lvl3;
+    
+    //bottone livello 4
+    private MyButton lvl4;
+    
+    //larghezza
+    private int width=62;
+    
+    //altezza
+    private int height=45;
+    
+    //punto per lo scorrmiento della schermata del menu dei livelli
     private Point relativeposition =new Point(0,0);
+    
+    //punto per lo scorrmiento della schermata del menu dei livelli
     private Point prevPt= new Point(0,0);
-
+    
+    //coordinata x del bottone del livello 1
     private int lvl1X=465;
+    //coordinata y del bottone del livello 1
     private int lvl1Y=(int)(Game.currentScreenHeight*0.476);
+    //coordinata x del bottone del livello 2
     private int lvl2X=1388;
+    //coordinata y del bottone del livello 2
     private int lvl2Y=(int)(Game.currentScreenHeight*0.324);
+    //coordinata x del bottone del livello 3
     private int lvl3X=2058;
+    //coordinata y del bottone del livello 3
     private int lvl3Y=(int)(Game.currentScreenHeight*0.481);
+    //coordinata x del bottone del livello 4
     private int lvl4X=3250;
+    //coordinata y del bottone del livello 4
     private int lvl4Y=(int)(Game.currentScreenHeight*0.424);
     
+    //booleana  (false == livello2 bloccato), (true == livello2 sbloccato)
     public boolean unlocklvl2=false;
+    //booleana  (false == livello3 bloccato), (true == livello3 sbloccato)
     public boolean unlocklvl3=false;
+    //booleana  (false == livello4 bloccato), (true == livello4 sbloccato)
     public boolean unlocklvl4=false;
     
+    /**
+     @brief costruttore.
+     * 
+     * richiama i metodi per inizializzare immmagini e bottoni
+     */
     public LevelMenu() {
-        width=62;
-        height=45;
         impImage();
         initButton();
     }
     
+    /**
+     @brief importa le immagini per sfondo e bottoni.
+     * 
+     */
     private void impImage() {
        background = LoadSave.getImage(LoadSave.LEVEL_MENU);
        BufferedImage tempButton = LoadSave.getImage(LoadSave.LEVEL_BUTTON);
@@ -49,6 +106,11 @@ public class LevelMenu {
        buttons[0] = tempButton.getSubimage(0, 0, 42, 31);
        buttons[1] = tempButton.getSubimage(42, 0, 42, 31);
     }
+    
+    /**
+     @brief inizializza i bottoni.
+     * 
+     */
     private void initButton(){
         lvl1 = new MyButton("", lvl1X, lvl1Y, width, height);
         lvl2 = new MyButton("", lvl2X, lvl2Y, width, height);
@@ -56,12 +118,22 @@ public class LevelMenu {
         lvl4 = new MyButton("", lvl4X, lvl4Y, width, height);
     }
     
-    
+    /**
+     @brief disegna lo sfondo e richiama il metodo per disegnare i bottoni.
+     * 
+     * @param g oggetto della grafica
+     */
     public void draw(Graphics g){
         g.drawImage(background, relativeposition.x, 0,3845, Game.currentScreenHeight, null);
         
         drawButton(g);  
     }
+    
+    /**
+     @brief imposta e disegna i bottoni.
+     * 
+     * @param g oggetto della grafica
+     */
     public void drawButton(Graphics g){   
         g.setFont(new Font("Arial",Font.BOLD,28));
         g.setColor(Color.black);
@@ -88,6 +160,11 @@ public class LevelMenu {
         g.drawString("4", lvl4.getX()+width/2-8, lvl4.getY()+height/2+5);        
     }
     
+    /**
+     @brief rende giocabile un livello in basse allo state dal quale viene richiamato.
+     * 
+     * @param s stato dal quale il metodo viene richiamato per sbloccare il livello successivo
+     */
     public void unlockLevel(String state){
         switch(state){
             case "level1":
@@ -102,10 +179,21 @@ public class LevelMenu {
         }
         LoadSave.saveLevel(this);
     }
+    
+    /**
+     @brief imposta il punto dove abbiamo iniziato a cliccare/trascinare.
+     * 
+     * @param e evento del mouse
+     */
     public void mousePressed(MouseEvent e) {
         prevPt= e.getPoint();
     }
     
+    /**
+     @brief imposta il punto dove abbiamo iniziato a cliccare/trascinare.
+     * 
+     * @param e evento del mouse
+     */
     public void mouseDragged(MouseEvent e) {
         Point currentPt= e.getPoint();       
         relativeposition.translate((int)(currentPt.getX()-prevPt.getX()), 0);
@@ -142,7 +230,7 @@ public class LevelMenu {
         }else if (lvl3.getBounds().contains(e.getX(), e.getY()) && unlocklvl3) {
             setGameState(LVL3);
         }else if (lvl4.getBounds().contains(e.getX(), e.getY()) && unlocklvl4) {
-            System.exit(0);
+            setGameState(LVL4);
         }
     }
 }
