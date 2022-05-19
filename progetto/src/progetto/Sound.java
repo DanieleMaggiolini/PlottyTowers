@@ -28,6 +28,9 @@ public class Sound {
     //array di percorsi relativi alle tracce audio
     URL soundURL[] = new URL[30];
     
+    //variabile per il muto
+    boolean mute = false;
+    
     /**
      @brief costruttore popola l'array dei suoni relativi al corretto state.
 
@@ -60,16 +63,19 @@ public class Sound {
             
         }
     }
-    
+    private int i;
     /**
      @brief richiama i metodi per riprodurre in loop una traccia audio.
 
      @param i indice dell'array per la selezione della cella corretta
      */
     public void playMusic(int i){
-        setFIle(i);
-        play();
-        loop();
+        this.i = i;
+        if(!mute){
+            setFIle(i);
+            play();
+            loop();
+        }
     }
     
     /**
@@ -78,8 +84,10 @@ public class Sound {
      @param i indice dell'array per la selezione della cella corretta
      */
     public void playSE(int i){
-        setFIle(i);
-        play();
+        if(!mute){
+            setFIle(i);
+            play();
+        }
     }
     
     /**
@@ -100,7 +108,18 @@ public class Sound {
      @brief termina la riproduzione di un suono.
      */
     public void stop(){
-        clip.stop();
+        if(clip!=null)
+            clip.stop();
     }
     
+    /**
+     @brief muta l'audio.
+     */
+    public void mute(){
+        mute = !mute;
+        if(mute)
+           this.stop();
+        else
+           this.playMusic(i);
+    }
 }

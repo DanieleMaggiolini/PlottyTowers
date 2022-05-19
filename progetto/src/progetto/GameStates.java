@@ -14,7 +14,7 @@ public enum GameStates {
     PLAYING, MENU, SETTINGS, EDIT, LVL1, LVL2, LVL3, LVL4;
     
     //oggetto contenente le musiche dei livelli
-    private static Sound s = new Sound(-1);
+    public static Sound s = new Sound(-1);
     
     //oggetto gi questa classe inizializzato con il menu
     public static GameStates gamestates = MENU;
