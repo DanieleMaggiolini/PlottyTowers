@@ -58,7 +58,15 @@ public class MyButton {
     //colore
     private Color c;
     
-    //pulsanti NORMALI
+    /**
+     @brief crea il bottone basico.
+     * 
+     * @param text testo contenuto dal bottone
+     * @param x coordinata
+     * @param y coordinata
+     * @param width larghezza
+     * @param height altezza
+     */
     public MyButton(String text, int x, int y, int width, int height){
        this.text=text;
        this.x=x;
@@ -70,7 +78,16 @@ public class MyButton {
        initBounds();
     }
     
-    //pulsanti NORMALI
+    /**
+     @brief crea il bottone con un id.
+     * 
+     * @param text testo contenuto dal bottone
+     * @param x coordinata
+     * @param y coordinata
+     * @param width larghezza
+     * @param height altezza
+     * @param id identificatore
+     */
     public MyButton(String text, int x, int y, int width, int height, int id){
        this.text=text;
        this.x=x;
@@ -82,7 +99,17 @@ public class MyButton {
        initBounds();
     }
     
-    //pulsanti con font e colore
+    /**
+     @brief crea il bottone con font e colore.
+     * 
+     * @param text testo contenuto dal bottone
+     * @param x coordinata
+     * @param y coordinata
+     * @param width larghezza
+     * @param height altezza
+     * @param f font
+     * @param c colore
+     */
     public MyButton(String text, int x, int y, int width, int height,Font f, Color c){
        this.text=text;
        this.x=x;
@@ -95,7 +122,19 @@ public class MyButton {
        this.c=c;
        initBounds();
     }
-    //pulsanti CON L'IMMAGINE DELLA TILE 
+    
+    /**
+     @brief crea il bottone con font, colore e immagine data dall'identificatore.
+     * 
+     * @param text testo contenuto dal bottone
+     * @param x coordinata
+     * @param y coordinata
+     * @param width larghezza
+     * @param height altezza
+     * @param f font
+     * @param c colore
+     * @param id identificatore
+     */
     public MyButton(String text, int x, int y, int width, int height,Font f, Color c, int id){
        this.text=text;
        this.x=x;
@@ -109,40 +148,56 @@ public class MyButton {
        
        initBounds();
     }
+    
+    /**
+     @brief modifica la coordinata x del bottone.
+     * 
+     * @param x coordinata
+     */
     public void moveX(int x){
         this.x+=x;
         initBounds();
     }
+    
+    /**
+     @brief crea l'effettivo rettangolo del area del bottone.
+     * 
+     */
     private void initBounds(){
         this.bounds=new Rectangle(x, y ,width, height);
     }
     
+    /**
+     @brief getter del rettangolo per verificarne la pressione.
+     * 
+     * @return l'oggetto rettangolo del bottone
+     */
     public Rectangle getBounds(){
         return bounds;
     }
     
+    /**
+     @brief richiama i metodi per disegnare il testo nel bottone.
+     */
     public void draw(Graphics g){
-        //SFONDO DEL BOTTONE
-        //drawBody(g);
-        
-        //BORDI DEL BOTTONE
-        //drawBorder(g);
-        
-        
         //TESTO NEL BOTTONE 
         drawText(g);      
     } 
+    
+    /**
+     @brief richiama i metodi per disegnare il testo nel bottone e i bordi.
+     */
     public void drawB(Graphics g){
-        //SFONDO DEL BOTTONE
-        //drawBody(g);
-        
         //BORDI DEL BOTTONE
         drawBorder(g);
         
-        
         //TESTO NEL BOTTONE 
         drawText(g);      
     } 
+    
+    /**
+     @brief richiama i metodi per disegnare il testo nel bottone, i bordi e lo sfondo.
+     */
     public void drawA(Graphics g){
         //SFONDO DEL BOTTONE
         drawBody(g);
@@ -154,6 +209,10 @@ public class MyButton {
         //TESTO NEL BOTTONE 
         drawText(g);      
     } 
+    
+    /**
+     @brief richiama i metodi per disegnare il testo centrato nel bottone, i bordi e lo sfondo.
+     */
     public void drawAC(Graphics g){
         //SFONDO DEL BOTTONE
         drawBody(g);
@@ -161,29 +220,30 @@ public class MyButton {
         //BORDI DEL BOTTONE
         drawBorder(g);
         
-        
         //TESTO NEL BOTTONE 
         drawCentralText2(g);      
     } 
+    
+    /**
+     @brief richiama i metodi per disegnare il testo centrato nel bottone.
+     */
     public void drawC(Graphics g){
-        //SFONDO DEL BOTTONE
-        //drawBody(g);
-        
-        //BORDI DEL BOTTONE
-        //drawBorder(g);
-        
-        
-        //TESTO NEL BOTTONE 
+        //TESTO CENTRALE NEL BOTTONE 
         drawCentralText(g);      
     }
     
-
+    /**
+     @brief disegna il testo nel bottone.
+     */
     private void drawText(Graphics g) {
         g.setColor(c);       
         g.setFont(f);
         g.drawString(text,x , y + height);
     }
     
+    /**
+     @brief disegna il testo cenrato nel bottone.
+     */
     private void drawCentralText(Graphics g){
         g.setFont(f);
         int w=g.getFontMetrics().stringWidth(text);
@@ -191,6 +251,10 @@ public class MyButton {
         g.setColor(c);       
         g.drawString(text,x + width/2 - w/2 , y + height - h/2);
     }
+    
+    /**
+     @brief disegna il testo nel bottone ma più in alto rispetto a "drawCentralText".
+     */
     private void drawCentralText2(Graphics g){
         g.setFont(f);
         int w=g.getFontMetrics().stringWidth(text);
@@ -199,6 +263,9 @@ public class MyButton {
         g.drawString(text,x + width/2 - w/2 , y + height - h/3);
     }
     
+    /**
+     @brief disegna lo sfondo del bottone.
+     */
     private void drawBody(Graphics g) {
         if(mouseover)
            g.setColor(Color.GRAY);
@@ -207,16 +274,32 @@ public class MyButton {
         g.fillRect(x, y, width, height);
     }
     
+    /**
+     @brief setter del colore.
+     */
     public void setColor(Color c){
         this.c=c;
     }
     
+    /**
+     @brief setter della variabile per la verifica del mouse se si trova sul bottone.
+     */
     public void setMouseOver(boolean mouseover){
         this.mouseover = mouseover;
     }
+    
+    /**
+     @brief getter della variabile per la verifica del mouse se si trova sul bottone.
+     * 
+     * @return variabile mouseover
+     */
     public boolean isMouseOver(){
         return mouseover;
     }
+    
+    /**
+     @brief allunga il bottone in larghezza.
+     */
     private boolean passato=false;
     public void allunga(boolean allunga){
         if(allunga && passato==false){          
@@ -232,6 +315,9 @@ public class MyButton {
         }
     }
     
+    /**
+     @brief disegna i bordi del bottone.
+     */
     private void drawBorder(Graphics g) {
         g.setColor(Color.black);
         g.drawRect(x, y, width, height);
@@ -241,24 +327,49 @@ public class MyButton {
         }
         
     }
+    
+    /**
+     @brief setter della variabile per la verifica del click del mouse se si trova sul bottone.
+     */
     public void setMousePressed(boolean mousepressed){
         this.mousepressed = mousepressed;       
     }
+    
+    /**
+     @brief setter della variabile per la verifica del click del mouse se si trova sul bottone.
+     * 
+     * @return variabile mousepressed
+     */
     public boolean isMousePressed(){
         return mousepressed;
     }
+    
+    /**
+     @brief resetta le variabili booleane.
+     */
     public void resetBooleans(){
         mouseover = false;
         mousepressed = false;
         allunga(false);
     }
     
+    /**
+     @brief getter dell'identificatore.
+     */
     public int getId(){
         return id;
     }
+    
+    /**
+     @brief getter della coordinata x.
+     */
     public int getX(){
         return x;
     }
+    
+    /**
+     @brief getter della coordinata y.
+     */
     public int getY(){
         return y;
     }

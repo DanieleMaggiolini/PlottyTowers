@@ -34,7 +34,10 @@ public class Bar {
     /**
      @brief costruttore inizializza tutte le variabili.
      * 
-     * @param int variabili da inizializzare
+     * @param x coordinata
+     * @param y coordinata
+     * @param width larghezza
+     * @param height altezza
      */
     public Bar(int x, int y, int width, int height) {
         this.x = x;
