@@ -52,11 +52,14 @@ public class Game extends JFrame implements Runnable {
     //Thread del gioco
     private Thread gameThread;
     
+    //Thread degli update
+    private ThreadUpdate threadupdate;
+    
     //velocita aggiornamento FPS
     private final double FPS_SET = 120.0;
 
     //velocita aggiornamento Updates
-    private final double UPS_SET = 60.0;
+    //private final double UPS_SET = 60.0;
 
     //classe del render
     private Render render;
@@ -77,6 +80,8 @@ public class Game extends JFrame implements Runnable {
     private Level1 level1;
     
     private Level2 level2;
+    
+    private Level3 level3;
     //oggetto per gestire le Tiles
     private TileManager tilemanager;
     
@@ -112,6 +117,7 @@ public class Game extends JFrame implements Runnable {
      aggiorna le variabili di grandezza dello schermo (currentScreenWidth e currentScreenHeight)
      */
     public void setFullScreen(){
+        setUndecorated(true);
         gDevice.setFullScreenWindow(this);
         currentScreenWidth = this.getWidth();
         currentScreenHeight = this.getHeight();
@@ -156,6 +162,7 @@ public class Game extends JFrame implements Runnable {
         editing = new Editing(this);
         level1= new Level1(this); 
         level2 = new Level2(this);
+        level3 = new Level3(this);
     }
     
     /**
@@ -174,10 +181,13 @@ public class Game extends JFrame implements Runnable {
     /**
      * @brief metodo per inizializzare e far partire il Thread del gioco.
      */
-    private void start() {
+    private void startGame() {
         gameThread = new Thread(this) {
         };
+        
         gameThread.start();
+        threadupdate= new ThreadUpdate(this);
+        threadupdate.start();
     }
     
     /**
@@ -187,25 +197,25 @@ public class Game extends JFrame implements Runnable {
      * grazie ad uno switch controlla l'attuale gamestates(schermata es:menu,
      * settings, level) e ne richiama l'update
      */
-    private void updateGame(){
-        switch(GameStates.gamestates){    
-                case MENU:
-                    menu.updates();
-                    break;
-                case PLAYING:
-                    playing.updates();
-                    break;
-                case SETTINGS:
-                    setting.updates();
-                    break;
-                case LVL1:
-                    level1.updates();
-                    break;
-                case LVL2:
-                    level2.updates();
-                    break;
-        }
-    }
+//    private void updateGame(){
+//        switch(GameStates.gamestates){    
+//                case MENU:
+//                    menu.updates();
+//                    break;
+//                case PLAYING:
+//                    playing.updates();
+//                    break;
+//                case SETTINGS:
+//                    setting.updates();
+//                    break;
+//                case LVL1:
+//                    level1.updates();
+//                    break;
+//                case LVL2:
+//                    level2.updates();
+//                    break;
+//        }
+//    }
         
     /**
      * @brief inizializza la classe, il game screen e starta il gioco.
@@ -213,7 +223,7 @@ public class Game extends JFrame implements Runnable {
     public static void main(String[] args) {
         Game game = new Game();
         game.gamescreen.initImputs();
-        game.start();
+        game.startGame();
     }
 
     /**
@@ -226,12 +236,12 @@ public class Game extends JFrame implements Runnable {
     public void run() {
         //settings per i frame e gli update
         double timePerFrame = 1000000000.0 / FPS_SET;
-        double timePerUpdate = 1000000000.0 / UPS_SET;
+        //double timePerUpdate = 1000000000.0 / UPS_SET;
         long lastFrame = System.nanoTime();
-        long lastUpdate = System.nanoTime();
+        //long lastUpdate = System.nanoTime();
         long lastTimeCheck = System.currentTimeMillis();
         int frames = 0;
-        int updates = 0;
+        //int updates = 0;
         long now;
 
         //loop del gioco
@@ -246,18 +256,18 @@ public class Game extends JFrame implements Runnable {
                 frames++;
             }
 
-            //aggiornamento UPS
-            if (now - lastUpdate >= timePerUpdate) {
-                updateGame();
-                lastUpdate = now;
-                updates++;
-            }
+//            //aggiornamento UPS
+//            if (now - lastUpdate >= timePerUpdate) {
+//                updateGame();
+//                lastUpdate = now;
+//                updates++;
+//            }
 
             //stampa FPS e UPS
             if (System.currentTimeMillis() - lastTimeCheck >= 1000) {
-                System.out.println("FPS: " + frames + " UPS: " + updates);
+                System.out.println("FPS: " + frames);
                 frames = 0;
-                updates = 0;
+                //updates = 0;
                 lastTimeCheck = System.currentTimeMillis();
             }
         }
@@ -319,6 +329,10 @@ public class Game extends JFrame implements Runnable {
     
     public Level2 getLevel2() {
         return level2;
+    } 
+    
+    public Level3 getLevel3() {
+        return level3;
     }  
     /**
      * @brief metodo che restarta il primo livello.
@@ -333,6 +347,9 @@ public class Game extends JFrame implements Runnable {
             case "level2":
                 level2= new Level2(this); 
                 break;
+            case "level3":
+                level3= new Level3(this); 
+                break;    
         } 
     }
     

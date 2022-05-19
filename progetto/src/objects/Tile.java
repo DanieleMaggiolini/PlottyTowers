@@ -22,6 +22,10 @@ public class Tile {
         tempHeight =(int)(Game.currentScreenHeight*0.17);
         spriteWidth = Game.currentScreenWidth/lvl[0].length;
         spriteHeight = (Game.currentScreenHeight-tempHeight)/lvl.length;
+        if(Game.currentScreenWidth!=1920)
+            spriteWidth+=0.5;
+        if(Game.currentScreenHeight!=1080)
+            spriteHeight+=0.5;
     }
 
     public BufferedImage getSprite() {

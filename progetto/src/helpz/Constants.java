@@ -175,7 +175,7 @@ public class Constants {
                 case TESLA:
                     return 40;
                 case ARCOX:
-                    return 50; 
+                    return 70; 
             }
             return 0;
         }

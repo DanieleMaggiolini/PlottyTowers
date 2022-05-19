@@ -24,8 +24,8 @@ import ui.MyButton;
 import ui.PauseOverlay;
 import ui.UshButton;
 
-public class Level2 extends GameScene implements SceneMethods {
-    private String LEVELNAME = "level2";
+public class Level3 extends GameScene implements SceneMethods {
+    private String LEVELNAME = "level3";
 
     private EnemyManager enemymanager;
     private TowerManager towermanager;
@@ -54,7 +54,7 @@ public class Level2 extends GameScene implements SceneMethods {
     private boolean win=false;
     private UshButton restart, exit;
 
-    public Level2(Game game) {
+    public Level3(Game game) {
         super(game);
 
         //il livello
@@ -376,7 +376,7 @@ public class Level2 extends GameScene implements SceneMethods {
 
     private void drawSelectedTower(Graphics g) {
         if (selectedTower != null) { 
-            g.drawImage(towermanager.getTowerImgs()[selectedTower.getTypetower()-3][0], mouseX, mouseY, Tile.spriteWidth, Tile.spriteHeight, null);
+            g.drawImage(towermanager.getTowerImgs()[selectedTower.getTypetower()-6][0], mouseX, mouseY, Tile.spriteWidth, Tile.spriteHeight, null);
         }
     }
 
@@ -393,7 +393,7 @@ public class Level2 extends GameScene implements SceneMethods {
             if (selectedTower != null) {
                 selectedTower = null;
             } else {
-                setPaused(!(game.getLevel2().getPaused()));
+                setPaused(!(game.getLevel3().getPaused()));
             }
         }
     }

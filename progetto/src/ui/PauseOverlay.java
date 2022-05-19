@@ -109,6 +109,12 @@ public class PauseOverlay {
                     case "level1":
                         game.getLevel1().setPaused(false);
                         break;
+                    case "level2":
+                        game.getLevel2().setPaused(false);
+                        break;    
+                    case "level3":
+                        game.getLevel3().setPaused(false);
+                        break;       
                 }
             }
         } else if (isIn(e, restart)) {

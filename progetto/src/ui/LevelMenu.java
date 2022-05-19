@@ -22,13 +22,13 @@ public class LevelMenu {
     private Point relativeposition =new Point(0,0);
     private Point prevPt= new Point(0,0);
 
-    private int lvl1X=(int)(Game.currentScreenWidth*0.242);
+    private int lvl1X=465;
     private int lvl1Y=(int)(Game.currentScreenHeight*0.476);
-    private int lvl2X=(int)(Game.currentScreenWidth*0.723);
+    private int lvl2X=1388;
     private int lvl2Y=(int)(Game.currentScreenHeight*0.324);
-    private int lvl3X=(int)(Game.currentScreenWidth*1.072);
+    private int lvl3X=2058;
     private int lvl3Y=(int)(Game.currentScreenHeight*0.481);
-    private int lvl4X=(int)(Game.currentScreenWidth*1.693);
+    private int lvl4X=3250;
     private int lvl4Y=(int)(Game.currentScreenHeight*0.424);
     
     public boolean unlocklvl2=false;
@@ -140,7 +140,7 @@ public class LevelMenu {
         }else if (lvl2.getBounds().contains(e.getX(), e.getY()) && unlocklvl2) {
             setGameState(LVL2);
         }else if (lvl3.getBounds().contains(e.getX(), e.getY()) && unlocklvl3) {
-            System.exit(0);
+            setGameState(LVL3);
         }else if (lvl4.getBounds().contains(e.getX(), e.getY()) && unlocklvl4) {
             System.exit(0);
         }

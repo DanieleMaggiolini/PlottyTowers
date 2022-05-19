@@ -33,13 +33,6 @@ public class Level1 extends GameScene implements SceneMethods {
     private ProjectileManager projmanager;
     private WaveManager wavemanager;
 
-    ////////////////////
-    private int[] susanoIndex;
-    private int susanoRow = 0;
-    private BufferedImage[][] susano;
-    private BufferedImage susanoall;
-    /////////////////////
-
     private BufferedImage ingranaggio;
 
     private int[][] lvl;
@@ -82,12 +75,10 @@ public class Level1 extends GameScene implements SceneMethods {
         int tempHeight = (int) (Game.currentScreenHeight * 0.17);
         actionbar = new ActionBar(0, Game.currentScreenHeight - tempHeight, Game.currentScreenWidth, tempHeight, game, LEVELNAME);
         pauseoverlay = new PauseOverlay(game, LEVELNAME);
-        susanoIndex = new int[8];
     }
 
     private void impImage() {
         ingranaggio = LoadSave.getImage(LoadSave.INGRANAGGIO);
-        susanoall = LoadSave.getImage(LoadSave.SUSANO);
     }
 
     private void initButtons() {

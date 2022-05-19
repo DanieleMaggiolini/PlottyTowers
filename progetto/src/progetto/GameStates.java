@@ -11,7 +11,7 @@
 package progetto;
 
 public enum GameStates {
-    PLAYING, MENU, SETTINGS, EDIT, LVL1, LVL2;
+    PLAYING, MENU, SETTINGS, EDIT, LVL1, LVL2, LVL3;
     
     //oggetto gi questa classe inizializzato con il menu
     public static GameStates gamestates = MENU;
