@@ -19,7 +19,6 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import progetto.Game;
 import static progetto.GameStates.*;
-import static progetto.GameStates.SETTINGS;
 import static progetto.GameStates.setGameState;
 
 /**
@@ -200,17 +199,17 @@ public class LevelMenu {
         if(relativeposition.x<-(background.getWidth()-Game.currentScreenWidth)){
             relativeposition.x=-(background.getWidth()-Game.currentScreenWidth);
             
-            lvl1.x=-1920+lvl1X;
+            lvl1.x=(relativeposition.x)+lvl1X;
             lvl1.bounds.x=-1920+lvl1X;
             
-            lvl2.x=-1920+lvl2X;
-            lvl2.bounds.x=-1920+lvl2X;
+            lvl2.x=(relativeposition.x)+lvl2X;
+            lvl2.bounds.x=(relativeposition.x)+lvl2X;
             
-            lvl3.x=-1920+lvl3X;
-            lvl3.bounds.x=-1920+lvl3X;
+            lvl3.x=(relativeposition.x)+lvl3X;
+            lvl3.bounds.x=(relativeposition.x)+lvl3X;
             
-            lvl4.x=-1920+lvl4X;
-            lvl4.bounds.x=-1920+lvl4X;
+            lvl4.x=(relativeposition.x)+lvl4X;
+            lvl4.bounds.x=(relativeposition.x)+lvl4X;
         }else if(relativeposition.x>0){
             relativeposition.x=0;
             

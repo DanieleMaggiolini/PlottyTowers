@@ -11,7 +11,7 @@
 package progetto;
 
 public enum GameStates {
-    PLAYING, MENU, SETTINGS, EDIT, LVL1, LVL2, LVL3, LVL4;
+    PLAYING, MENU, EDIT, LVL1, LVL2, LVL3, LVL4;
     
     //oggetto contenente le musiche dei livelli
     public static Sound s = new Sound(-1);

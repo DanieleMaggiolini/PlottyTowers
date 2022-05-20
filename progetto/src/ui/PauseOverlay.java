@@ -6,7 +6,6 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.util.Set;
 import progetto.*;
-import static progetto.GameStates.SETTINGS;
 import static progetto.GameStates.PLAYING;
 import static progetto.GameStates.setGameState;
 import progetto.Sound;

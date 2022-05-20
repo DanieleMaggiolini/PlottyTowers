@@ -44,23 +44,23 @@ public class Constants {
                 case POLLO:
                     return 1.5f;
                 case MAIALE:
-                    return 1.5f;
+                    return 1.0f;
                 case GREG:
-                    return 1.5f;
+                    return 1.6f;
                 case JERRY:
-                    return 1.5f;
+                    return 1.0f;
                 case SUMMER:
-                    return 1.5f;
+                    return 1.2f;
                 case MORTY:
-                    return 1.5f;
+                    return 1.3f;
                 case RICK:
-                    return 1.5f;
+                    return 1.6f;
                 case LUFFY:
                     return 1.5f;
                 case JINBE:
-                    return 1.5f;
+                    return 1.3f;
                 case BARBABIANCA:
-                    return 1.5f;      
+                    return 0.9f;      
             }
             return 0;
         }
@@ -68,31 +68,31 @@ public class Constants {
         public static int getStartHp(int enemytype) {
             switch (enemytype) {
                 case OROCHIMARU:
-                    return 200;
+                    return 350;
                 case TOBI:
-                    return 350;
+                    return 700;
                 case MADARA:
-                    return 450;
+                    return 1200;
                 case POLLO:
-                    return 450;
+                    return 400;
                 case MAIALE:
-                    return 450;
+                    return 800;
                 case GREG:
-                    return 450;
+                    return 1450;
                 case JERRY:
-                    return 200;
+                    return 250;
                 case SUMMER:
-                    return 200;
+                    return 400;
                 case MORTY:
-                    return 200;
+                    return 650;
                 case RICK:
-                    return 200;
+                    return 1100;
                 case LUFFY:
-                    return 200;
+                    return 380;
                 case JINBE:
-                    return 350;
+                    return 900;
                 case BARBABIANCA:
-                    return 800;               
+                    return 1500;               
             }
             return 0;
         }
@@ -100,31 +100,31 @@ public class Constants {
         public static int getCoin(int enemytype) {
             switch (enemytype) {
                 case OROCHIMARU:
-                    return 40;
+                    return 10;
                 case TOBI:
-                    return 70;
+                    return 20;
                 case MADARA:
-                    return 110;
+                    return 30;
                 case POLLO:
-                    return 40;
+                    return 12;
                 case MAIALE:
-                    return 60;
+                    return 24;
                 case GREG:
-                    return 200;
+                    return 36;
                 case JERRY:
-                    return 40;
+                    return 8;
                 case SUMMER:
-                    return 50;
+                    return 13;
                 case MORTY:
-                    return 60;
+                    return 18;
                 case RICK:
-                    return 100;
+                    return 27;
                 case LUFFY:
-                    return 40;
+                    return 15;
                 case JINBE:
-                    return 55;
+                    return 28;
                 case BARBABIANCA:
-                    return 150;     
+                    return 40;     
             }
             return 0;
         }
@@ -178,29 +178,29 @@ public class Constants {
         public static int getDamage(int towerType) {
             switch (towerType) {
                 case NARUTO:
-                    return 300;
+                    return 50;
                 case SASUKE:
-                    return 400;
+                    return 60;
                 case SAKURA:
-                    return 800;
+                    return 115;
                 case CANNONE:
-                    return 250;
+                    return 50;
                 case TESLA:
-                    return 400;
+                    return 70;
                 case ARCOX:
-                    return 100;
+                    return 18;
                 case MOSQUITOS:
-                    return 150;
+                    return 55;
                 case DOG:
-                    return 200;
+                    return 65;
                 case HEAD:
-                    return 400;
+                    return 125;
                 case KIZARU:
-                    return 150;
+                    return 65;
                 case AOKIJI:
-                    return 200;
+                    return 80;
                 case AKAINU:
-                    return 250;      
+                    return 95;      
             }
             return 0;
         }
@@ -324,7 +324,7 @@ public class Constants {
                 case SCOSSA:
                     return 12f;
                 case FRECCIA:
-                    return 10f;    
+                    return 14f;    
                 case LASER:
                     return 18f;
                 case RAGGIO:

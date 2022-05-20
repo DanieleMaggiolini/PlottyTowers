@@ -48,10 +48,10 @@ public class ToolBar extends Bar{
         
         int i=0;
         for (Tile tile : editing.getGame().getTileManager().tiles) {
-            if(i<29)
+            if(i<30)
                 tileButtons.add(new MyButton("", x + XOffset*i, (int)(Game.currentScreenHeight*0.855), w, h, f, c, i));
             else
-                tileButtons.add(new MyButton("", x + XOffset*(i-29), (int)(Game.currentScreenHeight*0.855)+yOffset, w, h, f, c, i));     
+                tileButtons.add(new MyButton("", x + XOffset*(i-30), (int)(Game.currentScreenHeight*0.855)+yOffset, w, h, f, c, i));     
             i++;
         }
     }

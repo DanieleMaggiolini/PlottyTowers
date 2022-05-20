@@ -50,7 +50,7 @@ public class Playing extends GameScene implements SceneMethods{
         levelmenu = new LevelMenu();
     }
     private void impImage() {
-        ingranaggio= LoadSave.getImage(LoadSave.INGRANAGGIO);    
+        ingranaggio= LoadSave.getImage(LoadSave.HOME);    
     }
     private void initButtons() {
         int w = 80;

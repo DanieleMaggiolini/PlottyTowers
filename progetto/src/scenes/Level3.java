@@ -393,7 +393,7 @@ public class Level3 extends GameScene implements SceneMethods {
             if (selectedTower != null) {
                 selectedTower = null;
             } else {
-                setPaused(!(game.getLevel3().getPaused()));
+                setPaused(!(getPaused()));
             }
         }
     }

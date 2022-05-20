@@ -39,6 +39,8 @@ public class TileManager {
         tiles.add(STRADA = new Tile(getSprite(2, 6), id++, ROAD_TILE));
         tiles.add(STRADA = new Tile(getSprite(3, 6), id++, WATER_TILE));
         tiles.add(STRADA = new Tile(getSprite(4, 6), id++, GRASS_TILE));
+        tiles.add(STRADA = new Tile(getSprite(5, 6), id++, WATER_TILE));
+        tiles.add(STRADA = new Tile(getSprite(6, 6), id++, WATER_TILE));
     }
     
     private void loadAtlas() {

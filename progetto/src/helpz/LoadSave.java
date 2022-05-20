@@ -40,6 +40,7 @@ public class LoadSave {
     //altro
     public static final String CUORI = "image/other/cuori.png";
     public static final String INGRANAGGIO = "image/other/ingranaggio.png";
+    public static final String HOME = "image/other/home.png";
     
     //LOAD IMAGE     
     public static BufferedImage getImage(String name){

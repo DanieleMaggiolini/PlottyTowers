@@ -28,18 +28,13 @@ public class KeyboardListener implements KeyListener {
             GameStates.gamestates = PLAYING;
         } else if (e.getKeyCode() == KeyEvent.VK_W) {
             GameStates.gamestates = MENU;
-        } else if (e.getKeyCode() == KeyEvent.VK_D) {
-            GameStates.gamestates = SETTINGS;
-        } else if (e.getKeyCode() == KeyEvent.VK_M) {
+        }
+        else if (e.getKeyCode() == KeyEvent.VK_M) {
             switch (GameStates.gamestates) {
                 case MENU:
 
                     break;
                 case PLAYING:
-
-                    break;
-
-                case SETTINGS:
 
                     break;
                 case EDIT:
@@ -81,10 +76,6 @@ public class KeyboardListener implements KeyListener {
 
                     break;
                 case PLAYING:
-
-                    break;
-
-                case SETTINGS:
 
                     break;
                 case LVL1:
