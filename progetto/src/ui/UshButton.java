@@ -1,7 +1,7 @@
 /**
  * @author  Daniele Maggiolini
  * @author Mattia Minotti
- * @version 0.0
+ * @version 1.0
  * @file UshButton.java
  *
  * @brief bottoni dell'pauseOverlay per restartare, riprendere ed uscire

@@ -1,7 +1,7 @@
 /**
  * @author  Daniele Maggiolini
  * @author Mattia Minotti
- * @version 0.0
+ * @version 1.0
  * @file MyButton.java
  *
  * @brief file per la gestione completa di ogni tipo di bottone

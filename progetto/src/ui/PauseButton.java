@@ -1,7 +1,7 @@
 /**
  * @author  Daniele Maggiolini
  * @author Mattia Minotti
- * @version 0.0
+ * @version 1.0
  * @file PauseButton.java
  *
  * @brief bottone per mettere in pausa le schermate di gioco e aprire l'overlayPause

@@ -1,7 +1,7 @@
 /**
 * @author  Daniele Maggiolini
 * @author  Mattia Minotti
-* @version 0.0
+* @version 1.0
 * @file Playing.java 
 * 
 * @brief gestisce la schermata del menu dei livelli.

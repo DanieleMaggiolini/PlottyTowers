@@ -1,7 +1,7 @@
 /**
 * @author  Daniele Maggiolini
 * @author  Mattia Minotti
-* @version 0.0
+* @version 1.0
 * @file Level1.java 
 * 
 * @brief file per gestire tutto cio che è presente nel level1.

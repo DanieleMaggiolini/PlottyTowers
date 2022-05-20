@@ -1,7 +1,7 @@
 /**
  * @author  Daniele Maggiolini
  * @author Mattia Minotti
- * @version 0.0
+ * @version 1.0
  * @file PauseOverlay.java
  *
  * @brief overlay del gioco quando un livello viene messo in pausa
