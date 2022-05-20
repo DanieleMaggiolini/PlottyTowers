@@ -23,8 +23,11 @@ public class ThreadUpdate extends Thread {
     
     //oggetto del game
     private Game game;
-
-    //velocita di update al secondo
+    
+    //contiene l'argomento che andra' ad aggiornare
+    private String whatupdate;
+    
+    //numero di update al secondo
     private final double UPS_SET = 60.0;
 
     /**
@@ -32,8 +35,9 @@ public class ThreadUpdate extends Thread {
 
      @param game oggetto del game
      */
-    public ThreadUpdate(Game game) {
+    public ThreadUpdate(Game game, String whatupdate) {
         this.game = game;
+        this.whatupdate=whatupdate;
         gameUpdate = new Thread(this) {
 
         };
@@ -57,16 +61,31 @@ public class ThreadUpdate extends Thread {
             now = System.nanoTime();
             //aggiornamento UPS
             if (now - lastUpdate >= timePerUpdate) {
-                updateGame();
+                switch(whatupdate){
+                    case "enemy":
+                        updateEnemy();
+                        break;
+                    case "tower":
+                        updateTower();
+                        break;
+                    case "wave":
+                        updateWave();
+                        break;
+                    case "proj":
+                        updateProj();
+                        break;
+                    case "coin":
+                        updateCoin();
+                        break;    
+                }
                 lastUpdate = now;
                 updates++;
             }
             if (System.currentTimeMillis() - lastTimeCheck >= 1000) {
-                System.out.println("UPS: " + updates);
+                System.out.println("Ugrade " + whatupdate +"/s: "+ updates);
                 updates = 0;
                 lastTimeCheck = System.currentTimeMillis();
             }
-
         }
     }
     /**
@@ -76,25 +95,83 @@ public class ThreadUpdate extends Thread {
      * grazie ad uno switch controlla l'attuale gamestates(schermata es:menu,
      * settings, level) e ne richiama l'update
      */
-    private void updateGame() {
+    private void updateEnemy() {
         switch (GameStates.gamestates) {
-            case MENU:
-                game.getMenu().updates();
-                break;
-            case PLAYING:
-                game.getPlaying().updates();
-                break;
             case LVL1:
-                game.getLevel1().updates();
+                game.getLevel1().updateEnemy();
                 break;
             case LVL2:
-                game.getLevel2().updates();
+                game.getLevel2().updateEnemy();
                 break;
             case LVL3:
-                game.getLevel3().updates();
+                game.getLevel3().updateEnemy();
                 break;  
             case LVL4:
-                game.getLevel4().updates();
+                game.getLevel4().updateEnemy();
+                break;      
+        }
+    }
+    private void updateTower() {
+        switch (GameStates.gamestates) {
+            case LVL1:
+                game.getLevel1().updateTower();
+                break;
+            case LVL2:
+                game.getLevel2().updateTower();
+                break;
+            case LVL3:
+                game.getLevel3().updateTower();
+                break;  
+            case LVL4:
+                game.getLevel4().updateTower();
+                break;      
+        }
+    }
+    private void updateWave() {
+        switch (GameStates.gamestates) {
+            case LVL1:
+                game.getLevel1().updateWave();
+                break;
+            case LVL2:
+                game.getLevel2().updateWave();
+                break;
+            case LVL3:
+                game.getLevel3().updateWave();
+                break;  
+            case LVL4:
+                game.getLevel4().updateWave();
+                break;      
+        }
+    }
+    private void updateProj() {
+        switch (GameStates.gamestates) {
+            case LVL1:
+                game.getLevel1().updateProj();
+                break;
+            case LVL2:
+                game.getLevel2().updateProj();
+                break;
+            case LVL3:
+                game.getLevel3().updateProj();
+                break;  
+            case LVL4:
+                game.getLevel4().updateProj();
+                break;      
+        }
+    }
+    public void updateCoin(){
+        switch (GameStates.gamestates) {
+            case LVL1:
+                game.getLevel1().updateCoin();
+                break;
+            case LVL2:
+                game.getLevel2().updateCoin();
+                break;
+            case LVL3:
+                game.getLevel3().updateCoin();
+                break;  
+            case LVL4:
+                game.getLevel4().updateCoin();
                 break;      
         }
     }

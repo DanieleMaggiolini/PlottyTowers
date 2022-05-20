@@ -260,7 +260,7 @@ public class Constants {
                 case AOKIJI:
                     return 10;
                 case AKAINU:
-                    return 7; 
+                    return 10; 
             }
             return 0;
         }

@@ -53,7 +53,7 @@ public class ActionBar extends Bar {
     private Tower displayedTower;
 
     //valuta nel gioco per acquistare torri e potenziarle
-    private int coin = 100;
+    private int coin = 50;
 
     private boolean showtowercost;
 

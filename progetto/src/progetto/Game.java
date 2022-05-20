@@ -53,13 +53,14 @@ public class Game extends JFrame implements Runnable {
     private Thread gameThread;
     
     //Thread degli update
-    private ThreadUpdate threadupdate;
+    private ThreadUpdate threadupdateEnemy;
+    private ThreadUpdate threadupdateTower;
+    private ThreadUpdate threadupdateWave;
+    private ThreadUpdate threadupdateProj;
+    private ThreadUpdate threadupdateCoin;
     
     //velocita aggiornamento FPS
     private final double FPS_SET = 120.0;
-
-    //velocita aggiornamento Updates
-    //private final double UPS_SET = 60.0;
 
     //classe del render
     private Render render;
@@ -186,7 +187,11 @@ public class Game extends JFrame implements Runnable {
         };
         
         gameThread.start();
-        threadupdate= new ThreadUpdate(this);
+        threadupdateEnemy= new ThreadUpdate(this,"enemy");
+        threadupdateTower= new ThreadUpdate(this,"tower");
+        threadupdateWave= new ThreadUpdate(this,"wave");
+        threadupdateProj= new ThreadUpdate(this,"proj");
+        threadupdateCoin= new ThreadUpdate(this,"coin");
     }
         
     /**

@@ -96,7 +96,7 @@ public class Level1 extends GameScene implements SceneMethods {
     private Tower selectedTower;
 
     //frequenza aumento monete
-    private int goldTick;
+    private int coinTick;
 
     //booleana verifica la fine del livello (false == gioco in corso), (true == gioco terminato)
     private boolean gameover = false;
@@ -173,16 +173,45 @@ public class Level1 extends GameScene implements SceneMethods {
         this.lvl = lvl;
     }
 
-    public void updates() {
+//    public void updates() {
+//        if (!gameover) {
+//            if (!paused) {
+//                wavemanager.update();
+//                //gold
+//                coinTick++;
+//                if (coinTick % (40) == 0) {
+//                    actionbar.addCoin(1);
+//                }
+//                //enemy
+//                if (isAllDead()) {
+//                    if (isMoreWaves()) {
+//                        wavemanager.startTimer();
+//                        if (isTimerOver()) {
+//                            wavemanager.increaseWaveIndex();
+//                            enemymanager.getEnemies().clear();
+//                            wavemanager.resetIndex();
+//                        }
+//                    }else{
+//                        win=true;
+//                        gameover=true;
+//                        s.stop();
+//                        game.getPlaying().getLevelMenu().unlockLevel(LEVELNAME);
+//                    }
+//                }
+//                //wave
+//                if (isEnemySpawn()) {
+//                    spawnEnemy();
+//                }
+//
+//                enemymanager.update();
+//                towermanager.update();
+//                projmanager.update();
+//            }
+//        }
+//    }
+    public void updateEnemy(){
         if (!gameover) {
             if (!paused) {
-                wavemanager.update();
-
-                goldTick++;
-                if (goldTick % (40) == 0) {
-                    actionbar.addCoin(1);
-                }
-
                 if (isAllDead()) {
                     if (isMoreWaves()) {
                         wavemanager.startTimer();
@@ -198,18 +227,39 @@ public class Level1 extends GameScene implements SceneMethods {
                         game.getPlaying().getLevelMenu().unlockLevel(LEVELNAME);
                     }
                 }
-
-                if (isEnemySpawn()) {
-                    spawnEnemy();
-                }
-
                 enemymanager.update();
-                towermanager.update();
-                projmanager.update();
             }
         }
     }
-
+    public void updateTower(){
+        if (!gameover) 
+            if (!paused) 
+                towermanager.update();
+    }
+    public void updateWave(){
+        if (!gameover) {
+            if (!paused) {
+                wavemanager.update();    
+                if (isEnemySpawn()) 
+                    spawnEnemy();
+            }
+        }
+    }
+    public void updateProj(){
+        if (!gameover) 
+            if (!paused) 
+                projmanager.update();
+    }
+    public void updateCoin(){
+        if (!gameover) {
+            if (!paused) {
+                coinTick++;
+                if (coinTick % (40) == 0) 
+                    actionbar.addCoin(1);  
+            }
+        }
+    }
+    
     private boolean isEnemySpawn() {
         if (getWaveManager().isEnemySpawn()) {
             if (!getWaveManager().isWaveEnd()) {

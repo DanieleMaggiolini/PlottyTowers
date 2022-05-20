@@ -18,7 +18,7 @@ public class TowerManager {
     private BufferedImage[][] towerImgs;
     private ArrayList<Tower> towers = new ArrayList<>();
     private int towerAmmount = 0;
-    private int aniTick, index6 = 0, index7 = 0, index10 = 0, aniSpeed = 8;
+    private int aniTick, index6 = 0, index7 = 0, index10 = 0, aniSpeed = 22;
 
     public TowerManager(Game game, String state) {
         this.game = game;

@@ -48,7 +48,7 @@ public class Level3 extends GameScene implements SceneMethods {
 
     private Tower selectedTower;
 
-    private int goldTick;
+    private int coinTick;
 
     private boolean gameover = false;
     private boolean win=false;
@@ -110,16 +110,9 @@ public class Level3 extends GameScene implements SceneMethods {
         this.lvl = lvl;
     }
 
-    public void updates() {
+    public void updateEnemy(){
         if (!gameover) {
             if (!paused) {
-                wavemanager.update();
-
-                goldTick++;
-                if (goldTick % (40) == 0) {
-                    actionbar.addCoin(1);
-                }
-
                 if (isAllDead()) {
                     if (isMoreWaves()) {
                         wavemanager.startTimer();
@@ -131,17 +124,39 @@ public class Level3 extends GameScene implements SceneMethods {
                     }else{
                         win=true;
                         gameover=true;
+                        //s.stop();
                         game.getPlaying().getLevelMenu().unlockLevel(LEVELNAME);
                     }
                 }
-
-                if (isEnemySpawn()) {
-                    spawnEnemy();
-                }
-
                 enemymanager.update();
+            }
+        }
+    }
+    public void updateTower(){
+        if (!gameover) 
+            if (!paused) 
                 towermanager.update();
+    }
+    public void updateWave(){
+        if (!gameover) {
+            if (!paused) {
+                wavemanager.update();    
+                if (isEnemySpawn()) 
+                    spawnEnemy();
+            }
+        }
+    }
+    public void updateProj(){
+        if (!gameover) 
+            if (!paused) 
                 projmanager.update();
+    }
+    public void updateCoin(){
+        if (!gameover) {
+            if (!paused) {
+                coinTick++;
+                if (coinTick % (40) == 0) 
+                    actionbar.addCoin(1);  
             }
         }
     }
