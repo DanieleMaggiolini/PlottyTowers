@@ -70,9 +70,6 @@ public class Game extends JFrame implements Runnable {
     //schermata del menu livelli
     private Playing playing;
     
-    //schermata impostazioni
-    private Setting setting;
-    
     //schermata per l'editing della mappa
     private Editing editing;
     
@@ -161,7 +158,6 @@ public class Game extends JFrame implements Runnable {
             playing.getLevelMenu().unlockLevel("level2");
         if(unlock[3]==0)
             playing.getLevelMenu().unlockLevel("level3");
-        setting = new Setting(this);
         editing = new Editing(this);
         level1= new Level1(this); 
         level2 = new Level2(this);
@@ -263,15 +259,6 @@ public class Game extends JFrame implements Runnable {
      */
     public Playing getPlaying() {
         return playing;
-    }
-    
-    /**
-     * @brief getter dell'oggetto setting.
-     * 
-     * @return oggetto setting
-     */
-    public Setting getSetting() {
-        return setting;
     }
     
     /**

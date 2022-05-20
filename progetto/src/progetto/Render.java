@@ -50,9 +50,6 @@ public class Render {
             case PLAYING:
                 game.getPlaying().render(g);
                 break;
-            case SETTINGS:
-                game.getSetting().render(g);
-                break;
             case EDIT:
                 game.getEditing().render(g);
                 break;

@@ -60,9 +60,6 @@ public class ThreadUpdate extends Thread {
             case PLAYING:
                 game.getPlaying().updates();
                 break;
-            case SETTINGS:
-                game.getSetting().updates();
-                break;
             case LVL1:
                 game.getLevel1().updates();
                 break;
