@@ -1,13 +1,37 @@
-
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file ThreadUpdate.java 
+* 
+* @brief gestisce il richiamo dei metodi per l'aggiornare il gioco.
+*
+*/
 package progetto;
 
+/** 
+* @class ThreadUpdate
+* 
+* @brief serve per gestire i vari metodi di update delle schermate
+* richiamando solo l'update corrispondente ad esse.
+* 
+*/
 public class ThreadUpdate extends Thread {
-
+    
+    //oggetto Thread per gli update del gioco
     private Thread gameUpdate;
+    
+    //oggetto del game
     private Game game;
 
+    //velocita di update al secondo
     private final double UPS_SET = 60.0;
 
+    /**
+     @brief costruttore che setta il game e inizializza e starta il gameUpdate(facendo partire la run).
+
+     @param game oggetto del game
+     */
     public ThreadUpdate(Game game) {
         this.game = game;
         gameUpdate = new Thread(this) {
@@ -17,7 +41,7 @@ public class ThreadUpdate extends Thread {
     }
     
     /**
-     * @brief loop del gioco che gestisce UPS.
+     * @brief loop del gioco che gestisce la frequenza degli update.
      *
      * grazie agli attributi ogni volta che cicla aggiorna la variabile degli UPS 
      * e solo quando dall ultimo check supera il secondo li stampa.
@@ -74,5 +98,4 @@ public class ThreadUpdate extends Thread {
                 break;      
         }
     }
-
 }

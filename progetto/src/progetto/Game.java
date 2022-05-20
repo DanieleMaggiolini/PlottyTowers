@@ -279,14 +279,29 @@ public class Game extends JFrame implements Runnable {
         return level1;
     }   
     
+    /**
+     * @brief getter dell'oggetto level2.
+     * 
+     * @return oggetto level2
+     */
     public Level2 getLevel2() {
         return level2;
     } 
     
+    /**
+     * @brief getter dell'oggetto level3.
+     * 
+     * @return oggetto level3
+     */
     public Level3 getLevel3() {
         return level3;
     }  
     
+    /**
+     * @brief getter dell'oggetto level4.
+     * 
+     * @return oggetto level4
+     */
     public Level4 getLevel4() {
         return level4;
     }  

@@ -31,6 +31,9 @@ public class Sound {
     //variabile per il muto
     boolean mute = false;
     
+    //indicatore dell'ultima traccia riprodotta
+    private int i;
+    
     /**
      @brief costruttore popola l'array dei suoni relativi al corretto state.
 
@@ -63,7 +66,7 @@ public class Sound {
             
         }
     }
-    private int i;
+    
     /**
      @brief richiama i metodi per riprodurre in loop una traccia audio.
 
