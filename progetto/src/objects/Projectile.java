@@ -13,7 +13,7 @@ import java.awt.geom.Point2D;
 import towers.AttackAnimation;
 
 /**
- * @class Playing
+ * @class Projectile
  *
  * @brief gestisce gli oggetti proiettile e tutti i loro attributi.
  *

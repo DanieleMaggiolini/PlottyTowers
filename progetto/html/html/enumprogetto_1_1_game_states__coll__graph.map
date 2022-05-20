@@ -1,3 +1,3 @@
 <map id="GameStates" name="GameStates">
-<area shape="rect" id="node2" href="$classprogetto_1_1_sound.html" title="{Sound\n|~ mute\l&#45; i\l|+ Sound()\l+ setFIle()\l+ playMusic()\l+ playSE()\l+ play()\l+ loop()\l+ stop()\l+ mute()\l}" alt="" coords="18,145,119,340"/>
+<area shape="rect" id="node2" href="$classprogetto_1_1_sound.html" title="classe per la gestione completa dei suoni livello per livello " alt="" coords="18,145,119,340"/>
 </map>

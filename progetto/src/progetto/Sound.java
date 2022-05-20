@@ -15,7 +15,7 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
 /** 
-* @class Game
+* @class Sound
 * 
 * @brief classe per la gestione completa dei suoni livello per livello
 * 

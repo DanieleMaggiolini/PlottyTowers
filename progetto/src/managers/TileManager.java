@@ -2,7 +2,7 @@
 * @author  Daniele Maggiolini
 * @author  Mattia Minotti
 * @version 0.0
-* @file Level1.java 
+* @file TileManager.java 
 * 
 * @brief file per gestire i tile della mappa.
 *
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import objects.Tile;
 
 /**
- * @class TileManagerTileManager
+ * @class TileManager
  *
  * @brief classe per gestire i tile della mappa
  *

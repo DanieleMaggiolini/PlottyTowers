@@ -13,7 +13,7 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
 /**
- * @class Playing
+ * @class ImgFix
  *
  * @brief gestisce gli aggiustamenti delle immagini.
  *

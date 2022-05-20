@@ -3,9 +3,9 @@
 <area shape="rect" id="node2" href="$classscenes_1_1_editing.html" title="gestice le mappe, le modifiche e i salvataggi di esse. " alt="" coords="164,309,227,336"/>
 <area shape="rect" id="node3" href="$classscenes_1_1_level1.html" title="classe che gestisce tutti gli elementi e i metodi del Level1. " alt="" coords="166,5,225,32"/>
 <area shape="rect" id="node4" href="$classscenes_1_1_level2.html" title="classe che gestisce tutti gli elementi e i metodi del Level2. " alt="" coords="166,56,225,83"/>
-<area shape="rect" id="node5" href="$classscenes_1_1_level3.html" title="Level3" alt="" coords="166,107,225,133"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level3.html" title="classe che gestisce tutti gli elementi e i metodi del Level4. " alt="" coords="166,107,225,133"/>
 <area shape="rect" id="node6" href="$classscenes_1_1_level4.html" title="classe che gestisce tutti gli elementi e i metodi del Level4. " alt="" coords="166,157,225,184"/>
-<area shape="rect" id="node7" href="$classscenes_1_1_menu.html" title="Menu" alt="" coords="168,208,223,235"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_menu.html" title="gestice il menu: sfondo, bottoni. " alt="" coords="168,208,223,235"/>
 <area shape="rect" id="node8" href="$classscenes_1_1_playing.html" title="gestice il menu dei livelli: sfondo, bottoni. " alt="" coords="163,259,228,285"/>
 <area shape="rect" id="node9" href="$interfacescenes_1_1_scene_methods.html" title="SceneMethods" alt="" coords="5,183,115,209"/>
 </map>

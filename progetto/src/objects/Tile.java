@@ -15,7 +15,7 @@ import java.awt.image.BufferedImage;
 import progetto.Game;
 
 /**
- * @class Playing
+ * @class Tile
  *
  * @brief gestisce gli oggetti tile e i loro attributi.
  *

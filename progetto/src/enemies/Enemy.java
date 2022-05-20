@@ -1,3 +1,12 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file Enemy.java 
+* 
+* @brief gestisce dei nemici.
+*
+*/
 package enemies;
 
 import java.awt.Rectangle;
@@ -5,6 +14,12 @@ import objects.Tile;
 import static helpz.Constants.Direction.*;
 import managers.EnemyManager;
 
+/**
+ * @class Enemy
+ *
+ * @brief gestisce i nemici e i loro attributi.
+ *
+ */
 public class Enemy {
 
     private float x, y;

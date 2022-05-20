@@ -1,8 +1,22 @@
-
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file Utilz.java 
+* 
+* @brief metodi utili al progetto.
+*
+*/
 package helpz;
 
 import java.util.ArrayList;
 
+/**
+ * @class Utilz
+ *
+ * @brief contiene metodi utili al progetto.
+ *
+ */
 public class Utilz {
     //da un arraylist a una matrice
         public static int[][] ArrayListTo2dInt(ArrayList<Integer> list ,int Ysize, int Xsize){

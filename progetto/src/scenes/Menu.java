@@ -2,7 +2,7 @@
 * @author  Daniele Maggiolini
 * @author  Mattia Minotti
 * @version 0.0
-* @file Editing.java 
+* @file Menu.java 
 * 
 * @brief gestisce la schermata del menu.
 *
@@ -27,7 +27,7 @@ import ui.MyButton;
 import static progetto.GameStates.*;
 
 /**
- * @class Editing
+ * @class Menu
  *
  * @brief gestice il menu: sfondo, bottoni.
  *

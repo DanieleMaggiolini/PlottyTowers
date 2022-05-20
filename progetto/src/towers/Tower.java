@@ -1,7 +1,22 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file Tower.java 
+* 
+* @brief gestisce le torri.
+*
+*/
 package towers;
 
 import static helpz.Constants.Towers.*;
 
+/**
+ * @class Tower
+ *
+ * @brief gestisce gli oggetti delle torri.
+ *
+ */
 public class Tower {
     
     //coordinata x

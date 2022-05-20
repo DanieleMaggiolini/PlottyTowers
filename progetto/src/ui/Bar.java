@@ -12,7 +12,7 @@ package ui;
 import scenes.Level1;
 
 /**
- * @class ActionBar
+ * @class Bar
  *
  * @brief classe padre delle altre barre
  *
