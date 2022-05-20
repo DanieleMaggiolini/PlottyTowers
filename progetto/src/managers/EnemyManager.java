@@ -92,11 +92,13 @@ public class EnemyManager {
     }
 
     public void update() {
-        for (Enemy e : enemies) {
-            if (e.isAlive()) {
-                updateEnemyMove(e);
+        if(enemies!=null){
+            for (Enemy e : enemies) {
+                if (e.isAlive()) {
+                    updateEnemyMove(e);
+                }
             }
-        }
+        }      
     }
 
     public void updateEnemyMove(Enemy e) {

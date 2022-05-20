@@ -26,6 +26,8 @@ public class ProjectileManager {
 
     private int projId = 0;
 
+    private Object a = new Object();
+
     public ProjectileManager(Game game, String state) {
         this.game = game;
         this.state = state;
@@ -105,19 +107,23 @@ public class ProjectileManager {
                 rotate += 180;
             }
         }
+        synchronized (a) {
+            projectiles.add(new Projectile(t.getX() + Tile.spriteWidth / 2, t.getY() + Tile.spriteHeight / 2, speedx, speedy, t.getDamage(), rotate, projId++, type));
+        }
 
-        projectiles.add(new Projectile(t.getX() + Tile.spriteWidth / 2, t.getY() + Tile.spriteHeight / 2, speedx, speedy, t.getDamage(), rotate, projId++, type));
     }
 
     public void update() {
         if (projectiles != null) {
-            for (Projectile p : projectiles) {
-                if (p.isExist()) {
-                    p.move();
-                    if (isProjHit(p)) {
-                        p.setExist(false);
-                    } else if (isOutBounds(p)) {
-                        p.setExist(false);
+            synchronized (a) {
+                for (Projectile p : projectiles) {
+                    if (p.isExist()) {
+                        p.move();
+                        if (isProjHit(p)) {
+                            p.setExist(false);
+                        } else if (isOutBounds(p)) {
+                            p.setExist(false);
+                        }
                     }
                 }
             }
@@ -184,41 +190,49 @@ public class ProjectileManager {
     public boolean isProjHit(Projectile p) {
         switch (state) {
             case "level1":
-                for (Enemy e : game.getLevel1().getEnemyManager().getEnemies()) {
-                    if (e.isAlive()) {
-                        if (e.getBounds().contains(p.getPosition())) {
-                            e.damage(p.getDmg());
-                            return true;
+                if (game.getLevel1().getEnemyManager().getEnemies() != null) {
+                    for (Enemy e : game.getLevel1().getEnemyManager().getEnemies()) {
+                        if (e.isAlive()) {
+                            if (e.getBounds().contains(p.getPosition())) {
+                                e.damage(p.getDmg());
+                                return true;
+                            }
                         }
                     }
                 }
                 break;
             case "level2":
-                for (Enemy e : game.getLevel2().getEnemyManager().getEnemies()) {
-                    if (e.isAlive()) {
-                        if (e.getBounds().contains(p.getPosition())) {
-                            e.damage(p.getDmg());
-                            return true;
+                if (game.getLevel2().getEnemyManager().getEnemies() != null) {
+                    for (Enemy e : game.getLevel2().getEnemyManager().getEnemies()) {
+                        if (e.isAlive()) {
+                            if (e.getBounds().contains(p.getPosition())) {
+                                e.damage(p.getDmg());
+                                return true;
+                            }
                         }
                     }
                 }
                 break;
             case "level3":
-                for (Enemy e : game.getLevel3().getEnemyManager().getEnemies()) {
-                    if (e.isAlive()) {
-                        if (e.getBounds().contains(p.getPosition())) {
-                            e.damage(p.getDmg());
-                            return true;
+                if (game.getLevel3().getEnemyManager().getEnemies() != null) {
+                    for (Enemy e : game.getLevel3().getEnemyManager().getEnemies()) {
+                        if (e.isAlive()) {
+                            if (e.getBounds().contains(p.getPosition())) {
+                                e.damage(p.getDmg());
+                                return true;
+                            }
                         }
                     }
                 }
                 break;
             case "level4":
-                for (Enemy e : game.getLevel4().getEnemyManager().getEnemies()) {
-                    if (e.isAlive()) {
-                        if (e.getBounds().contains(p.getPosition())) {
-                            e.damage(p.getDmg());
-                            return true;
+                if (game.getLevel4().getEnemyManager().getEnemies() != null) {
+                    for (Enemy e : game.getLevel4().getEnemyManager().getEnemies()) {
+                        if (e.isAlive()) {
+                            if (e.getBounds().contains(p.getPosition())) {
+                                e.damage(p.getDmg());
+                                return true;
+                            }
                         }
                     }
                 }

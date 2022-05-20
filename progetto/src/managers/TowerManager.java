@@ -77,9 +77,11 @@ public class TowerManager {
     }
 
     public void update() {
-        for (Tower t : towers) {
-            t.update();
-            attack(t);
+        if(towers!=null){
+            for (Tower t : towers) {
+                t.update();
+                attack(t);
+            }
         }
     }
 

@@ -214,7 +214,7 @@ public class Constants {
                 case SAKURA:
                     return 140;
                 case CANNONE:
-                    return 140;
+                    return 190;
                 case TESLA:
                     return 140;
                 case ARCOX:
@@ -238,11 +238,11 @@ public class Constants {
         public static float getCooldown(int towerType) {
             switch (towerType) {
                 case NARUTO:
-                    return 10;
+                    return 12;
                 case SASUKE:
-                    return 10;
+                    return 13;
                 case SAKURA:
-                    return 10;
+                    return 15;
                 case CANNONE:
                     return 50;
                 case TESLA:
@@ -256,11 +256,11 @@ public class Constants {
                 case HEAD:
                     return 140;
                 case KIZARU:
-                    return 10;
+                    return 12;
                 case AOKIJI:
-                    return 10;
+                    return 13;
                 case AKAINU:
-                    return 10; 
+                    return 15; 
             }
             return 0;
         }
