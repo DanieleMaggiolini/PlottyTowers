@@ -1,3 +1,12 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file Level1.java 
+* 
+* @brief file per gestire tutto cio che è presente nel level1.
+*
+*/
 package scenes;
 
 import enemies.Enemy;
@@ -24,43 +33,91 @@ import static progetto.GameStates.PLAYING;
 import static progetto.GameStates.setGameState;
 import ui.UshButton;
 
+/** 
+* @class Level1
+* 
+* @brief classe che gestisce tutti gli elementi e i metodi del Level1.
+* 
+* gestione di bottoni, immagini, scritte, Tile, oggetti delle torri,
+* oggetti dei nemici e di tutti gli elementi contenuti dal level1
+* 
+*/ 
 public class Level1 extends GameScene implements SceneMethods {
 
+    //stringa per gestire il richiamo di alcuni metodi
     private String LEVELNAME = "level1";
     
+    //oggetto Sound per la gestitione degli effetti sonori
     private Sound s = new Sound(1);
     
+    //oggetto gestione dei nemici
     private EnemyManager enemymanager;
+    
+    //oggetto gestione delle torri
     private TowerManager towermanager;
+    
+    //oggetto gestione dei proiettili
     private ProjectileManager projmanager;
+    
+    //oggetto gestione delle ondate
     private WaveManager wavemanager;
 
+    //immagine dell'ingranaggio
     private BufferedImage ingranaggio;
 
+    //matrice per la griglia della mappa
     private int[][] lvl;
+    
+    //Bar in basso per la gestione delle torri
     private ActionBar actionbar;
 
-    private int mouseX, mouseY;
-
+    //coordinata x del mouse
+    private int mouseX;
+    
+    //coordinata y del mouse
+    private int mouseY;
+    
+    //bottone per la pausa
     private MyButton Bmenu;
+    
+    //font testo
     private Font f;
+    
+    //colore 
     private Color c;
-
+    
+    //overlay della pausa con pulsanti(muta, restart, esci, riprendi)
     private PauseOverlay pauseoverlay;
+    
+    //booleana verifica gioco in pausa (false == gioco in corso), (true == gioco in pausa)
     private boolean paused = false;
 
+    //torre selezionata
     private Tower selectedTower;
 
+    //frequenza aumento monete
     private int goldTick;
 
+    //booleana verifica la fine del livello (false == gioco in corso), (true == gioco terminato)
     private boolean gameover = false;
+    
+    //booleana verifica la'eventuale vittoria del livello (false == gioco in corso), (true == vittoria)
     private boolean win=false;
-    private UshButton restart, exit;
+    
+    //bottone riavvio nel overlayPause
+    private UshButton restart;
+    
+    //bottone uscita dal livello nel overlayPause
+    private UshButton exit;
 
+    /**
+     @brief costruttore che setta il game e richiama i metodi per inizializzare classi, bottoni e importare immagini.
+
+     @param game oggetto del game
+     */
     public Level1(Game game) {
         super(game);
 
-        //il livello
         initClasses();
 
         impImage();
@@ -68,6 +125,9 @@ public class Level1 extends GameScene implements SceneMethods {
         initButtons();
     }
 
+    /**
+     @brief inizializza tutte le classi presenti.
+     */
     public void initClasses() {
         loadLevel();
         enemymanager = new EnemyManager(game, LEVELNAME);
@@ -398,7 +458,7 @@ public class Level1 extends GameScene implements SceneMethods {
             if (selectedTower != null) {
                 selectedTower = null;
             } else {
-                setPaused(!(getPaused()));
+                setPaused(!getPaused());
             }
         }
     }
