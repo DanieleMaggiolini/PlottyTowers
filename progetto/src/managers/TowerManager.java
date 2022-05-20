@@ -1,3 +1,12 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file Level1.java 
+* 
+* @brief file per gestire le torri.
+*
+*/
 package managers;
 
 import enemies.Enemy;
@@ -11,21 +20,50 @@ import progetto.Game;
 import scenes.Level1;
 import towers.Tower;
 
+/**
+ * @class TowerManager
+ *
+ * @brief classe per gestire il numero, la rimozione, gli upgrade, la creazione,
+ * le animazioni e gli spari delle torri
+ *
+ */
 public class TowerManager {
-
+    //oggeto del game
     private Game game;
+    //stringa contenente lo stato(quindi il livello) dal quale la classe è stata invocata
     private String state;
+    
+    //contenitore di tutte le immagini delle torri di un livello con le rispettive animazioni
     private BufferedImage[][] towerImgs;
+    
+    //contenitore di tutte le torri presenti
     private ArrayList<Tower> towers = new ArrayList<>();
+    
+    //numero di torri generate
     private int towerAmmount = 0;
+    
+    //index delle animazioni delle torri e la velocità di aggiornamento
     private int aniTick, index6 = 0, index7 = 0, index10 = 0, aniSpeed = 22;
 
+    
+    /**
+     @brief costruttore.
+     * assegna il game e lo stato(il livello in cui ci troviamo) e carica
+     * le immagini delle torri
+     * 
+     * @param game
+     * @param state
+     */
     public TowerManager(Game game, String state) {
         this.game = game;
         this.state = state;
         loadTower();
     }
-
+    
+    /**
+     @brief assegnegnazioni delle immagini delle torri con animazioni, diverse
+     * per ogni livello 
+     */
     private void loadTower() {
         BufferedImage towers;
         switch (state) {
@@ -75,7 +113,11 @@ public class TowerManager {
                 break;
         }
     }
-
+    
+    /**
+     * @brief aggiornamento del cooldown di ogni torre presente e richiamo del metodo
+     * per attaccare un nemico
+     */
     public void update() {
         if(towers!=null){
             for (Tower t : towers) {
@@ -85,6 +127,12 @@ public class TowerManager {
         }
     }
 
+    /**
+     * @brief considerati tutti i nemici, se sono vivi, nel raggio della torre in 
+     * considerazione, se il suo cooldown è finito, 
+     * e se presente un animazione siamo nell'index giusto,
+     * fare spaare la torre
+     */
     public void attack(Tower t) {
         switch (state) {
             case "level1":
@@ -170,16 +218,36 @@ public class TowerManager {
                 break;    
         }
     }
-
+    /**
+     * @brief controllo se il nemico preso in considerazione è nel raggio della 
+     * torre presa in considerazione
+     * 
+     * @param t torre
+     * @param e nemico
+     * 
+     * @return se è nel raggio vero, se è fuori falso
+     */
     public boolean isInRange(Tower t, Enemy e) {
         int distance = helpz.Utilz.getDistance(t.getX(), t.getY(), e.getX(), e.getY());
         return distance < t.getRange();
     }
-
+    
+    /**
+     * @brief aggiunta di una torre nell'arraylist delle torri
+     * 
+     * @param selectedTower torre di cui prenderemo il type
+     * @param xPos posizione della torre nell'asse X
+     * @param yPos posizione della torre nell'asse Y
+     */
     public void addTower(Tower selectedTower, int xPos, int yPos) {
         towers.add(new Tower(xPos, yPos, towerAmmount++, selectedTower.getTypetower()));
     }
     
+    /**
+     * @brief potenziamento degli attributi della torre passata se presente
+     * 
+     * @param displayedTower torre a cui applicheremo i potenziamenti
+     */
     public void towerLevelUp(Tower displayedTower) {
         for(Tower t: towers){
             if(t.getId()== displayedTower.getId()){
@@ -188,12 +256,22 @@ public class TowerManager {
         }
     }
     
+    /**
+     * @brief rimozione della torre passata se presente
+     * 
+     * @param displayedTower torre che andremo a rimuovere
+     */
     public void removeTower(Tower displayedTower) {
         for (int i = 0; i < towers.size(); i++) 
             if(towers.get(i).getId()==displayedTower.getId())
                 towers.remove(i);      
     }
     
+    /**
+     * @brief richiamo del metodo drawTower per ogni torre
+     * 
+     * @param g parte grafica
+     */
     public void draw(Graphics g) {
         for (Tower t : towers) {
             drawTower(t, g);
@@ -201,7 +279,14 @@ public class TowerManager {
         if(state=="level1" || state=="level4")
             updateAnimationTick();
     }
-
+    
+    /**
+     * @brief controllo se la torre deve rimanere ferma o deve essere animata,
+     * in base alla presenza di nemici, e disegnarla
+     * 
+     * @param t torre che andremo a disegnare
+     * @param g parte grafica
+     */
     private void drawTower(Tower t, Graphics g) {
         boolean fermo = true;
         switch (state) {
@@ -287,6 +372,9 @@ public class TowerManager {
         }
     }
 
+    /**
+     * @brief aggiornamento indici per l'animazione delle torri
+     */
     private void updateAnimationTick() {
         aniTick++;
         if (aniTick >= aniSpeed) {
@@ -306,11 +394,24 @@ public class TowerManager {
             }
         }
     }
-
+    
+    /**
+     * @brief ritorno del contenitore di tutte le immagini delle torri
+     * 
+     * @return immagini delle torri
+     */
     public BufferedImage[][] getTowerImgs() {
         return towerImgs;
     }
 
+    /**
+     * @brief ritorno di una torre se presente nelle cordinate indicate
+     * 
+     * @param x coordinata richiesta
+     * @param y coordinata richiesta
+     * 
+     * @return torre specifica
+     */
     public Tower getTowerAt(int x, int y) {
         for (Tower t : towers) {
             if ((t.getX() == x) && (t.getY() == y)) {

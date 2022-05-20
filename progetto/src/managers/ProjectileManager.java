@@ -1,3 +1,12 @@
+/**
+ * @author  Daniele Maggiolini
+ * @author Mattia Minotti
+ * @version 0.0
+ * @file Level1.java
+ *
+ * @brief file per gestire i proiettili.
+ *
+ */
 package managers;
 
 import enemies.Enemy;
@@ -15,25 +24,50 @@ import progetto.Game;
 import towers.AttackAnimation;
 import towers.Tower;
 
+/**
+ * @class ProjectileManager
+ *
+ * @brief classe per gestire il movimento, l'inclinazione, la posizione dei
+ * proiettili interazioni dei proiettili coi nemici
+ *
+ */
 public class ProjectileManager {
 
+    //oggeto del game
     private Game game;
+
+    //stringa contenente lo stato(quindi il livello) dal quale la classe è stata invocata
     private String state;
 
+    //contenitore di tutti i proiettili presenti
     private ArrayList<Projectile> projectiles = new ArrayList<>();
 
+    //contenitore di tutte le immagini dei proiettili con animazioni
     private BufferedImage[][] proj_attack;
 
+    //id dei proiettili
     private int projId = 0;
 
+    //oggetto per utilizzo del synchronized
     private Object a = new Object();
 
+    /**
+     * @brief costruttore. assegna il game e lo stato(il livello in cui ci
+     * troviamo) e carica le immagini dei proiettili
+     *
+     * @param game
+     * @param state
+     */
     public ProjectileManager(Game game, String state) {
         this.game = game;
         this.state = state;
         importImgs();
     }
 
+    /**
+     * @brief assegnegnazioni delle immagini dei proiettili con animazioni,
+     * diverse per ogni livello
+     */
     private void importImgs() {
         BufferedImage atlas;
         switch (state) {
@@ -79,6 +113,12 @@ public class ProjectileManager {
         }
     }
 
+    /**
+     * @brief aggiunta di un proiettile nell'array
+     *
+     * @param t torre specifica
+     * @param e nemico specifico
+     */
     public void newProjectile(Tower t, Enemy e) {
         int type = getProjectileType(t);
 
@@ -113,6 +153,10 @@ public class ProjectileManager {
 
     }
 
+    /**
+     * @brief per ogni proiettile controllo se attivo, lo muove e controllo se 
+     * ha colpito qualche nemico
+     */
     public void update() {
         if (projectiles != null) {
             synchronized (a) {
@@ -130,6 +174,11 @@ public class ProjectileManager {
         }
     }
 
+    /**
+     * @brief controllo se il proiettile è uscito della schermata
+     * 
+     * @return se il proiettile è uscito
+     */
     public boolean isOutBounds(Projectile p) {
         if (p.getPosition().x >= 0) {
             if (p.getPosition().x <= Game.currentScreenWidth) {
@@ -143,6 +192,13 @@ public class ProjectileManager {
         return true;
     }
 
+    /**
+     * @brief per ogni proiettile controllo se attivo, se attivo disegno del proiettile e 
+     * eventualmente la sua inclinazione
+     *
+     * @param g parte grafica
+     *
+     */
     public void draw(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
         if (projectiles != null) {
@@ -186,7 +242,15 @@ public class ProjectileManager {
             }
         }
     }
-
+    
+    /**
+     * @brief controolo per il proiettile passato se si trova nella hitbox di uno dei
+     * nemici presenti nel gioco, se presenti disattivarlo e recare danno al nemico
+     *
+     * @param p proiettile controllato
+     *
+     * @return se il proiettile ha colpito un nemico
+     */
     public boolean isProjHit(Projectile p) {
         switch (state) {
             case "level1":
@@ -240,7 +304,14 @@ public class ProjectileManager {
         }
         return false;
     }
-
+    
+    /**
+     * @brief per la torre passata restituito il suo tipo di proiettile utilizzato
+     *
+     * @param t torre specifica
+     *
+     * @return tipologia di proiettile corrispondente alla torre
+     */
     public int getProjectileType(Tower t) {
         switch (t.getTypetower()) {
             case NARUTO:

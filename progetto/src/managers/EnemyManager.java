@@ -1,3 +1,12 @@
+/**
+ * @author  Daniele Maggiolini
+ * @author Mattia Minotti
+ * @version 0.0
+ * @file Level1.java
+ *
+ * @brief file per gestire i nemici e il pathfinding.
+ *
+ */
 package managers;
 
 import enemies.Enemy;
@@ -15,16 +24,43 @@ import progetto.Game;
 import scenes.Level1;
 import ui.ActionBar;
 
+/**
+ * @class EnemyManager
+ *
+ * @brief classe per gestire il movimento, la vita e le animazioni dei nemici
+ *
+ */
 public class EnemyManager {
 
+    //oggeto del game
     private Game game;
+
+    //stringa contenente lo stato(quindi il livello) dal quale la classe è stata invocata
     private String state;
+
+    //contenitore di tutte le immagini dei nemici con animazioni
     private BufferedImage[][] enemyImgs;
+
+    //contenitore di tutti i nemici presenti
     private ArrayList<Enemy> enemies = new ArrayList<>();
+
+    //index delle animazioni dei nemici e la velocità di aggiornamento
     private int aniTick, index2 = 0, index4 = 0, index6 = 0, index8 = 0, aniSpeed = 15;
+
+    //coordinate x e y dell'inizio e la fine del percorso che devono seguire i nemici
     private int startX, startY, endX, endY;
+
+    //barra della vita dei nemici
     private int hpBarWidth = Tile.spriteWidth / 2;
 
+    /**
+     * @brief costruttore. assegna il game e lo stato(il livello in cui ci
+     * troviamo), carica le immagini dei nemici e imposta il punto di inizio e
+     * fine del percorso
+     *
+     * @param game
+     * @param state
+     */
     public EnemyManager(Game game, String state) {
         this.game = game;
         this.state = state;
@@ -33,11 +69,18 @@ public class EnemyManager {
         endX = 29 * Tile.spriteWidth;
         endY = 12 * Tile.spriteHeight;
         loadEnemyImgs();
-//        addEnemy(OROCHIMARU);
-//        addEnemy(TOBI);
-//        addEnemy(MADARA);
     }
 
+    /**
+     * @brief reimpostare le coordinate del punto di inizio e di fine del
+     * percorso
+     *
+     * @param sx coordinata x dell'inizio
+     * @param sy coordinata y dell'inizio
+     * @param ex coordinata x della fine
+     * @param ey coordinata y della fine
+     *
+     */
     public void setStartEnd(int sx, int sy, int ex, int ey) {
         this.startX = sx;
         this.startY = sy;
@@ -45,6 +88,10 @@ public class EnemyManager {
         this.endY = ey;
     }
 
+    /**
+     * @brief assegnegnazioni delle immagini dei nemici con animazioni, diverse
+     * per ogni livello
+     */
     private void loadEnemyImgs() {
         BufferedImage temp;
         switch (state) {
@@ -87,20 +134,28 @@ public class EnemyManager {
                 for (int i = 0; i < 8; i++) {
                     enemyImgs[2][i] = temp.getSubimage(i * 128, 320, 128, 128);
                 }
-                break;     
+                break;
         }
     }
 
+    /**
+     * @brief per ogni nemico controllo se vivo e lo muove
+     */
     public void update() {
-        if(enemies!=null){
+        if (enemies != null) {
             for (Enemy e : enemies) {
                 if (e.isAlive()) {
                     updateEnemyMove(e);
                 }
             }
-        }      
+        }
     }
 
+    /**
+     * @brief aggiornamento della posizione di un nemico
+     *
+     * @param e nemico a cui verrà aggioranta la posizione
+     */
     public void updateEnemyMove(Enemy e) {
         if (e.getLastDir() == -1) {
             setDirection(e);
@@ -123,13 +178,19 @@ public class EnemyManager {
                     break;
                 case "level4":
                     game.getLevel4().rimuoviVita();
-                    break;     
+                    break;
             }
         } else {
             setDirection(e);
         }
     }
 
+    /**
+     * @brief richiesta della tipologia di tile presente nel punto indicato
+     *
+     * @param x coordinata x del tile che vogliamo guardare
+     * @param y coordinata y del tile che vogliamo guardare
+     */
     private int getTileType(int x, int y) {
         switch (state) {
             case "level1":
@@ -137,13 +198,20 @@ public class EnemyManager {
             case "level2":
                 return game.getLevel2().getTileType(x, y);
             case "level3":
-                return game.getLevel3().getTileType(x, y); 
+                return game.getLevel3().getTileType(x, y);
             case "level4":
-                return game.getLevel4().getTileType(x, y);       
+                return game.getLevel4().getTileType(x, y);
         }
         return -1;
     }
 
+    /**
+     * @brief controllo se il nemico si trova alla fine del percorso
+     *
+     * @param e nemico a cui verrà controllata la posizione
+     *
+     * @return se il nemico si trova alla fine
+     */
     private boolean isEnd(Enemy e) {
         if (e.getX() == endX) {
             if (e.getY() == endY) {
@@ -153,6 +221,13 @@ public class EnemyManager {
         return false;
     }
 
+    /**
+     * @brief controllo è pissibile procedere nella direzione in cui il nemico
+     * stava andando altrimenti prova strade diverse in senso orario
+     *
+     * @param e nemico a cui verrà controllata la strada che lo precede
+     *
+     */
     private void setDirection(Enemy e) {
         int dir = e.getLastDir();
 
@@ -161,9 +236,10 @@ public class EnemyManager {
 
         fixTile(e, dir, cordX, cordY);
 
-        if (isEnd(e)) 
+        if (isEnd(e)) {
             return;
-        
+        }
+
         if (dir == LEFT || dir == RIGHT) {
             int newY = (int) (e.getY() + getSpeedHeight(UP, e.getEnemyType()));
             if (getTileType((int) (e.getX()), newY) == ROAD_TILE) {
@@ -187,20 +263,40 @@ public class EnemyManager {
         }
     }
 
+    /**
+     * @brief prendendo la posizione di un nemico si prende in considerazione il
+     * suo angolo in alto a sinistra per controllare i tile successivi
+     *
+     * @param e nemico a cui verrà presa la posizione top-left della texture
+     * @param x tile in cui si trova il nemico nell'asse x
+     * @param y tile in cui si trova il nemico nell'asse y
+     *
+     */
     public void fixTile(Enemy e, int dir, int x, int y) {
         switch (dir) {
             case RIGHT:
-                if (x < 29) 
+                if (x < 29) {
                     x++;
+                }
                 break;
             case DOWN:
-                if (y < 13) 
-                    y++;     
+                if (y < 13) {
+                    y++;
+                }
                 break;
         }
         e.setPosition(x * Tile.spriteWidth, y * Tile.spriteHeight);
     }
-
+    
+    /**
+     * @brief alla direzione del nemico si applica lo spostamento sull'asse X
+     * in base alla velocità
+     *
+     * @param dir direzione del nemico se sull'asse x
+     * @param enemytype tipo di nemico a cui andremo si andrà a vedere la velocità
+     *
+     * @return pixel da aggiungere alla posizione
+     */
     public float getSpeedWidth(int dir, int enemytype) {
         if (dir == LEFT) {
             return -getSpeed(enemytype);
@@ -210,27 +306,61 @@ public class EnemyManager {
         }
         return 0;
     }
-
+    /**
+     * @brief alla direzione del nemico si applica lo spostamento sull'asse y
+     * in base alla velocità
+     *
+     * @param dir direzione del nemico se sull'asse y
+     * @param enemytype tipo di nemico a cui andremo si andrà a vedere la velocità
+     *
+     * @return pixel da aggiungere alla posizione
+     */
     public float getSpeedHeight(int dir, int enemytype) {
-        if (dir == UP) 
+        if (dir == UP) {
             return -getSpeed(enemytype);
-        if (dir == DOWN) 
-            return getSpeed(enemytype) + Tile.spriteHeight;   
+        }
+        if (dir == DOWN) {
+            return getSpeed(enemytype) + Tile.spriteHeight;
+        }
         return 0;
     }
-
+    
+    /**
+     * @brief aggiunta nemico all'array
+     *
+     * @param enemytype tipologia del nemico da aggiungere
+     *
+     */
     public void addEnemy(int enemytype) {
-        enemies.add(new Enemy(startX, startY, enemytype, this));    
+        enemies.add(new Enemy(startX, startY, enemytype, this));
     }
 
+     /**
+     * @brief richiamo metodo per aggiunta passando la tipologia del nemico
+     *
+     * @param next prossimo dell'ondata che dovrà essere generato
+     *
+     */
     public void spawnEnemy(int next) {
         addEnemy(next);
     }
 
+    /**
+     * @brief ritorno dell'array contenente tutti i nemici
+     *
+     * @return array con tutti i nemici
+     *
+     */
     public ArrayList<Enemy> getEnemies() {
         return enemies;
     }
-
+    
+    /**
+     * @brief in base alla tipologia del nemico passato aggiunta di monete al giocatore
+     *
+     * @param type tipologia del nemico
+     *
+     */
     public void addCoin(int type) {
         switch (state) {
             case "level1":
@@ -244,10 +374,17 @@ public class EnemyManager {
                 break;
             case "level4":
                 game.getLevel4().addCoin(type);
-                break;     
+                break;
         }
     }
 
+    /**
+     * @brief per ogni nemico controllo se vivo, se vivo disegno del nemico e della
+     * barra della vita
+     *
+     * @param g parte grafica
+     *
+     */
     public void draw(Graphics g) {
         for (Enemy e : enemies) {
             if (e.isAlive()) {
@@ -258,6 +395,13 @@ public class EnemyManager {
         updateAnimationTick();
     }
 
+    /**
+     * @brief in base alla tipologia di nemico disegno con il suo index di animazione
+     *
+     * @param e nemico da disegnare
+     * @param g parte grafica
+     *
+     */
     private void drawEnemy(Enemy e, Graphics g) {
         switch (state) {
             case "level1":
@@ -282,53 +426,70 @@ public class EnemyManager {
                         g.drawImage(enemyImgs[1][0], (int) e.getX(), (int) e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                         break;
                     case GREG:
-                        g.drawImage(enemyImgs[2][index4], (int) e.getX()-Tile.spriteWidth/2, (int) e.getY()-Tile.spriteHeight, Tile.spriteWidth*2, Tile.spriteHeight*2, null);
+                        g.drawImage(enemyImgs[2][index4], (int) e.getX() - Tile.spriteWidth / 2, (int) e.getY() - Tile.spriteHeight, Tile.spriteWidth * 2, Tile.spriteHeight * 2, null);
                         break;
                 }
-                break;   
+                break;
             case "level3":
                 switch (e.getEnemyType()) {
                     case JERRY:
-                        g.drawImage(enemyImgs[0][index4], (int) e.getX(), (int)(e.getY()-Tile.spriteHeight/2), Tile.spriteWidth, (int)(Tile.spriteHeight*1.5), null);
+                        g.drawImage(enemyImgs[0][index4], (int) e.getX(), (int) (e.getY() - Tile.spriteHeight / 2), Tile.spriteWidth, (int) (Tile.spriteHeight * 1.5), null);
                         break;
                     case SUMMER:
-                        g.drawImage(enemyImgs[1][index4], (int) e.getX(), (int)(e.getY()-Tile.spriteHeight/2), Tile.spriteWidth, (int)(Tile.spriteHeight*1.5), null);
+                        g.drawImage(enemyImgs[1][index4], (int) e.getX(), (int) (e.getY() - Tile.spriteHeight / 2), Tile.spriteWidth, (int) (Tile.spriteHeight * 1.5), null);
                         break;
                     case MORTY:
-                        g.drawImage(enemyImgs[2][index4], (int) e.getX(), (int)(e.getY()-Tile.spriteHeight/2), Tile.spriteWidth, (int)(Tile.spriteHeight*1.5), null);
+                        g.drawImage(enemyImgs[2][index4], (int) e.getX(), (int) (e.getY() - Tile.spriteHeight / 2), Tile.spriteWidth, (int) (Tile.spriteHeight * 1.5), null);
                         break;
                     case RICK:
-                        g.drawImage(enemyImgs[3][index4], (int) e.getX(), (int)(e.getY()-Tile.spriteHeight/2), Tile.spriteWidth, (int)(Tile.spriteHeight*1.5), null);
-                        break;    
+                        g.drawImage(enemyImgs[3][index4], (int) e.getX(), (int) (e.getY() - Tile.spriteHeight / 2), Tile.spriteWidth, (int) (Tile.spriteHeight * 1.5), null);
+                        break;
                 }
                 break;
             case "level4":
                 switch (e.getEnemyType()) {
                     case LUFFY:
-                        g.drawImage(enemyImgs[0][index8], (int) e.getX(), (int)e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
+                        g.drawImage(enemyImgs[0][index8], (int) e.getX(), (int) e.getY(), Tile.spriteWidth, Tile.spriteHeight, null);
                         break;
                     case JINBE:
-                        g.drawImage(enemyImgs[1][index6], (int) (e.getX()-Tile.spriteWidth/2), (int)(e.getY()-Tile.spriteHeight), (int)(Tile.spriteWidth*2), (int)(Tile.spriteHeight*2), null);
+                        g.drawImage(enemyImgs[1][index6], (int) (e.getX() - Tile.spriteWidth / 2), (int) (e.getY() - Tile.spriteHeight), (int) (Tile.spriteWidth * 2), (int) (Tile.spriteHeight * 2), null);
                         break;
                     case BARBABIANCA:
-                        g.drawImage(enemyImgs[2][index8], (int) (e.getX()-Tile.spriteWidth/2), (int) e.getY()-Tile.spriteHeight, (int)(Tile.spriteWidth*2), (int)(Tile.spriteHeight*2), null);
+                        g.drawImage(enemyImgs[2][index8], (int) (e.getX() - Tile.spriteWidth / 2), (int) e.getY() - Tile.spriteHeight, (int) (Tile.spriteWidth * 2), (int) (Tile.spriteHeight * 2), null);
                         break;
                 }
-                break;      
+                break;
         }
 
     }
-
+    /**
+     * @brief disegno rosso della barra della vita di un nemico
+     *
+     * @param e nemico a cui disegnare la barra della vita
+     * @param g parte grafica
+     *
+     */
     private void drawHpBar(Enemy e, Graphics g) {
         g.setColor(Color.red);
-        g.fillRect((int) e.getX() + (Tile.spriteWidth / 2) - (getNewBartWidth(e) / 2), (int) e.getY() + Tile.spriteHeight, getNewBartWidth(e), 5);
+        g.fillRect((int) e.getX() + (Tile.spriteWidth / 2) - (getNewBarWidth(e) / 2), (int) e.getY() + Tile.spriteHeight, getNewBarWidth(e), 5);
 
     }
-
-    private int getNewBartWidth(Enemy e) {
+    
+    /**
+     * @brief calcolo grandezza della barra della vita in base alla vita posseduta
+     * dal nemico
+     *
+     * @param e nemico a cui calcolare la grandezza della barra
+     *
+     * @return larghezza barra
+     */
+    private int getNewBarWidth(Enemy e) {
         return (int) (hpBarWidth * e.getHpbar());
     }
 
+    /**
+     * @brief aggiornamento indici per l'animazione dei nemici
+     */
     private void updateAnimationTick() {
         aniTick++;
         if (aniTick >= aniSpeed) {
@@ -351,7 +512,12 @@ public class EnemyManager {
             }
         }
     }
+    
+    /**
+     * @brief ritorno di quanti nemici sono rimasti
 
+     * @return nemici rimasti vivi
+     */
     public int getEnemyRemaning() {
         int enemyremaning = 0;
         for (Enemy e : enemies) {
