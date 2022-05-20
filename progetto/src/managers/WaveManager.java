@@ -64,7 +64,7 @@ public class WaveManager {
                 waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(MADARA, MADARA, MADARA, TOBI, OROCHIMARU, TOBI, MADARA, MADARA, MADARA, MADARA, MADARA, TOBI))));
                 break;
             case "level2":
-                waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(POLLO, POLLO, GREG, POLLO, POLLO, POLLO, MAIALE, POLLO, POLLO, POLLO, MAIALE, POLLO, POLLO))));
+                waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(POLLO, POLLO, POLLO, POLLO, POLLO, POLLO, MAIALE, POLLO, POLLO, POLLO, MAIALE, POLLO, POLLO))));
                 waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(MAIALE, MAIALE, MAIALE, POLLO, POLLO, GREG, MAIALE, MAIALE, MAIALE, POLLO, GREG, GREG))));
                 waves.add(new Wave(new ArrayList<Integer>(Arrays.asList(MAIALE, MAIALE, GREG, GREG, GREG, GREG, GREG, MAIALE, GREG, GREG, GREG, GREG, MAIALE))));
                 break;

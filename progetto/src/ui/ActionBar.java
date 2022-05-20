@@ -499,7 +499,7 @@ public class ActionBar extends Bar {
         }
         for (MyButton b : towerButtons) {
             if (b.getBounds().contains(e.getX(), e.getY())) {
-                if (coin < helpz.Constants.Towers.getCost(b.getId())) {
+                if (coin < helpz.Constants.Towers.getCost(towercostType)) {
                     return;
                 }
                 switch (state) {
