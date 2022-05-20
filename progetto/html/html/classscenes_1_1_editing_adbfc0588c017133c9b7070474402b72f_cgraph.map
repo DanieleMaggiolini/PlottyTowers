@@ -1,0 +1,6 @@
+<map id="mouseDragged" name="mouseDragged">
+<area shape="rect" id="node2" href="$classscenes_1_1_editing.html#afbbb0a60fd2d899ff81c1715fce5fc73" title="cambia la tile date le coordinate. " alt="" coords="163,56,247,83"/>
+<area shape="rect" id="node3" href="$classobjects_1_1_tile.html#a57c0bcd3471b12679b57faa7ba32d91c" title="ritorna la larghezza " alt="" coords="296,5,475,32"/>
+<area shape="rect" id="node4" href="$classobjects_1_1_tile.html#af71d2cd2060d5ecee3b0a8c387b981dd" title="ritorna l&#39;altezza " alt="" coords="295,56,476,83"/>
+<area shape="rect" id="node5" href="$classobjects_1_1_tile.html#a67283be3f45257d1e0c474c563ebb6b6" title="ritorna l&#39;identificatore " alt="" coords="325,107,445,133"/>
+</map>

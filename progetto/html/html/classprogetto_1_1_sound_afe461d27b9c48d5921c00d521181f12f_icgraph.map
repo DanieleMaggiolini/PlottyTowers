@@ -1,0 +1,5 @@
+<map id="loop" name="loop">
+<area shape="rect" id="node2" href="$classprogetto_1_1_sound.html#afbebd3583bea93ca3867632861ec5801" title="richiama i metodi per riprodurre in loop una traccia audio. " alt="" coords="100,42,181,69"/>
+<area shape="rect" id="node3" href="$enumprogetto_1_1_game_states.html#a118b00363a0d1055d4b00bb40dd66f34" title="costruttore setta il gamestates in base al parametro passato e nel caso vi sia riproduce la musica re..." alt="" coords="229,5,432,47"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_sound.html#a4641ac073645140bf1f9577c2587fe3b" title="muta l&#39;audio. " alt="" coords="305,71,356,98"/>
+</map>

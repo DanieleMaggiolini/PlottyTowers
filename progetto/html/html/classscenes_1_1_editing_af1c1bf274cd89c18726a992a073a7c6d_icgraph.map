@@ -1,0 +1,5 @@
+<map id="saveLevel" name="saveLevel">
+<area shape="rect" id="node2" href="$classui_1_1_tool_bar.html#af1c1bf274cd89c18726a992a073a7c6d" title="salva la mappa modificata. " alt="" coords="131,5,269,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_tool_bar.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse " alt="" coords="317,5,484,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_editing.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse " alt="" coords="532,5,636,32"/>
+</map>

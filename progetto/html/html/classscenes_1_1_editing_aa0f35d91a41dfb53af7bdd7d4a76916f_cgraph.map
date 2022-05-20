@@ -1,0 +1,5 @@
+<map id="drawSelectedTile" name="drawSelectedTile">
+<area shape="rect" id="node2" href="$classobjects_1_1_tile.html#ac51c0c8c26d79dc6df726b968276afb2" title="ritorna l&#39;immagine " alt="" coords="192,5,336,32"/>
+<area shape="rect" id="node3" href="$classobjects_1_1_tile.html#a57c0bcd3471b12679b57faa7ba32d91c" title="ritorna la larghezza " alt="" coords="175,56,353,83"/>
+<area shape="rect" id="node4" href="$classobjects_1_1_tile.html#af71d2cd2060d5ecee3b0a8c387b981dd" title="ritorna l&#39;altezza " alt="" coords="173,107,355,133"/>
+</map>

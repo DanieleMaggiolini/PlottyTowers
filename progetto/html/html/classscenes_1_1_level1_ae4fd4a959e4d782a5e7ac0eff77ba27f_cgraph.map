@@ -1,0 +1,18 @@
+<map id="updateTower" name="updateTower">
+<area shape="rect" id="node2" href="$classmanagers_1_1_tower_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="aggiornamento del cooldown di ogni torre presente e richiamo del metodo per attaccare un nemico ..." alt="" coords="148,267,359,293"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_tower_manager.html#a337d987717311ab51a124a11a059f66c" title="considerati tutti i nemici, se sono vivi, nel raggio della torre in considerazione, se il suo cooldown è finito, e se presente un animazione siamo nell&#39;index giusto, fare spaare la torre " alt="" coords="407,267,613,293"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="675,73,842,100"/>
+<area shape="rect" id="node5" href="$classmanagers_1_1_tower_manager.html#a5f1dea7776d18a6f69428e43c4845fdb" title="controllo se il nemico preso in considerazione è nel raggio della torre presa in considerazione ..." alt="" coords="668,125,849,166"/>
+<area shape="rect" id="node12" href="$classtowers_1_1_tower.html#a2c29881b5a93fb867aea578992af0db1" title="ritorna se il cooldown è finito. " alt="" coords="661,191,856,217"/>
+<area shape="rect" id="node13" href="$classtowers_1_1_tower.html#adaa3345598ef202753372f185625e5da" title="ritorna il tipo di torre " alt="" coords="669,241,848,268"/>
+<area shape="rect" id="node14" href="$classtowers_1_1_tower.html#ac49a5c9f0a8fcb8b68449da989b93542" title="resetta il cooldown. " alt="" coords="665,292,852,319"/>
+<area shape="rect" id="node15" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="675,343,842,369"/>
+<area shape="rect" id="node16" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="675,393,842,420"/>
+<area shape="rect" id="node17" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="675,444,842,471"/>
+<area shape="rect" id="node6" href="$classhelpz_1_1_utilz.html#a8a4c702547acd44cb113b787ae1d3e05" title="helpz.Utilz.getDistance" alt="" coords="905,5,1061,32"/>
+<area shape="rect" id="node7" href="$classtowers_1_1_tower.html#ae13f88e922e1339355456062ad9fa359" title="ritorna la x " alt="" coords="919,56,1046,83"/>
+<area shape="rect" id="node8" href="$classtowers_1_1_tower.html#aab81944f0a14bba932c0931899951937" title="ritorna la y " alt="" coords="918,107,1047,133"/>
+<area shape="rect" id="node9" href="$classenemies_1_1_enemy.html#ae8f033a71b96920114aee202798dc7e9" title="enemies.Enemy.getX" alt="" coords="910,157,1055,184"/>
+<area shape="rect" id="node10" href="$classenemies_1_1_enemy.html#aa0f539cec219900ff6cf76edcfa52367" title="enemies.Enemy.getY" alt="" coords="909,208,1056,235"/>
+<area shape="rect" id="node11" href="$classtowers_1_1_tower.html#a18d1640fde65c20187e68286b6bbcf6d" title="ritorna il range " alt="" coords="904,259,1061,285"/>
+</map>

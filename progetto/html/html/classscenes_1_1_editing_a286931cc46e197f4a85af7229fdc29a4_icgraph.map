@@ -1,0 +1,5 @@
+<map id="loadLevel" name="loadLevel">
+<area shape="rect" id="node2" href="$classscenes_1_1_editing.html#ae646a5c5937b560efaa2b7bb675bc3cd" title="setta lo stato e carica la mappa relativa " alt="" coords="136,5,207,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_editing.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza le classi. " alt="" coords="128,56,215,83"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_editing.html#a2ca3ef24637fa4a614988adee4b8689d" title="costruttore inizializza le classi e setta il game; " alt="" coords="263,56,325,83"/>
+</map>

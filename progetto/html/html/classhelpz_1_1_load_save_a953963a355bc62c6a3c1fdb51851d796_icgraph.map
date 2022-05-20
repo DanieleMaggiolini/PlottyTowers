@@ -1,0 +1,17 @@
+<map id="writeToFile" name="writeToFile">
+<area shape="rect" id="node2" href="$classhelpz_1_1_load_save.html#a934717f63182b47ab05a70ec40cef235" title="crea nuovo array con valori default " alt="" coords="137,107,224,133"/>
+<area shape="rect" id="node10" href="$classhelpz_1_1_load_save.html#ae7a60134f1712407689bfe3c45bc04a1" title="saveLevel" alt="" coords="142,157,219,184"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_game.html#ad79f312dd3a9e52f38a9e5f1536537fd" title="verificare che la mappa del primo livello esita in caso contrario crea il file contenente una mappa v..." alt="" coords="272,107,449,133"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_editing.html#ad79f312dd3a9e52f38a9e5f1536537fd" title="inizializza il livello. " alt="" coords="272,56,449,83"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#a98d87ba6bde3f389e92664a2ef9bfcb1" title="costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata..." alt="" coords="731,132,878,159"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_game.html#a8b260eecbaabcef8473fd87ada040682" title="inizializza la classe, il game screen e starta il gioco. " alt="" coords="963,132,1103,159"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_editing.html#ae646a5c5937b560efaa2b7bb675bc3cd" title="setta lo stato e carica la mappa relativa " alt="" coords="505,56,666,83"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_editing.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza le classi. " alt="" coords="497,5,673,32"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_editing.html#a2ca3ef24637fa4a614988adee4b8689d" title="costruttore inizializza le classi e setta il game; " alt="" coords="729,5,881,32"/>
+<area shape="rect" id="node11" href="$classscenes_1_1_editing.html#af1c1bf274cd89c18726a992a073a7c6d" title="salva il livello. " alt="" coords="277,208,444,235"/>
+<area shape="rect" id="node15" href="$classui_1_1_level_menu.html#a90a96ba9679b7df9cc591d4c58430615" title="rende giocabile un livello in basse allo state dal quale viene richiamato. " alt="" coords="277,157,445,184"/>
+<area shape="rect" id="node12" href="$classui_1_1_tool_bar.html#af1c1bf274cd89c18726a992a073a7c6d" title="salva la mappa modificata. " alt="" coords="516,208,655,235"/>
+<area shape="rect" id="node13" href="$classui_1_1_tool_bar.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse " alt="" coords="721,208,888,235"/>
+<area shape="rect" id="node14" href="$classscenes_1_1_editing.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse " alt="" coords="936,208,1131,235"/>
+<area shape="rect" id="node16" href="$classprogetto_1_1_game.html#a3e57c234c3dde4539f8b9c47d75e59ae" title="inizializza gli oggetti presenti nel progetto. " alt="" coords="497,157,673,184"/>
+</map>

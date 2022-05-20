@@ -1,0 +1,494 @@
+\hypertarget{classmanagers_1_1_wave_manager}{}\section{Wave\+Manager Class Reference}
+\label{classmanagers_1_1_wave_manager}\index{Wave\+Manager@{Wave\+Manager}}
+
+
+classe per gestire il numero di ondate, che nemici contengono, ogni quanto generano un nemico e dopo quanto parte un\textquotesingle{}altra ondata  
+
+
+
+
+Collaboration diagram for Wave\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_wave_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmanagers_1_1_wave_manager_a4f9054a370c040f84d220fce947314f2}{Wave\+Manager} (\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classmanagers_1_1_wave_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}, String \hyperlink{classmanagers_1_1_wave_manager_a91ac952876f776b3fbbc8519e093fdbf}{state})
+\begin{DoxyCompactList}\small\item\em costruttore. assegna il game e lo stato(il livello in cui ci troviamo) e inizializza le ondate \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_wave_manager_ac5c54df7ed3b930268c8d7752c101725}{update} ()
+\begin{DoxyCompactList}\small\item\em aggiornamento variabili tick per generare il successivo nemico dell\textquotesingle{}ondata e se necessario aggiornamento timer tra due ondate \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_wave_manager_a30f46b71db254d0e9ca9e7f3578134c3}{increase\+Wave\+Index} ()
+\begin{DoxyCompactList}\small\item\em aumento dell\textquotesingle{}index e quindi passaggio all\textquotesingle{}ondata successiva con azzeramento dei tick e timer \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_wave_manager_aec53975ffc59ffaf3080db21af0d2f6e}{start\+Timer} ()
+\begin{DoxyCompactList}\small\item\em avviamento del timer tra un\textquotesingle{}ondata e un\textquotesingle{}altra \end{DoxyCompactList}\item 
+boolean \hyperlink{classmanagers_1_1_wave_manager_ab68417e6738c05037923f5f0f21eb586}{is\+Timer\+Over} ()
+\begin{DoxyCompactList}\small\item\em richiesta di una variabile per controllare se la pausa tra 2 ondate è finita \end{DoxyCompactList}\item 
+boolean \hyperlink{classmanagers_1_1_wave_manager_a6623bf1d5b1d16d74e9dd7e4d1b754f4}{is\+Timer\+Start} ()
+\begin{DoxyCompactList}\small\item\em richiesta di una variabile per controllare se il timer per la pausa tra 2 ondate è partito \end{DoxyCompactList}\item 
+Array\+List$<$ \hyperlink{classevents_1_1_wave}{Wave} $>$ \hyperlink{classmanagers_1_1_wave_manager_a4b2fc7c5f5464fa508eea5af8be4e805}{get\+Waves} ()
+\begin{DoxyCompactList}\small\item\em richiesta della variabile contenente tutte le ondate \end{DoxyCompactList}\item 
+int \hyperlink{classmanagers_1_1_wave_manager_aa05f286f626db3fc63273f5c5cd64bca}{get\+Next\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em richiesta del nemico successivo dell\textquotesingle{}ondata \end{DoxyCompactList}\item 
+boolean \hyperlink{classmanagers_1_1_wave_manager_a121827ebd1c5b24c92f966721b51c0b9}{is\+Enemy\+Spawn} ()
+\begin{DoxyCompactList}\small\item\em richiesta dello stato del timer per la generazione di un nuovo nemico \end{DoxyCompactList}\item 
+boolean \hyperlink{classmanagers_1_1_wave_manager_a1012ba37c40b76ee9c3413986133d865}{is\+Wave\+End} ()
+\begin{DoxyCompactList}\small\item\em richiesta se l\textquotesingle{}ondata è finito o ci sono altri nemici \end{DoxyCompactList}\item 
+boolean \hyperlink{classmanagers_1_1_wave_manager_a999f12a033f49f299ad7f55bcae24447}{is\+More\+Waves} ()
+\begin{DoxyCompactList}\small\item\em richiesta se ci sono altre ondate di nemici \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_wave_manager_a73337f83fd9fb6c3398a8cf359422508}{reset\+Index} ()
+\begin{DoxyCompactList}\small\item\em azzeramento index dei nemici in un\textquotesingle{}ondata \end{DoxyCompactList}\item 
+int \hyperlink{classmanagers_1_1_wave_manager_a60286ee915faec2babdb0242b29fd90b}{get\+Wave\+Index} ()
+\begin{DoxyCompactList}\small\item\em richiesta del numero di ondata in cui siamo \end{DoxyCompactList}\item 
+float \hyperlink{classmanagers_1_1_wave_manager_a708aedb9bcf9177c5064192552091f66}{get\+Time\+Left} ()
+\begin{DoxyCompactList}\small\item\em tempo rimanente all\textquotesingle{}inizio dell\textquotesingle{}ondata successiva \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmanagers_1_1_wave_manager_a6df6e01cd643c513c52431c1a86819af}{init\+Waves} ()
+\begin{DoxyCompactList}\small\item\em per ogni livello aggiunta all\textquotesingle{}array delle ondate 3 ondate con nemici specifici per ogni livello \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classmanagers_1_1_wave_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}
+\item 
+String \hyperlink{classmanagers_1_1_wave_manager_a91ac952876f776b3fbbc8519e093fdbf}{state}
+\item 
+Array\+List$<$ \hyperlink{classevents_1_1_wave}{Wave} $>$ \hyperlink{classmanagers_1_1_wave_manager_a8ef0454bb56915f114dd34cece9ef71d}{waves} = new Array\+List$<$$>$()
+\item 
+int \hyperlink{classmanagers_1_1_wave_manager_a0e8822976d3f16d40f2b47df20a8355e}{enemy\+Spawn\+Tick\+Max} = (int) (60 $\ast$ 2.\+5)
+\item 
+int \hyperlink{classmanagers_1_1_wave_manager_acaa0a3d510326342c5cc61393bfc61ad}{enemy\+Spawn\+Tick} = \hyperlink{classmanagers_1_1_wave_manager_a0e8822976d3f16d40f2b47df20a8355e}{enemy\+Spawn\+Tick\+Max}
+\item 
+int \hyperlink{classmanagers_1_1_wave_manager_ae1548354954c26806f4a9ff6857b3ab9}{index\+Enemy}
+\item 
+int \hyperlink{classmanagers_1_1_wave_manager_ad4e0bbc0cc0ffb91120206fb4de60261}{tick} = 0
+\item 
+int \hyperlink{classmanagers_1_1_wave_manager_a048afdace70897895af484b95492aea8}{ticklimit} = 5 $\ast$ 60
+\item 
+boolean \hyperlink{classmanagers_1_1_wave_manager_a2fa0a649e48706285ad6c2b814f4855b}{wavetimer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe per gestire il numero di ondate, che nemici contengono, ogni quanto generano un nemico e dopo quanto parte un\textquotesingle{}altra ondata 
+
+Definition at line 25 of file Wave\+Manager.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a4f9054a370c040f84d220fce947314f2}\label{classmanagers_1_1_wave_manager_a4f9054a370c040f84d220fce947314f2}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!Wave\+Manager@{Wave\+Manager}}
+\index{Wave\+Manager@{Wave\+Manager}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{Wave\+Manager()}{WaveManager()}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_wave_manager}{Wave\+Manager} (\begin{DoxyParamCaption}\item[{\hyperlink{classprogetto_1_1_game}{Game}}]{game,  }\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+costruttore. assegna il game e lo stato(il livello in cui ci troviamo) e inizializza le ondate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file Wave\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classmanagers_1_1_wave_manager_a4f9054a370c040f84d220fce947314f2_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_aa05f286f626db3fc63273f5c5cd64bca}\label{classmanagers_1_1_wave_manager_aa05f286f626db3fc63273f5c5cd64bca}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!get\+Next\+Enemy@{get\+Next\+Enemy}}
+\index{get\+Next\+Enemy@{get\+Next\+Enemy}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{get\+Next\+Enemy()}{getNextEnemy()}}
+{\footnotesize\ttfamily int get\+Next\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+richiesta del nemico successivo dell\textquotesingle{}ondata 
+
+\begin{DoxyReturn}{Returns}
+enemy\+Type del nemico successivo 
+\end{DoxyReturn}
+
+
+Definition at line 164 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a708aedb9bcf9177c5064192552091f66}\label{classmanagers_1_1_wave_manager_a708aedb9bcf9177c5064192552091f66}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!get\+Time\+Left@{get\+Time\+Left}}
+\index{get\+Time\+Left@{get\+Time\+Left}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{get\+Time\+Left()}{getTimeLeft()}}
+{\footnotesize\ttfamily float get\+Time\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+tempo rimanente all\textquotesingle{}inizio dell\textquotesingle{}ondata successiva 
+
+\begin{DoxyReturn}{Returns}
+tempo rimasto alla prossima ondata 
+\end{DoxyReturn}
+
+
+Definition at line 217 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a60286ee915faec2babdb0242b29fd90b}\label{classmanagers_1_1_wave_manager_a60286ee915faec2babdb0242b29fd90b}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!get\+Wave\+Index@{get\+Wave\+Index}}
+\index{get\+Wave\+Index@{get\+Wave\+Index}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{get\+Wave\+Index()}{getWaveIndex()}}
+{\footnotesize\ttfamily int get\+Wave\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+richiesta del numero di ondata in cui siamo 
+
+\begin{DoxyReturn}{Returns}
+index dell\textquotesingle{}ondata 
+\end{DoxyReturn}
+
+
+Definition at line 208 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a4b2fc7c5f5464fa508eea5af8be4e805}\label{classmanagers_1_1_wave_manager_a4b2fc7c5f5464fa508eea5af8be4e805}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!get\+Waves@{get\+Waves}}
+\index{get\+Waves@{get\+Waves}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{get\+Waves()}{getWaves()}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{classevents_1_1_wave}{Wave}$>$ get\+Waves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+richiesta della variabile contenente tutte le ondate 
+
+\begin{DoxyReturn}{Returns}
+array di waves 
+\end{DoxyReturn}
+
+
+Definition at line 155 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a30f46b71db254d0e9ca9e7f3578134c3}\label{classmanagers_1_1_wave_manager_a30f46b71db254d0e9ca9e7f3578134c3}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!increase\+Wave\+Index@{increase\+Wave\+Index}}
+\index{increase\+Wave\+Index@{increase\+Wave\+Index}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{increase\+Wave\+Index()}{increaseWaveIndex()}}
+{\footnotesize\ttfamily void increase\+Wave\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+aumento dell\textquotesingle{}index e quindi passaggio all\textquotesingle{}ondata successiva con azzeramento dei tick e timer 
+
+
+
+Definition at line 87 of file Wave\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_wave_manager_a30f46b71db254d0e9ca9e7f3578134c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a6df6e01cd643c513c52431c1a86819af}\label{classmanagers_1_1_wave_manager_a6df6e01cd643c513c52431c1a86819af}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!init\+Waves@{init\+Waves}}
+\index{init\+Waves@{init\+Waves}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{init\+Waves()}{initWaves()}}
+{\footnotesize\ttfamily void init\+Waves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+per ogni livello aggiunta all\textquotesingle{}array delle ondate 3 ondate con nemici specifici per ogni livello 
+
+
+
+Definition at line 125 of file Wave\+Manager.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classmanagers_1_1_wave_manager_a6df6e01cd643c513c52431c1a86819af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a121827ebd1c5b24c92f966721b51c0b9}\label{classmanagers_1_1_wave_manager_a121827ebd1c5b24c92f966721b51c0b9}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!is\+Enemy\+Spawn@{is\+Enemy\+Spawn}}
+\index{is\+Enemy\+Spawn@{is\+Enemy\+Spawn}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{is\+Enemy\+Spawn()}{isEnemySpawn()}}
+{\footnotesize\ttfamily boolean is\+Enemy\+Spawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+richiesta dello stato del timer per la generazione di un nuovo nemico 
+
+\begin{DoxyReturn}{Returns}
+se è il momento di generare un nuovo nemico 
+\end{DoxyReturn}
+
+
+Definition at line 174 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a999f12a033f49f299ad7f55bcae24447}\label{classmanagers_1_1_wave_manager_a999f12a033f49f299ad7f55bcae24447}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!is\+More\+Waves@{is\+More\+Waves}}
+\index{is\+More\+Waves@{is\+More\+Waves}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{is\+More\+Waves()}{isMoreWaves()}}
+{\footnotesize\ttfamily boolean is\+More\+Waves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+richiesta se ci sono altre ondate di nemici 
+
+\begin{DoxyReturn}{Returns}
+presenza di altre ondate 
+\end{DoxyReturn}
+
+
+Definition at line 192 of file Wave\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_wave_manager_a999f12a033f49f299ad7f55bcae24447_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_ab68417e6738c05037923f5f0f21eb586}\label{classmanagers_1_1_wave_manager_ab68417e6738c05037923f5f0f21eb586}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!is\+Timer\+Over@{is\+Timer\+Over}}
+\index{is\+Timer\+Over@{is\+Timer\+Over}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{is\+Timer\+Over()}{isTimerOver()}}
+{\footnotesize\ttfamily boolean is\+Timer\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+richiesta di una variabile per controllare se la pausa tra 2 ondate è finita 
+
+\begin{DoxyReturn}{Returns}
+se la pausa tra ondate è finita 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file Wave\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_wave_manager_ab68417e6738c05037923f5f0f21eb586_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a6623bf1d5b1d16d74e9dd7e4d1b754f4}\label{classmanagers_1_1_wave_manager_a6623bf1d5b1d16d74e9dd7e4d1b754f4}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!is\+Timer\+Start@{is\+Timer\+Start}}
+\index{is\+Timer\+Start@{is\+Timer\+Start}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{is\+Timer\+Start()}{isTimerStart()}}
+{\footnotesize\ttfamily boolean is\+Timer\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+richiesta di una variabile per controllare se il timer per la pausa tra 2 ondate è partito 
+
+\begin{DoxyReturn}{Returns}
+se il timer per la pausa tra 2 ondate è partito 
+\end{DoxyReturn}
+
+
+Definition at line 117 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a1012ba37c40b76ee9c3413986133d865}\label{classmanagers_1_1_wave_manager_a1012ba37c40b76ee9c3413986133d865}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!is\+Wave\+End@{is\+Wave\+End}}
+\index{is\+Wave\+End@{is\+Wave\+End}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{is\+Wave\+End()}{isWaveEnd()}}
+{\footnotesize\ttfamily boolean is\+Wave\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+richiesta se l\textquotesingle{}ondata è finito o ci sono altri nemici 
+
+\begin{DoxyReturn}{Returns}
+se non ci sono altri nemici nell\textquotesingle{}ondata 
+\end{DoxyReturn}
+
+
+Definition at line 183 of file Wave\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_wave_manager_a1012ba37c40b76ee9c3413986133d865_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a73337f83fd9fb6c3398a8cf359422508}\label{classmanagers_1_1_wave_manager_a73337f83fd9fb6c3398a8cf359422508}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!reset\+Index@{reset\+Index}}
+\index{reset\+Index@{reset\+Index}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{reset\+Index()}{resetIndex()}}
+{\footnotesize\ttfamily void reset\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+azzeramento index dei nemici in un\textquotesingle{}ondata 
+
+
+
+Definition at line 199 of file Wave\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classmanagers_1_1_wave_manager_a73337f83fd9fb6c3398a8cf359422508_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_aec53975ffc59ffaf3080db21af0d2f6e}\label{classmanagers_1_1_wave_manager_aec53975ffc59ffaf3080db21af0d2f6e}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!start\+Timer@{start\+Timer}}
+\index{start\+Timer@{start\+Timer}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{start\+Timer()}{startTimer()}}
+{\footnotesize\ttfamily void start\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+avviamento del timer tra un\textquotesingle{}ondata e un\textquotesingle{}altra 
+
+
+
+Definition at line 97 of file Wave\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classmanagers_1_1_wave_manager_aec53975ffc59ffaf3080db21af0d2f6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_ac5c54df7ed3b930268c8d7752c101725}\label{classmanagers_1_1_wave_manager_ac5c54df7ed3b930268c8d7752c101725}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!update@{update}}
+\index{update@{update}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+aggiornamento variabili tick per generare il successivo nemico dell\textquotesingle{}ondata e se necessario aggiornamento timer tra due ondate 
+
+
+
+Definition at line 71 of file Wave\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classmanagers_1_1_wave_manager_ac5c54df7ed3b930268c8d7752c101725_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_acaa0a3d510326342c5cc61393bfc61ad}\label{classmanagers_1_1_wave_manager_acaa0a3d510326342c5cc61393bfc61ad}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!enemy\+Spawn\+Tick@{enemy\+Spawn\+Tick}}
+\index{enemy\+Spawn\+Tick@{enemy\+Spawn\+Tick}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{enemy\+Spawn\+Tick}{enemySpawnTick}}
+{\footnotesize\ttfamily int enemy\+Spawn\+Tick = \hyperlink{classmanagers_1_1_wave_manager_a0e8822976d3f16d40f2b47df20a8355e}{enemy\+Spawn\+Tick\+Max}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a0e8822976d3f16d40f2b47df20a8355e}\label{classmanagers_1_1_wave_manager_a0e8822976d3f16d40f2b47df20a8355e}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!enemy\+Spawn\+Tick\+Max@{enemy\+Spawn\+Tick\+Max}}
+\index{enemy\+Spawn\+Tick\+Max@{enemy\+Spawn\+Tick\+Max}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{enemy\+Spawn\+Tick\+Max}{enemySpawnTickMax}}
+{\footnotesize\ttfamily int enemy\+Spawn\+Tick\+Max = (int) (60 $\ast$ 2.\+5)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}\label{classmanagers_1_1_wave_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!game@{game}}
+\index{game@{game}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_game}{Game} game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 28 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_ae1548354954c26806f4a9ff6857b3ab9}\label{classmanagers_1_1_wave_manager_ae1548354954c26806f4a9ff6857b3ab9}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!index\+Enemy@{index\+Enemy}}
+\index{index\+Enemy@{index\+Enemy}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{index\+Enemy}{indexEnemy}}
+{\footnotesize\ttfamily int index\+Enemy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 43 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a91ac952876f776b3fbbc8519e093fdbf}\label{classmanagers_1_1_wave_manager_a91ac952876f776b3fbbc8519e093fdbf}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!state@{state}}
+\index{state@{state}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily String state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_ad4e0bbc0cc0ffb91120206fb4de60261}\label{classmanagers_1_1_wave_manager_ad4e0bbc0cc0ffb91120206fb4de60261}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!tick@{tick}}
+\index{tick@{tick}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{tick}{tick}}
+{\footnotesize\ttfamily int tick = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 46 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a048afdace70897895af484b95492aea8}\label{classmanagers_1_1_wave_manager_a048afdace70897895af484b95492aea8}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!ticklimit@{ticklimit}}
+\index{ticklimit@{ticklimit}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{ticklimit}{ticklimit}}
+{\footnotesize\ttfamily int ticklimit = 5 $\ast$ 60\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 49 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a8ef0454bb56915f114dd34cece9ef71d}\label{classmanagers_1_1_wave_manager_a8ef0454bb56915f114dd34cece9ef71d}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!waves@{waves}}
+\index{waves@{waves}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{waves}{waves}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{classevents_1_1_wave}{Wave}$>$ waves = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 34 of file Wave\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_wave_manager_a2fa0a649e48706285ad6c2b814f4855b}\label{classmanagers_1_1_wave_manager_a2fa0a649e48706285ad6c2b814f4855b}} 
+\index{managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}!wavetimer@{wavetimer}}
+\index{wavetimer@{wavetimer}!managers\+::\+Wave\+Manager@{managers\+::\+Wave\+Manager}}
+\subsubsection{\texorpdfstring{wavetimer}{wavetimer}}
+{\footnotesize\ttfamily boolean wavetimer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 52 of file Wave\+Manager.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/managers/\hyperlink{_wave_manager_8java}{Wave\+Manager.\+java}\end{DoxyCompactItemize}

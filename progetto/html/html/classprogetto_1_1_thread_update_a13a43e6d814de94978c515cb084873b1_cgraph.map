@@ -1,0 +1,11 @@
+<map id="run" name="run">
+<area shape="rect" id="node2" href="$classprogetto_1_1_thread_update.html#af005ec68c869a6acd5e833cba9330a50" title="metodo che richiama l&#39;update della schermata nella quale ci troviamo nel gioco. " alt="" coords="93,56,196,83"/>
+<area shape="rect" id="node7" href="$classprogetto_1_1_thread_update.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="updateTower" alt="" coords="97,107,192,133"/>
+<area shape="rect" id="node8" href="$classprogetto_1_1_thread_update.html#ab424ab29e7ab4733f2efd1e6ef3f13b1" title="updateWave" alt="" coords="98,157,191,184"/>
+<area shape="rect" id="node9" href="$classprogetto_1_1_thread_update.html#ac83c203b559f6fd0bb225744d7ccf854" title="updateProj" alt="" coords="103,208,187,235"/>
+<area shape="rect" id="node10" href="$classprogetto_1_1_thread_update.html#a7ca93fcd8c7440e7b3f64c595a5be28c" title="updateCoin" alt="" coords="101,5,188,32"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="244,132,411,159"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="244,183,411,209"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="244,31,411,57"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="244,81,411,108"/>
+</map>

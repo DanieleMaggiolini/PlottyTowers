@@ -1,0 +1,8 @@
+<map id="kill" name="kill">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a8f172cfa5ade4d4f0a6b89cc6bfc4d12" title="aggiornamento della posizione di un nemico " alt="" coords="92,74,309,115"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_enemy_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="per ogni nemico controllo se vivo e lo muove " alt="" coords="357,81,575,108"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="623,5,811,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="623,56,811,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="623,107,811,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level4.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="623,157,811,184"/>
+</map>

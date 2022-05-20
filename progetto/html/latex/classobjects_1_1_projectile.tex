@@ -1,0 +1,395 @@
+\hypertarget{classobjects_1_1_projectile}{}\section{Projectile Class Reference}
+\label{classobjects_1_1_projectile}\index{Projectile@{Projectile}}
+
+
+Collaboration diagram for Projectile\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classobjects_1_1_projectile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classobjects_1_1_projectile_abfa5bb3317d35bef6eb884c6ffcce18e}{Projectile} (float x, float y, float \hyperlink{classobjects_1_1_projectile_a0e51383ba2b26548a0200e855f459416}{speedx}, float \hyperlink{classobjects_1_1_projectile_a13c57b666f056b5cae3bf6663337792c}{speedy}, int \hyperlink{classobjects_1_1_projectile_aae5cd11bae27cb7df8bca2fd5fee775e}{dmg}, float \hyperlink{classobjects_1_1_projectile_a1fc5a0e5fca1a310e6bfa125bf80042e}{rotation}, int \hyperlink{classobjects_1_1_projectile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}, int \hyperlink{classobjects_1_1_projectile_a73505b2eeec69d02880a87f09d4ed6e8}{projectiletype})
+\begin{DoxyCompactList}\small\item\em costruttore setta le variabili \end{DoxyCompactList}\item 
+void \hyperlink{classobjects_1_1_projectile_a68c0b61b84e4e095b6463cadc275adae}{move} ()
+\begin{DoxyCompactList}\small\item\em muove il proiettile. \end{DoxyCompactList}\item 
+void \hyperlink{classobjects_1_1_projectile_a6dd2c1eb5e331c3fbb13d38a440303ba}{set\+Position} (Point2\+D.\+Float \hyperlink{classobjects_1_1_projectile_a9d76f6b9dbafc222b1d4ac8a6b1d4894}{position})
+\begin{DoxyCompactList}\small\item\em imposta la posizione. \end{DoxyCompactList}\item 
+void \hyperlink{classobjects_1_1_projectile_afa3243732c07b4447e665ddede58e3d0}{set\+Exist} (boolean \hyperlink{classobjects_1_1_projectile_a8222e0b6d4ce0639cf85b9bc508fab80}{exist})
+\begin{DoxyCompactList}\small\item\em imposta l\textquotesingle{}esistenza del proiettile. \end{DoxyCompactList}\item 
+Point2\+D.\+Float \hyperlink{classobjects_1_1_projectile_a6b73c36e7bd98fd9cfbffa2ff11cc10e}{get\+Position} ()
+\begin{DoxyCompactList}\small\item\em ritorna la posizione \end{DoxyCompactList}\item 
+int \hyperlink{classobjects_1_1_projectile_a67283be3f45257d1e0c474c563ebb6b6}{get\+Id} ()
+\begin{DoxyCompactList}\small\item\em ritorna l\textquotesingle{}id \end{DoxyCompactList}\item 
+int \hyperlink{classobjects_1_1_projectile_a2dbf5e3a5bf7a6d90d11cb469b59776b}{get\+Projectiletype} ()
+\begin{DoxyCompactList}\small\item\em ritorna il tipo di proiettile \end{DoxyCompactList}\item 
+boolean \hyperlink{classobjects_1_1_projectile_a7c498cab7528e704f34b7373e817e066}{is\+Exist} ()
+\begin{DoxyCompactList}\small\item\em ritorna se il proiettile esiste \end{DoxyCompactList}\item 
+int \hyperlink{classobjects_1_1_projectile_a3eb7b7894f5f3b1409005aecd00a38ad}{get\+Dmg} ()
+\begin{DoxyCompactList}\small\item\em ritorna il danno \end{DoxyCompactList}\item 
+float \hyperlink{classobjects_1_1_projectile_aa60864de0b3c57fee5ae403229f41228}{get\+Rotation} ()
+\begin{DoxyCompactList}\small\item\em ritorna la rotazione \end{DoxyCompactList}\item 
+int \hyperlink{classobjects_1_1_projectile_a59d053c950ff1e9f8a004d493f34e754}{get\+Index} ()
+\begin{DoxyCompactList}\small\item\em lo stato dell\textquotesingle{}animazione \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Point2\+D.\+Float \hyperlink{classobjects_1_1_projectile_a9d76f6b9dbafc222b1d4ac8a6b1d4894}{position}
+\item 
+int \hyperlink{classobjects_1_1_projectile_a7441ef0865bcb3db9b8064dd7375c1ea}{id}
+\item 
+int \hyperlink{classobjects_1_1_projectile_a73505b2eeec69d02880a87f09d4ed6e8}{projectiletype}
+\item 
+boolean \hyperlink{classobjects_1_1_projectile_a8222e0b6d4ce0639cf85b9bc508fab80}{exist} =true
+\item 
+float \hyperlink{classobjects_1_1_projectile_a0e51383ba2b26548a0200e855f459416}{speedx}
+\item 
+float \hyperlink{classobjects_1_1_projectile_a13c57b666f056b5cae3bf6663337792c}{speedy}
+\item 
+float \hyperlink{classobjects_1_1_projectile_a1fc5a0e5fca1a310e6bfa125bf80042e}{rotation}
+\item 
+int \hyperlink{classobjects_1_1_projectile_aae5cd11bae27cb7df8bca2fd5fee775e}{dmg}
+\item 
+\hyperlink{classtowers_1_1_attack_animation}{Attack\+Animation} \hyperlink{classobjects_1_1_projectile_a66fd731a0df8a5ac0e96e7fbdab94e02}{index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file Projectile.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classobjects_1_1_projectile_abfa5bb3317d35bef6eb884c6ffcce18e}\label{classobjects_1_1_projectile_abfa5bb3317d35bef6eb884c6ffcce18e}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!Projectile@{Projectile}}
+\index{Projectile@{Projectile}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{Projectile()}{Projectile()}}
+{\footnotesize\ttfamily \hyperlink{classobjects_1_1_projectile}{Projectile} (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{speedx,  }\item[{float}]{speedy,  }\item[{int}]{dmg,  }\item[{float}]{rotation,  }\item[{int}]{id,  }\item[{int}]{projectiletype }\end{DoxyParamCaption})}
+
+
+
+costruttore setta le variabili 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata \\
+\hline
+{\em y} & coordinata \\
+\hline
+{\em speedx} & velocita x \\
+\hline
+{\em speedy} & velocita y \\
+\hline
+{\em dmg} & danno \\
+\hline
+{\em rotation} & rotazione \\
+\hline
+{\em id} & identificatore \\
+\hline
+{\em projectiletype} & tipo di proiettile \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 62 of file Projectile.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classobjects_1_1_projectile_a3eb7b7894f5f3b1409005aecd00a38ad}\label{classobjects_1_1_projectile_a3eb7b7894f5f3b1409005aecd00a38ad}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!get\+Dmg@{get\+Dmg}}
+\index{get\+Dmg@{get\+Dmg}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{get\+Dmg()}{getDmg()}}
+{\footnotesize\ttfamily int get\+Dmg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna il danno 
+
+\begin{DoxyReturn}{Returns}
+danno 
+\end{DoxyReturn}
+
+
+Definition at line 141 of file Projectile.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobjects_1_1_projectile_a3eb7b7894f5f3b1409005aecd00a38ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classobjects_1_1_projectile_a67283be3f45257d1e0c474c563ebb6b6}\label{classobjects_1_1_projectile_a67283be3f45257d1e0c474c563ebb6b6}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna l\textquotesingle{}id 
+
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+
+
+Definition at line 114 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a59d053c950ff1e9f8a004d493f34e754}\label{classobjects_1_1_projectile_a59d053c950ff1e9f8a004d493f34e754}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!get\+Index@{get\+Index}}
+\index{get\+Index@{get\+Index}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{get\+Index()}{getIndex()}}
+{\footnotesize\ttfamily int get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+lo stato dell\textquotesingle{}animazione 
+
+\begin{DoxyReturn}{Returns}
+stato animazione 
+\end{DoxyReturn}
+
+
+Definition at line 159 of file Projectile.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobjects_1_1_projectile_a59d053c950ff1e9f8a004d493f34e754_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classobjects_1_1_projectile_a6b73c36e7bd98fd9cfbffa2ff11cc10e}\label{classobjects_1_1_projectile_a6b73c36e7bd98fd9cfbffa2ff11cc10e}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily Point2\+D.\+Float get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna la posizione 
+
+\begin{DoxyReturn}{Returns}
+posizione 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file Projectile.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classobjects_1_1_projectile_a6b73c36e7bd98fd9cfbffa2ff11cc10e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classobjects_1_1_projectile_a2dbf5e3a5bf7a6d90d11cb469b59776b}\label{classobjects_1_1_projectile_a2dbf5e3a5bf7a6d90d11cb469b59776b}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!get\+Projectiletype@{get\+Projectiletype}}
+\index{get\+Projectiletype@{get\+Projectiletype}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{get\+Projectiletype()}{getProjectiletype()}}
+{\footnotesize\ttfamily int get\+Projectiletype (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna il tipo di proiettile 
+
+\begin{DoxyReturn}{Returns}
+tipo di proiettile 
+\end{DoxyReturn}
+
+
+Definition at line 123 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_aa60864de0b3c57fee5ae403229f41228}\label{classobjects_1_1_projectile_aa60864de0b3c57fee5ae403229f41228}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!get\+Rotation@{get\+Rotation}}
+\index{get\+Rotation@{get\+Rotation}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+{\footnotesize\ttfamily float get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna la rotazione 
+
+\begin{DoxyReturn}{Returns}
+rotazione 
+\end{DoxyReturn}
+
+
+Definition at line 150 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a7c498cab7528e704f34b7373e817e066}\label{classobjects_1_1_projectile_a7c498cab7528e704f34b7373e817e066}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!is\+Exist@{is\+Exist}}
+\index{is\+Exist@{is\+Exist}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{is\+Exist()}{isExist()}}
+{\footnotesize\ttfamily boolean is\+Exist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna se il proiettile esiste 
+
+\begin{DoxyReturn}{Returns}
+esistenza 
+\end{DoxyReturn}
+
+
+Definition at line 132 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a68c0b61b84e4e095b6463cadc275adae}\label{classobjects_1_1_projectile_a68c0b61b84e4e095b6463cadc275adae}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!move@{move}}
+\index{move@{move}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+muove il proiettile. 
+
+
+
+Definition at line 77 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_afa3243732c07b4447e665ddede58e3d0}\label{classobjects_1_1_projectile_afa3243732c07b4447e665ddede58e3d0}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!set\+Exist@{set\+Exist}}
+\index{set\+Exist@{set\+Exist}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{set\+Exist()}{setExist()}}
+{\footnotesize\ttfamily void set\+Exist (\begin{DoxyParamCaption}\item[{boolean}]{exist }\end{DoxyParamCaption})}
+
+
+
+imposta l\textquotesingle{}esistenza del proiettile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exist} & esistenza \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 96 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a6dd2c1eb5e331c3fbb13d38a440303ba}\label{classobjects_1_1_projectile_a6dd2c1eb5e331c3fbb13d38a440303ba}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}}
+{\footnotesize\ttfamily void set\+Position (\begin{DoxyParamCaption}\item[{Point2\+D.\+Float}]{position }\end{DoxyParamCaption})}
+
+
+
+imposta la posizione. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & posizione \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file Projectile.\+java.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classobjects_1_1_projectile_aae5cd11bae27cb7df8bca2fd5fee775e}\label{classobjects_1_1_projectile_aae5cd11bae27cb7df8bca2fd5fee775e}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!dmg@{dmg}}
+\index{dmg@{dmg}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{dmg}{dmg}}
+{\footnotesize\ttfamily int dmg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 45 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a8222e0b6d4ce0639cf85b9bc508fab80}\label{classobjects_1_1_projectile_a8222e0b6d4ce0639cf85b9bc508fab80}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!exist@{exist}}
+\index{exist@{exist}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{exist}{exist}}
+{\footnotesize\ttfamily boolean exist =true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 33 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a7441ef0865bcb3db9b8064dd7375c1ea}\label{classobjects_1_1_projectile_a7441ef0865bcb3db9b8064dd7375c1ea}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!id@{id}}
+\index{id@{id}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 27 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a66fd731a0df8a5ac0e96e7fbdab94e02}\label{classobjects_1_1_projectile_a66fd731a0df8a5ac0e96e7fbdab94e02}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!index@{index}}
+\index{index@{index}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily \hyperlink{classtowers_1_1_attack_animation}{Attack\+Animation} index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 48 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a9d76f6b9dbafc222b1d4ac8a6b1d4894}\label{classobjects_1_1_projectile_a9d76f6b9dbafc222b1d4ac8a6b1d4894}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!position@{position}}
+\index{position@{position}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily Point2\+D.\+Float position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 24 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a73505b2eeec69d02880a87f09d4ed6e8}\label{classobjects_1_1_projectile_a73505b2eeec69d02880a87f09d4ed6e8}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!projectiletype@{projectiletype}}
+\index{projectiletype@{projectiletype}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{projectiletype}{projectiletype}}
+{\footnotesize\ttfamily int projectiletype\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a1fc5a0e5fca1a310e6bfa125bf80042e}\label{classobjects_1_1_projectile_a1fc5a0e5fca1a310e6bfa125bf80042e}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!rotation@{rotation}}
+\index{rotation@{rotation}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily float rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a0e51383ba2b26548a0200e855f459416}\label{classobjects_1_1_projectile_a0e51383ba2b26548a0200e855f459416}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!speedx@{speedx}}
+\index{speedx@{speedx}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{speedx}{speedx}}
+{\footnotesize\ttfamily float speedx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 36 of file Projectile.\+java.
+
+\mbox{\Hypertarget{classobjects_1_1_projectile_a13c57b666f056b5cae3bf6663337792c}\label{classobjects_1_1_projectile_a13c57b666f056b5cae3bf6663337792c}} 
+\index{objects\+::\+Projectile@{objects\+::\+Projectile}!speedy@{speedy}}
+\index{speedy@{speedy}!objects\+::\+Projectile@{objects\+::\+Projectile}}
+\subsubsection{\texorpdfstring{speedy}{speedy}}
+{\footnotesize\ttfamily float speedy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 39 of file Projectile.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/objects/\hyperlink{_projectile_8java}{Projectile.\+java}\end{DoxyCompactItemize}

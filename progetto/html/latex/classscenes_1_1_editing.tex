@@ -1,0 +1,674 @@
+\hypertarget{classscenes_1_1_editing}{}\section{Editing Class Reference}
+\label{classscenes_1_1_editing}\index{Editing@{Editing}}
+
+
+gestice le mappe, le modifiche e i salvataggi di esse.  
+
+
+
+
+Inheritance diagram for Editing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classscenes_1_1_editing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Editing\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classscenes_1_1_editing_a2ca3ef24637fa4a614988adee4b8689d}{Editing} (\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classscenes_1_1_game_scene_ac6a5ed6191fcf3a5bf0445921feb4f48}{game})
+\begin{DoxyCompactList}\small\item\em costruttore inizializza le classi e setta il game; \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_ae646a5c5937b560efaa2b7bb675bc3cd}{set\+State} (String \hyperlink{classscenes_1_1_editing_a91ac952876f776b3fbbc8519e093fdbf}{state})
+\begin{DoxyCompactList}\small\item\em setta lo stato e carica la mappa relativa \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_afe125d345675ffefe8da7e96d39773f3}{init\+Classes} ()
+\begin{DoxyCompactList}\small\item\em inizializza le classi. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_af1c1bf274cd89c18726a992a073a7c6d}{save\+Level} ()
+\begin{DoxyCompactList}\small\item\em salva il livello. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_a286931cc46e197f4a85af7229fdc29a4}{load\+Level} ()
+\begin{DoxyCompactList}\small\item\em carica il livello. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_ad79f312dd3a9e52f38a9e5f1536537fd}{create\+Level} ()
+\begin{DoxyCompactList}\small\item\em inizializza il livello. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_a203b6ad9d5e4d54dd1152986eec4dedc}{render} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna la mappa. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_aa0f35d91a41dfb53af7bdd7d4a76916f}{draw\+Selected\+Tile} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna tile selezionata. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_adaa2adb9d249f9b235fb9bb96aed4924}{set\+Selected\+Tile} (\hyperlink{classobjects_1_1_tile}{Tile} tile)
+\begin{DoxyCompactList}\small\item\em imposta la tile selezionata. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_a45d56bd84238e8b56589dfc732e2b2cf}{mouse\+Clicked} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i click del mouse \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_a2ca251710b65639ec80bc141edde60aa}{mouse\+Moved} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le move del mouse \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_aed82e1ce3dd3cf283d508c3ba3be70ef}{mouse\+Pressed} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le press del mouse \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_a87a07291794e15052db67f945d90853e}{mouse\+Released} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le release del mouse \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_editing_adbfc0588c017133c9b7070474402b72f}{mouse\+Dragged} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le drag del mouse \end{DoxyCompactList}\item 
+String \hyperlink{classscenes_1_1_editing_ae514afc7c85c1cee14d2862a8b0e07b3}{get\+State} ()
+\begin{DoxyCompactList}\small\item\em ritorna lo stato \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classscenes_1_1_editing_afbbb0a60fd2d899ff81c1715fce5fc73}{change\+Tile} (int x, int y)
+\begin{DoxyCompactList}\small\item\em cambia la tile date le coordinate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classscenes_1_1_editing_a4b06a2210cf5b93dda77f2a9a061d538}{lvl}
+\item 
+\hyperlink{classobjects_1_1_tile}{Tile} \hyperlink{classscenes_1_1_editing_a57de6d93afd033cf117e53aec7cf844a}{selected\+Tile}
+\item 
+boolean \hyperlink{classscenes_1_1_editing_a8d5ef14629eeeeb8a4a1bc8454a62704}{draw\+Select} =false
+\item 
+int \hyperlink{classscenes_1_1_editing_a85ea1b63086b31a15d3ed2579c5715a6}{mouseX}
+\item 
+int \hyperlink{classscenes_1_1_editing_a3637abebcaa9d04aa18b1610d0921e16}{mouseY}
+\item 
+int \hyperlink{classscenes_1_1_editing_a70fd9888adca7ad0959f2742a4df47e1}{last\+TileX}
+\item 
+int \hyperlink{classscenes_1_1_editing_a0247c714fa7743b7e0c0dcd2b3266c6b}{last\+TileY}
+\item 
+int \hyperlink{classscenes_1_1_editing_a3d7a822288189aaede4848ba3f139fb7}{last\+Tile\+Id}
+\item 
+\hyperlink{classui_1_1_tool_bar}{Tool\+Bar} \hyperlink{classscenes_1_1_editing_a2da79d490f532bdeeaee3eb967fabb13}{toolbar}
+\item 
+String \hyperlink{classscenes_1_1_editing_a91ac952876f776b3fbbc8519e093fdbf}{state} =\char`\"{}level1\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+gestice le mappe, le modifiche e i salvataggi di esse. 
+
+gestice il menu\+: sfondo, bottoni. 
+
+Definition at line 26 of file Editing.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classscenes_1_1_editing_a2ca3ef24637fa4a614988adee4b8689d}\label{classscenes_1_1_editing_a2ca3ef24637fa4a614988adee4b8689d}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!Editing@{Editing}}
+\index{Editing@{Editing}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{Editing()}{Editing()}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_editing}{Editing} (\begin{DoxyParamCaption}\item[{\hyperlink{classprogetto_1_1_game}{Game}}]{game }\end{DoxyParamCaption})}
+
+
+
+costruttore inizializza le classi e setta il game; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & oggetto del gioco \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file Editing.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_a2ca3ef24637fa4a614988adee4b8689d_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classscenes_1_1_editing_afbbb0a60fd2d899ff81c1715fce5fc73}\label{classscenes_1_1_editing_afbbb0a60fd2d899ff81c1715fce5fc73}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!change\+Tile@{change\+Tile}}
+\index{change\+Tile@{change\+Tile}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{change\+Tile()}{changeTile()}}
+{\footnotesize\ttfamily void change\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cambia la tile date le coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata \\
+\hline
+{\em y} & coordinata \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 164 of file Editing.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classscenes_1_1_editing_afbbb0a60fd2d899ff81c1715fce5fc73_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classscenes_1_1_editing_afbbb0a60fd2d899ff81c1715fce5fc73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_ad79f312dd3a9e52f38a9e5f1536537fd}\label{classscenes_1_1_editing_ad79f312dd3a9e52f38a9e5f1536537fd}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!create\+Level@{create\+Level}}
+\index{create\+Level@{create\+Level}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{create\+Level()}{createLevel()}}
+{\footnotesize\ttfamily void create\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+inizializza il livello. 
+
+
+
+Definition at line 111 of file Editing.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_ad79f312dd3a9e52f38a9e5f1536537fd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classscenes_1_1_editing_ad79f312dd3a9e52f38a9e5f1536537fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_aa0f35d91a41dfb53af7bdd7d4a76916f}\label{classscenes_1_1_editing_aa0f35d91a41dfb53af7bdd7d4a76916f}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!draw\+Selected\+Tile@{draw\+Selected\+Tile}}
+\index{draw\+Selected\+Tile@{draw\+Selected\+Tile}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{draw\+Selected\+Tile()}{drawSelectedTile()}}
+{\footnotesize\ttfamily void draw\+Selected\+Tile (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna tile selezionata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 142 of file Editing.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classscenes_1_1_editing_aa0f35d91a41dfb53af7bdd7d4a76916f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classscenes_1_1_editing_aa0f35d91a41dfb53af7bdd7d4a76916f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_ae514afc7c85c1cee14d2862a8b0e07b3}\label{classscenes_1_1_editing_ae514afc7c85c1cee14d2862a8b0e07b3}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{get\+State()}{getState()}}
+{\footnotesize\ttfamily String get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna lo stato 
+
+\begin{DoxyReturn}{Returns}
+stato 
+\end{DoxyReturn}
+
+
+Definition at line 253 of file Editing.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_editing_afe125d345675ffefe8da7e96d39773f3}\label{classscenes_1_1_editing_afe125d345675ffefe8da7e96d39773f3}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!init\+Classes@{init\+Classes}}
+\index{init\+Classes@{init\+Classes}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{init\+Classes()}{initClasses()}}
+{\footnotesize\ttfamily void init\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+inizializza le classi. 
+
+
+
+Definition at line 83 of file Editing.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_afe125d345675ffefe8da7e96d39773f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classscenes_1_1_editing_afe125d345675ffefe8da7e96d39773f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_a286931cc46e197f4a85af7229fdc29a4}\label{classscenes_1_1_editing_a286931cc46e197f4a85af7229fdc29a4}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!load\+Level@{load\+Level}}
+\index{load\+Level@{load\+Level}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{load\+Level()}{loadLevel()}}
+{\footnotesize\ttfamily void load\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+carica il livello. 
+
+
+
+Definition at line 103 of file Editing.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_a286931cc46e197f4a85af7229fdc29a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classscenes_1_1_editing_a286931cc46e197f4a85af7229fdc29a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_a45d56bd84238e8b56589dfc732e2b2cf}\label{classscenes_1_1_editing_a45d56bd84238e8b56589dfc732e2b2cf}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!mouse\+Clicked@{mouse\+Clicked}}
+\index{mouse\+Clicked@{mouse\+Clicked}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{mouse\+Clicked()}{mouseClicked()}}
+{\footnotesize\ttfamily void mouse\+Clicked (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i click del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_a45d56bd84238e8b56589dfc732e2b2cf}{Scene\+Methods}.
+
+
+
+Definition at line 186 of file Editing.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_a45d56bd84238e8b56589dfc732e2b2cf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_adbfc0588c017133c9b7070474402b72f}\label{classscenes_1_1_editing_adbfc0588c017133c9b7070474402b72f}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!mouse\+Dragged@{mouse\+Dragged}}
+\index{mouse\+Dragged@{mouse\+Dragged}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{mouse\+Dragged()}{mouseDragged()}}
+{\footnotesize\ttfamily void mouse\+Dragged (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le drag del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_adbfc0588c017133c9b7070474402b72f}{Scene\+Methods}.
+
+
+
+Definition at line 241 of file Editing.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_adbfc0588c017133c9b7070474402b72f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_a2ca251710b65639ec80bc141edde60aa}\label{classscenes_1_1_editing_a2ca251710b65639ec80bc141edde60aa}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!mouse\+Moved@{mouse\+Moved}}
+\index{mouse\+Moved@{mouse\+Moved}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{mouse\+Moved()}{mouseMoved()}}
+{\footnotesize\ttfamily void mouse\+Moved (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le move del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_a2ca251710b65639ec80bc141edde60aa}{Scene\+Methods}.
+
+
+
+Definition at line 200 of file Editing.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_a2ca251710b65639ec80bc141edde60aa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_aed82e1ce3dd3cf283d508c3ba3be70ef}\label{classscenes_1_1_editing_aed82e1ce3dd3cf283d508c3ba3be70ef}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!mouse\+Pressed@{mouse\+Pressed}}
+\index{mouse\+Pressed@{mouse\+Pressed}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{mouse\+Pressed()}{mousePressed()}}
+{\footnotesize\ttfamily void mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le press del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_aed82e1ce3dd3cf283d508c3ba3be70ef}{Scene\+Methods}.
+
+
+
+Definition at line 219 of file Editing.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_aed82e1ce3dd3cf283d508c3ba3be70ef_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_a87a07291794e15052db67f945d90853e}\label{classscenes_1_1_editing_a87a07291794e15052db67f945d90853e}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!mouse\+Released@{mouse\+Released}}
+\index{mouse\+Released@{mouse\+Released}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{mouse\+Released()}{mouseReleased()}}
+{\footnotesize\ttfamily void mouse\+Released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le release del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_a87a07291794e15052db67f945d90853e}{Scene\+Methods}.
+
+
+
+Definition at line 229 of file Editing.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_a87a07291794e15052db67f945d90853e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_a203b6ad9d5e4d54dd1152986eec4dedc}\label{classscenes_1_1_editing_a203b6ad9d5e4d54dd1152986eec4dedc}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!render@{render}}
+\index{render@{render}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna la mappa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_a203b6ad9d5e4d54dd1152986eec4dedc}{Scene\+Methods}.
+
+
+
+Definition at line 125 of file Editing.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_a203b6ad9d5e4d54dd1152986eec4dedc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_af1c1bf274cd89c18726a992a073a7c6d}\label{classscenes_1_1_editing_af1c1bf274cd89c18726a992a073a7c6d}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!save\+Level@{save\+Level}}
+\index{save\+Level@{save\+Level}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{save\+Level()}{saveLevel()}}
+{\footnotesize\ttfamily void save\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+salva il livello. 
+
+
+
+Definition at line 94 of file Editing.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_af1c1bf274cd89c18726a992a073a7c6d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_af1c1bf274cd89c18726a992a073a7c6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_adaa2adb9d249f9b235fb9bb96aed4924}\label{classscenes_1_1_editing_adaa2adb9d249f9b235fb9bb96aed4924}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!set\+Selected\+Tile@{set\+Selected\+Tile}}
+\index{set\+Selected\+Tile@{set\+Selected\+Tile}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{set\+Selected\+Tile()}{setSelectedTile()}}
+{\footnotesize\ttfamily void set\+Selected\+Tile (\begin{DoxyParamCaption}\item[{\hyperlink{classobjects_1_1_tile}{Tile}}]{tile }\end{DoxyParamCaption})}
+
+
+
+imposta la tile selezionata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & selezionata \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file Editing.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_adaa2adb9d249f9b235fb9bb96aed4924_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_editing_ae646a5c5937b560efaa2b7bb675bc3cd}\label{classscenes_1_1_editing_ae646a5c5937b560efaa2b7bb675bc3cd}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!set\+State@{set\+State}}
+\index{set\+State@{set\+State}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{set\+State()}{setState()}}
+{\footnotesize\ttfamily void set\+State (\begin{DoxyParamCaption}\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+setta lo stato e carica la mappa relativa 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & stato dal quale viene invocata la scena editing \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file Editing.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_editing_ae646a5c5937b560efaa2b7bb675bc3cd_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classscenes_1_1_editing_a8d5ef14629eeeeb8a4a1bc8454a62704}\label{classscenes_1_1_editing_a8d5ef14629eeeeb8a4a1bc8454a62704}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!draw\+Select@{draw\+Select}}
+\index{draw\+Select@{draw\+Select}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{draw\+Select}{drawSelect}}
+{\footnotesize\ttfamily boolean draw\+Select =false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Editing.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_editing_a3d7a822288189aaede4848ba3f139fb7}\label{classscenes_1_1_editing_a3d7a822288189aaede4848ba3f139fb7}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!last\+Tile\+Id@{last\+Tile\+Id}}
+\index{last\+Tile\+Id@{last\+Tile\+Id}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{last\+Tile\+Id}{lastTileId}}
+{\footnotesize\ttfamily int last\+Tile\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 50 of file Editing.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_editing_a70fd9888adca7ad0959f2742a4df47e1}\label{classscenes_1_1_editing_a70fd9888adca7ad0959f2742a4df47e1}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!last\+TileX@{last\+TileX}}
+\index{last\+TileX@{last\+TileX}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{last\+TileX}{lastTileX}}
+{\footnotesize\ttfamily int last\+TileX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 44 of file Editing.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_editing_a0247c714fa7743b7e0c0dcd2b3266c6b}\label{classscenes_1_1_editing_a0247c714fa7743b7e0c0dcd2b3266c6b}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!last\+TileY@{last\+TileY}}
+\index{last\+TileY@{last\+TileY}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{last\+TileY}{lastTileY}}
+{\footnotesize\ttfamily int last\+TileY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 47 of file Editing.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_editing_a4b06a2210cf5b93dda77f2a9a061d538}\label{classscenes_1_1_editing_a4b06a2210cf5b93dda77f2a9a061d538}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!lvl@{lvl}}
+\index{lvl@{lvl}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{lvl}{lvl}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} lvl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file Editing.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_editing_a85ea1b63086b31a15d3ed2579c5715a6}\label{classscenes_1_1_editing_a85ea1b63086b31a15d3ed2579c5715a6}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!mouseX@{mouseX}}
+\index{mouseX@{mouseX}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{mouseX}{mouseX}}
+{\footnotesize\ttfamily int mouseX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 38 of file Editing.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_editing_a3637abebcaa9d04aa18b1610d0921e16}\label{classscenes_1_1_editing_a3637abebcaa9d04aa18b1610d0921e16}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!mouseY@{mouseY}}
+\index{mouseY@{mouseY}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{mouseY}{mouseY}}
+{\footnotesize\ttfamily int mouseY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Editing.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_editing_a57de6d93afd033cf117e53aec7cf844a}\label{classscenes_1_1_editing_a57de6d93afd033cf117e53aec7cf844a}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!selected\+Tile@{selected\+Tile}}
+\index{selected\+Tile@{selected\+Tile}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{selected\+Tile}{selectedTile}}
+{\footnotesize\ttfamily \hyperlink{classobjects_1_1_tile}{Tile} selected\+Tile\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Editing.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_editing_a91ac952876f776b3fbbc8519e093fdbf}\label{classscenes_1_1_editing_a91ac952876f776b3fbbc8519e093fdbf}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!state@{state}}
+\index{state@{state}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily String state =\char`\"{}level1\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file Editing.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_editing_a2da79d490f532bdeeaee3eb967fabb13}\label{classscenes_1_1_editing_a2da79d490f532bdeeaee3eb967fabb13}} 
+\index{scenes\+::\+Editing@{scenes\+::\+Editing}!toolbar@{toolbar}}
+\index{toolbar@{toolbar}!scenes\+::\+Editing@{scenes\+::\+Editing}}
+\subsubsection{\texorpdfstring{toolbar}{toolbar}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_tool_bar}{Tool\+Bar} toolbar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file Editing.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/scenes/\hyperlink{_editing_8java}{Editing.\+java}\end{DoxyCompactItemize}

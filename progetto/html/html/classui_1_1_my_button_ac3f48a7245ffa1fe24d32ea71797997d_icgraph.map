@@ -1,0 +1,11 @@
+<map id="setMouseOver" name="setMouseOver">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le varie opzioni di movimento del mouse. " alt="" coords="399,5,583,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le varie opzioni di movimento del mouse. " alt="" coords="399,63,583,89"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level3.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le varie opzioni di movimento del mouse. " alt="" coords="399,125,583,152"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level4.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le varie opzioni di movimento del mouse. " alt="" coords="399,176,583,203"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_menu.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le move del mouse " alt="" coords="164,252,344,279"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_playing.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le move del mouse " alt="" coords="159,303,349,329"/>
+<area shape="rect" id="node8" href="$classui_1_1_action_bar.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le move del mouse. " alt="" coords="167,100,341,127"/>
+<area shape="rect" id="node9" href="$classui_1_1_tool_bar.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le move del mouse " alt="" coords="174,353,334,380"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_editing.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le move del mouse " alt="" coords="397,353,585,380"/>
+</map>

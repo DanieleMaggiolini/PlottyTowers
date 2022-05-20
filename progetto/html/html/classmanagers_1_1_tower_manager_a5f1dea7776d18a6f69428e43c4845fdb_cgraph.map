@@ -1,0 +1,8 @@
+<map id="isInRange" name="isInRange">
+<area shape="rect" id="node2" href="$classhelpz_1_1_utilz.html#a8a4c702547acd44cb113b787ae1d3e05" title="helpz.Utilz.getDistance" alt="" coords="133,5,289,32"/>
+<area shape="rect" id="node3" href="$classtowers_1_1_tower.html#ae13f88e922e1339355456062ad9fa359" title="ritorna la x " alt="" coords="147,56,274,83"/>
+<area shape="rect" id="node4" href="$classtowers_1_1_tower.html#aab81944f0a14bba932c0931899951937" title="ritorna la y " alt="" coords="146,107,275,133"/>
+<area shape="rect" id="node5" href="$classenemies_1_1_enemy.html#ae8f033a71b96920114aee202798dc7e9" title="enemies.Enemy.getX" alt="" coords="138,157,283,184"/>
+<area shape="rect" id="node6" href="$classenemies_1_1_enemy.html#aa0f539cec219900ff6cf76edcfa52367" title="enemies.Enemy.getY" alt="" coords="137,208,284,235"/>
+<area shape="rect" id="node7" href="$classtowers_1_1_tower.html#a18d1640fde65c20187e68286b6bbcf6d" title="ritorna il range " alt="" coords="132,259,289,285"/>
+</map>

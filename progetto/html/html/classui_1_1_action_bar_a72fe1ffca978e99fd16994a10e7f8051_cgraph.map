@@ -1,0 +1,35 @@
+<map id="draw" name="draw">
+<area shape="rect" id="node2" href="$classui_1_1_action_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="279,157,365,184"/>
+<area shape="rect" id="node7" href="$classui_1_1_action_bar.html#a2177b06de4c0084e953665a7dbfd6772" title="disegna la torre selezionata, le sue info e i bottoni relativi ad essa. " alt="" coords="252,385,392,412"/>
+<area shape="rect" id="node28" href="$classui_1_1_action_bar.html#a4202926f30a7290c360bfcd4af6b03cb" title="disegna le informazioni relative all&#39;ondata. " alt="" coords="103,81,204,108"/>
+<area shape="rect" id="node32" href="$classui_1_1_action_bar.html#ae07c200235fb700738b8194a93dbb8fb" title="disegna il numero di monete. " alt="" coords="116,397,191,424"/>
+<area shape="rect" id="node33" href="$classui_1_1_action_bar.html#a32afe6a393c6361d391e26ed96971131" title="disegna il costo della torre da piazzare. " alt="" coords="267,816,377,843"/>
+<area shape="rect" id="node34" href="$classui_1_1_action_bar.html#a7075e1ba9a7135d89d02dca2e3b8860e" title="disegna le vite. " alt="" coords="117,448,189,475"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="465,5,632,32"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="465,56,632,83"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="465,107,632,133"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="465,157,632,184"/>
+<area shape="rect" id="node8" href="$classtowers_1_1_tower.html#adaa3345598ef202753372f185625e5da" title="ritorna il tipo di torre " alt="" coords="965,563,1144,589"/>
+<area shape="rect" id="node9" href="$classhelpz_1_1_constants_1_1_towers.html#a514d43d9440f939e8a4d021a01049424" title="helpz.Constants.Towers.getName" alt="" coords="440,816,657,843"/>
+<area shape="rect" id="node10" href="$classtowers_1_1_tower.html#a67283be3f45257d1e0c474c563ebb6b6" title="ritorna l&#39;identificatore " alt="" coords="483,715,614,741"/>
+<area shape="rect" id="node11" href="$classtowers_1_1_tower.html#a69ffaa5d69141ba9aed07daf94b18540" title="ritorna il livello " alt="" coords="736,715,871,741"/>
+<area shape="rect" id="node12" href="$classui_1_1_action_bar.html#a1f012512b669e57c49c1957905a35107" title="disegna il cerchio del range di attacco della torre selezionata. " alt="" coords="460,765,637,792"/>
+<area shape="rect" id="node16" href="$classui_1_1_action_bar.html#a6c5f59282a148a0d74bc5aa58d5ad307" title="restituisce il costo per upgradare la torre selezionata. " alt="" coords="747,563,859,589"/>
+<area shape="rect" id="node18" href="$classui_1_1_my_button.html#acecf901c15a2150148863cbc4d0709da" title="setter del colore. " alt="" coords="477,208,621,235"/>
+<area shape="rect" id="node19" href="$classui_1_1_my_button.html#aa8318788e7f26fedd7bfbdd0b654ad45" title="richiama i metodi per disegnare il testo centrato nel bottone, i bordi e lo sfondo. " alt="" coords="478,259,619,285"/>
+<area shape="rect" id="node23" href="$classui_1_1_my_button.html#a2deebd864f1c01a6d81238349c929885" title="getter della variabile per la verifica del mouse se si trova sul bottone. " alt="" coords="463,309,634,336"/>
+<area shape="rect" id="node24" href="$classui_1_1_my_button.html#ae13f88e922e1339355456062ad9fa359" title="getter della coordinata x. " alt="" coords="488,360,609,387"/>
+<area shape="rect" id="node25" href="$classui_1_1_my_button.html#aab81944f0a14bba932c0931899951937" title="getter della coordinata y. " alt="" coords="487,411,610,437"/>
+<area shape="rect" id="node26" href="$classui_1_1_my_button.html#a187945475e730bfa340a10f63224e91f" title="getter del rettangolo per verificarne la pressione. " alt="" coords="469,461,628,488"/>
+<area shape="rect" id="node27" href="$classui_1_1_action_bar.html#aef810268cda93505da735c6c81136e00" title="restituisce il guadagno della vendita della torre selezionata. " alt="" coords="499,613,599,640"/>
+<area shape="rect" id="node13" href="$classtowers_1_1_tower.html#ae13f88e922e1339355456062ad9fa359" title="ritorna la x " alt="" coords="740,765,867,792"/>
+<area shape="rect" id="node14" href="$classtowers_1_1_tower.html#a18d1640fde65c20187e68286b6bbcf6d" title="ritorna il range " alt="" coords="725,816,882,843"/>
+<area shape="rect" id="node15" href="$classtowers_1_1_tower.html#aab81944f0a14bba932c0931899951937" title="ritorna la y " alt="" coords="739,867,868,893"/>
+<area shape="rect" id="node17" href="$classhelpz_1_1_constants_1_1_towers.html#affe7d154c2065c3c8eea74993d932c2c" title="helpz.Constants.Towers.getCost" alt="" coords="949,664,1160,691"/>
+<area shape="rect" id="node20" href="$classui_1_1_my_button.html#a1e330b5600a9187ca0ef7f964cfb24c9" title="disegna lo sfondo del bottone. " alt="" coords="727,259,880,285"/>
+<area shape="rect" id="node21" href="$classui_1_1_my_button.html#af91752554b78073a295ed441afc34638" title="disegna i bordi del bottone. " alt="" coords="723,309,884,336"/>
+<area shape="rect" id="node22" href="$classui_1_1_my_button.html#a5d567e88f76d588ff4af3357a5db4f9c" title="disegna il testo nel bottone ma più in alto rispetto a &quot;drawCentralText&quot;. " alt="" coords="705,208,901,235"/>
+<area shape="rect" id="node29" href="$classui_1_1_action_bar.html#a01f37d59ae4977fa55a1a6dd3e8bd543" title="disegna il timer dell&#39;ondata. " alt="" coords="265,107,379,133"/>
+<area shape="rect" id="node30" href="$classui_1_1_action_bar.html#abb1fa26db5a1c2f4b0776a316ad85249" title="disegna il numero di nemici rimanenti. " alt="" coords="267,5,377,32"/>
+<area shape="rect" id="node31" href="$classui_1_1_action_bar.html#aeb491734ea2c8ae2f1be9db4f930d22a" title="disegna il numero dell&#39;ondata. " alt="" coords="271,56,373,83"/>
+</map>

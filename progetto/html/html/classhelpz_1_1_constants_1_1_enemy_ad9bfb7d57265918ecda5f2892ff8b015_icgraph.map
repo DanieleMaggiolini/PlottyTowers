@@ -1,0 +1,6 @@
+<map id="getCoin" name="getCoin">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="120,5,275,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="120,56,275,83"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level3.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="120,107,275,133"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level4.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="120,157,275,184"/>
+</map>

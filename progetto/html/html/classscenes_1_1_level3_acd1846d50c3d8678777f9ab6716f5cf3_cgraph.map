@@ -1,0 +1,4 @@
+<map id="isAllDead" name="isAllDead">
+<area shape="rect" id="node2" href="$classmanagers_1_1_wave_manager.html#a1012ba37c40b76ee9c3413986133d865" title="richiesta se l&#39;ondata è finito o ci sono altri nemici " alt="" coords="131,5,365,32"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_enemy_manager.html#aaa1e04fb149c24d658ce085e7ea30c74" title="ritorno dell&#39;array contenente tutti i nemici " alt="" coords="150,57,346,98"/>
+</map>

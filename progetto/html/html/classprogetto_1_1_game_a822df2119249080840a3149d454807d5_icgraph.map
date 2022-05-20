@@ -1,0 +1,11 @@
+<map id="restartLevel" name="restartLevel">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="153,5,343,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="153,56,343,83"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level3.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="153,107,343,133"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level4.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="153,157,343,184"/>
+<area shape="rect" id="node6" href="$classui_1_1_pause_overlay.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse " alt="" coords="141,208,355,235"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level1.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="403,132,604,159"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level2.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="403,183,604,209"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level3.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="403,233,604,260"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_level4.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="403,284,604,311"/>
+</map>

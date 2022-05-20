@@ -1,0 +1,7 @@
+<map id="ActionBar" name="ActionBar">
+<area shape="rect" id="node2" href="$classui_1_1_action_bar.html#aed9fe7e919d4355a7ad86701d44e1fea" title="inizializza i bottoni. " alt="" coords="179,31,256,57"/>
+<area shape="rect" id="node6" href="$classhelpz_1_1_load_save.html#adfcdec0c763af178ffbfea94f4ccd263" title="carica immagine " alt="" coords="132,81,303,108"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_load_save.html#a9dbd50db72db31e6a9c5c423d4e48be3" title="load 2d int array from a file " alt="" coords="351,31,521,57"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_load_save.html#a62d3bd4e3f361e1f99bd9d21a7d21b0d" title="legge un file " alt="" coords="579,5,741,32"/>
+<area shape="rect" id="node5" href="$classhelpz_1_1_utilz.html#a3f701300276e5102efe8c55e65192dec" title="helpz.Utilz.ArrayListTo2dInt" alt="" coords="569,56,751,83"/>
+</map>

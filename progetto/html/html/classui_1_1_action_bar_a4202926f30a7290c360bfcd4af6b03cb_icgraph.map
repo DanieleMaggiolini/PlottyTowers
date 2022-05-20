@@ -1,0 +1,7 @@
+<map id="drawWaveInfo" name="drawWaveInfo">
+<area shape="rect" id="node2" href="$classui_1_1_action_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori..." alt="" coords="155,81,204,108"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="252,5,396,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="252,56,396,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="252,107,396,133"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="252,157,396,184"/>
+</map>

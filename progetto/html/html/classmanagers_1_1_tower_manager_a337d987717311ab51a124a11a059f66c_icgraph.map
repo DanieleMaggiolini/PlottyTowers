@@ -1,0 +1,7 @@
+<map id="attack" name="attack">
+<area shape="rect" id="node2" href="$classmanagers_1_1_tower_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="aggiornamento del cooldown di ogni torre presente e richiamo del metodo per attaccare un nemico ..." alt="" coords="112,81,173,108"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="221,5,403,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="221,56,403,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level3.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="221,107,403,133"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level4.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="221,157,403,184"/>
+</map>

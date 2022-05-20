@@ -1,0 +1,11 @@
+<map id="updateProj" name="updateProj">
+<area shape="rect" id="node2" href="$classmanagers_1_1_projectile_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="per ogni proiettile controllo se attivo, lo muove e controllo se ha colpito qualche nemico ..." alt="" coords="137,65,368,92"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_projectile_manager.html#a90bf53002c3a067a25aba3e876974051" title="controolo per il proiettile passato se si trova nella hitbox di uno dei nemici presenti nel gioco..." alt="" coords="416,99,617,141"/>
+<area shape="rect" id="node10" href="$classmanagers_1_1_projectile_manager.html#a57d53b4aface986fa08a24dab39b621d" title="controllo se il proiettile è uscito della schermata " alt="" coords="416,17,617,58"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="677,56,844,83"/>
+<area shape="rect" id="node5" href="$classobjects_1_1_projectile.html#a6b73c36e7bd98fd9cfbffa2ff11cc10e" title="ritorna la posizione " alt="" coords="665,5,856,32"/>
+<area shape="rect" id="node6" href="$classobjects_1_1_projectile.html#a3eb7b7894f5f3b1409005aecd00a38ad" title="ritorna il danno " alt="" coords="675,107,846,133"/>
+<area shape="rect" id="node7" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="677,157,844,184"/>
+<area shape="rect" id="node8" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="677,208,844,235"/>
+<area shape="rect" id="node9" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="677,259,844,285"/>
+</map>

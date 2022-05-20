@@ -1,3 +1,12 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file SceneMetods.java 
+* 
+* @brief gestisce i metodi delle scene.
+*
+*/
 package scenes;
 
 import java.awt.Graphics;

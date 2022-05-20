@@ -1,0 +1,7 @@
+<map id="drawHpBar" name="drawHpBar">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="per ogni nemico controllo se vivo, se vivo disegno del nemico e della barra della vita ..." alt="" coords="139,81,188,108"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="236,5,380,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="236,56,380,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="236,107,380,133"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="236,157,380,184"/>
+</map>

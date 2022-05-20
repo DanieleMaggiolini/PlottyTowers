@@ -1,0 +1,10 @@
+<map id="Level1" name="Level1">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza tutte le classi presenti. " alt="" coords="112,31,199,57"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level1.html#aded9c531b53772fd90d09a8b6bf0132e" title="importa le immagini. " alt="" coords="116,81,195,108"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level1.html#a27d3ba5afb772cc36c9a432c28975ace" title="inizializza tutti i bottoni presenti. " alt="" coords="113,132,197,159"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#a286931cc46e197f4a85af7229fdc29a4" title="carica il livello. " alt="" coords="295,31,369,57"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_load_save.html#a9dbd50db72db31e6a9c5c423d4e48be3" title="load 2d int array from a file " alt="" coords="465,31,636,57"/>
+<area shape="rect" id="node5" href="$classhelpz_1_1_load_save.html#a62d3bd4e3f361e1f99bd9d21a7d21b0d" title="legge un file " alt="" coords="693,5,856,32"/>
+<area shape="rect" id="node6" href="$classhelpz_1_1_utilz.html#a3f701300276e5102efe8c55e65192dec" title="helpz.Utilz.ArrayListTo2dInt" alt="" coords="684,56,865,83"/>
+<area shape="rect" id="node8" href="$classhelpz_1_1_load_save.html#adfcdec0c763af178ffbfea94f4ccd263" title="carica immagine " alt="" coords="247,81,417,108"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="getId" name="getId">
+<area shape="rect" id="node2" href="$classscenes_1_1_editing.html#afbbb0a60fd2d899ff81c1715fce5fc73" title="cambia la tile date le coordinate. " alt="" coords="104,31,279,57"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_editing.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse " alt="" coords="329,5,523,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_editing.html#adbfc0588c017133c9b7070474402b72f" title="gestisce le drag del mouse " alt="" coords="327,56,525,83"/>
+</map>

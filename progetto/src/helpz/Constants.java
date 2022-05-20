@@ -1,5 +1,20 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file Constants.java 
+* 
+* @brief gestisce le costanti.
+*
+*/
 package helpz;
 
+/**
+ * @class Constants
+ *
+ * @brief gestisce le costanti
+ *
+ */
 public class Constants {
 
     public static class Direction {

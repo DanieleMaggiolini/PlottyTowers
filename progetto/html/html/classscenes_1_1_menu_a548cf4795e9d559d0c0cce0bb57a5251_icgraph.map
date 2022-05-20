@@ -1,0 +1,4 @@
+<map id="resetButtons" name="resetButtons">
+<area shape="rect" id="node2" href="$classscenes_1_1_menu.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le move del mouse " alt="" coords="157,5,256,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_menu.html#a87a07291794e15052db67f945d90853e" title="gestisce le release del mouse " alt="" coords="149,56,264,83"/>
+</map>

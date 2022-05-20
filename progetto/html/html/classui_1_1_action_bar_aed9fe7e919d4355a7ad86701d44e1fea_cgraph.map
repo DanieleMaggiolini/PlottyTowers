@@ -1,0 +1,5 @@
+<map id="initButton" name="initButton">
+<area shape="rect" id="node2" href="$classhelpz_1_1_load_save.html#a9dbd50db72db31e6a9c5c423d4e48be3" title="load 2d int array from a file " alt="" coords="131,31,301,57"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_load_save.html#a62d3bd4e3f361e1f99bd9d21a7d21b0d" title="legge un file " alt="" coords="359,5,521,32"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_utilz.html#a3f701300276e5102efe8c55e65192dec" title="helpz.Utilz.ArrayListTo2dInt" alt="" coords="349,56,531,83"/>
+</map>

@@ -1,0 +1,31 @@
+<map id="getY" name="getY">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a8f172cfa5ade4d4f0a6b89cc6bfc4d12" title="aggiornamento della posizione di un nemico " alt="" coords="620,74,837,115"/>
+<area shape="rect" id="node8" href="$classmanagers_1_1_enemy_manager.html#afec98871c0e021759b9d0afc8b690a18" title="controllo se il nemico si trova alla fine del percorso " alt="" coords="105,89,315,116"/>
+<area shape="rect" id="node9" href="$classmanagers_1_1_enemy_manager.html#a839e4729819875981f138997b2d3f438" title="controllo è pissibile procedere nella direzione in cui il nemico stava andando altrimenti prova strad..." alt="" coords="371,133,567,174"/>
+<area shape="rect" id="node10" href="$classmanagers_1_1_enemy_manager.html#a7ebdd9acefa4682b23b1ad2c0be558f4" title="in base alla tipologia di nemico disegno con il suo index di animazione " alt="" coords="107,257,313,298"/>
+<area shape="rect" id="node16" href="$classmanagers_1_1_enemy_manager.html#a9c98cd29298e5f583c52dc46a6d70d46" title="disegno rosso della barra della vita di un nemico " alt="" coords="107,191,313,233"/>
+<area shape="rect" id="node17" href="$classmanagers_1_1_projectile_manager.html#ad4505ed80d64e9561393c0406fe7d904" title="aggiunta di un proiettile nell&#39;array " alt="" coords="103,461,317,502"/>
+<area shape="rect" id="node22" href="$classmanagers_1_1_tower_manager.html#a5f1dea7776d18a6f69428e43c4845fdb" title="controllo se il nemico preso in considerazione è nel raggio della torre presa in considerazione ..." alt="" coords="119,322,301,363"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_enemy_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="per ogni nemico controllo se vivo e lo muove " alt="" coords="885,81,1103,108"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="1151,5,1339,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="1151,56,1339,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="1151,107,1339,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level4.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="1151,157,1339,184"/>
+<area shape="rect" id="node11" href="$classmanagers_1_1_enemy_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="per ogni nemico controllo se vivo, se vivo disegno del nemico e della barra della vita ..." alt="" coords="626,224,831,251"/>
+<area shape="rect" id="node12" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="922,275,1066,301"/>
+<area shape="rect" id="node13" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="922,325,1066,352"/>
+<area shape="rect" id="node14" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="922,173,1066,200"/>
+<area shape="rect" id="node15" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="922,224,1066,251"/>
+<area shape="rect" id="node18" href="$classscenes_1_1_level1.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="399,468,539,495"/>
+<area shape="rect" id="node19" href="$classscenes_1_1_level2.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="399,519,539,545"/>
+<area shape="rect" id="node20" href="$classscenes_1_1_level3.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="399,569,539,596"/>
+<area shape="rect" id="node21" href="$classscenes_1_1_level4.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="399,417,539,444"/>
+<area shape="rect" id="node23" href="$classmanagers_1_1_tower_manager.html#a337d987717311ab51a124a11a059f66c" title="considerati tutti i nemici, se sono vivi, nel raggio della torre in considerazione, se il suo cooldown è finito, e se presente un animazione siamo nell&#39;index giusto, fare spaare la torre " alt="" coords="365,367,572,393"/>
+<area shape="rect" id="node29" href="$classmanagers_1_1_tower_manager.html#a2cbe196e347dcc9a69a4d3dfdbec72de" title="controllo se la torre deve rimanere ferma o deve essere animata, in base alla presenza di nemici..." alt="" coords="369,301,568,342"/>
+<area shape="rect" id="node24" href="$classmanagers_1_1_tower_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="aggiornamento del cooldown di ogni torre presente e richiamo del metodo per attaccare un nemico ..." alt="" coords="623,427,834,453"/>
+<area shape="rect" id="node25" href="$classscenes_1_1_level1.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="903,528,1085,555"/>
+<area shape="rect" id="node26" href="$classscenes_1_1_level2.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="903,376,1085,403"/>
+<area shape="rect" id="node27" href="$classscenes_1_1_level3.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="903,427,1085,453"/>
+<area shape="rect" id="node28" href="$classscenes_1_1_level4.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="903,477,1085,504"/>
+<area shape="rect" id="node30" href="$classmanagers_1_1_tower_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="richiamo del metodo drawTower per ogni torre " alt="" coords="629,275,828,301"/>
+</map>

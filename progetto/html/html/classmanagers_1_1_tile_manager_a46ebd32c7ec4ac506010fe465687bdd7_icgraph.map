@@ -1,0 +1,17 @@
+<map id="getSprite" name="getSprite">
+<area shape="rect" id="node2" href="$classmanagers_1_1_tile_manager.html#abb7fa074b36e6e355db16761115fb367" title="crazione di un tile per ogni subimage e assegnazione della tipologia del tile " alt="" coords="187,5,273,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_editing.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la mappa. " alt="" coords="960,132,1108,159"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level1.html#a62bcb07be9e39896e5837a9d396e7235" title="disegna lo sfondo. " alt="" coords="128,107,332,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level2.html#a62bcb07be9e39896e5837a9d396e7235" title="disegna lo sfondo. " alt="" coords="128,157,332,184"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level3.html#a62bcb07be9e39896e5837a9d396e7235" title="disegna lo sfondo. " alt="" coords="128,208,332,235"/>
+<area shape="rect" id="node11" href="$classscenes_1_1_level4.html#a62bcb07be9e39896e5837a9d396e7235" title="disegna lo sfondo. " alt="" coords="128,259,332,285"/>
+<area shape="rect" id="node13" href="$classui_1_1_tool_bar.html#abe2e2af5c0d57248464e8b607c41a36f" title="ritorna l&#39;immagine del tile di cui passiamo l&#39;id. " alt="" coords="143,309,317,336"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_tile_manager.html#a041c1b12a4eb5574dfedf0af6393c014" title="costruttore carica dell&#39;immagine e assegnazione per ogni tile " alt="" coords="422,5,514,32"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="396,107,540,133"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="396,157,540,184"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="396,208,540,235"/>
+<area shape="rect" id="node12" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="396,259,540,285"/>
+<area shape="rect" id="node14" href="$classui_1_1_tool_bar.html#a55c79e1185fb66ae98edacc2c7d5c302" title="disegna i bottoni. " alt="" coords="380,309,556,336"/>
+<area shape="rect" id="node15" href="$classui_1_1_tool_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="604,259,753,285"/>
+<area shape="rect" id="node16" href="$classui_1_1_tool_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni. " alt="" coords="801,157,912,184"/>
+</map>

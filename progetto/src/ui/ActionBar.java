@@ -55,16 +55,34 @@ public class ActionBar extends Bar {
     //valuta nel gioco per acquistare torri e potenziarle
     private int coin = 50;
 
+    //booleana per mostrare il costo della tower
     private boolean showtowercost;
 
+    //costo della tower
     private int towercostType;
 
-    private MyButton upgrade, vendi;
+    //bottone per upgradare le torri
+    private MyButton upgrade;
+    
+    //bottone per vendere le torri
+    private MyButton vendi;
 
+    //numero di vite
     private int vite = 3;
 
+    //array di immagine dei cuori
     private BufferedImage[] cuori;
-
+    
+    /**
+     @brief costruttore, setta variabili, immagini e bottoni.
+     *  
+     * @param x coordinata
+     * @param y coordinata
+     * @param width larghezza
+     * @param height altezza
+     * @param game oggetto del gioco
+     * @param state stato dal quale viene invocata l'action bar
+     */
     public ActionBar(int x, int y, int width, int height, Game game, String state) {
         super(x, y, width, height);
         this.game = game;
@@ -78,6 +96,10 @@ public class ActionBar extends Bar {
         cuori[1] = temp.getSubimage(32, 0, 32, 32);
     }
 
+    /**
+     @brief inizializza i bottoni.
+     * 
+     */
     private void initButton() {
         towerButtons = new MyButton[3];
 
@@ -102,6 +124,11 @@ public class ActionBar extends Bar {
         vendi = new MyButton("VENDI", x + xoff, y, w, h, f, Color.black);
     }
 
+    /**
+     @brief disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori.
+     * 
+     * @param g oggetto della grafica
+     */
     public void draw(Graphics g) {
         g.setColor(new Color(247, 178, 82));
         g.fillRect(x, y, width, height);
@@ -125,6 +152,11 @@ public class ActionBar extends Bar {
         drawVite(g);
     }
 
+    /**
+     @brief disegna i bottoni.
+     * 
+     * @param g oggetto della grafica
+     */
     public void drawButton(Graphics g) {
 
         for (MyButton b : towerButtons) {
@@ -146,6 +178,11 @@ public class ActionBar extends Bar {
         }
     }
 
+    /**
+     @brief disegna la torre selezionata, le sue info e i bottoni relativi ad essa.
+     * 
+     * @param g oggetto della grafica
+     */
     private void drawDiaplayedTower(Graphics g) {
         int w = (int) (Game.currentScreenWidth * 0.28);
         int h = (int) (Game.currentScreenHeight * 0.120);
@@ -200,33 +237,64 @@ public class ActionBar extends Bar {
         }
     }
 
+    /**
+     @brief restituisce il costo per upgradare la torre selezionata.
+     * 
+     * @param displayedTower torre selezionata
+     */
     public int getLevelUpCost(Tower displayedTower) {
         return (int) (helpz.Constants.Towers.getCost(displayedTower.getTypetower()) * 0.8f);
     }
 
+    /**
+     @brief restituisce il guadagno della vendita della torre selezionata.
+     * 
+     * @param displayedTower torre selezionata
+     */
     public int getVendiCost(Tower displayedTower) {
         float addcost = ((displayedTower.getLvl() - 1) * getLevelUpCost(displayedTower)) * 0.5f;
         return (int) (helpz.Constants.Towers.getCost(displayedTower.getTypetower()) / 2 + addcost);
     }
 
+    /**
+     @brief disegna i bordi della torre selezionata.
+     * 
+     * @param g oggetto della grafica
+     */
     public void drawDisplayedTowerBorder(Graphics g) {
         g.setColor(Color.WHITE);
         g.drawRect(displayedTower.getX(), displayedTower.getY(), Tile.spriteWidth, Tile.spriteHeight);
     }
 
+    /**
+     @brief disegna il cerchio del range di attacco della torre selezionata.
+     * 
+     * @param g oggetto della grafica
+     */
     public void drawDisplayedTowerRange(Graphics g) {
         g.setColor(Color.WHITE);
         g.drawOval(displayedTower.getX() - (int) (displayedTower.getRange() / 2) * 2 + Tile.spriteWidth / 2, displayedTower.getY() - (int) (displayedTower.getRange() / 2) * 2 + Tile.spriteHeight / 2, (int) displayedTower.getRange() * 2, (int) displayedTower.getRange() * 2);
     }
 
+    /**
+     @brief disegna le informazioni relative all'ondata.
+     * 
+     * @param g oggetto della grafica
+     */
     public void drawWaveInfo(Graphics g) {
         drawWaveTimer(g);
         drawEnemyLeft(g);
         drawWaveLeft(g);
     }
 
+    //numero decimale
     private DecimalFormat decimal = new DecimalFormat("0.0");
 
+    /**
+     @brief disegna il timer dell'ondata.
+     * 
+     * @param g oggetto della grafica
+     */
     private void drawWaveTimer(Graphics g) {
         int timeleftx = (int) (Game.currentScreenWidth * 0.850);
         int timelefty = (int) (Game.currentScreenHeight * 0.870);
@@ -256,6 +324,11 @@ public class ActionBar extends Bar {
         }
     }
 
+    /**
+     @brief disegna il numero di nemici rimanenti.
+     * 
+     * @param g oggetto della grafica
+     */
     private void drawEnemyLeft(Graphics g) {
         int current = 0;
         int size = 0;
@@ -284,6 +357,11 @@ public class ActionBar extends Bar {
         g.drawString("ondata: " + (current + 1) + "/" + size, waveleftx, wavelefty);
     }
 
+    /**
+     @brief disegna il numero dell'ondata.
+     * 
+     * @param g oggetto della grafica
+     */
     private void drawWaveLeft(Graphics g) {
         int enemyleft = 0;
         int enemyleftx = (int) (Game.currentScreenWidth * 0.850);
@@ -307,12 +385,22 @@ public class ActionBar extends Bar {
         g.drawString("nemici rimasti: " + enemyleft, enemyleftx, enemylefty);
     }
 
+    /**
+     @brief disegna il numero di monete.
+     * 
+     * @param g oggetto della grafica
+     */
     public void drawCoin(Graphics g) {
         g.setColor(Color.BLACK);
         g.setFont(new Font("LucidaSans", Font.BOLD, 30));
         g.drawString("monete: " + coin, 40, (int) (Game.currentScreenHeight * 0.981));
     }
 
+    /**
+     @brief disegna le vite.
+     * 
+     * @param g oggetto della grafica
+     */
     public void drawVite(Graphics g) {
         if (vite < 0) {
             vite = 0;
@@ -341,14 +429,29 @@ public class ActionBar extends Bar {
         }
     }
 
+    /**
+     @brief rimuove delle monete.
+     * 
+     * @param type tipo di acquisto
+     */
     public void removeCoin(int type) {
         this.coin -= helpz.Constants.Towers.getCost(type);
     }
 
+    /**
+     @brief aggiunge delle monete.
+     * 
+     * @param coin numero di monete da aggiungere
+     */
     public void addCoin(int coin) {
         this.coin += coin;
     }
 
+    /**
+     @brief disegna il costo della torre da piazzare.
+     * 
+     * @param g oggetto della grafica
+     */
     public void drawTowerCost(Graphics g) {
         int w = (int) (Game.currentScreenWidth * 0.114);
         int h = (int) (Game.currentScreenHeight * 0.078);
@@ -368,14 +471,28 @@ public class ActionBar extends Bar {
         g.drawString("prezzo: " + helpz.Constants.Towers.getCost(towercostType), x + 15, y + (int) (h / 1.3));
     }
 
+    /**
+     @brief setta la torre da disegnare.
+     * 
+     * @param t torre da disegnare
+     */
     public void displayTower(Tower t) {
         displayedTower = t;
     }
 
+    /**
+     @brief restituisce il numero di vite.
+     * 
+     * @return numero di vite
+     */
     public int getVite() {
         return vite;
     }
 
+    /**
+     @brief rimuove una vita ed eventualmente termina il livello.
+     * 
+     */
     public void rimuoviVita() {
         vite--;
         if (vite <= 0) {
@@ -397,6 +514,11 @@ public class ActionBar extends Bar {
 
     }
 
+    /**
+     @brief gestisce i click del mouse.
+     * 
+     * @param e evento del mouse
+     */
     public void mouseClicked(MouseEvent e) {
         if (displayedTower != null) {
             if (upgrade.getBounds().contains(e.getX(), e.getY()) && displayedTower.getLvl() < 3 && coin >= getLevelUpCost(displayedTower)) {
@@ -447,6 +569,11 @@ public class ActionBar extends Bar {
         }
     }
 
+    /**
+     @brief gestisce le move del mouse.
+     * 
+     * @param e evento del mouse
+     */
     public void mouseMoved(MouseEvent e) {
         showtowercost = false;
         upgrade.setMouseOver(false);
@@ -487,6 +614,11 @@ public class ActionBar extends Bar {
 
     }
 
+    /**
+     @brief gestisce le press del mouse.
+     * 
+     * @param e evento del mouse
+     */
     public void mousePressed(MouseEvent e) {
         if (displayedTower != null) {
             if (upgrade.getBounds().contains(e.getX(), e.getY()) && displayedTower.getLvl() < 3) {
@@ -536,6 +668,11 @@ public class ActionBar extends Bar {
         }
     }
 
+    /**
+     @brief gestisce le release del mouse.
+     * 
+     * @param e evento del mouse
+     */
     public void mouseReleased(MouseEvent e) {
         for (MyButton b : towerButtons) {
             b.resetBooleans();

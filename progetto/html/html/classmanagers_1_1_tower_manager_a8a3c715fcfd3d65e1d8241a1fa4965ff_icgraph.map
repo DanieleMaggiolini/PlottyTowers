@@ -1,0 +1,6 @@
+<map id="towerLevelUp" name="towerLevelUp">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a8a3c715fcfd3d65e1d8241a1fa4965ff" title="upgrade della torre; " alt="" coords="152,5,336,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#a8a3c715fcfd3d65e1d8241a1fa4965ff" title="upgrade della torre; " alt="" coords="152,56,336,83"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level3.html#a8a3c715fcfd3d65e1d8241a1fa4965ff" title="upgrade della torre; " alt="" coords="152,107,336,133"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level4.html#a8a3c715fcfd3d65e1d8241a1fa4965ff" title="upgrade della torre; " alt="" coords="152,157,336,184"/>
+</map>

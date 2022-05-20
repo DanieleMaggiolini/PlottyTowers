@@ -1,0 +1,7 @@
+<map id="mousePressed" name="mousePressed">
+<area shape="rect" id="node2" href="$classui_1_1_pause_overlay.html#a4506144774b5a18385cf2eb0f4ff5e42" title="resetta le variabili booleane. " alt="" coords="163,43,247,69"/>
+<area shape="rect" id="node3" href="$classui_1_1_sound_button.html#ad6f3328519bbc954f7973bc885d088d8" title="setter della variabile per la verifica del mouse se ha premuto il bottone. " alt="" coords="295,5,515,32"/>
+<area shape="rect" id="node4" href="$classui_1_1_ush_button.html#ad6f3328519bbc954f7973bc885d088d8" title="setter della variabile per la verifica del mouse se ha premuto il bottone. " alt="" coords="301,68,508,95"/>
+<area shape="rect" id="node5" href="$classui_1_1_pause_overlay.html#a1652ba7734cc8d8ba710d3ab10281b04" title="verifica se il mouse è all&#39;interno del bottone " alt="" coords="183,144,226,171"/>
+<area shape="rect" id="node6" href="$classui_1_1_pause_button.html#a187945475e730bfa340a10f63224e91f" title="restituisce il bounds " alt="" coords="316,144,493,171"/>
+</map>

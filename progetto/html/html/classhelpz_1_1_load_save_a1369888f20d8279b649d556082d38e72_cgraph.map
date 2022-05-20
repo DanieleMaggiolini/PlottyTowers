@@ -1,0 +1,5 @@
+<map id="unlockLevel" name="unlockLevel">
+<area shape="rect" id="node2" href="$classhelpz_1_1_load_save.html#a62d3bd4e3f361e1f99bd9d21a7d21b0d" title="legge un file " alt="" coords="199,5,267,32"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_utilz.html#a3a92fdb2e1e33fa3daadbdea23200fcc" title="helpz.Utilz.twoDToOneDInt" alt="" coords="145,56,322,83"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_utilz.html#a3f701300276e5102efe8c55e65192dec" title="helpz.Utilz.ArrayListTo2dInt" alt="" coords="143,107,324,133"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="drawTowerCost" name="drawTowerCost">
+<area shape="rect" id="node2" href="$classhelpz_1_1_constants_1_1_towers.html#a514d43d9440f939e8a4d021a01049424" title="helpz.Constants.Towers.getName" alt="" coords="164,5,381,32"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_constants_1_1_towers.html#affe7d154c2065c3c8eea74993d932c2c" title="helpz.Constants.Towers.getCost" alt="" coords="167,56,378,83"/>
+</map>

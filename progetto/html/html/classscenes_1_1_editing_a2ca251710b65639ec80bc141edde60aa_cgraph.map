@@ -1,0 +1,7 @@
+<map id="mouseMoved" name="mouseMoved">
+<area shape="rect" id="node2" href="$classui_1_1_tool_bar.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le move del mouse " alt="" coords="163,31,323,57"/>
+<area shape="rect" id="node5" href="$classobjects_1_1_tile.html#a57c0bcd3471b12679b57faa7ba32d91c" title="ritorna la larghezza " alt="" coords="153,81,332,108"/>
+<area shape="rect" id="node6" href="$classobjects_1_1_tile.html#af71d2cd2060d5ecee3b0a8c387b981dd" title="ritorna l&#39;altezza " alt="" coords="152,132,333,159"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#ac3f48a7245ffa1fe24d32ea71797997d" title="setter della variabile per la verifica del mouse se si trova sul bottone. " alt="" coords="381,5,560,32"/>
+<area shape="rect" id="node4" href="$classui_1_1_my_button.html#a187945475e730bfa340a10f63224e91f" title="getter del rettangolo per verificarne la pressione. " alt="" coords="391,56,550,83"/>
+</map>

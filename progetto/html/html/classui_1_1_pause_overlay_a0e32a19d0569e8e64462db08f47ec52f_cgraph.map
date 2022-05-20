@@ -1,0 +1,5 @@
+<map id="PauseOverlay" name="PauseOverlay">
+<area shape="rect" id="node2" href="$classui_1_1_pause_overlay.html#ab9e42b0ec1e9c9ffdf1edd5dec1b0ddd" title="carica lo sfondo. " alt="" coords="159,5,274,32"/>
+<area shape="rect" id="node4" href="$classui_1_1_pause_overlay.html#a7f98f78449c3156b81769d481bf99f3c" title="inizializza i bottoni. " alt="" coords="156,56,277,83"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_load_save.html#adfcdec0c763af178ffbfea94f4ccd263" title="carica immagine " alt="" coords="325,5,496,32"/>
+</map>

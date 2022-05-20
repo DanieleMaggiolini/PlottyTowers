@@ -1,0 +1,4 @@
+<map id="changeTile" name="changeTile">
+<area shape="rect" id="node2" href="$classscenes_1_1_editing.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse " alt="" coords="140,5,244,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_editing.html#adbfc0588c017133c9b7070474402b72f" title="gestisce le drag del mouse " alt="" coords="137,56,247,83"/>
+</map>

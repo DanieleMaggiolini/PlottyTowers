@@ -1,0 +1,8 @@
+<map id="getNewBarWidth" name="getNewBarWidth">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a9c98cd29298e5f583c52dc46a6d70d46" title="disegno rosso della barra della vita di un nemico " alt="" coords="172,81,257,108"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_enemy_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="per ogni nemico controllo se vivo, se vivo disegno del nemico e della barra della vita ..." alt="" coords="305,81,355,108"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="403,5,547,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="403,56,547,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="403,107,547,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="403,157,547,184"/>
+</map>

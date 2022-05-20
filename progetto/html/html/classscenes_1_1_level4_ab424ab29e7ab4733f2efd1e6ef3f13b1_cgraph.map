@@ -1,0 +1,8 @@
+<map id="updateWave" name="updateWave">
+<area shape="rect" id="node2" href="$classmanagers_1_1_wave_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="aggiornamento variabili tick per generare il successivo nemico dell&#39;ondata e se necessario aggiorname..." alt="" coords="147,5,355,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level4.html#a121827ebd1c5b24c92f966721b51c0b9" title="controlla che sia spawnato il nemico e che l&#39;ondata non sia finita. " alt="" coords="195,56,307,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level4.html#addfc0c3129b6ff606f7276e175f31a15" title="richiama il metodo per spawnare un nemico. " alt="" coords="201,107,301,133"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level4.html#a6b0fc6fbe769f38b9418fbaa51214735" title="restituisce l&#39;oggetto wavemanager. " alt="" coords="449,56,571,83"/>
+<area shape="rect" id="node6" href="$classmanagers_1_1_enemy_manager.html#a3714d243133c700dca12625cccf518aa" title="richiamo metodo per aggiunta passando la tipologia del nemico " alt="" coords="403,107,617,149"/>
+<area shape="rect" id="node7" href="$classmanagers_1_1_enemy_manager.html#a24695d90cee943c6c64c2d9f1b231285" title="aggiunta nemico all&#39;array " alt="" coords="665,107,864,149"/>
+</map>

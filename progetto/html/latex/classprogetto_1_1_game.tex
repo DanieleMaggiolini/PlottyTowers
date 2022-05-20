@@ -1,0 +1,772 @@
+\hypertarget{classprogetto_1_1_game}{}\section{Game Class Reference}
+\label{classprogetto_1_1_game}\index{Game@{Game}}
+
+
+J\+Frame main gestisce la schermata di gioco.  
+
+
+
+
+Inheritance diagram for Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classprogetto_1_1_game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classprogetto_1_1_game_a98d87ba6bde3f389e92664a2ef9bfcb1}{Game} ()
+\begin{DoxyCompactList}\small\item\em costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata. \end{DoxyCompactList}\item 
+void \hyperlink{classprogetto_1_1_game_a7ac5b05774724411897684758dec30f9}{set\+Full\+Screen} ()
+\begin{DoxyCompactList}\small\item\em imposta la schermata di gioco in full screen. \end{DoxyCompactList}\item 
+int \hyperlink{classprogetto_1_1_game_ad285af3491631b7569ae47a066925af7}{get\+Current\+Screen\+Width} ()
+\begin{DoxyCompactList}\small\item\em get della larghezza dello scermo. \end{DoxyCompactList}\item 
+int \hyperlink{classprogetto_1_1_game_a08d0108e179608c5b692376d7af26351}{get\+Current\+Screen\+Height} ()
+\begin{DoxyCompactList}\small\item\em get dell\textquotesingle{}altezza dello scermo. \end{DoxyCompactList}\item 
+void \hyperlink{classprogetto_1_1_game_ad79f312dd3a9e52f38a9e5f1536537fd}{create\+Level} ()
+\begin{DoxyCompactList}\small\item\em verificare che la mappa del primo livello esita in caso contrario crea il file contenente una mappa vuota. \end{DoxyCompactList}\item 
+void \hyperlink{classprogetto_1_1_game_a13a43e6d814de94978c515cb084873b1}{run} ()
+\begin{DoxyCompactList}\small\item\em loop del gioco che gestisce F\+PS. \end{DoxyCompactList}\item 
+\hyperlink{classprogetto_1_1_render}{Render} \hyperlink{classprogetto_1_1_game_a4cf2c70ad6b93232b970eee06767cab1}{get\+Render} ()
+\begin{DoxyCompactList}\small\item\em getter dell\textquotesingle{}oggetto render. \end{DoxyCompactList}\item 
+\hyperlink{classscenes_1_1_menu}{Menu} \hyperlink{classprogetto_1_1_game_a32527bf330947f1c1d1f5a7da9d12940}{get\+Menu} ()
+\begin{DoxyCompactList}\small\item\em getter dell\textquotesingle{}oggetto menu. \end{DoxyCompactList}\item 
+\hyperlink{classscenes_1_1_playing}{Playing} \hyperlink{classprogetto_1_1_game_a5ef843d72d0871e312ff734c6a129dd2}{get\+Playing} ()
+\begin{DoxyCompactList}\small\item\em getter dell\textquotesingle{}oggetto playing. \end{DoxyCompactList}\item 
+\hyperlink{classscenes_1_1_editing}{Editing} \hyperlink{classprogetto_1_1_game_a0f1448e932e53b14606a448017e76c6c}{get\+Editing} ()
+\begin{DoxyCompactList}\small\item\em getter dell\textquotesingle{}oggetto editing. \end{DoxyCompactList}\item 
+\hyperlink{classscenes_1_1_level1}{Level1} \hyperlink{classprogetto_1_1_game_a6991f76e58df8f4b9bc8e94e3389d150}{get\+Level1} ()
+\begin{DoxyCompactList}\small\item\em getter dell\textquotesingle{}oggetto level1. \end{DoxyCompactList}\item 
+\hyperlink{classscenes_1_1_level2}{Level2} \hyperlink{classprogetto_1_1_game_a26827f97d382e852c53c15990619c8b7}{get\+Level2} ()
+\begin{DoxyCompactList}\small\item\em getter dell\textquotesingle{}oggetto level2. \end{DoxyCompactList}\item 
+\hyperlink{classscenes_1_1_level3}{Level3} \hyperlink{classprogetto_1_1_game_a0869f04fd1631b5ad909e51c85e9e57b}{get\+Level3} ()
+\begin{DoxyCompactList}\small\item\em getter dell\textquotesingle{}oggetto level3. \end{DoxyCompactList}\item 
+\hyperlink{classscenes_1_1_level4}{Level4} \hyperlink{classprogetto_1_1_game_a09e02ae6992f3328be34c9062ef142f8}{get\+Level4} ()
+\begin{DoxyCompactList}\small\item\em getter dell\textquotesingle{}oggetto level4. \end{DoxyCompactList}\item 
+void \hyperlink{classprogetto_1_1_game_a822df2119249080840a3149d454807d5}{restart\+Level} (String state)
+\begin{DoxyCompactList}\small\item\em metodo che restarta il primo livello. \end{DoxyCompactList}\item 
+\hyperlink{classmanagers_1_1_tile_manager}{Tile\+Manager} \hyperlink{classprogetto_1_1_game_ad519f2a339c804d206a38ecd2c33f667}{get\+Tile\+Manager} ()
+\begin{DoxyCompactList}\small\item\em getter dell\textquotesingle{}oggetto tilemanager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classprogetto_1_1_game_a8b260eecbaabcef8473fd87ada040682}{main} (String\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em inizializza la classe, il game screen e starta il gioco. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classprogetto_1_1_game_ae5534d1409141e465b0aa92dfce9bf9c}{current\+Screen\+Width}
+\item 
+static int \hyperlink{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}{current\+Screen\+Height}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classprogetto_1_1_game_a3e57c234c3dde4539f8b9c47d75e59ae}{Init\+Classes} ()
+\begin{DoxyCompactList}\small\item\em inizializza gli oggetti presenti nel progetto. \end{DoxyCompactList}\item 
+void \hyperlink{classprogetto_1_1_game_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}{start\+Game} ()
+\begin{DoxyCompactList}\small\item\em metodo per inizializzare e far partire il Thread del gioco. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Graphics\+Device \hyperlink{classprogetto_1_1_game_ac345e138a6ffa68544b48dc4d805626d}{g\+Device}
+\item 
+Thread \hyperlink{classprogetto_1_1_game_a226fef5c7cbae0baee66cb8355514596}{game\+Thread}
+\item 
+\hyperlink{classprogetto_1_1_thread_update}{Thread\+Update} \hyperlink{classprogetto_1_1_game_a025c688d1ff09f00db19a2552e75a023}{threadupdate\+Enemy}
+\item 
+\hyperlink{classprogetto_1_1_thread_update}{Thread\+Update} \hyperlink{classprogetto_1_1_game_a0cafc0f6e57fb42b0eb7ae0327ae6cb9}{threadupdate\+Tower}
+\item 
+\hyperlink{classprogetto_1_1_thread_update}{Thread\+Update} \hyperlink{classprogetto_1_1_game_a5f563a8c12d7677bba700f732a0ef434}{threadupdate\+Wave}
+\item 
+\hyperlink{classprogetto_1_1_thread_update}{Thread\+Update} \hyperlink{classprogetto_1_1_game_a685c7cbed1380c3a5f1debbedf6df3db}{threadupdate\+Proj}
+\item 
+\hyperlink{classprogetto_1_1_thread_update}{Thread\+Update} \hyperlink{classprogetto_1_1_game_ab0d4dd15edc502306a52e4020db4f1b2}{threadupdate\+Coin}
+\item 
+final double \hyperlink{classprogetto_1_1_game_a50d447db9f34844bb620b5f2445d0172}{F\+P\+S\+\_\+\+S\+ET} = 120.\+0
+\item 
+\hyperlink{classprogetto_1_1_render}{Render} \hyperlink{classprogetto_1_1_game_a89f9872225fb9f22781342463fb2efe5}{render}
+\item 
+\hyperlink{classscenes_1_1_menu}{Menu} \hyperlink{classprogetto_1_1_game_a2ad0f4be462ff63c3c72779e80988d15}{menu}
+\item 
+\hyperlink{classscenes_1_1_playing}{Playing} \hyperlink{classprogetto_1_1_game_a244868866c8dc3e5d6170358b29b7ddd}{playing}
+\item 
+\hyperlink{classscenes_1_1_editing}{Editing} \hyperlink{classprogetto_1_1_game_a38f9dcf960197192269b03c788903b3e}{editing}
+\item 
+\hyperlink{classscenes_1_1_level1}{Level1} \hyperlink{classprogetto_1_1_game_a3e383190df624f9eb3a217146d06a1e0}{level1}
+\item 
+\hyperlink{classscenes_1_1_level2}{Level2} \hyperlink{classprogetto_1_1_game_a5925992aaa9203be9dc37a92b1d7d2f5}{level2}
+\item 
+\hyperlink{classscenes_1_1_level3}{Level3} \hyperlink{classprogetto_1_1_game_a6847c09aaed051c28279abdbca58cb1c}{level3}
+\item 
+\hyperlink{classscenes_1_1_level4}{Level4} \hyperlink{classprogetto_1_1_game_aa468e4210478204f1cff1ab951008767}{level4}
+\item 
+\hyperlink{classmanagers_1_1_tile_manager}{Tile\+Manager} \hyperlink{classprogetto_1_1_game_a6d3aeeb21b7d0a3598a949b8c244f7bf}{tilemanager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+J\+Frame main gestisce la schermata di gioco. 
+
+classe per la gestione completa dei suoni livello per livello
+
+questa classe gestira l\textquotesingle{}inizializzazione di classi e Thread del progetto 
+
+Definition at line 38 of file Game.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classprogetto_1_1_game_a98d87ba6bde3f389e92664a2ef9bfcb1}\label{classprogetto_1_1_game_a98d87ba6bde3f389e92664a2ef9bfcb1}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!Game@{Game}}
+\index{Game@{Game}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_game}{Game} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata. 
+
+richiama il metodo per inizializzare le classi, imposta il full screen, definisce l\textquotesingle{}impostazione predefinita in chiusura dell\textquotesingle{}applicazione, imposta la schermata visibile. 
+
+Definition at line 97 of file Game.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a98d87ba6bde3f389e92664a2ef9bfcb1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classprogetto_1_1_game_a98d87ba6bde3f389e92664a2ef9bfcb1_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classprogetto_1_1_game_ad79f312dd3a9e52f38a9e5f1536537fd}\label{classprogetto_1_1_game_ad79f312dd3a9e52f38a9e5f1536537fd}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!create\+Level@{create\+Level}}
+\index{create\+Level@{create\+Level}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{create\+Level()}{createLevel()}}
+{\footnotesize\ttfamily void create\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+verificare che la mappa del primo livello esita in caso contrario crea il file contenente una mappa vuota. 
+
+
+
+Definition at line 173 of file Game.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_ad79f312dd3a9e52f38a9e5f1536537fd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classprogetto_1_1_game_ad79f312dd3a9e52f38a9e5f1536537fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a08d0108e179608c5b692376d7af26351}\label{classprogetto_1_1_game_a08d0108e179608c5b692376d7af26351}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Current\+Screen\+Height@{get\+Current\+Screen\+Height}}
+\index{get\+Current\+Screen\+Height@{get\+Current\+Screen\+Height}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Current\+Screen\+Height()}{getCurrentScreenHeight()}}
+{\footnotesize\ttfamily int get\+Current\+Screen\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get dell\textquotesingle{}altezza dello scermo. 
+
+\begin{DoxyReturn}{Returns}
+variabile dell\textquotesingle{}altezza dello schermo 
+\end{DoxyReturn}
+
+
+Definition at line 141 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_ad285af3491631b7569ae47a066925af7}\label{classprogetto_1_1_game_ad285af3491631b7569ae47a066925af7}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Current\+Screen\+Width@{get\+Current\+Screen\+Width}}
+\index{get\+Current\+Screen\+Width@{get\+Current\+Screen\+Width}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Current\+Screen\+Width()}{getCurrentScreenWidth()}}
+{\footnotesize\ttfamily int get\+Current\+Screen\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get della larghezza dello scermo. 
+
+\begin{DoxyReturn}{Returns}
+variabile della larghezza dello schermo 
+\end{DoxyReturn}
+
+
+Definition at line 132 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a0f1448e932e53b14606a448017e76c6c}\label{classprogetto_1_1_game_a0f1448e932e53b14606a448017e76c6c}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Editing@{get\+Editing}}
+\index{get\+Editing@{get\+Editing}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Editing()}{getEditing()}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_editing}{Editing} get\+Editing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter dell\textquotesingle{}oggetto editing. 
+
+\begin{DoxyReturn}{Returns}
+oggetto editing 
+\end{DoxyReturn}
+
+
+Definition at line 274 of file Game.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a0f1448e932e53b14606a448017e76c6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a6991f76e58df8f4b9bc8e94e3389d150}\label{classprogetto_1_1_game_a6991f76e58df8f4b9bc8e94e3389d150}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Level1@{get\+Level1}}
+\index{get\+Level1@{get\+Level1}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Level1()}{getLevel1()}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_level1}{Level1} get\+Level1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter dell\textquotesingle{}oggetto level1. 
+
+\begin{DoxyReturn}{Returns}
+oggetto level1 
+\end{DoxyReturn}
+
+
+Definition at line 283 of file Game.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a6991f76e58df8f4b9bc8e94e3389d150_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a26827f97d382e852c53c15990619c8b7}\label{classprogetto_1_1_game_a26827f97d382e852c53c15990619c8b7}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Level2@{get\+Level2}}
+\index{get\+Level2@{get\+Level2}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Level2()}{getLevel2()}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_level2}{Level2} get\+Level2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter dell\textquotesingle{}oggetto level2. 
+
+\begin{DoxyReturn}{Returns}
+oggetto level2 
+\end{DoxyReturn}
+
+
+Definition at line 292 of file Game.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a26827f97d382e852c53c15990619c8b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a0869f04fd1631b5ad909e51c85e9e57b}\label{classprogetto_1_1_game_a0869f04fd1631b5ad909e51c85e9e57b}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Level3@{get\+Level3}}
+\index{get\+Level3@{get\+Level3}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Level3()}{getLevel3()}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_level3}{Level3} get\+Level3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter dell\textquotesingle{}oggetto level3. 
+
+\begin{DoxyReturn}{Returns}
+oggetto level3 
+\end{DoxyReturn}
+
+
+Definition at line 301 of file Game.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a0869f04fd1631b5ad909e51c85e9e57b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a09e02ae6992f3328be34c9062ef142f8}\label{classprogetto_1_1_game_a09e02ae6992f3328be34c9062ef142f8}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Level4@{get\+Level4}}
+\index{get\+Level4@{get\+Level4}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Level4()}{getLevel4()}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_level4}{Level4} get\+Level4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter dell\textquotesingle{}oggetto level4. 
+
+\begin{DoxyReturn}{Returns}
+oggetto level4 
+\end{DoxyReturn}
+
+
+Definition at line 310 of file Game.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a09e02ae6992f3328be34c9062ef142f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a32527bf330947f1c1d1f5a7da9d12940}\label{classprogetto_1_1_game_a32527bf330947f1c1d1f5a7da9d12940}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Menu@{get\+Menu}}
+\index{get\+Menu@{get\+Menu}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Menu()}{getMenu()}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_menu}{Menu} get\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter dell\textquotesingle{}oggetto menu. 
+
+\begin{DoxyReturn}{Returns}
+oggetto menu 
+\end{DoxyReturn}
+
+
+Definition at line 256 of file Game.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a32527bf330947f1c1d1f5a7da9d12940_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a5ef843d72d0871e312ff734c6a129dd2}\label{classprogetto_1_1_game_a5ef843d72d0871e312ff734c6a129dd2}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Playing@{get\+Playing}}
+\index{get\+Playing@{get\+Playing}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Playing()}{getPlaying()}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_playing}{Playing} get\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter dell\textquotesingle{}oggetto playing. 
+
+\begin{DoxyReturn}{Returns}
+oggetto playing 
+\end{DoxyReturn}
+
+
+Definition at line 265 of file Game.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a5ef843d72d0871e312ff734c6a129dd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a4cf2c70ad6b93232b970eee06767cab1}\label{classprogetto_1_1_game_a4cf2c70ad6b93232b970eee06767cab1}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Render@{get\+Render}}
+\index{get\+Render@{get\+Render}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Render()}{getRender()}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_render}{Render} get\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter dell\textquotesingle{}oggetto render. 
+
+\begin{DoxyReturn}{Returns}
+oggetto render 
+\end{DoxyReturn}
+
+
+Definition at line 247 of file Game.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classprogetto_1_1_game_a4cf2c70ad6b93232b970eee06767cab1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_ad519f2a339c804d206a38ecd2c33f667}\label{classprogetto_1_1_game_ad519f2a339c804d206a38ecd2c33f667}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!get\+Tile\+Manager@{get\+Tile\+Manager}}
+\index{get\+Tile\+Manager@{get\+Tile\+Manager}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{get\+Tile\+Manager()}{getTileManager()}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_tile_manager}{Tile\+Manager} get\+Tile\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter dell\textquotesingle{}oggetto tilemanager. 
+
+\begin{DoxyReturn}{Returns}
+oggetto tilemanager 
+\end{DoxyReturn}
+
+
+Definition at line 340 of file Game.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_ad519f2a339c804d206a38ecd2c33f667_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a3e57c234c3dde4539f8b9c47d75e59ae}\label{classprogetto_1_1_game_a3e57c234c3dde4539f8b9c47d75e59ae}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!Init\+Classes@{Init\+Classes}}
+\index{Init\+Classes@{Init\+Classes}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{Init\+Classes()}{InitClasses()}}
+{\footnotesize\ttfamily void Init\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+inizializza gli oggetti presenti nel progetto. 
+
+
+
+Definition at line 148 of file Game.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a3e57c234c3dde4539f8b9c47d75e59ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classprogetto_1_1_game_a3e57c234c3dde4539f8b9c47d75e59ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a8b260eecbaabcef8473fd87ada040682}\label{classprogetto_1_1_game_a8b260eecbaabcef8473fd87ada040682}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!main@{main}}
+\index{main@{main}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+inizializza la classe, il game screen e starta il gioco. 
+
+
+
+Definition at line 200 of file Game.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a8b260eecbaabcef8473fd87ada040682_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a822df2119249080840a3149d454807d5}\label{classprogetto_1_1_game_a822df2119249080840a3149d454807d5}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!restart\+Level@{restart\+Level}}
+\index{restart\+Level@{restart\+Level}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{restart\+Level()}{restartLevel()}}
+{\footnotesize\ttfamily void restart\+Level (\begin{DoxyParamCaption}\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+metodo che restarta il primo livello. 
+
+viene modificata l\textquotesingle{}oggetto del primo livvello re inizializzandolo 
+
+Definition at line 318 of file Game.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classprogetto_1_1_game_a822df2119249080840a3149d454807d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_a13a43e6d814de94978c515cb084873b1}\label{classprogetto_1_1_game_a13a43e6d814de94978c515cb084873b1}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!run@{run}}
+\index{run@{run}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+loop del gioco che gestisce F\+PS. 
+
+grazie agli attributi ogni volta che cicla aggiorna la variabile degli F\+PS e solo quando dall ultimo check supera il secondo li stampa. 
+
+Definition at line 213 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a7ac5b05774724411897684758dec30f9}\label{classprogetto_1_1_game_a7ac5b05774724411897684758dec30f9}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!set\+Full\+Screen@{set\+Full\+Screen}}
+\index{set\+Full\+Screen@{set\+Full\+Screen}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{set\+Full\+Screen()}{setFullScreen()}}
+{\footnotesize\ttfamily void set\+Full\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+imposta la schermata di gioco in full screen. 
+
+imposta il full screen richiamando la funzione set\+Full\+Screen(this) aggiorna le variabili di grandezza dello schermo (current\+Screen\+Width e current\+Screen\+Height) 
+
+Definition at line 120 of file Game.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classprogetto_1_1_game_a7ac5b05774724411897684758dec30f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classprogetto_1_1_game_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}\label{classprogetto_1_1_game_ab1f321a2f17fa8ba0f5ab4e2621fd6d6}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!start\+Game@{start\+Game}}
+\index{start\+Game@{start\+Game}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{start\+Game()}{startGame()}}
+{\footnotesize\ttfamily void start\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+metodo per inizializzare e far partire il Thread del gioco. 
+
+
+
+Definition at line 185 of file Game.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classprogetto_1_1_game_ab1f321a2f17fa8ba0f5ab4e2621fd6d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}\label{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!current\+Screen\+Height@{current\+Screen\+Height}}
+\index{current\+Screen\+Height@{current\+Screen\+Height}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{current\+Screen\+Height}{currentScreenHeight}}
+{\footnotesize\ttfamily int current\+Screen\+Height\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 47 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_ae5534d1409141e465b0aa92dfce9bf9c}\label{classprogetto_1_1_game_ae5534d1409141e465b0aa92dfce9bf9c}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!current\+Screen\+Width@{current\+Screen\+Width}}
+\index{current\+Screen\+Width@{current\+Screen\+Width}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{current\+Screen\+Width}{currentScreenWidth}}
+{\footnotesize\ttfamily int current\+Screen\+Width\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 44 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a38f9dcf960197192269b03c788903b3e}\label{classprogetto_1_1_game_a38f9dcf960197192269b03c788903b3e}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!editing@{editing}}
+\index{editing@{editing}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{editing}{editing}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_editing}{Editing} editing\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 75 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a50d447db9f34844bb620b5f2445d0172}\label{classprogetto_1_1_game_a50d447db9f34844bb620b5f2445d0172}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!F\+P\+S\+\_\+\+S\+ET@{F\+P\+S\+\_\+\+S\+ET}}
+\index{F\+P\+S\+\_\+\+S\+ET@{F\+P\+S\+\_\+\+S\+ET}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{F\+P\+S\+\_\+\+S\+ET}{FPS\_SET}}
+{\footnotesize\ttfamily final double F\+P\+S\+\_\+\+S\+ET = 120.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 63 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a226fef5c7cbae0baee66cb8355514596}\label{classprogetto_1_1_game_a226fef5c7cbae0baee66cb8355514596}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!game\+Thread@{game\+Thread}}
+\index{game\+Thread@{game\+Thread}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{game\+Thread}{gameThread}}
+{\footnotesize\ttfamily Thread game\+Thread\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_ac345e138a6ffa68544b48dc4d805626d}\label{classprogetto_1_1_game_ac345e138a6ffa68544b48dc4d805626d}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!g\+Device@{g\+Device}}
+\index{g\+Device@{g\+Device}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{g\+Device}{gDevice}}
+{\footnotesize\ttfamily Graphics\+Device g\+Device\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a3e383190df624f9eb3a217146d06a1e0}\label{classprogetto_1_1_game_a3e383190df624f9eb3a217146d06a1e0}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!level1@{level1}}
+\index{level1@{level1}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{level1}{level1}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_level1}{Level1} level1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a5925992aaa9203be9dc37a92b1d7d2f5}\label{classprogetto_1_1_game_a5925992aaa9203be9dc37a92b1d7d2f5}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!level2@{level2}}
+\index{level2@{level2}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{level2}{level2}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_level2}{Level2} level2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 80 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a6847c09aaed051c28279abdbca58cb1c}\label{classprogetto_1_1_game_a6847c09aaed051c28279abdbca58cb1c}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!level3@{level3}}
+\index{level3@{level3}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{level3}{level3}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_level3}{Level3} level3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 82 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_aa468e4210478204f1cff1ab951008767}\label{classprogetto_1_1_game_aa468e4210478204f1cff1ab951008767}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!level4@{level4}}
+\index{level4@{level4}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{level4}{level4}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_level4}{Level4} level4\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 84 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a2ad0f4be462ff63c3c72779e80988d15}\label{classprogetto_1_1_game_a2ad0f4be462ff63c3c72779e80988d15}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!menu@{menu}}
+\index{menu@{menu}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_menu}{Menu} menu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 69 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a244868866c8dc3e5d6170358b29b7ddd}\label{classprogetto_1_1_game_a244868866c8dc3e5d6170358b29b7ddd}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!playing@{playing}}
+\index{playing@{playing}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{playing}{playing}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_playing}{Playing} playing\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a89f9872225fb9f22781342463fb2efe5}\label{classprogetto_1_1_game_a89f9872225fb9f22781342463fb2efe5}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!render@{render}}
+\index{render@{render}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{render}{render}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_render}{Render} render\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 66 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_ab0d4dd15edc502306a52e4020db4f1b2}\label{classprogetto_1_1_game_ab0d4dd15edc502306a52e4020db4f1b2}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!threadupdate\+Coin@{threadupdate\+Coin}}
+\index{threadupdate\+Coin@{threadupdate\+Coin}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{threadupdate\+Coin}{threadupdateCoin}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_thread_update}{Thread\+Update} threadupdate\+Coin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 60 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a025c688d1ff09f00db19a2552e75a023}\label{classprogetto_1_1_game_a025c688d1ff09f00db19a2552e75a023}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!threadupdate\+Enemy@{threadupdate\+Enemy}}
+\index{threadupdate\+Enemy@{threadupdate\+Enemy}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{threadupdate\+Enemy}{threadupdateEnemy}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_thread_update}{Thread\+Update} threadupdate\+Enemy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a685c7cbed1380c3a5f1debbedf6df3db}\label{classprogetto_1_1_game_a685c7cbed1380c3a5f1debbedf6df3db}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!threadupdate\+Proj@{threadupdate\+Proj}}
+\index{threadupdate\+Proj@{threadupdate\+Proj}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{threadupdate\+Proj}{threadupdateProj}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_thread_update}{Thread\+Update} threadupdate\+Proj\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 59 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a0cafc0f6e57fb42b0eb7ae0327ae6cb9}\label{classprogetto_1_1_game_a0cafc0f6e57fb42b0eb7ae0327ae6cb9}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!threadupdate\+Tower@{threadupdate\+Tower}}
+\index{threadupdate\+Tower@{threadupdate\+Tower}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{threadupdate\+Tower}{threadupdateTower}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_thread_update}{Thread\+Update} threadupdate\+Tower\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 57 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a5f563a8c12d7677bba700f732a0ef434}\label{classprogetto_1_1_game_a5f563a8c12d7677bba700f732a0ef434}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!threadupdate\+Wave@{threadupdate\+Wave}}
+\index{threadupdate\+Wave@{threadupdate\+Wave}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{threadupdate\+Wave}{threadupdateWave}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_thread_update}{Thread\+Update} threadupdate\+Wave\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 58 of file Game.\+java.
+
+\mbox{\Hypertarget{classprogetto_1_1_game_a6d3aeeb21b7d0a3598a949b8c244f7bf}\label{classprogetto_1_1_game_a6d3aeeb21b7d0a3598a949b8c244f7bf}} 
+\index{progetto\+::\+Game@{progetto\+::\+Game}!tilemanager@{tilemanager}}
+\index{tilemanager@{tilemanager}!progetto\+::\+Game@{progetto\+::\+Game}}
+\subsubsection{\texorpdfstring{tilemanager}{tilemanager}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_tile_manager}{Tile\+Manager} tilemanager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 87 of file Game.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/progetto/\hyperlink{_game_8java}{Game.\+java}\end{DoxyCompactItemize}

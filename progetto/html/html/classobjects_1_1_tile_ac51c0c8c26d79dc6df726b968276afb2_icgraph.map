@@ -1,0 +1,7 @@
+<map id="getSprite" name="getSprite">
+<area shape="rect" id="node2" href="$classscenes_1_1_editing.html#aa0f35d91a41dfb53af7bdd7d4a76916f" title="disegna tile selezionata. " alt="" coords="359,5,569,32"/>
+<area shape="rect" id="node4" href="$classui_1_1_tool_bar.html#aa0f35d91a41dfb53af7bdd7d4a76916f" title="disegna la tile selezionata. " alt="" coords="128,56,311,83"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_editing.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la mappa. " alt="" coords="776,31,924,57"/>
+<area shape="rect" id="node5" href="$classui_1_1_tool_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="389,56,539,83"/>
+<area shape="rect" id="node6" href="$classui_1_1_tool_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni. " alt="" coords="617,56,728,83"/>
+</map>

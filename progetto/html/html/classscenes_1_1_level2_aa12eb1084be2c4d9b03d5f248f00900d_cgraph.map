@@ -1,0 +1,4 @@
+<map id="keyPressed" name="keyPressed">
+<area shape="rect" id="node2" href="$classscenes_1_1_level2.html#aeab1551e3e372c6402076c04ea9002bb" title="setter della booleana paused. " alt="" coords="144,5,228,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#af5e9f906de91e4d6400bb7f27cd563f3" title="getter della booleana paused. " alt="" coords="144,56,228,83"/>
+</map>

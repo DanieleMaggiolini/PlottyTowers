@@ -1,0 +1,10 @@
+<map id="InitClasses" name="InitClasses">
+<area shape="rect" id="node2" href="$classhelpz_1_1_load_save.html#a1369888f20d8279b649d556082d38e72" title="helpz.LoadSave.unlockLevel" alt="" coords="145,56,329,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_playing.html#a0ce048e98f125d557d6b5f68d8993bb5" title="ritorna levelmenu " alt="" coords="140,107,335,133"/>
+<area shape="rect" id="node7" href="$classui_1_1_level_menu.html#a90a96ba9679b7df9cc591d4c58430615" title="rende giocabile un livello in basse allo state dal quale viene richiamato. " alt="" coords="153,157,321,184"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_load_save.html#a62d3bd4e3f361e1f99bd9d21a7d21b0d" title="legge un file " alt="" coords="392,5,555,32"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_utilz.html#a3a92fdb2e1e33fa3daadbdea23200fcc" title="helpz.Utilz.twoDToOneDInt" alt="" coords="613,81,790,108"/>
+<area shape="rect" id="node5" href="$classhelpz_1_1_utilz.html#a3f701300276e5102efe8c55e65192dec" title="helpz.Utilz.ArrayListTo2dInt" alt="" coords="383,107,564,133"/>
+<area shape="rect" id="node8" href="$classhelpz_1_1_load_save.html#ae7a60134f1712407689bfe3c45bc04a1" title="helpz.LoadSave.saveLevel" alt="" coords="387,157,559,184"/>
+<area shape="rect" id="node9" href="$classhelpz_1_1_load_save.html#a953963a355bc62c6a3c1fdb51851d796" title="scrive su un file " alt="" coords="612,157,791,184"/>
+</map>

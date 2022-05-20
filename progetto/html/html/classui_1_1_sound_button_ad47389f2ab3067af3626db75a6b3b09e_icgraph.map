@@ -1,0 +1,7 @@
+<map id="isMousePressed" name="isMousePressed">
+<area shape="rect" id="node2" href="$classui_1_1_pause_overlay.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse " alt="" coords="172,81,385,108"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="433,5,635,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="433,56,635,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level3.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="433,107,635,133"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level4.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="433,157,635,184"/>
+</map>

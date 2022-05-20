@@ -1,0 +1,8 @@
+<map id="isProjHit" name="isProjHit">
+<area shape="rect" id="node2" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="136,5,303,32"/>
+<area shape="rect" id="node3" href="$classobjects_1_1_projectile.html#a6b73c36e7bd98fd9cfbffa2ff11cc10e" title="ritorna la posizione " alt="" coords="124,56,315,83"/>
+<area shape="rect" id="node4" href="$classobjects_1_1_projectile.html#a3eb7b7894f5f3b1409005aecd00a38ad" title="ritorna il danno " alt="" coords="134,107,305,133"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="136,157,303,184"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="136,208,303,235"/>
+<area shape="rect" id="node7" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="136,259,303,285"/>
+</map>

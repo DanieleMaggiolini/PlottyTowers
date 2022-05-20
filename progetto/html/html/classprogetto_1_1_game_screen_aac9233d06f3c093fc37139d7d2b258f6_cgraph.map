@@ -1,0 +1,11 @@
+<map id="paintComponent" name="paintComponent">
+<area shape="rect" id="node2" href="$classprogetto_1_1_game.html#a4cf2c70ad6b93232b970eee06767cab1" title="getter dell&#39;oggetto render. " alt="" coords="169,107,340,133"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_render.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="in base al gamestate attuale richiama la render della classe interessata. " alt="" coords="177,157,332,184"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#a32527bf330947f1c1d1f5a7da9d12940" title="getter dell&#39;oggetto menu. " alt="" coords="393,5,556,32"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_game.html#a5ef843d72d0871e312ff734c6a129dd2" title="getter dell&#39;oggetto playing. " alt="" coords="388,56,561,83"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_game.html#a0f1448e932e53b14606a448017e76c6c" title="getter dell&#39;oggetto editing. " alt="" coords="389,107,560,133"/>
+<area shape="rect" id="node7" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="391,157,558,184"/>
+<area shape="rect" id="node8" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="391,208,558,235"/>
+<area shape="rect" id="node9" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="391,259,558,285"/>
+<area shape="rect" id="node10" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="391,309,558,336"/>
+</map>

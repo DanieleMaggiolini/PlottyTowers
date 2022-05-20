@@ -1,0 +1,4 @@
+<map id="getPaused" name="getPaused">
+<area shape="rect" id="node2" href="$classscenes_1_1_level2.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="137,5,241,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#aa12eb1084be2c4d9b03d5f248f00900d" title="gestisce i vari input da tastiera. " alt="" coords="144,56,235,83"/>
+</map>

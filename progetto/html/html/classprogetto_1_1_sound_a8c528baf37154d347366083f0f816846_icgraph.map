@@ -1,0 +1,8 @@
+<map id="stop" name="stop">
+<area shape="rect" id="node2" href="$enumprogetto_1_1_game_states.html#a118b00363a0d1055d4b00bb40dd66f34" title="costruttore setta il gamestates in base al parametro passato e nel caso vi sia riproduce la musica re..." alt="" coords="100,5,303,47"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_sound.html#a4641ac073645140bf1f9577c2587fe3b" title="muta l&#39;audio. " alt="" coords="176,71,227,98"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="107,122,295,149"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="107,173,295,199"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="107,223,295,250"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level4.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="107,274,295,301"/>
+</map>

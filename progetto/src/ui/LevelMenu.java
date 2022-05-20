@@ -233,6 +233,12 @@ public class LevelMenu {
         }
         prevPt=currentPt;
     }
+    
+    /**
+     @brief gestisce i vari click del mouse.
+     * 
+     * @param e evento del mouse
+     */
     public void mouseClicked(MouseEvent e) {
         if (lvl1.getBounds().contains(e.getX(), e.getY())) {
             setGameState(LVL1);

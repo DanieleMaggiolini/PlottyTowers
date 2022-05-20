@@ -1,0 +1,6 @@
+<map id="Playing" name="Playing">
+<area shape="rect" id="node2" href="$classscenes_1_1_playing.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza le classi. " alt="" coords="119,5,205,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_playing.html#aded9c531b53772fd90d09a8b6bf0132e" title="importa le immagini. " alt="" coords="123,56,201,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_playing.html#a27d3ba5afb772cc36c9a432c28975ace" title="inizializza i bottoni. " alt="" coords="120,107,204,133"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_load_save.html#adfcdec0c763af178ffbfea94f4ccd263" title="carica immagine " alt="" coords="253,56,424,83"/>
+</map>

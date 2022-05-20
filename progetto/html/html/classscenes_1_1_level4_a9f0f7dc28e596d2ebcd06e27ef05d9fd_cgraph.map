@@ -1,0 +1,7 @@
+<map id="addCoin" name="addCoin">
+<area shape="rect" id="node2" href="$classui_1_1_action_bar.html#a8e9e4227428708da489e0b37223377a8" title="aggiunge delle monete. " alt="" coords="155,5,299,32"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_constants_1_1_enemy.html#ad9bfb7d57265918ecda5f2892ff8b015" title="helpz.Constants.Enemy.getCoin" alt="" coords="123,56,332,83"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_sound.html#a98228f023eb842c07bae8aa04a26db94" title="richiama i metodi per riprodurre una traccia audio. " alt="" coords="149,107,305,133"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_sound.html#a7dfb2cac645e127badf36478fd7aaa40" title="imposta la clip con la corretta traccia audio. " alt="" coords="380,81,533,108"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_sound.html#a6d58098c6cf63c241ed03bc797256bb1" title="inizia la riproduzione di un suono. " alt="" coords="387,132,526,159"/>
+</map>

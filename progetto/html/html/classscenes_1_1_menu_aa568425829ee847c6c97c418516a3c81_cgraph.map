@@ -1,0 +1,5 @@
+<map id="Menu" name="Menu">
+<area shape="rect" id="node2" href="$classscenes_1_1_menu.html#a27d3ba5afb772cc36c9a432c28975ace" title="inizializza i bottoni " alt="" coords="108,5,192,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_menu.html#ababe61393d9a835b23b1fd6675da3914" title="importa l&#39;immagine dello sfondo. " alt="" coords="111,56,189,83"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_load_save.html#adfcdec0c763af178ffbfea94f4ccd263" title="carica immagine " alt="" coords="240,56,411,83"/>
+</map>

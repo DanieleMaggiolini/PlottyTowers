@@ -1,0 +1,34 @@
+<map id="updateEnemy" name="updateEnemy">
+<area shape="rect" id="node2" href="$classscenes_1_1_level2.html#acd1846d50c3d8678777f9ab6716f5cf3" title="controlla se i nemici sono tutti morti. " alt="" coords="227,20,304,47"/>
+<area shape="rect" id="node4" href="$classmanagers_1_1_enemy_manager.html#aaa1e04fb149c24d658ce085e7ea30c74" title="ritorno dell&#39;array contenente tutti i nemici " alt="" coords="443,57,639,98"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a999f12a033f49f299ad7f55bcae24447" title="richiama il metodo per controllare se ci solo altre ondate. " alt="" coords="215,121,315,148"/>
+<area shape="rect" id="node7" href="$classmanagers_1_1_wave_manager.html#aec53975ffc59ffaf3080db21af0d2f6e" title="avviamento del timer tra un&#39;ondata e un&#39;altra " alt="" coords="168,173,363,214"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level2.html#ab68417e6738c05037923f5f0f21eb586" title="richiama il metodo per controllare se ci solo altre ondate. " alt="" coords="220,239,311,265"/>
+<area shape="rect" id="node10" href="$classmanagers_1_1_wave_manager.html#a30f46b71db254d0e9ca9e7f3578134c3" title="aumento dell&#39;index e quindi passaggio all&#39;ondata successiva con azzeramento dei tick e timer ..." alt="" coords="156,290,375,331"/>
+<area shape="rect" id="node11" href="$classmanagers_1_1_wave_manager.html#a73337f83fd9fb6c3398a8cf359422508" title="azzeramento index dei nemici in un&#39;ondata " alt="" coords="166,355,365,397"/>
+<area shape="rect" id="node12" href="$classprogetto_1_1_sound.html#a8c528baf37154d347366083f0f816846" title="termina la riproduzione di un suono. " alt="" coords="196,421,335,448"/>
+<area shape="rect" id="node13" href="$classprogetto_1_1_game.html#a5ef843d72d0871e312ff734c6a129dd2" title="getter dell&#39;oggetto playing. " alt="" coords="179,472,352,499"/>
+<area shape="rect" id="node14" href="$classmanagers_1_1_enemy_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="per ogni nemico controllo se vivo e lo muove " alt="" coords="157,523,374,549"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_wave_manager.html#a1012ba37c40b76ee9c3413986133d865" title="richiesta se l&#39;ondata è finito o ci sono altri nemici " alt="" coords="424,5,659,32"/>
+<area shape="rect" id="node6" href="$classmanagers_1_1_wave_manager.html#a999f12a033f49f299ad7f55bcae24447" title="richiesta se ci sono altre ondate di nemici " alt="" coords="437,122,645,163"/>
+<area shape="rect" id="node9" href="$classmanagers_1_1_wave_manager.html#ab68417e6738c05037923f5f0f21eb586" title="richiesta di una variabile per controllare se la pausa tra 2 ondate è finita " alt="" coords="423,239,660,265"/>
+<area shape="rect" id="node15" href="$classmanagers_1_1_enemy_manager.html#a8f172cfa5ade4d4f0a6b89cc6bfc4d12" title="aggiornamento della posizione di un nemico " alt="" coords="433,515,650,557"/>
+<area shape="rect" id="node16" href="$classenemies_1_1_enemy.html#a1927b6b5c678c91bde7bfe83531c9a2d" title="enemies.Enemy.getLastDir" alt="" coords="968,85,1147,112"/>
+<area shape="rect" id="node17" href="$classmanagers_1_1_enemy_manager.html#a839e4729819875981f138997b2d3f438" title="controllo è pissibile procedere nella direzione in cui il nemico stava andando altrimenti prova strad..." alt="" coords="708,347,904,389"/>
+<area shape="rect" id="node18" href="$classenemies_1_1_enemy.html#ae8f033a71b96920114aee202798dc7e9" title="enemies.Enemy.getX" alt="" coords="1236,203,1381,229"/>
+<area shape="rect" id="node19" href="$classenemies_1_1_enemy.html#aa0f539cec219900ff6cf76edcfa52367" title="enemies.Enemy.getY" alt="" coords="1235,304,1382,331"/>
+<area shape="rect" id="node22" href="$classmanagers_1_1_enemy_manager.html#afec98871c0e021759b9d0afc8b690a18" title="controllo se il nemico si trova alla fine del percorso " alt="" coords="952,203,1163,229"/>
+<area shape="rect" id="node23" href="$classmanagers_1_1_enemy_manager.html#a263c83da9aebeac50b60770fb847f331" title="alla direzione del nemico si applica lo spostamento sull&#39;asse y in base alla velocità ..." alt="" coords="959,137,1155,178"/>
+<area shape="rect" id="node24" href="$classenemies_1_1_enemy.html#a40aced6dca930a3ae575a42b3286e230" title="enemies.Enemy.getEnemyType" alt="" coords="954,405,1161,432"/>
+<area shape="rect" id="node25" href="$classmanagers_1_1_enemy_manager.html#ac689e72523c8460ac3160526d310b1b7" title="richiesta della tipologia di tile presente nel punto indicato " alt="" coords="959,675,1155,717"/>
+<area shape="rect" id="node26" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="1225,657,1392,684"/>
+<area shape="rect" id="node27" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="1225,709,1392,736"/>
+<area shape="rect" id="node28" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="1225,761,1392,788"/>
+<area shape="rect" id="node29" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="1225,816,1392,843"/>
+<area shape="rect" id="node30" href="$classenemies_1_1_enemy.html#a474fd9bb876d55f65850132777c539d8" title="enemies.Enemy.move" alt="" coords="982,573,1133,600"/>
+<area shape="rect" id="node32" href="$classmanagers_1_1_enemy_manager.html#ae622455c9dd19d2583b9a8840b1b35de" title="alla direzione del nemico si applica lo spostamento sull&#39;asse X in base alla velocità ..." alt="" coords="959,457,1155,498"/>
+<area shape="rect" id="node33" href="$classenemies_1_1_enemy.html#aae9d52caad9fb2892deeb25596cfd2ab" title="enemies.Enemy.kill" alt="" coords="738,893,874,920"/>
+<area shape="rect" id="node20" href="$classmanagers_1_1_enemy_manager.html#a01056d4d58ff52ab419ad8924922132d" title="prendendo la posizione di un nemico si prende in considerazione il suo angolo in alto a sinistra per ..." alt="" coords="952,355,1163,381"/>
+<area shape="rect" id="node21" href="$classenemies_1_1_enemy.html#ad6c107fadf835c74a229f8cac0cc98ab" title="enemies.Enemy.setPosition" alt="" coords="1216,355,1401,381"/>
+<area shape="rect" id="node31" href="$classenemies_1_1_enemy.html#aff695491d98058a8b62a30d4484083bc" title="enemies.Enemy.updateBound" alt="" coords="1211,573,1407,600"/>
+</map>

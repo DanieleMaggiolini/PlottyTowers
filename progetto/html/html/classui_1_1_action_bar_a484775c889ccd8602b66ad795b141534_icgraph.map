@@ -1,0 +1,6 @@
+<map id="rimuoviVita" name="rimuoviVita">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a484775c889ccd8602b66ad795b141534" title="rimuove una vita " alt="" coords="139,5,309,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#a484775c889ccd8602b66ad795b141534" title="rimuove una vita " alt="" coords="139,56,309,83"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level3.html#a484775c889ccd8602b66ad795b141534" title="rimuove una vita " alt="" coords="139,107,309,133"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level4.html#a484775c889ccd8602b66ad795b141534" title="rimuove una vita " alt="" coords="139,157,309,184"/>
+</map>

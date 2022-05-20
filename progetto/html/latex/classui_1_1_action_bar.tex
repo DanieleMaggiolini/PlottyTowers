@@ -1,0 +1,1058 @@
+\hypertarget{classui_1_1_action_bar}{}\section{Action\+Bar Class Reference}
+\label{classui_1_1_action_bar}\index{Action\+Bar@{Action\+Bar}}
+
+
+classe figlia della classe \char`\"{}\+Bar\char`\"{} per gestire la barra presente nei livelli  
+
+
+
+
+Inheritance diagram for Action\+Bar\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classui_1_1_action_bar__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Action\+Bar\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classui_1_1_action_bar_a4ff9099a9e2976f76bc6d0e2e5041cc6}{Action\+Bar} (int \hyperlink{classui_1_1_bar_a6150e0515f7202e2fb518f7206ed97dc}{x}, int \hyperlink{classui_1_1_bar_a0a2f84ed7838f07779ae24c5a9086d33}{y}, int \hyperlink{classui_1_1_bar_a2474a5474cbff19523a51eb1de01cda4}{width}, int \hyperlink{classui_1_1_bar_ad12fc34ce789bce6c8a05d8a17138534}{height}, \hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classui_1_1_action_bar_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}, String \hyperlink{classui_1_1_action_bar_a91ac952876f776b3fbbc8519e093fdbf}{state})
+\begin{DoxyCompactList}\small\item\em costruttore, setta variabili, immagini e bottoni. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a72fe1ffca978e99fd16994a10e7f8051}{draw} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a65768678909bc0512c6cb9780709ad38}{draw\+Button} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna i bottoni. \end{DoxyCompactList}\item 
+int \hyperlink{classui_1_1_action_bar_a6c5f59282a148a0d74bc5aa58d5ad307}{get\+Level\+Up\+Cost} (\hyperlink{classtowers_1_1_tower}{Tower} \hyperlink{classui_1_1_action_bar_a45f9b90370e0d7a88bd448d0c07267a4}{displayed\+Tower})
+\begin{DoxyCompactList}\small\item\em restituisce il costo per upgradare la torre selezionata. \end{DoxyCompactList}\item 
+int \hyperlink{classui_1_1_action_bar_aef810268cda93505da735c6c81136e00}{get\+Vendi\+Cost} (\hyperlink{classtowers_1_1_tower}{Tower} \hyperlink{classui_1_1_action_bar_a45f9b90370e0d7a88bd448d0c07267a4}{displayed\+Tower})
+\begin{DoxyCompactList}\small\item\em restituisce il guadagno della vendita della torre selezionata. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a04a438da46ac439f00343a12939ada6e}{draw\+Displayed\+Tower\+Border} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna i bordi della torre selezionata. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a1f012512b669e57c49c1957905a35107}{draw\+Displayed\+Tower\+Range} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna il cerchio del range di attacco della torre selezionata. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a4202926f30a7290c360bfcd4af6b03cb}{draw\+Wave\+Info} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna le informazioni relative all\textquotesingle{}ondata. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_ae07c200235fb700738b8194a93dbb8fb}{draw\+Coin} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna il numero di monete. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a7075e1ba9a7135d89d02dca2e3b8860e}{draw\+Vite} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna le vite. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a99a8282ac7383f267261ca608cafe139}{remove\+Coin} (int type)
+\begin{DoxyCompactList}\small\item\em rimuove delle monete. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a8e9e4227428708da489e0b37223377a8}{add\+Coin} (int \hyperlink{classui_1_1_action_bar_a41de228368d6181324d7bfbdf40875e3}{coin})
+\begin{DoxyCompactList}\small\item\em aggiunge delle monete. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a32afe6a393c6361d391e26ed96971131}{draw\+Tower\+Cost} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna il costo della torre da piazzare. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_aacab7287bc123d863feb4551df131934}{display\+Tower} (\hyperlink{classtowers_1_1_tower}{Tower} t)
+\begin{DoxyCompactList}\small\item\em setta la torre da disegnare. \end{DoxyCompactList}\item 
+int \hyperlink{classui_1_1_action_bar_a3de978b9745ea5fdbe99d556e40166f6}{get\+Vite} ()
+\begin{DoxyCompactList}\small\item\em restituisce il numero di vite. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a484775c889ccd8602b66ad795b141534}{rimuovi\+Vita} ()
+\begin{DoxyCompactList}\small\item\em rimuove una vita ed eventualmente termina il livello. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a45d56bd84238e8b56589dfc732e2b2cf}{mouse\+Clicked} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i click del mouse. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a2ca251710b65639ec80bc141edde60aa}{mouse\+Moved} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le move del mouse. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_aed82e1ce3dd3cf283d508c3ba3be70ef}{mouse\+Pressed} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le press del mouse. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a87a07291794e15052db67f945d90853e}{mouse\+Released} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le release del mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classui_1_1_action_bar_aed9fe7e919d4355a7ad86701d44e1fea}{init\+Button} ()
+\begin{DoxyCompactList}\small\item\em inizializza i bottoni. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a2177b06de4c0084e953665a7dbfd6772}{draw\+Diaplayed\+Tower} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna la torre selezionata, le sue info e i bottoni relativi ad essa. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_a01f37d59ae4977fa55a1a6dd3e8bd543}{draw\+Wave\+Timer} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna il timer dell\textquotesingle{}ondata. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_abb1fa26db5a1c2f4b0776a316ad85249}{draw\+Enemy\+Left} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna il numero di nemici rimanenti. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_action_bar_aeb491734ea2c8ae2f1be9db4f930d22a}{draw\+Wave\+Left} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna il numero dell\textquotesingle{}ondata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Font \hyperlink{classui_1_1_action_bar_a3fb562f10e8f7f83cb2ed130eab6d439}{f}
+\item 
+Color \hyperlink{classui_1_1_action_bar_a02094092ae89aa4b23bff1976bcbf90d}{c}
+\item 
+\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classui_1_1_action_bar_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}
+\item 
+String \hyperlink{classui_1_1_action_bar_a91ac952876f776b3fbbc8519e093fdbf}{state}
+\item 
+\hyperlink{classui_1_1_my_button}{My\+Button} \mbox{[}$\,$\mbox{]} \hyperlink{classui_1_1_action_bar_a6f80c6907b95d4fad643eb5cc2f9c343}{tower\+Buttons}
+\item 
+\hyperlink{classtowers_1_1_tower}{Tower} \hyperlink{classui_1_1_action_bar_af6b1162bc2f00f8d549aae075ddd5a8b}{selected\+Tower}
+\item 
+\hyperlink{classtowers_1_1_tower}{Tower} \hyperlink{classui_1_1_action_bar_a45f9b90370e0d7a88bd448d0c07267a4}{displayed\+Tower}
+\item 
+int \hyperlink{classui_1_1_action_bar_a41de228368d6181324d7bfbdf40875e3}{coin} = 50
+\item 
+boolean \hyperlink{classui_1_1_action_bar_a520548d3a9dd584072883850aab5a593}{showtowercost}
+\item 
+int \hyperlink{classui_1_1_action_bar_a62854c85f7998bd19028b0c197e96991}{towercost\+Type}
+\item 
+\hyperlink{classui_1_1_my_button}{My\+Button} \hyperlink{classui_1_1_action_bar_ad424c422ef61739d7476cfafcb9aba28}{upgrade}
+\item 
+\hyperlink{classui_1_1_my_button}{My\+Button} \hyperlink{classui_1_1_action_bar_aca046bb433955f594a9af60ab1c34640}{vendi}
+\item 
+int \hyperlink{classui_1_1_action_bar_ace261aa2e09513de9acfbe08311c0f07}{vite} = 3
+\item 
+Buffered\+Image \mbox{[}$\,$\mbox{]} \hyperlink{classui_1_1_action_bar_a724d03f52f34297222dd1f423b96b6df}{cuori}
+\item 
+Decimal\+Format \hyperlink{classui_1_1_action_bar_ab1f373e2f226eeef8843871210341966}{decimal} = new Decimal\+Format(\char`\"{}0.\+0\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+classe figlia della classe \char`\"{}\+Bar\char`\"{} per gestire la barra presente nei livelli 
+
+classe padre delle altre barre 
+
+Definition at line 32 of file Action\+Bar.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classui_1_1_action_bar_a4ff9099a9e2976f76bc6d0e2e5041cc6}\label{classui_1_1_action_bar_a4ff9099a9e2976f76bc6d0e2e5041cc6}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!Action\+Bar@{Action\+Bar}}
+\index{Action\+Bar@{Action\+Bar}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{Action\+Bar()}{ActionBar()}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_action_bar}{Action\+Bar} (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{\hyperlink{classprogetto_1_1_game}{Game}}]{game,  }\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+costruttore, setta variabili, immagini e bottoni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata \\
+\hline
+{\em y} & coordinata \\
+\hline
+{\em width} & larghezza \\
+\hline
+{\em height} & altezza \\
+\hline
+{\em game} & oggetto del gioco \\
+\hline
+{\em state} & stato dal quale viene invocata l\textquotesingle{}action bar \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a4ff9099a9e2976f76bc6d0e2e5041cc6_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classui_1_1_action_bar_a8e9e4227428708da489e0b37223377a8}\label{classui_1_1_action_bar_a8e9e4227428708da489e0b37223377a8}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!add\+Coin@{add\+Coin}}
+\index{add\+Coin@{add\+Coin}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{add\+Coin()}{addCoin()}}
+{\footnotesize\ttfamily void add\+Coin (\begin{DoxyParamCaption}\item[{int}]{coin }\end{DoxyParamCaption})}
+
+
+
+aggiunge delle monete. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coin} & numero di monete da aggiungere \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 446 of file Action\+Bar.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classui_1_1_action_bar_a8e9e4227428708da489e0b37223377a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_aacab7287bc123d863feb4551df131934}\label{classui_1_1_action_bar_aacab7287bc123d863feb4551df131934}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!display\+Tower@{display\+Tower}}
+\index{display\+Tower@{display\+Tower}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{display\+Tower()}{displayTower()}}
+{\footnotesize\ttfamily void display\+Tower (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{t }\end{DoxyParamCaption})}
+
+
+
+setta la torre da disegnare. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & torre da disegnare \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 479 of file Action\+Bar.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classui_1_1_action_bar_aacab7287bc123d863feb4551df131934_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a72fe1ffca978e99fd16994a10e7f8051}\label{classui_1_1_action_bar_a72fe1ffca978e99fd16994a10e7f8051}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw@{draw}}
+\index{draw@{draw}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 132 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a72fe1ffca978e99fd16994a10e7f8051_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classui_1_1_action_bar_a72fe1ffca978e99fd16994a10e7f8051_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a65768678909bc0512c6cb9780709ad38}\label{classui_1_1_action_bar_a65768678909bc0512c6cb9780709ad38}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Button@{draw\+Button}}
+\index{draw\+Button@{draw\+Button}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Button()}{drawButton()}}
+{\footnotesize\ttfamily void draw\+Button (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna i bottoni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 160 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classui_1_1_action_bar_a65768678909bc0512c6cb9780709ad38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a65768678909bc0512c6cb9780709ad38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_ae07c200235fb700738b8194a93dbb8fb}\label{classui_1_1_action_bar_ae07c200235fb700738b8194a93dbb8fb}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Coin@{draw\+Coin}}
+\index{draw\+Coin@{draw\+Coin}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Coin()}{drawCoin()}}
+{\footnotesize\ttfamily void draw\+Coin (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna il numero di monete. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 393 of file Action\+Bar.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_ae07c200235fb700738b8194a93dbb8fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a2177b06de4c0084e953665a7dbfd6772}\label{classui_1_1_action_bar_a2177b06de4c0084e953665a7dbfd6772}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Diaplayed\+Tower@{draw\+Diaplayed\+Tower}}
+\index{draw\+Diaplayed\+Tower@{draw\+Diaplayed\+Tower}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Diaplayed\+Tower()}{drawDiaplayedTower()}}
+{\footnotesize\ttfamily void draw\+Diaplayed\+Tower (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna la torre selezionata, le sue info e i bottoni relativi ad essa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 186 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a2177b06de4c0084e953665a7dbfd6772_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a2177b06de4c0084e953665a7dbfd6772_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a04a438da46ac439f00343a12939ada6e}\label{classui_1_1_action_bar_a04a438da46ac439f00343a12939ada6e}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Displayed\+Tower\+Border@{draw\+Displayed\+Tower\+Border}}
+\index{draw\+Displayed\+Tower\+Border@{draw\+Displayed\+Tower\+Border}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Displayed\+Tower\+Border()}{drawDisplayedTowerBorder()}}
+{\footnotesize\ttfamily void draw\+Displayed\+Tower\+Border (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna i bordi della torre selezionata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 264 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classui_1_1_action_bar_a04a438da46ac439f00343a12939ada6e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a1f012512b669e57c49c1957905a35107}\label{classui_1_1_action_bar_a1f012512b669e57c49c1957905a35107}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Displayed\+Tower\+Range@{draw\+Displayed\+Tower\+Range}}
+\index{draw\+Displayed\+Tower\+Range@{draw\+Displayed\+Tower\+Range}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Displayed\+Tower\+Range()}{drawDisplayedTowerRange()}}
+{\footnotesize\ttfamily void draw\+Displayed\+Tower\+Range (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna il cerchio del range di attacco della torre selezionata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 274 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a1f012512b669e57c49c1957905a35107_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a1f012512b669e57c49c1957905a35107_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_abb1fa26db5a1c2f4b0776a316ad85249}\label{classui_1_1_action_bar_abb1fa26db5a1c2f4b0776a316ad85249}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Enemy\+Left@{draw\+Enemy\+Left}}
+\index{draw\+Enemy\+Left@{draw\+Enemy\+Left}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Enemy\+Left()}{drawEnemyLeft()}}
+{\footnotesize\ttfamily void draw\+Enemy\+Left (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna il numero di nemici rimanenti. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 332 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classui_1_1_action_bar_abb1fa26db5a1c2f4b0776a316ad85249_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_abb1fa26db5a1c2f4b0776a316ad85249_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a32afe6a393c6361d391e26ed96971131}\label{classui_1_1_action_bar_a32afe6a393c6361d391e26ed96971131}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Tower\+Cost@{draw\+Tower\+Cost}}
+\index{draw\+Tower\+Cost@{draw\+Tower\+Cost}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Tower\+Cost()}{drawTowerCost()}}
+{\footnotesize\ttfamily void draw\+Tower\+Cost (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna il costo della torre da piazzare. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 455 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a32afe6a393c6361d391e26ed96971131_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a32afe6a393c6361d391e26ed96971131_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a7075e1ba9a7135d89d02dca2e3b8860e}\label{classui_1_1_action_bar_a7075e1ba9a7135d89d02dca2e3b8860e}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Vite@{draw\+Vite}}
+\index{draw\+Vite@{draw\+Vite}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Vite()}{drawVite()}}
+{\footnotesize\ttfamily void draw\+Vite (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna le vite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 404 of file Action\+Bar.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a7075e1ba9a7135d89d02dca2e3b8860e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a4202926f30a7290c360bfcd4af6b03cb}\label{classui_1_1_action_bar_a4202926f30a7290c360bfcd4af6b03cb}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Wave\+Info@{draw\+Wave\+Info}}
+\index{draw\+Wave\+Info@{draw\+Wave\+Info}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Wave\+Info()}{drawWaveInfo()}}
+{\footnotesize\ttfamily void draw\+Wave\+Info (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna le informazioni relative all\textquotesingle{}ondata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 284 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a4202926f30a7290c360bfcd4af6b03cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a4202926f30a7290c360bfcd4af6b03cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_aeb491734ea2c8ae2f1be9db4f930d22a}\label{classui_1_1_action_bar_aeb491734ea2c8ae2f1be9db4f930d22a}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Wave\+Left@{draw\+Wave\+Left}}
+\index{draw\+Wave\+Left@{draw\+Wave\+Left}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Wave\+Left()}{drawWaveLeft()}}
+{\footnotesize\ttfamily void draw\+Wave\+Left (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna il numero dell\textquotesingle{}ondata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 365 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classui_1_1_action_bar_aeb491734ea2c8ae2f1be9db4f930d22a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_aeb491734ea2c8ae2f1be9db4f930d22a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a01f37d59ae4977fa55a1a6dd3e8bd543}\label{classui_1_1_action_bar_a01f37d59ae4977fa55a1a6dd3e8bd543}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!draw\+Wave\+Timer@{draw\+Wave\+Timer}}
+\index{draw\+Wave\+Timer@{draw\+Wave\+Timer}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Wave\+Timer()}{drawWaveTimer()}}
+{\footnotesize\ttfamily void draw\+Wave\+Timer (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna il timer dell\textquotesingle{}ondata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 298 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classui_1_1_action_bar_a01f37d59ae4977fa55a1a6dd3e8bd543_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a01f37d59ae4977fa55a1a6dd3e8bd543_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a6c5f59282a148a0d74bc5aa58d5ad307}\label{classui_1_1_action_bar_a6c5f59282a148a0d74bc5aa58d5ad307}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!get\+Level\+Up\+Cost@{get\+Level\+Up\+Cost}}
+\index{get\+Level\+Up\+Cost@{get\+Level\+Up\+Cost}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{get\+Level\+Up\+Cost()}{getLevelUpCost()}}
+{\footnotesize\ttfamily int get\+Level\+Up\+Cost (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{displayed\+Tower }\end{DoxyParamCaption})}
+
+
+
+restituisce il costo per upgradare la torre selezionata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em displayed\+Tower} & torre selezionata \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 245 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a6c5f59282a148a0d74bc5aa58d5ad307_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a6c5f59282a148a0d74bc5aa58d5ad307_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_aef810268cda93505da735c6c81136e00}\label{classui_1_1_action_bar_aef810268cda93505da735c6c81136e00}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!get\+Vendi\+Cost@{get\+Vendi\+Cost}}
+\index{get\+Vendi\+Cost@{get\+Vendi\+Cost}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{get\+Vendi\+Cost()}{getVendiCost()}}
+{\footnotesize\ttfamily int get\+Vendi\+Cost (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{displayed\+Tower }\end{DoxyParamCaption})}
+
+
+
+restituisce il guadagno della vendita della torre selezionata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em displayed\+Tower} & torre selezionata \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 254 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_aef810268cda93505da735c6c81136e00_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_aef810268cda93505da735c6c81136e00_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a3de978b9745ea5fdbe99d556e40166f6}\label{classui_1_1_action_bar_a3de978b9745ea5fdbe99d556e40166f6}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!get\+Vite@{get\+Vite}}
+\index{get\+Vite@{get\+Vite}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{get\+Vite()}{getVite()}}
+{\footnotesize\ttfamily int get\+Vite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+restituisce il numero di vite. 
+
+\begin{DoxyReturn}{Returns}
+numero di vite 
+\end{DoxyReturn}
+
+
+Definition at line 488 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_aed9fe7e919d4355a7ad86701d44e1fea}\label{classui_1_1_action_bar_aed9fe7e919d4355a7ad86701d44e1fea}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!init\+Button@{init\+Button}}
+\index{init\+Button@{init\+Button}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{init\+Button()}{initButton()}}
+{\footnotesize\ttfamily void init\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+inizializza i bottoni. 
+
+
+
+Definition at line 103 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_aed9fe7e919d4355a7ad86701d44e1fea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classui_1_1_action_bar_aed9fe7e919d4355a7ad86701d44e1fea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a45d56bd84238e8b56589dfc732e2b2cf}\label{classui_1_1_action_bar_a45d56bd84238e8b56589dfc732e2b2cf}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!mouse\+Clicked@{mouse\+Clicked}}
+\index{mouse\+Clicked@{mouse\+Clicked}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{mouse\+Clicked()}{mouseClicked()}}
+{\footnotesize\ttfamily void mouse\+Clicked (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i click del mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 522 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a45d56bd84238e8b56589dfc732e2b2cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classui_1_1_action_bar_a45d56bd84238e8b56589dfc732e2b2cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a2ca251710b65639ec80bc141edde60aa}\label{classui_1_1_action_bar_a2ca251710b65639ec80bc141edde60aa}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!mouse\+Moved@{mouse\+Moved}}
+\index{mouse\+Moved@{mouse\+Moved}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{mouse\+Moved()}{mouseMoved()}}
+{\footnotesize\ttfamily void mouse\+Moved (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le move del mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 577 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classui_1_1_action_bar_a2ca251710b65639ec80bc141edde60aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classui_1_1_action_bar_a2ca251710b65639ec80bc141edde60aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_aed82e1ce3dd3cf283d508c3ba3be70ef}\label{classui_1_1_action_bar_aed82e1ce3dd3cf283d508c3ba3be70ef}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!mouse\+Pressed@{mouse\+Pressed}}
+\index{mouse\+Pressed@{mouse\+Pressed}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{mouse\+Pressed()}{mousePressed()}}
+{\footnotesize\ttfamily void mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le press del mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 622 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_aed82e1ce3dd3cf283d508c3ba3be70ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classui_1_1_action_bar_aed82e1ce3dd3cf283d508c3ba3be70ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a87a07291794e15052db67f945d90853e}\label{classui_1_1_action_bar_a87a07291794e15052db67f945d90853e}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!mouse\+Released@{mouse\+Released}}
+\index{mouse\+Released@{mouse\+Released}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{mouse\+Released()}{mouseReleased()}}
+{\footnotesize\ttfamily void mouse\+Released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le release del mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 676 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a87a07291794e15052db67f945d90853e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_action_bar_a87a07291794e15052db67f945d90853e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a99a8282ac7383f267261ca608cafe139}\label{classui_1_1_action_bar_a99a8282ac7383f267261ca608cafe139}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!remove\+Coin@{remove\+Coin}}
+\index{remove\+Coin@{remove\+Coin}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{remove\+Coin()}{removeCoin()}}
+{\footnotesize\ttfamily void remove\+Coin (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+rimuove delle monete. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & tipo di acquisto \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 437 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classui_1_1_action_bar_a99a8282ac7383f267261ca608cafe139_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classui_1_1_action_bar_a99a8282ac7383f267261ca608cafe139_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_action_bar_a484775c889ccd8602b66ad795b141534}\label{classui_1_1_action_bar_a484775c889ccd8602b66ad795b141534}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!rimuovi\+Vita@{rimuovi\+Vita}}
+\index{rimuovi\+Vita@{rimuovi\+Vita}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{rimuovi\+Vita()}{rimuoviVita()}}
+{\footnotesize\ttfamily void rimuovi\+Vita (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+rimuove una vita ed eventualmente termina il livello. 
+
+
+
+Definition at line 496 of file Action\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classui_1_1_action_bar_a484775c889ccd8602b66ad795b141534_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classui_1_1_action_bar_a484775c889ccd8602b66ad795b141534_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classui_1_1_action_bar_a02094092ae89aa4b23bff1976bcbf90d}\label{classui_1_1_action_bar_a02094092ae89aa4b23bff1976bcbf90d}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!c@{c}}
+\index{c@{c}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily Color c\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 38 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_a41de228368d6181324d7bfbdf40875e3}\label{classui_1_1_action_bar_a41de228368d6181324d7bfbdf40875e3}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!coin@{coin}}
+\index{coin@{coin}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{coin}{coin}}
+{\footnotesize\ttfamily int coin = 50\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_a724d03f52f34297222dd1f423b96b6df}\label{classui_1_1_action_bar_a724d03f52f34297222dd1f423b96b6df}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!cuori@{cuori}}
+\index{cuori@{cuori}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{cuori}{cuori}}
+{\footnotesize\ttfamily Buffered\+Image \mbox{[}$\,$\mbox{]} cuori\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 74 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_ab1f373e2f226eeef8843871210341966}\label{classui_1_1_action_bar_ab1f373e2f226eeef8843871210341966}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!decimal@{decimal}}
+\index{decimal@{decimal}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{decimal}{decimal}}
+{\footnotesize\ttfamily Decimal\+Format decimal = new Decimal\+Format(\char`\"{}0.\+0\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 291 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_a45f9b90370e0d7a88bd448d0c07267a4}\label{classui_1_1_action_bar_a45f9b90370e0d7a88bd448d0c07267a4}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!displayed\+Tower@{displayed\+Tower}}
+\index{displayed\+Tower@{displayed\+Tower}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{displayed\+Tower}{displayedTower}}
+{\footnotesize\ttfamily \hyperlink{classtowers_1_1_tower}{Tower} displayed\+Tower\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_a3fb562f10e8f7f83cb2ed130eab6d439}\label{classui_1_1_action_bar_a3fb562f10e8f7f83cb2ed130eab6d439}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!f@{f}}
+\index{f@{f}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily Font f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_ac6a5ed6191fcf3a5bf0445921feb4f48}\label{classui_1_1_action_bar_ac6a5ed6191fcf3a5bf0445921feb4f48}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!game@{game}}
+\index{game@{game}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_game}{Game} game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_af6b1162bc2f00f8d549aae075ddd5a8b}\label{classui_1_1_action_bar_af6b1162bc2f00f8d549aae075ddd5a8b}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!selected\+Tower@{selected\+Tower}}
+\index{selected\+Tower@{selected\+Tower}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{selected\+Tower}{selectedTower}}
+{\footnotesize\ttfamily \hyperlink{classtowers_1_1_tower}{Tower} selected\+Tower\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 50 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_a520548d3a9dd584072883850aab5a593}\label{classui_1_1_action_bar_a520548d3a9dd584072883850aab5a593}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!showtowercost@{showtowercost}}
+\index{showtowercost@{showtowercost}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{showtowercost}{showtowercost}}
+{\footnotesize\ttfamily boolean showtowercost\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 59 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_a91ac952876f776b3fbbc8519e093fdbf}\label{classui_1_1_action_bar_a91ac952876f776b3fbbc8519e093fdbf}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!state@{state}}
+\index{state@{state}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily String state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 44 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_a6f80c6907b95d4fad643eb5cc2f9c343}\label{classui_1_1_action_bar_a6f80c6907b95d4fad643eb5cc2f9c343}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!tower\+Buttons@{tower\+Buttons}}
+\index{tower\+Buttons@{tower\+Buttons}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{tower\+Buttons}{towerButtons}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} \mbox{[}$\,$\mbox{]} tower\+Buttons\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 47 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_a62854c85f7998bd19028b0c197e96991}\label{classui_1_1_action_bar_a62854c85f7998bd19028b0c197e96991}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!towercost\+Type@{towercost\+Type}}
+\index{towercost\+Type@{towercost\+Type}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{towercost\+Type}{towercostType}}
+{\footnotesize\ttfamily int towercost\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 62 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_ad424c422ef61739d7476cfafcb9aba28}\label{classui_1_1_action_bar_ad424c422ef61739d7476cfafcb9aba28}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!upgrade@{upgrade}}
+\index{upgrade@{upgrade}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{upgrade}{upgrade}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} upgrade\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 65 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_aca046bb433955f594a9af60ab1c34640}\label{classui_1_1_action_bar_aca046bb433955f594a9af60ab1c34640}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!vendi@{vendi}}
+\index{vendi@{vendi}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{vendi}{vendi}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} vendi\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 68 of file Action\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_action_bar_ace261aa2e09513de9acfbe08311c0f07}\label{classui_1_1_action_bar_ace261aa2e09513de9acfbe08311c0f07}} 
+\index{ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}!vite@{vite}}
+\index{vite@{vite}!ui\+::\+Action\+Bar@{ui\+::\+Action\+Bar}}
+\subsubsection{\texorpdfstring{vite}{vite}}
+{\footnotesize\ttfamily int vite = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 71 of file Action\+Bar.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/ui/\hyperlink{_action_bar_8java}{Action\+Bar.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="createLevel" name="createLevel">
+<area shape="rect" id="node2" href="$classprogetto_1_1_game.html#a98d87ba6bde3f389e92664a2ef9bfcb1" title="costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata..." alt="" coords="140,5,197,32"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_game.html#a8b260eecbaabcef8473fd87ada040682" title="inizializza la classe, il game screen e starta il gioco. " alt="" coords="245,5,296,32"/>
+</map>

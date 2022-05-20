@@ -1,10 +1,31 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file ImgFix.java 
+* 
+* @brief aggiusta le immagini.
+*
+*/
 package helpz;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
+/**
+ * @class Playing
+ *
+ * @brief gestisce gli aggiustamenti delle immagini.
+ *
+ */
 public class ImgFix {
-    //rotate
+    
+     /**
+     @brief ritorna l'immagine ruotata
+     * 
+     * @param img imagine
+     * @param angel angolo di rotazione
+     */
     public static BufferedImage getRotImage(BufferedImage img, int angle){
         int w=img.getWidth();
         int h=img.getHeight();
@@ -18,7 +39,12 @@ public class ImgFix {
         
         return image;
     }
-    //crea nuove immagini unendone di già esistenti
+    
+    /**
+     @brief ritorna immagini unite
+     * 
+     * @param imgs array di immagini da unire
+     */
     public static BufferedImage buildImage(BufferedImage[] imgs){
         int w=imgs[0].getWidth();
         int h=imgs[0].getHeight();

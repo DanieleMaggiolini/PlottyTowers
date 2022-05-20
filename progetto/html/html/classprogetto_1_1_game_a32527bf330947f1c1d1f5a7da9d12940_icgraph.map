@@ -1,0 +1,8 @@
+<map id="getMenu" name="getMenu">
+<area shape="rect" id="node2" href="$classinputs_1_1_my_mouse_listener.html#a45d56bd84238e8b56589dfc732e2b2cf" title="inputs.MyMouseListener.mouse\lClicked" alt="" coords="125,5,332,47"/>
+<area shape="rect" id="node3" href="$classinputs_1_1_my_mouse_listener.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="inputs.MyMouseListener.mouse\lPressed" alt="" coords="125,71,332,112"/>
+<area shape="rect" id="node4" href="$classinputs_1_1_my_mouse_listener.html#a87a07291794e15052db67f945d90853e" title="inputs.MyMouseListener.mouse\lReleased" alt="" coords="125,136,332,177"/>
+<area shape="rect" id="node5" href="$classinputs_1_1_my_mouse_listener.html#a2ca251710b65639ec80bc141edde60aa" title="inputs.MyMouseListener.mouse\lMoved" alt="" coords="125,201,332,243"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_render.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="in base al gamestate attuale richiama la render della classe interessata. " alt="" coords="151,267,306,294"/>
+<area shape="rect" id="node7" href="$classprogetto_1_1_game_screen.html#aac9233d06f3c093fc37139d7d2b258f6" title="stampa le componenti e richiama il render " alt="" coords="380,260,561,301"/>
+</map>

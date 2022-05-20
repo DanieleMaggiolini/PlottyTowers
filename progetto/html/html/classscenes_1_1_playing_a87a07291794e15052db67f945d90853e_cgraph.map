@@ -1,0 +1,5 @@
+<map id="mouseReleased" name="mouseReleased">
+<area shape="rect" id="node2" href="$classscenes_1_1_playing.html#a548cf4795e9d559d0c0cce0bb57a5251" title="resetta il bottone " alt="" coords="168,5,264,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#af47bcfe7d6d4ed3655e2c61583e1b5d7" title="resetta le variabili booleane. " alt="" coords="312,5,491,32"/>
+<area shape="rect" id="node4" href="$classui_1_1_my_button.html#a38b44562c6a3dd438f51365e248c7e57" title="ui.MyButton.allunga" alt="" coords="539,5,676,32"/>
+</map>

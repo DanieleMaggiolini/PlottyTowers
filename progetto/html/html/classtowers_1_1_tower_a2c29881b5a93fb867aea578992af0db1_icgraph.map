@@ -1,0 +1,8 @@
+<map id="isCooldownOver" name="isCooldownOver">
+<area shape="rect" id="node2" href="$classmanagers_1_1_tower_manager.html#a337d987717311ab51a124a11a059f66c" title="considerati tutti i nemici, se sono vivi, nel raggio della torre in considerazione, se il suo cooldown è finito, e se presente un animazione siamo nell&#39;index giusto, fare spaare la torre " alt="" coords="168,81,375,108"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_tower_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="aggiornamento del cooldown di ogni torre presente e richiamo del metodo per attaccare un nemico ..." alt="" coords="423,81,633,108"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="681,5,863,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="681,56,863,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="681,107,863,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level4.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="681,157,863,184"/>
+</map>

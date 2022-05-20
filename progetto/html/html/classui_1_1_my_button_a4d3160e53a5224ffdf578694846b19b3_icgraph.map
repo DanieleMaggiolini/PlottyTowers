@@ -1,0 +1,6 @@
+<map id="initBounds" name="initBounds">
+<area shape="rect" id="node2" href="$classui_1_1_my_button.html#a1cad8afed447e8f9cd96d84acb16f139" title="crea il bottone basico. " alt="" coords="136,5,215,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#ae9dd3fa33b931bab6ba8d7ec2cc24549" title="modifica la coordinata x del bottone. " alt="" coords="146,56,205,83"/>
+<area shape="rect" id="node4" href="$classui_1_1_level_menu.html#adbfc0588c017133c9b7070474402b72f" title="imposta il punto dove abbiamo iniziato a cliccare/trascinare. " alt="" coords="263,56,451,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_playing.html#adbfc0588c017133c9b7070474402b72f" title="gestisce le drag del mouse " alt="" coords="499,56,701,83"/>
+</map>

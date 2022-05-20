@@ -1,0 +1,7 @@
+<map id="updateEnemyMove" name="updateEnemyMove">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="per ogni nemico controllo se vivo e lo muove " alt="" coords="185,81,247,108"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="295,5,483,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="295,56,483,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level3.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="295,107,483,133"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level4.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="295,157,483,184"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="saveLevel" name="saveLevel">
+<area shape="rect" id="node2" href="$classhelpz_1_1_load_save.html#ae7a60134f1712407689bfe3c45bc04a1" title="helpz.LoadSave.saveLevel" alt="" coords="131,31,303,57"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="133,81,300,108"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_load_save.html#a953963a355bc62c6a3c1fdb51851d796" title="scrive su un file " alt="" coords="351,5,529,32"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_utilz.html#a3a92fdb2e1e33fa3daadbdea23200fcc" title="helpz.Utilz.twoDToOneDInt" alt="" coords="351,56,529,83"/>
+</map>

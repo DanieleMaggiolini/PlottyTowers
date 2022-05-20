@@ -1,0 +1,19 @@
+<map id="allunga" name="allunga">
+<area shape="rect" id="node2" href="$classscenes_1_1_menu.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le move del mouse " alt="" coords="522,5,702,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#af47bcfe7d6d4ed3655e2c61583e1b5d7" title="resetta le variabili booleane. " alt="" coords="116,208,221,235"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#a548cf4795e9d559d0c0cce0bb57a5251" title="resetta i bottoni " alt="" coords="273,259,456,285"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level2.html#a548cf4795e9d559d0c0cce0bb57a5251" title="resetta i bottoni " alt="" coords="273,360,456,387"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level3.html#a548cf4795e9d559d0c0cce0bb57a5251" title="resetta i bottoni " alt="" coords="273,411,456,437"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_level4.html#a548cf4795e9d559d0c0cce0bb57a5251" title="resetta i bottoni " alt="" coords="273,208,456,235"/>
+<area shape="rect" id="node12" href="$classscenes_1_1_menu.html#a548cf4795e9d559d0c0cce0bb57a5251" title="resetta i bottoni " alt="" coords="275,56,454,83"/>
+<area shape="rect" id="node14" href="$classscenes_1_1_playing.html#a548cf4795e9d559d0c0cce0bb57a5251" title="resetta il bottone " alt="" coords="270,107,459,133"/>
+<area shape="rect" id="node16" href="$classui_1_1_action_bar.html#a87a07291794e15052db67f945d90853e" title="gestisce le release del mouse. " alt="" coords="269,309,460,336"/>
+<area shape="rect" id="node17" href="$classui_1_1_tool_bar.html#a87a07291794e15052db67f945d90853e" title="gestisce le release del mouse " alt="" coords="276,157,453,184"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level1.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="511,288,713,315"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level2.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="511,351,713,377"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level3.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="511,408,713,435"/>
+<area shape="rect" id="node11" href="$classscenes_1_1_level4.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse. " alt="" coords="511,212,713,239"/>
+<area shape="rect" id="node13" href="$classscenes_1_1_menu.html#a87a07291794e15052db67f945d90853e" title="gestisce le release del mouse " alt="" coords="513,56,711,83"/>
+<area shape="rect" id="node15" href="$classscenes_1_1_playing.html#a87a07291794e15052db67f945d90853e" title="gestisce le release del mouse " alt="" coords="508,107,716,133"/>
+<area shape="rect" id="node18" href="$classscenes_1_1_editing.html#a87a07291794e15052db67f945d90853e" title="gestisce le release del mouse " alt="" coords="509,157,715,184"/>
+</map>

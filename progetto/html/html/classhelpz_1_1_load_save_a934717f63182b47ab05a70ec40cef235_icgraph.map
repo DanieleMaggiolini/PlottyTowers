@@ -1,0 +1,9 @@
+<map id="createLevel" name="createLevel">
+<area shape="rect" id="node2" href="$classprogetto_1_1_game.html#ad79f312dd3a9e52f38a9e5f1536537fd" title="verificare che la mappa del primo livello esita in caso contrario crea il file contenente una mappa v..." alt="" coords="140,5,317,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_editing.html#ad79f312dd3a9e52f38a9e5f1536537fd" title="inizializza il livello. " alt="" coords="140,56,317,83"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_game.html#a98d87ba6bde3f389e92664a2ef9bfcb1" title="costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata..." alt="" coords="380,5,527,32"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#a8b260eecbaabcef8473fd87ada040682" title="inizializza la classe, il game screen e starta il gioco. " alt="" coords="595,5,735,32"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_editing.html#ae646a5c5937b560efaa2b7bb675bc3cd" title="setta lo stato e carica la mappa relativa " alt="" coords="373,56,534,83"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_editing.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza le classi. " alt="" coords="365,107,541,133"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_editing.html#a2ca3ef24637fa4a614988adee4b8689d" title="costruttore inizializza le classi e setta il game; " alt="" coords="589,107,741,133"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Level1" name="Level1">
+<area shape="rect" id="node2" href="$classscenes_1_1_game_scene.html" title="setter e getter del game per &quot;collegare&quot; le scene con i metodi del game " alt="" coords="5,35,120,127"/>
+<area shape="rect" id="node3" href="$interfacescenes_1_1_scene_methods.html" title="{SceneMethods\n||+ render()\l+ mouseClicked()\l+ mouseMoved()\l+ mousePressed()\l+ mouseReleased()\l+ mouseDragged()\l}" alt="" coords="145,5,279,156"/>
+</map>

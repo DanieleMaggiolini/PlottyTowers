@@ -1,0 +1,4 @@
+<map id="PauseButton" name="PauseButton">
+<area shape="rect" id="node2" href="$classui_1_1_sound_button.html" title="gestice il bottone che smuta e muta la musica " alt="" coords="5,351,152,619"/>
+<area shape="rect" id="node3" href="$classui_1_1_ush_button.html" title="gestisce i bottoni adibiti all&#39;resume, restart e quit presenti nella pauseOverlay. " alt="" coords="176,358,323,611"/>
+</map>

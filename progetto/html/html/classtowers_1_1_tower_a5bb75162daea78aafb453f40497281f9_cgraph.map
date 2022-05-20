@@ -1,0 +1,8 @@
+<map id="Tower" name="Tower">
+<area shape="rect" id="node2" href="$classtowers_1_1_tower.html#a342d428cb4c655ed4d92a2c5be287e5d" title="setta il danno. " alt="" coords="113,21,201,47"/>
+<area shape="rect" id="node4" href="$classtowers_1_1_tower.html#abfc55d980923d42001e5aefda77849f9" title="setta il range. " alt="" coords="119,78,196,105"/>
+<area shape="rect" id="node6" href="$classtowers_1_1_tower.html#a120aaa641fb05cbcbe27057048519fa7" title="setta il cooldown. " alt="" coords="109,135,205,162"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_constants_1_1_towers.html#af342377601401ede304d4f859942472c" title="helpz.Constants.Towers.get\lDamage" alt="" coords="253,5,436,47"/>
+<area shape="rect" id="node5" href="$classhelpz_1_1_constants_1_1_towers.html#add957f88d7d8a05be491699abca0ee95" title="helpz.Constants.Towers.get\lRange" alt="" coords="253,71,436,112"/>
+<area shape="rect" id="node7" href="$classhelpz_1_1_constants_1_1_towers.html#a4779d2fa0a45586ca954aa438b1851e0" title="helpz.Constants.Towers.get\lCooldown" alt="" coords="253,136,436,177"/>
+</map>

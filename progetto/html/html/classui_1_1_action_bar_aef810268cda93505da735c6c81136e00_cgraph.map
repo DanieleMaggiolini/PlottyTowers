@@ -1,0 +1,6 @@
+<map id="getVendiCost" name="getVendiCost">
+<area shape="rect" id="node2" href="$classtowers_1_1_tower.html#a69ffaa5d69141ba9aed07daf94b18540" title="ritorna il livello " alt="" coords="153,5,288,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_action_bar.html#a6c5f59282a148a0d74bc5aa58d5ad307" title="restituisce il costo per upgradare la torre selezionata. " alt="" coords="165,107,277,133"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_constants_1_1_towers.html#affe7d154c2065c3c8eea74993d932c2c" title="helpz.Constants.Towers.getCost" alt="" coords="336,81,547,108"/>
+<area shape="rect" id="node5" href="$classtowers_1_1_tower.html#adaa3345598ef202753372f185625e5da" title="ritorna il tipo di torre " alt="" coords="352,144,531,171"/>
+</map>

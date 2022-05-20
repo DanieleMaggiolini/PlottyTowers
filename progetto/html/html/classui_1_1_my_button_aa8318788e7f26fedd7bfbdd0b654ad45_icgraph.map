@@ -1,0 +1,11 @@
+<map id="drawAC" name="drawAC">
+<area shape="rect" id="node2" href="$classui_1_1_action_bar.html#a2177b06de4c0084e953665a7dbfd6772" title="disegna la torre selezionata, le sue info e i bottoni relativi ad essa. " alt="" coords="120,105,301,146"/>
+<area shape="rect" id="node8" href="$classui_1_1_tool_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="136,181,285,208"/>
+<area shape="rect" id="node3" href="$classui_1_1_action_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori..." alt="" coords="349,107,473,133"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="523,5,667,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="523,56,667,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="523,107,667,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="523,157,667,184"/>
+<area shape="rect" id="node9" href="$classui_1_1_tool_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni. " alt="" coords="356,203,467,229"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_editing.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la mappa. " alt="" coords="521,208,669,235"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$classprogetto_1_1_game.html#a98d87ba6bde3f389e92664a2ef9bfcb1" title="costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata..." alt="" coords="161,132,218,159"/>
+<area shape="rect" id="node15" href="$classprogetto_1_1_game_screen.html#a7427dec536138d79b67548cdacc03e4d" title="inizializza gli oggetti presenti nel file. " alt="" coords="104,183,275,225"/>
+<area shape="rect" id="node16" href="$classprogetto_1_1_game.html#ab1f321a2f17fa8ba0f5ab4e2621fd6d6" title="metodo per inizializzare e far partire il Thread del gioco. " alt="" coords="148,249,231,276"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_game.html#a7ac5b05774724411897684758dec30f9" title="imposta la schermata di gioco in full screen. " alt="" coords="323,81,425,108"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#a3e57c234c3dde4539f8b9c47d75e59ae" title="inizializza gli oggetti presenti nel progetto. " alt="" coords="331,132,417,159"/>
+<area shape="rect" id="node13" href="$classprogetto_1_1_game.html#ad79f312dd3a9e52f38a9e5f1536537fd" title="verificare che la mappa del primo livello esita in caso contrario crea il file contenente una mappa v..." alt="" coords="331,183,417,209"/>
+<area shape="rect" id="node5" href="$classhelpz_1_1_load_save.html#a1369888f20d8279b649d556082d38e72" title="helpz.LoadSave.unlockLevel" alt="" coords="479,56,663,83"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_playing.html#a0ce048e98f125d557d6b5f68d8993bb5" title="ritorna levelmenu " alt="" coords="473,107,668,133"/>
+<area shape="rect" id="node10" href="$classui_1_1_level_menu.html#a90a96ba9679b7df9cc591d4c58430615" title="rende giocabile un livello in basse allo state dal quale viene richiamato. " alt="" coords="487,157,655,184"/>
+<area shape="rect" id="node6" href="$classhelpz_1_1_load_save.html#a62d3bd4e3f361e1f99bd9d21a7d21b0d" title="legge un file " alt="" coords="726,5,889,32"/>
+<area shape="rect" id="node7" href="$classhelpz_1_1_utilz.html#a3a92fdb2e1e33fa3daadbdea23200fcc" title="helpz.Utilz.twoDToOneDInt" alt="" coords="947,95,1125,121"/>
+<area shape="rect" id="node8" href="$classhelpz_1_1_utilz.html#a3f701300276e5102efe8c55e65192dec" title="helpz.Utilz.ArrayListTo2dInt" alt="" coords="717,107,898,133"/>
+<area shape="rect" id="node11" href="$classhelpz_1_1_load_save.html#ae7a60134f1712407689bfe3c45bc04a1" title="helpz.LoadSave.saveLevel" alt="" coords="721,157,893,184"/>
+<area shape="rect" id="node12" href="$classhelpz_1_1_load_save.html#a953963a355bc62c6a3c1fdb51851d796" title="scrive su un file " alt="" coords="947,183,1125,209"/>
+<area shape="rect" id="node14" href="$classhelpz_1_1_load_save.html#a934717f63182b47ab05a70ec40cef235" title="crea nuovo array con valori default " alt="" coords="716,208,899,235"/>
+</map>

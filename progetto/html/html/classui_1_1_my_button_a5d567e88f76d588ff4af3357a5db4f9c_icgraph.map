@@ -1,0 +1,12 @@
+<map id="drawCentralText2" name="drawCentralText2">
+<area shape="rect" id="node2" href="$classui_1_1_my_button.html#aa8318788e7f26fedd7bfbdd0b654ad45" title="richiama i metodi per disegnare il testo centrato nel bottone, i bordi e lo sfondo. " alt="" coords="176,152,243,179"/>
+<area shape="rect" id="node3" href="$classui_1_1_action_bar.html#a2177b06de4c0084e953665a7dbfd6772" title="disegna la torre selezionata, le sue info e i bottoni relativi ad essa. " alt="" coords="291,105,472,146"/>
+<area shape="rect" id="node9" href="$classui_1_1_tool_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="307,181,456,208"/>
+<area shape="rect" id="node4" href="$classui_1_1_action_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori..." alt="" coords="520,107,644,133"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="694,5,838,32"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="694,56,838,83"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="694,107,838,133"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="694,157,838,184"/>
+<area shape="rect" id="node10" href="$classui_1_1_tool_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni. " alt="" coords="527,203,637,229"/>
+<area shape="rect" id="node11" href="$classscenes_1_1_editing.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la mappa. " alt="" coords="692,208,840,235"/>
+</map>

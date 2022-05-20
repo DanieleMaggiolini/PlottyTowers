@@ -1,0 +1,4 @@
+<map id="EnemyManager" name="EnemyManager">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a774aefe7ec0626eb37d65a2335eade3b" title="assegnegnazioni delle immagini dei nemici con animazioni, diverse per ogni livello ..." alt="" coords="167,5,281,32"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_load_save.html#adfcdec0c763af178ffbfea94f4ccd263" title="carica immagine " alt="" coords="329,5,500,32"/>
+</map>

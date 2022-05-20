@@ -1,0 +1,6 @@
+<map id="drawTileButtons" name="drawTileButtons">
+<area shape="rect" id="node2" href="$classui_1_1_tool_bar.html#abe2e2af5c0d57248464e8b607c41a36f" title="ritorna l&#39;immagine del tile di cui passiamo l&#39;id. " alt="" coords="168,56,281,83"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_game_scene.html#af764ff126134eee0117e7e212faee455" title="getter oggetto game. " alt="" coords="331,5,528,32"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#ad519f2a339c804d206a38ecd2c33f667" title="getter dell&#39;oggetto tilemanager. " alt="" coords="329,56,529,83"/>
+<area shape="rect" id="node5" href="$classmanagers_1_1_tile_manager.html#a46ebd32c7ec4ac506010fe465687bdd7" title="ritorno di un&#39;immagine passando un id " alt="" coords="342,107,517,149"/>
+</map>

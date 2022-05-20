@@ -1,0 +1,10 @@
+<map id="getTowerImgs" name="getTowerImgs">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a0a97d0bb6d32640b2ae351707946abf7" title="disegna la selectedTower dopo aver controllato che sia effettivamente selezionata; ..." alt="" coords="156,5,343,47"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a0a97d0bb6d32640b2ae351707946abf7" title="disegna la selectedTower dopo aver controllato che sia effettivamente selezionata; ..." alt="" coords="156,71,343,112"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#a0a97d0bb6d32640b2ae351707946abf7" title="disegna la selectedTower dopo aver controllato che sia effettivamente selezionata; ..." alt="" coords="156,136,343,177"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level4.html#a0a97d0bb6d32640b2ae351707946abf7" title="disegna la selectedTower dopo aver controllato che sia effettivamente selezionata; ..." alt="" coords="156,201,343,243"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="391,13,535,39"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="391,78,535,105"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="391,143,535,170"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="391,209,535,235"/>
+</map>

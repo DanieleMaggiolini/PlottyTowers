@@ -1,0 +1,5 @@
+<map id="draw" name="draw">
+<area shape="rect" id="node2" href="$classui_1_1_level_menu.html#a65768678909bc0512c6cb9780709ad38" title="imposta e disegna i bottoni. " alt="" coords="103,31,189,57"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#ae13f88e922e1339355456062ad9fa359" title="getter della coordinata x. " alt="" coords="238,5,359,32"/>
+<area shape="rect" id="node4" href="$classui_1_1_my_button.html#aab81944f0a14bba932c0931899951937" title="getter della coordinata y. " alt="" coords="237,56,360,83"/>
+</map>

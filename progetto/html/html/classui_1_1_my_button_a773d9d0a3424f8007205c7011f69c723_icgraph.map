@@ -1,0 +1,11 @@
+<map id="setMousePressed" name="setMousePressed">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="433,5,627,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="433,63,627,89"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level3.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="433,125,627,152"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level4.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="433,176,627,203"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_menu.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce le press del mouse " alt="" coords="186,252,377,279"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_playing.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce le press del mouse " alt="" coords="180,303,383,329"/>
+<area shape="rect" id="node8" href="$classui_1_1_action_bar.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce le press del mouse. " alt="" coords="189,100,373,127"/>
+<area shape="rect" id="node9" href="$classui_1_1_tool_bar.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce le press del mouse " alt="" coords="196,353,367,380"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_editing.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce le press del mouse " alt="" coords="431,353,629,380"/>
+</map>

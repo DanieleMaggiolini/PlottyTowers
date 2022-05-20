@@ -1,0 +1,909 @@
+\hypertarget{classui_1_1_my_button}{}\section{My\+Button Class Reference}
+\label{classui_1_1_my_button}\index{My\+Button@{My\+Button}}
+
+
+gestisce i diversi tipi di bottone con i diversi costruttori ed i diversi modi di stamparli  
+
+
+
+
+Collaboration diagram for My\+Button\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classui_1_1_my_button__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classui_1_1_my_button_a1cad8afed447e8f9cd96d84acb16f139}{My\+Button} (String \hyperlink{classui_1_1_my_button_a685ed5195435d2b3e75433f46aec6e1e}{text}, int \hyperlink{classui_1_1_my_button_a6150e0515f7202e2fb518f7206ed97dc}{x}, int \hyperlink{classui_1_1_my_button_a0a2f84ed7838f07779ae24c5a9086d33}{y}, int \hyperlink{classui_1_1_my_button_a2474a5474cbff19523a51eb1de01cda4}{width}, int \hyperlink{classui_1_1_my_button_ad12fc34ce789bce6c8a05d8a17138534}{height})
+\begin{DoxyCompactList}\small\item\em crea il bottone basico. \end{DoxyCompactList}\item 
+\hyperlink{classui_1_1_my_button_a6ee5c6115a641ea511e6928b7dc35b08}{My\+Button} (String \hyperlink{classui_1_1_my_button_a685ed5195435d2b3e75433f46aec6e1e}{text}, int \hyperlink{classui_1_1_my_button_a6150e0515f7202e2fb518f7206ed97dc}{x}, int \hyperlink{classui_1_1_my_button_a0a2f84ed7838f07779ae24c5a9086d33}{y}, int \hyperlink{classui_1_1_my_button_a2474a5474cbff19523a51eb1de01cda4}{width}, int \hyperlink{classui_1_1_my_button_ad12fc34ce789bce6c8a05d8a17138534}{height}, int \hyperlink{classui_1_1_my_button_a7441ef0865bcb3db9b8064dd7375c1ea}{id})
+\begin{DoxyCompactList}\small\item\em crea il bottone con un id. \end{DoxyCompactList}\item 
+\hyperlink{classui_1_1_my_button_a2ccc37cb50eaf8c8f8ecdb7649bbe10e}{My\+Button} (String \hyperlink{classui_1_1_my_button_a685ed5195435d2b3e75433f46aec6e1e}{text}, int \hyperlink{classui_1_1_my_button_a6150e0515f7202e2fb518f7206ed97dc}{x}, int \hyperlink{classui_1_1_my_button_a0a2f84ed7838f07779ae24c5a9086d33}{y}, int \hyperlink{classui_1_1_my_button_a2474a5474cbff19523a51eb1de01cda4}{width}, int \hyperlink{classui_1_1_my_button_ad12fc34ce789bce6c8a05d8a17138534}{height}, Font \hyperlink{classui_1_1_my_button_a3fb562f10e8f7f83cb2ed130eab6d439}{f}, Color \hyperlink{classui_1_1_my_button_a02094092ae89aa4b23bff1976bcbf90d}{c})
+\begin{DoxyCompactList}\small\item\em crea il bottone con font e colore. \end{DoxyCompactList}\item 
+\hyperlink{classui_1_1_my_button_a803c3604f39ead35cb302ccc35d474f4}{My\+Button} (String \hyperlink{classui_1_1_my_button_a685ed5195435d2b3e75433f46aec6e1e}{text}, int \hyperlink{classui_1_1_my_button_a6150e0515f7202e2fb518f7206ed97dc}{x}, int \hyperlink{classui_1_1_my_button_a0a2f84ed7838f07779ae24c5a9086d33}{y}, int \hyperlink{classui_1_1_my_button_a2474a5474cbff19523a51eb1de01cda4}{width}, int \hyperlink{classui_1_1_my_button_ad12fc34ce789bce6c8a05d8a17138534}{height}, Font \hyperlink{classui_1_1_my_button_a3fb562f10e8f7f83cb2ed130eab6d439}{f}, Color \hyperlink{classui_1_1_my_button_a02094092ae89aa4b23bff1976bcbf90d}{c}, int \hyperlink{classui_1_1_my_button_a7441ef0865bcb3db9b8064dd7375c1ea}{id})
+\begin{DoxyCompactList}\small\item\em crea il bottone con font, colore e immagine data dall\textquotesingle{}identificatore. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_ae9dd3fa33b931bab6ba8d7ec2cc24549}{moveX} (int \hyperlink{classui_1_1_my_button_a6150e0515f7202e2fb518f7206ed97dc}{x})
+\begin{DoxyCompactList}\small\item\em modifica la coordinata x del bottone. \end{DoxyCompactList}\item 
+Rectangle \hyperlink{classui_1_1_my_button_a187945475e730bfa340a10f63224e91f}{get\+Bounds} ()
+\begin{DoxyCompactList}\small\item\em getter del rettangolo per verificarne la pressione. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_a72fe1ffca978e99fd16994a10e7f8051}{draw} (Graphics g)
+\begin{DoxyCompactList}\small\item\em richiama i metodi per disegnare il testo nel bottone. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_a85f135df7a0669cda6dcdf8ca393a90c}{drawB} (Graphics g)
+\begin{DoxyCompactList}\small\item\em richiama i metodi per disegnare il testo nel bottone e i bordi. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_a73a12c436143ada4de08e87bb3513ab1}{drawA} (Graphics g)
+\begin{DoxyCompactList}\small\item\em richiama i metodi per disegnare il testo nel bottone, i bordi e lo sfondo. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_aa8318788e7f26fedd7bfbdd0b654ad45}{draw\+AC} (Graphics g)
+\begin{DoxyCompactList}\small\item\em richiama i metodi per disegnare il testo centrato nel bottone, i bordi e lo sfondo. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_a56e66f982bfd587482db32cb63e608c4}{drawC} (Graphics g)
+\begin{DoxyCompactList}\small\item\em richiama i metodi per disegnare il testo centrato nel bottone. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_acecf901c15a2150148863cbc4d0709da}{set\+Color} (Color \hyperlink{classui_1_1_my_button_a02094092ae89aa4b23bff1976bcbf90d}{c})
+\begin{DoxyCompactList}\small\item\em setter del colore. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_ac3f48a7245ffa1fe24d32ea71797997d}{set\+Mouse\+Over} (boolean \hyperlink{classui_1_1_my_button_a6dcc94571aa727e4e184fa31e384a93a}{mouseover})
+\begin{DoxyCompactList}\small\item\em setter della variabile per la verifica del mouse se si trova sul bottone. \end{DoxyCompactList}\item 
+boolean \hyperlink{classui_1_1_my_button_a2deebd864f1c01a6d81238349c929885}{is\+Mouse\+Over} ()
+\begin{DoxyCompactList}\small\item\em getter della variabile per la verifica del mouse se si trova sul bottone. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_a38b44562c6a3dd438f51365e248c7e57}{allunga} (boolean allunga)
+\item 
+void \hyperlink{classui_1_1_my_button_a773d9d0a3424f8007205c7011f69c723}{set\+Mouse\+Pressed} (boolean \hyperlink{classui_1_1_my_button_a2843f5354ab4fdc301bfc00a460b202f}{mousepressed})
+\begin{DoxyCompactList}\small\item\em setter della variabile per la verifica del click del mouse se si trova sul bottone. \end{DoxyCompactList}\item 
+boolean \hyperlink{classui_1_1_my_button_ad47389f2ab3067af3626db75a6b3b09e}{is\+Mouse\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em setter della variabile per la verifica del click del mouse se si trova sul bottone. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_af47bcfe7d6d4ed3655e2c61583e1b5d7}{reset\+Booleans} ()
+\begin{DoxyCompactList}\small\item\em resetta le variabili booleane. \end{DoxyCompactList}\item 
+int \hyperlink{classui_1_1_my_button_a67283be3f45257d1e0c474c563ebb6b6}{get\+Id} ()
+\begin{DoxyCompactList}\small\item\em getter dell\textquotesingle{}identificatore. \end{DoxyCompactList}\item 
+int \hyperlink{classui_1_1_my_button_ae13f88e922e1339355456062ad9fa359}{getX} ()
+\begin{DoxyCompactList}\small\item\em getter della coordinata x. \end{DoxyCompactList}\item 
+int \hyperlink{classui_1_1_my_button_aab81944f0a14bba932c0931899951937}{getY} ()
+\begin{DoxyCompactList}\small\item\em getter della coordinata y. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classui_1_1_my_button_a7441ef0865bcb3db9b8064dd7375c1ea}{id}
+\item 
+Rectangle \hyperlink{classui_1_1_my_button_a62df0866a4faf552c81108aff64e8eff}{bounds}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classui_1_1_my_button_a6150e0515f7202e2fb518f7206ed97dc}{x}
+\item 
+int \hyperlink{classui_1_1_my_button_a0a2f84ed7838f07779ae24c5a9086d33}{y}
+\item 
+int \hyperlink{classui_1_1_my_button_a2474a5474cbff19523a51eb1de01cda4}{width}
+\item 
+int \hyperlink{classui_1_1_my_button_ad12fc34ce789bce6c8a05d8a17138534}{height}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classui_1_1_my_button_a4d3160e53a5224ffdf578694846b19b3}{init\+Bounds} ()
+\begin{DoxyCompactList}\small\item\em crea l\textquotesingle{}effettivo rettangolo del area del bottone. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_a8df311009317d839a01870ceac76eb75}{draw\+Text} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna il testo nel bottone. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_a3a4d8b054f65915e3b9bfafe4228ad06}{draw\+Central\+Text} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna il testo cenrato nel bottone. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_a5d567e88f76d588ff4af3357a5db4f9c}{draw\+Central\+Text2} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna il testo nel bottone ma più in alto rispetto a \char`\"{}draw\+Central\+Text\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_a1e330b5600a9187ca0ef7f964cfb24c9}{draw\+Body} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna lo sfondo del bottone. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_my_button_af91752554b78073a295ed441afc34638}{draw\+Border} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna i bordi del bottone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classui_1_1_my_button_a685ed5195435d2b3e75433f46aec6e1e}{text}
+\item 
+boolean \hyperlink{classui_1_1_my_button_a6dcc94571aa727e4e184fa31e384a93a}{mouseover}
+\item 
+boolean \hyperlink{classui_1_1_my_button_a2843f5354ab4fdc301bfc00a460b202f}{mousepressed}
+\item 
+Font \hyperlink{classui_1_1_my_button_a3fb562f10e8f7f83cb2ed130eab6d439}{f}
+\item 
+Color \hyperlink{classui_1_1_my_button_a02094092ae89aa4b23bff1976bcbf90d}{c}
+\item 
+boolean \hyperlink{classui_1_1_my_button_a0934989a1c7ae6cc9f4e355977c198c3}{passato} =false
+\begin{DoxyCompactList}\small\item\em allunga il bottone in larghezza. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+gestisce i diversi tipi di bottone con i diversi costruttori ed i diversi modi di stamparli 
+
+Definition at line 26 of file My\+Button.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classui_1_1_my_button_a1cad8afed447e8f9cd96d84acb16f139}\label{classui_1_1_my_button_a1cad8afed447e8f9cd96d84acb16f139}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!My\+Button@{My\+Button}}
+\index{My\+Button@{My\+Button}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{My\+Button()}{MyButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} (\begin{DoxyParamCaption}\item[{String}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+crea il bottone basico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & testo contenuto dal bottone \\
+\hline
+{\em x} & coordinata \\
+\hline
+{\em y} & coordinata \\
+\hline
+{\em width} & larghezza \\
+\hline
+{\em height} & altezza \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classui_1_1_my_button_a1cad8afed447e8f9cd96d84acb16f139_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a6ee5c6115a641ea511e6928b7dc35b08}\label{classui_1_1_my_button_a6ee5c6115a641ea511e6928b7dc35b08}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!My\+Button@{My\+Button}}
+\index{My\+Button@{My\+Button}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{My\+Button()}{MyButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} (\begin{DoxyParamCaption}\item[{String}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+crea il bottone con un id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & testo contenuto dal bottone \\
+\hline
+{\em x} & coordinata \\
+\hline
+{\em y} & coordinata \\
+\hline
+{\em width} & larghezza \\
+\hline
+{\em height} & altezza \\
+\hline
+{\em id} & identificatore \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classui_1_1_my_button_a6ee5c6115a641ea511e6928b7dc35b08_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a2ccc37cb50eaf8c8f8ecdb7649bbe10e}\label{classui_1_1_my_button_a2ccc37cb50eaf8c8f8ecdb7649bbe10e}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!My\+Button@{My\+Button}}
+\index{My\+Button@{My\+Button}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{My\+Button()}{MyButton()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} (\begin{DoxyParamCaption}\item[{String}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{Font}]{f,  }\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+crea il bottone con font e colore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & testo contenuto dal bottone \\
+\hline
+{\em x} & coordinata \\
+\hline
+{\em y} & coordinata \\
+\hline
+{\em width} & larghezza \\
+\hline
+{\em height} & altezza \\
+\hline
+{\em f} & font \\
+\hline
+{\em c} & colore \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classui_1_1_my_button_a2ccc37cb50eaf8c8f8ecdb7649bbe10e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a803c3604f39ead35cb302ccc35d474f4}\label{classui_1_1_my_button_a803c3604f39ead35cb302ccc35d474f4}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!My\+Button@{My\+Button}}
+\index{My\+Button@{My\+Button}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{My\+Button()}{MyButton()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} (\begin{DoxyParamCaption}\item[{String}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{Font}]{f,  }\item[{Color}]{c,  }\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+crea il bottone con font, colore e immagine data dall\textquotesingle{}identificatore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & testo contenuto dal bottone \\
+\hline
+{\em x} & coordinata \\
+\hline
+{\em y} & coordinata \\
+\hline
+{\em width} & larghezza \\
+\hline
+{\em height} & altezza \\
+\hline
+{\em f} & font \\
+\hline
+{\em c} & colore \\
+\hline
+{\em id} & identificatore \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 138 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classui_1_1_my_button_a803c3604f39ead35cb302ccc35d474f4_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classui_1_1_my_button_a38b44562c6a3dd438f51365e248c7e57}\label{classui_1_1_my_button_a38b44562c6a3dd438f51365e248c7e57}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!allunga@{allunga}}
+\index{allunga@{allunga}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{allunga()}{allunga()}}
+{\footnotesize\ttfamily void allunga (\begin{DoxyParamCaption}\item[{boolean}]{allunga }\end{DoxyParamCaption})}
+
+
+
+Definition at line 304 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_a38b44562c6a3dd438f51365e248c7e57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a72fe1ffca978e99fd16994a10e7f8051}\label{classui_1_1_my_button_a72fe1ffca978e99fd16994a10e7f8051}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!draw@{draw}}
+\index{draw@{draw}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+richiama i metodi per disegnare il testo nel bottone. 
+
+
+
+Definition at line 182 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classui_1_1_my_button_a72fe1ffca978e99fd16994a10e7f8051_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_a72fe1ffca978e99fd16994a10e7f8051_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a73a12c436143ada4de08e87bb3513ab1}\label{classui_1_1_my_button_a73a12c436143ada4de08e87bb3513ab1}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!drawA@{drawA}}
+\index{drawA@{drawA}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{draw\+A()}{drawA()}}
+{\footnotesize\ttfamily void drawA (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+richiama i metodi per disegnare il testo nel bottone, i bordi e lo sfondo. 
+
+
+
+Definition at line 201 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classui_1_1_my_button_a73a12c436143ada4de08e87bb3513ab1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_aa8318788e7f26fedd7bfbdd0b654ad45}\label{classui_1_1_my_button_aa8318788e7f26fedd7bfbdd0b654ad45}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!draw\+AC@{draw\+AC}}
+\index{draw\+AC@{draw\+AC}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{draw\+A\+C()}{drawAC()}}
+{\footnotesize\ttfamily void draw\+AC (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+richiama i metodi per disegnare il testo centrato nel bottone, i bordi e lo sfondo. 
+
+
+
+Definition at line 216 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classui_1_1_my_button_aa8318788e7f26fedd7bfbdd0b654ad45_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_aa8318788e7f26fedd7bfbdd0b654ad45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a85f135df7a0669cda6dcdf8ca393a90c}\label{classui_1_1_my_button_a85f135df7a0669cda6dcdf8ca393a90c}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!drawB@{drawB}}
+\index{drawB@{drawB}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{draw\+B()}{drawB()}}
+{\footnotesize\ttfamily void drawB (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+richiama i metodi per disegnare il testo nel bottone e i bordi. 
+
+
+
+Definition at line 190 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classui_1_1_my_button_a85f135df7a0669cda6dcdf8ca393a90c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a1e330b5600a9187ca0ef7f964cfb24c9}\label{classui_1_1_my_button_a1e330b5600a9187ca0ef7f964cfb24c9}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!draw\+Body@{draw\+Body}}
+\index{draw\+Body@{draw\+Body}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{draw\+Body()}{drawBody()}}
+{\footnotesize\ttfamily void draw\+Body (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna lo sfondo del bottone. 
+
+
+
+Definition at line 269 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_a1e330b5600a9187ca0ef7f964cfb24c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_af91752554b78073a295ed441afc34638}\label{classui_1_1_my_button_af91752554b78073a295ed441afc34638}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!draw\+Border@{draw\+Border}}
+\index{draw\+Border@{draw\+Border}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{draw\+Border()}{drawBorder()}}
+{\footnotesize\ttfamily void draw\+Border (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna i bordi del bottone. 
+
+
+
+Definition at line 321 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_af91752554b78073a295ed441afc34638_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a56e66f982bfd587482db32cb63e608c4}\label{classui_1_1_my_button_a56e66f982bfd587482db32cb63e608c4}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!drawC@{drawC}}
+\index{drawC@{drawC}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{draw\+C()}{drawC()}}
+{\footnotesize\ttfamily void drawC (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+richiama i metodi per disegnare il testo centrato nel bottone. 
+
+
+
+Definition at line 230 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classui_1_1_my_button_a56e66f982bfd587482db32cb63e608c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a3a4d8b054f65915e3b9bfafe4228ad06}\label{classui_1_1_my_button_a3a4d8b054f65915e3b9bfafe4228ad06}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!draw\+Central\+Text@{draw\+Central\+Text}}
+\index{draw\+Central\+Text@{draw\+Central\+Text}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{draw\+Central\+Text()}{drawCentralText()}}
+{\footnotesize\ttfamily void draw\+Central\+Text (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna il testo cenrato nel bottone. 
+
+
+
+Definition at line 247 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classui_1_1_my_button_a3a4d8b054f65915e3b9bfafe4228ad06_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a5d567e88f76d588ff4af3357a5db4f9c}\label{classui_1_1_my_button_a5d567e88f76d588ff4af3357a5db4f9c}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!draw\+Central\+Text2@{draw\+Central\+Text2}}
+\index{draw\+Central\+Text2@{draw\+Central\+Text2}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{draw\+Central\+Text2()}{drawCentralText2()}}
+{\footnotesize\ttfamily void draw\+Central\+Text2 (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna il testo nel bottone ma più in alto rispetto a \char`\"{}draw\+Central\+Text\char`\"{}. 
+
+
+
+Definition at line 258 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_a5d567e88f76d588ff4af3357a5db4f9c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a8df311009317d839a01870ceac76eb75}\label{classui_1_1_my_button_a8df311009317d839a01870ceac76eb75}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!draw\+Text@{draw\+Text}}
+\index{draw\+Text@{draw\+Text}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{draw\+Text()}{drawText()}}
+{\footnotesize\ttfamily void draw\+Text (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna il testo nel bottone. 
+
+
+
+Definition at line 238 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_a8df311009317d839a01870ceac76eb75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a187945475e730bfa340a10f63224e91f}\label{classui_1_1_my_button_a187945475e730bfa340a10f63224e91f}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!get\+Bounds@{get\+Bounds}}
+\index{get\+Bounds@{get\+Bounds}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{get\+Bounds()}{getBounds()}}
+{\footnotesize\ttfamily Rectangle get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter del rettangolo per verificarne la pressione. 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}oggetto rettangolo del bottone 
+\end{DoxyReturn}
+
+
+Definition at line 175 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classui_1_1_my_button_a187945475e730bfa340a10f63224e91f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a67283be3f45257d1e0c474c563ebb6b6}\label{classui_1_1_my_button_a67283be3f45257d1e0c474c563ebb6b6}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter dell\textquotesingle{}identificatore. 
+
+
+
+Definition at line 359 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_ae13f88e922e1339355456062ad9fa359}\label{classui_1_1_my_button_ae13f88e922e1339355456062ad9fa359}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!getX@{getX}}
+\index{getX@{getX}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily int getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter della coordinata x. 
+
+
+
+Definition at line 366 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_ae13f88e922e1339355456062ad9fa359_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_aab81944f0a14bba932c0931899951937}\label{classui_1_1_my_button_aab81944f0a14bba932c0931899951937}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!getY@{getY}}
+\index{getY@{getY}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily int getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter della coordinata y. 
+
+
+
+Definition at line 373 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_aab81944f0a14bba932c0931899951937_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a4d3160e53a5224ffdf578694846b19b3}\label{classui_1_1_my_button_a4d3160e53a5224ffdf578694846b19b3}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!init\+Bounds@{init\+Bounds}}
+\index{init\+Bounds@{init\+Bounds}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{init\+Bounds()}{initBounds()}}
+{\footnotesize\ttfamily void init\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+crea l\textquotesingle{}effettivo rettangolo del area del bottone. 
+
+
+
+Definition at line 166 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_a4d3160e53a5224ffdf578694846b19b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a2deebd864f1c01a6d81238349c929885}\label{classui_1_1_my_button_a2deebd864f1c01a6d81238349c929885}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!is\+Mouse\+Over@{is\+Mouse\+Over}}
+\index{is\+Mouse\+Over@{is\+Mouse\+Over}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{is\+Mouse\+Over()}{isMouseOver()}}
+{\footnotesize\ttfamily boolean is\+Mouse\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter della variabile per la verifica del mouse se si trova sul bottone. 
+
+\begin{DoxyReturn}{Returns}
+variabile mouseover 
+\end{DoxyReturn}
+
+
+Definition at line 296 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_a2deebd864f1c01a6d81238349c929885_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_ad47389f2ab3067af3626db75a6b3b09e}\label{classui_1_1_my_button_ad47389f2ab3067af3626db75a6b3b09e}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!is\+Mouse\+Pressed@{is\+Mouse\+Pressed}}
+\index{is\+Mouse\+Pressed@{is\+Mouse\+Pressed}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{is\+Mouse\+Pressed()}{isMousePressed()}}
+{\footnotesize\ttfamily boolean is\+Mouse\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+setter della variabile per la verifica del click del mouse se si trova sul bottone. 
+
+\begin{DoxyReturn}{Returns}
+variabile mousepressed 
+\end{DoxyReturn}
+
+
+Definition at line 343 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_ae9dd3fa33b931bab6ba8d7ec2cc24549}\label{classui_1_1_my_button_ae9dd3fa33b931bab6ba8d7ec2cc24549}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!moveX@{moveX}}
+\index{moveX@{moveX}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{move\+X()}{moveX()}}
+{\footnotesize\ttfamily void moveX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+modifica la coordinata x del bottone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 157 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classui_1_1_my_button_ae9dd3fa33b931bab6ba8d7ec2cc24549_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_ae9dd3fa33b931bab6ba8d7ec2cc24549_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_af47bcfe7d6d4ed3655e2c61583e1b5d7}\label{classui_1_1_my_button_af47bcfe7d6d4ed3655e2c61583e1b5d7}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!reset\+Booleans@{reset\+Booleans}}
+\index{reset\+Booleans@{reset\+Booleans}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{reset\+Booleans()}{resetBooleans()}}
+{\footnotesize\ttfamily void reset\+Booleans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+resetta le variabili booleane. 
+
+
+
+Definition at line 350 of file My\+Button.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classui_1_1_my_button_af47bcfe7d6d4ed3655e2c61583e1b5d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_af47bcfe7d6d4ed3655e2c61583e1b5d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_acecf901c15a2150148863cbc4d0709da}\label{classui_1_1_my_button_acecf901c15a2150148863cbc4d0709da}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void set\+Color (\begin{DoxyParamCaption}\item[{Color}]{c }\end{DoxyParamCaption})}
+
+
+
+setter del colore. 
+
+
+
+Definition at line 280 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_acecf901c15a2150148863cbc4d0709da_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_ac3f48a7245ffa1fe24d32ea71797997d}\label{classui_1_1_my_button_ac3f48a7245ffa1fe24d32ea71797997d}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!set\+Mouse\+Over@{set\+Mouse\+Over}}
+\index{set\+Mouse\+Over@{set\+Mouse\+Over}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{set\+Mouse\+Over()}{setMouseOver()}}
+{\footnotesize\ttfamily void set\+Mouse\+Over (\begin{DoxyParamCaption}\item[{boolean}]{mouseover }\end{DoxyParamCaption})}
+
+
+
+setter della variabile per la verifica del mouse se si trova sul bottone. 
+
+
+
+Definition at line 287 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_ac3f48a7245ffa1fe24d32ea71797997d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_my_button_a773d9d0a3424f8007205c7011f69c723}\label{classui_1_1_my_button_a773d9d0a3424f8007205c7011f69c723}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!set\+Mouse\+Pressed@{set\+Mouse\+Pressed}}
+\index{set\+Mouse\+Pressed@{set\+Mouse\+Pressed}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{set\+Mouse\+Pressed()}{setMousePressed()}}
+{\footnotesize\ttfamily void set\+Mouse\+Pressed (\begin{DoxyParamCaption}\item[{boolean}]{mousepressed }\end{DoxyParamCaption})}
+
+
+
+setter della variabile per la verifica del click del mouse se si trova sul bottone. 
+
+
+
+Definition at line 334 of file My\+Button.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_my_button_a773d9d0a3424f8007205c7011f69c723_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classui_1_1_my_button_a62df0866a4faf552c81108aff64e8eff}\label{classui_1_1_my_button_a62df0866a4faf552c81108aff64e8eff}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!bounds@{bounds}}
+\index{bounds@{bounds}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{bounds}{bounds}}
+{\footnotesize\ttfamily Rectangle bounds}
+
+
+
+Definition at line 47 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_a02094092ae89aa4b23bff1976bcbf90d}\label{classui_1_1_my_button_a02094092ae89aa4b23bff1976bcbf90d}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!c@{c}}
+\index{c@{c}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily Color c\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 59 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_a3fb562f10e8f7f83cb2ed130eab6d439}\label{classui_1_1_my_button_a3fb562f10e8f7f83cb2ed130eab6d439}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!f@{f}}
+\index{f@{f}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily Font f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_ad12fc34ce789bce6c8a05d8a17138534}\label{classui_1_1_my_button_ad12fc34ce789bce6c8a05d8a17138534}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!height@{height}}
+\index{height@{height}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int height\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 41 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_a7441ef0865bcb3db9b8064dd7375c1ea}\label{classui_1_1_my_button_a7441ef0865bcb3db9b8064dd7375c1ea}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!id@{id}}
+\index{id@{id}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int id}
+
+
+
+Definition at line 44 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_a6dcc94571aa727e4e184fa31e384a93a}\label{classui_1_1_my_button_a6dcc94571aa727e4e184fa31e384a93a}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!mouseover@{mouseover}}
+\index{mouseover@{mouseover}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{mouseover}{mouseover}}
+{\footnotesize\ttfamily boolean mouseover\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 50 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_a2843f5354ab4fdc301bfc00a460b202f}\label{classui_1_1_my_button_a2843f5354ab4fdc301bfc00a460b202f}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!mousepressed@{mousepressed}}
+\index{mousepressed@{mousepressed}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{mousepressed}{mousepressed}}
+{\footnotesize\ttfamily boolean mousepressed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_a0934989a1c7ae6cc9f4e355977c198c3}\label{classui_1_1_my_button_a0934989a1c7ae6cc9f4e355977c198c3}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!passato@{passato}}
+\index{passato@{passato}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{passato}{passato}}
+{\footnotesize\ttfamily boolean passato =false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+allunga il bottone in larghezza. 
+
+
+
+Definition at line 303 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_a685ed5195435d2b3e75433f46aec6e1e}\label{classui_1_1_my_button_a685ed5195435d2b3e75433f46aec6e1e}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!text@{text}}
+\index{text@{text}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily String text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_a2474a5474cbff19523a51eb1de01cda4}\label{classui_1_1_my_button_a2474a5474cbff19523a51eb1de01cda4}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!width@{width}}
+\index{width@{width}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 38 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_a6150e0515f7202e2fb518f7206ed97dc}\label{classui_1_1_my_button_a6150e0515f7202e2fb518f7206ed97dc}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!x@{x}}
+\index{x@{x}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int x\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 32 of file My\+Button.\+java.
+
+\mbox{\Hypertarget{classui_1_1_my_button_a0a2f84ed7838f07779ae24c5a9086d33}\label{classui_1_1_my_button_a0a2f84ed7838f07779ae24c5a9086d33}} 
+\index{ui\+::\+My\+Button@{ui\+::\+My\+Button}!y@{y}}
+\index{y@{y}!ui\+::\+My\+Button@{ui\+::\+My\+Button}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int y\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 35 of file My\+Button.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/ui/\hyperlink{_my_button_8java}{My\+Button.\+java}\end{DoxyCompactItemize}

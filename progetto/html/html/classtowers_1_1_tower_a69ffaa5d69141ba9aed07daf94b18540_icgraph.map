@@ -1,0 +1,19 @@
+<map id="getLvl" name="getLvl">
+<area shape="rect" id="node2" href="$classui_1_1_action_bar.html#a2177b06de4c0084e953665a7dbfd6772" title="disegna la torre selezionata, le sue info e i bottoni relativi ad essa. " alt="" coords="347,95,528,137"/>
+<area shape="rect" id="node8" href="$classui_1_1_action_bar.html#aef810268cda93505da735c6c81136e00" title="restituisce il guadagno della vendita della torre selezionata. " alt="" coords="113,153,287,180"/>
+<area shape="rect" id="node9" href="$classui_1_1_action_bar.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse. " alt="" coords="348,183,527,209"/>
+<area shape="rect" id="node14" href="$classui_1_1_action_bar.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce le press del mouse. " alt="" coords="108,284,292,311"/>
+<area shape="rect" id="node3" href="$classui_1_1_action_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori..." alt="" coords="616,81,740,108"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="821,5,965,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="821,56,965,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="821,107,965,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="821,157,965,184"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_level1.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="583,132,773,159"/>
+<area shape="rect" id="node11" href="$classscenes_1_1_level2.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="583,183,773,209"/>
+<area shape="rect" id="node12" href="$classscenes_1_1_level3.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="583,233,773,260"/>
+<area shape="rect" id="node13" href="$classscenes_1_1_level4.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="583,284,773,311"/>
+<area shape="rect" id="node15" href="$classscenes_1_1_level1.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="340,233,535,260"/>
+<area shape="rect" id="node16" href="$classscenes_1_1_level2.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="340,284,535,311"/>
+<area shape="rect" id="node17" href="$classscenes_1_1_level3.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="340,335,535,361"/>
+<area shape="rect" id="node18" href="$classscenes_1_1_level4.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="340,385,535,412"/>
+</map>

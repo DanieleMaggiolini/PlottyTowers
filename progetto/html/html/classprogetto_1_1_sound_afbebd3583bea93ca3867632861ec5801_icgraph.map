@@ -1,0 +1,4 @@
+<map id="playMusic" name="playMusic">
+<area shape="rect" id="node2" href="$enumprogetto_1_1_game_states.html#a118b00363a0d1055d4b00bb40dd66f34" title="costruttore setta il gamestates in base al parametro passato e nel caso vi sia riproduce la musica re..." alt="" coords="135,5,337,47"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_sound.html#a4641ac073645140bf1f9577c2587fe3b" title="muta l&#39;audio. " alt="" coords="211,71,261,98"/>
+</map>

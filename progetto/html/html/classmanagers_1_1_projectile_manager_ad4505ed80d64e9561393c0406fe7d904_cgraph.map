@@ -1,0 +1,10 @@
+<map id="newProjectile" name="newProjectile">
+<area shape="rect" id="node2" href="$classmanagers_1_1_projectile_manager.html#a942d732bac65df2f0d220989ca42ce76" title="per la torre passata restituito il suo tipo di proiettile utilizzato " alt="" coords="192,5,315,32"/>
+<area shape="rect" id="node3" href="$classtowers_1_1_tower.html#adaa3345598ef202753372f185625e5da" title="ritorna il tipo di torre " alt="" coords="403,31,581,57"/>
+<area shape="rect" id="node4" href="$classtowers_1_1_tower.html#ae13f88e922e1339355456062ad9fa359" title="ritorna la x " alt="" coords="190,107,317,133"/>
+<area shape="rect" id="node5" href="$classenemies_1_1_enemy.html#ae8f033a71b96920114aee202798dc7e9" title="enemies.Enemy.getX" alt="" coords="181,157,326,184"/>
+<area shape="rect" id="node6" href="$classtowers_1_1_tower.html#aab81944f0a14bba932c0931899951937" title="ritorna la y " alt="" coords="189,208,318,235"/>
+<area shape="rect" id="node7" href="$classenemies_1_1_enemy.html#aa0f539cec219900ff6cf76edcfa52367" title="enemies.Enemy.getY" alt="" coords="180,259,327,285"/>
+<area shape="rect" id="node8" href="$classhelpz_1_1_constants_1_1_projectiles.html#a28b031e39773be6063f30deedbaad662" title="helpz.Constants.Projectiles.get\lSpeed" alt="" coords="152,310,355,351"/>
+<area shape="rect" id="node9" href="$classtowers_1_1_tower.html#ac10b854131d21646691dcdd7da559a22" title="ritorna il danno " alt="" coords="169,376,337,403"/>
+</map>

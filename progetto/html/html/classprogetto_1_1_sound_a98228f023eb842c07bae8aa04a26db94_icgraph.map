@@ -1,0 +1,6 @@
+<map id="playSE" name="playSE">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="117,5,272,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="117,56,272,83"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level3.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="117,107,272,133"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level4.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="117,157,272,184"/>
+</map>

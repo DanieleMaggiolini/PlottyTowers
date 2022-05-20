@@ -1,0 +1,11 @@
+<map id="addEnemy" name="addEnemy">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a3714d243133c700dca12625cccf518aa" title="richiamo metodo per aggiunta passando la tipologia del nemico " alt="" coords="137,81,237,108"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#addfc0c3129b6ff606f7276e175f31a15" title="richiama il metodo per spawnare un nemico. " alt="" coords="285,5,472,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#addfc0c3129b6ff606f7276e175f31a15" title="richiama il metodo per spawnare un nemico. " alt="" coords="285,56,472,83"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level3.html#addfc0c3129b6ff606f7276e175f31a15" title="richiama il metodo per spawnare un nemico. " alt="" coords="285,107,472,133"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level4.html#addfc0c3129b6ff606f7276e175f31a15" title="richiama il metodo per spawnare un nemico. " alt="" coords="285,157,472,184"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#ab424ab29e7ab4733f2efd1e6ef3f13b1" title="aggiornamento delle ondate. " alt="" coords="520,5,699,32"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level2.html#ab424ab29e7ab4733f2efd1e6ef3f13b1" title="aggiornamento delle ondate. " alt="" coords="520,56,699,83"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level3.html#ab424ab29e7ab4733f2efd1e6ef3f13b1" title="aggiornamento delle ondate. " alt="" coords="520,107,699,133"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_level4.html#ab424ab29e7ab4733f2efd1e6ef3f13b1" title="aggiornamento delle ondate. " alt="" coords="520,157,699,184"/>
+</map>

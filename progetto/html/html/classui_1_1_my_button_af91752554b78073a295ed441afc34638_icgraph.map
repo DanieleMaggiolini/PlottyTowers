@@ -1,0 +1,14 @@
+<map id="drawBorder" name="drawBorder">
+<area shape="rect" id="node2" href="$classui_1_1_my_button.html#a85f135df7a0669cda6dcdf8ca393a90c" title="richiama i metodi per disegnare il testo nel bottone e i bordi. " alt="" coords="144,51,203,77"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#a73a12c436143ada4de08e87bb3513ab1" title="richiama i metodi per disegnare il testo nel bottone, i bordi e lo sfondo. " alt="" coords="144,101,203,128"/>
+<area shape="rect" id="node4" href="$classui_1_1_my_button.html#aa8318788e7f26fedd7bfbdd0b654ad45" title="richiama i metodi per disegnare il testo centrato nel bottone, i bordi e lo sfondo. " alt="" coords="140,152,207,179"/>
+<area shape="rect" id="node5" href="$classui_1_1_action_bar.html#a2177b06de4c0084e953665a7dbfd6772" title="disegna la torre selezionata, le sue info e i bottoni relativi ad essa. " alt="" coords="255,105,436,146"/>
+<area shape="rect" id="node11" href="$classui_1_1_tool_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="271,181,420,208"/>
+<area shape="rect" id="node6" href="$classui_1_1_action_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori..." alt="" coords="484,107,608,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="658,5,802,32"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="658,56,802,83"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="658,107,802,133"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="658,157,802,184"/>
+<area shape="rect" id="node12" href="$classui_1_1_tool_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni. " alt="" coords="491,203,601,229"/>
+<area shape="rect" id="node13" href="$classscenes_1_1_editing.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la mappa. " alt="" coords="656,208,804,235"/>
+</map>

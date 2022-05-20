@@ -1,0 +1,4 @@
+<map id="Bar" name="Bar">
+<area shape="rect" id="node2" href="$classui_1_1_action_bar.html" title="classe figlia della classe &quot;Bar&quot; per gestire la barra presente nei livelli " alt="" coords="5,175,204,677"/>
+<area shape="rect" id="node3" href="$classui_1_1_tool_bar.html" title="gestice la barra per modificare le mappe dei vari livelli e salvarle. " alt="" coords="228,285,368,567"/>
+</map>

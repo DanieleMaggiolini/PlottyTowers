@@ -1,0 +1,15 @@
+<map id="getEnemyType" name="getEnemyType">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a8f172cfa5ade4d4f0a6b89cc6bfc4d12" title="aggiornamento della posizione di un nemico " alt="" coords="416,74,633,115"/>
+<area shape="rect" id="node8" href="$classmanagers_1_1_enemy_manager.html#a839e4729819875981f138997b2d3f438" title="controllo è pissibile procedere nella direzione in cui il nemico stava andando altrimenti prova strad..." alt="" coords="167,126,363,167"/>
+<area shape="rect" id="node9" href="$classmanagers_1_1_enemy_manager.html#a7ebdd9acefa4682b23b1ad2c0be558f4" title="in base alla tipologia di nemico disegno con il suo index di animazione " alt="" coords="163,191,368,233"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_enemy_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="per ogni nemico controllo se vivo e lo muove " alt="" coords="681,81,899,108"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="947,5,1135,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="947,56,1135,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="947,107,1135,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level4.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="947,157,1135,184"/>
+<area shape="rect" id="node10" href="$classmanagers_1_1_enemy_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="per ogni nemico controllo se vivo, se vivo disegno del nemico e della barra della vita ..." alt="" coords="422,199,627,225"/>
+<area shape="rect" id="node11" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="718,137,862,164"/>
+<area shape="rect" id="node12" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="718,188,862,215"/>
+<area shape="rect" id="node13" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="718,239,862,265"/>
+<area shape="rect" id="node14" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="718,289,862,316"/>
+</map>

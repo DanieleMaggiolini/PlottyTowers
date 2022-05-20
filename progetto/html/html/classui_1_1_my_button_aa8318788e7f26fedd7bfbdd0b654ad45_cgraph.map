@@ -1,0 +1,5 @@
+<map id="drawAC" name="drawAC">
+<area shape="rect" id="node2" href="$classui_1_1_my_button.html#a1e330b5600a9187ca0ef7f964cfb24c9" title="disegna lo sfondo del bottone. " alt="" coords="142,5,221,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#af91752554b78073a295ed441afc34638" title="disegna i bordi del bottone. " alt="" coords="138,56,225,83"/>
+<area shape="rect" id="node4" href="$classui_1_1_my_button.html#a5d567e88f76d588ff4af3357a5db4f9c" title="disegna il testo nel bottone ma più in alto rispetto a &quot;drawCentralText&quot;. " alt="" coords="120,107,243,133"/>
+</map>

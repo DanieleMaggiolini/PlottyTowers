@@ -1,0 +1,10 @@
+<map id="setPosition" name="setPosition">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a01056d4d58ff52ab419ad8924922132d" title="prendendo la posizione di un nemico si prende in considerazione il suo angolo in alto a sinistra per ..." alt="" coords="140,81,351,108"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_enemy_manager.html#a839e4729819875981f138997b2d3f438" title="controllo è pissibile procedere nella direzione in cui il nemico stava andando altrimenti prova strad..." alt="" coords="399,74,595,115"/>
+<area shape="rect" id="node4" href="$classmanagers_1_1_enemy_manager.html#a8f172cfa5ade4d4f0a6b89cc6bfc4d12" title="aggiornamento della posizione di un nemico " alt="" coords="643,74,860,115"/>
+<area shape="rect" id="node5" href="$classmanagers_1_1_enemy_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="per ogni nemico controllo se vivo e lo muove " alt="" coords="908,81,1125,108"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level1.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="1173,5,1361,32"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level2.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="1173,56,1361,83"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level3.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="1173,107,1361,133"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level4.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="1173,157,1361,184"/>
+</map>

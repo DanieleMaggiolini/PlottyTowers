@@ -1,0 +1,7 @@
+<map id="getSpeed" name="getSpeed">
+<area shape="rect" id="node2" href="$classmanagers_1_1_projectile_manager.html#ad4505ed80d64e9561393c0406fe7d904" title="aggiunta di un proiettile nell&#39;array " alt="" coords="131,74,345,115"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="393,5,533,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="393,56,533,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level3.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="393,107,533,133"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level4.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="393,157,533,184"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="LevelMenu" name="LevelMenu">
+<area shape="rect" id="node2" href="$classui_1_1_level_menu.html#aded9c531b53772fd90d09a8b6bf0132e" title="importa le immagini per sfondo e bottoni. " alt="" coords="136,5,215,32"/>
+<area shape="rect" id="node4" href="$classui_1_1_level_menu.html#aed9fe7e919d4355a7ad86701d44e1fea" title="inizializza i bottoni. " alt="" coords="137,56,214,83"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_load_save.html#adfcdec0c763af178ffbfea94f4ccd263" title="carica immagine " alt="" coords="263,5,433,32"/>
+</map>

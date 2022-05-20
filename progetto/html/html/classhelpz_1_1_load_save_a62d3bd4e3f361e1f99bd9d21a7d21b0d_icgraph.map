@@ -1,0 +1,28 @@
+<map id="readFile" name="readFile">
+<area shape="rect" id="node2" href="$classhelpz_1_1_load_save.html#a9dbd50db72db31e6a9c5c423d4e48be3" title="load 2d int array from a file " alt="" coords="129,208,203,235"/>
+<area shape="rect" id="node24" href="$classhelpz_1_1_load_save.html#a1369888f20d8279b649d556082d38e72" title="unlockLevel" alt="" coords="121,335,211,361"/>
+<area shape="rect" id="node3" href="$classobjects_1_1_tile.html#acbf8ab43b0cee998ab5f07f76d55fdee" title="costruttore setta le variabili " alt="" coords="291,5,403,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_editing.html#a286931cc46e197f4a85af7229fdc29a4" title="carica il livello. " alt="" coords="264,56,429,83"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level1.html#a286931cc46e197f4a85af7229fdc29a4" title="carica il livello. " alt="" coords="266,107,427,133"/>
+<area shape="rect" id="node11" href="$classscenes_1_1_level2.html#a286931cc46e197f4a85af7229fdc29a4" title="carica il livello. " alt="" coords="266,157,427,184"/>
+<area shape="rect" id="node14" href="$classscenes_1_1_level3.html#a286931cc46e197f4a85af7229fdc29a4" title="carica il livello. " alt="" coords="266,208,427,235"/>
+<area shape="rect" id="node17" href="$classscenes_1_1_level4.html#a286931cc46e197f4a85af7229fdc29a4" title="carica il livello. " alt="" coords="266,259,427,285"/>
+<area shape="rect" id="node20" href="$classui_1_1_action_bar.html#aed9fe7e919d4355a7ad86701d44e1fea" title="inizializza i bottoni. " alt="" coords="271,309,423,336"/>
+<area shape="rect" id="node22" href="$classui_1_1_tool_bar.html#a27d3ba5afb772cc36c9a432c28975ace" title="inizializza i bottoni delle tiles. " alt="" coords="273,360,420,387"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_editing.html#ae646a5c5937b560efaa2b7bb675bc3cd" title="setta lo stato e carica la mappa relativa " alt="" coords="490,5,651,32"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_editing.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza le classi. " alt="" coords="483,56,659,83"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_editing.html#a2ca3ef24637fa4a614988adee4b8689d" title="costruttore inizializza le classi e setta il game; " alt="" coords="707,56,859,83"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level1.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza tutte le classi presenti. " alt="" coords="485,107,657,133"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_level1.html#a0662011b3c0aa5d7dd21ce7cf353c3a0" title="costruttore che setta il game e richiama i metodi per inizializzare classi, bottoni e importare immag..." alt="" coords="711,107,855,133"/>
+<area shape="rect" id="node12" href="$classscenes_1_1_level2.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza tutte le classi presenti. " alt="" coords="485,157,657,184"/>
+<area shape="rect" id="node13" href="$classscenes_1_1_level2.html#a53060fc6a453b337e408bd89a86e32af" title="costruttore che setta il game e richiama i metodi per inizializzare classi, bottoni e importare immag..." alt="" coords="711,157,855,184"/>
+<area shape="rect" id="node15" href="$classscenes_1_1_level3.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza tutte le classi presenti. " alt="" coords="485,208,657,235"/>
+<area shape="rect" id="node16" href="$classscenes_1_1_level3.html#a0f56949b20e6eda500c5b9c50e16de58" title="costruttore che setta il game e richiama i metodi per inizializzare classi, bottoni e importare immag..." alt="" coords="711,208,855,235"/>
+<area shape="rect" id="node18" href="$classscenes_1_1_level4.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza tutte le classi presenti. " alt="" coords="485,259,657,285"/>
+<area shape="rect" id="node19" href="$classscenes_1_1_level4.html#ace3453f4ef6ea220bef6de5f957e89d5" title="costruttore che setta il game e richiama i metodi per inizializzare classi, bottoni e importare immag..." alt="" coords="711,259,855,285"/>
+<area shape="rect" id="node21" href="$classui_1_1_action_bar.html#a4ff9099a9e2976f76bc6d0e2e5041cc6" title="costruttore, setta variabili, immagini e bottoni. " alt="" coords="493,309,648,336"/>
+<area shape="rect" id="node23" href="$classui_1_1_tool_bar.html#a43193f5c8a197b7b1ccfc248dec1db9b" title="costruttore del bottone e carica l&#39;immagine. " alt="" coords="507,360,635,387"/>
+<area shape="rect" id="node25" href="$classprogetto_1_1_game.html#a3e57c234c3dde4539f8b9c47d75e59ae" title="inizializza gli oggetti presenti nel progetto. " alt="" coords="259,411,435,437"/>
+<area shape="rect" id="node26" href="$classprogetto_1_1_game.html#a98d87ba6bde3f389e92664a2ef9bfcb1" title="costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata..." alt="" coords="497,411,644,437"/>
+<area shape="rect" id="node27" href="$classprogetto_1_1_game.html#a8b260eecbaabcef8473fd87ada040682" title="inizializza la classe, il game screen e starta il gioco. " alt="" coords="713,411,853,437"/>
+</map>

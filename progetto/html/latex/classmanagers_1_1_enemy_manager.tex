@@ -1,0 +1,833 @@
+\hypertarget{classmanagers_1_1_enemy_manager}{}\section{Enemy\+Manager Class Reference}
+\label{classmanagers_1_1_enemy_manager}\index{Enemy\+Manager@{Enemy\+Manager}}
+
+
+classe per gestire il movimento, la vita e le animazioni dei nemici  
+
+
+
+
+Collaboration diagram for Enemy\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmanagers_1_1_enemy_manager_ab48b3c6b84a71fc0278ad44f818701c6}{Enemy\+Manager} (\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classmanagers_1_1_enemy_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}, String \hyperlink{classmanagers_1_1_enemy_manager_a91ac952876f776b3fbbc8519e093fdbf}{state})
+\begin{DoxyCompactList}\small\item\em costruttore. assegna il game e lo stato(il livello in cui ci troviamo), carica le immagini dei nemici e imposta il punto di inizio e fine del percorso \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_aa38fcad82cf2cd5ac5531d8c2004fdda}{set\+Start\+End} (int sx, int sy, int ex, int ey)
+\begin{DoxyCompactList}\small\item\em reimpostare le coordinate del punto di inizio e di fine del percorso \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_ac5c54df7ed3b930268c8d7752c101725}{update} ()
+\begin{DoxyCompactList}\small\item\em per ogni nemico controllo se vivo e lo muove \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a8f172cfa5ade4d4f0a6b89cc6bfc4d12}{update\+Enemy\+Move} (\hyperlink{classenemies_1_1_enemy}{Enemy} e)
+\begin{DoxyCompactList}\small\item\em aggiornamento della posizione di un nemico \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a01056d4d58ff52ab419ad8924922132d}{fix\+Tile} (\hyperlink{classenemies_1_1_enemy}{Enemy} e, int dir, int x, int y)
+\begin{DoxyCompactList}\small\item\em prendendo la posizione di un nemico si prende in considerazione il suo angolo in alto a sinistra per controllare i tile successivi \end{DoxyCompactList}\item 
+float \hyperlink{classmanagers_1_1_enemy_manager_ae622455c9dd19d2583b9a8840b1b35de}{get\+Speed\+Width} (int dir, int enemytype)
+\begin{DoxyCompactList}\small\item\em alla direzione del nemico si applica lo spostamento sull\textquotesingle{}asse X in base alla velocità \end{DoxyCompactList}\item 
+float \hyperlink{classmanagers_1_1_enemy_manager_a263c83da9aebeac50b60770fb847f331}{get\+Speed\+Height} (int dir, int enemytype)
+\begin{DoxyCompactList}\small\item\em alla direzione del nemico si applica lo spostamento sull\textquotesingle{}asse y in base alla velocità \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a24695d90cee943c6c64c2d9f1b231285}{add\+Enemy} (int enemytype)
+\begin{DoxyCompactList}\small\item\em aggiunta nemico all\textquotesingle{}array \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a3714d243133c700dca12625cccf518aa}{spawn\+Enemy} (int next)
+\begin{DoxyCompactList}\small\item\em richiamo metodo per aggiunta passando la tipologia del nemico \end{DoxyCompactList}\item 
+Array\+List$<$ \hyperlink{classenemies_1_1_enemy}{Enemy} $>$ \hyperlink{classmanagers_1_1_enemy_manager_aaa1e04fb149c24d658ce085e7ea30c74}{get\+Enemies} ()
+\begin{DoxyCompactList}\small\item\em ritorno dell\textquotesingle{}array contenente tutti i nemici \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a9f0f7dc28e596d2ebcd06e27ef05d9fd}{add\+Coin} (int type)
+\begin{DoxyCompactList}\small\item\em in base alla tipologia del nemico passato aggiunta di monete al giocatore \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a72fe1ffca978e99fd16994a10e7f8051}{draw} (Graphics g)
+\begin{DoxyCompactList}\small\item\em per ogni nemico controllo se vivo, se vivo disegno del nemico e della barra della vita \end{DoxyCompactList}\item 
+int \hyperlink{classmanagers_1_1_enemy_manager_ad8dae58d52717b5f26d7dc654d1c1361}{get\+Enemy\+Remaning} ()
+\begin{DoxyCompactList}\small\item\em ritorno di quanti nemici sono rimasti \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a774aefe7ec0626eb37d65a2335eade3b}{load\+Enemy\+Imgs} ()
+\begin{DoxyCompactList}\small\item\em assegnegnazioni delle immagini dei nemici con animazioni, diverse per ogni livello \end{DoxyCompactList}\item 
+int \hyperlink{classmanagers_1_1_enemy_manager_ac689e72523c8460ac3160526d310b1b7}{get\+Tile\+Type} (int x, int y)
+\begin{DoxyCompactList}\small\item\em richiesta della tipologia di tile presente nel punto indicato \end{DoxyCompactList}\item 
+boolean \hyperlink{classmanagers_1_1_enemy_manager_afec98871c0e021759b9d0afc8b690a18}{is\+End} (\hyperlink{classenemies_1_1_enemy}{Enemy} e)
+\begin{DoxyCompactList}\small\item\em controllo se il nemico si trova alla fine del percorso \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a839e4729819875981f138997b2d3f438}{set\+Direction} (\hyperlink{classenemies_1_1_enemy}{Enemy} e)
+\begin{DoxyCompactList}\small\item\em controllo è pissibile procedere nella direzione in cui il nemico stava andando altrimenti prova strade diverse in senso orario \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a7ebdd9acefa4682b23b1ad2c0be558f4}{draw\+Enemy} (\hyperlink{classenemies_1_1_enemy}{Enemy} e, Graphics g)
+\begin{DoxyCompactList}\small\item\em in base alla tipologia di nemico disegno con il suo index di animazione \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a9c98cd29298e5f583c52dc46a6d70d46}{draw\+Hp\+Bar} (\hyperlink{classenemies_1_1_enemy}{Enemy} e, Graphics g)
+\begin{DoxyCompactList}\small\item\em disegno rosso della barra della vita di un nemico \end{DoxyCompactList}\item 
+int \hyperlink{classmanagers_1_1_enemy_manager_ac01087314c8b4df0d2304a3596493393}{get\+New\+Bar\+Width} (\hyperlink{classenemies_1_1_enemy}{Enemy} e)
+\begin{DoxyCompactList}\small\item\em calcolo grandezza della barra della vita in base alla vita posseduta dal nemico \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_enemy_manager_a5c2bac0f4b9a3ef4e30f60d4b0c3b951}{update\+Animation\+Tick} ()
+\begin{DoxyCompactList}\small\item\em aggiornamento indici per l\textquotesingle{}animazione dei nemici \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classmanagers_1_1_enemy_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}
+\item 
+String \hyperlink{classmanagers_1_1_enemy_manager_a91ac952876f776b3fbbc8519e093fdbf}{state}
+\item 
+Buffered\+Image \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classmanagers_1_1_enemy_manager_a9de203ec47003324b7c89753f1e73085}{enemy\+Imgs}
+\item 
+Array\+List$<$ \hyperlink{classenemies_1_1_enemy}{Enemy} $>$ \hyperlink{classmanagers_1_1_enemy_manager_abb3ec53dfa3d7170202a47e10d3488cf}{enemies} = new Array\+List$<$$>$()
+\item 
+int \hyperlink{classmanagers_1_1_enemy_manager_a04d62de5f8367e549268b6c5540e1e97}{ani\+Tick}
+\item 
+int \hyperlink{classmanagers_1_1_enemy_manager_a85da7669cabd63b0459f1335886dbf2e}{startX}
+\item 
+int \hyperlink{classmanagers_1_1_enemy_manager_af1fa29fbf67dd56219be7fad4d77e342}{hp\+Bar\+Width} = \hyperlink{classobjects_1_1_tile_afbef0b8f1824dfedcb984b1547cc0dde}{Tile.\+sprite\+Width} / 2
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe per gestire il movimento, la vita e le animazioni dei nemici 
+
+Definition at line 33 of file Enemy\+Manager.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_ab48b3c6b84a71fc0278ad44f818701c6}\label{classmanagers_1_1_enemy_manager_ab48b3c6b84a71fc0278ad44f818701c6}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!Enemy\+Manager@{Enemy\+Manager}}
+\index{Enemy\+Manager@{Enemy\+Manager}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{Enemy\+Manager()}{EnemyManager()}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_enemy_manager}{Enemy\+Manager} (\begin{DoxyParamCaption}\item[{\hyperlink{classprogetto_1_1_game}{Game}}]{game,  }\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+costruttore. assegna il game e lo stato(il livello in cui ci troviamo), carica le immagini dei nemici e imposta il punto di inizio e fine del percorso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_ab48b3c6b84a71fc0278ad44f818701c6_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a9f0f7dc28e596d2ebcd06e27ef05d9fd}\label{classmanagers_1_1_enemy_manager_a9f0f7dc28e596d2ebcd06e27ef05d9fd}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!add\+Coin@{add\+Coin}}
+\index{add\+Coin@{add\+Coin}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{add\+Coin()}{addCoin()}}
+{\footnotesize\ttfamily void add\+Coin (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+in base alla tipologia del nemico passato aggiunta di monete al giocatore 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & tipologia del nemico \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 364 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classmanagers_1_1_enemy_manager_a9f0f7dc28e596d2ebcd06e27ef05d9fd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classmanagers_1_1_enemy_manager_a9f0f7dc28e596d2ebcd06e27ef05d9fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a24695d90cee943c6c64c2d9f1b231285}\label{classmanagers_1_1_enemy_manager_a24695d90cee943c6c64c2d9f1b231285}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!add\+Enemy@{add\+Enemy}}
+\index{add\+Enemy@{add\+Enemy}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{add\+Enemy()}{addEnemy()}}
+{\footnotesize\ttfamily void add\+Enemy (\begin{DoxyParamCaption}\item[{int}]{enemytype }\end{DoxyParamCaption})}
+
+
+
+aggiunta nemico all\textquotesingle{}array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemytype} & tipologia del nemico da aggiungere \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 334 of file Enemy\+Manager.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a24695d90cee943c6c64c2d9f1b231285_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a72fe1ffca978e99fd16994a10e7f8051}\label{classmanagers_1_1_enemy_manager_a72fe1ffca978e99fd16994a10e7f8051}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!draw@{draw}}
+\index{draw@{draw}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+per ogni nemico controllo se vivo, se vivo disegno del nemico e della barra della vita 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & parte grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 388 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a72fe1ffca978e99fd16994a10e7f8051_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classmanagers_1_1_enemy_manager_a72fe1ffca978e99fd16994a10e7f8051_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a7ebdd9acefa4682b23b1ad2c0be558f4}\label{classmanagers_1_1_enemy_manager_a7ebdd9acefa4682b23b1ad2c0be558f4}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!draw\+Enemy@{draw\+Enemy}}
+\index{draw\+Enemy@{draw\+Enemy}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{draw\+Enemy()}{drawEnemy()}}
+{\footnotesize\ttfamily void draw\+Enemy (\begin{DoxyParamCaption}\item[{\hyperlink{classenemies_1_1_enemy}{Enemy}}]{e,  }\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+in base alla tipologia di nemico disegno con il suo index di animazione 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & nemico da disegnare \\
+\hline
+{\em g} & parte grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 405 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classmanagers_1_1_enemy_manager_a7ebdd9acefa4682b23b1ad2c0be558f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a7ebdd9acefa4682b23b1ad2c0be558f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a9c98cd29298e5f583c52dc46a6d70d46}\label{classmanagers_1_1_enemy_manager_a9c98cd29298e5f583c52dc46a6d70d46}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!draw\+Hp\+Bar@{draw\+Hp\+Bar}}
+\index{draw\+Hp\+Bar@{draw\+Hp\+Bar}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{draw\+Hp\+Bar()}{drawHpBar()}}
+{\footnotesize\ttfamily void draw\+Hp\+Bar (\begin{DoxyParamCaption}\item[{\hyperlink{classenemies_1_1_enemy}{Enemy}}]{e,  }\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegno rosso della barra della vita di un nemico 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & nemico a cui disegnare la barra della vita \\
+\hline
+{\em g} & parte grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 472 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a9c98cd29298e5f583c52dc46a6d70d46_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a9c98cd29298e5f583c52dc46a6d70d46_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a01056d4d58ff52ab419ad8924922132d}\label{classmanagers_1_1_enemy_manager_a01056d4d58ff52ab419ad8924922132d}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!fix\+Tile@{fix\+Tile}}
+\index{fix\+Tile@{fix\+Tile}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{fix\+Tile()}{fixTile()}}
+{\footnotesize\ttfamily void fix\+Tile (\begin{DoxyParamCaption}\item[{\hyperlink{classenemies_1_1_enemy}{Enemy}}]{e,  }\item[{int}]{dir,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+prendendo la posizione di un nemico si prende in considerazione il suo angolo in alto a sinistra per controllare i tile successivi 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & nemico a cui verrà presa la posizione top-\/left della texture \\
+\hline
+{\em x} & tile in cui si trova il nemico nell\textquotesingle{}asse x \\
+\hline
+{\em y} & tile in cui si trova il nemico nell\textquotesingle{}asse y \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 275 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classmanagers_1_1_enemy_manager_a01056d4d58ff52ab419ad8924922132d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a01056d4d58ff52ab419ad8924922132d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_aaa1e04fb149c24d658ce085e7ea30c74}\label{classmanagers_1_1_enemy_manager_aaa1e04fb149c24d658ce085e7ea30c74}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!get\+Enemies@{get\+Enemies}}
+\index{get\+Enemies@{get\+Enemies}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{get\+Enemies()}{getEnemies()}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{classenemies_1_1_enemy}{Enemy}$>$ get\+Enemies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorno dell\textquotesingle{}array contenente tutti i nemici 
+
+\begin{DoxyReturn}{Returns}
+array con tutti i nemici 
+\end{DoxyReturn}
+
+
+Definition at line 354 of file Enemy\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_aaa1e04fb149c24d658ce085e7ea30c74_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_ad8dae58d52717b5f26d7dc654d1c1361}\label{classmanagers_1_1_enemy_manager_ad8dae58d52717b5f26d7dc654d1c1361}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!get\+Enemy\+Remaning@{get\+Enemy\+Remaning}}
+\index{get\+Enemy\+Remaning@{get\+Enemy\+Remaning}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{get\+Enemy\+Remaning()}{getEnemyRemaning()}}
+{\footnotesize\ttfamily int get\+Enemy\+Remaning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorno di quanti nemici sono rimasti 
+
+\begin{DoxyReturn}{Returns}
+nemici rimasti vivi 
+\end{DoxyReturn}
+
+
+Definition at line 521 of file Enemy\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_ac01087314c8b4df0d2304a3596493393}\label{classmanagers_1_1_enemy_manager_ac01087314c8b4df0d2304a3596493393}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!get\+New\+Bar\+Width@{get\+New\+Bar\+Width}}
+\index{get\+New\+Bar\+Width@{get\+New\+Bar\+Width}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{get\+New\+Bar\+Width()}{getNewBarWidth()}}
+{\footnotesize\ttfamily int get\+New\+Bar\+Width (\begin{DoxyParamCaption}\item[{\hyperlink{classenemies_1_1_enemy}{Enemy}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+calcolo grandezza della barra della vita in base alla vita posseduta dal nemico 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & nemico a cui calcolare la grandezza della barra\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+larghezza barra 
+\end{DoxyReturn}
+
+
+Definition at line 486 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classmanagers_1_1_enemy_manager_ac01087314c8b4df0d2304a3596493393_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_ac01087314c8b4df0d2304a3596493393_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a263c83da9aebeac50b60770fb847f331}\label{classmanagers_1_1_enemy_manager_a263c83da9aebeac50b60770fb847f331}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!get\+Speed\+Height@{get\+Speed\+Height}}
+\index{get\+Speed\+Height@{get\+Speed\+Height}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{get\+Speed\+Height()}{getSpeedHeight()}}
+{\footnotesize\ttfamily float get\+Speed\+Height (\begin{DoxyParamCaption}\item[{int}]{dir,  }\item[{int}]{enemytype }\end{DoxyParamCaption})}
+
+
+
+alla direzione del nemico si applica lo spostamento sull\textquotesingle{}asse y in base alla velocità 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & direzione del nemico se sull\textquotesingle{}asse y \\
+\hline
+{\em enemytype} & tipo di nemico a cui andremo si andrà a vedere la velocità\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pixel da aggiungere alla posizione 
+\end{DoxyReturn}
+
+
+Definition at line 318 of file Enemy\+Manager.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a263c83da9aebeac50b60770fb847f331_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_ae622455c9dd19d2583b9a8840b1b35de}\label{classmanagers_1_1_enemy_manager_ae622455c9dd19d2583b9a8840b1b35de}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!get\+Speed\+Width@{get\+Speed\+Width}}
+\index{get\+Speed\+Width@{get\+Speed\+Width}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{get\+Speed\+Width()}{getSpeedWidth()}}
+{\footnotesize\ttfamily float get\+Speed\+Width (\begin{DoxyParamCaption}\item[{int}]{dir,  }\item[{int}]{enemytype }\end{DoxyParamCaption})}
+
+
+
+alla direzione del nemico si applica lo spostamento sull\textquotesingle{}asse X in base alla velocità 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & direzione del nemico se sull\textquotesingle{}asse x \\
+\hline
+{\em enemytype} & tipo di nemico a cui andremo si andrà a vedere la velocità\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pixel da aggiungere alla posizione 
+\end{DoxyReturn}
+
+
+Definition at line 300 of file Enemy\+Manager.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_ae622455c9dd19d2583b9a8840b1b35de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_ac689e72523c8460ac3160526d310b1b7}\label{classmanagers_1_1_enemy_manager_ac689e72523c8460ac3160526d310b1b7}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!get\+Tile\+Type@{get\+Tile\+Type}}
+\index{get\+Tile\+Type@{get\+Tile\+Type}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{get\+Tile\+Type()}{getTileType()}}
+{\footnotesize\ttfamily int get\+Tile\+Type (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+richiesta della tipologia di tile presente nel punto indicato 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata x del tile che vogliamo guardare \\
+\hline
+{\em y} & coordinata y del tile che vogliamo guardare \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 194 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classmanagers_1_1_enemy_manager_ac689e72523c8460ac3160526d310b1b7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_ac689e72523c8460ac3160526d310b1b7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_afec98871c0e021759b9d0afc8b690a18}\label{classmanagers_1_1_enemy_manager_afec98871c0e021759b9d0afc8b690a18}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!is\+End@{is\+End}}
+\index{is\+End@{is\+End}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{is\+End()}{isEnd()}}
+{\footnotesize\ttfamily boolean is\+End (\begin{DoxyParamCaption}\item[{\hyperlink{classenemies_1_1_enemy}{Enemy}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+controllo se il nemico si trova alla fine del percorso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & nemico a cui verrà controllata la posizione\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+se il nemico si trova alla fine 
+\end{DoxyReturn}
+
+
+Definition at line 215 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classmanagers_1_1_enemy_manager_afec98871c0e021759b9d0afc8b690a18_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_afec98871c0e021759b9d0afc8b690a18_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a774aefe7ec0626eb37d65a2335eade3b}\label{classmanagers_1_1_enemy_manager_a774aefe7ec0626eb37d65a2335eade3b}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!load\+Enemy\+Imgs@{load\+Enemy\+Imgs}}
+\index{load\+Enemy\+Imgs@{load\+Enemy\+Imgs}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{load\+Enemy\+Imgs()}{loadEnemyImgs()}}
+{\footnotesize\ttfamily void load\+Enemy\+Imgs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+assegnegnazioni delle immagini dei nemici con animazioni, diverse per ogni livello 
+
+
+
+Definition at line 95 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classmanagers_1_1_enemy_manager_a774aefe7ec0626eb37d65a2335eade3b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classmanagers_1_1_enemy_manager_a774aefe7ec0626eb37d65a2335eade3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a839e4729819875981f138997b2d3f438}\label{classmanagers_1_1_enemy_manager_a839e4729819875981f138997b2d3f438}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!set\+Direction@{set\+Direction}}
+\index{set\+Direction@{set\+Direction}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{set\+Direction()}{setDirection()}}
+{\footnotesize\ttfamily void set\+Direction (\begin{DoxyParamCaption}\item[{\hyperlink{classenemies_1_1_enemy}{Enemy}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+controllo è pissibile procedere nella direzione in cui il nemico stava andando altrimenti prova strade diverse in senso orario 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & nemico a cui verrà controllata la strada che lo precede \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 231 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a839e4729819875981f138997b2d3f438_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a839e4729819875981f138997b2d3f438_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_aa38fcad82cf2cd5ac5531d8c2004fdda}\label{classmanagers_1_1_enemy_manager_aa38fcad82cf2cd5ac5531d8c2004fdda}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!set\+Start\+End@{set\+Start\+End}}
+\index{set\+Start\+End@{set\+Start\+End}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{set\+Start\+End()}{setStartEnd()}}
+{\footnotesize\ttfamily void set\+Start\+End (\begin{DoxyParamCaption}\item[{int}]{sx,  }\item[{int}]{sy,  }\item[{int}]{ex,  }\item[{int}]{ey }\end{DoxyParamCaption})}
+
+
+
+reimpostare le coordinate del punto di inizio e di fine del percorso 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sx} & coordinata x dell\textquotesingle{}inizio \\
+\hline
+{\em sy} & coordinata y dell\textquotesingle{}inizio \\
+\hline
+{\em ex} & coordinata x della fine \\
+\hline
+{\em ey} & coordinata y della fine \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file Enemy\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a3714d243133c700dca12625cccf518aa}\label{classmanagers_1_1_enemy_manager_a3714d243133c700dca12625cccf518aa}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!spawn\+Enemy@{spawn\+Enemy}}
+\index{spawn\+Enemy@{spawn\+Enemy}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{spawn\+Enemy()}{spawnEnemy()}}
+{\footnotesize\ttfamily void spawn\+Enemy (\begin{DoxyParamCaption}\item[{int}]{next }\end{DoxyParamCaption})}
+
+
+
+richiamo metodo per aggiunta passando la tipologia del nemico 
+
+
+\begin{DoxyParams}{Parameters}
+{\em next} & prossimo dell\textquotesingle{}ondata che dovrà essere generato \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 344 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classmanagers_1_1_enemy_manager_a3714d243133c700dca12625cccf518aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a3714d243133c700dca12625cccf518aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_ac5c54df7ed3b930268c8d7752c101725}\label{classmanagers_1_1_enemy_manager_ac5c54df7ed3b930268c8d7752c101725}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!update@{update}}
+\index{update@{update}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+per ogni nemico controllo se vivo e lo muove 
+
+
+
+Definition at line 144 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_ac5c54df7ed3b930268c8d7752c101725_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classmanagers_1_1_enemy_manager_ac5c54df7ed3b930268c8d7752c101725_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a5c2bac0f4b9a3ef4e30f60d4b0c3b951}\label{classmanagers_1_1_enemy_manager_a5c2bac0f4b9a3ef4e30f60d4b0c3b951}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!update\+Animation\+Tick@{update\+Animation\+Tick}}
+\index{update\+Animation\+Tick@{update\+Animation\+Tick}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{update\+Animation\+Tick()}{updateAnimationTick()}}
+{\footnotesize\ttfamily void update\+Animation\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+aggiornamento indici per l\textquotesingle{}animazione dei nemici 
+
+
+
+Definition at line 493 of file Enemy\+Manager.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a5c2bac0f4b9a3ef4e30f60d4b0c3b951_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a8f172cfa5ade4d4f0a6b89cc6bfc4d12}\label{classmanagers_1_1_enemy_manager_a8f172cfa5ade4d4f0a6b89cc6bfc4d12}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!update\+Enemy\+Move@{update\+Enemy\+Move}}
+\index{update\+Enemy\+Move@{update\+Enemy\+Move}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{update\+Enemy\+Move()}{updateEnemyMove()}}
+{\footnotesize\ttfamily void update\+Enemy\+Move (\begin{DoxyParamCaption}\item[{\hyperlink{classenemies_1_1_enemy}{Enemy}}]{e }\end{DoxyParamCaption})}
+
+
+
+aggiornamento della posizione di un nemico 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & nemico a cui verrà aggioranta la posizione \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 159 of file Enemy\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a8f172cfa5ade4d4f0a6b89cc6bfc4d12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_enemy_manager_a8f172cfa5ade4d4f0a6b89cc6bfc4d12_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a04d62de5f8367e549268b6c5540e1e97}\label{classmanagers_1_1_enemy_manager_a04d62de5f8367e549268b6c5540e1e97}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!ani\+Tick@{ani\+Tick}}
+\index{ani\+Tick@{ani\+Tick}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{ani\+Tick}{aniTick}}
+{\footnotesize\ttfamily int ani\+Tick\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 48 of file Enemy\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_abb3ec53dfa3d7170202a47e10d3488cf}\label{classmanagers_1_1_enemy_manager_abb3ec53dfa3d7170202a47e10d3488cf}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!enemies@{enemies}}
+\index{enemies@{enemies}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{enemies}{enemies}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{classenemies_1_1_enemy}{Enemy}$>$ enemies = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 45 of file Enemy\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a9de203ec47003324b7c89753f1e73085}\label{classmanagers_1_1_enemy_manager_a9de203ec47003324b7c89753f1e73085}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!enemy\+Imgs@{enemy\+Imgs}}
+\index{enemy\+Imgs@{enemy\+Imgs}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{enemy\+Imgs}{enemyImgs}}
+{\footnotesize\ttfamily Buffered\+Image \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} enemy\+Imgs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Enemy\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}\label{classmanagers_1_1_enemy_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!game@{game}}
+\index{game@{game}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_game}{Game} game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 36 of file Enemy\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_af1fa29fbf67dd56219be7fad4d77e342}\label{classmanagers_1_1_enemy_manager_af1fa29fbf67dd56219be7fad4d77e342}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!hp\+Bar\+Width@{hp\+Bar\+Width}}
+\index{hp\+Bar\+Width@{hp\+Bar\+Width}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{hp\+Bar\+Width}{hpBarWidth}}
+{\footnotesize\ttfamily int hp\+Bar\+Width = \hyperlink{classobjects_1_1_tile_afbef0b8f1824dfedcb984b1547cc0dde}{Tile.\+sprite\+Width} / 2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 54 of file Enemy\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a85da7669cabd63b0459f1335886dbf2e}\label{classmanagers_1_1_enemy_manager_a85da7669cabd63b0459f1335886dbf2e}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!startX@{startX}}
+\index{startX@{startX}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{startX}{startX}}
+{\footnotesize\ttfamily int startX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 51 of file Enemy\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_enemy_manager_a91ac952876f776b3fbbc8519e093fdbf}\label{classmanagers_1_1_enemy_manager_a91ac952876f776b3fbbc8519e093fdbf}} 
+\index{managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}!state@{state}}
+\index{state@{state}!managers\+::\+Enemy\+Manager@{managers\+::\+Enemy\+Manager}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily String state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 39 of file Enemy\+Manager.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/managers/\hyperlink{_enemy_manager_8java}{Enemy\+Manager.\+java}\end{DoxyCompactItemize}

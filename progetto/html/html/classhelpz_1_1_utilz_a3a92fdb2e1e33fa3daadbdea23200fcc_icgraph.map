@@ -1,0 +1,12 @@
+<map id="twoDToOneDInt" name="twoDToOneDInt">
+<area shape="rect" id="node2" href="$classhelpz_1_1_load_save.html#ae7a60134f1712407689bfe3c45bc04a1" title="helpz.LoadSave.saveLevel" alt="" coords="171,56,343,83"/>
+<area shape="rect" id="node11" href="$classhelpz_1_1_load_save.html#a1369888f20d8279b649d556082d38e72" title="helpz.LoadSave.unlockLevel" alt="" coords="165,107,349,133"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_editing.html#af1c1bf274cd89c18726a992a073a7c6d" title="salva il livello. " alt="" coords="398,5,565,32"/>
+<area shape="rect" id="node7" href="$classui_1_1_level_menu.html#a90a96ba9679b7df9cc591d4c58430615" title="rende giocabile un livello in basse allo state dal quale viene richiamato. " alt="" coords="397,56,565,83"/>
+<area shape="rect" id="node4" href="$classui_1_1_tool_bar.html#af1c1bf274cd89c18726a992a073a7c6d" title="salva la mappa modificata. " alt="" coords="632,5,771,32"/>
+<area shape="rect" id="node5" href="$classui_1_1_tool_bar.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse " alt="" coords="837,5,1004,32"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_editing.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse " alt="" coords="1052,5,1247,32"/>
+<area shape="rect" id="node8" href="$classprogetto_1_1_game.html#a3e57c234c3dde4539f8b9c47d75e59ae" title="inizializza gli oggetti presenti nel progetto. " alt="" coords="613,81,789,108"/>
+<area shape="rect" id="node9" href="$classprogetto_1_1_game.html#a98d87ba6bde3f389e92664a2ef9bfcb1" title="costruttore inizializza tutte le classi ed alcune info riguardo la visualizzazione della schermata..." alt="" coords="847,81,994,108"/>
+<area shape="rect" id="node10" href="$classprogetto_1_1_game.html#a8b260eecbaabcef8473fd87ada040682" title="inizializza la classe, il game screen e starta il gioco. " alt="" coords="1079,81,1219,108"/>
+</map>

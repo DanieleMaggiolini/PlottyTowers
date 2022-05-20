@@ -1,0 +1,10 @@
+<map id="addCoin" name="addCoin">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a7ca93fcd8c7440e7b3f64c595a5be28c" title="aggiornamento dei soldi. " alt="" coords="123,5,296,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="132,56,287,83"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a7ca93fcd8c7440e7b3f64c595a5be28c" title="aggiornamento dei soldi. " alt="" coords="123,107,296,133"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="132,157,287,184"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#a7ca93fcd8c7440e7b3f64c595a5be28c" title="aggiornamento dei soldi. " alt="" coords="123,208,296,235"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level3.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="132,259,287,285"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level4.html#a7ca93fcd8c7440e7b3f64c595a5be28c" title="aggiornamento dei soldi. " alt="" coords="123,309,296,336"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level4.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="132,360,287,387"/>
+</map>

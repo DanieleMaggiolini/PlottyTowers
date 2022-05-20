@@ -3,15 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/scenes/Setting.java</file>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/scenes/Menu.java</file>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/progetto/Game.java</file>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/ui/LevelMenu.java</file>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/ui/Bar.java</file>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/helpz/LoadSave.java</file>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/scenes/Level1.java</file>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/ui/ActionBar.java</file>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/towers/Tower.java</file>
+            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/ui/PauseOverlay.java</file>
+            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/ui/PauseButton.java</file>
             <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/ui/MyButton.java</file>
         </group>
     </open-files>

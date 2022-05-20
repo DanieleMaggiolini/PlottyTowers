@@ -1,0 +1,7 @@
+<map id="isOutBounds" name="isOutBounds">
+<area shape="rect" id="node2" href="$classmanagers_1_1_projectile_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="per ogni proiettile controllo se attivo, lo muove e controllo se ha colpito qualche nemico ..." alt="" coords="151,81,212,108"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#ac83c203b559f6fd0bb225744d7ccf854" title="aggiornamento dei proiettili. " alt="" coords="260,5,431,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#ac83c203b559f6fd0bb225744d7ccf854" title="aggiornamento dei proiettili. " alt="" coords="260,56,431,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level3.html#ac83c203b559f6fd0bb225744d7ccf854" title="aggiornamento dei proiettili. " alt="" coords="260,107,431,133"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level4.html#ac83c203b559f6fd0bb225744d7ccf854" title="aggiornamento dei proiettili. " alt="" coords="260,157,431,184"/>
+</map>

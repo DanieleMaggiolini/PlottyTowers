@@ -1,0 +1,6 @@
+<map id="TileManager" name="TileManager">
+<area shape="rect" id="node2" href="$classmanagers_1_1_tile_manager.html#afc6b9f4a25216ec36baa6e7518a7501a" title="caricamento immagine " alt="" coords="150,5,226,32"/>
+<area shape="rect" id="node4" href="$classmanagers_1_1_tile_manager.html#abb7fa074b36e6e355db16761115fb367" title="crazione di un tile per ogni subimage e assegnazione della tipologia del tile " alt="" coords="145,56,231,83"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_load_save.html#adfcdec0c763af178ffbfea94f4ccd263" title="carica immagine " alt="" coords="279,5,449,32"/>
+<area shape="rect" id="node5" href="$classmanagers_1_1_tile_manager.html#a46ebd32c7ec4ac506010fe465687bdd7" title="ritorno di un&#39;immagine passando un id " alt="" coords="327,56,401,83"/>
+</map>

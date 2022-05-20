@@ -1,0 +1,561 @@
+\hypertarget{classui_1_1_pause_overlay}{}\section{Pause\+Overlay Class Reference}
+\label{classui_1_1_pause_overlay}\index{Pause\+Overlay@{Pause\+Overlay}}
+
+
+gestisce l\textquotesingle{}overlay di gioco in pausa  
+
+
+
+
+Collaboration diagram for Pause\+Overlay\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_pause_overlay__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classui_1_1_pause_overlay_a0e32a19d0569e8e64462db08f47ec52f}{Pause\+Overlay} (\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classui_1_1_pause_overlay_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}, String \hyperlink{classui_1_1_pause_overlay_a91ac952876f776b3fbbc8519e093fdbf}{state})
+\begin{DoxyCompactList}\small\item\em costruttore del bottone. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_pause_overlay_ac5c54df7ed3b930268c8d7752c101725}{update} ()
+\begin{DoxyCompactList}\small\item\em aggiorna il bottone dell\textquotesingle{}audio. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_pause_overlay_a72fe1ffca978e99fd16994a10e7f8051}{draw} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna sofndo e bottoni. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_pause_overlay_a2ca251710b65639ec80bc141edde60aa}{mouse\+Moved} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i vari movimenti del mouse \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_pause_overlay_aed82e1ce3dd3cf283d508c3ba3be70ef}{mouse\+Pressed} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i vari press del mouse \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_pause_overlay_a87a07291794e15052db67f945d90853e}{mouse\+Released} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i vari release del mouse \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_pause_overlay_adbfc0588c017133c9b7070474402b72f}{mouse\+Dragged} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i vari drag del mouse \end{DoxyCompactList}\item 
+boolean \hyperlink{classui_1_1_pause_overlay_a1652ba7734cc8d8ba710d3ab10281b04}{is\+In} (Mouse\+Event e, \hyperlink{classui_1_1_pause_button}{Pause\+Button} b)
+\begin{DoxyCompactList}\small\item\em verifica se il mouse è all\textquotesingle{}interno del bottone \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_pause_overlay_a4506144774b5a18385cf2eb0f4ff5e42}{reset\+Bools} ()
+\begin{DoxyCompactList}\small\item\em resetta le variabili booleane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classui_1_1_pause_overlay_ab9e42b0ec1e9c9ffdf1edd5dec1b0ddd}{load\+Background} ()
+\begin{DoxyCompactList}\small\item\em carica lo sfondo. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_pause_overlay_a7f98f78449c3156b81769d481bf99f3c}{init\+Sound\+Buttons} ()
+\begin{DoxyCompactList}\small\item\em inizializza i bottoni. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Buffered\+Image \hyperlink{classui_1_1_pause_overlay_a714354485419fb2b615f17fcce85657e}{background}
+\item 
+int \hyperlink{classui_1_1_pause_overlay_ad0da7bd85c0de36e566b34e77130b963}{bgX}
+\item 
+int \hyperlink{classui_1_1_pause_overlay_a74c70095eb1e52df9026427e3cd9eb51}{bgY}
+\item 
+int \hyperlink{classui_1_1_pause_overlay_a17417a7ee75933f11813cf521afcbb83}{bgW}
+\item 
+int \hyperlink{classui_1_1_pause_overlay_ae7adc5e3b95d5351ce811cb737e87643}{bgH}
+\item 
+\hyperlink{classui_1_1_sound_button}{Sound\+Button} \hyperlink{classui_1_1_pause_overlay_a51eb690d73e3d030b601347960869eee}{music}
+\item 
+\hyperlink{classui_1_1_sound_button}{Sound\+Button} \hyperlink{classui_1_1_pause_overlay_add0afaaaa9514183e3d9a30657189f25}{mute}
+\item 
+\hyperlink{classui_1_1_ush_button}{Ush\+Button} \hyperlink{classui_1_1_pause_overlay_adf4b295ca065e549d8c0d4d409309b78}{unplay}
+\item 
+\hyperlink{classui_1_1_ush_button}{Ush\+Button} \hyperlink{classui_1_1_pause_overlay_ac1d34384911014e49613ccfb1abddbcc}{restart}
+\item 
+\hyperlink{classui_1_1_ush_button}{Ush\+Button} \hyperlink{classui_1_1_pause_overlay_ad61cb0033da8c6cb2637bf126bf9b17e}{home}
+\item 
+int \hyperlink{classui_1_1_pause_overlay_aa672c7263d0ea6f8e7440cd255731792}{buttonW}
+\item 
+int \hyperlink{classui_1_1_pause_overlay_ad479f88a73d5ad31bab94bb8db7ea2c2}{buttonH}
+\item 
+\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classui_1_1_pause_overlay_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}
+\item 
+String \hyperlink{classui_1_1_pause_overlay_a91ac952876f776b3fbbc8519e093fdbf}{state}
+\item 
+\hyperlink{classprogetto_1_1_sound}{Sound} \hyperlink{classui_1_1_pause_overlay_a76e9e53c877d84187e0efb78f03c86d4}{s}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+gestisce l\textquotesingle{}overlay di gioco in pausa 
+
+Definition at line 29 of file Pause\+Overlay.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a0e32a19d0569e8e64462db08f47ec52f}\label{classui_1_1_pause_overlay_a0e32a19d0569e8e64462db08f47ec52f}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!Pause\+Overlay@{Pause\+Overlay}}
+\index{Pause\+Overlay@{Pause\+Overlay}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{Pause\+Overlay()}{PauseOverlay()}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_pause_overlay}{Pause\+Overlay} (\begin{DoxyParamCaption}\item[{\hyperlink{classprogetto_1_1_game}{Game}}]{game,  }\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+costruttore del bottone. 
+
+setta le variabili
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & oggetto del game \\
+\hline
+{\em state} & stato dal quale viene invocata la pause\+Overlay \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 84 of file Pause\+Overlay.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_pause_overlay_a0e32a19d0569e8e64462db08f47ec52f_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a72fe1ffca978e99fd16994a10e7f8051}\label{classui_1_1_pause_overlay_a72fe1ffca978e99fd16994a10e7f8051}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!draw@{draw}}
+\index{draw@{draw}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna sofndo e bottoni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 148 of file Pause\+Overlay.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classui_1_1_pause_overlay_a72fe1ffca978e99fd16994a10e7f8051_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classui_1_1_pause_overlay_a72fe1ffca978e99fd16994a10e7f8051_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a7f98f78449c3156b81769d481bf99f3c}\label{classui_1_1_pause_overlay_a7f98f78449c3156b81769d481bf99f3c}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!init\+Sound\+Buttons@{init\+Sound\+Buttons}}
+\index{init\+Sound\+Buttons@{init\+Sound\+Buttons}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{init\+Sound\+Buttons()}{initSoundButtons()}}
+{\footnotesize\ttfamily void init\+Sound\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+inizializza i bottoni. 
+
+
+
+Definition at line 112 of file Pause\+Overlay.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classui_1_1_pause_overlay_a7f98f78449c3156b81769d481bf99f3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a1652ba7734cc8d8ba710d3ab10281b04}\label{classui_1_1_pause_overlay_a1652ba7734cc8d8ba710d3ab10281b04}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!is\+In@{is\+In}}
+\index{is\+In@{is\+In}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{is\+In()}{isIn()}}
+{\footnotesize\ttfamily boolean is\+In (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e,  }\item[{\hyperlink{classui_1_1_pause_button}{Pause\+Button}}]{b }\end{DoxyParamCaption})}
+
+
+
+verifica se il mouse è all\textquotesingle{}interno del bottone 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+{\em b} & bottone della pausa\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+booleana (true = è dentro), (false = è fuori) 
+\end{DoxyReturn}
+
+
+Definition at line 240 of file Pause\+Overlay.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{classui_1_1_pause_overlay_a1652ba7734cc8d8ba710d3ab10281b04_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_pause_overlay_a1652ba7734cc8d8ba710d3ab10281b04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_pause_overlay_ab9e42b0ec1e9c9ffdf1edd5dec1b0ddd}\label{classui_1_1_pause_overlay_ab9e42b0ec1e9c9ffdf1edd5dec1b0ddd}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!load\+Background@{load\+Background}}
+\index{load\+Background@{load\+Background}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{load\+Background()}{loadBackground()}}
+{\footnotesize\ttfamily void load\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+carica lo sfondo. 
+
+
+
+Definition at line 100 of file Pause\+Overlay.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classui_1_1_pause_overlay_ab9e42b0ec1e9c9ffdf1edd5dec1b0ddd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classui_1_1_pause_overlay_ab9e42b0ec1e9c9ffdf1edd5dec1b0ddd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_pause_overlay_adbfc0588c017133c9b7070474402b72f}\label{classui_1_1_pause_overlay_adbfc0588c017133c9b7070474402b72f}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!mouse\+Dragged@{mouse\+Dragged}}
+\index{mouse\+Dragged@{mouse\+Dragged}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{mouse\+Dragged()}{mouseDragged()}}
+{\footnotesize\ttfamily void mouse\+Dragged (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i vari drag del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 228 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a2ca251710b65639ec80bc141edde60aa}\label{classui_1_1_pause_overlay_a2ca251710b65639ec80bc141edde60aa}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!mouse\+Moved@{mouse\+Moved}}
+\index{mouse\+Moved@{mouse\+Moved}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{mouse\+Moved()}{mouseMoved()}}
+{\footnotesize\ttfamily void mouse\+Moved (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i vari movimenti del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 162 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_aed82e1ce3dd3cf283d508c3ba3be70ef}\label{classui_1_1_pause_overlay_aed82e1ce3dd3cf283d508c3ba3be70ef}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!mouse\+Pressed@{mouse\+Pressed}}
+\index{mouse\+Pressed@{mouse\+Pressed}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{mouse\+Pressed()}{mousePressed()}}
+{\footnotesize\ttfamily void mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i vari press del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 171 of file Pause\+Overlay.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_pause_overlay_aed82e1ce3dd3cf283d508c3ba3be70ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classui_1_1_pause_overlay_aed82e1ce3dd3cf283d508c3ba3be70ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a87a07291794e15052db67f945d90853e}\label{classui_1_1_pause_overlay_a87a07291794e15052db67f945d90853e}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!mouse\+Released@{mouse\+Released}}
+\index{mouse\+Released@{mouse\+Released}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{mouse\+Released()}{mouseReleased()}}
+{\footnotesize\ttfamily void mouse\+Released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i vari release del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 190 of file Pause\+Overlay.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_pause_overlay_a87a07291794e15052db67f945d90853e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_pause_overlay_a87a07291794e15052db67f945d90853e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a4506144774b5a18385cf2eb0f4ff5e42}\label{classui_1_1_pause_overlay_a4506144774b5a18385cf2eb0f4ff5e42}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!reset\+Bools@{reset\+Bools}}
+\index{reset\+Bools@{reset\+Bools}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{reset\+Bools()}{resetBools()}}
+{\footnotesize\ttfamily void reset\+Bools (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+resetta le variabili booleane. 
+
+
+
+Definition at line 248 of file Pause\+Overlay.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classui_1_1_pause_overlay_a4506144774b5a18385cf2eb0f4ff5e42_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_pause_overlay_a4506144774b5a18385cf2eb0f4ff5e42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_pause_overlay_ac5c54df7ed3b930268c8d7752c101725}\label{classui_1_1_pause_overlay_ac5c54df7ed3b930268c8d7752c101725}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!update@{update}}
+\index{update@{update}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+aggiorna il bottone dell\textquotesingle{}audio. 
+
+
+
+Definition at line 139 of file Pause\+Overlay.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classui_1_1_pause_overlay_ac5c54df7ed3b930268c8d7752c101725_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classui_1_1_pause_overlay_ac5c54df7ed3b930268c8d7752c101725_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a714354485419fb2b615f17fcce85657e}\label{classui_1_1_pause_overlay_a714354485419fb2b615f17fcce85657e}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!background@{background}}
+\index{background@{background}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily Buffered\+Image background\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_ae7adc5e3b95d5351ce811cb737e87643}\label{classui_1_1_pause_overlay_ae7adc5e3b95d5351ce811cb737e87643}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!bgH@{bgH}}
+\index{bgH@{bgH}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{bgH}{bgH}}
+{\footnotesize\ttfamily int bgH\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 44 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a17417a7ee75933f11813cf521afcbb83}\label{classui_1_1_pause_overlay_a17417a7ee75933f11813cf521afcbb83}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!bgW@{bgW}}
+\index{bgW@{bgW}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{bgW}{bgW}}
+{\footnotesize\ttfamily int bgW\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 41 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_ad0da7bd85c0de36e566b34e77130b963}\label{classui_1_1_pause_overlay_ad0da7bd85c0de36e566b34e77130b963}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!bgX@{bgX}}
+\index{bgX@{bgX}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{bgX}{bgX}}
+{\footnotesize\ttfamily int bgX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 35 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a74c70095eb1e52df9026427e3cd9eb51}\label{classui_1_1_pause_overlay_a74c70095eb1e52df9026427e3cd9eb51}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!bgY@{bgY}}
+\index{bgY@{bgY}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{bgY}{bgY}}
+{\footnotesize\ttfamily int bgY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 38 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_ad479f88a73d5ad31bab94bb8db7ea2c2}\label{classui_1_1_pause_overlay_ad479f88a73d5ad31bab94bb8db7ea2c2}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!buttonH@{buttonH}}
+\index{buttonH@{buttonH}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{buttonH}{buttonH}}
+{\footnotesize\ttfamily int buttonH\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 65 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_aa672c7263d0ea6f8e7440cd255731792}\label{classui_1_1_pause_overlay_aa672c7263d0ea6f8e7440cd255731792}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!buttonW@{buttonW}}
+\index{buttonW@{buttonW}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{buttonW}{buttonW}}
+{\footnotesize\ttfamily int buttonW\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 62 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_ac6a5ed6191fcf3a5bf0445921feb4f48}\label{classui_1_1_pause_overlay_ac6a5ed6191fcf3a5bf0445921feb4f48}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!game@{game}}
+\index{game@{game}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_game}{Game} game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 68 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_ad61cb0033da8c6cb2637bf126bf9b17e}\label{classui_1_1_pause_overlay_ad61cb0033da8c6cb2637bf126bf9b17e}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!home@{home}}
+\index{home@{home}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{home}{home}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_ush_button}{Ush\+Button} home\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 59 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a51eb690d73e3d030b601347960869eee}\label{classui_1_1_pause_overlay_a51eb690d73e3d030b601347960869eee}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!music@{music}}
+\index{music@{music}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{music}{music}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_sound_button}{Sound\+Button} music\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 47 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_add0afaaaa9514183e3d9a30657189f25}\label{classui_1_1_pause_overlay_add0afaaaa9514183e3d9a30657189f25}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!mute@{mute}}
+\index{mute@{mute}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{mute}{mute}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_sound_button}{Sound\+Button} mute\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 50 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_ac1d34384911014e49613ccfb1abddbcc}\label{classui_1_1_pause_overlay_ac1d34384911014e49613ccfb1abddbcc}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!restart@{restart}}
+\index{restart@{restart}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{restart}{restart}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_ush_button}{Ush\+Button} restart\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 56 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a76e9e53c877d84187e0efb78f03c86d4}\label{classui_1_1_pause_overlay_a76e9e53c877d84187e0efb78f03c86d4}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!s@{s}}
+\index{s@{s}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_sound}{Sound} s\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 74 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_a91ac952876f776b3fbbc8519e093fdbf}\label{classui_1_1_pause_overlay_a91ac952876f776b3fbbc8519e093fdbf}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!state@{state}}
+\index{state@{state}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily String state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 71 of file Pause\+Overlay.\+java.
+
+\mbox{\Hypertarget{classui_1_1_pause_overlay_adf4b295ca065e549d8c0d4d409309b78}\label{classui_1_1_pause_overlay_adf4b295ca065e549d8c0d4d409309b78}} 
+\index{ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}!unplay@{unplay}}
+\index{unplay@{unplay}!ui\+::\+Pause\+Overlay@{ui\+::\+Pause\+Overlay}}
+\subsubsection{\texorpdfstring{unplay}{unplay}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_ush_button}{Ush\+Button} unplay\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file Pause\+Overlay.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/ui/\hyperlink{_pause_overlay_8java}{Pause\+Overlay.\+java}\end{DoxyCompactItemize}

@@ -1,3 +1,12 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file Editing.java 
+* 
+* @brief gestisce la schermata del menu.
+*
+*/
 package scenes;
 
 import helpz.LoadSave;
@@ -17,18 +26,42 @@ import progetto.GameStates;
 import ui.MyButton;
 import static progetto.GameStates.*;
 
+/**
+ * @class Editing
+ *
+ * @brief gestice il menu: sfondo, bottoni.
+ *
+ */
 public class Menu extends GameScene implements SceneMethods {
-    //buffer contenente immagini
+    //immagine dello sfondo
     private BufferedImage background;
-    private MyButton Bplaying, Bquit;
+    
+    //bottone gioca
+    private MyButton Bplaying;
+    
+    //bottone esci
+    private MyButton Bquit;
+    
+    //font
     private Font f;
+    
+    //colore
     private Color c;
     
+    /**
+     @brief setta il game, inizializza i bottoni e importa le immagini
+     * 
+     * @param game oggetto del gioco
+     */
     public Menu(Game game) {
         super(game);  
         initButtons();
         importImg();      
     }
+    
+    /**
+     @brief inizializza i bottoni
+     */
     private void initButtons() {
 
         int w = Game.currentScreenWidth/5;   //1792/4;
@@ -40,14 +73,20 @@ public class Menu extends GameScene implements SceneMethods {
         c=new Color(255,255,255);
         Bplaying = new MyButton("GIOCA", x, y, w, h, f, c);
         Bquit = new MyButton("ESCI", x, y + yOffset, w, h, f, c);
-        
-        
     }
     
+    /**
+     @brief aggiorna
+     */
     public void updates(){
         
     }
     
+    /**
+     @brief disegna lo sfondo e i bottoni
+     * 
+     * @param g oggetto della grafica
+     */
     @Override
     public void render(Graphics g) {
 
@@ -56,17 +95,29 @@ public class Menu extends GameScene implements SceneMethods {
 
     }
 
+    /**
+     @brief disegna i bottoni
+     * 
+     * @param game oggetto del gioco
+     */
     private void drawButton(Graphics g) {
         Bplaying.draw(g);
         Bquit.draw(g);
     }
 
-    //metodo per importare il buffer delle immagini nella variabile is
+    /**
+     @brief importa l'immagine dello sfondo.
+     * 
+     */
     private void importImg() {
         background= LoadSave.getImage(LoadSave.BACKGROUND_MENU);
     }
 
-    
+    /**
+     @brief gestisce i click del mouse
+     * 
+     * @param e evento del mouse
+     */
     @Override
     public void mouseClicked(MouseEvent e) {
         if (Bplaying.getBounds().contains(e.getX(), e.getY())) {
@@ -76,6 +127,11 @@ public class Menu extends GameScene implements SceneMethods {
         }
     }
 
+    /**
+     @brief gestisce le move del mouse
+     * 
+     * @param e evento del mouse
+     */
     @Override
     public void mouseMoved(MouseEvent e) {
         if (Bplaying.getBounds().contains(e.getX(), e.getY())) {
@@ -89,6 +145,12 @@ public class Menu extends GameScene implements SceneMethods {
         }
         resetButtons();
     }
+    
+    /**
+     @brief gestisce le press del mouse
+     * 
+     * @param e evento del mouse
+     */
     @Override
     public void mousePressed(MouseEvent e) {
         if (Bplaying.getBounds().contains(e.getX(), e.getY())) {
@@ -98,15 +160,28 @@ public class Menu extends GameScene implements SceneMethods {
         }
     }
 
+    /**
+     @brief gestisce le release del mouse
+     * 
+     * @param e evento del mouse
+     */
     public void mouseReleased(MouseEvent e) {
         resetButtons();
     }
 
+    /**
+     @brief resetta i bottoni
+     */
     public void resetButtons() {
         Bplaying.resetBooleans();
         Bquit.resetBooleans();
     }
 
+    /**
+     @brief gestisce le drag del mouse
+     * 
+     * @param e evento del mouse
+     */
     @Override
     public void mouseDragged(MouseEvent e) {
         

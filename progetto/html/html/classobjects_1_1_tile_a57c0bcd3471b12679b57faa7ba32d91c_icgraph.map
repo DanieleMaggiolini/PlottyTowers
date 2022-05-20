@@ -1,0 +1,11 @@
+<map id="getSpriteWidth" name="getSpriteWidth">
+<area shape="rect" id="node2" href="$classscenes_1_1_editing.html#aa0f35d91a41dfb53af7bdd7d4a76916f" title="disegna tile selezionata. " alt="" coords="644,19,855,46"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_editing.html#afbbb0a60fd2d899ff81c1715fce5fc73" title="cambia la tile date le coordinate. " alt="" coords="168,44,343,71"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_editing.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le move del mouse " alt="" coords="161,95,349,122"/>
+<area shape="rect" id="node8" href="$classui_1_1_tool_bar.html#aa0f35d91a41dfb53af7bdd7d4a76916f" title="disegna la tile selezionata. " alt="" coords="164,146,347,172"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_editing.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la mappa. " alt="" coords="903,70,1051,96"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_editing.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse " alt="" coords="399,44,594,71"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_editing.html#adbfc0588c017133c9b7070474402b72f" title="gestisce le drag del mouse " alt="" coords="397,95,596,122"/>
+<area shape="rect" id="node9" href="$classui_1_1_tool_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="422,146,571,172"/>
+<area shape="rect" id="node10" href="$classui_1_1_tool_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni. " alt="" coords="694,95,805,122"/>
+</map>

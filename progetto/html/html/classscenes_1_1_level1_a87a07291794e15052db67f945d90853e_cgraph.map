@@ -1,0 +1,22 @@
+<map id="mouseReleased" name="mouseReleased">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a548cf4795e9d559d0c0cce0bb57a5251" title="resetta i bottoni " alt="" coords="227,5,323,32"/>
+<area shape="rect" id="node5" href="$classui_1_1_action_bar.html#a87a07291794e15052db67f945d90853e" title="gestisce le release del mouse. " alt="" coords="179,56,370,83"/>
+<area shape="rect" id="node6" href="$classui_1_1_pause_overlay.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse " alt="" coords="168,360,381,387"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#af47bcfe7d6d4ed3655e2c61583e1b5d7" title="resetta le variabili booleane. " alt="" coords="446,5,625,32"/>
+<area shape="rect" id="node4" href="$classui_1_1_my_button.html#a38b44562c6a3dd438f51365e248c7e57" title="ui.MyButton.allunga" alt="" coords="709,5,847,32"/>
+<area shape="rect" id="node7" href="$classui_1_1_pause_overlay.html#a1652ba7734cc8d8ba710d3ab10281b04" title="verifica se il mouse è all&#39;interno del bottone " alt="" coords="465,56,605,83"/>
+<area shape="rect" id="node9" href="$classui_1_1_sound_button.html#ad47389f2ab3067af3626db75a6b3b09e" title="getter della variabile per la verifica del mouse se ha premuto il bottone. " alt="" coords="429,107,641,133"/>
+<area shape="rect" id="node10" href="$classui_1_1_sound_button.html#a9dfe6f9f7337d35cf2e6624259b72134" title="setter della variabile per la verifica del mouse se ha premuto il bottone. " alt="" coords="451,157,620,184"/>
+<area shape="rect" id="node11" href="$classui_1_1_sound_button.html#ab67171d139f4fbb66413cb6c42e83945" title="getter della variabile muted. " alt="" coords="455,208,616,235"/>
+<area shape="rect" id="node12" href="$classui_1_1_ush_button.html#ad47389f2ab3067af3626db75a6b3b09e" title="getter della variabile per la verifica del mouse se ha premuto il bottone. " alt="" coords="436,259,635,285"/>
+<area shape="rect" id="node13" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="452,309,619,336"/>
+<area shape="rect" id="node14" href="$classscenes_1_1_level1.html#aeab1551e3e372c6402076c04ea9002bb" title="setter della booleana paused. " alt="" coords="493,360,577,387"/>
+<area shape="rect" id="node15" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="452,411,619,437"/>
+<area shape="rect" id="node16" href="$classscenes_1_1_level2.html#aeab1551e3e372c6402076c04ea9002bb" title="setter della booleana paused. " alt="" coords="450,461,621,488"/>
+<area shape="rect" id="node17" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="452,512,619,539"/>
+<area shape="rect" id="node18" href="$classscenes_1_1_level3.html#aeab1551e3e372c6402076c04ea9002bb" title="setter della booleana paused. " alt="" coords="450,563,621,589"/>
+<area shape="rect" id="node19" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="452,613,619,640"/>
+<area shape="rect" id="node20" href="$classscenes_1_1_level4.html#aeab1551e3e372c6402076c04ea9002bb" title="setter della booleana paused. " alt="" coords="450,664,621,691"/>
+<area shape="rect" id="node21" href="$classprogetto_1_1_game.html#a822df2119249080840a3149d454807d5" title="metodo che restarta il primo livello. " alt="" coords="446,715,625,741"/>
+<area shape="rect" id="node8" href="$classui_1_1_pause_button.html#a187945475e730bfa340a10f63224e91f" title="restituisce il bounds " alt="" coords="689,56,867,83"/>
+</map>

@@ -1,0 +1,526 @@
+\hypertarget{classui_1_1_tool_bar}{}\section{Tool\+Bar Class Reference}
+\label{classui_1_1_tool_bar}\index{Tool\+Bar@{Tool\+Bar}}
+
+
+gestice la barra per modificare le mappe dei vari livelli e salvarle.  
+
+
+
+
+Inheritance diagram for Tool\+Bar\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classui_1_1_tool_bar__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tool\+Bar\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classui_1_1_tool_bar_a43193f5c8a197b7b1ccfc248dec1db9b}{Tool\+Bar} (int \hyperlink{classui_1_1_bar_a6150e0515f7202e2fb518f7206ed97dc}{x}, int \hyperlink{classui_1_1_bar_a0a2f84ed7838f07779ae24c5a9086d33}{y}, int \hyperlink{classui_1_1_bar_a2474a5474cbff19523a51eb1de01cda4}{width}, int \hyperlink{classui_1_1_bar_ad12fc34ce789bce6c8a05d8a17138534}{height}, \hyperlink{classscenes_1_1_editing}{Editing} \hyperlink{classui_1_1_tool_bar_a38f9dcf960197192269b03c788903b3e}{editing})
+\begin{DoxyCompactList}\small\item\em costruttore del bottone e carica l\textquotesingle{}immagine. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_tool_bar_a72fe1ffca978e99fd16994a10e7f8051}{draw} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna i bottoni. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_tool_bar_a65768678909bc0512c6cb9780709ad38}{draw\+Button} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna i bottoni. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_tool_bar_a55c79e1185fb66ae98edacc2c7d5c302}{draw\+Tile\+Buttons} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna i bottoni. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_tool_bar_aa0f35d91a41dfb53af7bdd7d4a76916f}{draw\+Selected\+Tile} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna la tile selezionata. \end{DoxyCompactList}\item 
+Buffered\+Image \hyperlink{classui_1_1_tool_bar_abe2e2af5c0d57248464e8b607c41a36f}{get\+Button\+Image} (int id)
+\begin{DoxyCompactList}\small\item\em ritorna l\textquotesingle{}immagine del tile di cui passiamo l\textquotesingle{}id. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_tool_bar_a45d56bd84238e8b56589dfc732e2b2cf}{mouse\+Clicked} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i click del mouse \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_tool_bar_a2ca251710b65639ec80bc141edde60aa}{mouse\+Moved} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le move del mouse \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_tool_bar_aed82e1ce3dd3cf283d508c3ba3be70ef}{mouse\+Pressed} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le press del mouse \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_tool_bar_a87a07291794e15052db67f945d90853e}{mouse\+Released} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le release del mouse \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classui_1_1_tool_bar_a27d3ba5afb772cc36c9a432c28975ace}{init\+Buttons} ()
+\begin{DoxyCompactList}\small\item\em inizializza i bottoni delle tiles. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_tool_bar_af1c1bf274cd89c18726a992a073a7c6d}{save\+Level} ()
+\begin{DoxyCompactList}\small\item\em salva la mappa modificata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classui_1_1_my_button}{My\+Button} \hyperlink{classui_1_1_tool_bar_a66ab06e7800896887c475a3cbd86c447}{save}
+\item 
+\hyperlink{classobjects_1_1_tile}{Tile} \hyperlink{classui_1_1_tool_bar_a57de6d93afd033cf117e53aec7cf844a}{selected\+Tile}
+\item 
+Array\+List$<$ \hyperlink{classui_1_1_my_button}{My\+Button} $>$ \hyperlink{classui_1_1_tool_bar_a08aae8564da16789b69554ee7ddb559d}{tile\+Buttons} = new Array\+List$<$$>$()
+\item 
+\hyperlink{classscenes_1_1_editing}{Editing} \hyperlink{classui_1_1_tool_bar_a38f9dcf960197192269b03c788903b3e}{editing}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+gestice la barra per modificare le mappe dei vari livelli e salvarle. 
+
+Definition at line 33 of file Tool\+Bar.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classui_1_1_tool_bar_a43193f5c8a197b7b1ccfc248dec1db9b}\label{classui_1_1_tool_bar_a43193f5c8a197b7b1ccfc248dec1db9b}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!Tool\+Bar@{Tool\+Bar}}
+\index{Tool\+Bar@{Tool\+Bar}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{Tool\+Bar()}{ToolBar()}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_tool_bar}{Tool\+Bar} (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{\hyperlink{classscenes_1_1_editing}{Editing}}]{editing }\end{DoxyParamCaption})}
+
+
+
+costruttore del bottone e carica l\textquotesingle{}immagine. 
+
+setta le variabili
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata \\
+\hline
+{\em y} & coordinata \\
+\hline
+{\em width} & larghezza \\
+\hline
+{\em height} & altezza \\
+\hline
+{\em editing} & stato di editing \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_a43193f5c8a197b7b1ccfc248dec1db9b_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classui_1_1_tool_bar_a72fe1ffca978e99fd16994a10e7f8051}\label{classui_1_1_tool_bar_a72fe1ffca978e99fd16994a10e7f8051}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!draw@{draw}}
+\index{draw@{draw}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna i bottoni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 100 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_a72fe1ffca978e99fd16994a10e7f8051_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classui_1_1_tool_bar_a72fe1ffca978e99fd16994a10e7f8051_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_tool_bar_a65768678909bc0512c6cb9780709ad38}\label{classui_1_1_tool_bar_a65768678909bc0512c6cb9780709ad38}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!draw\+Button@{draw\+Button}}
+\index{draw\+Button@{draw\+Button}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Button()}{drawButton()}}
+{\footnotesize\ttfamily void draw\+Button (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna i bottoni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 112 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_a65768678909bc0512c6cb9780709ad38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_a65768678909bc0512c6cb9780709ad38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_tool_bar_aa0f35d91a41dfb53af7bdd7d4a76916f}\label{classui_1_1_tool_bar_aa0f35d91a41dfb53af7bdd7d4a76916f}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!draw\+Selected\+Tile@{draw\+Selected\+Tile}}
+\index{draw\+Selected\+Tile@{draw\+Selected\+Tile}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Selected\+Tile()}{drawSelectedTile()}}
+{\footnotesize\ttfamily void draw\+Selected\+Tile (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna la tile selezionata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 152 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classui_1_1_tool_bar_aa0f35d91a41dfb53af7bdd7d4a76916f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_aa0f35d91a41dfb53af7bdd7d4a76916f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_tool_bar_a55c79e1185fb66ae98edacc2c7d5c302}\label{classui_1_1_tool_bar_a55c79e1185fb66ae98edacc2c7d5c302}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!draw\+Tile\+Buttons@{draw\+Tile\+Buttons}}
+\index{draw\+Tile\+Buttons@{draw\+Tile\+Buttons}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{draw\+Tile\+Buttons()}{drawTileButtons()}}
+{\footnotesize\ttfamily void draw\+Tile\+Buttons (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna i bottoni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 123 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_a55c79e1185fb66ae98edacc2c7d5c302_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_a55c79e1185fb66ae98edacc2c7d5c302_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_tool_bar_abe2e2af5c0d57248464e8b607c41a36f}\label{classui_1_1_tool_bar_abe2e2af5c0d57248464e8b607c41a36f}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!get\+Button\+Image@{get\+Button\+Image}}
+\index{get\+Button\+Image@{get\+Button\+Image}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{get\+Button\+Image()}{getButtonImage()}}
+{\footnotesize\ttfamily Buffered\+Image get\+Button\+Image (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+ritorna l\textquotesingle{}immagine del tile di cui passiamo l\textquotesingle{}id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em identificatore} & per richiamare il get dell\textquotesingle{}immagine della tile \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 165 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_abe2e2af5c0d57248464e8b607c41a36f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_abe2e2af5c0d57248464e8b607c41a36f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_tool_bar_a27d3ba5afb772cc36c9a432c28975ace}\label{classui_1_1_tool_bar_a27d3ba5afb772cc36c9a432c28975ace}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!init\+Buttons@{init\+Buttons}}
+\index{init\+Buttons@{init\+Buttons}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{init\+Buttons()}{initButtons()}}
+{\footnotesize\ttfamily void init\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+inizializza i bottoni delle tiles. 
+
+
+
+Definition at line 70 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_a27d3ba5afb772cc36c9a432c28975ace_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classui_1_1_tool_bar_a27d3ba5afb772cc36c9a432c28975ace_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_tool_bar_a45d56bd84238e8b56589dfc732e2b2cf}\label{classui_1_1_tool_bar_a45d56bd84238e8b56589dfc732e2b2cf}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!mouse\+Clicked@{mouse\+Clicked}}
+\index{mouse\+Clicked@{mouse\+Clicked}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{mouse\+Clicked()}{mouseClicked()}}
+{\footnotesize\ttfamily void mouse\+Clicked (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i click del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 182 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_a45d56bd84238e8b56589dfc732e2b2cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classui_1_1_tool_bar_a45d56bd84238e8b56589dfc732e2b2cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_tool_bar_a2ca251710b65639ec80bc141edde60aa}\label{classui_1_1_tool_bar_a2ca251710b65639ec80bc141edde60aa}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!mouse\+Moved@{mouse\+Moved}}
+\index{mouse\+Moved@{mouse\+Moved}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{mouse\+Moved()}{mouseMoved()}}
+{\footnotesize\ttfamily void mouse\+Moved (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le move del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 204 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classui_1_1_tool_bar_a2ca251710b65639ec80bc141edde60aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classui_1_1_tool_bar_a2ca251710b65639ec80bc141edde60aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_tool_bar_aed82e1ce3dd3cf283d508c3ba3be70ef}\label{classui_1_1_tool_bar_aed82e1ce3dd3cf283d508c3ba3be70ef}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!mouse\+Pressed@{mouse\+Pressed}}
+\index{mouse\+Pressed@{mouse\+Pressed}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{mouse\+Pressed()}{mousePressed()}}
+{\footnotesize\ttfamily void mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le press del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 224 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classui_1_1_tool_bar_aed82e1ce3dd3cf283d508c3ba3be70ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classui_1_1_tool_bar_aed82e1ce3dd3cf283d508c3ba3be70ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_tool_bar_a87a07291794e15052db67f945d90853e}\label{classui_1_1_tool_bar_a87a07291794e15052db67f945d90853e}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!mouse\+Released@{mouse\+Released}}
+\index{mouse\+Released@{mouse\+Released}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{mouse\+Released()}{mouseReleased()}}
+{\footnotesize\ttfamily void mouse\+Released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le release del mouse 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 243 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_a87a07291794e15052db67f945d90853e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_a87a07291794e15052db67f945d90853e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_tool_bar_af1c1bf274cd89c18726a992a073a7c6d}\label{classui_1_1_tool_bar_af1c1bf274cd89c18726a992a073a7c6d}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!save\+Level@{save\+Level}}
+\index{save\+Level@{save\+Level}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{save\+Level()}{saveLevel()}}
+{\footnotesize\ttfamily void save\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+salva la mappa modificata. 
+
+
+
+Definition at line 173 of file Tool\+Bar.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_af1c1bf274cd89c18726a992a073a7c6d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_tool_bar_af1c1bf274cd89c18726a992a073a7c6d_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classui_1_1_tool_bar_a38f9dcf960197192269b03c788903b3e}\label{classui_1_1_tool_bar_a38f9dcf960197192269b03c788903b3e}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!editing@{editing}}
+\index{editing@{editing}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{editing}{editing}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_editing}{Editing} editing\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 45 of file Tool\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_tool_bar_a66ab06e7800896887c475a3cbd86c447}\label{classui_1_1_tool_bar_a66ab06e7800896887c475a3cbd86c447}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!save@{save}}
+\index{save@{save}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{save}{save}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} save\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 36 of file Tool\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_tool_bar_a57de6d93afd033cf117e53aec7cf844a}\label{classui_1_1_tool_bar_a57de6d93afd033cf117e53aec7cf844a}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!selected\+Tile@{selected\+Tile}}
+\index{selected\+Tile@{selected\+Tile}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{selected\+Tile}{selectedTile}}
+{\footnotesize\ttfamily \hyperlink{classobjects_1_1_tile}{Tile} selected\+Tile\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 39 of file Tool\+Bar.\+java.
+
+\mbox{\Hypertarget{classui_1_1_tool_bar_a08aae8564da16789b69554ee7ddb559d}\label{classui_1_1_tool_bar_a08aae8564da16789b69554ee7ddb559d}} 
+\index{ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}!tile\+Buttons@{tile\+Buttons}}
+\index{tile\+Buttons@{tile\+Buttons}!ui\+::\+Tool\+Bar@{ui\+::\+Tool\+Bar}}
+\subsubsection{\texorpdfstring{tile\+Buttons}{tileButtons}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{classui_1_1_my_button}{My\+Button}$>$ tile\+Buttons = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Tool\+Bar.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/ui/\hyperlink{_tool_bar_8java}{Tool\+Bar.\+java}\end{DoxyCompactItemize}

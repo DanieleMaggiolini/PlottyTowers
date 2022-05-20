@@ -1,0 +1,6 @@
+<map id="drawHpBar" name="drawHpBar">
+<area shape="rect" id="node2" href="$classenemies_1_1_enemy.html#ae8f033a71b96920114aee202798dc7e9" title="enemies.Enemy.getX" alt="" coords="139,5,285,32"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_enemy_manager.html#ac01087314c8b4df0d2304a3596493393" title="calcolo grandezza della barra della vita in base alla vita posseduta dal nemico " alt="" coords="153,56,271,83"/>
+<area shape="rect" id="node5" href="$classenemies_1_1_enemy.html#aa0f539cec219900ff6cf76edcfa52367" title="enemies.Enemy.getY" alt="" coords="139,107,285,133"/>
+<area shape="rect" id="node4" href="$classenemies_1_1_enemy.html#a719baea5da89286e1c263e1beb3ee35d" title="enemies.Enemy.getHpbar" alt="" coords="333,56,505,83"/>
+</map>

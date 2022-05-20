@@ -1,0 +1,4 @@
+<map id="drawButton" name="drawButton">
+<area shape="rect" id="node2" href="$classui_1_1_level_menu.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna lo sfondo e richiama il metodo per disegnare i bottoni. " alt="" coords="140,5,189,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_playing.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna levelmenu e bottone home " alt="" coords="237,5,388,32"/>
+</map>

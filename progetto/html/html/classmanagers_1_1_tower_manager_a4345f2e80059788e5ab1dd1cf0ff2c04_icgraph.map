@@ -1,0 +1,10 @@
+<map id="getTowerAt" name="getTowerAt">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a4345f2e80059788e5ab1dd1cf0ff2c04" title="restituisce la torre in base alle coordinate passate. " alt="" coords="140,5,313,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a4345f2e80059788e5ab1dd1cf0ff2c04" title="restituisce la torre in base alle coordinate passate. " alt="" coords="140,56,313,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#a4345f2e80059788e5ab1dd1cf0ff2c04" title="restituisce la torre in base alle coordinate passate. " alt="" coords="140,107,313,133"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level4.html#a4345f2e80059788e5ab1dd1cf0ff2c04" title="restituisce la torre in base alle coordinate passate. " alt="" coords="140,157,313,184"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="361,5,552,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="361,56,552,83"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level3.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="361,107,552,133"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level4.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="361,157,552,184"/>
+</map>

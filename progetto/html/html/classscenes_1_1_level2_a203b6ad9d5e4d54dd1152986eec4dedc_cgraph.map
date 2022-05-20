@@ -1,0 +1,51 @@
+<map id="render" name="render">
+<area shape="rect" id="node2" href="$classscenes_1_1_level2.html#a62bcb07be9e39896e5837a9d396e7235" title="disegna lo sfondo. " alt="" coords="162,85,281,112"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a65768678909bc0512c6cb9780709ad38" title="disegna il bottone di pausa. " alt="" coords="178,180,265,207"/>
+<area shape="rect" id="node8" href="$classmanagers_1_1_enemy_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="per ogni nemico controllo se vivo, se vivo disegno del nemico e della barra della vita ..." alt="" coords="381,195,587,221"/>
+<area shape="rect" id="node16" href="$classmanagers_1_1_tower_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="richiamo del metodo drawTower per ogni torre " alt="" coords="122,332,321,359"/>
+<area shape="rect" id="node25" href="$classmanagers_1_1_projectile_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="per ogni proiettile controllo se attivo, se attivo disegno del proiettile e eventualmente la sua incl..." alt="" coords="112,383,331,409"/>
+<area shape="rect" id="node26" href="$classscenes_1_1_level2.html#a0a97d0bb6d32640b2ae351707946abf7" title="disegna la selectedTower dopo aver controllato che sia effettivamente selezionata; ..." alt="" coords="154,1049,289,1076"/>
+<area shape="rect" id="node28" href="$classscenes_1_1_level2.html#ac299bbbbb70f97ae032c1345d5937378" title="disegna la mappa. " alt="" coords="174,484,269,511"/>
+<area shape="rect" id="node29" href="$classui_1_1_pause_overlay.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna sofndo e bottoni. " alt="" coords="148,433,295,460"/>
+<area shape="rect" id="node31" href="$classui_1_1_ush_button.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna l&#39;immagine del bottone. " alt="" coords="420,513,548,540"/>
+<area shape="rect" id="node32" href="$classui_1_1_pause_overlay.html#ac5c54df7ed3b930268c8d7752c101725" title="aggiorna il bottone dell&#39;audio. " alt="" coords="142,585,301,612"/>
+<area shape="rect" id="node34" href="$classui_1_1_action_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori..." alt="" coords="159,727,283,753"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_game.html#ad519f2a339c804d206a38ecd2c33f667" title="getter dell&#39;oggetto tilemanager. " alt="" coords="384,27,584,53"/>
+<area shape="rect" id="node4" href="$classmanagers_1_1_tile_manager.html#a46ebd32c7ec4ac506010fe465687bdd7" title="ritorno di un&#39;immagine passando un id " alt="" coords="397,78,571,119"/>
+<area shape="rect" id="node6" href="$classui_1_1_my_button.html#a72fe1ffca978e99fd16994a10e7f8051" title="richiama i metodi per disegnare il testo nel bottone. " alt="" coords="423,144,545,171"/>
+<area shape="rect" id="node7" href="$classui_1_1_my_button.html#a8df311009317d839a01870ceac76eb75" title="disegna il testo nel bottone. " alt="" coords="672,5,820,32"/>
+<area shape="rect" id="node9" href="$classmanagers_1_1_enemy_manager.html#a7ebdd9acefa4682b23b1ad2c0be558f4" title="in base alla tipologia di nemico disegno con il suo index di animazione " alt="" coords="643,187,849,229"/>
+<area shape="rect" id="node13" href="$classmanagers_1_1_enemy_manager.html#a9c98cd29298e5f583c52dc46a6d70d46" title="disegno rosso della barra della vita di un nemico " alt="" coords="643,57,849,98"/>
+<area shape="rect" id="node15" href="$classmanagers_1_1_enemy_manager.html#a5c2bac0f4b9a3ef4e30f60d4b0c3b951" title="aggiornamento indici per l&#39;animazione dei nemici " alt="" coords="637,122,855,163"/>
+<area shape="rect" id="node10" href="$classenemies_1_1_enemy.html#a40aced6dca930a3ae575a42b3286e230" title="enemies.Enemy.getEnemyType" alt="" coords="903,195,1109,221"/>
+<area shape="rect" id="node11" href="$classenemies_1_1_enemy.html#ae8f033a71b96920114aee202798dc7e9" title="enemies.Enemy.getX" alt="" coords="933,144,1079,171"/>
+<area shape="rect" id="node12" href="$classenemies_1_1_enemy.html#aa0f539cec219900ff6cf76edcfa52367" title="enemies.Enemy.getY" alt="" coords="933,245,1079,272"/>
+<area shape="rect" id="node14" href="$classmanagers_1_1_enemy_manager.html#ac01087314c8b4df0d2304a3596493393" title="calcolo grandezza della barra della vita in base alla vita posseduta dal nemico " alt="" coords="908,57,1104,98"/>
+<area shape="rect" id="node17" href="$classmanagers_1_1_tower_manager.html#a2cbe196e347dcc9a69a4d3dfdbec72de" title="controllo se la torre deve rimanere ferma o deve essere animata, in base alla presenza di nemici..." alt="" coords="385,325,583,366"/>
+<area shape="rect" id="node24" href="$classmanagers_1_1_tower_manager.html#a5c2bac0f4b9a3ef4e30f60d4b0c3b951" title="aggiornamento indici per l&#39;animazione delle torri " alt="" coords="379,390,589,431"/>
+<area shape="rect" id="node18" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="663,521,829,548"/>
+<area shape="rect" id="node19" href="$classmanagers_1_1_tower_manager.html#a5f1dea7776d18a6f69428e43c4845fdb" title="controllo se il nemico preso in considerazione è nel raggio della torre presa in considerazione ..." alt="" coords="655,253,837,294"/>
+<area shape="rect" id="node20" href="$classtowers_1_1_tower.html#ae13f88e922e1339355456062ad9fa359" title="ritorna la x " alt="" coords="943,319,1069,345"/>
+<area shape="rect" id="node21" href="$classtowers_1_1_tower.html#aab81944f0a14bba932c0931899951937" title="ritorna la y " alt="" coords="941,369,1071,396"/>
+<area shape="rect" id="node22" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="663,471,829,497"/>
+<area shape="rect" id="node23" href="$classtowers_1_1_tower.html#adaa3345598ef202753372f185625e5da" title="ritorna il tipo di torre " alt="" coords="917,892,1095,919"/>
+<area shape="rect" id="node27" href="$classmanagers_1_1_tower_manager.html#aeae3bb8b35e0507fe9105c2eb4713339" title="ritorno del contenitore di tutte le immagini delle torri " alt="" coords="389,1042,579,1083"/>
+<area shape="rect" id="node30" href="$classui_1_1_sound_button.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna il bottone " alt="" coords="413,456,555,483"/>
+<area shape="rect" id="node33" href="$classui_1_1_sound_button.html#ac5c54df7ed3b930268c8d7752c101725" title="aggiorna l&#39;immagine del bottone se cambia lo stato da smutato a mutato e viceversa. " alt="" coords="407,568,561,595"/>
+<area shape="rect" id="node35" href="$classui_1_1_action_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="403,619,565,645"/>
+<area shape="rect" id="node38" href="$classui_1_1_action_bar.html#a2177b06de4c0084e953665a7dbfd6772" title="disegna la torre selezionata, le sue info e i bottoni relativi ad essa. " alt="" coords="393,778,575,819"/>
+<area shape="rect" id="node47" href="$classui_1_1_action_bar.html#a4202926f30a7290c360bfcd4af6b03cb" title="disegna le informazioni relative all&#39;ondata. " alt="" coords="396,676,572,703"/>
+<area shape="rect" id="node48" href="$classui_1_1_action_bar.html#ae07c200235fb700738b8194a93dbb8fb" title="disegna il numero di monete. " alt="" coords="409,727,559,753"/>
+<area shape="rect" id="node49" href="$classui_1_1_action_bar.html#a32afe6a393c6361d391e26ed96971131" title="disegna il costo della torre da piazzare. " alt="" coords="391,927,577,953"/>
+<area shape="rect" id="node50" href="$classui_1_1_action_bar.html#a7075e1ba9a7135d89d02dca2e3b8860e" title="disegna le vite. " alt="" coords="411,844,557,871"/>
+<area shape="rect" id="node36" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="663,623,829,649"/>
+<area shape="rect" id="node37" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="663,572,829,599"/>
+<area shape="rect" id="node39" href="$classhelpz_1_1_constants_1_1_towers.html#a514d43d9440f939e8a4d021a01049424" title="helpz.Constants.Towers.getName" alt="" coords="637,1095,855,1121"/>
+<area shape="rect" id="node40" href="$classtowers_1_1_tower.html#a67283be3f45257d1e0c474c563ebb6b6" title="ritorna l&#39;identificatore " alt="" coords="681,943,811,969"/>
+<area shape="rect" id="node41" href="$classtowers_1_1_tower.html#a69ffaa5d69141ba9aed07daf94b18540" title="ritorna il livello " alt="" coords="679,993,813,1020"/>
+<area shape="rect" id="node42" href="$classui_1_1_action_bar.html#a1f012512b669e57c49c1957905a35107" title="disegna il cerchio del range di attacco della torre selezionata. " alt="" coords="655,674,837,715"/>
+<area shape="rect" id="node43" href="$classui_1_1_action_bar.html#a6c5f59282a148a0d74bc5aa58d5ad307" title="restituisce il costo per upgradare la torre selezionata. " alt="" coords="653,740,839,767"/>
+<area shape="rect" id="node44" href="$classui_1_1_my_button.html#acecf901c15a2150148863cbc4d0709da" title="setter del colore. " alt="" coords="674,791,818,817"/>
+<area shape="rect" id="node45" href="$classui_1_1_my_button.html#aa8318788e7f26fedd7bfbdd0b654ad45" title="richiama i metodi per disegnare il testo centrato nel bottone, i bordi e lo sfondo. " alt="" coords="675,841,817,868"/>
+<area shape="rect" id="node46" href="$classui_1_1_my_button.html#a2deebd864f1c01a6d81238349c929885" title="getter della variabile per la verifica del mouse se si trova sul bottone. " alt="" coords="661,892,831,919"/>
+</map>

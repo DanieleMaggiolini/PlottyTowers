@@ -1,0 +1,10 @@
+<map id="getEnemies" name="getEnemies">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="355,32,543,59"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#acd1846d50c3d8678777f9ab6716f5cf3" title="controlla se i nemici sono tutti morti. " alt="" coords="144,44,307,71"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="355,108,543,135"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#acd1846d50c3d8678777f9ab6716f5cf3" title="controlla se i nemici sono tutti morti. " alt="" coords="144,145,307,172"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="355,221,543,248"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level3.html#acd1846d50c3d8678777f9ab6716f5cf3" title="controlla se i nemici sono tutti morti. " alt="" coords="144,247,307,273"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level4.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="355,323,543,349"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level4.html#acd1846d50c3d8678777f9ab6716f5cf3" title="controlla se i nemici sono tutti morti. " alt="" coords="144,348,307,375"/>
+</map>

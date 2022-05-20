@@ -1,0 +1,4 @@
+<map id="drawButton" name="drawButton">
+<area shape="rect" id="node2" href="$classui_1_1_my_button.html#a72fe1ffca978e99fd16994a10e7f8051" title="richiama i metodi per disegnare il testo nel bottone. " alt="" coords="140,5,263,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#a8df311009317d839a01870ceac76eb75" title="disegna il testo nel bottone. " alt="" coords="311,5,459,32"/>
+</map>

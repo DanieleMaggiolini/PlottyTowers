@@ -1,0 +1,1560 @@
+\hypertarget{classscenes_1_1_level3}{}\section{Level3 Class Reference}
+\label{classscenes_1_1_level3}\index{Level3@{Level3}}
+
+
+Inheritance diagram for Level3\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classscenes_1_1_level3__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Level3\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classscenes_1_1_level3_a0f56949b20e6eda500c5b9c50e16de58}{Level3} (\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classscenes_1_1_game_scene_ac6a5ed6191fcf3a5bf0445921feb4f48}{game})
+\begin{DoxyCompactList}\small\item\em costruttore che setta il game e richiama i metodi per inizializzare classi, bottoni e importare immagini. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_afe125d345675ffefe8da7e96d39773f3}{init\+Classes} ()
+\begin{DoxyCompactList}\small\item\em inizializza tutte le classi presenti. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a286931cc46e197f4a85af7229fdc29a4}{load\+Level} ()
+\begin{DoxyCompactList}\small\item\em carica il livello. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_afdd7363804bf6696ce4a46d6448844ed}{set\+Level} (int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classscenes_1_1_level3_a4b06a2210cf5b93dda77f2a9a061d538}{lvl})
+\begin{DoxyCompactList}\small\item\em setta il livello. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_af005ec68c869a6acd5e833cba9330a50}{update\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em aggiornamento dei nemici. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_ae4fd4a959e4d782a5e7ac0eff77ba27f}{update\+Tower} ()
+\begin{DoxyCompactList}\small\item\em aggiornamento delle torri. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_ab424ab29e7ab4733f2efd1e6ef3f13b1}{update\+Wave} ()
+\begin{DoxyCompactList}\small\item\em aggiornamento delle ondate. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_ac83c203b559f6fd0bb225744d7ccf854}{update\+Proj} ()
+\begin{DoxyCompactList}\small\item\em aggiornamento dei proiettili. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a7ca93fcd8c7440e7b3f64c595a5be28c}{update\+Coin} ()
+\begin{DoxyCompactList}\small\item\em aggiornamento dei soldi. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a203b6ad9d5e4d54dd1152986eec4dedc}{render} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna la schermata ed ogni suo cambiamento. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_aeab1551e3e372c6402076c04ea9002bb}{set\+Paused} (boolean \hyperlink{classscenes_1_1_level3_aa1e43f4bcbc826434b83c0f3ec507143}{paused})
+\begin{DoxyCompactList}\small\item\em setter della booleana paused. \end{DoxyCompactList}\item 
+boolean \hyperlink{classscenes_1_1_level3_af5e9f906de91e4d6400bb7f27cd563f3}{get\+Paused} ()
+\begin{DoxyCompactList}\small\item\em getter della booleana paused. \end{DoxyCompactList}\item 
+int \hyperlink{classscenes_1_1_level3_ac689e72523c8460ac3160526d310b1b7}{get\+Tile\+Type} (int x, int y)
+\begin{DoxyCompactList}\small\item\em restituisce il tipo di tile in base alle coordinate passate. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a200b073564fc341f34b6112718742bae}{shoot} (\hyperlink{classtowers_1_1_tower}{Tower} t, \hyperlink{classenemies_1_1_enemy}{Enemy} e)
+\begin{DoxyCompactList}\small\item\em richiama il metodo per creare e sparare il proiettile. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a9f0f7dc28e596d2ebcd06e27ef05d9fd}{add\+Coin} (int type)
+\begin{DoxyCompactList}\small\item\em aggiunge \textquotesingle{}type\textquotesingle{} coin e riproduce un effetto sonoro. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a484775c889ccd8602b66ad795b141534}{rimuovi\+Vita} ()
+\begin{DoxyCompactList}\small\item\em rimuove una vita \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a45d56bd84238e8b56589dfc732e2b2cf}{mouse\+Clicked} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i vari click. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a2ca251710b65639ec80bc141edde60aa}{mouse\+Moved} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce le varie opzioni di movimento del mouse. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_aed82e1ce3dd3cf283d508c3ba3be70ef}{mouse\+Pressed} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i vari press del mouse. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a87a07291794e15052db67f945d90853e}{mouse\+Released} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i vari release del mouse. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_adbfc0588c017133c9b7070474402b72f}{mouse\+Dragged} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i vari drag del mouse. \end{DoxyCompactList}\item 
+\hyperlink{classmanagers_1_1_tower_manager}{Tower\+Manager} \hyperlink{classscenes_1_1_level3_a6fff8a01141127e3c2897a077e5dee92}{get\+Tower\+Manager} ()
+\begin{DoxyCompactList}\small\item\em restituisce l\textquotesingle{}oggetto towermanager. \end{DoxyCompactList}\item 
+\hyperlink{classmanagers_1_1_enemy_manager}{Enemy\+Manager} \hyperlink{classscenes_1_1_level3_afdfe86992bb21f6ad2d9aea028b7896a}{get\+Enemy\+Manager} ()
+\begin{DoxyCompactList}\small\item\em restituisce l\textquotesingle{}oggetto enemymanager. \end{DoxyCompactList}\item 
+\hyperlink{classmanagers_1_1_wave_manager}{Wave\+Manager} \hyperlink{classscenes_1_1_level3_a6b0fc6fbe769f38b9418fbaa51214735}{get\+Wave\+Manager} ()
+\begin{DoxyCompactList}\small\item\em restituisce l\textquotesingle{}oggetto wavemanager. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_ac9525f397417cae10d3de076f5b2e9d3}{set\+Selected\+Tower} (\hyperlink{classtowers_1_1_tower}{Tower} \hyperlink{classscenes_1_1_level3_af6b1162bc2f00f8d549aae075ddd5a8b}{selected\+Tower})
+\begin{DoxyCompactList}\small\item\em setta la selected\+Tower. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a8a3c715fcfd3d65e1d8241a1fa4965ff}{tower\+Level\+Up} (\hyperlink{classtowers_1_1_tower}{Tower} displayed\+Tower)
+\begin{DoxyCompactList}\small\item\em upgrade della torre; \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_addba85b44e35a186e066b2e801f433c4}{remove\+Tower} (\hyperlink{classtowers_1_1_tower}{Tower} displayed\+Tower)
+\begin{DoxyCompactList}\small\item\em sell della torre; \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_aa12eb1084be2c4d9b03d5f248f00900d}{key\+Pressed} (Key\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i vari input da tastiera. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a49e1d0816e9e0cabfb855147f399f5b5}{set\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em setta la fine del livello \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classscenes_1_1_level3_aded9c531b53772fd90d09a8b6bf0132e}{imp\+Image} ()
+\begin{DoxyCompactList}\small\item\em importa le immagini. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a27d3ba5afb772cc36c9a432c28975ace}{init\+Buttons} ()
+\begin{DoxyCompactList}\small\item\em inizializza tutti i bottoni presenti. \end{DoxyCompactList}\item 
+boolean \hyperlink{classscenes_1_1_level3_a121827ebd1c5b24c92f966721b51c0b9}{is\+Enemy\+Spawn} ()
+\begin{DoxyCompactList}\small\item\em controlla che sia spawnato il nemico e che l\textquotesingle{}ondata non sia finita. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_addfc0c3129b6ff606f7276e175f31a15}{spawn\+Enemy} ()
+\begin{DoxyCompactList}\small\item\em richiama il metodo per spawnare un nemico. \end{DoxyCompactList}\item 
+boolean \hyperlink{classscenes_1_1_level3_acd1846d50c3d8678777f9ab6716f5cf3}{is\+All\+Dead} ()
+\begin{DoxyCompactList}\small\item\em controlla se i nemici sono tutti morti. \end{DoxyCompactList}\item 
+boolean \hyperlink{classscenes_1_1_level3_a999f12a033f49f299ad7f55bcae24447}{is\+More\+Waves} ()
+\begin{DoxyCompactList}\small\item\em richiama il metodo per controllare se ci solo altre ondate. \end{DoxyCompactList}\item 
+boolean \hyperlink{classscenes_1_1_level3_ab68417e6738c05037923f5f0f21eb586}{is\+Timer\+Over} ()
+\begin{DoxyCompactList}\small\item\em richiama il metodo per controllare se ci solo altre ondate. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a62bcb07be9e39896e5837a9d396e7235}{draw\+Background} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna lo sfondo. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_ac299bbbbb70f97ae032c1345d5937378}{draw\+Tile\+Over} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna la mappa. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a65768678909bc0512c6cb9780709ad38}{draw\+Button} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna il bottone di pausa. \end{DoxyCompactList}\item 
+\hyperlink{classtowers_1_1_tower}{Tower} \hyperlink{classscenes_1_1_level3_a4345f2e80059788e5ab1dd1cf0ff2c04}{get\+Tower\+At} (int x, int y)
+\begin{DoxyCompactList}\small\item\em restituisce la torre in base alle coordinate passate. \end{DoxyCompactList}\item 
+boolean \hyperlink{classscenes_1_1_level3_aaeac2ee6b3a920a21928ee7b3dc8e7a9}{is\+Tile\+Available} (int x, int y)
+\begin{DoxyCompactList}\small\item\em restituisce se la tile è in base alle coordinate passate è una dove si puo piazzare una torre. \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a548cf4795e9d559d0c0cce0bb57a5251}{reset\+Buttons} ()
+\begin{DoxyCompactList}\small\item\em resetta i bottoni \end{DoxyCompactList}\item 
+void \hyperlink{classscenes_1_1_level3_a0a97d0bb6d32640b2ae351707946abf7}{draw\+Selected\+Tower} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna la selected\+Tower dopo aver controllato che sia effettivamente selezionata; \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classscenes_1_1_level3_a4965d4285aad63d850d0917b23e3f11f}{L\+E\+V\+E\+L\+N\+A\+ME} = \char`\"{}level3\char`\"{}
+\item 
+\hyperlink{classprogetto_1_1_sound}{Sound} \hyperlink{classscenes_1_1_level3_a76e9e53c877d84187e0efb78f03c86d4}{s} = new \hyperlink{classprogetto_1_1_sound}{Sound}(1)
+\item 
+\hyperlink{classmanagers_1_1_enemy_manager}{Enemy\+Manager} \hyperlink{classscenes_1_1_level3_a1f593b74cc45d79b21ce59953aa8118f}{enemymanager}
+\item 
+\hyperlink{classmanagers_1_1_tower_manager}{Tower\+Manager} \hyperlink{classscenes_1_1_level3_a1340930f4499459346af3af2d24e3d3e}{towermanager}
+\item 
+\hyperlink{classmanagers_1_1_projectile_manager}{Projectile\+Manager} \hyperlink{classscenes_1_1_level3_aee34cf906685787259a2edd7d4559863}{projmanager}
+\item 
+\hyperlink{classmanagers_1_1_wave_manager}{Wave\+Manager} \hyperlink{classscenes_1_1_level3_a53367ff9cb3d994463429a1103e0ce6a}{wavemanager}
+\item 
+Buffered\+Image \hyperlink{classscenes_1_1_level3_ab0c4ea45989823c211fa4034d743f36b}{ingranaggio}
+\item 
+int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classscenes_1_1_level3_a4b06a2210cf5b93dda77f2a9a061d538}{lvl}
+\item 
+\hyperlink{classui_1_1_action_bar}{Action\+Bar} \hyperlink{classscenes_1_1_level3_aa73d545c6ea02ea24a244ba02a329b28}{actionbar}
+\item 
+int \hyperlink{classscenes_1_1_level3_a85ea1b63086b31a15d3ed2579c5715a6}{mouseX}
+\item 
+int \hyperlink{classscenes_1_1_level3_a3637abebcaa9d04aa18b1610d0921e16}{mouseY}
+\item 
+\hyperlink{classui_1_1_my_button}{My\+Button} \hyperlink{classscenes_1_1_level3_a3bcc199bdb1d50c111054398694c7473}{Bmenu}
+\item 
+Font \hyperlink{classscenes_1_1_level3_a3fb562f10e8f7f83cb2ed130eab6d439}{f}
+\item 
+Color \hyperlink{classscenes_1_1_level3_a02094092ae89aa4b23bff1976bcbf90d}{c}
+\item 
+\hyperlink{classui_1_1_pause_overlay}{Pause\+Overlay} \hyperlink{classscenes_1_1_level3_a544fb9294d892e35b4b0316e07997cd6}{pauseoverlay}
+\item 
+boolean \hyperlink{classscenes_1_1_level3_aa1e43f4bcbc826434b83c0f3ec507143}{paused} = false
+\item 
+\hyperlink{classtowers_1_1_tower}{Tower} \hyperlink{classscenes_1_1_level3_af6b1162bc2f00f8d549aae075ddd5a8b}{selected\+Tower}
+\item 
+int \hyperlink{classscenes_1_1_level3_aa48bc6c9a2648651d6484c9063ca1b8f}{coin\+Tick}
+\item 
+boolean \hyperlink{classscenes_1_1_level3_a962cec751fe966ea7bf381c68ab5c70f}{gameover} = false
+\item 
+boolean \hyperlink{classscenes_1_1_level3_a1cc7b399bb950a160021766cd9a126f8}{win} =false
+\item 
+\hyperlink{classui_1_1_ush_button}{Ush\+Button} \hyperlink{classscenes_1_1_level3_ac1d34384911014e49613ccfb1abddbcc}{restart}
+\item 
+\hyperlink{classui_1_1_ush_button}{Ush\+Button} \hyperlink{classscenes_1_1_level3_a08590df28bf721b1cf1670cf0f8f7341}{exit}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 46 of file Level3.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classscenes_1_1_level3_a0f56949b20e6eda500c5b9c50e16de58}\label{classscenes_1_1_level3_a0f56949b20e6eda500c5b9c50e16de58}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!Level3@{Level3}}
+\index{Level3@{Level3}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{Level3()}{Level3()}}
+{\footnotesize\ttfamily \hyperlink{classscenes_1_1_level3}{Level3} (\begin{DoxyParamCaption}\item[{\hyperlink{classprogetto_1_1_game}{Game}}]{game }\end{DoxyParamCaption})}
+
+
+
+costruttore che setta il game e richiama i metodi per inizializzare classi, bottoni e importare immagini. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & oggetto del game \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a0f56949b20e6eda500c5b9c50e16de58_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classscenes_1_1_level3_a9f0f7dc28e596d2ebcd06e27ef05d9fd}\label{classscenes_1_1_level3_a9f0f7dc28e596d2ebcd06e27ef05d9fd}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!add\+Coin@{add\+Coin}}
+\index{add\+Coin@{add\+Coin}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{add\+Coin()}{addCoin()}}
+{\footnotesize\ttfamily void add\+Coin (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+aggiunge \textquotesingle{}type\textquotesingle{} coin e riproduce un effetto sonoro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & intero della quantità di coin da aggiungere. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 506 of file Level3.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a9f0f7dc28e596d2ebcd06e27ef05d9fd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a62bcb07be9e39896e5837a9d396e7235}\label{classscenes_1_1_level3_a62bcb07be9e39896e5837a9d396e7235}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!draw\+Background@{draw\+Background}}
+\index{draw\+Background@{draw\+Background}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{draw\+Background()}{drawBackground()}}
+{\footnotesize\ttfamily void draw\+Background (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna lo sfondo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 413 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a62bcb07be9e39896e5837a9d396e7235_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classscenes_1_1_level3_a62bcb07be9e39896e5837a9d396e7235_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a65768678909bc0512c6cb9780709ad38}\label{classscenes_1_1_level3_a65768678909bc0512c6cb9780709ad38}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!draw\+Button@{draw\+Button}}
+\index{draw\+Button@{draw\+Button}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{draw\+Button()}{drawButton()}}
+{\footnotesize\ttfamily void draw\+Button (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna il bottone di pausa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 437 of file Level3.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a65768678909bc0512c6cb9780709ad38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classscenes_1_1_level3_a65768678909bc0512c6cb9780709ad38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a0a97d0bb6d32640b2ae351707946abf7}\label{classscenes_1_1_level3_a0a97d0bb6d32640b2ae351707946abf7}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!draw\+Selected\+Tower@{draw\+Selected\+Tower}}
+\index{draw\+Selected\+Tower@{draw\+Selected\+Tower}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{draw\+Selected\+Tower()}{drawSelectedTower()}}
+{\footnotesize\ttfamily void draw\+Selected\+Tower (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna la selected\+Tower dopo aver controllato che sia effettivamente selezionata; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 689 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a0a97d0bb6d32640b2ae351707946abf7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classscenes_1_1_level3_a0a97d0bb6d32640b2ae351707946abf7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_ac299bbbbb70f97ae032c1345d5937378}\label{classscenes_1_1_level3_ac299bbbbb70f97ae032c1345d5937378}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!draw\+Tile\+Over@{draw\+Tile\+Over}}
+\index{draw\+Tile\+Over@{draw\+Tile\+Over}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{draw\+Tile\+Over()}{drawTileOver()}}
+{\footnotesize\ttfamily void draw\+Tile\+Over (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+disegna la mappa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 427 of file Level3.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classscenes_1_1_level3_ac299bbbbb70f97ae032c1345d5937378_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_afdfe86992bb21f6ad2d9aea028b7896a}\label{classscenes_1_1_level3_afdfe86992bb21f6ad2d9aea028b7896a}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!get\+Enemy\+Manager@{get\+Enemy\+Manager}}
+\index{get\+Enemy\+Manager@{get\+Enemy\+Manager}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{get\+Enemy\+Manager()}{getEnemyManager()}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_enemy_manager}{Enemy\+Manager} get\+Enemy\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+restituisce l\textquotesingle{}oggetto enemymanager. 
+
+\begin{DoxyReturn}{Returns}
+oggetto enemymanager 
+\end{DoxyReturn}
+
+
+Definition at line 662 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_af5e9f906de91e4d6400bb7f27cd563f3}\label{classscenes_1_1_level3_af5e9f906de91e4d6400bb7f27cd563f3}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!get\+Paused@{get\+Paused}}
+\index{get\+Paused@{get\+Paused}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{get\+Paused()}{getPaused()}}
+{\footnotesize\ttfamily boolean get\+Paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+getter della booleana paused. 
+
+\begin{DoxyReturn}{Returns}
+paused. 
+\end{DoxyReturn}
+
+
+Definition at line 456 of file Level3.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{classscenes_1_1_level3_af5e9f906de91e4d6400bb7f27cd563f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_ac689e72523c8460ac3160526d310b1b7}\label{classscenes_1_1_level3_ac689e72523c8460ac3160526d310b1b7}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!get\+Tile\+Type@{get\+Tile\+Type}}
+\index{get\+Tile\+Type@{get\+Tile\+Type}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{get\+Tile\+Type()}{getTileType()}}
+{\footnotesize\ttfamily int get\+Tile\+Type (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+restituisce il tipo di tile in base alle coordinate passate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata. \\
+\hline
+{\em y} & coordinata.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+intero contenente l\textquotesingle{}id della tile. 
+\end{DoxyReturn}
+
+
+Definition at line 468 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classscenes_1_1_level3_ac689e72523c8460ac3160526d310b1b7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a4345f2e80059788e5ab1dd1cf0ff2c04}\label{classscenes_1_1_level3_a4345f2e80059788e5ab1dd1cf0ff2c04}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!get\+Tower\+At@{get\+Tower\+At}}
+\index{get\+Tower\+At@{get\+Tower\+At}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{get\+Tower\+At()}{getTowerAt()}}
+{\footnotesize\ttfamily \hyperlink{classtowers_1_1_tower}{Tower} get\+Tower\+At (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+restituisce la torre in base alle coordinate passate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata. \\
+\hline
+{\em y} & coordinata.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la torre. 
+\end{DoxyReturn}
+
+
+Definition at line 487 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classscenes_1_1_level3_a4345f2e80059788e5ab1dd1cf0ff2c04_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classscenes_1_1_level3_a4345f2e80059788e5ab1dd1cf0ff2c04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a6fff8a01141127e3c2897a077e5dee92}\label{classscenes_1_1_level3_a6fff8a01141127e3c2897a077e5dee92}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!get\+Tower\+Manager@{get\+Tower\+Manager}}
+\index{get\+Tower\+Manager@{get\+Tower\+Manager}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{get\+Tower\+Manager()}{getTowerManager()}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_tower_manager}{Tower\+Manager} get\+Tower\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+restituisce l\textquotesingle{}oggetto towermanager. 
+
+\begin{DoxyReturn}{Returns}
+oggetto towermanager 
+\end{DoxyReturn}
+
+
+Definition at line 653 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a6b0fc6fbe769f38b9418fbaa51214735}\label{classscenes_1_1_level3_a6b0fc6fbe769f38b9418fbaa51214735}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!get\+Wave\+Manager@{get\+Wave\+Manager}}
+\index{get\+Wave\+Manager@{get\+Wave\+Manager}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{get\+Wave\+Manager()}{getWaveManager()}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_wave_manager}{Wave\+Manager} get\+Wave\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+restituisce l\textquotesingle{}oggetto wavemanager. 
+
+\begin{DoxyReturn}{Returns}
+oggetto wavemanager 
+\end{DoxyReturn}
+
+
+Definition at line 671 of file Level3.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a6b0fc6fbe769f38b9418fbaa51214735_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_aded9c531b53772fd90d09a8b6bf0132e}\label{classscenes_1_1_level3_aded9c531b53772fd90d09a8b6bf0132e}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!imp\+Image@{imp\+Image}}
+\index{imp\+Image@{imp\+Image}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{imp\+Image()}{impImage()}}
+{\footnotesize\ttfamily void imp\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+importa le immagini. 
+
+
+
+Definition at line 146 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classscenes_1_1_level3_aded9c531b53772fd90d09a8b6bf0132e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classscenes_1_1_level3_aded9c531b53772fd90d09a8b6bf0132e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a27d3ba5afb772cc36c9a432c28975ace}\label{classscenes_1_1_level3_a27d3ba5afb772cc36c9a432c28975ace}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!init\+Buttons@{init\+Buttons}}
+\index{init\+Buttons@{init\+Buttons}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{init\+Buttons()}{initButtons()}}
+{\footnotesize\ttfamily void init\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+inizializza tutti i bottoni presenti. 
+
+
+
+Definition at line 153 of file Level3.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classscenes_1_1_level3_a27d3ba5afb772cc36c9a432c28975ace_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_afe125d345675ffefe8da7e96d39773f3}\label{classscenes_1_1_level3_afe125d345675ffefe8da7e96d39773f3}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!init\+Classes@{init\+Classes}}
+\index{init\+Classes@{init\+Classes}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{init\+Classes()}{initClasses()}}
+{\footnotesize\ttfamily void init\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+inizializza tutte le classi presenti. 
+
+
+
+Definition at line 132 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_afe125d345675ffefe8da7e96d39773f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classscenes_1_1_level3_afe125d345675ffefe8da7e96d39773f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_acd1846d50c3d8678777f9ab6716f5cf3}\label{classscenes_1_1_level3_acd1846d50c3d8678777f9ab6716f5cf3}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!is\+All\+Dead@{is\+All\+Dead}}
+\index{is\+All\+Dead@{is\+All\+Dead}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{is\+All\+Dead()}{isAllDead()}}
+{\footnotesize\ttfamily boolean is\+All\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+controlla se i nemici sono tutti morti. 
+
+\begin{DoxyReturn}{Returns}
+booleana (false = ondata non finita/nemici ancora vivi), (true = tutti morti) 
+\end{DoxyReturn}
+
+
+Definition at line 339 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_acd1846d50c3d8678777f9ab6716f5cf3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classscenes_1_1_level3_acd1846d50c3d8678777f9ab6716f5cf3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a121827ebd1c5b24c92f966721b51c0b9}\label{classscenes_1_1_level3_a121827ebd1c5b24c92f966721b51c0b9}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!is\+Enemy\+Spawn@{is\+Enemy\+Spawn}}
+\index{is\+Enemy\+Spawn@{is\+Enemy\+Spawn}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{is\+Enemy\+Spawn()}{isEnemySpawn()}}
+{\footnotesize\ttfamily boolean is\+Enemy\+Spawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+controlla che sia spawnato il nemico e che l\textquotesingle{}ondata non sia finita. 
+
+\begin{DoxyReturn}{Returns}
+booleana (vera = il nemico è spawnato), (falso = il nemico non è spawnato/l\textquotesingle{}ondata è finita). 
+\end{DoxyReturn}
+
+
+Definition at line 317 of file Level3.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classscenes_1_1_level3_a121827ebd1c5b24c92f966721b51c0b9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classscenes_1_1_level3_a121827ebd1c5b24c92f966721b51c0b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a999f12a033f49f299ad7f55bcae24447}\label{classscenes_1_1_level3_a999f12a033f49f299ad7f55bcae24447}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!is\+More\+Waves@{is\+More\+Waves}}
+\index{is\+More\+Waves@{is\+More\+Waves}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{is\+More\+Waves()}{isMoreWaves()}}
+{\footnotesize\ttfamily boolean is\+More\+Waves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+richiama il metodo per controllare se ci solo altre ondate. 
+
+\begin{DoxyReturn}{Returns}
+booleana (vera = ci sono), (falso = N\+ON ci sono). 
+\end{DoxyReturn}
+
+
+Definition at line 356 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classscenes_1_1_level3_a999f12a033f49f299ad7f55bcae24447_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classscenes_1_1_level3_a999f12a033f49f299ad7f55bcae24447_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_aaeac2ee6b3a920a21928ee7b3dc8e7a9}\label{classscenes_1_1_level3_aaeac2ee6b3a920a21928ee7b3dc8e7a9}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!is\+Tile\+Available@{is\+Tile\+Available}}
+\index{is\+Tile\+Available@{is\+Tile\+Available}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{is\+Tile\+Available()}{isTileAvailable()}}
+{\footnotesize\ttfamily boolean is\+Tile\+Available (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+restituisce se la tile è in base alle coordinate passate è una dove si puo piazzare una torre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata. \\
+\hline
+{\em y} & coordinata.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+booleana (true = la tile è disponibile), (false = la tile N\+ON è disponibile). 
+\end{DoxyReturn}
+
+
+Definition at line 526 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classscenes_1_1_level3_aaeac2ee6b3a920a21928ee7b3dc8e7a9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classscenes_1_1_level3_aaeac2ee6b3a920a21928ee7b3dc8e7a9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_ab68417e6738c05037923f5f0f21eb586}\label{classscenes_1_1_level3_ab68417e6738c05037923f5f0f21eb586}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!is\+Timer\+Over@{is\+Timer\+Over}}
+\index{is\+Timer\+Over@{is\+Timer\+Over}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{is\+Timer\+Over()}{isTimerOver()}}
+{\footnotesize\ttfamily boolean is\+Timer\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+richiama il metodo per controllare se ci solo altre ondate. 
+
+\begin{DoxyReturn}{Returns}
+booleana (vera = ci sono), (falso = N\+ON ci sono). 
+\end{DoxyReturn}
+
+
+Definition at line 365 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_ab68417e6738c05037923f5f0f21eb586_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classscenes_1_1_level3_ab68417e6738c05037923f5f0f21eb586_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_aa12eb1084be2c4d9b03d5f248f00900d}\label{classscenes_1_1_level3_aa12eb1084be2c4d9b03d5f248f00900d}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!key\+Pressed@{key\+Pressed}}
+\index{key\+Pressed@{key\+Pressed}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{key\+Pressed()}{keyPressed()}}
+{\footnotesize\ttfamily void key\+Pressed (\begin{DoxyParamCaption}\item[{Key\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i vari input da tastiera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento della tastiera. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 718 of file Level3.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classscenes_1_1_level3_aa12eb1084be2c4d9b03d5f248f00900d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a286931cc46e197f4a85af7229fdc29a4}\label{classscenes_1_1_level3_a286931cc46e197f4a85af7229fdc29a4}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!load\+Level@{load\+Level}}
+\index{load\+Level@{load\+Level}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{load\+Level()}{loadLevel()}}
+{\footnotesize\ttfamily void load\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+carica il livello. 
+
+
+
+Definition at line 178 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a286931cc46e197f4a85af7229fdc29a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classscenes_1_1_level3_a286931cc46e197f4a85af7229fdc29a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a45d56bd84238e8b56589dfc732e2b2cf}\label{classscenes_1_1_level3_a45d56bd84238e8b56589dfc732e2b2cf}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!mouse\+Clicked@{mouse\+Clicked}}
+\index{mouse\+Clicked@{mouse\+Clicked}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{mouse\+Clicked()}{mouseClicked()}}
+{\footnotesize\ttfamily void mouse\+Clicked (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i vari click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_a45d56bd84238e8b56589dfc732e2b2cf}{Scene\+Methods}.
+
+
+
+Definition at line 538 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a45d56bd84238e8b56589dfc732e2b2cf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_adbfc0588c017133c9b7070474402b72f}\label{classscenes_1_1_level3_adbfc0588c017133c9b7070474402b72f}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!mouse\+Dragged@{mouse\+Dragged}}
+\index{mouse\+Dragged@{mouse\+Dragged}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{mouse\+Dragged()}{mouseDragged()}}
+{\footnotesize\ttfamily void mouse\+Dragged (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i vari drag del mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_adbfc0588c017133c9b7070474402b72f}{Scene\+Methods}.
+
+
+
+Definition at line 638 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a2ca251710b65639ec80bc141edde60aa}\label{classscenes_1_1_level3_a2ca251710b65639ec80bc141edde60aa}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!mouse\+Moved@{mouse\+Moved}}
+\index{mouse\+Moved@{mouse\+Moved}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{mouse\+Moved()}{mouseMoved()}}
+{\footnotesize\ttfamily void mouse\+Moved (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce le varie opzioni di movimento del mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_a2ca251710b65639ec80bc141edde60aa}{Scene\+Methods}.
+
+
+
+Definition at line 578 of file Level3.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a2ca251710b65639ec80bc141edde60aa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_aed82e1ce3dd3cf283d508c3ba3be70ef}\label{classscenes_1_1_level3_aed82e1ce3dd3cf283d508c3ba3be70ef}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!mouse\+Pressed@{mouse\+Pressed}}
+\index{mouse\+Pressed@{mouse\+Pressed}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{mouse\+Pressed()}{mousePressed()}}
+{\footnotesize\ttfamily void mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i vari press del mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_aed82e1ce3dd3cf283d508c3ba3be70ef}{Scene\+Methods}.
+
+
+
+Definition at line 601 of file Level3.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_aed82e1ce3dd3cf283d508c3ba3be70ef_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a87a07291794e15052db67f945d90853e}\label{classscenes_1_1_level3_a87a07291794e15052db67f945d90853e}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!mouse\+Released@{mouse\+Released}}
+\index{mouse\+Released@{mouse\+Released}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{mouse\+Released()}{mouseReleased()}}
+{\footnotesize\ttfamily void mouse\+Released (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i vari release del mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_a87a07291794e15052db67f945d90853e}{Scene\+Methods}.
+
+
+
+Definition at line 622 of file Level3.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a87a07291794e15052db67f945d90853e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_addba85b44e35a186e066b2e801f433c4}\label{classscenes_1_1_level3_addba85b44e35a186e066b2e801f433c4}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!remove\+Tower@{remove\+Tower}}
+\index{remove\+Tower@{remove\+Tower}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{remove\+Tower()}{removeTower()}}
+{\footnotesize\ttfamily void remove\+Tower (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{displayed\+Tower }\end{DoxyParamCaption})}
+
+
+
+sell della torre; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em displayed\+Tower} & torre da vendere \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 709 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_addba85b44e35a186e066b2e801f433c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a203b6ad9d5e4d54dd1152986eec4dedc}\label{classscenes_1_1_level3_a203b6ad9d5e4d54dd1152986eec4dedc}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!render@{render}}
+\index{render@{render}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void render (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna la schermata ed ogni suo cambiamento. 
+
+disegna sfondo, bottone, nemici(animazioni e spostamenti), torri(animazioni), proiettili (animazioni e spostamenti), torre selezionata, mappa, eventuale pause\+Overlay, action\+Bar, eventuale schermata di vottoria/sconfitta.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfacescenes_1_1_scene_methods_a203b6ad9d5e4d54dd1152986eec4dedc}{Scene\+Methods}.
+
+
+
+Definition at line 378 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a203b6ad9d5e4d54dd1152986eec4dedc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a548cf4795e9d559d0c0cce0bb57a5251}\label{classscenes_1_1_level3_a548cf4795e9d559d0c0cce0bb57a5251}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!reset\+Buttons@{reset\+Buttons}}
+\index{reset\+Buttons@{reset\+Buttons}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{reset\+Buttons()}{resetButtons()}}
+{\footnotesize\ttfamily void reset\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+resetta i bottoni 
+
+
+
+Definition at line 644 of file Level3.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a548cf4795e9d559d0c0cce0bb57a5251_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{classscenes_1_1_level3_a548cf4795e9d559d0c0cce0bb57a5251_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a484775c889ccd8602b66ad795b141534}\label{classscenes_1_1_level3_a484775c889ccd8602b66ad795b141534}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!rimuovi\+Vita@{rimuovi\+Vita}}
+\index{rimuovi\+Vita@{rimuovi\+Vita}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{rimuovi\+Vita()}{rimuoviVita()}}
+{\footnotesize\ttfamily void rimuovi\+Vita (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+rimuove una vita 
+
+
+
+Definition at line 514 of file Level3.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a484775c889ccd8602b66ad795b141534_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a49e1d0816e9e0cabfb855147f399f5b5}\label{classscenes_1_1_level3_a49e1d0816e9e0cabfb855147f399f5b5}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!set\+Game\+Over@{set\+Game\+Over}}
+\index{set\+Game\+Over@{set\+Game\+Over}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{set\+Game\+Over()}{setGameOver()}}
+{\footnotesize\ttfamily void set\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+setta la fine del livello 
+
+
+
+Definition at line 731 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_afdd7363804bf6696ce4a46d6448844ed}\label{classscenes_1_1_level3_afdd7363804bf6696ce4a46d6448844ed}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!set\+Level@{set\+Level}}
+\index{set\+Level@{set\+Level}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{set\+Level()}{setLevel()}}
+{\footnotesize\ttfamily void set\+Level (\begin{DoxyParamCaption}\item[{int}]{lvl\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+setta il livello. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lvl} & matrice da impostare \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 187 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_aeab1551e3e372c6402076c04ea9002bb}\label{classscenes_1_1_level3_aeab1551e3e372c6402076c04ea9002bb}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!set\+Paused@{set\+Paused}}
+\index{set\+Paused@{set\+Paused}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{set\+Paused()}{setPaused()}}
+{\footnotesize\ttfamily void set\+Paused (\begin{DoxyParamCaption}\item[{boolean}]{paused }\end{DoxyParamCaption})}
+
+
+
+setter della booleana paused. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em paused} & da settare. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 446 of file Level3.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_aeab1551e3e372c6402076c04ea9002bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_ac9525f397417cae10d3de076f5b2e9d3}\label{classscenes_1_1_level3_ac9525f397417cae10d3de076f5b2e9d3}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!set\+Selected\+Tower@{set\+Selected\+Tower}}
+\index{set\+Selected\+Tower@{set\+Selected\+Tower}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{set\+Selected\+Tower()}{setSelectedTower()}}
+{\footnotesize\ttfamily void set\+Selected\+Tower (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{selected\+Tower }\end{DoxyParamCaption})}
+
+
+
+setta la selected\+Tower. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected\+Tower} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 680 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a200b073564fc341f34b6112718742bae}\label{classscenes_1_1_level3_a200b073564fc341f34b6112718742bae}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!shoot@{shoot}}
+\index{shoot@{shoot}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily void shoot (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{t,  }\item[{\hyperlink{classenemies_1_1_enemy}{Enemy}}]{e }\end{DoxyParamCaption})}
+
+
+
+richiama il metodo per creare e sparare il proiettile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & torre. \\
+\hline
+{\em e} & nemico. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 497 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a200b073564fc341f34b6112718742bae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_addfc0c3129b6ff606f7276e175f31a15}\label{classscenes_1_1_level3_addfc0c3129b6ff606f7276e175f31a15}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!spawn\+Enemy@{spawn\+Enemy}}
+\index{spawn\+Enemy@{spawn\+Enemy}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{spawn\+Enemy()}{spawnEnemy()}}
+{\footnotesize\ttfamily void spawn\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+richiama il metodo per spawnare un nemico. 
+
+
+
+Definition at line 330 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_addfc0c3129b6ff606f7276e175f31a15_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classscenes_1_1_level3_addfc0c3129b6ff606f7276e175f31a15_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a8a3c715fcfd3d65e1d8241a1fa4965ff}\label{classscenes_1_1_level3_a8a3c715fcfd3d65e1d8241a1fa4965ff}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!tower\+Level\+Up@{tower\+Level\+Up}}
+\index{tower\+Level\+Up@{tower\+Level\+Up}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{tower\+Level\+Up()}{towerLevelUp()}}
+{\footnotesize\ttfamily void tower\+Level\+Up (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{displayed\+Tower }\end{DoxyParamCaption})}
+
+
+
+upgrade della torre; 
+
+
+\begin{DoxyParams}{Parameters}
+{\em displayed\+Tower} & torre da upgradare \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 700 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_a8a3c715fcfd3d65e1d8241a1fa4965ff_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_a7ca93fcd8c7440e7b3f64c595a5be28c}\label{classscenes_1_1_level3_a7ca93fcd8c7440e7b3f64c595a5be28c}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!update\+Coin@{update\+Coin}}
+\index{update\+Coin@{update\+Coin}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{update\+Coin()}{updateCoin()}}
+{\footnotesize\ttfamily void update\+Coin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+aggiornamento dei soldi. 
+
+se non è in pausa il gioco o se non è terminato il livello aggiorna il tick e ogni 40 tick aggiunge un coin. 
+
+Definition at line 302 of file Level3.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classscenes_1_1_level3_a7ca93fcd8c7440e7b3f64c595a5be28c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_af005ec68c869a6acd5e833cba9330a50}\label{classscenes_1_1_level3_af005ec68c869a6acd5e833cba9330a50}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!update\+Enemy@{update\+Enemy}}
+\index{update\+Enemy@{update\+Enemy}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{update\+Enemy()}{updateEnemy()}}
+{\footnotesize\ttfamily void update\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+aggiornamento dei nemici. 
+
+svolge tutte le funzioni per permettere ai nemici di proseguire in ondate, finche non finisce il livello o finche il gioco non è in pausa. imposta la vittoria il game over e la fine della musica in caso di fine livello. 
+
+Definition at line 235 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_af005ec68c869a6acd5e833cba9330a50_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_ac83c203b559f6fd0bb225744d7ccf854}\label{classscenes_1_1_level3_ac83c203b559f6fd0bb225744d7ccf854}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!update\+Proj@{update\+Proj}}
+\index{update\+Proj@{update\+Proj}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{update\+Proj()}{updateProj()}}
+{\footnotesize\ttfamily void update\+Proj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+aggiornamento dei proiettili. 
+
+richiama l\textquotesingle{}aggiornamento dei proiettili se non è in pausa il gioco o se non è terminato il livello. 
+
+Definition at line 290 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_ac83c203b559f6fd0bb225744d7ccf854_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_ae4fd4a959e4d782a5e7ac0eff77ba27f}\label{classscenes_1_1_level3_ae4fd4a959e4d782a5e7ac0eff77ba27f}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!update\+Tower@{update\+Tower}}
+\index{update\+Tower@{update\+Tower}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{update\+Tower()}{updateTower()}}
+{\footnotesize\ttfamily void update\+Tower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+aggiornamento delle torri. 
+
+richiama l\textquotesingle{}aggiornamento delle torri se non è in pausa il gioco o se non è terminato il livello. 
+
+Definition at line 263 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_ae4fd4a959e4d782a5e7ac0eff77ba27f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classscenes_1_1_level3_ab424ab29e7ab4733f2efd1e6ef3f13b1}\label{classscenes_1_1_level3_ab424ab29e7ab4733f2efd1e6ef3f13b1}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!update\+Wave@{update\+Wave}}
+\index{update\+Wave@{update\+Wave}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{update\+Wave()}{updateWave()}}
+{\footnotesize\ttfamily void update\+Wave (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+aggiornamento delle ondate. 
+
+richiama l\textquotesingle{}aggiornamento delle ondate se non è in pausa il gioco o se non è terminato il livello e spawna i nemici. 
+
+Definition at line 275 of file Level3.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classscenes_1_1_level3_ab424ab29e7ab4733f2efd1e6ef3f13b1_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classscenes_1_1_level3_aa73d545c6ea02ea24a244ba02a329b28}\label{classscenes_1_1_level3_aa73d545c6ea02ea24a244ba02a329b28}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!actionbar@{actionbar}}
+\index{actionbar@{actionbar}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{actionbar}{actionbar}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_action_bar}{Action\+Bar} actionbar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 73 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a3bcc199bdb1d50c111054398694c7473}\label{classscenes_1_1_level3_a3bcc199bdb1d50c111054398694c7473}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!Bmenu@{Bmenu}}
+\index{Bmenu@{Bmenu}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{Bmenu}{Bmenu}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} Bmenu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 82 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a02094092ae89aa4b23bff1976bcbf90d}\label{classscenes_1_1_level3_a02094092ae89aa4b23bff1976bcbf90d}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!c@{c}}
+\index{c@{c}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily Color c\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 88 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_aa48bc6c9a2648651d6484c9063ca1b8f}\label{classscenes_1_1_level3_aa48bc6c9a2648651d6484c9063ca1b8f}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!coin\+Tick@{coin\+Tick}}
+\index{coin\+Tick@{coin\+Tick}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{coin\+Tick}{coinTick}}
+{\footnotesize\ttfamily int coin\+Tick\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 100 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a1f593b74cc45d79b21ce59953aa8118f}\label{classscenes_1_1_level3_a1f593b74cc45d79b21ce59953aa8118f}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!enemymanager@{enemymanager}}
+\index{enemymanager@{enemymanager}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{enemymanager}{enemymanager}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_enemy_manager}{Enemy\+Manager} enemymanager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 55 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a08590df28bf721b1cf1670cf0f8f7341}\label{classscenes_1_1_level3_a08590df28bf721b1cf1670cf0f8f7341}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!exit@{exit}}
+\index{exit@{exit}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{exit}{exit}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_ush_button}{Ush\+Button} exit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 112 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a3fb562f10e8f7f83cb2ed130eab6d439}\label{classscenes_1_1_level3_a3fb562f10e8f7f83cb2ed130eab6d439}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!f@{f}}
+\index{f@{f}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily Font f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 85 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a962cec751fe966ea7bf381c68ab5c70f}\label{classscenes_1_1_level3_a962cec751fe966ea7bf381c68ab5c70f}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!gameover@{gameover}}
+\index{gameover@{gameover}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{gameover}{gameover}}
+{\footnotesize\ttfamily boolean gameover = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 103 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_ab0c4ea45989823c211fa4034d743f36b}\label{classscenes_1_1_level3_ab0c4ea45989823c211fa4034d743f36b}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!ingranaggio@{ingranaggio}}
+\index{ingranaggio@{ingranaggio}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{ingranaggio}{ingranaggio}}
+{\footnotesize\ttfamily Buffered\+Image ingranaggio\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 67 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a4965d4285aad63d850d0917b23e3f11f}\label{classscenes_1_1_level3_a4965d4285aad63d850d0917b23e3f11f}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!L\+E\+V\+E\+L\+N\+A\+ME@{L\+E\+V\+E\+L\+N\+A\+ME}}
+\index{L\+E\+V\+E\+L\+N\+A\+ME@{L\+E\+V\+E\+L\+N\+A\+ME}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{L\+E\+V\+E\+L\+N\+A\+ME}{LEVELNAME}}
+{\footnotesize\ttfamily String L\+E\+V\+E\+L\+N\+A\+ME = \char`\"{}level3\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 49 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a4b06a2210cf5b93dda77f2a9a061d538}\label{classscenes_1_1_level3_a4b06a2210cf5b93dda77f2a9a061d538}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!lvl@{lvl}}
+\index{lvl@{lvl}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{lvl}{lvl}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} lvl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 70 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a85ea1b63086b31a15d3ed2579c5715a6}\label{classscenes_1_1_level3_a85ea1b63086b31a15d3ed2579c5715a6}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!mouseX@{mouseX}}
+\index{mouseX@{mouseX}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{mouseX}{mouseX}}
+{\footnotesize\ttfamily int mouseX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a3637abebcaa9d04aa18b1610d0921e16}\label{classscenes_1_1_level3_a3637abebcaa9d04aa18b1610d0921e16}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!mouseY@{mouseY}}
+\index{mouseY@{mouseY}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{mouseY}{mouseY}}
+{\footnotesize\ttfamily int mouseY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 79 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_aa1e43f4bcbc826434b83c0f3ec507143}\label{classscenes_1_1_level3_aa1e43f4bcbc826434b83c0f3ec507143}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!paused@{paused}}
+\index{paused@{paused}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{paused}{paused}}
+{\footnotesize\ttfamily boolean paused = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 94 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a544fb9294d892e35b4b0316e07997cd6}\label{classscenes_1_1_level3_a544fb9294d892e35b4b0316e07997cd6}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!pauseoverlay@{pauseoverlay}}
+\index{pauseoverlay@{pauseoverlay}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{pauseoverlay}{pauseoverlay}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_pause_overlay}{Pause\+Overlay} pauseoverlay\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 91 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_aee34cf906685787259a2edd7d4559863}\label{classscenes_1_1_level3_aee34cf906685787259a2edd7d4559863}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!projmanager@{projmanager}}
+\index{projmanager@{projmanager}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{projmanager}{projmanager}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_projectile_manager}{Projectile\+Manager} projmanager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 61 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_ac1d34384911014e49613ccfb1abddbcc}\label{classscenes_1_1_level3_ac1d34384911014e49613ccfb1abddbcc}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!restart@{restart}}
+\index{restart@{restart}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{restart}{restart}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_ush_button}{Ush\+Button} restart\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 109 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a76e9e53c877d84187e0efb78f03c86d4}\label{classscenes_1_1_level3_a76e9e53c877d84187e0efb78f03c86d4}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!s@{s}}
+\index{s@{s}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_sound}{Sound} s = new \hyperlink{classprogetto_1_1_sound}{Sound}(1)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 52 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_af6b1162bc2f00f8d549aae075ddd5a8b}\label{classscenes_1_1_level3_af6b1162bc2f00f8d549aae075ddd5a8b}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!selected\+Tower@{selected\+Tower}}
+\index{selected\+Tower@{selected\+Tower}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{selected\+Tower}{selectedTower}}
+{\footnotesize\ttfamily \hyperlink{classtowers_1_1_tower}{Tower} selected\+Tower\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 97 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a1340930f4499459346af3af2d24e3d3e}\label{classscenes_1_1_level3_a1340930f4499459346af3af2d24e3d3e}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!towermanager@{towermanager}}
+\index{towermanager@{towermanager}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{towermanager}{towermanager}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_tower_manager}{Tower\+Manager} towermanager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 58 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a53367ff9cb3d994463429a1103e0ce6a}\label{classscenes_1_1_level3_a53367ff9cb3d994463429a1103e0ce6a}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!wavemanager@{wavemanager}}
+\index{wavemanager@{wavemanager}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{wavemanager}{wavemanager}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_wave_manager}{Wave\+Manager} wavemanager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 64 of file Level3.\+java.
+
+\mbox{\Hypertarget{classscenes_1_1_level3_a1cc7b399bb950a160021766cd9a126f8}\label{classscenes_1_1_level3_a1cc7b399bb950a160021766cd9a126f8}} 
+\index{scenes\+::\+Level3@{scenes\+::\+Level3}!win@{win}}
+\index{win@{win}!scenes\+::\+Level3@{scenes\+::\+Level3}}
+\subsubsection{\texorpdfstring{win}{win}}
+{\footnotesize\ttfamily boolean win =false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 106 of file Level3.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/scenes/\hyperlink{_level3_8java}{Level3.\+java}\end{DoxyCompactItemize}

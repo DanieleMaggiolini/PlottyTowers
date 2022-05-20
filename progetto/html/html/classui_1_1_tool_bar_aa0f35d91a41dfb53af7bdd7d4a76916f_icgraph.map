@@ -1,0 +1,5 @@
+<map id="drawSelectedTile" name="drawSelectedTile">
+<area shape="rect" id="node2" href="$classui_1_1_tool_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="173,5,260,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_tool_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni. " alt="" coords="308,5,357,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_editing.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la mappa. " alt="" coords="405,5,553,32"/>
+</map>

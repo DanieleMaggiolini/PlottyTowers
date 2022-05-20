@@ -1,0 +1,10 @@
+<map id="Editing" name="Editing">
+<area shape="rect" id="node2" href="$classscenes_1_1_editing.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza le classi. " alt="" coords="116,31,203,57"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_editing.html#ad79f312dd3a9e52f38a9e5f1536537fd" title="inizializza il livello. " alt="" coords="251,5,337,32"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_editing.html#a286931cc46e197f4a85af7229fdc29a4" title="carica il livello. " alt="" coords="257,56,331,83"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_load_save.html#a934717f63182b47ab05a70ec40cef235" title="crea nuovo array con valori default " alt="" coords="385,5,568,32"/>
+<area shape="rect" id="node5" href="$classhelpz_1_1_load_save.html#a953963a355bc62c6a3c1fdb51851d796" title="scrive su un file " alt="" coords="617,5,796,32"/>
+<area shape="rect" id="node7" href="$classhelpz_1_1_load_save.html#a9dbd50db72db31e6a9c5c423d4e48be3" title="load 2d int array from a file " alt="" coords="391,56,562,83"/>
+<area shape="rect" id="node8" href="$classhelpz_1_1_load_save.html#a62d3bd4e3f361e1f99bd9d21a7d21b0d" title="legge un file " alt="" coords="625,56,788,83"/>
+<area shape="rect" id="node9" href="$classhelpz_1_1_utilz.html#a3f701300276e5102efe8c55e65192dec" title="helpz.Utilz.ArrayListTo2dInt" alt="" coords="616,107,797,133"/>
+</map>

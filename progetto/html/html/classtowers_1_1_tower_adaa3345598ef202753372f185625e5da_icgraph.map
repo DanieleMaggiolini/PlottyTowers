@@ -1,0 +1,34 @@
+<map id="getTypetower" name="getTypetower">
+<area shape="rect" id="node2" href="$classmanagers_1_1_projectile_manager.html#ad4505ed80d64e9561393c0406fe7d904" title="aggiunta di un proiettile nell&#39;array " alt="" coords="409,125,624,166"/>
+<area shape="rect" id="node7" href="$classmanagers_1_1_projectile_manager.html#a942d732bac65df2f0d220989ca42ce76" title="per la torre passata restituito il suo tipo di proiettile utilizzato " alt="" coords="152,239,361,281"/>
+<area shape="rect" id="node8" href="$classmanagers_1_1_tower_manager.html#a337d987717311ab51a124a11a059f66c" title="considerati tutti i nemici, se sono vivi, nel raggio della torre in considerazione, se il suo cooldown è finito, e se presente un animazione siamo nell&#39;index giusto, fare spaare la torre " alt="" coords="153,335,360,361"/>
+<area shape="rect" id="node14" href="$classmanagers_1_1_tower_manager.html#a245f3270a9250216ec446114a8cdd805" title="aggiunta di una torre nell&#39;arraylist delle torri " alt="" coords="672,513,864,554"/>
+<area shape="rect" id="node15" href="$classscenes_1_1_level1.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="916,473,1107,500"/>
+<area shape="rect" id="node16" href="$classscenes_1_1_level2.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="916,524,1107,551"/>
+<area shape="rect" id="node17" href="$classscenes_1_1_level3.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="916,579,1107,605"/>
+<area shape="rect" id="node18" href="$classscenes_1_1_level4.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="916,629,1107,656"/>
+<area shape="rect" id="node19" href="$classmanagers_1_1_tower_manager.html#a2cbe196e347dcc9a69a4d3dfdbec72de" title="controllo se la torre deve rimanere ferma o deve essere animata, in base alla presenza di nemici..." alt="" coords="157,983,356,1025"/>
+<area shape="rect" id="node25" href="$classscenes_1_1_level1.html#a0a97d0bb6d32640b2ae351707946abf7" title="disegna la selectedTower dopo aver controllato che sia effettivamente selezionata; ..." alt="" coords="423,867,610,909"/>
+<area shape="rect" id="node26" href="$classscenes_1_1_level2.html#a0a97d0bb6d32640b2ae351707946abf7" title="disegna la selectedTower dopo aver controllato che sia effettivamente selezionata; ..." alt="" coords="163,918,350,959"/>
+<area shape="rect" id="node27" href="$classscenes_1_1_level3.html#a0a97d0bb6d32640b2ae351707946abf7" title="disegna la selectedTower dopo aver controllato che sia effettivamente selezionata; ..." alt="" coords="163,1049,350,1090"/>
+<area shape="rect" id="node28" href="$classscenes_1_1_level4.html#a0a97d0bb6d32640b2ae351707946abf7" title="disegna la selectedTower dopo aver controllato che sia effettivamente selezionata; ..." alt="" coords="423,1107,610,1149"/>
+<area shape="rect" id="node29" href="$classui_1_1_action_bar.html#a2177b06de4c0084e953665a7dbfd6772" title="disegna la torre selezionata, le sue info e i bottoni relativi ad essa. " alt="" coords="677,722,859,763"/>
+<area shape="rect" id="node31" href="$classui_1_1_action_bar.html#a6c5f59282a148a0d74bc5aa58d5ad307" title="restituisce il costo per upgradare la torre selezionata. " alt="" coords="163,664,350,691"/>
+<area shape="rect" id="node32" href="$classui_1_1_action_bar.html#aef810268cda93505da735c6c81136e00" title="restituisce il guadagno della vendita della torre selezionata. " alt="" coords="429,613,604,640"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="698,5,838,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="698,56,838,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level3.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="698,107,838,133"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level4.html#a200b073564fc341f34b6112718742bae" title="richiama il metodo per creare e sparare il proiettile. " alt="" coords="698,157,838,184"/>
+<area shape="rect" id="node9" href="$classmanagers_1_1_tower_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="aggiornamento del cooldown di ogni torre presente e richiamo del metodo per attaccare un nemico ..." alt="" coords="411,309,622,336"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_level1.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="677,208,859,235"/>
+<area shape="rect" id="node11" href="$classscenes_1_1_level2.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="677,259,859,285"/>
+<area shape="rect" id="node12" href="$classscenes_1_1_level3.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="677,309,859,336"/>
+<area shape="rect" id="node13" href="$classscenes_1_1_level4.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="aggiornamento delle torri. " alt="" coords="677,360,859,387"/>
+<area shape="rect" id="node20" href="$classmanagers_1_1_tower_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="richiamo del metodo drawTower per ogni torre " alt="" coords="912,1005,1111,1032"/>
+<area shape="rect" id="node21" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="1159,904,1303,931"/>
+<area shape="rect" id="node22" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="1159,955,1303,981"/>
+<area shape="rect" id="node23" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="1159,1005,1303,1032"/>
+<area shape="rect" id="node24" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="1159,1056,1303,1083"/>
+<area shape="rect" id="node30" href="$classui_1_1_action_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori..." alt="" coords="949,904,1073,931"/>
+<area shape="rect" id="node33" href="$classui_1_1_action_bar.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse. " alt="" coords="679,629,857,656"/>
+</map>

@@ -1,0 +1,583 @@
+\hypertarget{classui_1_1_level_menu}{}\section{Level\+Menu Class Reference}
+\label{classui_1_1_level_menu}\index{Level\+Menu@{Level\+Menu}}
+
+
+classe per la gestione degli eventi del mouse e dei bottoni presenti nel menu dei livelli  
+
+
+
+
+Collaboration diagram for Level\+Menu\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classui_1_1_level_menu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classui_1_1_level_menu_a08d3dc37d2a120ac517986d021c999c0}{Level\+Menu} ()
+\begin{DoxyCompactList}\small\item\em costruttore. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_level_menu_a72fe1ffca978e99fd16994a10e7f8051}{draw} (Graphics g)
+\begin{DoxyCompactList}\small\item\em disegna lo sfondo e richiama il metodo per disegnare i bottoni. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_level_menu_a65768678909bc0512c6cb9780709ad38}{draw\+Button} (Graphics g)
+\begin{DoxyCompactList}\small\item\em imposta e disegna i bottoni. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_level_menu_a90a96ba9679b7df9cc591d4c58430615}{unlock\+Level} (String state)
+\begin{DoxyCompactList}\small\item\em rende giocabile un livello in basse allo state dal quale viene richiamato. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_level_menu_aed82e1ce3dd3cf283d508c3ba3be70ef}{mouse\+Pressed} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em imposta il punto dove abbiamo iniziato a cliccare/trascinare. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_level_menu_adbfc0588c017133c9b7070474402b72f}{mouse\+Dragged} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em imposta il punto dove abbiamo iniziato a cliccare/trascinare. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_level_menu_a45d56bd84238e8b56589dfc732e2b2cf}{mouse\+Clicked} (Mouse\+Event e)
+\begin{DoxyCompactList}\small\item\em gestisce i vari click del mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{classui_1_1_level_menu_a4546a97c9e98d01fc2547b2018856428}{unlocklvl2} =false
+\item 
+boolean \hyperlink{classui_1_1_level_menu_a670b1cc8dc37b763e9aa113b57e34420}{unlocklvl3} =false
+\item 
+boolean \hyperlink{classui_1_1_level_menu_af19dc9730ad4c9f05adee1ce65675728}{unlocklvl4} =false
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classui_1_1_level_menu_aded9c531b53772fd90d09a8b6bf0132e}{imp\+Image} ()
+\begin{DoxyCompactList}\small\item\em importa le immagini per sfondo e bottoni. \end{DoxyCompactList}\item 
+void \hyperlink{classui_1_1_level_menu_aed9fe7e919d4355a7ad86701d44e1fea}{init\+Button} ()
+\begin{DoxyCompactList}\small\item\em inizializza i bottoni. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Buffered\+Image \hyperlink{classui_1_1_level_menu_a714354485419fb2b615f17fcce85657e}{background}
+\item 
+Buffered\+Image \mbox{[}$\,$\mbox{]} \hyperlink{classui_1_1_level_menu_a6d137cdbda7a4bbab7f28aa72fec0883}{buttons}
+\item 
+\hyperlink{classui_1_1_my_button}{My\+Button} \hyperlink{classui_1_1_level_menu_a2e10ffa510b49e3243464d9fe0548ab1}{lvl1}
+\item 
+\hyperlink{classui_1_1_my_button}{My\+Button} \hyperlink{classui_1_1_level_menu_aa0e0bb26227a5e349ce446c1aeaa3a77}{lvl2}
+\item 
+\hyperlink{classui_1_1_my_button}{My\+Button} \hyperlink{classui_1_1_level_menu_aa528df3e872324e8ce0c3cd82930113b}{lvl3}
+\item 
+\hyperlink{classui_1_1_my_button}{My\+Button} \hyperlink{classui_1_1_level_menu_a4240d0138387907a78ef7cf6c4b37f4f}{lvl4}
+\item 
+int \hyperlink{classui_1_1_level_menu_a2474a5474cbff19523a51eb1de01cda4}{width} =62
+\item 
+int \hyperlink{classui_1_1_level_menu_ad12fc34ce789bce6c8a05d8a17138534}{height} =45
+\item 
+Point \hyperlink{classui_1_1_level_menu_ae3a19a411ad9e263452836e3d42d4761}{relativeposition} =new Point(0,0)
+\item 
+Point \hyperlink{classui_1_1_level_menu_a4e519a889f31dafb22a3d869cd7e3fc2}{prev\+Pt} = new Point(0,0)
+\item 
+int \hyperlink{classui_1_1_level_menu_a49f83bbf24bd8756572457aa0319f3db}{lvl1X} =465
+\item 
+int \hyperlink{classui_1_1_level_menu_aaa2a2e1bfc7b31099f1bfc3818ae71ca}{lvl1Y} =(int)(\hyperlink{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}{Game.\+current\+Screen\+Height}$\ast$0.\+476)
+\item 
+int \hyperlink{classui_1_1_level_menu_af0481cd4056ad10d2489fdc65c6f73f1}{lvl2X} =1388
+\item 
+int \hyperlink{classui_1_1_level_menu_ab3701c0691f273011e232dea15bb5fbd}{lvl2Y} =(int)(\hyperlink{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}{Game.\+current\+Screen\+Height}$\ast$0.\+324)
+\item 
+int \hyperlink{classui_1_1_level_menu_acfc9117f336907e6204ab7e7abfc9ba8}{lvl3X} =2058
+\item 
+int \hyperlink{classui_1_1_level_menu_a996daa7186e7d5e32600f8634d605bbc}{lvl3Y} =(int)(\hyperlink{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}{Game.\+current\+Screen\+Height}$\ast$0.\+481)
+\item 
+int \hyperlink{classui_1_1_level_menu_ab04c837988047c02371c20cb54a61ee7}{lvl4X} =3250
+\item 
+int \hyperlink{classui_1_1_level_menu_a585947c0e0993df3bd65e9a4dc7e5d0f}{lvl4Y} =(int)(\hyperlink{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}{Game.\+current\+Screen\+Height}$\ast$0.\+424)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe per la gestione degli eventi del mouse e dei bottoni presenti nel menu dei livelli 
+
+Definition at line 31 of file Level\+Menu.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classui_1_1_level_menu_a08d3dc37d2a120ac517986d021c999c0}\label{classui_1_1_level_menu_a08d3dc37d2a120ac517986d021c999c0}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!Level\+Menu@{Level\+Menu}}
+\index{Level\+Menu@{Level\+Menu}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{Level\+Menu()}{LevelMenu()}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_level_menu}{Level\+Menu} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+costruttore. 
+
+richiama i metodi per inizializzare immmagini e bottoni 
+
+Definition at line 92 of file Level\+Menu.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_level_menu_a08d3dc37d2a120ac517986d021c999c0_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classui_1_1_level_menu_a72fe1ffca978e99fd16994a10e7f8051}\label{classui_1_1_level_menu_a72fe1ffca978e99fd16994a10e7f8051}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!draw@{draw}}
+\index{draw@{draw}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+disegna lo sfondo e richiama il metodo per disegnare i bottoni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 125 of file Level\+Menu.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classui_1_1_level_menu_a72fe1ffca978e99fd16994a10e7f8051_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classui_1_1_level_menu_a72fe1ffca978e99fd16994a10e7f8051_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_level_menu_a65768678909bc0512c6cb9780709ad38}\label{classui_1_1_level_menu_a65768678909bc0512c6cb9780709ad38}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!draw\+Button@{draw\+Button}}
+\index{draw\+Button@{draw\+Button}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{draw\+Button()}{drawButton()}}
+{\footnotesize\ttfamily void draw\+Button (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+imposta e disegna i bottoni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & oggetto della grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 136 of file Level\+Menu.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classui_1_1_level_menu_a65768678909bc0512c6cb9780709ad38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_level_menu_a65768678909bc0512c6cb9780709ad38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_level_menu_aded9c531b53772fd90d09a8b6bf0132e}\label{classui_1_1_level_menu_aded9c531b53772fd90d09a8b6bf0132e}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!imp\+Image@{imp\+Image}}
+\index{imp\+Image@{imp\+Image}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{imp\+Image()}{impImage()}}
+{\footnotesize\ttfamily void imp\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+importa le immagini per sfondo e bottoni. 
+
+
+
+Definition at line 101 of file Level\+Menu.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classui_1_1_level_menu_aded9c531b53772fd90d09a8b6bf0132e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classui_1_1_level_menu_aded9c531b53772fd90d09a8b6bf0132e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_level_menu_aed9fe7e919d4355a7ad86701d44e1fea}\label{classui_1_1_level_menu_aed9fe7e919d4355a7ad86701d44e1fea}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!init\+Button@{init\+Button}}
+\index{init\+Button@{init\+Button}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{init\+Button()}{initButton()}}
+{\footnotesize\ttfamily void init\+Button (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+inizializza i bottoni. 
+
+
+
+Definition at line 113 of file Level\+Menu.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classui_1_1_level_menu_aed9fe7e919d4355a7ad86701d44e1fea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_level_menu_a45d56bd84238e8b56589dfc732e2b2cf}\label{classui_1_1_level_menu_a45d56bd84238e8b56589dfc732e2b2cf}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!mouse\+Clicked@{mouse\+Clicked}}
+\index{mouse\+Clicked@{mouse\+Clicked}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{mouse\+Clicked()}{mouseClicked()}}
+{\footnotesize\ttfamily void mouse\+Clicked (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+gestisce i vari click del mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 242 of file Level\+Menu.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classui_1_1_level_menu_a45d56bd84238e8b56589dfc732e2b2cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classui_1_1_level_menu_a45d56bd84238e8b56589dfc732e2b2cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_level_menu_adbfc0588c017133c9b7070474402b72f}\label{classui_1_1_level_menu_adbfc0588c017133c9b7070474402b72f}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!mouse\+Dragged@{mouse\+Dragged}}
+\index{mouse\+Dragged@{mouse\+Dragged}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{mouse\+Dragged()}{mouseDragged()}}
+{\footnotesize\ttfamily void mouse\+Dragged (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+imposta il punto dove abbiamo iniziato a cliccare/trascinare. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 196 of file Level\+Menu.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_level_menu_adbfc0588c017133c9b7070474402b72f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_level_menu_adbfc0588c017133c9b7070474402b72f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_level_menu_aed82e1ce3dd3cf283d508c3ba3be70ef}\label{classui_1_1_level_menu_aed82e1ce3dd3cf283d508c3ba3be70ef}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!mouse\+Pressed@{mouse\+Pressed}}
+\index{mouse\+Pressed@{mouse\+Pressed}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{mouse\+Pressed()}{mousePressed()}}
+{\footnotesize\ttfamily void mouse\+Pressed (\begin{DoxyParamCaption}\item[{Mouse\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+imposta il punto dove abbiamo iniziato a cliccare/trascinare. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & evento del mouse \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 187 of file Level\+Menu.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_level_menu_aed82e1ce3dd3cf283d508c3ba3be70ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classui_1_1_level_menu_a90a96ba9679b7df9cc591d4c58430615}\label{classui_1_1_level_menu_a90a96ba9679b7df9cc591d4c58430615}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!unlock\+Level@{unlock\+Level}}
+\index{unlock\+Level@{unlock\+Level}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{unlock\+Level()}{unlockLevel()}}
+{\footnotesize\ttfamily void unlock\+Level (\begin{DoxyParamCaption}\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+rende giocabile un livello in basse allo state dal quale viene richiamato. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & stato dal quale il metodo viene richiamato per sbloccare il livello successivo \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 167 of file Level\+Menu.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_level_menu_a90a96ba9679b7df9cc591d4c58430615_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classui_1_1_level_menu_a90a96ba9679b7df9cc591d4c58430615_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classui_1_1_level_menu_a714354485419fb2b615f17fcce85657e}\label{classui_1_1_level_menu_a714354485419fb2b615f17fcce85657e}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!background@{background}}
+\index{background@{background}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{background}{background}}
+{\footnotesize\ttfamily Buffered\+Image background\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 34 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_a6d137cdbda7a4bbab7f28aa72fec0883}\label{classui_1_1_level_menu_a6d137cdbda7a4bbab7f28aa72fec0883}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!buttons@{buttons}}
+\index{buttons@{buttons}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{buttons}{buttons}}
+{\footnotesize\ttfamily Buffered\+Image \mbox{[}$\,$\mbox{]} buttons\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_ad12fc34ce789bce6c8a05d8a17138534}\label{classui_1_1_level_menu_ad12fc34ce789bce6c8a05d8a17138534}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!height@{height}}
+\index{height@{height}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int height =45\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 55 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_a2e10ffa510b49e3243464d9fe0548ab1}\label{classui_1_1_level_menu_a2e10ffa510b49e3243464d9fe0548ab1}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl1@{lvl1}}
+\index{lvl1@{lvl1}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl1}{lvl1}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} lvl1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_a49f83bbf24bd8756572457aa0319f3db}\label{classui_1_1_level_menu_a49f83bbf24bd8756572457aa0319f3db}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl1X@{lvl1X}}
+\index{lvl1X@{lvl1X}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl1X}{lvl1X}}
+{\footnotesize\ttfamily int lvl1X =465\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 64 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_aaa2a2e1bfc7b31099f1bfc3818ae71ca}\label{classui_1_1_level_menu_aaa2a2e1bfc7b31099f1bfc3818ae71ca}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl1Y@{lvl1Y}}
+\index{lvl1Y@{lvl1Y}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl1Y}{lvl1Y}}
+{\footnotesize\ttfamily int lvl1Y =(int)(\hyperlink{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}{Game.\+current\+Screen\+Height}$\ast$0.\+476)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 66 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_aa0e0bb26227a5e349ce446c1aeaa3a77}\label{classui_1_1_level_menu_aa0e0bb26227a5e349ce446c1aeaa3a77}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl2@{lvl2}}
+\index{lvl2@{lvl2}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl2}{lvl2}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} lvl2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 43 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_af0481cd4056ad10d2489fdc65c6f73f1}\label{classui_1_1_level_menu_af0481cd4056ad10d2489fdc65c6f73f1}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl2X@{lvl2X}}
+\index{lvl2X@{lvl2X}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl2X}{lvl2X}}
+{\footnotesize\ttfamily int lvl2X =1388\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 68 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_ab3701c0691f273011e232dea15bb5fbd}\label{classui_1_1_level_menu_ab3701c0691f273011e232dea15bb5fbd}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl2Y@{lvl2Y}}
+\index{lvl2Y@{lvl2Y}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl2Y}{lvl2Y}}
+{\footnotesize\ttfamily int lvl2Y =(int)(\hyperlink{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}{Game.\+current\+Screen\+Height}$\ast$0.\+324)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 70 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_aa528df3e872324e8ce0c3cd82930113b}\label{classui_1_1_level_menu_aa528df3e872324e8ce0c3cd82930113b}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl3@{lvl3}}
+\index{lvl3@{lvl3}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl3}{lvl3}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} lvl3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 46 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_acfc9117f336907e6204ab7e7abfc9ba8}\label{classui_1_1_level_menu_acfc9117f336907e6204ab7e7abfc9ba8}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl3X@{lvl3X}}
+\index{lvl3X@{lvl3X}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl3X}{lvl3X}}
+{\footnotesize\ttfamily int lvl3X =2058\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_a996daa7186e7d5e32600f8634d605bbc}\label{classui_1_1_level_menu_a996daa7186e7d5e32600f8634d605bbc}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl3Y@{lvl3Y}}
+\index{lvl3Y@{lvl3Y}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl3Y}{lvl3Y}}
+{\footnotesize\ttfamily int lvl3Y =(int)(\hyperlink{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}{Game.\+current\+Screen\+Height}$\ast$0.\+481)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 74 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_a4240d0138387907a78ef7cf6c4b37f4f}\label{classui_1_1_level_menu_a4240d0138387907a78ef7cf6c4b37f4f}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl4@{lvl4}}
+\index{lvl4@{lvl4}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl4}{lvl4}}
+{\footnotesize\ttfamily \hyperlink{classui_1_1_my_button}{My\+Button} lvl4\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 49 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_ab04c837988047c02371c20cb54a61ee7}\label{classui_1_1_level_menu_ab04c837988047c02371c20cb54a61ee7}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl4X@{lvl4X}}
+\index{lvl4X@{lvl4X}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl4X}{lvl4X}}
+{\footnotesize\ttfamily int lvl4X =3250\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_a585947c0e0993df3bd65e9a4dc7e5d0f}\label{classui_1_1_level_menu_a585947c0e0993df3bd65e9a4dc7e5d0f}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!lvl4Y@{lvl4Y}}
+\index{lvl4Y@{lvl4Y}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{lvl4Y}{lvl4Y}}
+{\footnotesize\ttfamily int lvl4Y =(int)(\hyperlink{classprogetto_1_1_game_a1aca3161d2e02e5dc13bb3cae83a8ad1}{Game.\+current\+Screen\+Height}$\ast$0.\+424)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_a4e519a889f31dafb22a3d869cd7e3fc2}\label{classui_1_1_level_menu_a4e519a889f31dafb22a3d869cd7e3fc2}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!prev\+Pt@{prev\+Pt}}
+\index{prev\+Pt@{prev\+Pt}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{prev\+Pt}{prevPt}}
+{\footnotesize\ttfamily Point prev\+Pt = new Point(0,0)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 61 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_ae3a19a411ad9e263452836e3d42d4761}\label{classui_1_1_level_menu_ae3a19a411ad9e263452836e3d42d4761}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!relativeposition@{relativeposition}}
+\index{relativeposition@{relativeposition}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{relativeposition}{relativeposition}}
+{\footnotesize\ttfamily Point relativeposition =new Point(0,0)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 58 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_a4546a97c9e98d01fc2547b2018856428}\label{classui_1_1_level_menu_a4546a97c9e98d01fc2547b2018856428}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!unlocklvl2@{unlocklvl2}}
+\index{unlocklvl2@{unlocklvl2}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{unlocklvl2}{unlocklvl2}}
+{\footnotesize\ttfamily boolean unlocklvl2 =false}
+
+
+
+Definition at line 81 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_a670b1cc8dc37b763e9aa113b57e34420}\label{classui_1_1_level_menu_a670b1cc8dc37b763e9aa113b57e34420}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!unlocklvl3@{unlocklvl3}}
+\index{unlocklvl3@{unlocklvl3}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{unlocklvl3}{unlocklvl3}}
+{\footnotesize\ttfamily boolean unlocklvl3 =false}
+
+
+
+Definition at line 83 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_af19dc9730ad4c9f05adee1ce65675728}\label{classui_1_1_level_menu_af19dc9730ad4c9f05adee1ce65675728}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!unlocklvl4@{unlocklvl4}}
+\index{unlocklvl4@{unlocklvl4}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{unlocklvl4}{unlocklvl4}}
+{\footnotesize\ttfamily boolean unlocklvl4 =false}
+
+
+
+Definition at line 85 of file Level\+Menu.\+java.
+
+\mbox{\Hypertarget{classui_1_1_level_menu_a2474a5474cbff19523a51eb1de01cda4}\label{classui_1_1_level_menu_a2474a5474cbff19523a51eb1de01cda4}} 
+\index{ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}!width@{width}}
+\index{width@{width}!ui\+::\+Level\+Menu@{ui\+::\+Level\+Menu}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int width =62\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 52 of file Level\+Menu.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/ui/\hyperlink{_level_menu_8java}{Level\+Menu.\+java}\end{DoxyCompactItemize}

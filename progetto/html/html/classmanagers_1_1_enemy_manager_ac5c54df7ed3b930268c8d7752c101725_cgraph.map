@@ -1,0 +1,21 @@
+<map id="update" name="update">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a8f172cfa5ade4d4f0a6b89cc6bfc4d12" title="aggiornamento della posizione di un nemico " alt="" coords="115,460,247,487"/>
+<area shape="rect" id="node3" href="$classenemies_1_1_enemy.html#a1927b6b5c678c91bde7bfe83531c9a2d" title="enemies.Enemy.getLastDir" alt="" coords="493,55,671,81"/>
+<area shape="rect" id="node4" href="$classmanagers_1_1_enemy_manager.html#a839e4729819875981f138997b2d3f438" title="controllo è pissibile procedere nella direzione in cui il nemico stava andando altrimenti prova strad..." alt="" coords="317,308,408,335"/>
+<area shape="rect" id="node5" href="$classenemies_1_1_enemy.html#ae8f033a71b96920114aee202798dc7e9" title="enemies.Enemy.getX" alt="" coords="759,156,904,183"/>
+<area shape="rect" id="node6" href="$classenemies_1_1_enemy.html#aa0f539cec219900ff6cf76edcfa52367" title="enemies.Enemy.getY" alt="" coords="758,257,905,284"/>
+<area shape="rect" id="node9" href="$classmanagers_1_1_enemy_manager.html#afec98871c0e021759b9d0afc8b690a18" title="controllo se il nemico si trova alla fine del percorso " alt="" coords="555,156,609,183"/>
+<area shape="rect" id="node10" href="$classmanagers_1_1_enemy_manager.html#a263c83da9aebeac50b60770fb847f331" title="alla direzione del nemico si applica lo spostamento sull&#39;asse y in base alla velocità ..." alt="" coords="525,105,639,132"/>
+<area shape="rect" id="node11" href="$classenemies_1_1_enemy.html#a40aced6dca930a3ae575a42b3286e230" title="enemies.Enemy.getEnemyType" alt="" coords="479,359,685,385"/>
+<area shape="rect" id="node12" href="$classmanagers_1_1_enemy_manager.html#ac689e72523c8460ac3160526d310b1b7" title="richiesta della tipologia di tile presente nel punto indicato " alt="" coords="538,612,626,639"/>
+<area shape="rect" id="node13" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="748,587,915,613"/>
+<area shape="rect" id="node14" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="748,640,915,667"/>
+<area shape="rect" id="node15" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="748,697,915,724"/>
+<area shape="rect" id="node16" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="748,760,915,787"/>
+<area shape="rect" id="node17" href="$classenemies_1_1_enemy.html#a474fd9bb876d55f65850132777c539d8" title="enemies.Enemy.move" alt="" coords="507,511,657,537"/>
+<area shape="rect" id="node19" href="$classmanagers_1_1_enemy_manager.html#ae622455c9dd19d2583b9a8840b1b35de" title="alla direzione del nemico si applica lo spostamento sull&#39;asse X in base alla velocità ..." alt="" coords="527,409,637,436"/>
+<area shape="rect" id="node20" href="$classenemies_1_1_enemy.html#aae9d52caad9fb2892deeb25596cfd2ab" title="enemies.Enemy.kill" alt="" coords="295,815,431,841"/>
+<area shape="rect" id="node7" href="$classmanagers_1_1_enemy_manager.html#a01056d4d58ff52ab419ad8924922132d" title="prendendo la posizione di un nemico si prende in considerazione il suo angolo in alto a sinistra per ..." alt="" coords="555,308,609,335"/>
+<area shape="rect" id="node8" href="$classenemies_1_1_enemy.html#ad6c107fadf835c74a229f8cac0cc98ab" title="enemies.Enemy.setPosition" alt="" coords="739,308,924,335"/>
+<area shape="rect" id="node18" href="$classenemies_1_1_enemy.html#aff695491d98058a8b62a30d4484083bc" title="enemies.Enemy.updateBound" alt="" coords="733,511,929,537"/>
+</map>

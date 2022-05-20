@@ -1,0 +1,17 @@
+<map id="mousePressed" name="mousePressed">
+<area shape="rect" id="node2" href="$classui_1_1_my_button.html#a187945475e730bfa340a10f63224e91f" title="getter del rettangolo per verificarne la pressione. " alt="" coords="443,5,602,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#a773d9d0a3424f8007205c7011f69c723" title="setter della variabile per la verifica del click del mouse se si trova sul bottone. " alt="" coords="422,56,623,83"/>
+<area shape="rect" id="node4" href="$classui_1_1_pause_overlay.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse " alt="" coords="163,461,369,488"/>
+<area shape="rect" id="node10" href="$classui_1_1_action_bar.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce le press del mouse. " alt="" coords="174,157,358,184"/>
+<area shape="rect" id="node5" href="$classui_1_1_pause_overlay.html#a4506144774b5a18385cf2eb0f4ff5e42" title="resetta le variabili booleane. " alt="" coords="431,461,614,488"/>
+<area shape="rect" id="node6" href="$classui_1_1_sound_button.html#ad6f3328519bbc954f7973bc885d088d8" title="setter della variabile per la verifica del mouse se ha premuto il bottone. " alt="" coords="676,424,896,451"/>
+<area shape="rect" id="node7" href="$classui_1_1_ush_button.html#ad6f3328519bbc954f7973bc885d088d8" title="setter della variabile per la verifica del mouse se ha premuto il bottone. " alt="" coords="683,487,889,513"/>
+<area shape="rect" id="node8" href="$classui_1_1_pause_overlay.html#a1652ba7734cc8d8ba710d3ab10281b04" title="verifica se il mouse è all&#39;interno del bottone " alt="" coords="453,563,593,589"/>
+<area shape="rect" id="node9" href="$classui_1_1_pause_button.html#a187945475e730bfa340a10f63224e91f" title="restituisce il bounds " alt="" coords="697,563,875,589"/>
+<area shape="rect" id="node11" href="$classtowers_1_1_tower.html#a69ffaa5d69141ba9aed07daf94b18540" title="ritorna il livello " alt="" coords="455,107,590,133"/>
+<area shape="rect" id="node12" href="$classhelpz_1_1_constants_1_1_towers.html#affe7d154c2065c3c8eea74993d932c2c" title="helpz.Constants.Towers.getCost" alt="" coords="417,157,628,184"/>
+<area shape="rect" id="node13" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="439,208,606,235"/>
+<area shape="rect" id="node14" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="439,259,606,285"/>
+<area shape="rect" id="node15" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="439,309,606,336"/>
+<area shape="rect" id="node16" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="439,360,606,387"/>
+</map>

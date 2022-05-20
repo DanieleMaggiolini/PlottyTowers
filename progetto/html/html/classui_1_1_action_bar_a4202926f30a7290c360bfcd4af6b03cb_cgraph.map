@@ -1,0 +1,9 @@
+<map id="drawWaveInfo" name="drawWaveInfo">
+<area shape="rect" id="node2" href="$classui_1_1_action_bar.html#a01f37d59ae4977fa55a1a6dd3e8bd543" title="disegna il timer dell&#39;ondata. " alt="" coords="155,31,268,57"/>
+<area shape="rect" id="node7" href="$classui_1_1_action_bar.html#abb1fa26db5a1c2f4b0776a316ad85249" title="disegna il numero di nemici rimanenti. " alt="" coords="156,81,267,108"/>
+<area shape="rect" id="node8" href="$classui_1_1_action_bar.html#aeb491734ea2c8ae2f1be9db4f930d22a" title="disegna il numero dell&#39;ondata. " alt="" coords="160,132,263,159"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="316,107,483,133"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="316,157,483,184"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="316,5,483,32"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="316,56,483,83"/>
+</map>

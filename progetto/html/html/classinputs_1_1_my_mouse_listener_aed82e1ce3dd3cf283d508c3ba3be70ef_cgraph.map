@@ -1,0 +1,9 @@
+<map id="mousePressed" name="mousePressed">
+<area shape="rect" id="node2" href="$classprogetto_1_1_game.html#a32527bf330947f1c1d1f5a7da9d12940" title="getter dell&#39;oggetto menu. " alt="" coords="168,5,331,32"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_game.html#a5ef843d72d0871e312ff734c6a129dd2" title="getter dell&#39;oggetto playing. " alt="" coords="163,56,336,83"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_game.html#a0f1448e932e53b14606a448017e76c6c" title="getter dell&#39;oggetto editing. " alt="" coords="164,107,335,133"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="166,157,333,184"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="166,208,333,235"/>
+<area shape="rect" id="node7" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="166,259,333,285"/>
+<area shape="rect" id="node8" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="166,309,333,336"/>
+</map>

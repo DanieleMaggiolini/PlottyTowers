@@ -1,0 +1,8 @@
+<map id="getNewBartWidth" name="getNewBartWidth">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a9c98cd29298e5f583c52dc46a6d70d46" title="drawHpBar" alt="" coords="176,81,261,108"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_enemy_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="draw" alt="" coords="309,81,359,108"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="407,5,551,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="407,56,551,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="407,107,551,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="407,157,551,184"/>
+</map>

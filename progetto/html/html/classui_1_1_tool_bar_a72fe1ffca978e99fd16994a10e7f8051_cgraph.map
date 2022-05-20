@@ -1,0 +1,16 @@
+<map id="draw" name="draw">
+<area shape="rect" id="node2" href="$classui_1_1_tool_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="103,157,189,184"/>
+<area shape="rect" id="node3" href="$classui_1_1_tool_bar.html#a55c79e1185fb66ae98edacc2c7d5c302" title="disegna i bottoni. " alt="" coords="251,81,365,108"/>
+<area shape="rect" id="node8" href="$classui_1_1_tool_bar.html#aa0f35d91a41dfb53af7bdd7d4a76916f" title="disegna la tile selezionata. " alt="" coords="248,157,368,184"/>
+<area shape="rect" id="node12" href="$classui_1_1_my_button.html#aa8318788e7f26fedd7bfbdd0b654ad45" title="richiama i metodi per disegnare il testo centrato nel bottone, i bordi e lo sfondo. " alt="" coords="237,284,379,311"/>
+<area shape="rect" id="node4" href="$classui_1_1_tool_bar.html#abe2e2af5c0d57248464e8b607c41a36f" title="ritorna l&#39;immagine del tile di cui passiamo l&#39;id. " alt="" coords="468,56,581,83"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_game_scene.html#af764ff126134eee0117e7e212faee455" title="getter oggetto game. " alt="" coords="672,5,869,32"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_game.html#ad519f2a339c804d206a38ecd2c33f667" title="getter dell&#39;oggetto tilemanager. " alt="" coords="671,56,871,83"/>
+<area shape="rect" id="node7" href="$classmanagers_1_1_tile_manager.html#a46ebd32c7ec4ac506010fe465687bdd7" title="ritorno di un&#39;immagine passando un id " alt="" coords="683,107,858,149"/>
+<area shape="rect" id="node9" href="$classobjects_1_1_tile.html#ac51c0c8c26d79dc6df726b968276afb2" title="ritorna l&#39;immagine " alt="" coords="453,107,597,133"/>
+<area shape="rect" id="node10" href="$classobjects_1_1_tile.html#a57c0bcd3471b12679b57faa7ba32d91c" title="ritorna la larghezza " alt="" coords="435,157,614,184"/>
+<area shape="rect" id="node11" href="$classobjects_1_1_tile.html#af71d2cd2060d5ecee3b0a8c387b981dd" title="ritorna l&#39;altezza " alt="" coords="434,208,615,235"/>
+<area shape="rect" id="node13" href="$classui_1_1_my_button.html#a1e330b5600a9187ca0ef7f964cfb24c9" title="disegna lo sfondo del bottone. " alt="" coords="448,259,601,285"/>
+<area shape="rect" id="node14" href="$classui_1_1_my_button.html#af91752554b78073a295ed441afc34638" title="disegna i bordi del bottone. " alt="" coords="444,309,605,336"/>
+<area shape="rect" id="node15" href="$classui_1_1_my_button.html#a5d567e88f76d588ff4af3357a5db4f9c" title="disegna il testo nel bottone ma più in alto rispetto a &quot;drawCentralText&quot;. " alt="" coords="427,360,623,387"/>
+</map>

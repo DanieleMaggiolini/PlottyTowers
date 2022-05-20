@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classui_1_1_bar.html" title="Bar" alt="" coords="5,31,48,57"/>
+<area shape="rect" id="node2" href="$classui_1_1_action_bar.html" title="classe figlia della classe &quot;Bar&quot; per gestire la barra presente nei livelli " alt="" coords="96,5,175,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_tool_bar.html" title="gestice la barra per modificare le mappe dei vari livelli e salvarle. " alt="" coords="102,56,169,83"/>
+</map>

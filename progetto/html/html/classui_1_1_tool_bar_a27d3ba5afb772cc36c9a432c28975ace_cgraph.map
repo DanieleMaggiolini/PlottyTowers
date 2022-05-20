@@ -1,0 +1,7 @@
+<map id="initButtons" name="initButtons">
+<area shape="rect" id="node2" href="$classhelpz_1_1_load_save.html#a9dbd50db72db31e6a9c5c423d4e48be3" title="load 2d int array from a file " alt="" coords="152,31,323,57"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_game_scene.html#af764ff126134eee0117e7e212faee455" title="getter oggetto game. " alt="" coords="139,81,336,108"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_game.html#ad519f2a339c804d206a38ecd2c33f667" title="getter dell&#39;oggetto tilemanager. " alt="" coords="137,132,337,159"/>
+<area shape="rect" id="node3" href="$classhelpz_1_1_load_save.html#a62d3bd4e3f361e1f99bd9d21a7d21b0d" title="legge un file " alt="" coords="395,5,557,32"/>
+<area shape="rect" id="node4" href="$classhelpz_1_1_utilz.html#a3f701300276e5102efe8c55e65192dec" title="helpz.Utilz.ArrayListTo2dInt" alt="" coords="385,56,567,83"/>
+</map>

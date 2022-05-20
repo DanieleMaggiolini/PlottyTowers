@@ -1,4 +1,12 @@
-
+/**
+ * @author  Daniele Maggiolini
+ * @author Mattia Minotti
+ * @version 0.0
+ * @file ToolBar.java
+ *
+ * @brief barra per la modifica della mappa
+ *
+ */
 package ui;
 
 import helpz.ImgFix;
@@ -16,13 +24,37 @@ import progetto.GameStates;
 import static progetto.GameStates.*;
 import scenes.Editing;
 
-
+/**
+ * @class ToolBar
+ *
+ * @brief gestice la barra per modificare le mappe dei vari livelli e salvarle.
+ *
+ */
 public class ToolBar extends Bar{
+    
+    //bottone per salvare
     private MyButton save;
+    
+    //tile selezionata
     private Tile selectedTile;
+    
+    //Array dinamico di bottoni delle tiles
     private ArrayList<MyButton> tileButtons = new ArrayList<>();
     
+    //stato di editing
     private Editing editing;
+    
+    /**
+     @brief costruttore del bottone e carica l'immagine.
+     * 
+     * setta le variabili
+     * 
+     * @param x coordinata
+     * @param y coordinata
+     * @param width larghezza
+     * @param height altezza
+     * @param editing stato di editing
+     */
     public ToolBar(int x, int y, int width, int height, Editing editing) {
         super(x, y, width, height);
         
@@ -31,6 +63,10 @@ public class ToolBar extends Bar{
         initButtons();
     }
 
+    /**
+     @brief inizializza i bottoni delle tiles.
+     * 
+     */
     private void initButtons() {
         Font f=new Font("Arial",Font.BOLD,19);
         Color c=new Color(255,0,0);
@@ -56,18 +92,34 @@ public class ToolBar extends Bar{
         }
     }
     
-    
+    /**
+     @brief disegna i bottoni.
+     * 
+     * @param g oggetto della grafica
+     */
     public void draw(Graphics g){
         g.setColor(new Color(220,123,15));
         g.fillRect(x, y, width, height);
         
         drawButton(g);
     }
+    
+    /**
+     @brief disegna i bottoni.
+     * 
+     * @param g oggetto della grafica
+     */
     public void drawButton(Graphics g) {
         drawTileButtons(g);
         drawSelectedTile(g);
         save.drawAC(g);
     }
+    
+    /**
+     @brief disegna i bottoni.
+     * 
+     * @param g oggetto della grafica
+     */    
     public void drawTileButtons(Graphics g){
         for (MyButton b : tileButtons) {
             
@@ -91,6 +143,12 @@ public class ToolBar extends Bar{
             }
         }
     }
+    
+    /**
+     @brief disegna la tile selezionata.
+     * 
+     * @param g oggetto della grafica
+     */
     public void drawSelectedTile(Graphics g){
             if(selectedTile!=null){
                 g.drawImage(selectedTile.getSprite(), (int)(Game.currentScreenWidth*0.94), (int)(Game.currentScreenHeight*0.855), selectedTile.getSpriteWidth(), selectedTile.getSpriteHeight(), null);
@@ -98,13 +156,29 @@ public class ToolBar extends Bar{
                 g.drawRect((int)(Game.currentScreenWidth*0.94), (int)(Game.currentScreenHeight*0.855), selectedTile.getSpriteWidth(), selectedTile.getSpriteHeight());
             }
     }
+    
+    /**
+     @brief ritorna l'immagine del tile di cui passiamo l'id.
+     * 
+     * @param identificatore per richiamare il get dell'immagine della tile
+     */
     public BufferedImage getButtonImage(int id){
         return editing.getGame().getTileManager().getSprite(id);
     }
     
+    /**
+     @brief salva la mappa modificata.
+     * 
+     */
     private void saveLevel(){
         editing.saveLevel();
     }
+    
+    /**
+     @brief gestisce i click del mouse
+     * 
+     * @param e evento del mouse
+     */
     public void mouseClicked(MouseEvent e) {
         if(save.getBounds().contains(e.getX(), e.getY())){
             saveLevel();
@@ -121,6 +195,12 @@ public class ToolBar extends Bar{
             }   
         }
     }
+    
+    /**
+     @brief gestisce le move del mouse
+     * 
+     * @param e evento del mouse
+     */
     public void mouseMoved(MouseEvent e) {
         for (MyButton b: tileButtons) 
             b.setMouseOver(false);
@@ -135,6 +215,12 @@ public class ToolBar extends Bar{
              }
         } 
     } 
+    
+    /**
+     @brief gestisce le press del mouse
+     * 
+     * @param e evento del mouse
+     */
     public void mousePressed(MouseEvent e) {
         if(save.getBounds().contains(e.getX(), e.getY())){
             save.setMousePressed(true);
@@ -148,6 +234,12 @@ public class ToolBar extends Bar{
             }
         }
     }
+    
+    /**
+     @brief gestisce le release del mouse
+     * 
+     * @param e evento del mouse
+     */
     public void mouseReleased(MouseEvent e) {
         save.resetBooleans();
         for (MyButton b: tileButtons) {          

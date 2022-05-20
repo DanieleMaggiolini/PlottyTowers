@@ -1,0 +1,11 @@
+<map id="getY" name="getY">
+<area shape="rect" id="node2" href="$classui_1_1_action_bar.html#a2177b06de4c0084e953665a7dbfd6772" title="disegna la torre selezionata, le sue info e i bottoni relativi ad essa. " alt="" coords="103,105,284,146"/>
+<area shape="rect" id="node8" href="$classui_1_1_level_menu.html#a65768678909bc0512c6cb9780709ad38" title="imposta e disegna i bottoni. " alt="" coords="110,181,277,208"/>
+<area shape="rect" id="node3" href="$classui_1_1_action_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori..." alt="" coords="334,107,458,133"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="511,5,655,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="511,56,655,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="511,107,655,133"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="511,157,655,184"/>
+<area shape="rect" id="node9" href="$classui_1_1_level_menu.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna lo sfondo e richiama il metodo per disegnare i bottoni. " alt="" coords="332,203,460,229"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_playing.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna levelmenu e bottone home " alt="" coords="508,208,659,235"/>
+</map>

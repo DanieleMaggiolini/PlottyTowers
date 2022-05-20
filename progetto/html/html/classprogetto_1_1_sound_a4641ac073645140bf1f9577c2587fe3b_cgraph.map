@@ -1,0 +1,7 @@
+<map id="mute" name="mute">
+<area shape="rect" id="node2" href="$classprogetto_1_1_sound.html#a8c528baf37154d347366083f0f816846" title="termina la riproduzione di un suono. " alt="" coords="121,5,168,32"/>
+<area shape="rect" id="node3" href="$classprogetto_1_1_sound.html#afbebd3583bea93ca3867632861ec5801" title="richiama i metodi per riprodurre in loop una traccia audio. " alt="" coords="104,56,185,83"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_sound.html#a7dfb2cac645e127badf36478fd7aaa40" title="imposta la clip con la corretta traccia audio. " alt="" coords="233,5,295,32"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_sound.html#a6d58098c6cf63c241ed03bc797256bb1" title="inizia la riproduzione di un suono. " alt="" coords="241,56,287,83"/>
+<area shape="rect" id="node6" href="$classprogetto_1_1_sound.html#afe461d27b9c48d5921c00d521181f12f" title="rende ciclica la riproduzione del suono. " alt="" coords="241,107,287,133"/>
+</map>

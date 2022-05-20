@@ -1,0 +1,5 @@
+<map id="isTileAvailable" name="isTileAvailable">
+<area shape="rect" id="node2" href="$classprogetto_1_1_game.html#ad519f2a339c804d206a38ecd2c33f667" title="getter dell&#39;oggetto tilemanager. " alt="" coords="156,5,356,32"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_tile_manager.html#a1855b58fdbe502789d9c14ee0deffb9e" title="ritorno di un tile passando un id " alt="" coords="159,56,353,83"/>
+<area shape="rect" id="node4" href="$classobjects_1_1_tile.html#a19996fc03739127aa64afbd2f49c2a7c" title="ritorna il tipo di tile " alt="" coords="177,107,335,133"/>
+</map>

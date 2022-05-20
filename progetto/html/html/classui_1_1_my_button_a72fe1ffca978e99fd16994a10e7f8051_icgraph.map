@@ -1,0 +1,13 @@
+<map id="draw" name="draw">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a65768678909bc0512c6cb9780709ad38" title="disegna il bottone di pausa. " alt="" coords="103,5,276,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a65768678909bc0512c6cb9780709ad38" title="disegna il bottone di pausa. " alt="" coords="103,56,276,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#a65768678909bc0512c6cb9780709ad38" title="disegna il bottone di pausa. " alt="" coords="103,107,276,133"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level4.html#a65768678909bc0512c6cb9780709ad38" title="disegna il bottone di pausa. " alt="" coords="103,157,276,184"/>
+<area shape="rect" id="node10" href="$classscenes_1_1_menu.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni " alt="" coords="105,208,274,235"/>
+<area shape="rect" id="node12" href="$classscenes_1_1_playing.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna levelmenu e bottone home " alt="" coords="114,259,265,285"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="324,5,468,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="324,56,468,83"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="324,107,468,133"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="324,157,468,184"/>
+<area shape="rect" id="node11" href="$classscenes_1_1_menu.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna lo sfondo e i bottoni " alt="" coords="326,208,466,235"/>
+</map>

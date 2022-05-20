@@ -1,0 +1,4 @@
+<map id="moveX" name="moveX">
+<area shape="rect" id="node2" href="$classui_1_1_level_menu.html#adbfc0588c017133c9b7070474402b72f" title="imposta il punto dove abbiamo iniziato a cliccare/trascinare. " alt="" coords="112,5,300,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_playing.html#adbfc0588c017133c9b7070474402b72f" title="gestisce le drag del mouse " alt="" coords="348,5,551,32"/>
+</map>

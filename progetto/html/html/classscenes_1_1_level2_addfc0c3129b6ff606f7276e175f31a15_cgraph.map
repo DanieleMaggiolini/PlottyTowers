@@ -1,0 +1,5 @@
+<map id="spawnEnemy" name="spawnEnemy">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a3714d243133c700dca12625cccf518aa" title="richiamo metodo per aggiunta passando la tipologia del nemico " alt="" coords="153,5,368,47"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a6b0fc6fbe769f38b9418fbaa51214735" title="restituisce l&#39;oggetto wavemanager. " alt="" coords="199,71,322,98"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_enemy_manager.html#a24695d90cee943c6c64c2d9f1b231285" title="aggiunta nemico all&#39;array " alt="" coords="416,5,615,47"/>
+</map>

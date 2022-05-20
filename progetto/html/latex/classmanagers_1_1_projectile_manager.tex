@@ -1,0 +1,391 @@
+\hypertarget{classmanagers_1_1_projectile_manager}{}\section{Projectile\+Manager Class Reference}
+\label{classmanagers_1_1_projectile_manager}\index{Projectile\+Manager@{Projectile\+Manager}}
+
+
+classe per gestire il movimento, l\textquotesingle{}inclinazione, la posizione dei proiettili interazioni dei proiettili coi nemici  
+
+
+
+
+Collaboration diagram for Projectile\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_projectile_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmanagers_1_1_projectile_manager_a8959cc2d690b9ea6bf95b0b029352d50}{Projectile\+Manager} (\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classmanagers_1_1_projectile_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}, String \hyperlink{classmanagers_1_1_projectile_manager_a91ac952876f776b3fbbc8519e093fdbf}{state})
+\begin{DoxyCompactList}\small\item\em costruttore. assegna il game e lo stato(il livello in cui ci troviamo) e carica le immagini dei proiettili \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_projectile_manager_ad4505ed80d64e9561393c0406fe7d904}{new\+Projectile} (\hyperlink{classtowers_1_1_tower}{Tower} t, \hyperlink{classenemies_1_1_enemy}{Enemy} e)
+\begin{DoxyCompactList}\small\item\em aggiunta di un proiettile nell\textquotesingle{}array \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_projectile_manager_ac5c54df7ed3b930268c8d7752c101725}{update} ()
+\begin{DoxyCompactList}\small\item\em per ogni proiettile controllo se attivo, lo muove e controllo se ha colpito qualche nemico \end{DoxyCompactList}\item 
+boolean \hyperlink{classmanagers_1_1_projectile_manager_a57d53b4aface986fa08a24dab39b621d}{is\+Out\+Bounds} (\hyperlink{classobjects_1_1_projectile}{Projectile} p)
+\begin{DoxyCompactList}\small\item\em controllo se il proiettile è uscito della schermata \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_projectile_manager_a72fe1ffca978e99fd16994a10e7f8051}{draw} (Graphics g)
+\begin{DoxyCompactList}\small\item\em per ogni proiettile controllo se attivo, se attivo disegno del proiettile e eventualmente la sua inclinazione \end{DoxyCompactList}\item 
+boolean \hyperlink{classmanagers_1_1_projectile_manager_a90bf53002c3a067a25aba3e876974051}{is\+Proj\+Hit} (\hyperlink{classobjects_1_1_projectile}{Projectile} p)
+\begin{DoxyCompactList}\small\item\em controolo per il proiettile passato se si trova nella hitbox di uno dei nemici presenti nel gioco, se presenti disattivarlo e recare danno al nemico \end{DoxyCompactList}\item 
+int \hyperlink{classmanagers_1_1_projectile_manager_a942d732bac65df2f0d220989ca42ce76}{get\+Projectile\+Type} (\hyperlink{classtowers_1_1_tower}{Tower} t)
+\begin{DoxyCompactList}\small\item\em per la torre passata restituito il suo tipo di proiettile utilizzato \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmanagers_1_1_projectile_manager_a78da03d9c5782fb25189cee3d4c78bfd}{import\+Imgs} ()
+\begin{DoxyCompactList}\small\item\em assegnegnazioni delle immagini dei proiettili con animazioni, diverse per ogni livello \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classmanagers_1_1_projectile_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}
+\item 
+String \hyperlink{classmanagers_1_1_projectile_manager_a91ac952876f776b3fbbc8519e093fdbf}{state}
+\item 
+Array\+List$<$ \hyperlink{classobjects_1_1_projectile}{Projectile} $>$ \hyperlink{classmanagers_1_1_projectile_manager_ab15956ed089bc9c0fb7ba6c8494fe5c7}{projectiles} = new Array\+List$<$$>$()
+\item 
+Buffered\+Image \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classmanagers_1_1_projectile_manager_a0775275621287d6a169fe51df5c2dc4e}{proj\+\_\+attack}
+\item 
+int \hyperlink{classmanagers_1_1_projectile_manager_a9705bce400d9f98d3cb9f77460f99aad}{proj\+Id} = 0
+\item 
+Object \hyperlink{classmanagers_1_1_projectile_manager_ac80b5c0270d7b9599820bd4d0815bd32}{a} = new Object()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe per gestire il movimento, l\textquotesingle{}inclinazione, la posizione dei proiettili interazioni dei proiettili coi nemici 
+
+Definition at line 34 of file Projectile\+Manager.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_a8959cc2d690b9ea6bf95b0b029352d50}\label{classmanagers_1_1_projectile_manager_a8959cc2d690b9ea6bf95b0b029352d50}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!Projectile\+Manager@{Projectile\+Manager}}
+\index{Projectile\+Manager@{Projectile\+Manager}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{Projectile\+Manager()}{ProjectileManager()}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_projectile_manager}{Projectile\+Manager} (\begin{DoxyParamCaption}\item[{\hyperlink{classprogetto_1_1_game}{Game}}]{game,  }\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+costruttore. assegna il game e lo stato(il livello in cui ci troviamo) e carica le immagini dei proiettili 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file Projectile\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_projectile_manager_a8959cc2d690b9ea6bf95b0b029352d50_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_a72fe1ffca978e99fd16994a10e7f8051}\label{classmanagers_1_1_projectile_manager_a72fe1ffca978e99fd16994a10e7f8051}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!draw@{draw}}
+\index{draw@{draw}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+per ogni proiettile controllo se attivo, se attivo disegno del proiettile e eventualmente la sua inclinazione 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & parte grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 202 of file Projectile\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classmanagers_1_1_projectile_manager_a72fe1ffca978e99fd16994a10e7f8051_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_a942d732bac65df2f0d220989ca42ce76}\label{classmanagers_1_1_projectile_manager_a942d732bac65df2f0d220989ca42ce76}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!get\+Projectile\+Type@{get\+Projectile\+Type}}
+\index{get\+Projectile\+Type@{get\+Projectile\+Type}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{get\+Projectile\+Type()}{getProjectileType()}}
+{\footnotesize\ttfamily int get\+Projectile\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{t }\end{DoxyParamCaption})}
+
+
+
+per la torre passata restituito il suo tipo di proiettile utilizzato 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & torre specifica\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tipologia di proiettile corrispondente alla torre 
+\end{DoxyReturn}
+
+
+Definition at line 315 of file Projectile\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classmanagers_1_1_projectile_manager_a942d732bac65df2f0d220989ca42ce76_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_projectile_manager_a942d732bac65df2f0d220989ca42ce76_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_a78da03d9c5782fb25189cee3d4c78bfd}\label{classmanagers_1_1_projectile_manager_a78da03d9c5782fb25189cee3d4c78bfd}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!import\+Imgs@{import\+Imgs}}
+\index{import\+Imgs@{import\+Imgs}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{import\+Imgs()}{importImgs()}}
+{\footnotesize\ttfamily void import\+Imgs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+assegnegnazioni delle immagini dei proiettili con animazioni, diverse per ogni livello 
+
+
+
+Definition at line 71 of file Projectile\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classmanagers_1_1_projectile_manager_a78da03d9c5782fb25189cee3d4c78bfd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classmanagers_1_1_projectile_manager_a78da03d9c5782fb25189cee3d4c78bfd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_a57d53b4aface986fa08a24dab39b621d}\label{classmanagers_1_1_projectile_manager_a57d53b4aface986fa08a24dab39b621d}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!is\+Out\+Bounds@{is\+Out\+Bounds}}
+\index{is\+Out\+Bounds@{is\+Out\+Bounds}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{is\+Out\+Bounds()}{isOutBounds()}}
+{\footnotesize\ttfamily boolean is\+Out\+Bounds (\begin{DoxyParamCaption}\item[{\hyperlink{classobjects_1_1_projectile}{Projectile}}]{p }\end{DoxyParamCaption})}
+
+
+
+controllo se il proiettile è uscito della schermata 
+
+\begin{DoxyReturn}{Returns}
+se il proiettile è uscito 
+\end{DoxyReturn}
+
+
+Definition at line 182 of file Projectile\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classmanagers_1_1_projectile_manager_a57d53b4aface986fa08a24dab39b621d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_projectile_manager_a57d53b4aface986fa08a24dab39b621d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_a90bf53002c3a067a25aba3e876974051}\label{classmanagers_1_1_projectile_manager_a90bf53002c3a067a25aba3e876974051}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!is\+Proj\+Hit@{is\+Proj\+Hit}}
+\index{is\+Proj\+Hit@{is\+Proj\+Hit}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{is\+Proj\+Hit()}{isProjHit()}}
+{\footnotesize\ttfamily boolean is\+Proj\+Hit (\begin{DoxyParamCaption}\item[{\hyperlink{classobjects_1_1_projectile}{Projectile}}]{p }\end{DoxyParamCaption})}
+
+
+
+controolo per il proiettile passato se si trova nella hitbox di uno dei nemici presenti nel gioco, se presenti disattivarlo e recare danno al nemico 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & proiettile controllato\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+se il proiettile ha colpito un nemico 
+\end{DoxyReturn}
+
+
+Definition at line 254 of file Projectile\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classmanagers_1_1_projectile_manager_a90bf53002c3a067a25aba3e876974051_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_projectile_manager_a90bf53002c3a067a25aba3e876974051_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_ad4505ed80d64e9561393c0406fe7d904}\label{classmanagers_1_1_projectile_manager_ad4505ed80d64e9561393c0406fe7d904}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!new\+Projectile@{new\+Projectile}}
+\index{new\+Projectile@{new\+Projectile}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{new\+Projectile()}{newProjectile()}}
+{\footnotesize\ttfamily void new\+Projectile (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{t,  }\item[{\hyperlink{classenemies_1_1_enemy}{Enemy}}]{e }\end{DoxyParamCaption})}
+
+
+
+aggiunta di un proiettile nell\textquotesingle{}array 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & torre specifica \\
+\hline
+{\em e} & nemico specifico \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file Projectile\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_projectile_manager_ad4505ed80d64e9561393c0406fe7d904_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classmanagers_1_1_projectile_manager_ad4505ed80d64e9561393c0406fe7d904_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_ac5c54df7ed3b930268c8d7752c101725}\label{classmanagers_1_1_projectile_manager_ac5c54df7ed3b930268c8d7752c101725}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!update@{update}}
+\index{update@{update}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+per ogni proiettile controllo se attivo, lo muove e controllo se ha colpito qualche nemico 
+
+
+
+Definition at line 160 of file Projectile\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_projectile_manager_ac5c54df7ed3b930268c8d7752c101725_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classmanagers_1_1_projectile_manager_ac5c54df7ed3b930268c8d7752c101725_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_ac80b5c0270d7b9599820bd4d0815bd32}\label{classmanagers_1_1_projectile_manager_ac80b5c0270d7b9599820bd4d0815bd32}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!a@{a}}
+\index{a@{a}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily Object a = new Object()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 52 of file Projectile\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}\label{classmanagers_1_1_projectile_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!game@{game}}
+\index{game@{game}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_game}{Game} game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Projectile\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_a0775275621287d6a169fe51df5c2dc4e}\label{classmanagers_1_1_projectile_manager_a0775275621287d6a169fe51df5c2dc4e}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!proj\+\_\+attack@{proj\+\_\+attack}}
+\index{proj\+\_\+attack@{proj\+\_\+attack}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{proj\+\_\+attack}{proj\_attack}}
+{\footnotesize\ttfamily Buffered\+Image \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} proj\+\_\+attack\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 46 of file Projectile\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_ab15956ed089bc9c0fb7ba6c8494fe5c7}\label{classmanagers_1_1_projectile_manager_ab15956ed089bc9c0fb7ba6c8494fe5c7}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!projectiles@{projectiles}}
+\index{projectiles@{projectiles}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{projectiles}{projectiles}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{classobjects_1_1_projectile}{Projectile}$>$ projectiles = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 43 of file Projectile\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_a9705bce400d9f98d3cb9f77460f99aad}\label{classmanagers_1_1_projectile_manager_a9705bce400d9f98d3cb9f77460f99aad}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!proj\+Id@{proj\+Id}}
+\index{proj\+Id@{proj\+Id}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{proj\+Id}{projId}}
+{\footnotesize\ttfamily int proj\+Id = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 49 of file Projectile\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_projectile_manager_a91ac952876f776b3fbbc8519e093fdbf}\label{classmanagers_1_1_projectile_manager_a91ac952876f776b3fbbc8519e093fdbf}} 
+\index{managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}!state@{state}}
+\index{state@{state}!managers\+::\+Projectile\+Manager@{managers\+::\+Projectile\+Manager}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily String state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Projectile\+Manager.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/managers/\hyperlink{_projectile_manager_8java}{Projectile\+Manager.\+java}\end{DoxyCompactItemize}

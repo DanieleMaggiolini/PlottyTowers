@@ -1,0 +1,6 @@
+<map id="draw" name="draw">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="103,5,247,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="103,56,247,83"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level3.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="103,107,247,133"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level4.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="disegna la schermata ed ogni suo cambiamento. " alt="" coords="103,157,247,184"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="mouseReleased" name="mouseReleased">
+<area shape="rect" id="node2" href="$classui_1_1_tool_bar.html#a87a07291794e15052db67f945d90853e" title="gestisce le release del mouse " alt="" coords="168,5,345,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#af47bcfe7d6d4ed3655e2c61583e1b5d7" title="resetta le variabili booleane. " alt="" coords="393,5,572,32"/>
+<area shape="rect" id="node4" href="$classui_1_1_my_button.html#a38b44562c6a3dd438f51365e248c7e57" title="ui.MyButton.allunga" alt="" coords="620,5,757,32"/>
+</map>

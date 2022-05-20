@@ -1,0 +1,4 @@
+<map id="loadLevel" name="loadLevel">
+<area shape="rect" id="node2" href="$classscenes_1_1_level4.html#afe125d345675ffefe8da7e96d39773f3" title="inizializza tutte le classi presenti. " alt="" coords="128,5,215,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level4.html#ace3453f4ef6ea220bef6de5f957e89d5" title="costruttore che setta il game e richiama i metodi per inizializzare classi, bottoni e importare immag..." alt="" coords="263,5,321,32"/>
+</map>

@@ -1,3 +1,12 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file Playing.java 
+* 
+* @brief gestisce la schermata del menu dei livelli.
+*
+*/
 package scenes;
 
 import helpz.ImgFix;
@@ -23,17 +32,37 @@ import ui.LevelMenu;
 import ui.MyButton;
 import ui.PauseOverlay;
 
-
+/**
+ * @class Playing
+ *
+ * @brief gestice il menu dei livelli: sfondo, bottoni.
+ *
+ */
 public class Playing extends GameScene implements SceneMethods{
-    private BufferedImage ingranaggio;
+    
+    //immagine casetta
+    private BufferedImage home;
+    
+    //oggetto gestione livelli
     private LevelMenu levelmenu;
     
+    //oggetto gestione mappe
     private TileManager tilemanager;
     
+    //bottone home
     private MyButton Bmenu;
+    
+    //font
     private Font f;
+    
+    //colore
     private Color c;        
     
+    /**
+     @brief setta il game, inizializza le classi, inizializza i bottoni e importa le immagini
+     * 
+     * @param game oggetto del gioco
+     */
     public Playing(Game game) {
         super(game);
  
@@ -44,14 +73,28 @@ public class Playing extends GameScene implements SceneMethods{
         
         initButtons();        
     }  
+    
+    /**
+     @brief inizializza le classi.
+     * 
+     */
     public void initClasses(){
         //TileManager
         tilemanager = new TileManager();
         levelmenu = new LevelMenu();
     }
+    /**
+     @brief importa le immagini.
+     * 
+     */
     private void impImage() {
-        ingranaggio= LoadSave.getImage(LoadSave.HOME);    
+        home= LoadSave.getImage(LoadSave.HOME);    
     }
+    
+    /**
+     @brief inizializza i bottoni.
+     * 
+     */
     private void initButtons() {
         int w = 80;
         int h = 80;
@@ -62,20 +105,42 @@ public class Playing extends GameScene implements SceneMethods{
         c=new Color(255,0,0);
         Bmenu = new MyButton("", x, y, w, h, f, c);
     } 
+    
+    /**
+     @brief aggiorna.
+     * 
+     */
     public void updates(){
         
     }
     
+    /**
+     @brief disegna levelmenu e bottone home
+     * 
+     * @param g oggetto della grafica
+     */
     @Override
     public void render(Graphics g) {
         levelmenu.draw(g);
         
-        g.drawImage(ingranaggio, 10, 10, 80, 80, null);
+        g.drawImage(home, 10, 10, 80, 80, null);
         Bmenu.draw(g);      
     }
+    
+    /**
+     @brief ritorna tilemanager
+     * 
+     * @return tilemanager
+     */
     public TileManager getTileManager(){
         return tilemanager;
     }
+    
+    /**
+     @brief gestisce i click del mouse
+     * 
+     * @param e evento del mouse
+     */
     @Override
     public void mouseClicked(MouseEvent e) {
         if (Bmenu.getBounds().contains(e.getX(), e.getY())) {
@@ -84,6 +149,11 @@ public class Playing extends GameScene implements SceneMethods{
         levelmenu.mouseClicked(e);   
     }
 
+    /**
+     @brief gestisce le move del mouse
+     * 
+     * @param e evento del mouse
+     */
     @Override
     public void mouseMoved(MouseEvent e) {
         Bmenu.setMouseOver(false);
@@ -92,6 +162,11 @@ public class Playing extends GameScene implements SceneMethods{
         }
     }
 
+    /**
+     @brief gestisce le press del mouse
+     * 
+     * @param e evento del mouse
+     */
     @Override
     public void mousePressed(MouseEvent e) {
         levelmenu.mousePressed(e);
@@ -100,18 +175,38 @@ public class Playing extends GameScene implements SceneMethods{
         }
     }
 
+    /**
+     @brief gestisce le release del mouse
+     * 
+     * @param e evento del mouse
+     */
     @Override
     public void mouseReleased(MouseEvent e) {
         resetButtons();
     }
     
+    /**
+     @brief gestisce le drag del mouse
+     * 
+     * @param e evento del mouse
+     */
     @Override
     public void mouseDragged(MouseEvent e) {
         levelmenu.mouseDragged(e);
     }
+    
+    /**
+     @brief resetta il bottone
+     */
     private void resetButtons() {
         Bmenu.resetBooleans();
     }
+    
+    /**
+     @brief ritorna levelmenu
+     * 
+     * @return levelmenu
+     */
     public LevelMenu getLevelMenu(){
         return levelmenu;
     }

@@ -1,0 +1,12 @@
+<map id="mouseClicked" name="mouseClicked">
+<area shape="rect" id="node2" href="$classui_1_1_my_button.html#a187945475e730bfa340a10f63224e91f" title="getter del rettangolo per verificarne la pressione. " alt="" coords="161,5,320,32"/>
+<area shape="rect" id="node3" href="$classtowers_1_1_tower.html#a69ffaa5d69141ba9aed07daf94b18540" title="ritorna il livello " alt="" coords="372,31,507,57"/>
+<area shape="rect" id="node4" href="$classui_1_1_action_bar.html#a6c5f59282a148a0d74bc5aa58d5ad307" title="restituisce il costo per upgradare la torre selezionata. " alt="" coords="383,183,495,209"/>
+<area shape="rect" id="node7" href="$classprogetto_1_1_game.html#a6991f76e58df8f4b9bc8e94e3389d150" title="getter dell&#39;oggetto level1. " alt="" coords="157,208,324,235"/>
+<area shape="rect" id="node8" href="$classprogetto_1_1_game.html#a26827f97d382e852c53c15990619c8b7" title="getter dell&#39;oggetto level2. " alt="" coords="157,259,324,285"/>
+<area shape="rect" id="node9" href="$classprogetto_1_1_game.html#a0869f04fd1631b5ad909e51c85e9e57b" title="getter dell&#39;oggetto level3. " alt="" coords="157,309,324,336"/>
+<area shape="rect" id="node10" href="$classprogetto_1_1_game.html#a09e02ae6992f3328be34c9062ef142f8" title="getter dell&#39;oggetto level4. " alt="" coords="157,360,324,387"/>
+<area shape="rect" id="node11" href="$classui_1_1_action_bar.html#aef810268cda93505da735c6c81136e00" title="restituisce il guadagno della vendita della torre selezionata. " alt="" coords="191,107,291,133"/>
+<area shape="rect" id="node5" href="$classhelpz_1_1_constants_1_1_towers.html#affe7d154c2065c3c8eea74993d932c2c" title="helpz.Constants.Towers.getCost" alt="" coords="555,95,765,121"/>
+<area shape="rect" id="node6" href="$classtowers_1_1_tower.html#adaa3345598ef202753372f185625e5da" title="ritorna il tipo di torre " alt="" coords="571,157,749,184"/>
+</map>

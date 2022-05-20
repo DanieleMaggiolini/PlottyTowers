@@ -1,0 +1,563 @@
+\hypertarget{classtowers_1_1_tower}{}\section{Tower Class Reference}
+\label{classtowers_1_1_tower}\index{Tower@{Tower}}
+
+
+Collaboration diagram for Tower\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classtowers_1_1_tower__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtowers_1_1_tower_a5bb75162daea78aafb453f40497281f9}{Tower} (int \hyperlink{classtowers_1_1_tower_a6150e0515f7202e2fb518f7206ed97dc}{x}, int \hyperlink{classtowers_1_1_tower_a0a2f84ed7838f07779ae24c5a9086d33}{y}, int \hyperlink{classtowers_1_1_tower_a7441ef0865bcb3db9b8064dd7375c1ea}{id}, int \hyperlink{classtowers_1_1_tower_a2115b9e9ed7b8b8288b5dae468cbd784}{typetower})
+\begin{DoxyCompactList}\small\item\em costruttore che setta le variabili. \end{DoxyCompactList}\item 
+void \hyperlink{classtowers_1_1_tower_ac5c54df7ed3b930268c8d7752c101725}{update} ()
+\begin{DoxyCompactList}\small\item\em aggiorna il tick del tempo di ricarica \end{DoxyCompactList}\item 
+void \hyperlink{classtowers_1_1_tower_ac235927565a120a3157ef902721c105e}{level\+Up} ()
+\begin{DoxyCompactList}\small\item\em gestisce gli update delle torri \end{DoxyCompactList}\item 
+int \hyperlink{classtowers_1_1_tower_a69ffaa5d69141ba9aed07daf94b18540}{get\+Lvl} ()
+\begin{DoxyCompactList}\small\item\em ritorna il livello \end{DoxyCompactList}\item 
+int \hyperlink{classtowers_1_1_tower_ae13f88e922e1339355456062ad9fa359}{getX} ()
+\begin{DoxyCompactList}\small\item\em ritorna la x \end{DoxyCompactList}\item 
+int \hyperlink{classtowers_1_1_tower_aab81944f0a14bba932c0931899951937}{getY} ()
+\begin{DoxyCompactList}\small\item\em ritorna la y \end{DoxyCompactList}\item 
+int \hyperlink{classtowers_1_1_tower_a67283be3f45257d1e0c474c563ebb6b6}{get\+Id} ()
+\begin{DoxyCompactList}\small\item\em ritorna l\textquotesingle{}identificatore \end{DoxyCompactList}\item 
+int \hyperlink{classtowers_1_1_tower_adaa3345598ef202753372f185625e5da}{get\+Typetower} ()
+\begin{DoxyCompactList}\small\item\em ritorna il tipo di torre \end{DoxyCompactList}\item 
+int \hyperlink{classtowers_1_1_tower_ac10b854131d21646691dcdd7da559a22}{get\+Damage} ()
+\begin{DoxyCompactList}\small\item\em ritorna il danno \end{DoxyCompactList}\item 
+float \hyperlink{classtowers_1_1_tower_a18d1640fde65c20187e68286b6bbcf6d}{get\+Range} ()
+\begin{DoxyCompactList}\small\item\em ritorna il range \end{DoxyCompactList}\item 
+float \hyperlink{classtowers_1_1_tower_a38fbb6ebbb9c41c0c8d2d62910ac102a}{get\+Cooldown} ()
+\begin{DoxyCompactList}\small\item\em ritorna il cooldown \end{DoxyCompactList}\item 
+boolean \hyperlink{classtowers_1_1_tower_a2c29881b5a93fb867aea578992af0db1}{is\+Cooldown\+Over} ()
+\begin{DoxyCompactList}\small\item\em ritorna se il cooldown è finito. \end{DoxyCompactList}\item 
+void \hyperlink{classtowers_1_1_tower_ac49a5c9f0a8fcb8b68449da989b93542}{reset\+Cooldown} ()
+\begin{DoxyCompactList}\small\item\em resetta il cooldown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtowers_1_1_tower_a342d428cb4c655ed4d92a2c5be287e5d}{set\+Damage} ()
+\begin{DoxyCompactList}\small\item\em setta il danno. \end{DoxyCompactList}\item 
+void \hyperlink{classtowers_1_1_tower_abfc55d980923d42001e5aefda77849f9}{set\+Range} ()
+\begin{DoxyCompactList}\small\item\em setta il range. \end{DoxyCompactList}\item 
+void \hyperlink{classtowers_1_1_tower_a120aaa641fb05cbcbe27057048519fa7}{set\+Cooldown} ()
+\begin{DoxyCompactList}\small\item\em setta il cooldown. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtowers_1_1_tower_a6150e0515f7202e2fb518f7206ed97dc}{x}
+\item 
+int \hyperlink{classtowers_1_1_tower_a0a2f84ed7838f07779ae24c5a9086d33}{y}
+\item 
+int \hyperlink{classtowers_1_1_tower_a7441ef0865bcb3db9b8064dd7375c1ea}{id}
+\item 
+int \hyperlink{classtowers_1_1_tower_a2115b9e9ed7b8b8288b5dae468cbd784}{typetower}
+\item 
+int \hyperlink{classtowers_1_1_tower_a9b39867abc3f09243fcdc739bd9e6c90}{damage}
+\item 
+float \hyperlink{classtowers_1_1_tower_a3930d1e8af0848833f4de0e0e9517dca}{range}
+\item 
+float \hyperlink{classtowers_1_1_tower_aca09286cd8b3d4183f0d74bad38fff6e}{cooldown}
+\item 
+int \hyperlink{classtowers_1_1_tower_a6ca2c1cd069b9dc0b126f8158fe07068}{cooldown\+Tick} =0
+\item 
+int \hyperlink{classtowers_1_1_tower_a6c7f440bf2fb555abdc789a41c6acf44}{lvl}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5 of file Tower.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtowers_1_1_tower_a5bb75162daea78aafb453f40497281f9}\label{classtowers_1_1_tower_a5bb75162daea78aafb453f40497281f9}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!Tower@{Tower}}
+\index{Tower@{Tower}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{Tower()}{Tower()}}
+{\footnotesize\ttfamily \hyperlink{classtowers_1_1_tower}{Tower} (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{id,  }\item[{int}]{typetower }\end{DoxyParamCaption})}
+
+
+
+costruttore che setta le variabili. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata \\
+\hline
+{\em y} & coordinata \\
+\hline
+{\em id} & identificatore torre \\
+\hline
+{\em typetower} & tipo della torre \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file Tower.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtowers_1_1_tower_a5bb75162daea78aafb453f40497281f9_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtowers_1_1_tower_a38fbb6ebbb9c41c0c8d2d62910ac102a}\label{classtowers_1_1_tower_a38fbb6ebbb9c41c0c8d2d62910ac102a}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!get\+Cooldown@{get\+Cooldown}}
+\index{get\+Cooldown@{get\+Cooldown}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{get\+Cooldown()}{getCooldown()}}
+{\footnotesize\ttfamily float get\+Cooldown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna il cooldown 
+
+\begin{DoxyReturn}{Returns}
+cooldown 
+\end{DoxyReturn}
+
+
+Definition at line 173 of file Tower.\+java.
+
+\mbox{\Hypertarget{classtowers_1_1_tower_ac10b854131d21646691dcdd7da559a22}\label{classtowers_1_1_tower_ac10b854131d21646691dcdd7da559a22}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!get\+Damage@{get\+Damage}}
+\index{get\+Damage@{get\+Damage}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{get\+Damage()}{getDamage()}}
+{\footnotesize\ttfamily int get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna il danno 
+
+\begin{DoxyReturn}{Returns}
+danno 
+\end{DoxyReturn}
+
+
+Definition at line 155 of file Tower.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtowers_1_1_tower_ac10b854131d21646691dcdd7da559a22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_a67283be3f45257d1e0c474c563ebb6b6}\label{classtowers_1_1_tower_a67283be3f45257d1e0c474c563ebb6b6}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{get\+Id()}{getId()}}
+{\footnotesize\ttfamily int get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna l\textquotesingle{}identificatore 
+
+\begin{DoxyReturn}{Returns}
+identificatore 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file Tower.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtowers_1_1_tower_a67283be3f45257d1e0c474c563ebb6b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_a69ffaa5d69141ba9aed07daf94b18540}\label{classtowers_1_1_tower_a69ffaa5d69141ba9aed07daf94b18540}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!get\+Lvl@{get\+Lvl}}
+\index{get\+Lvl@{get\+Lvl}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{get\+Lvl()}{getLvl()}}
+{\footnotesize\ttfamily int get\+Lvl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna il livello 
+
+\begin{DoxyReturn}{Returns}
+livello 
+\end{DoxyReturn}
+
+
+Definition at line 86 of file Tower.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtowers_1_1_tower_a69ffaa5d69141ba9aed07daf94b18540_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_a18d1640fde65c20187e68286b6bbcf6d}\label{classtowers_1_1_tower_a18d1640fde65c20187e68286b6bbcf6d}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!get\+Range@{get\+Range}}
+\index{get\+Range@{get\+Range}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{get\+Range()}{getRange()}}
+{\footnotesize\ttfamily float get\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna il range 
+
+\begin{DoxyReturn}{Returns}
+range 
+\end{DoxyReturn}
+
+
+Definition at line 164 of file Tower.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtowers_1_1_tower_a18d1640fde65c20187e68286b6bbcf6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_adaa3345598ef202753372f185625e5da}\label{classtowers_1_1_tower_adaa3345598ef202753372f185625e5da}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!get\+Typetower@{get\+Typetower}}
+\index{get\+Typetower@{get\+Typetower}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{get\+Typetower()}{getTypetower()}}
+{\footnotesize\ttfamily int get\+Typetower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna il tipo di torre 
+
+\begin{DoxyReturn}{Returns}
+tipo di torre 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file Tower.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtowers_1_1_tower_adaa3345598ef202753372f185625e5da_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_ae13f88e922e1339355456062ad9fa359}\label{classtowers_1_1_tower_ae13f88e922e1339355456062ad9fa359}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!getX@{getX}}
+\index{getX@{getX}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{get\+X()}{getX()}}
+{\footnotesize\ttfamily int getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna la x 
+
+\begin{DoxyReturn}{Returns}
+coordinata x 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file Tower.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtowers_1_1_tower_ae13f88e922e1339355456062ad9fa359_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_aab81944f0a14bba932c0931899951937}\label{classtowers_1_1_tower_aab81944f0a14bba932c0931899951937}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!getY@{getY}}
+\index{getY@{getY}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{get\+Y()}{getY()}}
+{\footnotesize\ttfamily int getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna la y 
+
+\begin{DoxyReturn}{Returns}
+coordinata y 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file Tower.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtowers_1_1_tower_aab81944f0a14bba932c0931899951937_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_a2c29881b5a93fb867aea578992af0db1}\label{classtowers_1_1_tower_a2c29881b5a93fb867aea578992af0db1}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!is\+Cooldown\+Over@{is\+Cooldown\+Over}}
+\index{is\+Cooldown\+Over@{is\+Cooldown\+Over}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{is\+Cooldown\+Over()}{isCooldownOver()}}
+{\footnotesize\ttfamily boolean is\+Cooldown\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorna se il cooldown è finito. 
+
+\begin{DoxyReturn}{Returns}
+(true = cooldown finito) 
+\end{DoxyReturn}
+
+
+Definition at line 182 of file Tower.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtowers_1_1_tower_a2c29881b5a93fb867aea578992af0db1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_ac235927565a120a3157ef902721c105e}\label{classtowers_1_1_tower_ac235927565a120a3157ef902721c105e}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!level\+Up@{level\+Up}}
+\index{level\+Up@{level\+Up}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{level\+Up()}{levelUp()}}
+{\footnotesize\ttfamily void level\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gestisce gli update delle torri 
+
+
+
+Definition at line 63 of file Tower.\+java.
+
+\mbox{\Hypertarget{classtowers_1_1_tower_ac49a5c9f0a8fcb8b68449da989b93542}\label{classtowers_1_1_tower_ac49a5c9f0a8fcb8b68449da989b93542}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!reset\+Cooldown@{reset\+Cooldown}}
+\index{reset\+Cooldown@{reset\+Cooldown}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{reset\+Cooldown()}{resetCooldown()}}
+{\footnotesize\ttfamily void reset\+Cooldown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+resetta il cooldown. 
+
+
+
+Definition at line 190 of file Tower.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtowers_1_1_tower_ac49a5c9f0a8fcb8b68449da989b93542_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_a120aaa641fb05cbcbe27057048519fa7}\label{classtowers_1_1_tower_a120aaa641fb05cbcbe27057048519fa7}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!set\+Cooldown@{set\+Cooldown}}
+\index{set\+Cooldown@{set\+Cooldown}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{set\+Cooldown()}{setCooldown()}}
+{\footnotesize\ttfamily void set\+Cooldown (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+setta il cooldown. 
+
+
+
+Definition at line 146 of file Tower.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classtowers_1_1_tower_a120aaa641fb05cbcbe27057048519fa7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classtowers_1_1_tower_a120aaa641fb05cbcbe27057048519fa7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_a342d428cb4c655ed4d92a2c5be287e5d}\label{classtowers_1_1_tower_a342d428cb4c655ed4d92a2c5be287e5d}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!set\+Damage@{set\+Damage}}
+\index{set\+Damage@{set\+Damage}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{set\+Damage()}{setDamage()}}
+{\footnotesize\ttfamily void set\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+setta il danno. 
+
+
+
+Definition at line 130 of file Tower.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classtowers_1_1_tower_a342d428cb4c655ed4d92a2c5be287e5d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classtowers_1_1_tower_a342d428cb4c655ed4d92a2c5be287e5d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_abfc55d980923d42001e5aefda77849f9}\label{classtowers_1_1_tower_abfc55d980923d42001e5aefda77849f9}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!set\+Range@{set\+Range}}
+\index{set\+Range@{set\+Range}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{set\+Range()}{setRange()}}
+{\footnotesize\ttfamily void set\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+setta il range. 
+
+
+
+Definition at line 138 of file Tower.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{classtowers_1_1_tower_abfc55d980923d42001e5aefda77849f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classtowers_1_1_tower_abfc55d980923d42001e5aefda77849f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtowers_1_1_tower_ac5c54df7ed3b930268c8d7752c101725}\label{classtowers_1_1_tower_ac5c54df7ed3b930268c8d7752c101725}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!update@{update}}
+\index{update@{update}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+aggiorna il tick del tempo di ricarica 
+
+
+
+Definition at line 56 of file Tower.\+java.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtowers_1_1_tower_aca09286cd8b3d4183f0d74bad38fff6e}\label{classtowers_1_1_tower_aca09286cd8b3d4183f0d74bad38fff6e}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!cooldown@{cooldown}}
+\index{cooldown@{cooldown}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{cooldown}{cooldown}}
+{\footnotesize\ttfamily float cooldown\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 26 of file Tower.\+java.
+
+\mbox{\Hypertarget{classtowers_1_1_tower_a6ca2c1cd069b9dc0b126f8158fe07068}\label{classtowers_1_1_tower_a6ca2c1cd069b9dc0b126f8158fe07068}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!cooldown\+Tick@{cooldown\+Tick}}
+\index{cooldown\+Tick@{cooldown\+Tick}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{cooldown\+Tick}{cooldownTick}}
+{\footnotesize\ttfamily int cooldown\+Tick =0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 29 of file Tower.\+java.
+
+\mbox{\Hypertarget{classtowers_1_1_tower_a9b39867abc3f09243fcdc739bd9e6c90}\label{classtowers_1_1_tower_a9b39867abc3f09243fcdc739bd9e6c90}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!damage@{damage}}
+\index{damage@{damage}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{damage}{damage}}
+{\footnotesize\ttfamily int damage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 20 of file Tower.\+java.
+
+\mbox{\Hypertarget{classtowers_1_1_tower_a7441ef0865bcb3db9b8064dd7375c1ea}\label{classtowers_1_1_tower_a7441ef0865bcb3db9b8064dd7375c1ea}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!id@{id}}
+\index{id@{id}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 14 of file Tower.\+java.
+
+\mbox{\Hypertarget{classtowers_1_1_tower_a6c7f440bf2fb555abdc789a41c6acf44}\label{classtowers_1_1_tower_a6c7f440bf2fb555abdc789a41c6acf44}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!lvl@{lvl}}
+\index{lvl@{lvl}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{lvl}{lvl}}
+{\footnotesize\ttfamily int lvl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Tower.\+java.
+
+\mbox{\Hypertarget{classtowers_1_1_tower_a3930d1e8af0848833f4de0e0e9517dca}\label{classtowers_1_1_tower_a3930d1e8af0848833f4de0e0e9517dca}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!range@{range}}
+\index{range@{range}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{range}{range}}
+{\footnotesize\ttfamily float range\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file Tower.\+java.
+
+\mbox{\Hypertarget{classtowers_1_1_tower_a2115b9e9ed7b8b8288b5dae468cbd784}\label{classtowers_1_1_tower_a2115b9e9ed7b8b8288b5dae468cbd784}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!typetower@{typetower}}
+\index{typetower@{typetower}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{typetower}{typetower}}
+{\footnotesize\ttfamily int typetower\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 17 of file Tower.\+java.
+
+\mbox{\Hypertarget{classtowers_1_1_tower_a6150e0515f7202e2fb518f7206ed97dc}\label{classtowers_1_1_tower_a6150e0515f7202e2fb518f7206ed97dc}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!x@{x}}
+\index{x@{x}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 8 of file Tower.\+java.
+
+\mbox{\Hypertarget{classtowers_1_1_tower_a0a2f84ed7838f07779ae24c5a9086d33}\label{classtowers_1_1_tower_a0a2f84ed7838f07779ae24c5a9086d33}} 
+\index{towers\+::\+Tower@{towers\+::\+Tower}!y@{y}}
+\index{y@{y}!towers\+::\+Tower@{towers\+::\+Tower}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 11 of file Tower.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/towers/\hyperlink{_tower_8java}{Tower.\+java}\end{DoxyCompactItemize}

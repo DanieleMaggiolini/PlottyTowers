@@ -1,0 +1,5 @@
+<map id="changeTile" name="changeTile">
+<area shape="rect" id="node2" href="$classobjects_1_1_tile.html#a57c0bcd3471b12679b57faa7ba32d91c" title="ritorna la larghezza " alt="" coords="139,5,317,32"/>
+<area shape="rect" id="node3" href="$classobjects_1_1_tile.html#af71d2cd2060d5ecee3b0a8c387b981dd" title="ritorna l&#39;altezza " alt="" coords="137,56,319,83"/>
+<area shape="rect" id="node4" href="$classobjects_1_1_tile.html#a67283be3f45257d1e0c474c563ebb6b6" title="ritorna l&#39;identificatore " alt="" coords="168,107,288,133"/>
+</map>

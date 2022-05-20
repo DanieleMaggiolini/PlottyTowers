@@ -1,0 +1,10 @@
+<map id="setFIle" name="setFIle">
+<area shape="rect" id="node2" href="$classprogetto_1_1_sound.html#afbebd3583bea93ca3867632861ec5801" title="richiama i metodi per riprodurre in loop una traccia audio. " alt="" coords="115,71,196,98"/>
+<area shape="rect" id="node5" href="$classprogetto_1_1_sound.html#a98228f023eb842c07bae8aa04a26db94" title="richiama i metodi per riprodurre una traccia audio. " alt="" coords="123,173,187,199"/>
+<area shape="rect" id="node3" href="$enumprogetto_1_1_game_states.html#a118b00363a0d1055d4b00bb40dd66f34" title="costruttore setta il gamestates in base al parametro passato e nel caso vi sia riproduce la musica re..." alt="" coords="244,5,447,47"/>
+<area shape="rect" id="node4" href="$classprogetto_1_1_sound.html#a4641ac073645140bf1f9577c2587fe3b" title="muta l&#39;audio. " alt="" coords="320,71,371,98"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level1.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="268,122,423,149"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level2.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="268,173,423,199"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level3.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="268,223,423,250"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level4.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="aggiunge &#39;type&#39; coin e riproduce un effetto sonoro. " alt="" coords="268,274,423,301"/>
+</map>

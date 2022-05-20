@@ -1,0 +1,5 @@
+<map id="getWaveManager" name="getWaveManager">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a121827ebd1c5b24c92f966721b51c0b9" title="controlla che sia spawnato il nemico e che l&#39;ondata non sia finita. " alt="" coords="176,5,288,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level1.html#addfc0c3129b6ff606f7276e175f31a15" title="richiama il metodo per spawnare un nemico. " alt="" coords="182,56,282,83"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#ab424ab29e7ab4733f2efd1e6ef3f13b1" title="aggiornamento delle ondate. " alt="" coords="336,31,429,57"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="mouseMoved" name="mouseMoved">
+<area shape="rect" id="node2" href="$classui_1_1_my_button.html#a187945475e730bfa340a10f63224e91f" title="getter del rettangolo per verificarne la pressione. " alt="" coords="162,5,321,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#ac3f48a7245ffa1fe24d32ea71797997d" title="setter della variabile per la verifica del mouse se si trova sul bottone. " alt="" coords="152,56,331,83"/>
+<area shape="rect" id="node4" href="$classui_1_1_my_button.html#a38b44562c6a3dd438f51365e248c7e57" title="ui.MyButton.allunga" alt="" coords="605,132,743,159"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_menu.html#a548cf4795e9d559d0c0cce0bb57a5251" title="resetta i bottoni " alt="" coords="193,157,289,184"/>
+<area shape="rect" id="node6" href="$classui_1_1_my_button.html#af47bcfe7d6d4ed3655e2c61583e1b5d7" title="resetta le variabili booleane. " alt="" coords="379,157,557,184"/>
+</map>

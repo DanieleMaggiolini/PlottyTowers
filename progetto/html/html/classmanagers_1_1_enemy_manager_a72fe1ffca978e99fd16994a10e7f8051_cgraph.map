@@ -1,0 +1,10 @@
+<map id="draw" name="draw">
+<area shape="rect" id="node2" href="$classmanagers_1_1_enemy_manager.html#a7ebdd9acefa4682b23b1ad2c0be558f4" title="in base alla tipologia di nemico disegno con il suo index di animazione " alt="" coords="129,56,219,83"/>
+<area shape="rect" id="node6" href="$classmanagers_1_1_enemy_manager.html#a9c98cd29298e5f583c52dc46a6d70d46" title="disegno rosso della barra della vita di un nemico " alt="" coords="131,107,217,133"/>
+<area shape="rect" id="node9" href="$classmanagers_1_1_enemy_manager.html#a5c2bac0f4b9a3ef4e30f60d4b0c3b951" title="aggiornamento indici per l&#39;animazione dei nemici " alt="" coords="103,157,245,184"/>
+<area shape="rect" id="node3" href="$classenemies_1_1_enemy.html#a40aced6dca930a3ae575a42b3286e230" title="enemies.Enemy.getEnemyType" alt="" coords="293,5,500,32"/>
+<area shape="rect" id="node4" href="$classenemies_1_1_enemy.html#ae8f033a71b96920114aee202798dc7e9" title="enemies.Enemy.getX" alt="" coords="324,56,469,83"/>
+<area shape="rect" id="node5" href="$classenemies_1_1_enemy.html#aa0f539cec219900ff6cf76edcfa52367" title="enemies.Enemy.getY" alt="" coords="323,107,470,133"/>
+<area shape="rect" id="node7" href="$classmanagers_1_1_enemy_manager.html#ac01087314c8b4df0d2304a3596493393" title="calcolo grandezza della barra della vita in base alla vita posseduta dal nemico " alt="" coords="337,157,456,184"/>
+<area shape="rect" id="node8" href="$classenemies_1_1_enemy.html#a719baea5da89286e1c263e1beb3ee35d" title="enemies.Enemy.getHpbar" alt="" coords="548,157,720,184"/>
+</map>

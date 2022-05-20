@@ -1,3 +1,12 @@
+/**
+* @author  Daniele Maggiolini
+* @author  Mattia Minotti
+* @version 0.0
+* @file LoadSave.java 
+* 
+* @brief carica e salva immagini e mappe.
+*
+*/
 package helpz;
 
 import java.awt.image.BufferedImage;
@@ -13,6 +22,13 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import ui.LevelMenu;
 
+
+/**
+ * @class LoadSave
+ *
+ * @brief carica e salva immagini e mappe.
+ *
+ */
 public class LoadSave {
     public static final String BACKGROUND_MENU = "image/background/backgroundMenu.png";
     public static final String PAUSE_BACKGROUND = "image/other/pauseMenu.png";
@@ -42,7 +58,11 @@ public class LoadSave {
     public static final String INGRANAGGIO = "image/other/ingranaggio.png";
     public static final String HOME = "image/other/home.png";
     
-    //LOAD IMAGE     
+    /**
+     @brief carica immagine
+     * 
+     * @param name immagine
+     */     
     public static BufferedImage getImage(String name){
         BufferedImage img = null;
         InputStream is = helpz.LoadSave.class.getResourceAsStream("/" + name);
@@ -59,7 +79,14 @@ public class LoadSave {
         }
         return img; 
     }
-    //create new array with default value
+    
+    
+    /**
+     @brief crea nuovo array con valori default
+     * 
+     * @param name immagine
+     * @param id identificatori
+     */
     public static void createLevel(String name, int[] id){
         File newLevel= new File("src/image/background/" + name + ".txt");
         
@@ -73,7 +100,13 @@ public class LoadSave {
         }
         writeToFile(newLevel, id);
     }
-    //WRITE on file
+    
+    /**
+     @brief scrive su un file
+     * 
+     * @param f File
+     * @param id identificatori
+     */
     private static void writeToFile(File f, int[] id){
         try {
             PrintWriter printwriter =new PrintWriter(f);
@@ -85,7 +118,14 @@ public class LoadSave {
             Logger.getLogger(LoadSave.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    //READ FILE
+    
+    
+    /**
+     @brief legge un file
+     * 
+     * @param f File
+     * @return lisa
+     */
     private static ArrayList<Integer> readFile(File f){
         ArrayList<Integer> list= new ArrayList<>();
         try {
@@ -99,7 +139,14 @@ public class LoadSave {
         }
         return list;
     }
-    //load 2d int array from a file
+    
+    
+    /**
+     @brief load 2d int array from a file
+     * 
+     * @param name nome
+     * @return null
+     */
     public static int[][] loadLevel(String name){
         File levelFile = new File("src/image/background/" + name + ".txt");
             

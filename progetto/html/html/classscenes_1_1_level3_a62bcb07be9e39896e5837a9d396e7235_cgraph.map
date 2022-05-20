@@ -1,0 +1,4 @@
+<map id="drawBackground" name="drawBackground">
+<area shape="rect" id="node2" href="$classprogetto_1_1_game.html#ad519f2a339c804d206a38ecd2c33f667" title="getter dell&#39;oggetto tilemanager. " alt="" coords="172,5,372,32"/>
+<area shape="rect" id="node3" href="$classmanagers_1_1_tile_manager.html#a46ebd32c7ec4ac506010fe465687bdd7" title="ritorno di un&#39;immagine passando un id " alt="" coords="185,57,359,98"/>
+</map>

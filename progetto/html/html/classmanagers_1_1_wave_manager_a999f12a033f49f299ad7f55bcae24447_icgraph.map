@@ -1,0 +1,10 @@
+<map id="isMoreWaves" name="isMoreWaves">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#a999f12a033f49f299ad7f55bcae24447" title="richiama il metodo per controllare se ci solo altre ondate. " alt="" coords="153,5,340,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#a999f12a033f49f299ad7f55bcae24447" title="richiama il metodo per controllare se ci solo altre ondate. " alt="" coords="153,56,340,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#a999f12a033f49f299ad7f55bcae24447" title="richiama il metodo per controllare se ci solo altre ondate. " alt="" coords="153,107,340,133"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level4.html#a999f12a033f49f299ad7f55bcae24447" title="richiama il metodo per controllare se ci solo altre ondate. " alt="" coords="153,157,340,184"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="388,5,576,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="388,56,576,83"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level3.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="388,107,576,133"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level4.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="388,157,576,184"/>
+</map>

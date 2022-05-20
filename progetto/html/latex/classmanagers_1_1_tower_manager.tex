@@ -1,0 +1,553 @@
+\hypertarget{classmanagers_1_1_tower_manager}{}\section{Tower\+Manager Class Reference}
+\label{classmanagers_1_1_tower_manager}\index{Tower\+Manager@{Tower\+Manager}}
+
+
+classe per gestire il numero, la rimozione, gli upgrade, la creazione, le animazioni e gli spari delle torri  
+
+
+
+
+Collaboration diagram for Tower\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmanagers_1_1_tower_manager_a520c6411e4fe9307be91f5a8c7d8b774}{Tower\+Manager} (\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classmanagers_1_1_tower_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}, String \hyperlink{classmanagers_1_1_tower_manager_a91ac952876f776b3fbbc8519e093fdbf}{state})
+\begin{DoxyCompactList}\small\item\em costruttore. assegna il game e lo stato(il livello in cui ci troviamo) e carica le immagini delle torri \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_tower_manager_ac5c54df7ed3b930268c8d7752c101725}{update} ()
+\begin{DoxyCompactList}\small\item\em aggiornamento del cooldown di ogni torre presente e richiamo del metodo per attaccare un nemico \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_tower_manager_a337d987717311ab51a124a11a059f66c}{attack} (\hyperlink{classtowers_1_1_tower}{Tower} t)
+\begin{DoxyCompactList}\small\item\em considerati tutti i nemici, se sono vivi, nel raggio della torre in considerazione, se il suo cooldown è finito, e se presente un animazione siamo nell\textquotesingle{}index giusto, fare spaare la torre \end{DoxyCompactList}\item 
+boolean \hyperlink{classmanagers_1_1_tower_manager_a5f1dea7776d18a6f69428e43c4845fdb}{is\+In\+Range} (\hyperlink{classtowers_1_1_tower}{Tower} t, \hyperlink{classenemies_1_1_enemy}{Enemy} e)
+\begin{DoxyCompactList}\small\item\em controllo se il nemico preso in considerazione è nel raggio della torre presa in considerazione \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_tower_manager_a245f3270a9250216ec446114a8cdd805}{add\+Tower} (\hyperlink{classtowers_1_1_tower}{Tower} selected\+Tower, int x\+Pos, int y\+Pos)
+\begin{DoxyCompactList}\small\item\em aggiunta di una torre nell\textquotesingle{}arraylist delle torri \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_tower_manager_a8a3c715fcfd3d65e1d8241a1fa4965ff}{tower\+Level\+Up} (\hyperlink{classtowers_1_1_tower}{Tower} displayed\+Tower)
+\begin{DoxyCompactList}\small\item\em potenziamento degli attributi della torre passata se presente \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_tower_manager_addba85b44e35a186e066b2e801f433c4}{remove\+Tower} (\hyperlink{classtowers_1_1_tower}{Tower} displayed\+Tower)
+\begin{DoxyCompactList}\small\item\em rimozione della torre passata se presente \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_tower_manager_a72fe1ffca978e99fd16994a10e7f8051}{draw} (Graphics g)
+\begin{DoxyCompactList}\small\item\em richiamo del metodo draw\+Tower per ogni torre \end{DoxyCompactList}\item 
+Buffered\+Image \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classmanagers_1_1_tower_manager_aeae3bb8b35e0507fe9105c2eb4713339}{get\+Tower\+Imgs} ()
+\begin{DoxyCompactList}\small\item\em ritorno del contenitore di tutte le immagini delle torri \end{DoxyCompactList}\item 
+\hyperlink{classtowers_1_1_tower}{Tower} \hyperlink{classmanagers_1_1_tower_manager_a4345f2e80059788e5ab1dd1cf0ff2c04}{get\+Tower\+At} (int x, int y)
+\begin{DoxyCompactList}\small\item\em ritorno di una torre se presente nelle cordinate indicate \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmanagers_1_1_tower_manager_afcea12e616fbcfcaf7b40fba856f22ca}{load\+Tower} ()
+\begin{DoxyCompactList}\small\item\em assegnegnazioni delle immagini delle torri con animazioni, diverse per ogni livello \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_tower_manager_a2cbe196e347dcc9a69a4d3dfdbec72de}{draw\+Tower} (\hyperlink{classtowers_1_1_tower}{Tower} t, Graphics g)
+\begin{DoxyCompactList}\small\item\em controllo se la torre deve rimanere ferma o deve essere animata, in base alla presenza di nemici, e disegnarla \end{DoxyCompactList}\item 
+void \hyperlink{classmanagers_1_1_tower_manager_a5c2bac0f4b9a3ef4e30f60d4b0c3b951}{update\+Animation\+Tick} ()
+\begin{DoxyCompactList}\small\item\em aggiornamento indici per l\textquotesingle{}animazione delle torri \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classprogetto_1_1_game}{Game} \hyperlink{classmanagers_1_1_tower_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}{game}
+\item 
+String \hyperlink{classmanagers_1_1_tower_manager_a91ac952876f776b3fbbc8519e093fdbf}{state}
+\item 
+Buffered\+Image \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classmanagers_1_1_tower_manager_a9e41697ad86c9524ce67f7e91358e17e}{tower\+Imgs}
+\item 
+Array\+List$<$ \hyperlink{classtowers_1_1_tower}{Tower} $>$ \hyperlink{classmanagers_1_1_tower_manager_a8018061adcbaafb8625d999c4e53a3aa}{towers} = new Array\+List$<$$>$()
+\item 
+int \hyperlink{classmanagers_1_1_tower_manager_a54fe3a936ed7614ffaa68bf973879711}{tower\+Ammount} = 0
+\item 
+int \hyperlink{classmanagers_1_1_tower_manager_a04d62de5f8367e549268b6c5540e1e97}{ani\+Tick}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe per gestire il numero, la rimozione, gli upgrade, la creazione, le animazioni e gli spari delle torri 
+
+Definition at line 30 of file Tower\+Manager.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a520c6411e4fe9307be91f5a8c7d8b774}\label{classmanagers_1_1_tower_manager_a520c6411e4fe9307be91f5a8c7d8b774}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!Tower\+Manager@{Tower\+Manager}}
+\index{Tower\+Manager@{Tower\+Manager}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{Tower\+Manager()}{TowerManager()}}
+{\footnotesize\ttfamily \hyperlink{classmanagers_1_1_tower_manager}{Tower\+Manager} (\begin{DoxyParamCaption}\item[{\hyperlink{classprogetto_1_1_game}{Game}}]{game,  }\item[{String}]{state }\end{DoxyParamCaption})}
+
+
+
+costruttore. assegna il game e lo stato(il livello in cui ci troviamo) e carica le immagini delle torri 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+{\em state} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 57 of file Tower\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_a520c6411e4fe9307be91f5a8c7d8b774_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a245f3270a9250216ec446114a8cdd805}\label{classmanagers_1_1_tower_manager_a245f3270a9250216ec446114a8cdd805}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!add\+Tower@{add\+Tower}}
+\index{add\+Tower@{add\+Tower}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{add\+Tower()}{addTower()}}
+{\footnotesize\ttfamily void add\+Tower (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{selected\+Tower,  }\item[{int}]{x\+Pos,  }\item[{int}]{y\+Pos }\end{DoxyParamCaption})}
+
+
+
+aggiunta di una torre nell\textquotesingle{}arraylist delle torri 
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected\+Tower} & torre di cui prenderemo il type \\
+\hline
+{\em x\+Pos} & posizione della torre nell\textquotesingle{}asse X \\
+\hline
+{\em y\+Pos} & posizione della torre nell\textquotesingle{}asse Y \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 242 of file Tower\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classmanagers_1_1_tower_manager_a245f3270a9250216ec446114a8cdd805_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classmanagers_1_1_tower_manager_a245f3270a9250216ec446114a8cdd805_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a337d987717311ab51a124a11a059f66c}\label{classmanagers_1_1_tower_manager_a337d987717311ab51a124a11a059f66c}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!attack@{attack}}
+\index{attack@{attack}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void attack (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{t }\end{DoxyParamCaption})}
+
+
+
+considerati tutti i nemici, se sono vivi, nel raggio della torre in considerazione, se il suo cooldown è finito, e se presente un animazione siamo nell\textquotesingle{}index giusto, fare spaare la torre 
+
+
+
+Definition at line 136 of file Tower\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_a337d987717311ab51a124a11a059f66c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_a337d987717311ab51a124a11a059f66c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a72fe1ffca978e99fd16994a10e7f8051}\label{classmanagers_1_1_tower_manager_a72fe1ffca978e99fd16994a10e7f8051}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!draw@{draw}}
+\index{draw@{draw}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})}
+
+
+
+richiamo del metodo draw\+Tower per ogni torre 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & parte grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 275 of file Tower\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_a72fe1ffca978e99fd16994a10e7f8051_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classmanagers_1_1_tower_manager_a72fe1ffca978e99fd16994a10e7f8051_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a2cbe196e347dcc9a69a4d3dfdbec72de}\label{classmanagers_1_1_tower_manager_a2cbe196e347dcc9a69a4d3dfdbec72de}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!draw\+Tower@{draw\+Tower}}
+\index{draw\+Tower@{draw\+Tower}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{draw\+Tower()}{drawTower()}}
+{\footnotesize\ttfamily void draw\+Tower (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{t,  }\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+controllo se la torre deve rimanere ferma o deve essere animata, in base alla presenza di nemici, e disegnarla 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & torre che andremo a disegnare \\
+\hline
+{\em g} & parte grafica \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 290 of file Tower\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_a2cbe196e347dcc9a69a4d3dfdbec72de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_a2cbe196e347dcc9a69a4d3dfdbec72de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a4345f2e80059788e5ab1dd1cf0ff2c04}\label{classmanagers_1_1_tower_manager_a4345f2e80059788e5ab1dd1cf0ff2c04}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!get\+Tower\+At@{get\+Tower\+At}}
+\index{get\+Tower\+At@{get\+Tower\+At}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{get\+Tower\+At()}{getTowerAt()}}
+{\footnotesize\ttfamily \hyperlink{classtowers_1_1_tower}{Tower} get\+Tower\+At (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+ritorno di una torre se presente nelle cordinate indicate 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordinata richiesta \\
+\hline
+{\em y} & coordinata richiesta\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+torre specifica 
+\end{DoxyReturn}
+
+
+Definition at line 415 of file Tower\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_a4345f2e80059788e5ab1dd1cf0ff2c04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_aeae3bb8b35e0507fe9105c2eb4713339}\label{classmanagers_1_1_tower_manager_aeae3bb8b35e0507fe9105c2eb4713339}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!get\+Tower\+Imgs@{get\+Tower\+Imgs}}
+\index{get\+Tower\+Imgs@{get\+Tower\+Imgs}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{get\+Tower\+Imgs()}{getTowerImgs()}}
+{\footnotesize\ttfamily Buffered\+Image \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} get\+Tower\+Imgs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ritorno del contenitore di tutte le immagini delle torri 
+
+\begin{DoxyReturn}{Returns}
+immagini delle torri 
+\end{DoxyReturn}
+
+
+Definition at line 403 of file Tower\+Manager.\+java.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_aeae3bb8b35e0507fe9105c2eb4713339_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a5f1dea7776d18a6f69428e43c4845fdb}\label{classmanagers_1_1_tower_manager_a5f1dea7776d18a6f69428e43c4845fdb}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!is\+In\+Range@{is\+In\+Range}}
+\index{is\+In\+Range@{is\+In\+Range}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{is\+In\+Range()}{isInRange()}}
+{\footnotesize\ttfamily boolean is\+In\+Range (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{t,  }\item[{\hyperlink{classenemies_1_1_enemy}{Enemy}}]{e }\end{DoxyParamCaption})}
+
+
+
+controllo se il nemico preso in considerazione è nel raggio della torre presa in considerazione 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & torre \\
+\hline
+{\em e} & nemico\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+se è nel raggio vero, se è fuori falso 
+\end{DoxyReturn}
+
+
+Definition at line 230 of file Tower\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classmanagers_1_1_tower_manager_a5f1dea7776d18a6f69428e43c4845fdb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_a5f1dea7776d18a6f69428e43c4845fdb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_afcea12e616fbcfcaf7b40fba856f22ca}\label{classmanagers_1_1_tower_manager_afcea12e616fbcfcaf7b40fba856f22ca}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!load\+Tower@{load\+Tower}}
+\index{load\+Tower@{load\+Tower}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{load\+Tower()}{loadTower()}}
+{\footnotesize\ttfamily void load\+Tower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+assegnegnazioni delle immagini delle torri con animazioni, diverse per ogni livello 
+
+
+
+Definition at line 67 of file Tower\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classmanagers_1_1_tower_manager_afcea12e616fbcfcaf7b40fba856f22ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classmanagers_1_1_tower_manager_afcea12e616fbcfcaf7b40fba856f22ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_addba85b44e35a186e066b2e801f433c4}\label{classmanagers_1_1_tower_manager_addba85b44e35a186e066b2e801f433c4}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!remove\+Tower@{remove\+Tower}}
+\index{remove\+Tower@{remove\+Tower}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{remove\+Tower()}{removeTower()}}
+{\footnotesize\ttfamily void remove\+Tower (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{displayed\+Tower }\end{DoxyParamCaption})}
+
+
+
+rimozione della torre passata se presente 
+
+
+\begin{DoxyParams}{Parameters}
+{\em displayed\+Tower} & torre che andremo a rimuovere \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 264 of file Tower\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classmanagers_1_1_tower_manager_addba85b44e35a186e066b2e801f433c4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classmanagers_1_1_tower_manager_addba85b44e35a186e066b2e801f433c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a8a3c715fcfd3d65e1d8241a1fa4965ff}\label{classmanagers_1_1_tower_manager_a8a3c715fcfd3d65e1d8241a1fa4965ff}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!tower\+Level\+Up@{tower\+Level\+Up}}
+\index{tower\+Level\+Up@{tower\+Level\+Up}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{tower\+Level\+Up()}{towerLevelUp()}}
+{\footnotesize\ttfamily void tower\+Level\+Up (\begin{DoxyParamCaption}\item[{\hyperlink{classtowers_1_1_tower}{Tower}}]{displayed\+Tower }\end{DoxyParamCaption})}
+
+
+
+potenziamento degli attributi della torre passata se presente 
+
+
+\begin{DoxyParams}{Parameters}
+{\em displayed\+Tower} & torre a cui applicheremo i potenziamenti \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 251 of file Tower\+Manager.\+java.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classmanagers_1_1_tower_manager_a8a3c715fcfd3d65e1d8241a1fa4965ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classmanagers_1_1_tower_manager_a8a3c715fcfd3d65e1d8241a1fa4965ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_ac5c54df7ed3b930268c8d7752c101725}\label{classmanagers_1_1_tower_manager_ac5c54df7ed3b930268c8d7752c101725}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!update@{update}}
+\index{update@{update}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+aggiornamento del cooldown di ogni torre presente e richiamo del metodo per attaccare un nemico 
+
+
+
+Definition at line 121 of file Tower\+Manager.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_ac5c54df7ed3b930268c8d7752c101725_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classmanagers_1_1_tower_manager_ac5c54df7ed3b930268c8d7752c101725_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a5c2bac0f4b9a3ef4e30f60d4b0c3b951}\label{classmanagers_1_1_tower_manager_a5c2bac0f4b9a3ef4e30f60d4b0c3b951}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!update\+Animation\+Tick@{update\+Animation\+Tick}}
+\index{update\+Animation\+Tick@{update\+Animation\+Tick}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{update\+Animation\+Tick()}{updateAnimationTick()}}
+{\footnotesize\ttfamily void update\+Animation\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+aggiornamento indici per l\textquotesingle{}animazione delle torri 
+
+
+
+Definition at line 378 of file Tower\+Manager.\+java.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmanagers_1_1_tower_manager_a5c2bac0f4b9a3ef4e30f60d4b0c3b951_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a04d62de5f8367e549268b6c5540e1e97}\label{classmanagers_1_1_tower_manager_a04d62de5f8367e549268b6c5540e1e97}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!ani\+Tick@{ani\+Tick}}
+\index{ani\+Tick@{ani\+Tick}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{ani\+Tick}{aniTick}}
+{\footnotesize\ttfamily int ani\+Tick\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 46 of file Tower\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}\label{classmanagers_1_1_tower_manager_ac6a5ed6191fcf3a5bf0445921feb4f48}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!game@{game}}
+\index{game@{game}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily \hyperlink{classprogetto_1_1_game}{Game} game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 32 of file Tower\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a91ac952876f776b3fbbc8519e093fdbf}\label{classmanagers_1_1_tower_manager_a91ac952876f776b3fbbc8519e093fdbf}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!state@{state}}
+\index{state@{state}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily String state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 34 of file Tower\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a54fe3a936ed7614ffaa68bf973879711}\label{classmanagers_1_1_tower_manager_a54fe3a936ed7614ffaa68bf973879711}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!tower\+Ammount@{tower\+Ammount}}
+\index{tower\+Ammount@{tower\+Ammount}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{tower\+Ammount}{towerAmmount}}
+{\footnotesize\ttfamily int tower\+Ammount = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 43 of file Tower\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a9e41697ad86c9524ce67f7e91358e17e}\label{classmanagers_1_1_tower_manager_a9e41697ad86c9524ce67f7e91358e17e}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!tower\+Imgs@{tower\+Imgs}}
+\index{tower\+Imgs@{tower\+Imgs}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{tower\+Imgs}{towerImgs}}
+{\footnotesize\ttfamily Buffered\+Image \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} tower\+Imgs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Tower\+Manager.\+java.
+
+\mbox{\Hypertarget{classmanagers_1_1_tower_manager_a8018061adcbaafb8625d999c4e53a3aa}\label{classmanagers_1_1_tower_manager_a8018061adcbaafb8625d999c4e53a3aa}} 
+\index{managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}!towers@{towers}}
+\index{towers@{towers}!managers\+::\+Tower\+Manager@{managers\+::\+Tower\+Manager}}
+\subsubsection{\texorpdfstring{towers}{towers}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{classtowers_1_1_tower}{Tower}$>$ towers = new Array\+List$<$$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Tower\+Manager.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Utente/\+Documents/\+Git\+Hub/\+Plotty\+Towers/progetto/src/managers/\hyperlink{_tower_manager_8java}{Tower\+Manager.\+java}\end{DoxyCompactItemize}

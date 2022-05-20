@@ -1,0 +1,5 @@
+<map id="drawEnemy" name="drawEnemy">
+<area shape="rect" id="node2" href="$classenemies_1_1_enemy.html#a40aced6dca930a3ae575a42b3286e230" title="enemies.Enemy.getEnemyType" alt="" coords="144,5,351,32"/>
+<area shape="rect" id="node3" href="$classenemies_1_1_enemy.html#ae8f033a71b96920114aee202798dc7e9" title="enemies.Enemy.getX" alt="" coords="175,56,320,83"/>
+<area shape="rect" id="node4" href="$classenemies_1_1_enemy.html#aa0f539cec219900ff6cf76edcfa52367" title="enemies.Enemy.getY" alt="" coords="174,107,321,133"/>
+</map>

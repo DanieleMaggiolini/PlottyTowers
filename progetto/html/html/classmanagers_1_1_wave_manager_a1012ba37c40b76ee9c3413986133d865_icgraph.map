@@ -1,0 +1,10 @@
+<map id="isWaveEnd" name="isWaveEnd">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#acd1846d50c3d8678777f9ab6716f5cf3" title="controlla se i nemici sono tutti morti. " alt="" coords="140,5,303,32"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level2.html#acd1846d50c3d8678777f9ab6716f5cf3" title="controlla se i nemici sono tutti morti. " alt="" coords="140,56,303,83"/>
+<area shape="rect" id="node6" href="$classscenes_1_1_level3.html#acd1846d50c3d8678777f9ab6716f5cf3" title="controlla se i nemici sono tutti morti. " alt="" coords="140,107,303,133"/>
+<area shape="rect" id="node8" href="$classscenes_1_1_level4.html#acd1846d50c3d8678777f9ab6716f5cf3" title="controlla se i nemici sono tutti morti. " alt="" coords="140,157,303,184"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level1.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="351,5,539,32"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level2.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="351,56,539,83"/>
+<area shape="rect" id="node7" href="$classscenes_1_1_level3.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="351,107,539,133"/>
+<area shape="rect" id="node9" href="$classscenes_1_1_level4.html#af005ec68c869a6acd5e833cba9330a50" title="aggiornamento dei nemici. " alt="" coords="351,157,539,184"/>
+</map>

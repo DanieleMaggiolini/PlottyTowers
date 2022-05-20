@@ -1,0 +1,6 @@
+<map id="mousePressed" name="mousePressed">
+<area shape="rect" id="node2" href="$classscenes_1_1_level1.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="163,5,357,32"/>
+<area shape="rect" id="node3" href="$classscenes_1_1_level2.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="163,56,357,83"/>
+<area shape="rect" id="node4" href="$classscenes_1_1_level3.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="163,107,357,133"/>
+<area shape="rect" id="node5" href="$classscenes_1_1_level4.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="163,157,357,184"/>
+</map>

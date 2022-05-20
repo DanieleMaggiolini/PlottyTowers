@@ -1,0 +1,51 @@
+<map id="getLevel1" name="getLevel1">
+<area shape="rect" id="node2" href="$classinputs_1_1_keyboard_listener.html#aa12eb1084be2c4d9b03d5f248f00900d" title="inputs.KeyboardListener.key\lPressed" alt="" coords="150,5,337,47"/>
+<area shape="rect" id="node3" href="$classinputs_1_1_my_mouse_listener.html#a45d56bd84238e8b56589dfc732e2b2cf" title="inputs.MyMouseListener.mouse\lClicked" alt="" coords="140,71,347,112"/>
+<area shape="rect" id="node4" href="$classinputs_1_1_my_mouse_listener.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="inputs.MyMouseListener.mouse\lPressed" alt="" coords="140,136,347,177"/>
+<area shape="rect" id="node5" href="$classinputs_1_1_my_mouse_listener.html#a87a07291794e15052db67f945d90853e" title="inputs.MyMouseListener.mouse\lReleased" alt="" coords="140,201,347,243"/>
+<area shape="rect" id="node6" href="$classinputs_1_1_my_mouse_listener.html#adbfc0588c017133c9b7070474402b72f" title="inputs.MyMouseListener.mouse\lDragged" alt="" coords="140,267,347,308"/>
+<area shape="rect" id="node7" href="$classinputs_1_1_my_mouse_listener.html#a2ca251710b65639ec80bc141edde60aa" title="inputs.MyMouseListener.mouse\lMoved" alt="" coords="140,332,347,373"/>
+<area shape="rect" id="node8" href="$classmanagers_1_1_enemy_manager.html#a8f172cfa5ade4d4f0a6b89cc6bfc4d12" title="aggiornamento della posizione di un nemico " alt="" coords="684,415,901,456"/>
+<area shape="rect" id="node10" href="$classmanagers_1_1_enemy_manager.html#ac689e72523c8460ac3160526d310b1b7" title="richiesta della tipologia di tile presente nel punto indicato " alt="" coords="145,449,341,491"/>
+<area shape="rect" id="node12" href="$classmanagers_1_1_enemy_manager.html#a9f0f7dc28e596d2ebcd06e27ef05d9fd" title="in base alla tipologia del nemico passato aggiunta di monete al giocatore " alt="" coords="131,515,356,542"/>
+<area shape="rect" id="node14" href="$classmanagers_1_1_projectile_manager.html#a90bf53002c3a067a25aba3e876974051" title="controolo per il proiettile passato se si trova nella hitbox di uno dei nemici presenti nel gioco..." alt="" coords="143,567,344,608"/>
+<area shape="rect" id="node16" href="$classmanagers_1_1_tower_manager.html#a337d987717311ab51a124a11a059f66c" title="considerati tutti i nemici, se sono vivi, nel raggio della torre in considerazione, se il suo cooldown è finito, e se presente un animazione siamo nell&#39;index giusto, fare spaare la torre " alt="" coords="140,633,347,659"/>
+<area shape="rect" id="node18" href="$classmanagers_1_1_tower_manager.html#a2cbe196e347dcc9a69a4d3dfdbec72de" title="controllo se la torre deve rimanere ferma o deve essere animata, in base alla presenza di nemici..." alt="" coords="144,684,343,725"/>
+<area shape="rect" id="node20" href="$classprogetto_1_1_render.html#a203b6ad9d5e4d54dd1152986eec4dedc" title="in base al gamestate attuale richiama la render della classe interessata. " alt="" coords="166,750,321,777"/>
+<area shape="rect" id="node22" href="$classprogetto_1_1_thread_update.html#af005ec68c869a6acd5e833cba9330a50" title="metodo che richiama l&#39;update della schermata nella quale ci troviamo nel gioco. " alt="" coords="145,801,341,843"/>
+<area shape="rect" id="node24" href="$classprogetto_1_1_thread_update.html#ae4fd4a959e4d782a5e7ac0eff77ba27f" title="progetto.ThreadUpdate.update\lTower" alt="" coords="145,867,341,908"/>
+<area shape="rect" id="node25" href="$classprogetto_1_1_thread_update.html#ab424ab29e7ab4733f2efd1e6ef3f13b1" title="progetto.ThreadUpdate.updateWave" alt="" coords="129,933,357,959"/>
+<area shape="rect" id="node26" href="$classprogetto_1_1_thread_update.html#ac83c203b559f6fd0bb225744d7ccf854" title="progetto.ThreadUpdate.updateProj" alt="" coords="134,983,353,1010"/>
+<area shape="rect" id="node27" href="$classprogetto_1_1_thread_update.html#a7ca93fcd8c7440e7b3f64c595a5be28c" title="progetto.ThreadUpdate.updateCoin" alt="" coords="132,1034,355,1061"/>
+<area shape="rect" id="node28" href="$classscenes_1_1_editing.html#af1c1bf274cd89c18726a992a073a7c6d" title="salva il livello. " alt="" coords="160,1085,327,1111"/>
+<area shape="rect" id="node30" href="$classui_1_1_action_bar.html#a65768678909bc0512c6cb9780709ad38" title="disegna i bottoni. " alt="" coords="439,1127,602,1154"/>
+<area shape="rect" id="node32" href="$classui_1_1_action_bar.html#a2177b06de4c0084e953665a7dbfd6772" title="disegna la torre selezionata, le sue info e i bottoni relativi ad essa. " alt="" coords="430,1179,611,1220"/>
+<area shape="rect" id="node33" href="$classui_1_1_action_bar.html#a01f37d59ae4977fa55a1a6dd3e8bd543" title="disegna il timer dell&#39;ondata. " alt="" coords="149,1237,337,1263"/>
+<area shape="rect" id="node35" href="$classui_1_1_action_bar.html#abb1fa26db5a1c2f4b0776a316ad85249" title="disegna il numero di nemici rimanenti. " alt="" coords="150,1287,337,1314"/>
+<area shape="rect" id="node36" href="$classui_1_1_action_bar.html#aeb491734ea2c8ae2f1be9db4f930d22a" title="disegna il numero dell&#39;ondata. " alt="" coords="155,1338,332,1365"/>
+<area shape="rect" id="node37" href="$classui_1_1_action_bar.html#a484775c889ccd8602b66ad795b141534" title="rimuove una vita ed eventualmente termina il livello. " alt="" coords="163,1389,323,1415"/>
+<area shape="rect" id="node42" href="$classui_1_1_action_bar.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i click del mouse. " alt="" coords="154,1549,333,1575"/>
+<area shape="rect" id="node47" href="$classui_1_1_action_bar.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce le press del mouse. " alt="" coords="151,1650,335,1677"/>
+<area shape="rect" id="node50" href="$classui_1_1_pause_overlay.html#a87a07291794e15052db67f945d90853e" title="gestisce i vari release del mouse " alt="" coords="137,1701,350,1727"/>
+<area shape="rect" id="node9" href="$classmanagers_1_1_enemy_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="per ogni nemico controllo se vivo e lo muove " alt="" coords="949,422,1167,449"/>
+<area shape="rect" id="node11" href="$classmanagers_1_1_enemy_manager.html#a839e4729819875981f138997b2d3f438" title="controllo è pissibile procedere nella direzione in cui il nemico stava andando altrimenti prova strad..." alt="" coords="423,473,619,515"/>
+<area shape="rect" id="node13" href="$classenemies_1_1_enemy.html#ab316db3306dfd12457e3df71e933ca2d" title="enemies.Enemy.damage" alt="" coords="437,539,604,566"/>
+<area shape="rect" id="node15" href="$classmanagers_1_1_projectile_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="per ogni proiettile controllo se attivo, lo muove e controllo se ha colpito qualche nemico ..." alt="" coords="405,590,636,617"/>
+<area shape="rect" id="node17" href="$classmanagers_1_1_tower_manager.html#ac5c54df7ed3b930268c8d7752c101725" title="aggiornamento del cooldown di ogni torre presente e richiamo del metodo per attaccare un nemico ..." alt="" coords="415,641,626,667"/>
+<area shape="rect" id="node19" href="$classmanagers_1_1_tower_manager.html#a72fe1ffca978e99fd16994a10e7f8051" title="richiamo del metodo drawTower per ogni torre " alt="" coords="421,691,620,718"/>
+<area shape="rect" id="node21" href="$classprogetto_1_1_game_screen.html#aac9233d06f3c093fc37139d7d2b258f6" title="stampa le componenti e richiama il render " alt="" coords="430,743,611,784"/>
+<area shape="rect" id="node23" href="$classprogetto_1_1_thread_update.html#a13a43e6d814de94978c515cb084873b1" title="loop del gioco che gestisce la frequenza degli update. " alt="" coords="433,933,608,959"/>
+<area shape="rect" id="node29" href="$classui_1_1_tool_bar.html#af1c1bf274cd89c18726a992a073a7c6d" title="salva la mappa modificata. " alt="" coords="451,1077,590,1103"/>
+<area shape="rect" id="node31" href="$classui_1_1_action_bar.html#a72fe1ffca978e99fd16994a10e7f8051" title="disegna i bottoni, le info della tower selezionata, i bottoni per modificarla e i cuori..." alt="" coords="731,1186,855,1213"/>
+<area shape="rect" id="node34" href="$classui_1_1_action_bar.html#a4202926f30a7290c360bfcd4af6b03cb" title="disegna le informazioni relative all&#39;ondata. " alt="" coords="433,1245,609,1271"/>
+<area shape="rect" id="node38" href="$classscenes_1_1_level1.html#a484775c889ccd8602b66ad795b141534" title="rimuove una vita " alt="" coords="435,1295,606,1322"/>
+<area shape="rect" id="node39" href="$classscenes_1_1_level2.html#a484775c889ccd8602b66ad795b141534" title="rimuove una vita " alt="" coords="435,1346,606,1373"/>
+<area shape="rect" id="node40" href="$classscenes_1_1_level3.html#a484775c889ccd8602b66ad795b141534" title="rimuove una vita " alt="" coords="435,1397,606,1423"/>
+<area shape="rect" id="node41" href="$classscenes_1_1_level4.html#a484775c889ccd8602b66ad795b141534" title="rimuove una vita " alt="" coords="435,1447,606,1474"/>
+<area shape="rect" id="node43" href="$classscenes_1_1_level1.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="425,1498,616,1525"/>
+<area shape="rect" id="node44" href="$classscenes_1_1_level2.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="425,1549,616,1575"/>
+<area shape="rect" id="node45" href="$classscenes_1_1_level3.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="425,1599,616,1626"/>
+<area shape="rect" id="node46" href="$classscenes_1_1_level4.html#a45d56bd84238e8b56589dfc732e2b2cf" title="gestisce i vari click. " alt="" coords="425,1650,616,1677"/>
+<area shape="rect" id="node48" href="$classscenes_1_1_level1.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="423,1701,618,1727"/>
+<area shape="rect" id="node49" href="$classscenes_1_1_level2.html#aed82e1ce3dd3cf283d508c3ba3be70ef" title="gestisce i vari press del mouse. " alt="" coords="423,1751,618,1778"/>
+</map>

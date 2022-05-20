@@ -1,0 +1,5 @@
+<map id="mouseMoved" name="mouseMoved">
+<area shape="rect" id="node2" href="$classui_1_1_my_button.html#ac3f48a7245ffa1fe24d32ea71797997d" title="setter della variabile per la verifica del mouse se si trova sul bottone. " alt="" coords="373,5,552,32"/>
+<area shape="rect" id="node3" href="$classui_1_1_my_button.html#a187945475e730bfa340a10f63224e91f" title="getter del rettangolo per verificarne la pressione. " alt="" coords="383,68,542,95"/>
+<area shape="rect" id="node4" href="$classui_1_1_action_bar.html#a2ca251710b65639ec80bc141edde60aa" title="gestisce le move del mouse. " alt="" coords="152,31,325,57"/>
+</map>

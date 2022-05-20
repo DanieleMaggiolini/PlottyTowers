@@ -1,0 +1,4 @@
+<map id="drawSelectedTower" name="drawSelectedTower">
+<area shape="rect" id="node2" href="$classmanagers_1_1_tower_manager.html#aeae3bb8b35e0507fe9105c2eb4713339" title="ritorno del contenitore di tutte le immagini delle torri " alt="" coords="188,5,377,47"/>
+<area shape="rect" id="node3" href="$classtowers_1_1_tower.html#adaa3345598ef202753372f185625e5da" title="ritorna il tipo di torre " alt="" coords="193,71,372,98"/>
+</map>
