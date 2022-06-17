@@ -110,7 +110,7 @@ public class LoadSave {
     private static void writeToFile(File f, int[] id){
         try {
             PrintWriter printwriter =new PrintWriter(f);
-            for (Integer i: id) {
+            for (int i = 0; i < id.length; i++) {
                 printwriter.println(i);
             }
             printwriter.close();

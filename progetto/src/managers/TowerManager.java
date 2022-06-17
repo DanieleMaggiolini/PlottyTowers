@@ -120,7 +120,8 @@ public class TowerManager {
      */
     public void update() {
         if(towers!=null){
-            for (Tower t : towers) {
+            for (int i = 0; i < towers.size(); i++) {
+                Tower t = towers.get(i);
                 t.update();
                 attack(t);
             }
@@ -136,7 +137,8 @@ public class TowerManager {
     public void attack(Tower t) {
         switch (state) {
             case "level1":
-                for (Enemy e : game.getLevel1().getEnemyManager().getEnemies()) {
+                for (int i = 0; i < game.getLevel1().getEnemyManager().getEnemies().size(); i++) {
+                    Enemy e = game.getLevel1().getEnemyManager().getEnemies().get(i);
                     if (e.isAlive()) {
                         if (isInRange(t, e)) {
                             if (t.isCooldownOver()) {
@@ -249,7 +251,8 @@ public class TowerManager {
      * @param displayedTower torre a cui applicheremo i potenziamenti
      */
     public void towerLevelUp(Tower displayedTower) {
-        for(Tower t: towers){
+        for (int i = 0; i < towers.size(); i++) {
+            Tower t = towers.get(i);
             if(t.getId()== displayedTower.getId()){
                 t.levelUp();
             }
@@ -273,7 +276,8 @@ public class TowerManager {
      * @param g parte grafica
      */
     public void draw(Graphics g) {
-        for (Tower t : towers) {
+        for (int i = 0; i < towers.size(); i++) {
+            Tower t = towers.get(i);
             drawTower(t, g);
         }
         if(state=="level1" || state=="level4")
@@ -413,7 +417,8 @@ public class TowerManager {
      * @return torre specifica
      */
     public Tower getTowerAt(int x, int y) {
-        for (Tower t : towers) {
+        for (int i = 0; i < towers.size(); i++) {
+            Tower t = towers.get(i);
             if ((t.getX() == x) && (t.getY() == y)) {
                 return t;
             }

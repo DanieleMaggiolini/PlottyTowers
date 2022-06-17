@@ -52,7 +52,7 @@ public class ImgFix {
         BufferedImage image= new BufferedImage(w, h, imgs[0].getType());
         Graphics2D g2d = image.createGraphics();
         
-        for(BufferedImage i : imgs){
+        for(int i = 0; i < imgs.length; i++){
             g2d.drawImage(image , 0, 0, null);
         }
         g2d.dispose();

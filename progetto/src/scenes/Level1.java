@@ -340,7 +340,8 @@ public class Level1 extends GameScene implements SceneMethods {
         if (!wavemanager.isWaveEnd()) {
             return false;
         }
-        for (Enemy e : enemymanager.getEnemies()) {
+        for (int i = 0; i < enemymanager.getEnemies().size(); i++) {
+            Enemy e = enemymanager.getEnemies().get(i);
             if (e.isAlive()) {
                 return false;
             }

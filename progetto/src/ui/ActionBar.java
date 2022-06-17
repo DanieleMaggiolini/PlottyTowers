@@ -158,8 +158,8 @@ public class ActionBar extends Bar {
      * @param g oggetto della grafica
      */
     public void drawButton(Graphics g) {
-
-        for (MyButton b : towerButtons) {
+        for (int i = 0; i < towerButtons.length; i++) {
+            MyButton b = towerButtons[i];
             b.drawA(g);
             switch (state) {
                 case "level1":

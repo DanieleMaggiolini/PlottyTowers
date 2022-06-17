@@ -60,13 +60,13 @@ public class Sound {
      @param i indice dell'array per la selezione della cella corretta
      */
     public void setFIle(int i){
-        try{
+        /*try{
             AudioInputStream ais = AudioSystem.getAudioInputStream(soundURL[i]);
             clip = AudioSystem.getClip();
             clip.open(ais);
         }catch(Exception e){
             
-        }
+        }*/
     }
     
     /**
@@ -75,12 +75,12 @@ public class Sound {
      @param i indice dell'array per la selezione della cella corretta
      */
     public void playMusic(int i){
-        this.i = i;
+        /*this.i = i;
         if(!mute){
             setFIle(i);
             play();
             loop();
-        }
+        }*/
     }
     
     /**
@@ -89,17 +89,17 @@ public class Sound {
      @param i indice dell'array per la selezione della cella corretta
      */
     public void playSE(int i){
-        if(!mute){
+        /*if(!mute){
             setFIle(i);
             play();
-        }
+        }*/
     }
     
     /**
      @brief inizia la riproduzione di un suono.
      */
     public void play(){
-        clip.start();
+        //clip.start();
     }
     
     /**

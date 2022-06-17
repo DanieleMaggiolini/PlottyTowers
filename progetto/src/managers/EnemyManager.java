@@ -143,9 +143,10 @@ public class EnemyManager {
      */
     public void update() {
         if (enemies != null) {
-            for (Enemy e : enemies) {
-                if (e.isAlive()) {
-                    updateEnemyMove(e);
+            for(int i = 0; i < enemies.size(); i++){
+                Enemy tmp = enemies.get(i);
+                if (tmp.isAlive()) {
+                    updateEnemyMove(tmp);
                 }
             }
         }
@@ -385,8 +386,10 @@ public class EnemyManager {
      * @param g parte grafica
      *
      */
+    
     public void draw(Graphics g) {
-        for (Enemy e : enemies) {
+        for(int i = 0; i < enemies.size(); i++){
+            Enemy e = enemies.get(i);
             if (e.isAlive()) {
                 drawEnemy(e, g);
                 drawHpBar(e, g);
@@ -520,7 +523,8 @@ public class EnemyManager {
      */
     public int getEnemyRemaning() {
         int enemyremaning = 0;
-        for (Enemy e : enemies) {
+        for (int i = 0; i < enemies.size(); i++) {
+            Enemy e = enemies.get(i);
             if (e.isAlive()) {
                 enemyremaning++;
             }

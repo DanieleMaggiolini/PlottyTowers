@@ -51,31 +51,31 @@ public class Constants {
         public static float getSpeed(int enemytype) {
             switch (enemytype) {
                 case OROCHIMARU:
-                    return 1.3f;
-                case TOBI:
-                    return 1.4f;
-                case MADARA:
-                    return 1.5f;
-                case POLLO:
-                    return 1.5f;
-                case MAIALE:
-                    return 1.0f;
-                case GREG:
-                    return 1.6f;
-                case JERRY:
-                    return 1.0f;
-                case SUMMER:
                     return 1.2f;
-                case MORTY:
+                case TOBI:
                     return 1.3f;
-                case RICK:
-                    return 1.6f;
-                case LUFFY:
+                case MADARA:
+                    return 1.4f;
+                case POLLO:
+                    return 1.4f;
+                case MAIALE:
+                    return 0.9f;
+                case GREG:
                     return 1.5f;
+                case JERRY:
+                    return 0.9f;
+                case SUMMER:
+                    return 1.1f;
+                case MORTY:
+                    return 1.2f;
+                case RICK:
+                    return 1.5f;
+                case LUFFY:
+                    return 1.4f;
                 case JINBE:
-                    return 1.3f;
+                    return 1.2f;
                 case BARBABIANCA:
-                    return 0.9f;      
+                    return 0.8f;      
             }
             return 0;
         }
@@ -91,9 +91,9 @@ public class Constants {
                 case POLLO:
                     return 400;
                 case MAIALE:
-                    return 800;
+                    return 1000;
                 case GREG:
-                    return 1450;
+                    return 1650;
                 case JERRY:
                     return 250;
                 case SUMMER:
@@ -121,11 +121,11 @@ public class Constants {
                 case MADARA:
                     return 30;
                 case POLLO:
-                    return 12;
+                    return 10;
                 case MAIALE:
-                    return 24;
+                    return 15;
                 case GREG:
-                    return 36;
+                    return 22;
                 case JERRY:
                     return 8;
                 case SUMMER:
@@ -201,9 +201,9 @@ public class Constants {
                 case CANNONE:
                     return 50;
                 case TESLA:
-                    return 70;
+                    return 75;
                 case ARCOX:
-                    return 18;
+                    return 11;
                 case MOSQUITOS:
                     return 55;
                 case DOG:
@@ -293,7 +293,7 @@ public class Constants {
                 case TESLA:
                     return 40;
                 case ARCOX:
-                    return 70; 
+                    return 75; 
                 case MOSQUITOS:
                     return 35;
                 case DOG:
@@ -331,7 +331,7 @@ public class Constants {
                 case SHURIKEN:
                     return 15f;
                 case FIREBALL:
-                    return 7f;
+                    return 10f;
                 case PUNCH:
                     return 5.5f;
                 case CANNONATA:

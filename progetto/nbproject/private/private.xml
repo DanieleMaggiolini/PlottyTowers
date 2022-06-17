@@ -3,9 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/ui/PauseOverlay.java</file>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/ui/PauseButton.java</file>
-            <file>file:/C:/Users/Utente/Documents/GitHub/PlottyTowers/progetto/src/ui/MyButton.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/managers/EnemyManager.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/managers/ProjectileManager.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/managers/TowerManager.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/scenes/Level3.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/image/background/levelUnlock.txt</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/scenes/Level2.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/scenes/Level1.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/progetto/Game.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/helpz/ImgFix.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/helpz/Constants.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/scenes/Level4.java</file>
+            <file>file:/C:/Users/Administrator/Desktop/PlottyTowers-main/progetto/src/helpz/LoadSave.java</file>
         </group>
     </open-files>
 </project-private>

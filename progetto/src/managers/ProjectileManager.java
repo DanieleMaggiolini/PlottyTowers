@@ -160,7 +160,8 @@ public class ProjectileManager {
     public void update() {
         if (projectiles != null) {
             synchronized (a) {
-                for (Projectile p : projectiles) {
+                for (int i = 0; i < projectiles.size(); i++) {
+                    Projectile p = projectiles.get(i);
                     if (p.isExist()) {
                         p.move();
                         if (isProjHit(p)) {
@@ -202,7 +203,8 @@ public class ProjectileManager {
     public void draw(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
         if (projectiles != null) {
-            for (Projectile p : projectiles) {
+            for (int i = 0; i < projectiles.size(); i++) {
+                Projectile p = projectiles.get(i);
                 if (p.isExist()) {
                     if (p.getProjectiletype() != PUNCH && p.getProjectiletype() != MAGMA && p.getProjectiletype() != CRATERE) {
                         g2d.translate(p.getPosition().x, p.getPosition().y);
